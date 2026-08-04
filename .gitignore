@@ -1,0 +1,7 @@
+# Logs y archivos temporales
+*.log
+.DS_Store
+Thumbs.db
+
+# Backup local si existe
+*.bak

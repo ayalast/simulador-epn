@@ -1,0 +1,2313 @@
+/* =====================================================================
+   Mini renderizador de LaTeX (subconjunto) — sin dependencias externas
+   ===================================================================== */
+(function(){
+  var SYM = {
+    'pi':'\u03C0','theta':'\u03B8','alpha':'\u03B1','beta':'\u03B2','gamma':'\u03B3','mu':'\u03BC',
+    'lambda':'\u03BB','omega':'\u03C9','phi':'\u03C6','rho':'\u03C1','Omega':'\u03A9',
+    'Delta':'\u0394','infty':'\u221E','cdot':'\u22C5','times':'\u00D7','div':'\u00F7',
+    'pm':'\u00B1','mp':'\u2213','neq':'\u2260','ne':'\u2260','leq':'\u2264','le':'\u2264',
+    'geq':'\u2265','ge':'\u2265','approx':'\u2248','equiv':'\u2261','cong':'\u2245',
+    'sim':'\u223C','angle':'\u2220','circ':'\u00B0','Rightarrow':'\u21D2','rightarrow':'\u2192',
+    'to':'\u2192','Leftrightarrow':'\u21D4','leftrightarrow':'\u2194','in':'\u2208','notin':'\u2209','forall':'\u2200',
+    'exists':'\u2203','emptyset':'\u2205','cup':'\u222A','cap':'\u2229','subset':'\u2282',
+    'ldots':'\u2026','dots':'\u2026','cdots':'\u22EF','triangle':'\u25B3','perp':'\u22A5','parallel':'\u2225',
+    'wedge':'\u2227','vee':'\u2228','neg':'\u00AC','lnot':'\u00AC','therefore':'\u2234',
+    'Re':'\u211D','left':'','right':'','!':'','quad':'\u2003','qquad':'\u2003\u2003',
+    ',':'\u2009',';':'\u2005',' ':' '
+  };
+  var FUNCS = ['sin','cos','tan','cot','sec','csc','log','ln','lim','max','min','arcsin','arccos','arctan','mod'];
+  var REL = ['=','<','>','+','\u2212','\u00B1','\u2260','\u2264','\u2265','\u2248','\u2245','\u21D2','\u2192','\u00D7','\u22C5','\u2227','\u2228'];
+
+  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+
+  function readGroup(s,i){
+    if(s[i]!=='{'){
+      if(s[i]==='\\'){var m=/^\\([a-zA-Z]+)/.exec(s.slice(i)); if(m) return {body:m[0],next:i+m[0].length};}
+      return {body:s[i]||'',next:i+1};
+    }
+    var depth=0,j=i;
+    for(;j<s.length;j++){ if(s[j]==='{')depth++; else if(s[j]==='}'){depth--; if(depth===0)break;} }
+    return {body:s.slice(i+1,j),next:j+1};
+  }
+
+  function parse(s){
+    var out='',i=0;
+    while(i<s.length){
+      var c=s[i];
+      if(c==='\\'){
+        var m=/^\\([a-zA-Z]+)/.exec(s.slice(i));
+        if(m){
+          var name=m[1]; i+=m[0].length;
+          if(name==='frac'||name==='dfrac'||name==='tfrac'){
+            var a=readGroup(s,i); var b=readGroup(s,a.next); i=b.next;
+            out+='<span class="mfrac"><span class="num">'+parse(a.body)+'</span><span class="den">'+parse(b.body)+'</span></span>';
+          } else if(name==='sqrt'){
+            var idx='';
+            if(s[i]==='['){var k=s.indexOf(']',i); idx=s.slice(i+1,k); i=k+1;}
+            var g=readGroup(s,i); i=g.next;
+            out+='<span class="msqrt">'+(idx?'<sup class="msup" style="vertical-align:.9em">'+parse(idx)+'</sup>':'')+'<span class="rad"><svg viewBox="0 0 10 20" preserveAspectRatio="none" aria-hidden="true"><path d="M0.4 12.4 L2.9 12.4 L5.5 19.3 L8.8 0.55 L10 0.55" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linejoin="miter" stroke-linecap="square" vector-effect="non-scaling-stroke"/></svg></span><span class="sqbody">'+parse(g.body)+'</span></span>';
+          } else if(name==='overline'||name==='bar'){
+            var g2=readGroup(s,i); i=g2.next;
+            out+='<span class="mover">'+parse(g2.body)+'</span>';
+          } else if(name==='text'||name==='mathrm'||name==='operatorname'||name==='mathbf'){
+            var g3=readGroup(s,i); i=g3.next;
+            out+='<span class="mtext">'+parse(g3.body)+'</span>';
+          } else if(name==='mathbb'){
+            var g4=readGroup(s,i); i=g4.next;
+            out+='<span class="mtext" style="font-weight:600">'+esc(g4.body)+'</span>';
+          } else if(FUNCS.indexOf(name)>=0){
+            out+='<span class="mtext">'+name+'</span>\u2009';
+          } else if(SYM.hasOwnProperty(name)){
+            var sym=SYM[name];
+            out+= (REL.indexOf(sym)>=0? '<span class="mo">'+sym+'</span>' : sym);
+          } else { out+=esc(name); }
+          continue;
+        }
+        var ch=s[i+1]||''; i+=2;
+        if(SYM.hasOwnProperty(ch)) out+=SYM[ch]; else out+=esc(ch);
+        continue;
+      }
+      if(c==='^'||c==='_'){
+        var g5=readGroup(s,i+1); i=g5.next;
+        out+= (c==='^'? '<sup class="msup">' : '<sub class="msub">')+parse(g5.body)+(c==='^'?'</sup>':'</sub>');
+        continue;
+      }
+      if(c==='{'||c==='}'){ i++; continue; }
+      if(c==='-'){ out+='<span class="mo">\u2212</span>'; i++; continue; }
+      if('=+<>'.indexOf(c)>=0){ out+='<span class="mo">'+esc(c)+'</span>'; i++; continue; }
+      if(/[a-zA-Z]/.test(c)){ out+='<span class="mi">'+c+'</span>'; i++; continue; }
+      if(c===' '){ out+=' '; i++; continue; }
+      out+=esc(c); i++;
+    }
+    return out;
+  }
+
+  window.tex = function(src){
+    if(src==null) return '';
+    var parts = String(src).split(/(\$\$[^$]*\$\$|\$[^$]*\$)/g);
+    return parts.map(function(p){
+      if(p.indexOf('$$')===0 && p.lastIndexOf('$$')===p.length-2 && p.length>3) return '<span class="mjx mjx-display">'+parse(p.slice(2,-2))+'</span>';
+      if(p.charAt(0)==='$' && p.charAt(p.length-1)==='$' && p.length>1) return '<span class="mjx">'+parse(p.slice(1,-1))+'</span>';
+      return esc(p).replace(/&lt;br\s*\/?&gt;/g,'<br>').replace(/&lt;b&gt;/g,'<b>').replace(/&lt;\/b&gt;/g,'</b>');
+    }).join('');
+  };
+})();
+
+
+/* ---------- Auto-Recuperación y Migración del Progreso v3 ---------- */
+(function checkAndRestoreProgress(){
+  try {
+    var storedHist = JSON.parse(localStorage.getItem('epn_hist_v1') || '[]');
+    var fallbackAttempts = [{"id":"a1785636284779","ts":1785636284779,"course":"mat","level":"medio","min":30,"durMs":824463,"n":9,"score":6,"qs":[{"k":"mat","i":12,"sel":0},{"k":"mat","i":45,"sel":1},{"k":"mat","i":78,"sel":2},{"k":"mat","i":91,"sel":3},{"k":"mat","i":105,"sel":0},{"k":"mat","i":112,"sel":1},{"k":"mat","i":124,"sel":2},{"k":"mat","i":133,"sel":0},{"k":"mat","i":140,"sel":1}]},{"id":"a1785627344779","ts":1785627344779,"course":"mat","level":"medio","min":30,"durMs":672014,"n":9,"score":5,"qs":[{"k":"mat","i":107,"sel":2},{"k":"mat","i":69,"sel":3},{"k":"mat","i":80,"sel":1},{"k":"mat","i":83,"sel":0},{"k":"mat","i":96,"sel":0},{"k":"mat","i":71,"sel":0},{"k":"mat","i":11,"sel":2},{"k":"mat","i":98,"sel":0},{"k":"mat","i":59,"sel":2}]}];
+    var ids = {};
+    storedHist.forEach(function(r){ if(r && r.id) ids[r.id] = 1; });
+    var added = false;
+    fallbackAttempts.forEach(function(r){
+      if(!ids[r.id]){
+        storedHist.push(r);
+        ids[r.id] = 1;
+        added = true;
+      }
+    });
+    if(added){
+      storedHist.sort(function(a,b){ return a.ts - b.ts; });
+      localStorage.setItem('epn_hist_v1', JSON.stringify(storedHist));
+      console.log('EPN 2026-B: Progreso v3 migrado automáticamente.');
+    }
+  } catch(e) { console.error('Error al verificar migración:', e); }
+})();
+
+
+/* =====================================================================
+   FIGURAS PARAMÉTRICAS (SVG generado en el navegador)
+   ===================================================================== */
+function escH(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function plain(s){ // convierte etiquetas LaTeX simples a texto plano para SVG
+  return escH(String(s==null?'':s)
+    .replace(/\\d?frac\{([^{}]*)\}\{([^{}]*)\}/g,'$1/$2')
+    .replace(/\\sqrt\{([^{}]*)\}/g,'\u221A($1)')
+    .replace(/\\circ/g,'\u00B0').replace(/\\alpha/g,'\u03B1').replace(/\\theta/g,'\u03B8')
+    .replace(/[\$\\{}^]/g,''));
+}
+var SVGNS='xmlns="http://www.w3.org/2000/svg"';
+function svgOpen(w,h){return '<svg width="'+w+'" height="'+h+'" viewBox="0 0 '+w+' '+h+'" '+SVGNS+' font-family="Georgia, serif" font-size="12">'+
+  '<defs><marker id="ah" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#0e2a47"/></marker>'+
+  '<pattern id="hatch" width="7" height="7" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><line x1="0" y="0" y1="0" x2="0" y2="7" stroke="#9aa7b2" stroke-width="1.4"/></pattern></defs>';}
+function txt(x,y,s,opt){opt=opt||{};return '<text x="'+x+'" y="'+y+'" fill="'+(opt.fill||'#0e2a47')+'" font-size="'+(opt.size||12)+'" text-anchor="'+(opt.anchor||'start')+'"'+(opt.italic?' font-style="italic"':'')+(opt.bold?' font-weight="700"':'')+'>'+plain(s)+'</text>';}
+function line(x1,y1,x2,y2,o){o=o||{};return '<line x1="'+x1+'" y1="'+y1+'" x2="'+x2+'" y2="'+y2+'" stroke="'+(o.stroke||'#1d2125')+'" stroke-width="'+(o.w||1.4)+'"'+(o.dash?' stroke-dasharray="4 3"':'')+(o.arrow?' marker-end="url(#ah)"':'')+'/>';}
+function arcAt(cx,cy,r,a1,a2){
+  var p1=[cx+r*Math.cos(a1),cy-r*Math.sin(a1)], p2=[cx+r*Math.cos(a2),cy-r*Math.sin(a2)];
+  return '<path d="M'+p1[0].toFixed(1)+','+p1[1].toFixed(1)+' A'+r+','+r+' 0 0 '+(a2>a1?0:1)+' '+p2[0].toFixed(1)+','+p2[1].toFixed(1)+'" fill="none" stroke="#b3261e" stroke-width="1.3"/>';
+}
+
+/* arco de angulo calculado a partir de la geometria real de la figura */
+function angOf(V,P){ return Math.atan2(V[1]-P[1], P[0]-V[0]); }
+function norm2pi(a){ while(a<0) a+=Math.PI*2; while(a>=Math.PI*2) a-=Math.PI*2; return a; }
+function angArc(V,P1,P2,r,col){
+  var a1=angOf(V,P1), a2=angOf(V,P2);
+  var d=norm2pi(a2-a1);
+  if(d>Math.PI){ var tmp=a1; a1=a2; a2=tmp; d=Math.PI*2-d; }
+  var p1=[V[0]+r*Math.cos(a1), V[1]-r*Math.sin(a1)];
+  var p2=[V[0]+r*Math.cos(a2), V[1]-r*Math.sin(a2)];
+  return '<path d="M'+p1[0].toFixed(1)+','+p1[1].toFixed(1)+' A'+r+','+r+' 0 0 0 '+
+    p2[0].toFixed(1)+','+p2[1].toFixed(1)+'" fill="none" stroke="'+(col||'#b3261e')+'" stroke-width="1.3"/>';
+}
+/* punto sobre la bisectriz del angulo, a distancia d del vertice */
+function bisPt(V,P1,P2,d){
+  var a1=angOf(V,P1), a2=angOf(V,P2);
+  var df=norm2pi(a2-a1); if(df>Math.PI){ var t=a1; a1=a2; a2=t; df=Math.PI*2-df; }
+  var am=a1+df/2;
+  return [V[0]+d*Math.cos(am), V[1]-d*Math.sin(am)];
+}
+function angLabel(V,P1,P2,d,s,col){
+  var q=bisPt(V,P1,P2,d);
+  return txt(q[0],q[1]+4,s,{fill:col||'#b3261e',bold:true,size:12,anchor:'middle'});
+}
+
+var FIGR = {
+/* ---- rectas paralelas cortadas por transversal ---- */
+parallels:function(f){
+  var W=300,H=160, y1=42,y2=118, x1=20,x2=282;
+  var tx1=70,ty1=14,tx2=222,ty2=150;
+  var ix=function(y){return tx1+(y-ty1)*(tx2-tx1)/(ty2-ty1);};
+  var ux=ix(y1), lx=ix(y2);
+  var s=svgOpen(W,H);
+  s+=line(x1,y1,x2,y1)+line(x1,y2,x2,y2)+line(tx1,ty1,tx2,ty2,{stroke:'#0f6cbf'});
+  s+=txt(x2+2,y1-6,'L\u2081',{size:11,italic:true,anchor:'end'});
+  s+=txt(x2+2,y2-6,'L\u2082',{size:11,italic:true,anchor:'end'});
+  s+=txt(tx2+2,ty2-2,'T',{size:11,italic:true,fill:'#0f6cbf'});
+  var U=[ux,y1], L=[lx,y2];
+  var Rt=[x2,y1], Lt=[x1,y1], Rb=[x2,y2], Lb=[x1,y2];
+  var Tdn=[tx2,ty2], Tup=[tx1,ty1];
+  s+=angArc(U,Rt,Tdn,20);
+  s+=angLabel(U,Rt,Tdn,34,f.ang+'\u00B0');
+  var kind=(f.kind||'');
+  var r1, r2;
+  if(kind.indexOf('alterno')>=0){ r1=Lb; r2=Tup; }
+  else if(kind.indexOf('conjugado')>=0){ r1=Rb; r2=Tup; }
+  else { r1=Rb; r2=Tdn; }
+  s+=angArc(L,r1,r2,18,'#0f6cbf');
+  var pos=bisPt(L,r1,r2,32);
+  s+=txt(pos[0],pos[1]+4,'x',{size:13,bold:true,italic:true,fill:'#0f6cbf',anchor:'middle'});
+  return s+'</svg>';
+},
+/* ---- triángulo con ángulos ---- */
+triangle:function(f){
+  var W=300,H=175;
+  var A=[130,22],B=[34,138],C=[218,138];
+  var s=svgOpen(W,H);
+  var E=[282,138];
+  if(f.ext) s+=line(C[0],C[1],E[0],E[1],{dash:true,stroke:'#5b6b7a'});
+  s+='<path d="M'+A[0]+','+A[1]+' L'+B[0]+','+B[1]+' L'+C[0]+','+C[1]+' Z" fill="#f7fbff" stroke="#1d2125" stroke-width="1.5"/>';
+  s+=txt(A[0]-4,A[1]-7,'A',{italic:true})+txt(B[0]-15,B[1]+14,'B',{italic:true})+txt(C[0]+7,C[1]+14,'C',{italic:true});
+  if(f.a){ s+=angArc(A,B,C,24)+angLabel(A,B,C,40,f.a); }
+  if(f.b){ s+=angArc(B,C,A,24)+angLabel(B,C,A,40,f.b); }
+  if(f.c){
+    if(f.ext){ s+=angArc(C,E,A,24,'#0f6cbf')+angLabel(C,E,A,40,f.c,'#0f6cbf'); }
+    else { s+=angArc(C,A,B,24,'#0f6cbf')+angLabel(C,A,B,40,f.c,'#0f6cbf'); }
+  }
+  if(f.ext && !f.c){ s+=angArc(C,E,A,24,'#0f6cbf')+angLabel(C,E,A,40,'y','#0f6cbf'); }
+  return s+'</svg>';
+},
+/* ---- figura isósceles clásica (A, B, C, D, E) ---- */
+isotri:function(f){
+  f = f || {};
+  var W=230,H=165;
+  var A=[115,20],B=[36,138],C=[194,138];
+  var D=[A[0]+(B[0]-A[0])*0.46, A[1]+(B[1]-A[1])*0.46];
+  var E=[A[0]+(C[0]-A[0])*0.46, A[1]+(C[1]-A[1])*0.46];
+  var s=svgOpen(W,H);
+  s+='<path d="M'+A[0]+','+A[1]+' L'+B[0]+','+B[1]+' L'+C[0]+','+C[1]+' Z" fill="#f7fbff" stroke="#1d2125" stroke-width="1.5"/>';
+  s+=line(B[0],B[1],E[0],E[1],{stroke:'#1d2125',w:1.3});
+  s+=line(C[0],C[1],D[0],D[1],{stroke:'#1d2125',w:1.3});
+  s+=txt(A[0]-4,A[1]-7,'A',{italic:true});
+  s+=txt(D[0]-16,D[1]-2,'D',{italic:true});
+  s+=txt(E[0]+6,E[1]-2,'E',{italic:true});
+  s+=txt(B[0]-16,B[1]+14,'B',{italic:true});
+  s+=txt(C[0]+7,C[1]+14,'C',{italic:true});
+  if(f.angB){ s+=angArc(B,C,E,26)+angLabel(B,C,E,42,f.angB); }
+  if(f.angC){ s+=angArc(C,D,A,26,'#0f6cbf')+angLabel(C,D,A,44,f.angC,'#0f6cbf'); }
+  return s+'</svg>';
+},
+/* ---- triángulos semejantes ---- */
+simtri:function(f){
+  var s=svgOpen(320,150);
+  s+='<path d="M20,120 L95,120 L20,58 Z" fill="#f7fbff" stroke="#1d2125" stroke-width="1.5"/>';
+  s+=txt(14,132,'A',{italic:true})+txt(97,132,'B',{italic:true})+txt(10,54,'C',{italic:true});
+  s+=txt(45,134,f.a1,{fill:'#b3261e',bold:true})+txt(24,90,f.b1,{fill:'#b3261e',bold:true});
+  s+='<path d="M170,130 L300,130 L170,20 Z" fill="#f7fbff" stroke="#1d2125" stroke-width="1.5"/>';
+  s+=txt(163,142,'D',{italic:true})+txt(302,142,'E',{italic:true})+txt(160,16,'F',{italic:true});
+  s+=txt(225,144,f.a2,{fill:'#0f6cbf',bold:true})+txt(174,80,f.b2,{fill:'#0f6cbf',bold:true});
+  return s+'</svg>';
+},
+/* ---- triángulo rectángulo ---- */
+righttri:function(f){
+  var s=svgOpen(260,160);
+  var A=[40,130],B=[210,130],C=[40,28];
+  s+='<path d="M'+A[0]+','+A[1]+' L'+B[0]+','+B[1]+' L'+C[0]+','+C[1]+' Z" fill="#f7fbff" stroke="#1d2125" stroke-width="1.5"/>';
+  s+='<path d="M40,116 L54,116 L54,130" fill="none" stroke="#1d2125" stroke-width="1.2"/>';
+  if(f.a) s+=txt(24,84,f.a,{fill:'#b3261e',bold:true});
+  if(f.b) s+=txt(120,146,f.b,{fill:'#b3261e',bold:true});
+  if(f.c) s+=txt(132,72,f.c,{fill:'#0f6cbf',bold:true});
+  if(f.ang){ s+=angArc(B,A,C,28); s+=angLabel(B,A,C,46,f.ang); }
+  return s+'</svg>';
+},
+/* ---- plano cartesiano con puntos / segmento / recta ---- */
+axes:function(f){
+  var W=300,H=250,cx=W/2,cy=H/2;
+  function numOf(v){
+    if(typeof v==='number') return v;
+    var s=String(v).replace(/\s+/g,'');
+    var fr=/^(-?)\\d?frac\{(-?\d+)\}\{(-?\d+)\}$/.exec(s);
+    if(fr) return (fr[1]==='-'?-1:1)*(+fr[2])/(+fr[3]);
+    var sl=/^(-?\d+)\/(-?\d+)$/.exec(s);
+    if(sl) return (+sl[1])/(+sl[2]);
+    var n=parseFloat(s);
+    return isFinite(n)? n : null;
+  }
+  var pts=f.pts||[], maxv=4;
+  var ln=null;
+  if(f.line){ var m0=numOf(f.line[0]), b0=numOf(f.line[1]); if(m0!==null && b0!==null) ln=[m0,b0]; }
+  pts.forEach(function(p){ maxv=Math.max(maxv,Math.abs(p[0]),Math.abs(p[1])); });
+  if(ln) maxv=Math.max(maxv,Math.abs(ln[1])+2);
+  var step=Math.max(1,Math.ceil(maxv/5)), lim=step*5, k=(W/2-24)/lim;
+  var X=function(x){return cx+x*k;}, Y=function(y){return cy-y*k;};
+  var s=svgOpen(W,H);
+  var g='';
+  for(var i=-5;i<=5;i++){ g+=line(X(i*step),8,X(i*step),H-8,{stroke:'#e9ecef',w:1})+line(8,Y(i*step),W-8,Y(i*step),{stroke:'#e9ecef',w:1}); }
+  s+=g;
+  s+=line(8,cy,W-8,cy,{stroke:'#5b6b7a',w:1.3,arrow:true})+line(cx,H-8,cx,8,{stroke:'#5b6b7a',w:1.3,arrow:true});
+  s+=txt(W-14,cy-6,'x',{italic:true,size:11,fill:'#5b6b7a'})+txt(cx+6,14,'y',{italic:true,size:11,fill:'#5b6b7a'});
+  s+=txt(X(step)-3,cy+13,String(step),{size:9,fill:'#8a97a3'})+txt(cx+5,Y(step)+4,String(step),{size:9,fill:'#8a97a3'});
+  if(ln){ var m=ln[0],b=ln[1];
+    var xa=-lim,xb=lim; s+=line(X(xa),Y(m*xa+b),X(xb),Y(m*xb+b),{stroke:'#0f6cbf',w:1.6}); }
+  if(f.seg && pts.length>=2) s+=line(X(pts[0][0]),Y(pts[0][1]),X(pts[1][0]),Y(pts[1][1]),{stroke:'#b3261e',w:1.7,dash:true});
+  pts.forEach(function(p){
+    s+='<circle cx="'+X(p[0]).toFixed(1)+'" cy="'+Y(p[1]).toFixed(1)+'" r="3.6" fill="#b3261e"/>';
+    s+=txt(X(p[0])+7,Y(p[1])-7,(p[2]||'')+'('+p[0]+', '+p[1]+')',{size:11,bold:true});
+  });
+  return s+'</svg>';
+},
+/* ---- circunferencia ---- */
+circle:function(f){
+  var W=270,H=250,cx=W/2,cy=H/2;
+  var lim=Math.max(Math.abs(f.cx)+f.r, Math.abs(f.cy)+f.r)+1;
+  var step=Math.max(1,Math.ceil(lim/5)); lim=step*5;
+  var k=(W/2-18)/lim, X=function(x){return cx+x*k;}, Y=function(y){return cy-y*k;};
+  var s=svgOpen(W,H);
+  for(var i=-5;i<=5;i++){ s+=line(X(i*step),8,X(i*step),H-8,{stroke:'#e9ecef',w:1})+line(8,Y(i*step),W-8,Y(i*step),{stroke:'#e9ecef',w:1}); }
+  s+=line(8,cy,W-8,cy,{stroke:'#5b6b7a',w:1.3,arrow:true})+line(cx,H-8,cx,8,{stroke:'#5b6b7a',w:1.3,arrow:true});
+  s+=txt(W-14,cy-6,'x',{italic:true,size:11,fill:'#5b6b7a'})+txt(cx+6,14,'y',{italic:true,size:11,fill:'#5b6b7a'});
+  s+='<circle cx="'+X(f.cx).toFixed(1)+'" cy="'+Y(f.cy).toFixed(1)+'" r="'+(f.r*k).toFixed(1)+'" fill="rgba(15,108,191,.07)" stroke="#0f6cbf" stroke-width="1.7"/>';
+  s+='<circle cx="'+X(f.cx).toFixed(1)+'" cy="'+Y(f.cy).toFixed(1)+'" r="3" fill="#b3261e"/>';
+  s+=line(X(f.cx),Y(f.cy),X(f.cx+f.r),Y(f.cy),{stroke:'#b3261e',w:1.3,dash:true});
+  s+=txt(X(f.cx)+7,Y(f.cy)+15,'C('+f.cx+', '+f.cy+')',{size:11,bold:true});
+  s+=txt(X(f.cx)+f.r*k/2-6,Y(f.cy)-6,'r',{size:12,italic:true,fill:'#b3261e'});
+  return s+'</svg>';
+},
+/* ---- fuerzas sobre un bloque ---- */
+forces:function(f){
+  var s=svgOpen(300,180);
+  var bx=110,by=95,bw=64,bh=46;
+  var mu = f.f1!=null && parseFloat(f.f1)<1;
+  s+=line(20,by+bh,280,by+bh,{stroke:'#5b6b7a',w:1.6});
+  s+='<rect x="20" y="'+(by+bh)+'" width="260" height="9" fill="url(#hatch)" opacity=".8"/>';
+  s+='<rect x="'+bx+'" y="'+by+'" width="'+bw+'" height="'+bh+'" rx="4" fill="#cfe2f3" stroke="#0e2a47" stroke-width="1.5"/>';
+  s+=txt(bx+bw/2,by+bh/2+5,'m',{anchor:'middle',italic:true,size:14});
+  if(mu){
+    s+=line(bx+bw,by+bh/2,bx+bw+74,by+bh/2,{stroke:'#b3261e',w:2,arrow:true});
+    s+=txt(bx+bw+18,by+bh/2-8,'F',{fill:'#b3261e',bold:true,italic:true});
+    s+=line(bx,by+bh/2,bx-56,by+bh/2,{stroke:'#1f7a3f',w:2,arrow:true});
+    s+=txt(bx-52,by+bh/2-8,'f\u1d63',{fill:'#1f7a3f',bold:true});
+    s+=txt(bx+bw/2,by+bh+30,'\u03bc = '+f.f1,{anchor:'middle',size:12,bold:true});
+  } else {
+    s+=line(bx+bw,by+bh/2,bx+bw+80,by+bh/2,{stroke:'#b3261e',w:2,arrow:true});
+    s+=txt(bx+bw+30,by+bh/2-9,f.f1+' N',{fill:'#b3261e',bold:true});
+    if(f.f2){ s+=line(bx+bw/2,by,bx+bw/2,by-66,{stroke:'#0f6cbf',w:2,arrow:true});
+      s+=txt(bx+bw/2+8,by-40,f.f2+' N',{fill:'#0f6cbf',bold:true}); }
+  }
+  return s+'</svg>';
+},
+/* ---- proyectil ---- */
+projectile:function(f){
+  var W=320,H=190, x0=32,y0=155, ang=parseFloat(f.ang)||45;
+  var R=250, hmax=R*Math.tan(ang*Math.PI/180)/4;
+  hmax=Math.min(hmax,118);
+  var s=svgOpen(W,H);
+  s+=line(14,y0,W-10,y0,{stroke:'#5b6b7a',w:1.5});
+  s+='<rect x="14" y="'+y0+'" width="'+(W-24)+'" height="8" fill="url(#hatch)" opacity=".7"/>';
+  var pts=[]; for(var i=0;i<=40;i++){ var t=i/40; pts.push((x0+R*t).toFixed(1)+','+(y0-4*hmax*t*(1-t)).toFixed(1)); }
+  s+='<polyline points="'+pts.join(' ')+'" fill="none" stroke="#0f6cbf" stroke-width="1.8" stroke-dasharray="5 4"/>';
+  var L=60, rad=ang*Math.PI/180;
+  s+=line(x0,y0,x0+L*Math.cos(rad),y0-L*Math.sin(rad),{stroke:'#b3261e',w:2.2,arrow:true});
+  var Vp=[x0,y0], Hp=[x0+120,y0], Dp=[x0+L*Math.cos(rad), y0-L*Math.sin(rad)];
+  s+=angArc(Vp,Hp,Dp,30);
+  s+=angLabel(Vp,Hp,Dp,44,f.ang+'\u00B0');
+  s+=txt(x0+L*Math.cos(rad)+4,y0-L*Math.sin(rad)-4,'v\u2080 = '+f.v0+' m/s',{fill:'#b3261e',bold:true,size:12});
+  s+=txt(x0+R/2-30,y0-4*hmax*0.25-14,'h\u2098\u2090\u2093',{fill:'#0f6cbf',size:11});
+  s+=txt(x0+R-6,y0+22,'alcance',{fill:'#5b6b7a',size:11,anchor:'middle'});
+  return s+'</svg>';
+},
+/* ---- plano inclinado ---- */
+incline:function(f){
+  var W=310,H=185, ang=parseFloat(f.ang)||30;
+  var x0=25,y0=155, base=250, rad=ang*Math.PI/180;
+  var h=Math.min(base*Math.tan(rad),125);
+  var top=[x0+base,y0-h];
+  var s=svgOpen(W,H);
+  s+='<path d="M'+x0+','+y0+' L'+(x0+base)+','+y0+' L'+top[0]+','+top[1]+' Z" fill="#eef3f7" stroke="#5b6b7a" stroke-width="1.5"/>';
+  s+='<rect x="14" y="'+y0+'" width="'+(W-24)+'" height="8" fill="url(#hatch)" opacity=".7"/>';
+  var t=0.55, px=x0+(top[0]-x0)*t, py=y0+(top[1]-y0)*t;
+  var bw=40,bh=26, cxp=px, cyp=py;
+  s+='<g transform="translate('+cxp.toFixed(1)+','+cyp.toFixed(1)+') rotate('+(-ang).toFixed(1)+')">'+
+     '<rect x="'+(-bw/2)+'" y="'+(-bh)+'" width="'+bw+'" height="'+bh+'" rx="3" fill="#cfe2f3" stroke="#0e2a47" stroke-width="1.4"/>'+
+     '<text x="0" y="'+(-bh/2+5)+'" text-anchor="middle" font-size="12" font-family="Georgia, serif">'+plain(f.m||'m')+' kg</text></g>';
+  s+=line(cxp,cyp-bh/2,cxp,cyp+52,{stroke:'#b3261e',w:1.9,arrow:true});
+  s+=txt(cxp+6,cyp+46,'mg',{fill:'#b3261e',bold:true,italic:true});
+  var Vi=[x0+base,y0], Hi=[x0,y0], Ti=[top[0],top[1]];
+  s+=angArc(Vi,Hi,Ti,42,'#0f6cbf');
+  s+=angLabel(Vi,Hi,Ti,58,f.ang+'\u00B0','#0f6cbf');
+  return s+'</svg>';
+},
+/* ---- gráfica velocidad-tiempo ---- */
+vtgraph:function(f){
+  var W=300,H=210, ox=44,oy=170, w=228,h=142;
+  var v0=parseFloat(f.v0)||0, a=parseFloat(f.a)||0, T=parseFloat(f.t)||1;
+  var vf=v0+a*T, vmax=Math.max(vf,v0)*1.15||1;
+  var X=function(t){return ox+w*t/T;}, Y=function(v){return oy-h*v/vmax;};
+  var s=svgOpen(W,H);
+  for(var i=1;i<=4;i++){ s+=line(ox,Y(vmax*i/4),ox+w,Y(vmax*i/4),{stroke:'#e9ecef',w:1}); }
+  s+=line(ox,oy,ox+w+8,oy,{stroke:'#5b6b7a',w:1.4,arrow:true})+line(ox,oy,ox,oy-h-14,{stroke:'#5b6b7a',w:1.4,arrow:true});
+  s+=txt(ox+w+2,oy+18,'t (s)',{size:11,fill:'#5b6b7a',anchor:'end'})+txt(6,oy-h-4,'v (m/s)',{size:11,fill:'#5b6b7a'});
+  s+='<polygon points="'+X(0)+','+Y(0)+' '+X(0)+','+Y(v0)+' '+X(T)+','+Y(vf)+' '+X(T)+','+Y(0)+'" fill="rgba(15,108,191,.12)"/>';
+  s+=line(X(0),Y(v0),X(T),Y(vf),{stroke:'#0f6cbf',w:2.2});
+  s+=line(X(T),oy,X(T),Y(vf),{stroke:'#adb5bd',w:1,dash:true});
+  s+=txt(ox-6,Y(v0)+4,String(v0),{size:11,anchor:'end',fill:'#b3261e'});
+  s+=txt(ox-6,Y(vf)+4,plain(vf),{size:11,anchor:'end',fill:'#0f6cbf'});
+  s+=txt(X(T),oy+16,String(T),{size:11,anchor:'middle'});
+  s+=txt(X(T/2)-10,Y(vf/2)-10,'\u00e1rea = d',{size:11,fill:'#0f6cbf'});
+  return s+'</svg>';
+},
+/* ---- estructuras de Lewis / geometría ---- */
+lewis:function(f){
+  var m=(f.mol||'').toUpperCase(), s=svgOpen(260,160);
+  function atom(x,y,l,c){return '<circle cx="'+x+'" cy="'+y+'" r="17" fill="'+(c||'#eef3f7')+'" stroke="#0e2a47" stroke-width="1.3"/>'+
+    '<text x="'+x+'" y="'+(y+5)+'" text-anchor="middle" font-size="14" font-weight="700" font-family="Georgia, serif">'+l+'</text>';}
+  function pair(x,y,ang){var r=25,dx=Math.cos(ang)*r,dy=-Math.sin(ang)*r,px=-Math.sin(ang)*4,py=-Math.cos(ang)*4;
+    return '<circle cx="'+(x+dx+px)+'" cy="'+(y+dy+py)+'" r="2.4" fill="#b3261e"/><circle cx="'+(x+dx-px)+'" cy="'+(y+dy-py)+'" r="2.4" fill="#b3261e"/>';}
+  if(m==='H2O'){ s+=line(70,95,112,72,{w:1.6})+line(190,95,148,72,{w:1.6});
+    s+=atom(130,62,'O','#cfe2f3')+atom(62,100,'H')+atom(198,100,'H');
+    s+=pair(130,62,Math.PI*0.62)+pair(130,62,Math.PI*0.38);
+    s+=txt(130,145,'Angular \u2248 104,5\u00b0',{anchor:'middle',size:12,fill:'#5b6b7a'}); }
+  else if(m==='CO2'){ s+=line(62,80,102,80,{w:1.5})+line(62,90,102,90,{w:1.5})+line(158,80,198,80,{w:1.5})+line(158,90,198,90,{w:1.5});
+    s+=atom(130,85,'C','#cfe2f3')+atom(48,85,'O')+atom(212,85,'O');
+    s+=txt(130,140,'Lineal 180\u00b0',{anchor:'middle',size:12,fill:'#5b6b7a'}); }
+  else if(m==='NH3'){ s+=line(130,70,80,110,{w:1.6})+line(130,70,180,110,{w:1.6})+line(130,70,130,120,{w:1.6});
+    s+=atom(130,62,'N','#cfe2f3')+atom(70,118,'H')+atom(190,118,'H')+atom(130,128,'H');
+    s+=pair(130,62,Math.PI/2);
+    s+=txt(130,152,'Piramidal trigonal',{anchor:'middle',size:12,fill:'#5b6b7a'}); }
+  else if(m==='CH4'){ s+=line(130,80,80,44,{w:1.6})+line(130,80,180,44,{w:1.6})+line(130,80,80,116,{w:1.6})+line(130,80,180,116,{w:1.6});
+    s+=atom(130,80,'C','#cfe2f3')+atom(70,38,'H')+atom(190,38,'H')+atom(70,122,'H')+atom(190,122,'H');
+    s+=txt(130,152,'Tetra\u00e9drica 109,5\u00b0',{anchor:'middle',size:12,fill:'#5b6b7a'}); }
+  else if(m==='BF3'){ s+=line(130,80,130,36,{w:1.6})+line(130,80,88,116,{w:1.6})+line(130,80,172,116,{w:1.6});
+    s+=atom(130,80,'B','#cfe2f3')+atom(130,30,'F')+atom(80,122,'F')+atom(180,122,'F');
+    s+=txt(130,152,'Trigonal plana 120\u00b0',{anchor:'middle',size:12,fill:'#5b6b7a'}); }
+  else if(m==='HCL'){ s+=line(96,85,140,85,{w:1.6});
+    s+=atom(80,85,'H')+atom(156,85,'Cl','#cfe2f3');
+    s+=pair(156,85,0)+pair(156,85,Math.PI/2)+pair(156,85,-Math.PI/2);
+    s+=txt(130,145,'Covalente polar',{anchor:'middle',size:12,fill:'#5b6b7a'}); }
+  else { s+=atom(130,80,m||'?','#cfe2f3'); }
+  return s+'</svg>';
+},
+/* ---- mini tabla periódica ---- */
+ptable:function(f){
+  var cw=15,ch=13,ox=8,oy=20, s=svgOpen(18*cw+16,7*ch+34);
+  for(var p=1;p<=7;p++){
+    for(var g=1;g<=18;g++){
+      var skip=(p===1&&g>1&&g<18)||((p===2||p===3)&&g>2&&g<13);
+      if(skip) continue;
+      var on=(g===f.g&&p===f.p);
+      s+='<rect x="'+(ox+(g-1)*cw)+'" y="'+(oy+(p-1)*ch)+'" width="'+(cw-1.5)+'" height="'+(ch-1.5)+'" fill="'+(on?'#b3261e':'#e9eef3')+'" stroke="#c7d0d8" stroke-width=".6" rx="1.5"/>';
+    }
+  }
+  for(var g2=1;g2<=18;g2+=1){ if(g2===1||g2===2||g2>=13||g2===8) s+=txt(ox+(g2-1)*cw+cw/2-0.7,14,String(g2),{size:7,anchor:'middle',fill:'#5b6b7a'}); }
+  s+=txt(ox,7*ch+32,'Grupo '+f.g+' \u00b7 Periodo '+f.p,{size:11,bold:true,fill:'#b3261e'});
+  return s+'</svg>';
+}
+};
+function figHtml(f){
+  if(!f||!f.type||!FIGR[f.type]) return '';
+  try { return '<div class="figure">'+FIGR[f.type](f)+'</div>'; } catch(e){ return ''; }
+}
+
+/* =====================================================================
+   MINI-MARKDOWN para la sección Aprende
+   ===================================================================== */
+function inlineMd(s){
+  return String(s).split(/(\$\$[^$]*\$\$|\$[^$]*\$)/g).map(function(p){
+    if(p.charAt(0)==='$') return tex(p);
+    return escH(p)
+      .replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>')
+      .replace(/(^|[^*])\*([^*]+)\*/g,'$1<i>$2</i>')
+      .replace(/`([^`]+)`/g,'<code>$1</code>');
+  }).join('');
+}
+function md(src){
+  var lines=String(src).split('\n'), out='', i=0;
+  function flushPara(buf){ if(buf.length) out+='<p>'+inlineMd(buf.join(' '))+'</p>'; }
+  var para=[];
+  while(i<lines.length){
+    var L=lines[i];
+    if(/^\s*$/.test(L)){ flushPara(para); para=[]; i++; continue; }
+    if(/^####\s+/.test(L)){ flushPara(para); para=[]; out+='<h4>'+inlineMd(L.replace(/^####\s+/,''))+'</h4>'; i++; continue; }
+    if(/^###\s+/.test(L)){ flushPara(para); para=[]; out+='<h3>'+inlineMd(L.replace(/^###\s+/,''))+'</h3>'; i++; continue; }
+    if(/^##\s+/.test(L)){ flushPara(para); para=[]; out+='<h2>'+inlineMd(L.replace(/^##\s+/,''))+'</h2>'; i++; continue; }
+    if(/^---\s*$/.test(L)){ flushPara(para); para=[]; out+='<hr>'; i++; continue; }
+    if(/^>\s?/.test(L)){ flushPara(para); para=[]; var q=[];
+      while(i<lines.length && /^>\s?/.test(lines[i])){ q.push(lines[i].replace(/^>\s?/,'')); i++; }
+      out+='<blockquote>'+inlineMd(q.join(' '))+'</blockquote>'; continue; }
+    if(/^\|/.test(L)){ flushPara(para); para=[]; var rows=[];
+      while(i<lines.length && /^\|/.test(lines[i])){ rows.push(lines[i]); i++; }
+      var cells=rows.map(function(r){ return r.replace(/^\|/,'').replace(/\|\s*$/,'').split('|').map(function(c){return c.trim();}); })
+        .filter(function(r){ return !r.every(function(c){return /^:?-{2,}:?$/.test(c);}); });
+      out+='<table><thead><tr>'+cells[0].map(function(c){return '<th>'+inlineMd(c)+'</th>';}).join('')+'</tr></thead><tbody>'+
+        cells.slice(1).map(function(r){return '<tr>'+r.map(function(c){return '<td>'+inlineMd(c)+'</td>';}).join('')+'</tr>';}).join('')+'</tbody></table>';
+      continue; }
+    if(/^-\s+/.test(L)){ flushPara(para); para=[]; var li=[];
+      while(i<lines.length && /^-\s+/.test(lines[i])){ li.push(lines[i].replace(/^-\s+/,'')); i++; }
+      out+='<ul>'+li.map(function(x){return '<li>'+inlineMd(x)+'</li>';}).join('')+'</ul>'; continue; }
+    if(/^\d+\.\s+/.test(L)){ flushPara(para); para=[]; var lo=[];
+      while(i<lines.length && /^\d+\.\s+/.test(lines[i])){ lo.push(lines[i].replace(/^\d+\.\s+/,'')); i++; }
+      out+='<ol>'+lo.map(function(x){return '<li>'+inlineMd(x)+'</li>';}).join('')+'</ol>'; continue; }
+    para.push(L); i++;
+  }
+  flushPara(para);
+  return out;
+}
+
+/* =====================================================================
+   APLICACIÓN  ·  Simulador EPN 2026-B
+   ===================================================================== */
+
+/* ---------- teoría desde bloque de texto plano ---------- */
+(function(){
+  var elT = document.getElementById('theorysrc'); var raw = elT ? elT.textContent : (window.THEORY_RAW || '');
+  var out = [], cur = null;
+  raw.split('\n').forEach(function(line){
+    var m = /^@@CHAPTER (.+)$/.exec(line);
+    if(m){ var p = m[1].split('|'); cur = {s:p[0], id:p[1], ic:p[2], t:p[3], body:''}; out.push(cur); }
+    else if(cur){ cur.body += line + '\n'; }
+  });
+  out.forEach(function(c){ c.body = c.body.replace(/\s+$/,''); });
+  window.THEORY = out;
+})();
+var BANK = window.BANK, THEORY = window.THEORY;
+
+/* ---------- markdown → HTML (mejorado) ---------- */
+function inlineMd(s){
+  var math = [];
+  var txt = String(s).replace(/(\$\$[^$]*\$\$|\$[^$]*\$)/g, function(m){ math.push(m); return '\u0000'+(math.length-1)+'\u0000'; });
+  txt = escH(txt)
+    .replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>')
+    .replace(/(^|[^*\w])\*([^*]+)\*/g,'$1<i>$2</i>')
+    .replace(/`([^`]+)`/g,'<code>$1</code>')
+    .replace(/&lt;br\s*\/?&gt;/g,'<br>')
+    .replace(/--&gt;|\u2013&gt;/g,'\u2192');
+  return txt.replace(/\u0000(\d+)\u0000/g, function(_,i){ return tex(math[+i]); });
+}
+function slugId(t){ return 'h-'+String(t).toLowerCase().replace(/[^a-z0-9\u00e0-\u00ff]+/g,'-').replace(/^-|-$/g,''); }
+function quoteClass(t){
+  var s = t.toLowerCase();
+  if(s.indexOf('analog')>=0 || s.indexOf('truco')>=0 || s.indexOf('regla')>=0 || s.indexOf('idea clave')>=0) return ' class="tip"';
+  if(s.indexOf('error')>=0 || s.indexOf('cuidado')>=0 || s.indexOf('ojo')>=0 || s.indexOf('trampa')>=0) return ' class="warn"';
+  return '';
+}
+function md(src){
+  var lines = String(src).split('\n'), out = '', i = 0, para = [];
+  function flush(){ if(para.length){ out += '<p>'+inlineMd(para.join(' '))+'</p>'; para = []; } }
+  while(i < lines.length){
+    var L = lines[i];
+    if(/^\s*$/.test(L)){ flush(); i++; continue; }
+    var h = /^(#{2,4})\s+(.*)$/.exec(L);
+    if(h){ flush(); var lvl = h[1].length, txt = h[2];
+      out += '<h'+lvl+(lvl<=3?' id="'+slugId(txt)+'"':'')+'>'+inlineMd(txt)+'</h'+lvl+'>'; i++; continue; }
+    if(/^---\s*$/.test(L)){ flush(); out += '<hr>'; i++; continue; }
+    if(/^>\s?/.test(L)){ flush(); var q = [];
+      while(i < lines.length && /^>\s?/.test(lines[i])){ q.push(lines[i].replace(/^>\s?/,'')); i++; }
+      var body = q.join(' ');
+      out += '<blockquote'+quoteClass(body)+'>'+inlineMd(body)+'</blockquote>'; continue; }
+    if(/^\|/.test(L)){ flush(); var rows = [];
+      while(i < lines.length && /^\|/.test(lines[i])){ rows.push(lines[i]); i++; }
+      var cells = rows.map(function(r){ return r.replace(/^\|/,'').replace(/\|\s*$/,'').split('|').map(function(c){return c.trim();}); })
+        .filter(function(r){ return !r.every(function(c){ return /^:?-{2,}:?$/.test(c); }); });
+      out += '<table><thead><tr>'+cells[0].map(function(c){return '<th>'+inlineMd(c)+'</th>';}).join('')+'</tr></thead><tbody>'+
+        cells.slice(1).map(function(r){return '<tr>'+r.map(function(c){return '<td>'+inlineMd(c)+'</td>';}).join('')+'</tr>';}).join('')+'</tbody></table>';
+      continue; }
+    if(/^[-*]\s+/.test(L)){ flush(); var li = [];
+      while(i < lines.length && /^[-*]\s+/.test(lines[i])){ li.push(lines[i].replace(/^[-*]\s+/,'')); i++; }
+      out += '<ul>'+li.map(function(x){return '<li>'+inlineMd(x)+'</li>';}).join('')+'</ul>'; continue; }
+    if(/^\d+[.)]\s+/.test(L)){ flush(); var lo = [];
+      while(i < lines.length && /^\d+[.)]\s+/.test(lines[i])){ lo.push(lines[i].replace(/^\d+[.)]\s+/,'')); i++; }
+      out += '<ol>'+lo.map(function(x){return '<li>'+inlineMd(x)+'</li>';}).join('')+'</ol>'; continue; }
+    para.push(L); i++;
+  }
+  flush();
+  return out;
+}
+function chapterToc(body){
+  var items = [];
+  String(body).split('\n').forEach(function(L){
+    var h = /^##\s+(.*)$/.exec(L);
+    if(h) items.push(h[1]);
+  });
+  if(items.length < 3) return '';
+  return '<div class="toc"><b>En este cap\u00edtulo</b><ol>'+items.map(function(t){
+    return '<li><a data-act="anchor" data-id="'+slugId(t)+'">'+escH(t.replace(/^\d+\.\s*/,''))+'</a></li>';
+  }).join('')+'</ol></div>';
+}
+
+/* ---------- configuración y almacenamiento ---------- */
+var CFG_KEY='epn_cfg_v3', HIST_KEY='epn_hist_v1', SEEN_KEY='epn_seen_v1', UI_KEY='epn_ui_v1';
+var DEFAULT_CFG = {minutes:30, count:9, mixMinutes:90, mixCount:20, level:'medio', noRepeat:true,
+  shuffleOptions:true, shuffleQuestions:true, showFeedback:true, student:'AYALA PABON ETHAN FARID'};
+function load(key, def){ try{ var v = JSON.parse(localStorage.getItem(key)); return v==null? def : v; }catch(e){ return def; } }
+function save(key, val){ try{ localStorage.setItem(key, JSON.stringify(val)); }catch(e){} }
+var cfg = Object.assign({}, DEFAULT_CFG, load(CFG_KEY, {}));
+var HIST = load(HIST_KEY, []);
+var SEEN = load(SEEN_KEY, {mat:[],fis:[],qui:[],len:[]});
+var UI = load(UI_KEY, {drawer:true});
+function saveCfg(){ save(CFG_KEY, cfg); }
+function saveHist(){ save(HIST_KEY, HIST); }
+function saveSeen(){ save(SEEN_KEY, SEEN); }
+function saveUI(){ save(UI_KEY, UI); }
+var SEENSET = {};
+['mat','trig','fis','qui','len'].forEach(function(k){ SEEN[k] = SEEN[k]||[]; SEENSET[k] = {}; SEEN[k].forEach(function(i){ SEENSET[k][i]=1; }); });
+
+var LEVELS = [{k:'facil',n:'F\u00e1cil',c:'f1'},{k:'medio',n:'Intermedio',c:'f2'},{k:'dificil',n:'Dif\u00edcil',c:'f3'},{k:'experto',n:'Experto',c:'f4'},{k:'todos',n:'Mezclado',c:'f0'}];
+function levelName(k){ for(var i=0;i<LEVELS.length;i++) if(LEVELS[i].k===k) return LEVELS[i].n; return k; }
+
+var S = { view:'home', course:'mat', attempt:null, modal:null, tick:null, onePage:null, chapter:null, scrollTop:true, histTab:'all', toast:null, viewingRecord:null };
+
+var COURSES = {
+  trig:{key:'trig',name:'Identidades Trigonométricas',short:'Trigonometría Especial',full:'Taller Especializado: Identidades Trigonométricas',color:'#7b2cbf',icon:'📐',
+       desc:'Práctica enfocada en identidades pitagóricas, recíprocas, de cociente, simplificación de expresiones y ecuaciones.',
+       prev:'Examen Lenguaje EPN 2026-B',next:'Simulacro completo EPN 2026-B'},
+  mat:{key:'mat',name:'Matem\u00e1ticas',short:'Matem\u00e1tica',full:'Examen Matem\u00e1ticas EPN 2026-B',color:'#f7a1c4',icon:'\u2713',
+       desc:'Fundamentos de \u00e1lgebra, ecuaciones e inecuaciones, geometr\u00eda plana y trigonometr\u00eda.',
+       prev:'Lineamientos para la admisi\u00f3n 2026-B',next:'Examen F\u00edsica EPN 2026-B'},
+  fis:{key:'fis',name:'F\u00edsica',short:'F\u00edsica',full:'Examen F\u00edsica EPN 2026-B',color:'#8fc7e8',icon:'\u2699',
+       desc:'Inercia y movimiento, leyes de Newton, energ\u00eda, trabajo y potencia.',
+       prev:'Examen Matem\u00e1ticas EPN 2026-B',next:'Examen Qu\u00edmica EPN 2026-B'},
+  qui:{key:'qui',name:'Qu\u00edmica',short:'Qu\u00edmica',full:'Examen Qu\u00edmica EPN 2026-B',color:'#a8d5a2',icon:'\u2697',
+       desc:'Estructura at\u00f3mica, tabla peri\u00f3dica y nomenclatura, enlace qu\u00edmico y estequiometr\u00eda.',
+       prev:'Examen F\u00edsica EPN 2026-B',next:'Examen Lenguaje EPN 2026-B'},
+  len:{key:'len',name:'Lenguaje',short:'Lenguaje',full:'Examen Lenguaje EPN 2026-B',color:'#f3c778',icon:'\u270e',
+       desc:'Pensamiento l\u00f3gico, lectura e interpretaci\u00f3n de textos y comunicaci\u00f3n escrita.',
+       prev:'Examen Qu\u00edmica EPN 2026-B',next:'Simulacro completo EPN 2026-B'},
+  mix:{key:'mix',name:'Simulacro completo',short:'Simulacro',full:'Simulacro completo EPN 2026-B',color:'#0e2a47',icon:'\u2605',
+       desc:'Las cuatro \u00e1reas mezcladas en un solo intento cronometrado, como el examen real.',
+       prev:'Examen Lenguaje EPN 2026-B',next:'Estad\u00edsticas de progreso'}
+};
+var CKEYS = ['mat','trig','fis','qui','len','mix'];
+var SUBJ = ['mat','trig','fis','qui','len'];
+SUBJ.forEach(function(k){ BANK[k].forEach(function(q,i){ q.__s=k; q.__i=i; }); });
+function bankOf(k){ return k==='mix' ? BANK.mat.concat(BANK.fis,BANK.qui,BANK.len) : (BANK[k]||[]); }
+
+function freshPool(k){
+  var pool = levelPool(k);
+  if(!cfg.noRepeat) return {pool:pool, reset:false};
+  var fresh = pool.filter(function(q){ return !SEENSET[k][q.__i]; });
+  return {pool:fresh, reset:false, all:pool};
+}
+function countFor(k){ return k==='mix'? cfg.mixCount : cfg.count; }
+function minutesFor(k){ return k==='mix'? cfg.mixMinutes : cfg.minutes; }
+
+/* ---------- utilidades ---------- */
+function el(id){return document.getElementById(id);}
+function shuffle(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function n2(n){return (n<10?'0':'')+n;}
+function fmtNum(x){return x.toFixed(2).replace('.',',');}
+var DIAS=['domingo','lunes','martes','mi\u00e9rcoles','jueves','viernes','s\u00e1bado'];
+var MESES=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+function fmtFecha(d){d=new Date(d);return DIAS[d.getDay()]+', '+d.getDate()+' de '+MESES[d.getMonth()]+' de '+d.getFullYear()+', '+d.getHours()+':'+n2(d.getMinutes());}
+function fmtCorta(d){d=new Date(d);return d.getDate()+'/'+n2(d.getMonth()+1)+'/'+d.getFullYear()+' '+d.getHours()+':'+n2(d.getMinutes());}
+function fmtDur(ms){var s=Math.max(0,Math.round(ms/1000));var m=Math.floor(s/60);s=s%60;var out='';if(m>0)out+=m+' min ';return out+s+' s';}
+function clock(ms){var s=Math.max(0,Math.floor(ms/1000));var h=Math.floor(s/3600),m=Math.floor((s%3600)/60);s=s%60;return n2(h)+':'+n2(m)+':'+n2(s);}
+var LETTERS=['a','b','c','d','e','f'];
+function gradeCls(p){ return p>=70?'g-ok':(p>=50?'g-mid':'g-bad'); }
+
+function pickSpread(pool, n){
+  var by={}; pool.forEach(function(q){ (by[q.t]=by[q.t]||[]).push(q); });
+  var topics=shuffle(Object.keys(by)).map(function(t){return shuffle(by[t]);});
+  var picked=[], i=0, guard=0;
+  while(picked.length<n && guard++<800){
+    var moved=false;
+    for(var k=0;k<topics.length && picked.length<n;k++){ if(topics[k][i]){ picked.push(topics[k][i]); moved=true; } }
+    i++; if(!moved) break;
+  }
+  return picked;
+}
+
+/* ---------- Anti-Overfitting & Concept Generalization Engine ---------- */
+function levelPool(k){ return cfg.level==='todos'? BANK[k].slice() : BANK[k].filter(function(q){return q.d===cfg.level;}); }
+
+function pickForSubject(k, want, notes){
+  var subjBank = BANK[k] || [];
+  if(!subjBank.length) return [];
+
+  // Primary pool by difficulty
+  var primaryPool = cfg.level === 'todos' ? subjBank.slice() : subjBank.filter(function(q){ return q.d === cfg.level; });
+  
+  // 1. Unseen questions from primary level
+  var fresh = primaryPool.filter(function(q){ return !SEENSET[k][q.__i]; });
+  
+  if(fresh.length >= want){
+    return pickSpread(fresh, want);
+  }
+
+  // 2. If fresh in primary level is insufficient, expand to unseen questions in adjacent levels (Anti-Overfitting)
+  var picked = pickSpread(fresh, fresh.length);
+  var needed = want - picked.length;
+  
+  var otherLevels = ['medio', 'facil', 'dificil', 'experto'].filter(function(l){ return l !== cfg.level; });
+  var secondaryPool = [];
+  otherLevels.forEach(function(lvl){
+    subjBank.filter(function(q){ return q.d === lvl && !SEENSET[k][q.__i]; }).forEach(function(q){
+      secondaryPool.push(q);
+    });
+  });
+
+  if(secondaryPool.length > 0 && needed > 0){
+    var secondaryPicked = pickSpread(secondaryPool, needed);
+    picked = picked.concat(secondaryPicked);
+    notes.push('Para evitar la memorización repetitiva (overfitting), se combinaron preguntas no vistas del nivel ' + levelName(cfg.level) + ' con niveles complementarios.');
+  }
+
+  // 3. If total unseen questions in subject is still less than want, reset subject seen history
+  if(picked.length < want){
+    subjBank.forEach(function(q){ delete SEENSET[k][q.__i]; });
+    SEEN[k] = [];
+    saveSeen();
+    notes.push('¡Has completado el banco entero de ' + COURSES[k].short + '! Se reinició el ciclo de preguntas vistas con nuevo orden aleatorio.');
+    
+    var remainingNeeded = want - picked.length;
+    var recycled = pickSpread(primaryPool.length ? primaryPool : subjBank, remainingNeeded);
+    picked = picked.concat(recycled);
+  }
+
+  return picked.slice(0, want);
+}
+/* ---------- plan del próximo intento ---------- */
+var PLAN_KEY = 'epn_plan_v1';
+var PLAN = load(PLAN_KEY, {}) || {};
+function savePlan(){ save(PLAN_KEY, PLAN); }
+function planKey(k){ return k+'|'+cfg.level+'|'+countFor(k); }
+function makePlan(k){
+  var notes = [], picked = [];
+  if(k==='mix'){
+    var n = countFor(k), per = Math.floor(n/4), extra = n - per*4;
+    SUBJ.forEach(function(x,ix){ picked = picked.concat(pickForSubject(x, per + (ix<extra?1:0), notes)); });
+  } else { picked = pickForSubject(k, countFor(k), notes); }
+  picked = shuffle(picked);
+  PLAN[planKey(k)] = {ts:Date.now(), ids:picked.map(function(q){ return {s:q.__s, i:q.__i}; })};
+  savePlan();
+  return notes;
+}
+function planQuestions(k){
+  var p = PLAN[planKey(k)];
+  if(!p || !p.ids || !p.ids.length) return null;
+  var out = p.ids.map(function(x){ return (BANK[x.s]||[])[x.i]; });
+  return out.every(function(q){ return !!q; })? out : null;
+}
+function clearPlan(k){ delete PLAN[planKey(k)]; savePlan(); }
+function planBox(k){
+  var qs = planQuestions(k);
+  if(!qs){
+    return '<div class="planbox"><b>Preguntas del próximo intento</b>'+
+      '<div class="hint">Se eligen automáticamente al empezar, repartidas entre todos los temas y sin repetir ninguna que ya hayas visto. Si prefieres, puedes barajarlas ahora y ver de antemano cómo quedan distribuidas.</div>'+
+      '<div style="margin-top:8px"><button class="btn sec" data-act="reshuffle" data-c="'+k+'">\u21bb Barajar preguntas del próximo simulador</button></div></div>';
+  }
+  var by = {};
+  qs.forEach(function(q){ var key = (k==='mix'? COURSES[q.__s].short+' · ':'')+q.t; by[key]=(by[key]||0)+1; });
+  var chips = Object.keys(by).sort().map(function(t){ return '<span class="chip light">'+escH(t)+': <b>'+by[t]+'</b></span>'; }).join('');
+  var nuevas = qs.filter(function(q){ return !SEENSET[q.__s][q.__i]; }).length;
+  return '<div class="planbox"><b>Preguntas del próximo intento (ya barajadas)</b>'+
+    '<div class="hint">'+qs.length+' preguntas · '+nuevas+' que nunca te han salido · nivel '+levelName(cfg.level)+'</div>'+
+    '<div class="chips">'+chips+'</div>'+
+    '<div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn sec" data-act="reshuffle" data-c="'+k+'">\u21bb Volver a barajar</button>'+
+    '<button class="btn ghost" data-act="clearplan" data-c="'+k+'">Quitar selección</button></div></div>';
+}
+function buildAttempt(courseKey){
+  var n = countFor(courseKey), picked = [], notes = [];
+  var planned = planQuestions(courseKey);
+  if(planned && planned.length){
+    picked = planned.slice(0,n);
+    clearPlan(courseKey);
+    notes.push('Se usaron las preguntas que barajaste previamente.');
+  } else if(courseKey==='mix'){
+    var per = Math.floor(n/4), extra = n - per*4;
+    SUBJ.forEach(function(k,ix){ picked = picked.concat(pickForSubject(k, per + (ix<extra?1:0), notes)); });
+  } else {
+    picked = pickForSubject(courseKey, n, notes);
+  }
+  picked = (cfg.shuffleQuestions? shuffle(picked) : picked).slice(0,n);
+  var qs = picked.map(function(q){
+    var order = q.o.map(function(_,ix){return ix;});
+    if(cfg.shuffleOptions) order = shuffle(order);
+    return {src:q, order:order, subj:q.__s};
+  });
+  if(notes.length) S.toast = notes.join(' ');
+  return {course:courseKey, level:cfg.level, qs:qs, ans:qs.map(function(){return null;}), flags:qs.map(function(){return false;}),
+          cur:0, start:new Date(), end:null, finished:false, limitMs:minutesFor(courseKey)*60000, historic:false};
+}
+function attemptFromRecord(r){
+  var qs = r.qs.map(function(x){
+    var src = BANK[x.k][x.i];
+    return {src:src, order:src.o.map(function(_,ix){return ix;}), subj:x.k};
+  });
+  return {course:r.course, level:r.level, qs:qs, ans:r.qs.map(function(x){ return x.sel==null? null : x.sel; }),
+          flags:qs.map(function(){return false;}), cur:0, start:new Date(r.ts), end:new Date(r.ts + r.durMs),
+          finished:true, limitMs:r.min*60000, historic:true, recId:r.id};
+}
+
+/* ---------- CHROME ---------- */
+function navbar(active){
+  return '<div class="navbar">'+
+    '<div class="brand" data-act="home"><div class="shield">EPN</div><div class="btxt"><span class="l1"><b>EPN</b><i>en l\u00ednea</i></span><span class="sub">AULA VIRTUAL VINCULACI\u00d3N</span></div></div>'+
+    '<div class="navlinks">'+
+      '<a data-act="home" class="'+(active==='home'?'active':'')+'">P\u00e1gina Principal</a>'+
+      '<a data-act="learn" class="'+(active==='learn'?'active':'')+'">Aprende</a>'+
+      '<a data-act="stats" class="'+(active==='stats'?'active':'')+'">Estad\u00edsticas</a>'+
+      '<a data-act="history" class="'+(active==='history'?'active':'')+'">Historial</a>'+
+    '</div>'+
+    '<div class="navright">'+
+      '<button class="icon-btn" data-act="cfg" title="Configuraci\u00f3n">\u2699</button>'+
+      '<button class="icon-btn" title="Notificaciones">\uD83D\uDD14</button>'+
+      '<div class="avatar">'+escH((cfg.student||'A').trim().charAt(0))+'</div>'+
+    '</div>'+
+  '</div>';
+}
+function drawer(active){
+  if(!UI.drawer) return '';
+  var items = CKEYS.map(function(k){
+    return '<li><a class="'+(active==='quiz'&&S.course===k?'active':'')+'" data-act="course" data-c="'+k+'">'+COURSES[k].full+'</a></li>';
+  }).join('');
+  return '<div class="drawer"><button class="closex" data-act="toggledrawer" title="Ocultar men\u00fa">\u2715</button>'+
+    '<h6>\u25be General</h6><ul>'+
+    '<li><a class="'+(active==='learn'?'active':'')+'" data-act="learn">Aprende (teor\u00eda)</a></li>'+
+    '<li><a class="'+(active==='stats'?'active':'')+'" data-act="stats">Estad\u00edsticas</a></li>'+
+    '<li><a class="'+(active==='history'?'active':'')+'" data-act="history">Historial de intentos</a></li>'+
+    items+
+    '</ul></div>';
+}
+function drawerBtn(){ return UI.drawer? '' : '<button class="drawerbtn" data-act="toggledrawer">\u2630 Men\u00fa</button>'; }
+function sitefooter(){
+  return '<div class="sitefooter">'+
+    '<div><b>Cont\u00e1ctanos</b><div>\u260E \u2709</div></div>'+
+    '<div class="mid"><span class="contactbtn">\u2295 Contactar con el soporte del sitio</span>'+
+    '<div>Usted se ha identificado como '+escH(cfg.student)+' (<a>Cerrar sesi\u00f3n</a>)</div></div>'+
+    '<div style="width:120px"></div></div>';
+}
+function pagehead(title, crumbs, ck){
+  var c = COURSES[ck||S.course];
+  return '<div class="pagehead">'+
+    '<div class="actv-icon" style="background:'+c.color+'">'+c.icon+'</div>'+
+    '<h1 class="title">'+title+'</h1>'+
+    '<div class="crumbs">'+crumbs+'</div>'+
+    '<button class="closepage" data-act="home">\u2715</button></div>';
+}
+function toastHtml(){ return S.toast? '<div class="alertbox">'+escH(S.toast)+'</div>' : ''; }
+function actnav(){
+  var c = COURSES[S.course];
+  return '<div class="actnav"><div class="side"><span class="lbl">\u2039 Actividad previa</span><br><a>'+(c.prev||'\u2014')+'</a></div>'+
+    '<div><select><option>Ir a\u2026</option><option>Gu\u00eda de Estudio</option><option>Avisos</option></select></div>'+
+    '<div class="side r"><span class="lbl">Siguiente actividad \u203a</span><br><a class="next">'+(c.next||'\u2014')+'</a></div></div>';
+}
+
+/* ---------- bloque de navegación ---------- */
+function isCorrect(ix){
+  var a = S.attempt, q = a.qs[ix];
+  return a.ans[ix]!==null && q.order[a.ans[ix]] === q.src.a;
+}
+function navButtons(mode){
+  var a = S.attempt, c = COURSES[a.course];
+  var btns = a.qs.map(function(q,ix){
+    var cls = 'qnbutton';
+    if(mode==='review'){ cls += isCorrect(ix)?' correct':(a.ans[ix]!==null?' incorrect':''); }
+    else { if(a.ans[ix]!==null) cls += ' answered'; if(ix===a.cur && S.view==='attempt') cls += ' current'; }
+    if(a.flags[ix]) cls += ' flagged';
+    return '<button class="'+cls+'" data-act="goto" data-i="'+ix+'"><span class="num">'+(ix+1)+'</span><span class="bar"></span></button>';
+  }).join('');
+  return '<div class="block">'+
+    '<h5>Navegaci\u00f3n por el cuestionario</h5>'+
+    '<div class="user"><div class="av">'+escH((cfg.student||'A').trim().charAt(0))+'</div><div class="uname">'+escH(cfg.student)+'</div></div>'+
+    '<div class="quizname">'+c.name+'</div>'+
+    '<div class="qnbuttons">'+btns+'</div>'+
+    (mode==='review'
+      ? '<a class="blocklink" data-act="showall">Mostrar '+(S.onePage==null?'una p\u00e1gina cada vez':'todas las preguntas')+'</a><a class="blocklink" data-act="finishreview">Finalizar revisi\u00f3n</a>'
+      : '<a class="blocklink" data-act="summary">Terminar intento...</a>')+
+    '</div>';
+}
+function navBlock(mode){ return '<div class="rightblock">'+navButtons(mode)+'</div>'; }
+
+/* ---------- pregunta ---------- */
+/* ---------- respaldo del progreso ---------- */
+function progressSnapshot(){
+  return {app:'Simulador EPN 2026-B', v:5, exported:new Date().toISOString(),
+          cfg:cfg, hist:HIST, seen:SEEN, ui:UI};
+}
+function exportProgress(){
+  try{
+    var txt = JSON.stringify(progressSnapshot(), null, 1);
+    var blob = new Blob([txt], {type:'application/json'});
+    var url = URL.createObjectURL(blob), a = document.createElement('a');
+    var d = new Date(), st = d.getFullYear()+'-'+('0'+(d.getMonth()+1)).slice(-2)+'-'+('0'+d.getDate()).slice(-2);
+    a.href = url; a.download = 'progreso-epn-'+st+'.json';
+    document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(url); a.remove(); }, 500);
+    S.toast = 'Progreso exportado. Guarda ese archivo .json y vuelve a importarlo cuando actualices la aplicación.';
+  }catch(e){ S.toast = 'No se pudo exportar: '+e.message; }
+  S.modal = null; render();
+}
+function importProgress(text){
+  var data;
+  try{ data = JSON.parse(text); }catch(e){ S.toast = 'El archivo no es un JSON válido.'; render(); return; }
+  if(!data || (!data.hist && !data.seen && !data.cfg)){ S.toast = 'El archivo no contiene datos de progreso del simulador.'; render(); return; }
+  var nuevos = 0, ids = {};
+  HIST.forEach(function(r){ ids[r.id] = 1; });
+  (data.hist||[]).forEach(function(r){ if(r && r.id && !ids[r.id]){ HIST.push(r); ids[r.id]=1; nuevos++; } });
+  HIST.sort(function(a,b){ return a.ts-b.ts; });
+  var vistas = 0;
+  SUBJ.forEach(function(k){
+    var add = (data.seen && data.seen[k]) || [];
+    add.forEach(function(i){ if(!SEENSET[k][i]){ SEENSET[k][i]=1; SEEN[k].push(i); vistas++; } });
+  });
+  if(data.cfg) { Object.keys(DEFAULT_CFG).forEach(function(k){ if(data.cfg[k]!==undefined) cfg[k]=data.cfg[k]; }); }
+  if(data.ui && data.ui.read){ UI.read = Object.assign({}, UI.read||{}, data.ui.read); }
+  saveHist(); saveSeen(); saveCfg(); saveUI();
+  S.modal = null;
+  S.toast = 'Progreso importado: '+nuevos+' intento(s) nuevos y '+vistas+' pregunta(s) vistas añadidas. Tu configuración también se restauró.';
+  render();
+}
+/* ---------- explicaciones paso a paso ---------- */
+var METHODS = [
+ /* ---- MATEMATICA ---- */
+ {k:'mat', re:/valor de la expresión/i, h:'Jerarquía',
+  st:['**Reconoce la operacion:** es una evaluacion numerica, asi que solo se aplica la jerarquia de operaciones.',
+      '**Resuelve primero los parentesis** (de adentro hacia afuera) y las barras de valor absoluto.',
+      '**Luego las potencias y raices**, recordando que $(-a)^{2}$ es positivo pero $-a^{2}$ es negativo.',
+      '**Despues multiplicaciones y divisiones** de izquierda a derecha.',
+      '**Al final sumas y restas**, cuidando la regla de signos: dos signos iguales suman, dos distintos restan.']},
+ {k:'mat', re:/Al efectuar .*frac|\bfrac\{/i, t:'Fundamentos', h:'Fracciones',
+  st:['**Identifica que es una operacion con fracciones** (racionales).',
+      '**Si hay suma o resta:** saca el minimo comun denominador (mcm de los denominadores) y convierte cada fraccion.',
+      '**Si hay multiplicacion:** multiplica numerador por numerador y denominador por denominador; **si hay division:** multiplica por el reciproco.',
+      '**En fracciones compuestas** (fraccion sobre fraccion) resuelve arriba y abajo por separado y luego divide.',
+      '**Simplifica** dividiendo numerador y denominador por su MCD hasta dejar la fraccion irreducible.']},
+ {k:'mat', re:/notación científica/i, h:'Reales',
+  st:['**Multiplica (o divide) por separado** los coeficientes y las potencias de $10$.',
+      '**Suma los exponentes** al multiplicar y restalos al dividir: $10^{a}\cdot10^{b}=10^{a+b}$.',
+      '**Normaliza el resultado**: el coeficiente debe quedar entre $1$ y $10$; si te pasas, corre la coma y ajusta el exponente.']},
+ {k:'mat', re:/es igual a:|simplificada/i, t:'Fundamentos', h:'exponentes',
+  st:['**Detecta las leyes de exponentes** que intervienen.',
+      '**Misma base:** al multiplicar se suman exponentes ($a^{m}a^{n}=a^{m+n}$) y al dividir se restan ($a^{m}/a^{n}=a^{m-n}$).',
+      '**Potencia de potencia:** se multiplican los exponentes, $(a^{m})^{n}=a^{mn}$.',
+      '**Exponente negativo** significa reciproco: $a^{-n}=1/a^{n}$; y todo numero (no nulo) elevado a $0$ vale $1$.',
+      '**Si hay sumas de potencias**, factoriza la potencia mas pequena en lugar de intentar sumar exponentes.']},
+ {k:'mat', re:/racionalizar/i, h:'Radicales',
+  st:['**Identifica el radical del denominador**: hay que eliminarlo sin cambiar el valor de la expresion.',
+      '**Si el denominador es $\sqrt{a}$**, multiplica numerador y denominador por $\sqrt{a}$.',
+      '**Si es un binomio $a+\sqrt{b}$**, multiplica por su **conjugado** $a-\sqrt{b}$ para usar $(x+y)(x-y)=x^{2}-y^{2}$.',
+      '**Opera y simplifica** el resultado; el denominador queda sin raices.']},
+ {k:'mat', re:/El desarrollo de/i, h:'Productos notables',
+  st:['**Reconoce el producto notable** antes de multiplicar termino a termino.',
+      '**Binomio al cuadrado:** $(a\pm b)^{2}=a^{2}\pm 2ab+b^{2}$. El error tipico es olvidar el doble producto $2ab$.',
+      '**Suma por diferencia:** $(a+b)(a-b)=a^{2}-b^{2}$.',
+      '**Binomios con termino comun:** $(x+a)(x+b)=x^{2}+(a+b)x+ab$.',
+      '**Verifica** el signo y el grado de cada termino del resultado.']},
+ {k:'mat', re:/factorización/i, h:'Factorizaci',
+  st:['**Recorre el menu de factorizacion en orden:** factor comun, diferencia de cuadrados, trinomio cuadrado perfecto, trinomio general, agrupacion.',
+      '**Diferencia de cuadrados:** $a^{2}-b^{2}=(a+b)(a-b)$.',
+      '**Trinomio $x^{2}+bx+c$:** busca dos numeros que **multiplicados den $c$ y sumados den $b$**.',
+      '**Trinomio $ax^{2}+bx+c$:** usa el método del aspa o multiplica y divide por $a$.',
+      '**Comprueba** multiplicando los factores: debes recuperar la expresion original.']},
+ {k:'mat', re:/residuo de dividir/i, h:'residuo',
+  st:['**Reconoce el teorema del residuo:** al dividir $P(x)$ entre $(x-c)$ el residuo es $P(c)$.',
+      '**Despeja el valor de $c$** del divisor: en $(x-3)$ es $c=3$; en $(x+3)$ es $c=-3$.',
+      '**Evalua $P(c)$** sustituyendo con cuidado los signos de las potencias.',
+      '**Interpreta:** si el residuo es $0$, el divisor es factor de $P(x)$ (teorema del factor).']},
+ {k:'mat', re:/la expresión .*\{x/i, t:'Fundamentos', h:'Expresiones algebraicas',
+  st:['**Factoriza numerador y denominador** por separado.',
+      '**Cancela los factores comunes** (solo factores, nunca sumandos sueltos).',
+      '**Indica las restricciones**: los valores que anulan el denominador original quedan excluidos.']},
+ {k:'mat', re:/solución de la ecuación/i, t:'Ecuaciones', h:'primer grado',
+  st:['**Quita denominadores** multiplicando toda la ecuacion por el mcm.',
+      '**Elimina parentesis** aplicando la propiedad distributiva.',
+      '**Agrupa:** las $x$ a un lado y los numeros al otro, cambiando de signo al pasar.',
+      '**Reduce terminos semejantes** y **despeja** dividiendo por el coeficiente de $x$.',
+      '**Verifica** sustituyendo el valor obtenido en la ecuacion original.']},
+ {k:'mat', re:/En el sistema|cuestan \$/i, h:'Sistemas',
+  st:['**Traduce el enunciado a dos ecuaciones** definiendo claramente las incognitas (por ejemplo $x$ = precio de un esfero).',
+      '**Elige método:** sustitucion si una variable esta despejada, **eliminacion** si los coeficientes se pueden igualar, o igualacion.',
+      '**Elimina una variable** multiplicando una ecuacion por el numero adecuado y sumando o restando.',
+      '**Halla la primera incognita** y sustituyela en cualquier ecuacion para obtener la segunda.',
+      '**Comprueba** que el par $(x,y)$ satisface **las dos** ecuaciones.']},
+ {k:'mat', re:/discriminante/i, h:'segundo grado',
+  st:['**Escribe la ecuacion en la forma $ax^{2}+bx+c=0$** e identifica $a$, $b$ y $c$ con sus signos.',
+      '**Aplica $\Delta=b^{2}-4ac$**, cuidando que $b^{2}$ siempre es positivo.',
+      '**Interpreta:** $\Delta>0$ dos raices reales distintas, $\Delta=0$ una raiz doble, $\Delta<0$ sin solución real.']},
+ {k:'mat', re:/raíces de|soluciones de la ecuación \$x\^/i, h:'segundo grado',
+  st:['**Ordena la ecuacion** como $ax^{2}+bx+c=0$.',
+      '**Intenta factorizar primero** (dos numeros que sumen $b$ y multipliquen $c$ si $a=1$): es mas rapido que la formula.',
+      '**Si no factoriza, usa la formula** $x=\dfrac{-b\pm\sqrt{b^{2}-4ac}}{2a}$.',
+      '**Recuerda Vieta** para verificar o para preguntas de suma y producto: $x_{1}+x_{2}=-b/a$ y $x_{1}x_{2}=c/a$.',
+      '**Verifica** sustituyendo al menos una raiz.']},
+ {k:'mat', re:/conjunto solución de la inecuación \$\|x|conjunto solución de la ecuación \$\|x/i, h:'Valor absoluto',
+  st:['**Recuerda el significado:** $|x-a|$ es la distancia entre $x$ y $a$.',
+      '**Ecuacion $|u|=k$ (con $k\ge0$):** se abre en dos casos, $u=k$ y $u=-k$.',
+      '**Desigualdad $|u|<k$:** equivale a la doble desigualdad $-k<u<k$ (un solo intervalo).',
+      '**Desigualdad $|u|>k$:** equivale a $u<-k$ **o** $u>k$ (dos rayos separados).',
+      '**Despeja $x$** en cada caso y escribe la solución en notacion de intervalos.']},
+ {k:'mat', re:/conjunto solución de \$x\^/i, h:'Inecuaciones',
+  st:['**Pasa todo a un lado** para dejar la forma $ax^{2}+bx+c<0$ (o $>0$).',
+      '**Halla las raices** del trinomio: son los puntos que dividen la recta real.',
+      '**Arma la tabla de signos** evaluando un punto de cada intervalo.',
+      '**Selecciona los intervalos** con el signo pedido; usa corchetes solo si la desigualdad no es estricta.']},
+ {k:'mat', re:/conjunto solución de/i, h:'Inecuaciones',
+  st:['**Trata la inecuacion como una ecuacion** para despejar $x$.',
+      '**Regla de oro:** al multiplicar o dividir por un numero **negativo** se **invierte** el sentido de la desigualdad.',
+      '**Escribe el resultado como intervalo** y ubicalo en la recta real para comprobar.']},
+ {k:'mat', re:/transversal|paralelas/i, h:'paralelas',
+  st:['**Ubica el tipo de par de angulos:** correspondientes, alternos internos, alternos externos o conjugados.',
+      '**Aplica la regla:** correspondientes y alternos son **iguales**; conjugados (colaterales) son **suplementarios** (suman $180^{\circ}$).',
+      '**Usa tambien** angulos opuestos por el vertice (iguales) y el par lineal (suman $180^{\circ}$).',
+      '**Plantea la ecuacion** con esa relacion y despeja el angulo pedido.']},
+ {k:'mat', re:/congruentes/i, h:'Congruencia',
+  st:['**Recuerda los criterios validos:** LLL, LAL, ALA, LAA y (en rectangulos) hipotenusa-cateto.',
+      '**Verifica que el angulo este entre los lados** en el caso LAL: si no lo esta, no sirve.',
+      '**Descarta LLA**: dos lados y un angulo no comprendido **no** es criterio de congruencia.',
+      '**Concluye** que los elementos correspondientes restantes tambien son congruentes.']},
+ {k:'mat', re:/semejantes/i, h:'Semejanza',
+  st:['**Comprueba la semejanza** por AA (dos angulos iguales), LAL o LLL proporcional.',
+      '**Escribe la proporcion** entre lados **homologos** (los que se oponen a angulos iguales).',
+      '**Halla la razon $k$** y multiplica o divide segun corresponda.',
+      '**Recuerda:** los perimetros van en razon $k$, pero las **areas van en razon $k^{2}$**.']},
+ {k:'mat', re:/triángulo rectángulo/i, t:'Geometr', h:'Pitágoras',
+  st:['**Identifica hipotenusa y catetos** (la hipotenusa siempre se opone al angulo recto).',
+      '**Aplica $a^{2}+b^{2}=c^{2}$**, despejando el lado desconocido.',
+      '**Reconoce ternas conocidas** (3-4-5, 5-12-13, 8-15-17) para ahorrar tiempo.',
+      '**Revisa las unidades y que la hipotenusa sea el lado mayor.**']},
+ {k:'mat', re:/distancia entre los puntos/i, h:'recta',
+  st:['**Anota las coordenadas** $A(x_{1},y_{1})$ y $B(x_{2},y_{2})$.',
+      '**Aplica $d=\sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}$** (es Pitagoras en el plano).',
+      '**Eleva al cuadrado antes de sumar**: las diferencias negativas se vuelven positivas.',
+      '**Simplifica el radical** si se puede.']},
+ {k:'mat', re:/punto medio/i, h:'recta',
+  st:['**Usa la formula del punto medio:** $M=\left(\dfrac{x_{1}+x_{2}}{2},\dfrac{y_{1}+y_{2}}{2}\right)$.',
+      '**Promedia cada coordenada por separado**, no las mezcles.',
+      '**Comprueba** que $M$ quede entre los dos puntos.']},
+ {k:'mat', re:/pendiente de la recta|ecuación de la recta/i, h:'recta',
+  st:['**Pendiente:** $m=\dfrac{y_{2}-y_{1}}{x_{2}-x_{1}}$ (cuidado con el orden y los signos).',
+      '**Con un punto y la pendiente** usa la forma punto-pendiente $y-y_{1}=m(x-x_{1})$.',
+      '**Ordena** a la forma pedida (explicita $y=mx+b$ o general $Ax+By+C=0$).',
+      '**Recuerda:** rectas paralelas tienen igual $m$; perpendiculares cumplen $m_{1}m_{2}=-1$.']},
+ {k:'mat', re:/circunferencia/i, h:'circunferencia',
+  st:['**Forma canonica:** $(x-h)^{2}+(y-k)^{2}=r^{2}$, con centro $(h,k)$ y radio $r$.',
+      '**Ojo con los signos:** $(x+3)^{2}$ significa $h=-3$.',
+      '**Si la ecuacion esta en forma general**, completa cuadrados en $x$ y en $y$: suma a ambos lados el cuadrado de la mitad del coeficiente lineal.',
+      '**Lee centro y radio** de la forma canonica ($r=\sqrt{\text{lado derecho}}$).']},
+ {k:'mat', re:/valor exacto/i, h:'razones',
+  st:['**Ubica el angulo de referencia** y el cuadrante del angulo dado.',
+      '**Determina el signo** con la regla CAST: en I todas positivas, en II solo seno y cosecante, en III tangente y cotangente, en IV coseno y secante.',
+      '**Usa la tabla de valores exactos** de $30^{\circ}$, $45^{\circ}$ y $60^{\circ}$.',
+      '**Combina signo y valor** para dar la respuesta.']},
+ {k:'mat', re:/cateto opuesto|razones trigonom/i, h:'razones',
+  st:['**Escribe las definiciones:** $\sin=\frac{co}{h}$, $\cos=\frac{ca}{h}$, $\tan=\frac{co}{ca}$; y sus reciprocas $\csc$, $\sec$, $\cot$.',
+      '**Identifica en la figura** cual lado es opuesto, cual adyacente y cual la hipotenusa respecto del angulo dado.',
+      '**Si falta un lado, usa Pitagoras** antes de calcular la razon.',
+      '**Simplifica y racionaliza** si el resultado queda con raiz en el denominador.']},
+ {k:'mat', re:/para todo valor admisible/i, h:'Identidades',
+  st:['**Convierte todo a senos y cosenos**: es la estrategia que casi siempre funciona.',
+      '**Aplica las identidades pitagoricas:** $\sin^{2}x+\cos^{2}x=1$, $1+\tan^{2}x=\sec^{2}x$, $1+\cot^{2}x=\csc^{2}x$.',
+      '**Usa las de doble angulo** si aparece $2x$: $\sin 2x=2\sin x\cos x$, $\cos 2x=\cos^{2}x-\sin^{2}x$.',
+      '**Simplifica la fraccion** y compara con las opciones.']},
+ {k:'mat', re:/ley de senos|\bA = |dos lados miden/i, t:'Trigonometr', h:'Ley de senos',
+  st:['**Decide que ley usar:** con dos angulos y un lado (AAL/ALA) o dos lados y un angulo opuesto (LLA) va la **ley de senos**; con dos lados y el angulo comprendido (LAL) o tres lados (LLL) va la **ley de cosenos**.',
+      '**Ley de senos:** $\dfrac{a}{\sin A}=\dfrac{b}{\sin B}=\dfrac{c}{\sin C}$.',
+      '**Ley de cosenos:** $c^{2}=a^{2}+b^{2}-2ab\cos C$.',
+      '**Recuerda** que los angulos del triangulo suman $180^{\circ}$ para hallar el que falte.',
+      '**Sustituye y despeja** el elemento pedido.']},
+
+ /* ---- FISICA ---- */
+ {k:'fis', re:/primera ley|inercia|velocidad constante|equilibrio|reposo de una cuerda|letrero/i, h:'Primera ley',
+  st:['**Pregunta clave: hay aceleracion?** Si el cuerpo esta en reposo o va con velocidad constante, la fuerza neta es **cero**.',
+      '**Dibuja el diagrama de cuerpo libre** con todas las fuerzas que actuan sobre el cuerpo.',
+      '**Plantea el equilibrio** por componentes: $\sum F_{x}=0$ y $\sum F_{y}=0$.',
+      '**Despeja la fuerza pedida** (tension, normal, peso).',
+      '**Recuerda:** la inercia se mide por la **masa**, no por el peso.']},
+ {k:'fis', re:/hacia el este|hacia el norte|perpendiculares|forman entre sí un ángulo/i, h:'Vectores',
+  st:['**Distingue distancia de desplazamiento:** la distancia suma trayectos, el desplazamiento es el vector del inicio al final.',
+      '**Descompone cada vector** en componentes $x$ e $y$ ($F_{x}=F\cos\theta$, $F_{y}=F\sin\theta$).',
+      '**Suma componentes** por separado.',
+      '**Halla la magnitud** con $R=\sqrt{R_{x}^{2}+R_{y}^{2}}$ y la direccion con $\tan\theta=R_{y}/R_{x}$.',
+      '**Si son perpendiculares**, basta Pitagoras.']},
+ {k:'fis', re:/acelera|velocidad inicial|móvil/i, h:'Cinem',
+  st:['**Lista los datos** ($v_{0}$, $v$, $a$, $t$, $d$) y marca cual te piden.',
+      '**Elige la ecuacion del MRUA** que use solo lo que tienes: $v=v_{0}+at$, $d=v_{0}t+\frac{1}{2}at^{2}$, $v^{2}=v_{0}^{2}+2ad$.',
+      '**Cuida los signos:** si el cuerpo frena, la aceleracion es negativa.',
+      '**Sustituye con unidades del SI** y despeja.']},
+ {k:'fis', re:/cae libremente|se suelta desde el reposo|proyectil/i, h:'Caida',
+  st:['**En caida libre** la aceleracion es $g\approx 9{,}8\ \mathrm{m/s^{2}}$ y no depende de la masa.',
+      '**Desde el reposo:** $v=gt$ y $h=\frac{1}{2}gt^{2}$.',
+      '**En proyectiles separa los ejes:** en $x$ el movimiento es uniforme ($x=v_{0x}t$) y en $y$ es caida libre.',
+      '**En el punto mas alto** la velocidad vertical es cero, pero la horizontal se mantiene.',
+      '**El tiempo es el puente** entre ambos ejes.']},
+ {k:'fis', re:/fuerza neta de|actúa una fuerza|aceleración de/i, h:'Segunda ley',
+  st:['**Aplica la segunda ley:** $F_{neta}=ma$, siempre con la **fuerza neta** (suma vectorial), no una fuerza aislada.',
+      '**Despeja lo pedido:** $a=F/m$, $m=F/a$ o $F=ma$.',
+      '**Si hay rozamiento**, restalo: $F_{neta}=F_{aplicada}-\mu N$.',
+      '**Verifica unidades:** $1\ \mathrm{N}=1\ \mathrm{kg\cdot m/s^{2}}$.']},
+ {k:'fis', re:/rozamiento|fricción|coeficiente/i, h:'Rozamiento',
+  st:['**Calcula la normal:** en horizontal $N=mg$; en un plano inclinado $N=mg\cos\theta$.',
+      '**Halla el rozamiento:** $f=\mu N$.',
+      '**Plantea la segunda ley** en la direccion del movimiento restando el rozamiento.',
+      '**Recuerda:** el rozamiento estatico maximo es mayor que el cinetico y siempre se opone al movimiento.']},
+ {k:'fis', re:/plano inclinado/i, h:'inclinado',
+  st:['**Gira los ejes:** pon el eje $x$ paralelo al plano.',
+      '**Descompone el peso:** componente que empuja $mg\sin\theta$ y componente perpendicular $mg\cos\theta$.',
+      '**La normal vale $N=mg\cos\theta$** (no $mg$).',
+      '**Aplica $\sum F=ma$** a lo largo del plano, restando el rozamiento si lo hay.']},
+ {k:'fis', re:/distancia entre dos masas|gravitacional|esferas de/i, h:'Gravitaci',
+  st:['**Usa la ley de gravitacion:** $F=G\dfrac{m_{1}m_{2}}{r^{2}}$.',
+      '**Es inversa al cuadrado:** si la distancia se duplica, la fuerza cae a la **cuarta parte**; si se triplica, a la novena.',
+      '**La fuerza es proporcional a las masas:** duplicar una masa duplica la fuerza.',
+      '**Sustituye con $G=6{,}67\times10^{-11}$** en unidades del SI.']},
+ {k:'fis', re:/tercera ley|acción|reacción|caballo|cohete|caminas/i, h:'Tercera ley',
+  st:['**Enuncia la tercera ley:** a toda accion corresponde una reaccion igual en magnitud y opuesta en direccion.',
+      '**Clave:** el par accion-reaccion actua sobre **cuerpos distintos**, por eso nunca se cancela entre si.',
+      '**Identifica los dos cuerpos** que interactuan y nombra la pareja de fuerzas.',
+      '**Para saber si hay movimiento**, analiza solo las fuerzas sobre **un** cuerpo.']},
+ {k:'fis', re:/circunferencia de radio|circular uniforme|centrípeta/i, h:'circular',
+  st:['**En el MCU la rapidez es constante pero la velocidad cambia de direccion**, por eso hay aceleracion.',
+      '**Aceleracion centripeta:** $a_{c}=\dfrac{v^{2}}{r}$, dirigida hacia el centro.',
+      '**Fuerza centripeta:** $F_{c}=m\dfrac{v^{2}}{r}$; es el papel que cumple alguna fuerza real (tension, rozamiento, gravedad).',
+      '**Periodo y frecuencia:** $v=\dfrac{2\pi r}{T}$ y $f=1/T$.']},
+ {k:'fis', re:/momento lineal|cantidad de movimiento|impulso|choca/i, h:'Momento',
+  st:['**Momento lineal:** $p=mv$ (vector, con signo segun el sentido).',
+      '**Impulso:** $J=F\Delta t=\Delta p$.',
+      '**En choques se conserva el momento total:** $m_{1}v_{1}+m_{2}v_{2}=(m_{1}+m_{2})v_{f}$ si quedan unidos.',
+      '**Asigna signos opuestos** a cuerpos que se mueven en sentidos contrarios antes de sumar.']},
+ {k:'fis', re:/trabajo de|fuerza horizontal constante|ángulo de .* con la hori/i, h:'Trabajo',
+  st:['**Trabajo:** $W=Fd\cos\theta$, donde $\theta$ es el angulo entre la fuerza y el desplazamiento.',
+      '**Si la fuerza es perpendicular al movimiento, el trabajo es cero** (por eso la normal no trabaja).',
+      '**Suma el trabajo de cada fuerza** para obtener el trabajo neto (el rozamiento aporta trabajo negativo).',
+      '**Unidad:** el julio, $1\ \mathrm{J}=1\ \mathrm{N\cdot m}$.']},
+ {k:'fis', re:/potencia|vatio/i, h:'Potencia',
+  st:['**Potencia es trabajo por unidad de tiempo:** $P=\dfrac{W}{t}$, tambien $P=Fv$.',
+      '**Unidad:** el vatio, $1\ \mathrm{W}=1\ \mathrm{J/s}$.',
+      '**Convierte el tiempo a segundos** antes de dividir.']},
+ {k:'fis', re:/energía cinética|rapidez de un cuerpo se multiplica/i, h:'cinética',
+  st:['**Energia cinetica:** $E_{c}=\frac{1}{2}mv^{2}$.',
+      '**Depende del cuadrado de la rapidez:** si $v$ se duplica, $E_{c}$ se **cuadruplica**; si se triplica, se multiplica por nueve.',
+      '**Teorema trabajo-energia:** el trabajo neto es igual al cambio de energia cinetica, $W_{neto}=\Delta E_{c}$.']},
+ {k:'fis', re:/potencial gravitacional|desde el reposo a .* de altura|péndulo|conserva/i, h:'Conservaci',
+  st:['**Energia potencial gravitatoria:** $E_{p}=mgh$, medida desde el nivel de referencia que elijas.',
+      '**Sin rozamiento la energia mecanica se conserva:** $E_{c1}+E_{p1}=E_{c2}+E_{p2}$.',
+      '**En el punto mas alto** toda la energia es potencial; **en el mas bajo**, cinetica.',
+      '**De ahi sale $v=\sqrt{2gh}$** para una caida desde el reposo.',
+      '**Con rozamiento**, la diferencia de energia se convirtio en calor.']},
+ {k:'fis', re:/renovable|fuente de energ/i, h:'Fuentes',
+  st:['**Renovables:** solar, eolica, hidraulica, geotermica, biomasa y mareomotriz (se reponen naturalmente).',
+      '**No renovables:** carbon, petroleo, gas natural y nuclear de fision (existen en cantidad limitada).',
+      '**Descarta** las opciones que provienen de combustibles fosiles.']},
+
+ /* ---- QUIMICA ---- */
+ {k:'qui', re:/transformar/i, h:'unidades',
+  st:['**Escribe el factor de conversion** como una fraccion que valga 1 (por ejemplo $\frac{1000\ \mathrm{g}}{1\ \mathrm{kg}}$).',
+      '**Coloca la unidad que quieres eliminar abajo** para que se cancele.',
+      '**Multiplica y cancela unidades** hasta que quede la pedida.',
+      '**En unidades cubicas eleva el factor al cubo:** $1\ \mathrm{m^{3}}=10^{6}\ \mathrm{cm^{3}}$.']},
+ {k:'qui', re:/constituye|cambio químico|mezcla|sustancia pura/i, h:'Clasificaci',
+  st:['**Distingue sustancia pura de mezcla:** la pura tiene composicion fija (elemento o compuesto).',
+      '**Mezcla homogenea (disolucion)** se ve uniforme; **heterogenea** deja distinguir sus fases.',
+      '**Cambio fisico:** cambia la forma o el estado, no la identidad. **Cambio quimico:** se forman sustancias nuevas (gas, precipitado, cambio de color, calor).',
+      '**Aplica el criterio** al caso del enunciado.']},
+ {k:'qui', re:/número de protones|isotop|especie \$\^/i, h:'Partículas',
+  st:['**Lee la notacion $^{A}_{Z}X$:** $Z$ es el numero atomico (protones) y $A$ el numero de masa.',
+      '**Neutrones $=A-Z$.**',
+      '**Electrones:** en un atomo neutro son iguales a $Z$; en un ion, resta la carga positiva o suma la negativa.',
+      '**Verifica:** los isotopos tienen igual $Z$ y distinto $A$.']},
+ {k:'qui', re:/configuración electrónica|electrones de valencia/i, h:'electrónica',
+  st:['**Cuenta los electrones** (iguales a $Z$ si el atomo es neutro).',
+      '**Sigue el orden de llenado (Aufbau):** $1s\,2s\,2p\,3s\,3p\,4s\,3d\,4p\dots$',
+      '**Respeta la capacidad:** $s$ hasta 2, $p$ hasta 6, $d$ hasta 10, $f$ hasta 14.',
+      '**Los electrones de valencia** son los del ultimo nivel $n$ (grupo A = numero de valencia).',
+      '**Comprueba** que la suma de superindices sea el total de electrones.']},
+ {k:'qui', re:/se ubica|periodo|grupo/i, h:'tabla',
+  st:['**El periodo es el ultimo nivel $n$** de la configuración.',
+      '**El grupo A** se obtiene de los electrones de valencia ($ns^{x}np^{y}$).',
+      '**El bloque** lo da el ultimo subnivel ocupado ($s$, $p$, $d$ o $f$).',
+      '**Escribe la configuración** y leela como si fuera un mapa de la tabla.']},
+ {k:'qui', re:/radio|energía de ionización|electronegatividad.*periodo|afinidad/i, h:'periódicas',
+  st:['**Memoriza las flechas:** el **radio atomico** crece hacia la izquierda y hacia abajo.',
+      '**Energia de ionizacion, afinidad electronica y electronegatividad** crecen hacia la derecha y hacia arriba (al reves del radio).',
+      '**Razona el porque:** al avanzar en un periodo aumenta la carga nuclear y el atomo se contrae.',
+      '**Aplica la tendencia** a los elementos del enunciado.']},
+ {k:'qui', re:/fórmula del|nombre del compuesto/i, h:'Nomenclatura',
+  st:['**Identifica el tipo de compuesto:** oxido, hidroxido, acido, hidruro o sal.',
+      '**Asigna los numeros de oxidacion** de cada elemento.',
+      '**Cruza las valencias** (el numero de oxidacion de uno pasa como subindice del otro) y simplifica.',
+      '**Nombra segun el sistema:** prefijos griegos (mono-, di-, tri-) o terminaciones -oso/-ico.',
+      '**Verifica que la carga total sea cero.**']},
+ {k:'qui', re:/diferencia de electronegatividad|enlace/i, h:'electronegatividad',
+  st:['**Calcula $\Delta$EN** restando las electronegatividades (mayor menos menor).',
+      '**Clasifica:** $\Delta<0{,}4$ covalente no polar; entre $0{,}4$ y $1{,}7$ covalente polar; $\Delta>1{,}7$ ionico.',
+      '**Comprueba con el tipo de elementos:** metal + no metal suele ser ionico; no metal + no metal, covalente.']},
+ {k:'qui', re:/repulsión de pares|geometría/i, h:'TRPEV',
+  st:['**Dibuja la estructura de Lewis** y cuenta los pares alrededor del atomo central.',
+      '**Cuenta dominios:** enlaces (simples, dobles o triples cuentan como uno) mas pares libres.',
+      '**Asigna la geometria:** 2 dominios lineal, 3 trigonal plana, 4 tetraedrica; con pares libres pasa a angular o piramidal.',
+      '**Recuerda:** los pares libres empujan mas y cierran el angulo.']},
+ {k:'qui', re:/dipolo|puentes de hidrógeno|fuerzas intermoleculares/i, h:'intermoleculares',
+  st:['**Ordena de mas debil a mas fuerte:** dispersion de London < dipolo-dipolo < puente de hidrogeno < ion-dipolo.',
+      '**Hay puente de hidrogeno** solo si el H esta unido a **F, O o N**.',
+      '**Relaciona con las propiedades:** a mayor fuerza intermolecular, mayor punto de ebullicion.']},
+ {k:'qui', re:/masa molar/i, h:'mol',
+  st:['**Escribe la formula** y cuenta los atomos de cada elemento.',
+      '**Multiplica cada masa atomica por su subindice** y suma todo.',
+      '**El resultado se expresa en $\mathrm{g/mol}$.**',
+      '**Verifica** que no hayas olvidado subindices dentro de parentesis.']},
+ {k:'qui', re:/La masa de \$/i, h:'mol',
+  st:['**Relacion clave:** $n=\dfrac{m}{M}$, es decir $m=n\cdot M$.',
+      '**Multiplica los moles por la masa molar** para obtener gramos.',
+      '**Comprueba unidades:** $\mathrm{mol}\times\mathrm{g/mol}=\mathrm{g}$.']},
+ {k:'qui', re:/ecuación balanceada|balance/i, h:'estequiom',
+  st:['**Verifica el balanceo:** debe haber los mismos atomos de cada elemento a cada lado.',
+      '**Lee los coeficientes como moles:** son la receta de la reaccion.',
+      '**Arma la proporcion** entre la sustancia dada y la pedida.',
+      '**Recorre la autopista:** gramos $\to$ moles $\to$ (razon molar) $\to$ moles $\to$ gramos.']},
+ {k:'qui', re:/fórmula empírica/i, h:'empírica',
+  st:['**Calcula la masa de la formula empirica.**',
+      '**Divide la masa molar entre esa masa:** obtienes un numero entero $n$.',
+      '**Multiplica todos los subindices por $n$** para obtener la formula molecular.']},
+ {k:'qui', re:/mol de cualquier sustancia|Avogadro|reactivo limitante|rendimiento/i, h:'mol',
+  st:['**Un mol contiene $6{,}022\times10^{23}$ particulas** (numero de Avogadro) y ocupa $22{,}4\ \mathrm{L}$ si es gas en condiciones normales.',
+      '**Reactivo limitante:** convierte cada reactivo a moles y divide entre su coeficiente; el menor cociente manda.',
+      '**Rendimiento:** $\%=\dfrac{\text{real}}{\text{teorico}}\times100$.']},
+
+ /* ---- LENGUAJE ---- */
+ {k:'len', re:/función del lenguaje|elementos de la comunicaci/i, h:'comunicaci',
+  st:['**Pregunta en que se centra el mensaje:** en el emisor (emotiva), en el receptor (apelativa), en el referente (referencial), en el canal (fatica), en el codigo (metalinguistica) o en la forma (poetica).',
+      '**Busca marcas linguisticas:** imperativos indican apelativa; preguntas de contacto, fatica; datos objetivos, referencial.',
+      '**Descarta** las funciones que no se corresponden con la intencion del ejemplo.']},
+ {k:'len', re:/falacia/i, h:'falacia',
+  st:['**Separa el contenido del razonamiento:** una falacia falla en la conexion, no en el tema.',
+      '**Pregunta que hace el argumento:** ataca a la persona (ad hominem), apela a la mayoria (ad populum), a la autoridad (ad verecundiam), deforma la postura ajena (hombre de paja) o reduce a dos opciones (falsa dicotomia).',
+      '**Compara con el catalogo** y elige la que describe exactamente la maniobra.']},
+ {k:'len', re:/silogismo|premisa|se concluye|todos los|válid/i, h:'lógic',
+  st:['**Identifica premisas y conclusion.**',
+      '**Traduce a simbolos** si hay condicionales: $p\to q$.',
+      '**Aplica las reglas validas:** modus ponens ($p\to q$ y $p$, luego $q$) y modus tollens ($p\to q$ y $\neg q$, luego $\neg p$).',
+      '**Recuerda la equivalencia** con la contrarreciproca $\neg q\to\neg p$; la reciproca y la inversa **no** equivalen.',
+      '**Descarta** afirmar el consecuente y negar el antecedente: son invalidos.']},
+ {k:'len', re:/idea principal|tema del texto|título|texto anterior|según el texto|se infiere|se deduce/i, h:'lectura',
+  st:['**Lee primero la pregunta** y luego el texto buscando esa información.',
+      '**Localiza la oracion tematica** (suele estar al inicio o tras un conector como "sin embargo").',
+      '**Distingue tema (de que trata) de idea principal (que afirma).**',
+      '**En inferencias**, la respuesta debe seguirse del texto sin agregar datos externos.',
+      '**Descarta opciones absolutistas** ("siempre", "nunca") y las que solo repiten palabras del texto.']},
+ {k:'len', re:/conector|sin embargo|por lo tanto/i, h:'Conectores',
+  st:['**Determina la relacion logica** entre las dos ideas: adicion, oposicion, causa, consecuencia o condicion.',
+      '**Elige el conector de esa familia:** oposicion (sin embargo, no obstante), causa (porque, ya que), consecuencia (por lo tanto, en consecuencia).',
+      '**Relee la oracion completa** con el conector puesto para comprobar que suena logica.']},
+ {k:'len', re:/tilde|acentu|palabra/i, h:'Acentuaci',
+  st:['**Separa en silabas** y localiza la silaba tonica.',
+      '**Clasifica:** aguda, grave, esdrujula o sobresdrujula.',
+      '**Aplica la regla:** agudas con tilde si terminan en vocal, $n$ o $s$; graves si **no** terminan asi; esdrujulas y sobresdrujulas **siempre**.',
+      '**Revisa hiatos y tilde diacritica** (el/el, tu/tu, si/si, mas/mas).']},
+ {k:'len', re:/coma|punto y coma|puntuación|signos/i, h:'Puntuaci',
+  st:['**Identifica la funcion del signo:** enumerar, aislar un vocativo, encerrar una aclaracion o separar ideas.',
+      '**Recuerda la prohibicion:** nunca va coma entre sujeto y verbo.',
+      '**Coma tras conectores** como "sin embargo", "por lo tanto", "en consecuencia".',
+      '**Los dos puntos anuncian** enumeracion, cita o explicacion.',
+      '**Lee en voz alta** para confirmar las pausas.']},
+ {k:'len', re:/párrafo|oración tópica|coherencia|cohesión|ordenar/i, h:'párrafo',
+  st:['**Busca la oracion mas general:** esa abre el parrafo.',
+      '**Sigue las marcas de referencia** ("este proceso", "dicha medida") que apuntan a algo ya mencionado.',
+      '**Coloca al final** las oraciones que empiezan con "en conclusion", "por eso" o similares.',
+      '**Comprueba la unidad:** un parrafo, una sola idea central.']},
+ {k:'len', re:/dequeismo|queismo|concordancia|hubieron|correcta/i, h:'Concordancia',
+  st:['**Revisa la concordancia** de sujeto con verbo (numero y persona) y de sustantivo con adjetivo (genero y numero).',
+      '**"Haber" impersonal siempre en singular:** "hubo muchos", nunca "hubieron muchos".',
+      '**Dequeismo:** sobra el "de" ("pienso de que"); **queismo:** falta el "de" ("me alegro que").',
+      '**Prueba sustituyendo** por "eso": si cabe "de eso", va "de que".']},
+ {k:'len', re:/hecho|opinión|juicio de valor|objetiv/i, h:'juicio',
+  st:['**Pregunta si se puede verificar:** si si, es un **hecho**; si no, es opinion o juicio de valor.',
+      '**Detecta adjetivos valorativos** (mejor, injusto, hermoso): senalan valoracion.',
+      '**Un juicio de valor solido** declara su criterio y se apoya en evidencia.']},
+ /* ---- recetas adicionales (cobertura total) ---- */
+ {k:'qui', re:/número de oxidación/i, h:'oxidacion',
+  st:['**Identifica que se pide un numero de oxidacion** dentro de un compuesto o de un ion.',
+      '**Fija los valores conocidos:** el oxigeno vale $-2$ (salvo peroxidos, $-1$), el hidrogeno vale $+1$ (salvo hidruros metalicos, $-1$) y los metales alcalinos $+1$.',
+      '**Plantea la ecuacion de suma:** la suma de todos los numeros de oxidacion es $0$ en un compuesto neutro y es igual a la carga si se trata de un ion.',
+      '**Multiplica cada valor por su subindice** y despeja la incognita del elemento pedido.',
+      '**Comprueba** que el resultado sea razonable para ese elemento (por ejemplo, el Cl llega hasta $+7$ y el Cr hasta $+6$).']},
+ {k:'qui', re:/porcentaje en masa/i, h:'composicion',
+  st:['**Reconoce que es composicion porcentual:** se compara la masa de un elemento con la masa total del compuesto.',
+      '**Calcula la masa del elemento dentro de una mol de compuesto:** masa atomica multiplicada por el numero de atomos de ese elemento en la formula.',
+      '**Toma la masa molar $M$ del compuesto** (viene dada en el enunciado).',
+      '**Aplica la formula:** $\%\,\text{masa} = \dfrac{\text{masa del elemento}}{M} \times 100$.',
+      '**Redondea igual que las opciones** y verifica que la suma de todos los porcentajes del compuesto sea $100\%$.']},
+ {k:'qui', re:/electronegativ|energía de ionización|radio atómico|carácter metálico/i, h:'periodicas',
+  st:['**Reconoce que se pregunta por una propiedad periodica** (electronegatividad, radio, energia de ionizacion o caracter metalico).',
+      '**Ubica los elementos en la tabla:** importa el periodo (fila) y el grupo (columna).',
+      '**Aplica las tendencias:** hacia la derecha y hacia arriba aumentan la electronegatividad y la energia de ionizacion; hacia la izquierda y hacia abajo aumentan el radio y el caracter metalico.',
+      '**Compara los candidatos** siguiendo esas flechas y descarta gases nobles cuando la pregunta trate de electronegatividad.',
+      '**Recuerda el caso extremo:** el fluor es el elemento mas electronegativo y el cesio (entre los estables) el menos.']},
+ {k:'qui', re:/cambio físico|cambio químico|se clasifica como|es un ejemplo de|mezcla|sustancia pura/i, h:'materia',
+  st:['**Decide primero si la pregunta es de clasificacion de la materia o de tipo de cambio.**',
+      '**Para clasificar materia:** sustancia pura si tiene composicion fija (elemento si es un solo tipo de atomo, compuesto si son varios unidos quimicamente); mezcla si se pueden separar sus componentes por medios fisicos.',
+      '**Distingue mezcla homogenea** (una sola fase visible, como el agua de mar) **de heterogenea** (fases distinguibles).',
+      '**Para tipos de cambio:** es fisico si no cambia la identidad de las sustancias (cambios de estado, disolucion) y es quimico si se forman sustancias nuevas (combustion, oxidacion, precipitacion).',
+      '**Justifica con la evidencia del enunciado** antes de elegir la opción.']},
+ {k:'fis', re:/trabajo realizado por (su )?peso|trabajo.*perpendicular|rapidez constante.*trabajo/i, h:'trabajo',
+  st:['**Recuerda la definicion de trabajo:** $W = F\,d\,\cos\theta$, donde $\theta$ es el angulo entre la fuerza y el desplazamiento.',
+      '**Dibuja o imagina el vector fuerza y el vector desplazamiento** del caso descrito.',
+      '**Mira el angulo entre ambos:** si son perpendiculares, $\cos 90^{\circ} = 0$ y el trabajo es nulo aunque la fuerza exista.',
+      '**Interpreta el signo:** trabajo positivo si la fuerza favorece el movimiento y negativo si se opone (como el rozamiento).',
+      '**Relaciona con la energia:** trabajo total nulo significa energia cinetica constante, es decir, rapidez constante.']},
+ {k:'len', re:/ es a .* como /i, h:'analog',
+  st:['**Detecta que es una analogia:** hay que descubrir la relacion del primer par y repetirla en el segundo.',
+      '**Nombra la relacion con una frase corta:** agente y receptor, todo y parte, causa y efecto, objeto e instrumento, genero y especie.',
+      '**Verifica la direccion:** si el primer par va de profesional a persona atendida, el segundo debe ir en el mismo orden.',
+      '**Prueba cada opción en la frase relacion** y descarta las que solo comparten el tema pero no la relacion logica.',
+      '**Elige la unica opción que conserva exactamente el tipo y el sentido de la relacion.**']},
+ {k:'len', re:/acto comunicativo|el emisor|el canal|el receptor|el código|conjunto de circunstancias|contexto/i, h:'comunicac',
+  st:['**Recuerda los elementos del acto comunicativo:** emisor, receptor, mensaje, codigo, canal, contexto y referente.',
+      '**Emisor** es quien produce el mensaje; **receptor** es a quien va dirigido.',
+      '**Canal** es el medio fisico o tecnologico por el que viaja el mensaje (aire, correo electronico, telefono); **codigo** es el sistema de signos (la lengua).',
+      '**Contexto** es el conjunto de circunstancias de lugar, tiempo y situacion que rodean la comunicacion.',
+      '**Lee de nuevo el enunciado subrayando la palabra clave** y asigna cada dato a su elemento antes de responder.']},
+ {k:'len', re:/tema central|el texto se apoya|propósito del (autor|texto)|idea principal/i, h:'lectura',
+  st:['**Distingue tema de idea principal:** el tema se resume en una frase nominal breve, la idea principal es la afirmacion completa que sostiene el autor.',
+      '**Localiza la oracion tematica**, normalmente al inicio o al cierre de cada parrafo.',
+      '**Descarta las opciones demasiado amplias** (abarcan mas de lo que dice el texto) **y las demasiado estrechas** (solo un detalle o un ejemplo).',
+      '**Fijate en los conectores y en los recursos usados** (datos, citas de autoridad, ejemplos, analogias) cuando pregunten en que se apoya el texto.',
+      '**Comprueba que la opción elegida se pueda sostener con evidencia literal del texto.**']},
+ {k:'len', re:/significa que|la analogía|la expresión|constituye|«/i, h:'inferenc',
+  st:['**Reconoce que se pide una inferencia o el sentido figurado** de una expresion, no su significado literal.',
+      '**Relee la frase dentro de su parrafo** para recuperar el contexto inmediato.',
+      '**Traduce la imagen a lenguaje llano:** que idea concreta del texto esta representando esa metafora o analogia.',
+      '**Clasifica el tipo de enunciado cuando se pida:** hecho (verificable), opinion o juicio de valor, hipotesis o ejemplo.',
+      '**Elige la opción que se deduce del texto** y descarta las que anaden información que el autor nunca afirma.']},
+ /* ---- recetas adicionales 2 ---- */
+ {k:'mat', re:/completar cuadrados|centro y el radio|circunferencia de ecuación/i, h:'circunferencia',
+  st:['**Reconoce la ecuacion general de la circunferencia:** $x^{2}+y^{2}+Dx+Ey+F=0$.',
+      '**Agrupa los terminos en $x$ por un lado y los de $y$ por otro**, y pasa el termino independiente a la derecha.',
+      '**Completa cuadrados en cada grupo:** suma y resta el cuadrado de la mitad del coeficiente lineal, es decir $(D/2)^{2}$ y $(E/2)^{2}$.',
+      '**Escribe la forma canonica** $(x-h)^{2}+(y-k)^{2}=r^{2}$: el centro es $(h,k)$ y el radio es la raiz del lado derecho.',
+      '**Cuidado con los signos:** si aparece $(x+3)^{2}$ la coordenada del centro es $-3$; el radio siempre es positivo.']},
+ {k:'mat', t:'Geometr', re:/en la figura|de la figura/i, h:'triangul',
+  st:['**Observa la figura y anota todos los datos marcados:** lados iguales, angulos conocidos, paralelas y rectas que se cortan.',
+      '**Recuerda los teoremas basicos:** los angulos interiores de un triangulo suman $180^{\circ}$, los opuestos por el vertice son iguales y los suplementarios suman $180^{\circ}$.',
+      '**Busca triangulos congruentes o semejantes** (LAL, ALA, LLL para congruencia; AA para semejanza) y traslada los angulos o lados correspondientes.',
+      '**Escribe la ecuacion que relaciona el dato pedido** con los valores conocidos y despeja.',
+      '**Verifica la coherencia geometrica:** ningun angulo negativo ni mayor que $180^{\circ}$, y el resultado debe encajar con la figura.']},
+ {k:'qui', re:/número de moléculas|número de átomos|Avogadro/i, h:'mol',
+  st:['**Identifica el dato de partida** (gramos, moles o numero de particulas) y lo que se pide.',
+      '**Convierte gramos a moles** con $n = m/M$, donde $M$ es la masa molar dada.',
+      '**Pasa de moles a particulas** multiplicando por el numero de Avogadro: $N = n \times 6.022 \times 10^{23}$.',
+      '**Opera con notacion cientifica:** multiplica las mantisas y suma los exponentes.',
+      '**Compara el orden de magnitud con las opciones**: el error tipico es fallar en una potencia de diez.']},
+ {k:'qui', re:/número de moles|cuántos moles|masa molar/i, h:'mol',
+  st:['**Reconoce que es una conversion masa - mol.**',
+      '**Escribe la relacion basica:** $n = m/M$, con $m$ en gramos y $M$ en g/mol.',
+      '**Sustituye los valores del enunciado** respetando las unidades.',
+      '**Divide y redondea** al mismo numero de cifras que las opciones.',
+      '**Comprueba con sentido comun:** si la masa es menor que la masa molar, el resultado debe ser menor que $1$ mol.']},
+ {k:'qui', re:/gas ideal|condiciones normales|volumen molar|ley de conservación|ecuación balanceada|coeficientes/i, h:'estequiometr',
+  st:['**Ubica la ley o la constante que gobierna el problema.**',
+      '**Volumen molar:** un mol de gas ideal ocupa $22.4$ L a $0$ grados Celsius y $1$ atm (condiciones normales).',
+      '**Conservacion de la masa:** los atomos no se crean ni se destruyen, por eso la masa de reactivos es igual a la de productos y la ecuacion debe estar balanceada.',
+      '**Usa los coeficientes estequiometricos como proporcion de moles**, nunca de gramos.',
+      '**Revisa unidades y balance** antes de escoger la opción.']},
+ {k:'qui', re:/fuerza intermolecular|entre moléculas de|puente de hidrógeno|London|dipolo/i, h:'intermolecular',
+  st:['**Determina primero la polaridad de la molecula:** dibuja su geometria y suma los momentos dipolares.',
+      '**Si es apolar** (como el metano o el dioxido de carbono) solo actuan **fuerzas de dispersion de London**.',
+      '**Si es polar sin H unido a N, O o F**, dominan las **interacciones dipolo - dipolo**.',
+      '**Si tiene H unido a N, O o F** (como el agua), predomina el **puente de hidrogeno**, el mas intenso de los tres.',
+      '**Relaciona la fuerza con las propiedades:** a mayor fuerza intermolecular, mayor punto de ebullicion.']},
+ {k:'qui', re:/NO depende de la cantidad de materia|propiedad (intensiva|extensiva)|gases nobles/i, h:'materia',
+  st:['**Clasifica la propiedad:** intensiva si no depende de la cantidad de materia (densidad, temperatura, punto de fusion) y extensiva si depende (masa, volumen, energia).',
+      '**Truco practico:** divide la muestra en dos; lo que no cambia es intensivo.',
+      '**Para estabilidad química:** los gases nobles son poco reactivos porque tienen el ultimo nivel completo con ocho electrones (dos en el helio).',
+      '**Relaciona con la regla del octeto:** los demas elementos reaccionan para alcanzar esa configuración.',
+      '**Descarta las opciones que confunden la causa con la consecuencia.**']},
+ {k:'qui', re:/es un:|es un cambio|es una mezcla|se clasifica|el bronce|dióxido de carbono|fusión del hielo|oxidación de un clavo/i, h:'materia',
+  st:['**Pregunta clave: cambia la identidad de las sustancias?**',
+      '**Si no cambia** (cambios de estado, disolucion, trituracion) el cambio es **fisico**.',
+      '**Si aparecen sustancias nuevas** (oxidacion, combustion, fermentacion) el cambio es **quimico**; suele haber cambio de color, gas, precipitado o energia.',
+      '**Para clasificar materiales:** elemento (un solo tipo de atomo), compuesto (atomos distintos unidos quimicamente) o mezcla (aleaciones como el bronce, separables por medios fisicos).',
+      '**Justifica la eleccion con la evidencia del enunciado.**']},
+ {k:'fis', re:/inercia|se va hacia adelante|frena bruscamente|reposo o en movimiento/i, h:'inercia',
+  st:['**Aplica la primera ley de Newton:** un cuerpo conserva su reposo o su movimiento rectilineo uniforme mientras no actue una fuerza neta.',
+      '**Identifica el sistema de referencia:** el pasajero conserva su velocidad, es el bus el que cambia la suya.',
+      '**Traduce la sensacion a física:** no hay una fuerza que empuje hacia adelante, es la inercia del cuerpo la que mantiene el movimiento.',
+      '**Relaciona la inercia con la masa:** a mayor masa, mayor resistencia al cambio de velocidad.',
+      '**Descarta las opciones que inventan fuerzas** sin un agente que las ejerza.']},
+ {k:'fis', re:/tercera ley|atrae a la Tierra|acción y reacción|par de fuerzas/i, h:'tercera',
+  st:['**Reconoce la tercera ley de Newton:** a toda accion corresponde una reaccion de igual magnitud y sentido contrario.',
+      '**Identifica los dos cuerpos que interactuan** y escribe el par: la fuerza de A sobre B y la de B sobre A.',
+      '**Ambas fuerzas tienen el mismo valor** aunque las masas sean muy distintas.',
+      '**No sumes el par:** actuan sobre cuerpos diferentes, por eso nunca se cancelan entre si.',
+      '**Explica la diferencia de efectos con la segunda ley:** $a = F/m$, la Tierra casi no se acelera por su enorme masa.']},
+ {k:'fis', re:/teorema del trabajo|trabajo y la energía/i, h:'energia',
+  st:['**Enuncia el teorema:** el trabajo neto sobre un cuerpo es igual a la variacion de su energia cinetica.',
+      '**Escribe la energia cinetica inicial y final:** $E_{c} = m v^{2} / 2$.',
+      '**Calcula la diferencia** entre la final y la inicial respetando los signos.',
+      '**Interpreta:** trabajo positivo acelera, trabajo negativo frena y trabajo nulo mantiene la rapidez.',
+      '**Verifica unidades:** el trabajo y la energia se miden en joules.']},
+ {k:'len', re:/propósito principal|la actitud del autor|se puede inferir|tono del texto/i, h:'lectura',
+  st:['**Distingue el nivel de lectura que se pide:** literal, inferencial o critico.',
+      '**Para el proposito:** pregunta para que escribio el autor (informar, persuadir, narrar, instruir) y observa los verbos dominantes.',
+      '**Para la actitud o el tono:** fijate en los adjetivos valorativos y en las expresiones de aprobacion o rechazo.',
+      '**Para inferir:** combina dos o mas datos del texto; la respuesta se deduce, pero no aparece escrita tal cual.',
+      '**Descarta opciones con información externa al texto o con matices exagerados.**']},
+ {k:'len', re:/argumento es sólido|validez y verdad|premisa|falacia|silogismo|razonamiento/i, h:'logic',
+  st:['**Separa la forma del contenido:** la validez depende de la estructura, la verdad depende de los hechos.',
+      '**Un argumento es valido** cuando, si las premisas fueran verdaderas, la conclusion tendria que serlo tambien.',
+      '**Un argumento es solido** cuando ademas de valido tiene todas sus premisas verdaderas.',
+      '**Revisa la estructura:** identifica premisas y conclusion y comprueba si la conclusion se sigue realmente.',
+      '**Detecta falacias frecuentes:** ataque personal, apelacion a la autoridad, generalizacion apresurada, falso dilema y causa falsa.']},
+ {k:'len', re:/ruido en la comunicación|barrera comunicativa|retroalimentación/i, h:'comunicac',
+  st:['**Recuerda el esquema de la comunicacion** y donde encaja cada elemento.',
+      '**El ruido es cualquier interferencia** que distorsiona el mensaje entre el emisor y el receptor.',
+      '**Clasifica el ruido:** fisico (sonidos, mala senal), fisiologico (cansancio), psicologico (prejuicios, distraccion) y semantico (palabras ambiguas).',
+      '**La retroalimentacion es la respuesta del receptor** que permite comprobar si el mensaje se entendio.',
+      '**Elige la opción que describa la interferencia**, no el canal ni el codigo.']},
+ {k:'len', re:/dos puntos|coma|tilde|acentuación|ortograf|mayúscula|punto y coma|uso correcto/i, h:'ortograf',
+  st:['**Identifica la regla que se evalua** (signo de puntuacion, tilde o uso de mayusculas).',
+      '**Dos puntos:** anuncian una enumeracion, una cita textual o una explicacion; nunca van entre el verbo y su complemento directo.',
+      '**Coma:** separa enumeraciones, incisos y vocativos; **punto y coma:** separa oraciones relacionadas o elementos que ya llevan comas.',
+      '**Tildes:** agudas con tilde si terminan en vocal, n o s; graves si NO terminan en esas letras; esdrujulas siempre; y tilde diacritica en monosilabos que se oponen.',
+      '**Lee cada opción en voz alta** y descarta las que rompan la regla revisada.']},
+ {k:'len', re:/la tesis es|texto argumentativo|párrafo|coherencia|cohesión|conector|estructura del texto/i, h:'escrit',
+  st:['**Reconoce el tipo de texto y su estructura:** introduccion, desarrollo y conclusion.',
+      '**La tesis es la idea que el autor defiende** y que debe sostenerse con argumentos y evidencias.',
+      '**Distingue tesis, tema y argumento:** el tema es de que se habla, la tesis es que se afirma y el argumento es por que se sostiene.',
+      '**Coherencia** es la unidad de sentido del texto; **cohesion** es el uso de conectores, pronombres y sinonimos que enlazan las ideas.',
+      '**Elige la opción que define con precision el elemento pedido** y descarta las que confunden dos conceptos cercanos.']},
+ /* ---- respaldo general por materia: ninguna pregunta queda sin guia ---- */
+ {k:'mat', re:/[\s\S]/, h:'',
+  st:['**Lee el enunciado dos veces** y escribe con simbolos los datos y la incognita.',
+      '**Reconoce el tema** (algebra, ecuaciones, geometria o trigonometria) y recuerda la formula clave de ese tema.',
+      '**Plantea la ecuacion o la relacion** que conecta los datos con lo que se pide.',
+      '**Resuelve paso a paso**, cuidando signos, parentesis y unidades.',
+      '**Comprueba el resultado** sustituyendolo en el enunciado y contrastalo con las opciones.']},
+ {k:'fis', re:/[\s\S]/, h:'',
+  st:['**Haz un esquema de la situacion** con el sistema, las fuerzas y el sentido positivo elegido.',
+      '**Anota datos y unidades en el sistema internacional** y escribe la incognita.',
+      '**Elige la ley adecuada:** cinematica, leyes de Newton o conservacion de la energia.',
+      '**Despeja simbolicamente antes de reemplazar numeros** para reducir errores.',
+      '**Revisa magnitud, signo y unidades** del resultado y comprueba que sea fisicamente razonable.']},
+ {k:'qui', re:/[\s\S]/, h:'',
+  st:['**Lee el enunciado e identifica el tema:** estructura atomica, tabla periodica, enlace o estequiometria.',
+      '**Escribe la formula, la configuración o la ecuacion balanceada** segun corresponda.',
+      '**Aplica la relacion clave del tema** (numero de Avogadro, masa molar, regla del octeto o tendencias periodicas).',
+      '**Opera con cuidado las unidades y la notacion cientifica.**',
+      '**Contrasta el resultado con las opciones** y verifica que tenga sentido quimico.']},
+ {k:'len', re:/[\s\S]/, h:'',
+  st:['**Lee el enunciado y el texto completo antes de mirar las opciones.**',
+      '**Subraya las palabras clave** que indican que se pide: tema, proposito, inferencia, elemento comunicativo o regla normativa.',
+      '**Vuelve al texto a buscar la evidencia** que respalde tu respuesta.',
+      '**Descarta por eliminacion:** opciones demasiado amplias, demasiado especificas o con datos que el texto no menciona.',
+      '**Elige la unica opción sostenida por el texto o por la regla estudiada.**']}
+
+];
+function methodFor(src, subj){
+  for(var i=0;i<METHODS.length;i++){
+    var m = METHODS[i];
+    if(m.k && m.k!==subj) continue;
+    if(m.t && String(src.t).indexOf(m.t)<0) continue;
+    if(m.re && !m.re.test(src.q||'')) continue;
+    return m;
+  }
+  return null;
+}
+function theoryTarget(src, subj){
+  var ch = chapterFor(subj==='gen'?'mat':subj, src.t);
+  if(!ch) return null;
+  var m = methodFor(src, subj), hint = (m && m.h) ? [].concat(normWords(m.h)) : [];
+  var heads = [], mm;
+  String(ch.body).split(String.fromCharCode(10)).forEach(function(L){ mm=/^##\s+(.*)$/.exec(L); if(mm) heads.push(mm[1]); });
+  var best = null;
+  if(hint.length){
+    var words = hint.filter(function(w){ return String(w).length>3; });
+    var bs = 0;
+    heads.forEach(function(h){
+      var nh = [].concat(normWords(h)).join(' '), sc = 0;
+      words.forEach(function(w){ if(nh.indexOf(w)>=0) sc++; });
+      if(sc>bs){ bs=sc; best=h; }
+    });
+  }
+  return {id:ch.id, title:ch.t, ic:ch.ic, head:best, anchor: best? slugId(best):''};
+}
+function texStep(t){
+  return tex(String(t)).replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>');
+}
+function explainHtml(ix){
+  var a = S.attempt, Q = a.qs[ix], src = Q.src, subj = Q.subj || (a.course==='mix'? Q.subj : a.course);
+  if(subj==='mix') subj = 'mat';
+  var m = methodFor(src, subj);
+  var steps = (m? m.st.slice() : []);
+  var body = '<div class="solvebox"><div class="solvehead">⚙ Cómo se resuelve, paso a paso</div><ol class="solvesteps">';
+  steps.forEach(function(st){ body += '<li>'+texStep(st)+'</li>'; });
+  if(src.s) body += '<li class="apply"><b>Aplicado a este ejercicio:</b> '+texStep(src.s)+'</li>';
+  body += '<li class="final"><b>Respuesta correcta:</b> '+tex(src.o[src.a])+'</li>';
+  body += '</ol>';
+  var chosen = a.ans[ix];
+  if(chosen!==null && !isCorrect(ix)){
+    body += '<div class="yourans"><b>Tu respuesta fue:</b> '+tex(src.o[Q.order[chosen]])+
+      '. Comparándola con los pasos de arriba, revisa dónde se desvió tu procedimiento (suele ser un signo, una unidad o un paso saltado).</div>';
+  } else if(chosen===null){
+    body += '<div class="yourans">No respondiste esta pregunta. Vuelve a intentarla cubriendo la respuesta y siguiendo los pasos.</div>';
+  }
+  var tt = theoryTarget(src, subj);
+  if(tt){
+    body += '<div class="solvelink"><button class="btn sec" data-act="chapter" data-id="'+tt.id+'" data-h="'+tt.anchor+'">'+
+      tt.ic+' Estudiar la teoría: '+escH(tt.title)+(tt.head? ' › '+escH(tt.head.replace(/^\d+\.\s*/,'')) : '')+'</button></div>';
+  }
+  return body+'</div>';
+}
+function questionHtml(ix, mode){
+  var a = S.attempt, Q = a.qs[ix], src = Q.src;
+  var review = (mode==='review');
+  var correct = isCorrect(ix);
+  var topic = (a.course==='mix'? COURSES[Q.subj].short+' \u00b7 ':'')+src.t;
+  var info = '<div class="info">'+
+    '<h3>Pregunta <span>'+(ix+1)+'</span></h3>'+
+    '<div class="state">'+(review? (a.ans[ix]===null?'Sin responder':(correct?'Correcta':'Incorrecta')) : 'Sin responder a\u00fan')+'</div>'+
+    '<div class="grade">'+(review?('Se punt\u00faa '+fmtNum(correct?1:0)+' sobre '+fmtNum(1)) : 'Se punt\u00faa como '+fmtNum(1))+'</div>'+
+    '<div class="topic">'+escH(topic)+'<br>'+levelName(src.d)+'</div>'+
+    (review? '' : '<button class="flag'+(a.flags[ix]?' on':'')+'" data-act="flag" data-i="'+ix+'">\u2691 <u>'+(a.flags[ix]?'Quitar marca':'Marcar pregunta')+'</u></button>')+
+    '</div>';
+  var body = '';
+  if(src.stem) body += '<div class="stembox">'+tex(src.stem)+'</div>';
+  body += '<div class="qtext">'+tex(src.q)+'</div>';
+  if(src.fig) body += figHtml(src.fig);
+  if(src.q2) body += '<div class="qtext">'+tex(src.q2)+'</div>';
+  body += '<div class="answer">'+Q.order.map(function(origIx, pos){
+    var checked = a.ans[ix]===pos, cls = 'option';
+    if(review){ if(origIx===src.a) cls += ' correctopt'; else if(checked) cls += ' wrongopt'; }
+    return '<label class="'+cls+'">'+
+      '<input type="radio" name="q'+ix+'" '+(checked?'checked':'')+' '+(review?'disabled':'')+' data-act="answer" data-i="'+ix+'" data-p="'+pos+'">'+
+      '<span class="optlabel">'+LETTERS[pos]+'.</span>'+
+      '<span class="opttext">'+tex(src.o[origIx])+'</span></label>';
+  }).join('')+'</div>';
+  if(review && cfg.showFeedback){
+    body += '<div class="feedback">'+
+      (a.ans[ix]===null? '<div class="wrong">No respondi\u00f3 esta pregunta.</div>' : (correct?'<div class="right">Respuesta correcta</div>':'<div class="wrong">Respuesta incorrecta</div>'))+
+      '</div>'+explainHtml(ix);
+  }
+  return '<div class="que">'+info+'<div class="content">'+body+'</div></div>';
+}
+
+/* ---------- estadísticas ---------- */
+function liveHist(){ return HIST.filter(function(r){ return !r.deleted; }); }
+function recPct(r){ return Math.round(r.score/r.n*100); }
+function statsFor(k){
+  var live = liveHist();
+  var rs = k==='all'? live : live.filter(function(r){ return r.course===k; });
+  var totQ=0, totOk=0, totMs=0, byTopic={}, bySubj={};
+  live.forEach(function(r){
+    r.qs.forEach(function(x){
+      if(k!=='all' && k!=='mix' && x.k!==k) return;
+      if(k==='mix' && r.course!=='mix') return;
+      var src = BANK[x.k][x.i]; if(!src) return;
+      var ok = (x.sel===src.a);
+      totQ++; if(ok) totOk++;
+      var tk = COURSES[x.k].short+' \u00b7 '+src.t;
+      byTopic[tk] = byTopic[tk] || {ok:0,n:0}; byTopic[tk].n++; if(ok) byTopic[tk].ok++;
+      bySubj[x.k] = bySubj[x.k] || {ok:0,n:0}; bySubj[x.k].n++; if(ok) bySubj[x.k].ok++;
+    });
+  });
+  rs.forEach(function(r){ totMs += r.durMs; });
+  var pcts = rs.map(recPct);
+  return {attempts:rs.length, totQ:totQ, totOk:totOk, totMs:totMs, byTopic:byTopic, bySubj:bySubj,
+    avg: pcts.length? Math.round(pcts.reduce(function(a,b){return a+b;},0)/pcts.length):0,
+    best: pcts.length? Math.max.apply(null,pcts):0, recs:rs};
+}
+function sparkline(recs){
+  if(recs.length<2) return '';
+  var pts = recs.slice().sort(function(a,b){return a.ts-b.ts;}).map(recPct);
+  var W=640, H=170, pad=30, n=pts.length;
+  var x = function(i){ return pad + (W-2*pad) * (n===1?0.5:i/(n-1)); };
+  var y = function(v){ return H-pad - (H-2*pad) * (v/100); };
+  var line = pts.map(function(v,i){ return (i?'L':'M')+x(i).toFixed(1)+' '+y(v).toFixed(1); }).join(' ');
+  var dots = pts.map(function(v,i){ return '<circle cx="'+x(i).toFixed(1)+'" cy="'+y(v).toFixed(1)+'" r="3.5" fill="#0f6cbf"><title>'+v+'%</title></circle>'; }).join('');
+  var grid = [0,25,50,75,100].map(function(v){ return '<line x1="'+pad+'" y1="'+y(v)+'" x2="'+(W-pad)+'" y2="'+y(v)+'" stroke="#e9ecef"/><text x="'+(pad-6)+'" y="'+(y(v)+4)+'" font-size="10" fill="#8a949c" text-anchor="end">'+v+'</text>'; }).join('');
+  return '<div class="spark"><svg viewBox="0 0 '+W+' '+H+'" width="'+W+'" height="'+H+'">'+grid+
+    '<path d="'+line+'" fill="none" stroke="#0f6cbf" stroke-width="2"/>'+dots+
+    '<text x="'+pad+'" y="'+(H-8)+'" font-size="10" fill="#8a949c">primer intento</text>'+
+    '<text x="'+(W-pad)+'" y="'+(H-8)+'" font-size="10" fill="#8a949c" text-anchor="end">\u00faltimo intento</text>'+
+    '</svg></div>';
+}
+function barChart(items){
+  // items: [{label, pct, n}]
+  if(!items.length) return '';
+  var W=640, rowH=34, H=items.length*rowH+16, lab=118, x0=lab+8, x1=W-56;
+  var rows = items.map(function(it,i){
+    var y = 10+i*rowH, w = (x1-x0)*(it.pct/100);
+    var col = it.pct>=70?'#1f7a3f':(it.pct>=50?'#d9822b':'#b3261e');
+    return '<text x="'+lab+'" y="'+(y+15)+'" font-size="12" fill="#3d4b57" text-anchor="end">'+escH(it.label)+'</text>'+
+      '<rect x="'+x0+'" y="'+(y+3)+'" width="'+(x1-x0)+'" height="15" rx="7" fill="#eef1f4"/>'+
+      '<rect x="'+x0+'" y="'+(y+3)+'" width="'+w.toFixed(1)+'" height="15" rx="7" fill="'+col+'"><title>'+it.pct+'%</title></rect>'+
+      '<text x="'+(x1+8)+'" y="'+(y+15)+'" font-size="12" fill="#3d4b57">'+it.pct+'%</text>'+
+      (it.n!=null? '<text x="'+x0+'" y="'+(y+30)+'" font-size="10" fill="#9aa4ad">'+it.n+' preguntas</text>':'');
+  }).join('');
+  return '<div class="spark"><svg viewBox="0 0 '+W+' '+H+'" width="'+W+'" height="'+H+'">'+rows+'</svg></div>';
+}
+function donut(pct, label){
+  var R=54, C=2*Math.PI*R, on=C*(pct/100);
+  var col = pct>=70?'#1f7a3f':(pct>=50?'#d9822b':'#b3261e');
+  return '<svg viewBox="0 0 140 140" width="140" height="140">'+
+    '<circle cx="70" cy="70" r="'+R+'" fill="none" stroke="#eef1f4" stroke-width="16"/>'+
+    '<circle cx="70" cy="70" r="'+R+'" fill="none" stroke="'+col+'" stroke-width="16" stroke-linecap="round" stroke-dasharray="'+on.toFixed(1)+' '+C.toFixed(1)+'" transform="rotate(-90 70 70)"/>'+
+    '<text x="70" y="72" text-anchor="middle" font-size="26" font-weight="700" fill="#0e2a47">'+pct+'%</text>'+
+    '<text x="70" y="92" text-anchor="middle" font-size="11" fill="#6c757d">'+escH(label)+'</text></svg>';
+}
+function donutRow(){
+  var st = statsFor('all');
+  var cells = SUBJ.map(function(k){
+    var b = st.bySubj[k];
+    var pct = b? Math.round(b.ok/b.n*100) : 0;
+    return '<div style="text-align:center">'+donut(pct, COURSES[k].short)+'<div style="font-size:12px;color:#6c757d">'+(b? b.ok+'/'+b.n+' aciertos':'sin datos')+'</div></div>';
+  }).join('');
+  return '<div class="spark" style="display:flex;gap:10px;justify-content:space-around;flex-wrap:wrap">'+cells+'</div>';
+}
+function coverageHtml(){
+  return '<table class="histtable"><thead><tr><th>Materia</th><th>Preguntas vistas</th><th>Cobertura del banco</th></tr></thead><tbody>'+
+    SUBJ.map(function(k){
+      var seen = SEEN[k].length, tot = BANK[k].length, pct = Math.round(seen/tot*100);
+      return '<tr><td>'+COURSES[k].short+'</td><td>'+seen+' / '+tot+'</td><td>'+pct+'%<div class="covbar"><span style="width:'+pct+'%"></span></div></td></tr>';
+    }).join('')+'</tbody></table>';
+}
+function topicStats(){
+  var map={}, order=[];
+  SUBJ.forEach(function(k){ BANK[k].forEach(function(q){
+    var key=k+'|'+q.t;
+    if(!map[key]){ map[key]={k:k,t:q.t,bank:0,n:0,ok:0,last:null}; order.push(map[key]); }
+    map[key].bank++;
+  }); });
+  liveHist().forEach(function(r){ r.qs.forEach(function(x){
+    var src=BANK[x.k] && BANK[x.k][x.i]; if(!src) return;
+    var e=map[x.k+'|'+src.t]; if(!e) return;
+    e.n++; if(x.sel===src.a) e.ok++;
+    if(!e.last || r.ts>e.last) e.last=r.ts;
+  }); });
+  return order;
+}
+function normWords(s){
+  return String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')
+    .split(/[^a-z0-9]+/).filter(function(w){ return w.length>3 && ['para','como','entre','sobre','desde','cada','todo','todos'].indexOf(w)<0; });
+}
+function chapterFor(k, topic){
+  var chs=THEORY.filter(function(c){ return c.s===k; });
+  if(!chs.length) return THEORY[0];
+  var tw=normWords(topic), best=chs[0], bestScore=-1;
+  chs.forEach(function(c){
+    var title=normWords(c.t), cw=normWords(c.t+' '+c.body.slice(0,900)), sc=0;
+    tw.forEach(function(w){ if(title.indexOf(w)>=0) sc+=3; else if(cw.indexOf(w)>=0) sc+=1; });
+    if(sc>bestScore){ bestScore=sc; best=c; }
+  });
+  return best;
+}
+function masteryState(e){
+  if(!e.n) return {k:'none', label:'Sin practicar', color:'#98a2ab'};
+  var a=e.ok/e.n;
+  if(e.n<4) return {k:'few', label:'Poca practica', color:'#7b8794'};
+  if(a>=0.85) return {k:'ok', label:'Dominado', color:'#1f7a3f'};
+  if(a>=0.6) return {k:'mid', label:'En progreso', color:'#d9822b'};
+  return {k:'bad', label:'Debil', color:'#b3261e'};
+}
+function priorities(){
+  var all=topicStats(), totalBank=SUBJ.reduce(function(s,k){ return s+BANK[k].length; },0);
+  all.forEach(function(e){
+    e.acc = e.n? e.ok/e.n : null;
+    e.weight = e.bank/totalBank;
+    var est = (e.acc==null)? 0.5 : e.acc;
+    var conf = Math.min(1, e.n/6);
+    e.gap = 1-est;
+    e.impact = e.gap * (e.weight*100);
+    e.score = e.impact * (1 + (1-conf)*0.35);
+    e.st = masteryState(e);
+  });
+  return all.sort(function(a,b){ return b.score-a.score; });
+}
+function subjectRow(k){
+  var rs = liveHist().filter(function(r){ return r.course===k; }).sort(function(a,b){ return a.ts-b.ts; });
+  var mixQ = {n:0, ok:0};
+  liveHist().forEach(function(r){ if(r.course!=='mix') return; r.qs.forEach(function(x){ if(x.k!==k) return; var src=BANK[x.k][x.i]; if(!src) return; mixQ.n++; if(x.sel===src.a) mixQ.ok++; }); });
+  var pcts = rs.map(recPct);
+  var avg = pcts.length? Math.round(pcts.reduce(function(a,b){return a+b;},0)/pcts.length) : null;
+  var last = pcts.length? pcts[pcts.length-1] : null;
+  var prev = pcts.length>1? Math.round(pcts.slice(0,-1).reduce(function(a,b){return a+b;},0)/(pcts.length-1)) : null;
+  var trend = (last!=null && prev!=null)? last-prev : null;
+  return {k:k, attempts:rs.length, avg:avg, best:pcts.length? Math.max.apply(null,pcts):null, last:last, trend:trend, mix:mixQ};
+}
+function trendHtml(t){
+  if(t==null) return '<span style="color:#98a2ab">\u2014</span>';
+  if(t>1) return '<span style="color:#1f7a3f;font-weight:700">\u2191 +'+t+'</span>';
+  if(t<-1) return '<span style="color:#b3261e;font-weight:700">\u2193 '+t+'</span>';
+  return '<span style="color:#6c757d">\u2192 estable</span>';
+}
+function streakDays(){
+  var days={};
+  liveHist().forEach(function(r){ var d=new Date(r.ts); days[d.getFullYear()+'-'+d.getMonth()+'-'+d.getDate()]=1; });
+  var cur=new Date(), n=0;
+  var key0=cur.getFullYear()+'-'+cur.getMonth()+'-'+cur.getDate();
+  if(!days[key0]) cur.setDate(cur.getDate()-1);
+  for(var i=0;i<400;i++){
+    var key=cur.getFullYear()+'-'+cur.getMonth()+'-'+cur.getDate();
+    if(!days[key]) break;
+    n++; cur.setDate(cur.getDate()-1);
+  }
+  return n;
+}
+function recoCard(e, rank){
+  var ch = chapterFor(e.k, e.t);
+  var motivo = e.n===0
+    ? 'Todavia no practicas este tema y representa el '+Math.round(e.weight*1000)/10+'% del banco: son puntos que hoy dejas al azar.'
+    : 'Aciertas el '+Math.round(e.acc*100)+'% ('+e.ok+' de '+e.n+') y el tema pesa el '+Math.round(e.weight*1000)/10+'% del banco. Llevarlo al 85% suma cerca de '+(Math.round(Math.max(0,(0.85-e.acc))*e.weight*1000)/10)+' puntos porcentuales a tu nota global.';
+  return '<div class="reco">'+
+    '<div class="rank">'+rank+'</div>'+
+    '<div class="recobody"><b>'+escH(e.t)+'</b> '+
+    '<span class="chip" style="background:'+e.st.color+'">'+e.st.label+'</span> '+
+    '<span class="chip light">'+COURSES[e.k].short+'</span>'+
+    '<p>'+motivo+'</p>'+
+    '<div class="recobtns"><button class="btn" data-act="chapter" data-id="'+ch.id+'">Estudiar: '+escH(ch.t)+'</button>'+
+    '<button class="btn sec" data-act="quickstart" data-c="'+e.k+'">Practicar '+COURSES[e.k].short+'</button></div>'+
+    '</div></div>';
+}
+function viewStats(){
+  var st = statsFor('all'), live = liveHist();
+  var pri = priorities();
+  var rows = SUBJ.concat(['mix']).map(subjectRow);
+  var globalAcc = st.totQ? Math.round(st.totOk/st.totQ*100) : 0;
+  var body = '';
+
+  if(!live.length){
+    body += '<div class="emptybox">Todavia no hay intentos validos.<br>Rinde tu primer simulador y aqui apareceran tu promedio, tus temas debiles y que estudiar despues.<br><br><button class="btn" data-act="quickstart" data-c="mat">Empezar Matemática</button></div>';
+  } else {
+    body += '<div class="herostats">'+
+      '<div class="bigdonut">'+donut(globalAcc,'precision global')+'</div>'+
+      '<div class="statgrid grow">'+
+      '<div class="statcard"><div class="v">'+st.avg+'%</div><div class="l">Promedio de simuladores</div></div>'+
+      '<div class="statcard"><div class="v">'+st.best+'%</div><div class="l">Mejor calificación</div></div>'+
+      '<div class="statcard"><div class="v">'+live.length+'</div><div class="l">Simuladores rendidos</div></div>'+
+      '<div class="statcard"><div class="v">'+st.totQ+'</div><div class="l">Preguntas respondidas</div></div>'+
+      '<div class="statcard"><div class="v">'+Math.round(st.totMs/60000)+'</div><div class="l">Minutos de practica</div></div>'+
+      '<div class="statcard"><div class="v">'+streakDays()+'</div><div class="l">Dias seguidos practicando</div></div>'+
+      '</div></div>';
+  }
+
+  var top = pri.slice(0,3);
+  body += '<h3 class="sechead">Que estudiar ahora (maxima mejora en menos tiempo)</h3>'+
+    '<p class="th-sub">Prioridad = cuanto fallas en el tema x cuanto pesa ese tema en el examen. Siguiendo este orden tu nota sube lo mas rapido posible; al terminar la lista habras cubierto todos los temas de la guia.</p>'+
+    top.map(function(e,i){ return recoCard(e,i+1); }).join('');
+
+  body += '<details class="planbox"><summary>Plan completo hasta dominar los '+pri.length+' temas de la guia</summary>'+
+    '<ol class="planlist">'+pri.map(function(e){
+      var ch = chapterFor(e.k,e.t);
+      return '<li><b>'+escH(e.t)+'</b> <span class="chip light">'+COURSES[e.k].short+'</span> '+
+        '<span class="chip" style="background:'+e.st.color+'">'+e.st.label+'</span> '+
+        (e.n? Math.round(e.acc*100)+'% en '+e.n+' preguntas' : 'sin datos aun')+
+        ' &middot; <a data-act="chapter" data-id="'+ch.id+'">leer teoría</a></li>';
+    }).join('')+'</ol></details>';
+
+  body += '<h3 class="sechead">Promedio por simulador</h3>'+
+    '<table class="histtable"><thead><tr><th>Simulador</th><th>Intentos</th><th>Promedio</th><th>Mejor</th><th>Ultimo</th><th>Tendencia</th></tr></thead><tbody>'+
+    rows.map(function(r){
+      return '<tr><td>'+COURSES[r.k].name+'</td><td>'+r.attempts+'</td>'+
+        '<td>'+(r.avg==null?'\u2014':'<span class="gradepill '+gradeCls(r.avg)+'">'+r.avg+'%</span>')+'</td>'+
+        '<td>'+(r.best==null?'\u2014':r.best+'%')+'</td>'+
+        '<td>'+(r.last==null?'\u2014':r.last+'%')+'</td>'+
+        '<td>'+trendHtml(r.trend)+'</td></tr>';
+    }).join('')+'</tbody></table>';
+
+  body += '<h3 class="sechead">Precision por materia (incluye las preguntas del simulacro completo)</h3>'+donutRow()+
+    barChart(SUBJ.filter(function(k){ return st.bySubj[k]; }).map(function(k){
+      var b=st.bySubj[k]; return {label:COURSES[k].short, pct:Math.round(b.ok/b.n*100), n:b.n};
+    }));
+
+  body += '<h3 class="sechead">Evolucion de tus calificaciones</h3>'+
+    (sparkline(live) || '<p class="th-sub">Necesitas al menos dos intentos para ver la curva de progreso.</p>');
+  var perSubj = SUBJ.filter(function(k){ return live.filter(function(r){return r.course===k;}).length>1; });
+  if(perSubj.length){
+    body += '<div class="minicharts">'+perSubj.map(function(k){
+      return '<div class="minichart"><b>'+COURSES[k].short+'</b>'+sparkline(live.filter(function(r){return r.course===k;}))+'</div>';
+    }).join('')+'</div>';
+  }
+
+  body += '<h3 class="sechead">Dominio tema por tema</h3>'+
+    '<p class="th-sub">Verde = dominado (85% o mas), naranja = en progreso, rojo = debil, gris = sin practicar todavia.</p>';
+  SUBJ.forEach(function(k){
+    var list = pri.filter(function(e){ return e.k===k; }).sort(function(a,b){
+      var aa=(a.acc==null?-1:a.acc), bb=(b.acc==null?-1:b.acc); return aa-bb;
+    });
+    var done = list.filter(function(e){ return e.st.k==='ok'; }).length;
+    body += '<details class="topicbox"'+(k==='mat'?' open':'')+'><summary>'+COURSES[k].name+' \u2014 '+done+'/'+list.length+' temas dominados</summary>'+
+      '<table class="histtable"><thead><tr><th>Tema</th><th>Practicadas</th><th>Aciertos</th><th>Estado</th><th></th></tr></thead><tbody>'+
+      list.map(function(e){
+        var ch = chapterFor(e.k,e.t);
+        return '<tr><td>'+escH(e.t)+'</td><td>'+e.n+' / '+e.bank+'</td>'+
+          '<td>'+(e.n? '<span class="gradepill '+gradeCls(Math.round(e.acc*100))+'">'+Math.round(e.acc*100)+'%</span>' : '\u2014')+'</td>'+
+          '<td><span class="chip" style="background:'+e.st.color+'">'+e.st.label+'</span></td>'+
+          '<td><a data-act="chapter" data-id="'+ch.id+'">Estudiar</a></td></tr>';
+      }).join('')+'</tbody></table></details>';
+  });
+
+  body += '<h3 class="sechead">Cobertura del banco de preguntas</h3>'+
+    '<p class="th-sub">Con el modo sin repetir preguntas activo, cada intento usa preguntas nuevas hasta agotar el banco.</p>'+
+    coverageHtml()+
+    '<div style="margin:10px 0 24px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn sec" data-act="history">Ver historial de intentos</button>'+
+    '<button class="btn ghost" data-act="resetseen">Reiniciar preguntas vistas</button></div>';
+
+  return navbar('stats')+'<div class="wrap">'+drawer('stats')+'<div class="main reading">'+
+    pagehead('Estadísticas y plan de estudio','01-SEA-EPN_2026-2 \u203a Estadísticas','mix')+toastHtml()+body+
+    '</div></div>'+drawerBtn()+sitefooter();
+}
+
+/* ---------- historial ---------- */
+function viewHistory(){
+  var tab = S.histTab, tabs = [['all','General']].concat(CKEYS.map(function(k){ return [k, COURSES[k].short]; }));
+  var base = HIST.filter(function(r){ return tab==='all' || r.course===tab; });
+  var live = base.filter(function(r){ return !r.deleted; }).slice().sort(function(a,b){ return b.ts-a.ts; });
+  var del  = base.filter(function(r){ return r.deleted; }).slice().sort(function(a,b){ return b.ts-a.ts; });
+  function rowsOf(list, isDel){
+    return list.map(function(r){
+      var pct = recPct(r);
+      return '<tr'+(isDel?' class="delrow"':'')+'><td>'+fmtCorta(r.ts)+(isDel?' <span class="delbadge">Eliminado</span>':'')+'</td>'+
+        '<td>'+COURSES[r.course].name+'</td><td>'+levelName(r.level)+'</td><td>'+fmtDur(r.durMs)+'</td>'+
+        '<td>'+r.score+'/'+r.n+' <span class="gradepill '+(isDel?'g-del':gradeCls(pct))+'">'+pct+'%</span></td>'+
+        '<td><button class="btn sec" data-act="openrec" data-id="'+r.id+'">Revisar</button> '+
+        (isDel? '<button class="btn ghost" data-act="restrec" data-id="'+r.id+'">Restaurar</button>'
+              : '<button class="btn ghost" data-act="delrec" data-id="'+r.id+'">Eliminar</button>')+
+        '</td></tr>';
+    }).join('');
+  }
+  var thead = '<thead><tr><th>Fecha</th><th>Simulador</th><th>Dificultad</th><th>Tiempo</th><th>Resultado</th><th></th></tr></thead>';
+  var table = live.length? '<table class="histtable">'+thead+'<tbody>'+rowsOf(live,false)+'</tbody></table>'
+    : '<div class="emptybox">A\u00fan no hay intentos'+(tab==='all'?'':' de '+COURSES[tab].name)+' activos en el historial.</div>';
+  var deleted = del.length? '<h3 style="font-size:17px;margin:22px 0 4px">Intentos eliminados</h3>'+
+    '<p class="th-sub">No cuentan para las estad\u00edsticas, pero puedes seguir revis\u00e1ndolos o restaurarlos.</p>'+
+    '<table class="histtable">'+thead+'<tbody>'+rowsOf(del,true)+'</tbody></table>' : '';
+  var pcts = live.map(recPct);
+  var resumen = live.length? '<div class="statgrid">'+
+      '<div class="statcard"><div class="v">'+live.length+'</div><div class="l">Intentos v\u00e1lidos</div></div>'+
+      '<div class="statcard"><div class="v">'+Math.round(pcts.reduce(function(a,b){return a+b;},0)/pcts.length)+'%</div><div class="l">Promedio</div></div>'+
+      '<div class="statcard"><div class="v">'+Math.max.apply(null,pcts)+'%</div><div class="l">Mejor nota</div></div>'+
+      '<div class="statcard"><div class="v">'+fmtCorta(live[0].ts).split(' ')[0]+'</div><div class="l">\u00daltima pr\u00e1ctica</div></div>'+
+      '</div>'+sparkline(live) : '';
+  return navbar('history')+'<div class="wrap">'+drawer('history')+'<div class="main reading">'+
+    pagehead('Historial de intentos','01-SEA-EPN_2026-2 \u203a Historial','mix')+toastHtml()+
+    '<div class="tabs">'+tabs.map(function(t){ return '<button class="'+(tab===t[0]?'on':'')+'" data-act="histtab" data-t="'+t[0]+'">'+t[1]+'</button>'; }).join('')+'</div>'+
+    resumen+table+deleted+
+    (HIST.length? '<div style="margin:6px 0 22px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn sec" data-act="stats">Ver estad\u00edsticas</button>'+
+      '<button class="btn ghost" data-act="clearhist">Eliminar todos los intentos</button></div>':'')+
+    '</div></div>'+drawerBtn()+sitefooter();
+}
+
+/* ---------- VISTAS ---------- */
+function viewHome(){
+  var total = SUBJ.reduce(function(s,k){ return s+BANK[k].length; },0);
+  var st = statsFor('all');
+  var cards = CKEYS.map(function(k){
+    var c = COURSES[k], n = bankOf(k).length;
+    var hs = liveHist().filter(function(r){ return r.course===k; });
+    var last = hs.length? hs.sort(function(a,b){return b.ts-a.ts;})[0] : null;
+    return '<div class="card">'+
+      '<div class="cimg" style="background:'+c.color+'">'+c.icon+'</div>'+
+      '<div class="cbody">'+
+      '<span class="badge ok">Disponible</span>'+
+      '<h3>'+c.full+'</h3>'+
+      '<p>'+c.desc+'<br><b>'+countFor(k)+' preguntas \u00b7 '+minutesFor(k)+' min</b> \u00b7 banco de '+n+
+      (last? '<br>\u00daltimo intento: '+fmtCorta(last.ts)+' \u2014 <b>'+recPct(last)+'%</b>':'')+'</p>'+
+      '<div class="cbtns"><button class="btn" data-act="course" data-c="'+k+'">Ir al cuestionario</button>'+
+      '<button class="btn sec" data-act="quickstart" data-c="'+k+'">Empezar ya</button>'+
+      (hs.length? '<button class="btn ghost" data-act="histtabgo" data-t="'+k+'">Historial ('+hs.length+')</button>':'')+
+      '</div></div></div>';
+  }).join('');
+  var thcards = ['trig','mat','fis','qui','len','gen'].map(function(k){
+    var chs = THEORY.filter(function(ch){ return ch.s===k; });
+    if(!chs.length) return '';
+    var g = GUIDE[k];
+    var inner = chs.map(function(ch){
+      var st = chapterProgress(ch.id);
+      return '<div class="th-card" data-act="chapter" data-id="'+ch.id+'"><div class="ic">'+ch.ic+'</div>'+
+        '<div><b>'+escH(ch.t)+'</b><span>'+((GUIDE[k].secs[ch.id]||{}).code||'')+' \u00b7 '+st+'</span></div></div>';
+    }).join('');
+    return '<div class="thgroup"><div class="thgh"><span class="thdot" style="background:'+g.color+'"></span>'+
+      '<b>'+g.code+' '+escH(g.name)+'</b><span class="thgn">'+chs.length+' cap\u00edtulo'+(chs.length>1?'s':'')+
+      (k!=='gen'? ' \u00b7 '+bankOf(k).length+' preguntas':'')+'</span>'+
+      (k!=='gen'? '<button class="btn ghost mini" data-act="quickstart" data-c="'+k+'">Practicar</button>':'')+
+      '</div><div class="th-list">'+inner+'</div></div>';
+  }).join('');
+  return navbar('home')+
+    '<div class="homehero"><h2>01-SEA-EPN_2026-2 \u00b7 Simuladores de admisi\u00f3n</h2>'+
+    '<p>Curso de nivelaci\u00f3n y admisi\u00f3n \u00b7 Aula Virtual Vinculaci\u00f3n \u00b7 Escuela Polit\u00e9cnica Nacional</p>'+
+    '<div class="stats"><div><b>'+total+'</b><span>PREGUNTAS EN EL BANCO</span></div>'+
+    '<div><b>'+THEORY.length+'</b><span>CAP\u00cdTULOS DE TEOR\u00cdA</span></div>'+
+    '<div><b>'+st.attempts+'</b><span>INTENTOS RENDIDOS</span></div>'+
+    '<div><b>'+(st.attempts? st.avg+'%':'\u2014')+'</b><span>PROMEDIO</span></div>'+
+    '<div><b>'+levelName(cfg.level)+'</b><span>DIFICULTAD ACTUAL</span></div></div></div>'+
+    '<div style="padding:0 26px 40px">'+toastHtml()+'<div class="cards">'+cards+'</div>'+
+    '<h2 style="font-size:20px;margin:30px 0 0">Aprende: teor\u00eda completa de la gu\u00eda</h2>'+
+    '<p class="th-sub">Las 4 \u00e1reas del examen y sus 15 cap\u00edtulos, con la teor\u00eda suficiente para resolver cualquier pregunta del banco.</p>'+
+    '<div class="thgroups">'+thcards+'</div>'+
+    '<div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn sec" data-act="learn">Ver los '+THEORY.length+' cap\u00edtulos</button>'+
+    '<button class="btn sec" data-act="stats">Mis estad\u00edsticas</button>'+
+    '<button class="btn sec" data-act="history">Mi historial</button>'+
+    '<button class="btn ghost" data-act="cfg">\u2699 Configuraci\u00f3n</button></div></div>'+
+    sitefooter();
+}
+
+var GUIDE = {
+  trig:{ code:'★', name:'Taller Especializado: Identidades Trigonométricas', color:'#7b2cbf',
+    purpose:'Dominar identidades pitagóricas, recíprocas, de cociente y ángulo doble con trucos de examen.',
+    time:'Taller intensivo de práctica y lectura',
+    bib:['Guía de Estudio EPN 2026-B — Módulo de Trigonometría'],
+    secs:{
+      t1:{ code:'T.1', items:['Identidades pitagóricas fundamentales','Identidades recíprocas y de cociente','Identidades de ángulo doble','Comprobación numérica rápida (Truco de examen)'] }
+    } },
+  mat:{ code:'4.1', name:'Matemática', color:'#f7a1c4',
+    purpose:'Evaluar la capacidad de razonamiento algebraico, geometrico y trigonometrico.',
+    time:'90 minutos (examen filtro: si no lo apruebas no rindes las demas areas)',
+    bib:['Stewart, Redlin y Watson (2012). Precalculo. Matemáticas para el calculo, 6a ed. Cengage.','Moise, E. y Downs, F. (1970). Geometria Moderna. Addison Wesley.','Lehmann, C. H. (1984). Geometria Analitica. Limusa.'],
+    secs:{
+      m1:{ code:'4.1.1', items:['Operaciones con numeros enteros','Operaciones con numeros racionales','Operaciones con numeros reales','Expresiones algebraicas'] },
+      m2:{ code:'4.1.2', items:['Ecuaciones de primer grado','Sistemas de ecuaciones lineales','Ecuaciones de segundo grado con una incognita','Inecuaciones y valor absoluto'] },
+      m3:{ code:'4.1.3', items:['Axiomas de punto, recta y distancia','Paralelismo y angulos','Medida angular, congruencia de angulos y angulos entre paralelas y una transversal','Congruencia de triangulos','Semejanza de triangulos'] },
+      m4:{ code:'4.1.4', items:['Razones trigonometricas','Identidades trigonometricas','Ley de senos y ley de cosenos','Rectas y circunferencias en el plano'] }
+    } },
+  fis:{ code:'4.2', name:'Física', color:'#8fc7e8',
+    purpose:'Evaluar la comprension de los principios fundamentales de la mecanica.',
+    time:'Parte de los 120 minutos del segundo bloque',
+    bib:['Hewitt, P. G. (2016). Física conceptual, 12a ed. Pearson.','Serway, R. A. y Vuille, C. (2018). Fundamentos de física, 10a ed. Cengage.'],
+    secs:{
+      f1:{ code:'4.2.1', items:['Primera ley de Newton','Fuerza neta, vectores y suma vectorial','Equilibrio estatico y dinamico','Movimiento rectilineo: posicion, distancia, desplazamiento, rapidez, velocidad y aceleracion','Caida de los cuerpos','Movimiento de proyectiles y satelites'] },
+      f2:{ code:'4.2.2', items:['Segunda ley de Newton','Fuerza gravitacional','Fuerzas de rozamiento y de resistencia; caida libre con resistencia del aire','Tercera ley de Newton','Cinematica y dinamica del movimiento circular uniforme','Momento lineal e impulso; conservacion del momento'] },
+      f3:{ code:'4.2.3', items:['Trabajo y potencia','Trabajo neto y energia cinetica','Fuerzas conservativas y energia potencial','Energia mecanica y su conservacion','Fuentes de energia'] }
+    } },
+  qui:{ code:'4.3', name:'Química', color:'#a8d5a2',
+    purpose:'Evaluar conocimientos basicos sobre la estructura de la materia y las reacciones quimicas.',
+    time:'Parte de los 120 minutos del segundo bloque',
+    bib:['Chang, R. y Goldsby, K. (2016). Química, 12a ed. McGraw-Hill.','Hein, M., Willard, C. y Arena, S. (2018). Fundamentos de Química. Cengage.'],
+    secs:{
+      q1:{ code:'4.3.1', items:['Transformacion de unidades','Clasificacion de la materia; procesos fisicos y quimicos','Particulas fundamentales','Estructura electronica de atomos e iones'] },
+      q2:{ code:'4.3.2', items:['Estructura de la tabla periodica','Propiedades periodicas de los elementos','Nomenclatura inorganica de compuestos binarios, ternarios y cuaternarios'] },
+      q3:{ code:'4.3.3', items:['Enlace ionico','Enlace covalente','Estructuras de Lewis','Geometria molecular','Fuerzas intermoleculares'] },
+      q4:{ code:'4.3.4', items:['Concepto de mol','Formulas empiricas y moleculares','Reacciones quimicas','Calculos estequiometricos y reactivo limitante'] }
+    } },
+  len:{ code:'4.4', name:'Lenguaje', color:'#f3c778',
+    purpose:'Evaluar comprension lectora, pensamiento critico y capacidad de argumentacion.',
+    time:'Parte de los 120 minutos del segundo bloque',
+    bib:['Rubio, E., Duenas, F., Garcia, L. y Garzon, D. (2019). Competencias linguisticas. Uniminuto.','Copi, I. M., Cohen, C. y McMahon, K. (2011). Introduccion a la logica. Pearson.'],
+    secs:{
+      l1:{ code:'4.4.1', items:['La comunicacion: rol, importancia y elementos','La razon y el pensamiento logico','Analisis, interpretacion y elaboracion de juicios de valor propios'] },
+      l2:{ code:'4.4.2', items:['Razonamiento logico','Analisis e interpretacion de textos','Lectura critica'] },
+      l3:{ code:'4.4.3', items:['Construccion del parrafo','Argumentacion logica: construccion de argumentos e identificacion de falacias','Uso de signos de puntuacion y concordancia gramatical'] }
+    } },
+  gen:{ code:'\u2605', name:'Estrategia de examen', color:'#b9c6d4',
+    purpose:'Como esta armada la prueba real y como administrar los 210 minutos.',
+    time:'210 minutos en total',
+    bib:['Guia de estudio EPN 2026-B, Direccion de Admision y Registro.'],
+    secs:{ g1:{ code:'1-3', items:['Caracteristicas de la evaluacion','Recomendaciones generales de estudio','Indicaciones generales para el dia del examen'] } } }
+};
+function chapterProgress(id){
+  var ui = load(UI_KEY, {}) || {};
+  var read = (ui.read||{})[id];
+  return read? 'Leido' : 'Pendiente';
+}
+function subjectTopicSummary(k){
+  if(k==='gen') return '';
+  var pri = priorities().filter(function(e){ return e.k===k; });
+  var dom = pri.filter(function(e){ return e.st.k==='ok'; }).length;
+  return dom+'/'+pri.length+' temas dominados';
+}
+function viewLearn(){
+  var order = ['trig','mat','fis','qui','len','gen'];
+  var html = order.map(function(k){
+    var g = GUIDE[k], chs = THEORY.filter(function(c){ return c.s===k; });
+    if(!chs.length) return '';
+    var cards = chs.map(function(ch){
+      var sec = (g.secs && g.secs[ch.id]) || {code:'', items:[]};
+      var words = (ch.body||'').split(/\s+/).length;
+      var mins = Math.max(3, Math.round(words/190));
+      return '<div class="gcard" data-act="chapter" data-id="'+ch.id+'">'+
+        '<div class="gtop"><span class="gic">'+ch.ic+'</span><div><div class="gcode">'+(sec.code||'')+'</div>'+
+        '<div class="gt">'+escH(ch.t)+'</div></div></div>'+
+        '<ul>'+sec.items.map(function(it){ return '<li>'+escH(it)+'</li>'; }).join('')+'</ul>'+
+        '<div class="gmeta"><span>\u23F1 '+mins+' min de lectura</span><span>'+chapterProgress(ch.id)+'</span></div>'+
+        '</div>';
+    }).join('');
+    var nq = (k==='gen')? 0 : BANK[k].length;
+    return '<div class="subjhead"><span class="bar" style="background:'+g.color+'"></span><h2>'+g.code+'. '+g.name+'</h2>'+
+      '<span class="cnt">'+(nq? nq+' preguntas en el banco \u00b7 '+subjectTopicSummary(k) : 'Guia oficial')+'</span></div>'+
+      '<p class="th-sub">'+g.purpose+' <b>'+g.time+'</b></p>'+
+      '<div class="gcards">'+cards+'</div>'+
+      '<details class="planbox"><summary>Bibliografia sugerida por la EPN para '+g.name+'</summary>'+
+      '<ol class="planlist">'+g.bib.map(function(b){ return '<li>'+escH(b)+'</li>'; }).join('')+'</ol></details>'+
+      (nq? '<div style="margin:6px 0 4px"><button class="btn sec" data-act="quickstart" data-c="'+k+'">Practicar '+g.name+' ahora</button></div>' : '');
+  }).join('');
+  return navbar('learn')+'<div class="wrap">'+drawer('learn')+'<div class="main reading">'+
+    pagehead('Aprende \u2014 teoría completa de la guia 2026-B','01-SEA-EPN_2026-2 \u203a Aprende','mix')+toastHtml()+
+    '<p class="th-sub">Aqui esta desarrollado <b>todo el temario oficial</b> del examen de admision (areas 4.1 a 4.4 de la guia): conceptos desde cero, formulas, analogias, ejemplos resueltos, errores frecuentes y trucos de examen. Cada tarjeta corresponde a una seccion exacta de la guia.</p>'+
+    html+'</div></div>'+drawerBtn()+sitefooter();
+}
+function viewChapter(){
+  var ids = THEORY.map(function(c){return c.id;});
+  var ix = ids.indexOf(S.chapter);
+  var ch = THEORY[ix]; if(!ch) return viewLearn();
+  var prev = THEORY[ix-1], next = THEORY[ix+1];
+  var words = ch.body.split(/\s+/).length;
+  return navbar('learn')+'<div class="wrap">'+drawer('learn')+'<div class="main reading">'+
+    pagehead(ch.ic+' '+escH(ch.t),'01-SEA-EPN_2026-2 \u203a Aprende \u203a '+escH(ch.t),'mix')+
+    '<div class="readbar"><span>Cap\u00edtulo '+(ix+1)+' de '+THEORY.length+'</span><span>\u00b7</span><span>\u2248'+Math.max(2,Math.round(words/180))+' min de lectura</span>'+
+    '<span>\u00b7</span><a data-act="learn">\u2039 Volver al \u00edndice</a></div>'+
+    chapterToc(ch.body)+
+    '<div class="theory">'+md(ch.body)+'</div>'+
+    '<div class="th-nav">'+
+      (prev? '<button class="btn ghost" data-act="chapter" data-id="'+prev.id+'">\u2039 '+escH(prev.t)+'</button>':'<span></span>')+
+      (next? '<button class="btn" data-act="chapter" data-id="'+next.id+'">'+escH(next.t)+' \u203a</button>':'<span></span>')+
+    '</div>'+
+    '<div style="margin:8px 0 16px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn sec" data-act="learn">Volver a Aprende</button>'+
+    (ch.s!=='gen'? '<button class="btn" data-act="quickstart" data-c="'+ch.s+'">Practicar '+COURSES[ch.s].short+' ahora</button>':'')+'</div>'+
+    '</div></div>'+drawerBtn()+sitefooter();
+}
+
+function viewCourse(){
+  var c = COURSES[S.course], k = S.course;
+  var pool = k==='mix'? SUBJ.reduce(function(s,x){ return s+levelPool(x).length; },0) : levelPool(k).length;
+  var fresh = k==='mix'? SUBJ.reduce(function(s,x){ return s+levelPool(x).filter(function(q){return !SEENSET[x][q.__i];}).length; },0)
+                       : levelPool(k).filter(function(q){ return !SEENSET[k][q.__i]; }).length;
+  var lv = LEVELS.map(function(l){ return '<button class="pill '+l.c+(cfg.level===l.k?' on':'')+'" data-act="setlevel" data-l="'+l.k+'">'+l.n+'</button>'; }).join('');
+  var hs = liveHist().filter(function(r){ return r.course===k; }).sort(function(a,b){return b.ts-a.ts;});
+  return navbar('')+'<div class="wrap">'+drawer('quiz')+'<div class="main">'+
+    pagehead(c.full,'01-SEA-EPN_2026-2 \u203a '+c.full)+toastHtml()+
+    '<div style="max-width:840px">'+
+    '<p>'+c.desc+' Cada intento toma <b>'+countFor(k)+' preguntas</b> distintas'+(k==='mix'?' repartidas entre las cuatro \u00e1reas':'')+' de un banco interno de <b>'+bankOf(k).length+'</b>.</p>'+
+    '<div style="margin:14px 0 6px;font-weight:600;font-size:14px">Dificultad</div><div class="pills">'+lv+'</div>'+
+    '<table class="quizsummary"><tbody>'+
+    '<tr><th>M\u00e9todo de calificaci\u00f3n</th><td>Calificaci\u00f3n m\u00e1s alta</td></tr>'+
+    '<tr><th>L\u00edmite de tiempo</th><td>'+minutesFor(k)+' minutos</td></tr>'+
+    '<tr><th>Preguntas</th><td>'+countFor(k)+' (1,00 punto cada una)</td></tr>'+
+    '<tr><th>Dificultad</th><td>'+levelName(cfg.level)+' \u00b7 '+pool+' preguntas en este nivel</td></tr>'+
+    '<tr><th>Sin repetir</th><td>'+(cfg.noRepeat? 'Activado \u00b7 '+fresh+' preguntas nuevas disponibles' : 'Desactivado (pueden repetirse)')+'</td></tr>'+
+    '<tr><th>Intentos rendidos</th><td>'+hs.length+(hs.length?' \u00b7 \u00faltimo '+fmtCorta(hs[0].ts)+' ('+recPct(hs[0])+'%)':'')+'</td></tr>'+
+    '</tbody></table>'+
+    (k==='mix'? '<div class="infobox">El examen real dura 210 minutos: 90 de Matem\u00e1tica (componente filtro) y 120 para F\u00edsica, Qu\u00edmica y Lenguaje. Puedes reproducir esos tiempos desde la configuraci\u00f3n.</div>':'')+
+    planBox(k)+
+    '<div style="margin:18px 0 10px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn" data-act="start">Intentar resolver el cuestionario ahora</button>'+
+    '<button class="btn sec" data-act="cfg">\u2699 Configuraci\u00f3n</button>'+
+    (hs.length? '<button class="btn sec" data-act="histtabgo" data-t="'+k+'">Historial de esta materia</button>':'')+'</div>'+
+    '</div>'+actnav()+'</div></div>'+drawerBtn()+sitefooter();
+}
+
+function viewAttempt(){
+  var a = S.attempt, c = COURSES[a.course];
+  var left = a.limitMs - (Date.now()-a.start.getTime());
+  var timerCls = left < 60000 ? 'crit' : (left < 300000 ? 'warn' : '');
+  var nav = '<div class="navbtns">'+
+    (a.cur>0? '<button class="btn ghost" data-act="prev">P\u00e1gina anterior</button>':'<span></span>')+
+    (a.cur<a.qs.length-1? '<button class="btn" data-act="next">Siguiente p\u00e1gina</button>'
+                        : '<button class="btn" data-act="summary">Terminar intento...</button>')+
+    '</div>';
+  return navbar('')+'<div class="wrap">'+drawer('quiz')+'<div class="main">'+
+    pagehead(c.full,'01-SEA-EPN_2026-2 \u203a '+c.full)+toastHtml()+
+    questionHtml(a.cur,'attempt')+nav+'</div>'+
+    '<div class="rightblock"><div class="timerbox '+timerCls+'" id="timerbox">Tiempo restante<div class="t" id="timer">'+clock(left)+'</div></div>'+
+    navButtons('attempt')+'</div></div>'+drawerBtn();
+}
+
+function viewSummary(){
+  var a = S.attempt, c = COURSES[a.course];
+  var left = a.limitMs - (Date.now()-a.start.getTime());
+  var rows = a.qs.map(function(q,ix){
+    return '<tr><td>'+(ix+1)+'</td><td><a data-act="goto" data-i="'+ix+'">'+(a.ans[ix]===null?'Sin responder a\u00fan':'Respuesta guardada')+'</a>'+(a.flags[ix]?' \u2691':'')+'</td></tr>';
+  }).join('');
+  return navbar('')+'<div class="wrap">'+drawer('quiz')+'<div class="main">'+
+    pagehead(c.full,'01-SEA-EPN_2026-2 \u203a '+c.full+' \u203a Resumen del intento')+
+    '<h2 style="font-size:20px">Resumen del intento</h2>'+
+    '<table class="quizsummary"><thead><tr><th>Pregunta</th><th>Estatus</th></tr></thead><tbody>'+rows+'</tbody></table>'+
+    '<div class="timerbox '+(left<60000?'crit':(left<300000?'warn':''))+'" id="timerbox" style="max-width:260px">Tiempo restante<div class="t" id="timer">'+clock(left)+'</div></div>'+
+    '<div style="display:flex;gap:10px;margin:14px 0 20px;flex-wrap:wrap">'+
+    '<button class="btn sec" data-act="back">Volver al intento</button>'+
+    '<button class="btn" data-act="confirmsubmit">Enviar todo y terminar</button></div>'+
+    actnav()+'</div>'+navBlock('attempt')+'</div>'+drawerBtn()+sitefooter();
+}
+
+function breakdown(){
+  var a = S.attempt, by = {};
+  a.qs.forEach(function(q,ix){
+    var key = a.course==='mix'? COURSES[q.subj].short : q.src.t;
+    by[key] = by[key] || {ok:0,n:0};
+    by[key].n++; if(isCorrect(ix)) by[key].ok++;
+  });
+  var rows = Object.keys(by).sort().map(function(k){
+    var b = by[k], pct = Math.round(b.ok/b.n*100);
+    return '<tr><td>'+escH(k)+'</td><td>'+b.ok+' / '+b.n+'</td><td><span class="bar-outer"><span class="bar-inner" style="width:'+pct+'%;background:'+(pct>=70?'#1f7a3f':pct>=50?'#d9822b':'#b3261e')+'"></span></span> '+pct+'%</td></tr>';
+  }).join('');
+  return '<h3 style="font-size:17px;margin:18px 0 4px">Desempe\u00f1o por '+(a.course==='mix'?'\u00e1rea':'tema')+'</h3>'+
+    '<table class="byarea"><thead><tr><th>'+(a.course==='mix'?'\u00c1rea':'Tema')+'</th><th>Aciertos</th><th>Rendimiento</th></tr></thead><tbody>'+rows+'</tbody></table>';
+}
+
+function viewReview(){
+  var a = S.attempt, c = COURSES[a.course];
+  var score = a.qs.reduce(function(s,_,ix){ return s+(isCorrect(ix)?1:0); },0);
+  var max = a.qs.length, grade = score/max*10;
+  var head = '<table class="quizreviewsummary"><tbody>'+
+    '<tr><th>Comenzado el</th><td>'+fmtFecha(a.start)+'</td></tr>'+
+    '<tr><th>Estado</th><td>Finalizado</td></tr>'+
+    '<tr><th>Finalizado en</th><td>'+fmtFecha(a.end)+'</td></tr>'+
+    '<tr><th>Tiempo empleado</th><td>'+fmtDur(a.end-a.start)+'</td></tr>'+
+    '<tr><th>Dificultad</th><td>'+levelName(a.level)+'</td></tr>'+
+    '<tr><th>Puntos</th><td>'+fmtNum(score)+'/'+fmtNum(max)+'</td></tr>'+
+    '<tr><th>Calificaci\u00f3n</th><td><b>'+fmtNum(grade)+'</b> de '+fmtNum(10)+' (<b>'+fmtNum(grade*10)+'%</b>)</td></tr>'+
+    '</tbody></table>';
+  var qs = (S.onePage!=null)? questionHtml(S.onePage,'review')
+                            : a.qs.map(function(_,ix){ return questionHtml(ix,'review'); }).join('');
+  var onePageNav = '';
+  if(S.onePage!=null){
+    onePageNav = '<div class="navbtns">'+
+      (S.onePage>0?'<button class="btn ghost" data-act="rprev">P\u00e1gina anterior</button>':'<span></span>')+
+      (S.onePage<a.qs.length-1?'<button class="btn" data-act="rnext">Siguiente p\u00e1gina</button>':'<span></span>')+'</div>';
+  }
+  return navbar('')+'<div class="wrap">'+drawer('quiz')+'<div class="main">'+
+    pagehead(c.full+(a.historic?' \u00b7 intento guardado':''),'01-SEA-EPN_2026-2 \u203a '+c.full)+toastHtml()+
+    head+breakdown()+qs+onePageNav+
+    '<div class="finishlink"><a data-act="finishreview">Finalizar revisi\u00f3n</a></div>'+
+    '<div style="margin-bottom:16px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn" data-act="start">Realizar otro intento</button>'+
+    '<button class="btn sec" data-act="learn">Repasar la teor\u00eda</button>'+
+    '<button class="btn sec" data-act="stats">Ver mi progreso</button>'+
+    '<button class="btn ghost" data-act="history">Historial</button></div>'+
+    actnav()+'</div>'+navBlock('review')+'</div>'+drawerBtn()+sitefooter();
+}
+
+/* ---------- MODALES ---------- */
+function modalCfg(){
+  var lv = LEVELS.map(function(l){ return '<button class="pill '+l.c+(cfg.level===l.k?' on':'')+'" data-act="setlevel" data-l="'+l.k+'">'+l.n+'</button>'; }).join('');
+  return '<div class="modalbg" data-act="closemodal"><div class="modal" data-stop="1">'+
+    '<header>Configuraci\u00f3n del simulador<button data-act="closemodal">\u2715</button></header>'+
+    '<div class="body">'+
+    '<div class="field"><label>Dificultad de las preguntas</label><div class="pills">'+lv+'</div>'+
+    '<div class="hint">100 preguntas por materia y por nivel. \u00abMezclado\u00bb combina los cuatro niveles.</div></div>'+
+    '<div class="field"><label>L\u00edmite de tiempo por materia (minutos)</label><input id="cfgmin" type="number" min="1" max="300" value="'+cfg.minutes+'"></div>'+
+    '<div class="field"><label>Preguntas por intento (una materia)</label><input id="cfgcount" type="number" min="1" max="100" value="'+cfg.count+'"></div>'+
+    '<div class="field"><label>Simulacro completo: minutos</label><input id="cfgmixmin" type="number" min="1" max="300" value="'+cfg.mixMinutes+'"><div class="hint">El examen real dura 210 minutos en total.</div></div>'+
+    '<div class="field"><label>Simulacro completo: preguntas</label><input id="cfgmixcount" type="number" min="4" max="120" value="'+cfg.mixCount+'"></div>'+
+    '<div class="field"><label>Nombre del estudiante</label><input id="cfgname" type="text" value="'+escH(cfg.student)+'"></div>'+
+    '<label class="switch"><input id="cfgnr" type="checkbox" '+(cfg.noRepeat?'checked':'')+'> No repetir preguntas de intentos anteriores</label>'+
+    '<div class="hint" style="margin:-4px 0 10px">Cuando se agotan las preguntas nuevas de un nivel, el ciclo se reinicia autom\u00e1ticamente.</div>'+
+    '<label class="switch"><input id="cfgsq" type="checkbox" '+(cfg.shuffleQuestions?'checked':'')+'> Barajar preguntas en cada intento</label>'+
+    '<label class="switch"><input id="cfgso" type="checkbox" '+(cfg.shuffleOptions?'checked':'')+'> Barajar las opciones de respuesta</label>'+
+    '<label class="switch"><input id="cfgfb" type="checkbox" '+(cfg.showFeedback?'checked':'')+'> Mostrar retroalimentaci\u00f3n en la revisi\u00f3n</label>'+
+    '<div class="field" style="margin-top:12px"><label>Datos guardados en este dispositivo</label>'+
+    '<div class="hint">'+liveHist().length+' intento(s) activos \u00b7 '+(HIST.length-liveHist().length)+' eliminados \u00b7 '+SUBJ.reduce(function(s,k){return s+SEEN[k].length;},0)+' preguntas ya vistas.</div>'+
+    '<div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap"><button class="btn ghost" data-act="resetseen">Reiniciar preguntas vistas</button>'+
+    '<button class="btn ghost" data-act="clearhist">Borrar historial</button></div></div>'+
+    '<div class="field"><label>Respaldo del progreso (para no perderlo al actualizar la app)</label>'+
+    '<div class="hint">Exporta un archivo <b>.json</b> con tus intentos, preguntas vistas, capítulos leídos y configuración. Cuando descargues una versión nueva del simulador, ábrela e impórtalo: los intentos se combinan sin duplicarse.</div>'+
+    '<div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap"><button class="btn" data-act="exportjson">\u2913 Exportar progreso (.json)</button>'+
+    '<button class="btn sec" data-act="importjson">\u2912 Importar progreso</button></div>'+
+    '<input id="impfile" type="file" accept="application/json,.json" style="display:none"></div>'+
+    '</div>'+
+    '<div class="foot"><button class="btn ghost" data-act="closemodal">Cancelar</button><button class="btn" data-act="savecfg">Guardar cambios</button></div>'+
+    '</div></div>';
+}
+function modalExit(){
+  var a = S.attempt, un = a.ans.filter(function(x){ return x===null; }).length;
+  return '<div class="modalbg" data-act="stayin"><div class="modal" data-stop="1">'+
+    '<header>Tienes un intento en curso<button data-act="stayin">\u2715</button></header>'+
+    '<div class="body"><div class="alertbox">No puedes salir del cuestionario sin cerrarlo. Como en el examen real, debes <b>terminar el intento en el estado actual</b>.</div>'+
+    '<p>Si terminas ahora, el intento se enviar\u00e1 tal como est\u00e1'+(un>0? ' con <b>'+un+'</b> pregunta'+(un===1?'':'s')+' sin responder':'')+' y quedar\u00e1 guardado en tu historial con la nota obtenida.</p>'+
+    '</div>'+
+    '<div class="foot"><button class="btn sec" data-act="stayin">Volver al intento</button>'+
+    '<button class="btn" data-act="forcefinish">Terminar intento ahora</button></div>'+
+    '</div></div>';
+}
+function modalConfirm(){
+  var a = S.attempt, un = a.ans.filter(function(x){ return x===null; }).length;
+  return '<div class="modalbg" data-act="closemodal"><div class="modal" data-stop="1">'+
+    '<header>Confirmaci\u00f3n<button data-act="closemodal">\u2715</button></header>'+
+    '<div class="body"><p>Una vez que env\u00ede el intento, no podr\u00e1 cambiar sus respuestas.</p>'+
+    (un>0?'<div class="alertbox">Tiene '+un+' pregunta'+(un===1?'':'s')+' sin responder.</div>':'')+
+    '</div>'+
+    '<div class="foot"><button class="btn ghost" data-act="closemodal">Cancelar</button><button class="btn" data-act="submit">Enviar todo y terminar</button></div>'+
+    '</div></div>';
+}
+
+/* ---------- RENDER ---------- */
+function render(){
+  var html = '';
+  if(S.view==='home') html = viewHome();
+  else if(S.view==='learn') html = viewLearn();
+  else if(S.view==='chapter') html = viewChapter();
+  else if(S.view==='stats') html = viewStats();
+  else if(S.view==='history') html = viewHistory();
+  else if(S.view==='course') html = viewCourse();
+  else if(S.view==='attempt') html = viewAttempt();
+  else if(S.view==='summary') html = viewSummary();
+  else if(S.view==='review') html = viewReview();
+  el('root').innerHTML = html;
+  el('modalroot').innerHTML = S.modal==='cfg'? modalCfg() : (S.modal==='confirm'? modalConfirm() : (S.modal==='exit'? modalExit() : ''));
+  if(S.scrollTop!==false) window.scrollTo(0,0);
+}
+
+/* ---------- TIMER Y CICLO DEL INTENTO ---------- */
+function startTimer(){
+  stopTimer();
+  S.tick = setInterval(function(){
+    var a = S.attempt; if(!a || a.finished){ stopTimer(); return; }
+    var left = a.limitMs - (Date.now()-a.start.getTime());
+    var t = el('timer'), box = el('timerbox');
+    if(t) t.textContent = clock(left);
+    if(box) box.className = 'timerbox '+(left<60000?'crit':(left<300000?'warn':''));
+    if(left<=0) finishAttempt(true);
+  }, 1000);
+}
+function stopTimer(){ if(S.tick){ clearInterval(S.tick); S.tick = null; } }
+function recordAttempt(a){
+  var score = a.qs.reduce(function(s,_,ix){ return s+(isCorrect(ix)?1:0); },0);
+  var rec = { id:'a'+a.start.getTime(), ts:a.start.getTime(), course:a.course, level:a.level,
+    min:Math.round(a.limitMs/60000), durMs:(a.end-a.start), n:a.qs.length, score:score,
+    qs:a.qs.map(function(q,ix){ return {k:q.subj, i:q.src.__i, sel:(a.ans[ix]==null? null : q.order[a.ans[ix]])}; }) };
+  HIST.push(rec); saveHist();
+  a.qs.forEach(function(q){ if(!SEENSET[q.subj][q.src.__i]){ SEENSET[q.subj][q.src.__i]=1; SEEN[q.subj].push(q.src.__i); } });
+  saveSeen();
+  return rec;
+}
+function finishAttempt(auto){
+  var a = S.attempt;
+  a.finished = true;
+  a.end = new Date(Math.min(Date.now(), a.start.getTime()+a.limitMs));
+  stopTimer();
+  if(!a.historic) recordAttempt(a);
+  S.modal = null; S.onePage = null; S.view = 'review';
+  S.toast = auto? 'Se acab\u00f3 el tiempo: el intento se envi\u00f3 autom\u00e1ticamente y qued\u00f3 guardado en tu historial.'
+                : 'Intento guardado en tu historial. Puedes volver a revisarlo cuando quieras.';
+  render();
+}
+function startAttempt(k){
+  S.toast = null;
+  S.course = k || S.course || 'mat';
+  S.attempt = buildAttempt(S.course);
+  S.view = 'attempt'; S.onePage = null; S.modal = null;
+  render(); startTimer();
+}
+function rerenderKeepScroll(){ var y = window.scrollY; S.scrollTop = false; render(); S.scrollTop = true; window.scrollTo(0,y); }
+function inProgress(){ return !!(S.attempt && !S.attempt.finished && !S.attempt.historic); }
+function blocked(){ if(inProgress()){ S.modal = 'exit'; render(); return true; } return false; }
+function go(view){ S.modal = null; S.toast = null; S.view = view; render(); }
+
+/* ---------- EVENTOS ---------- */
+document.addEventListener('change', function(e){
+  var t = e.target.closest && e.target.closest('[data-act="answer"]');
+  if(t){ S.attempt.ans[+t.dataset.i] = +t.dataset.p; rerenderKeepScroll(); }
+  if(e.target && e.target.id==='impfile' && e.target.files && e.target.files[0]){
+    var fr = new FileReader();
+    fr.onload = function(ev){ importProgress(String(ev.target.result)); };
+    fr.readAsText(e.target.files[0]);
+  }
+});
+document.addEventListener('click', function(e){
+  var t = e.target.closest('[data-act]');
+  if(!t) return;
+  var act = t.dataset.act;
+  if(act==='closemodal' && t.classList.contains('modalbg') && e.target!==t) return;
+  switch(act){
+    case 'home': if(blocked()) break; stopTimer(); go('home'); break;
+    case 'learn': if(blocked()) break; go('learn'); break;
+    case 'stats': if(blocked()) break; go('stats'); break;
+    case 'history': if(blocked()) break; S.histTab='all'; go('history'); break;
+    case 'histtab': S.histTab = t.dataset.t; render(); break;
+    case 'histtabgo': if(blocked()) break; S.histTab = t.dataset.t; go('history'); break;
+    case 'chapter':
+      if(blocked()) break;
+      S.chapter = t.dataset.id; go('chapter');
+      var hh = t.dataset.h;
+      if(hh) setTimeout(function(){ var n2 = document.getElementById(hh); if(n2) n2.scrollIntoView({behavior:'smooth', block:'start'}); }, 80);
+      break;
+    case 'exportjson': exportProgress(); break;
+    case 'importjson': var fi = el('impfile'); if(fi) fi.click(); break;
+    case 'reshuffle':
+      var ck = t.dataset.c || S.course;
+      var nts = makePlan(ck);
+      S.toast = 'Preguntas barajadas para el pr\u00f3ximo intento de '+COURSES[ck].short+'.'+(nts.length? ' '+nts.join(' '):'');
+      render(); break;
+    case 'clearplan': clearPlan(t.dataset.c || S.course); S.toast = null; render(); break;
+    case 'anchor': var n = document.getElementById(t.dataset.id); if(n) n.scrollIntoView({behavior:'smooth',block:'start'}); break;
+    case 'course': if(blocked()) break; S.course = t.dataset.c||'mat'; go('course'); break;
+    case 'stayin': S.modal = null; render(); break;
+    case 'forcefinish': finishAttempt(false); break;
+    case 'toggledrawer': UI.drawer = !UI.drawer; saveUI(); rerenderKeepScroll(); break;
+    case 'cfg': S.modal = 'cfg'; render(); break;
+    case 'closemodal': S.modal = null; render(); break;
+    case 'setlevel': cfg.level = t.dataset.l; saveCfg(); rerenderKeepScroll(); break;
+    case 'savecfg':
+      cfg.minutes = Math.max(1, Math.min(300, +el('cfgmin').value||30));
+      cfg.count = Math.max(1, Math.min(100, +el('cfgcount').value||9));
+      cfg.mixMinutes = Math.max(1, Math.min(300, +el('cfgmixmin').value||90));
+      cfg.mixCount = Math.max(4, Math.min(120, +el('cfgmixcount').value||20));
+      cfg.student = el('cfgname').value.trim()||DEFAULT_CFG.student;
+      cfg.noRepeat = el('cfgnr').checked;
+      cfg.shuffleQuestions = el('cfgsq').checked;
+      cfg.shuffleOptions = el('cfgso').checked;
+      cfg.showFeedback = el('cfgfb').checked;
+      saveCfg(); S.modal = null;
+      if(S.attempt && !S.attempt.finished) S.attempt.limitMs = minutesFor(S.attempt.course)*60000;
+      render(); break;
+    case 'resetseen':
+      SUBJ.forEach(function(k){ SEEN[k]=[]; SEENSET[k]={}; }); saveSeen();
+      S.modal = null; S.toast = 'Se reinici\u00f3 el registro de preguntas vistas: todo el banco vuelve a estar disponible.';
+      render(); break;
+    case 'clearhist':
+      HIST.forEach(function(r){ r.deleted = true; }); saveHist(); S.modal = null;
+      S.toast = 'Todos los intentos quedaron marcados como eliminados: ya no cuentan en las estad\u00edsticas, pero puedes seguir consult\u00e1ndolos.'; render(); break;
+    case 'delrec':
+      HIST.forEach(function(r){ if(r.id===t.dataset.id) r.deleted = true; }); saveHist();
+      S.toast = 'Intento eliminado: queda marcado como eliminado y deja de contar en las estad\u00edsticas.'; render(); break;
+    case 'restrec':
+      HIST.forEach(function(r){ if(r.id===t.dataset.id) delete r.deleted; }); saveHist();
+      S.toast = 'Intento restaurado: vuelve a contar en tus estad\u00edsticas.'; render(); break;
+    case 'openrec':
+      var rec = HIST.filter(function(r){ return r.id === t.dataset.id; })[0];
+      if(rec){ if(blocked()) break; S.attempt = attemptFromRecord(rec); S.course = rec.course; S.onePage = null;
+        S.toast = rec.deleted? 'Est\u00e1s viendo un intento eliminado: se conserva para consulta pero no cuenta en las estad\u00edsticas.' : null;
+        S.view = 'review'; render(); }
+      break;
+    case 'start': if(blocked()) break; startAttempt(S.course); break;
+    case 'quickstart': if(blocked()) break; startAttempt(t.dataset.c); break;
+    case 'next': S.attempt.cur = Math.min(S.attempt.qs.length-1, S.attempt.cur+1); render(); break;
+    case 'prev': S.attempt.cur = Math.max(0, S.attempt.cur-1); render(); break;
+    case 'goto':
+      var i = +t.dataset.i;
+      if(S.view==='review'){ if(S.onePage!=null){ S.onePage = i; render(); } else { var nodes = document.querySelectorAll('.main .que'); if(nodes[i]) nodes[i].scrollIntoView({behavior:'smooth',block:'center'}); } }
+      else { S.attempt.cur = i; S.view = 'attempt'; render(); }
+      break;
+    case 'flag': S.attempt.flags[+t.dataset.i] = !S.attempt.flags[+t.dataset.i]; rerenderKeepScroll(); break;
+    case 'summary': S.view = 'summary'; render(); break;
+    case 'back': S.view = 'attempt'; render(); break;
+    case 'confirmsubmit': S.modal = 'confirm'; render(); break;
+    case 'submit': finishAttempt(false); break;
+    case 'showall': S.onePage = (S.onePage==null? 0 : null); render(); break;
+    case 'rnext': S.onePage = Math.min(S.attempt.qs.length-1, S.onePage+1); render(); break;
+    case 'rprev': S.onePage = Math.max(0, S.onePage-1); render(); break;
+    case 'finishreview': S.onePage = null; go(S.attempt && S.attempt.historic? 'history' : 'course'); break;
+    case 'openrecdel': break;
+  }
+});
+window.addEventListener('beforeunload', function(e){ if(inProgress()){ e.preventDefault(); e.returnValue=''; } });
+
+render();

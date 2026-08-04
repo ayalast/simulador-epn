@@ -1,0 +1,1862 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aula Virtual Vinculación EPN — Simuladores de admisión 2026-B</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="root"></div>
+<div id="modalroot"></div>
+
+<script type="text/plain" id="theorysrc">
+@@CHAPTER trig|t1|📐|Taller Especializado: Identidades Trigonométricas
+## ¿Por qué son fundamentales las Identidades Trigonométricas?
+Las identidades trigonométricas son ecuaciones que involucran funciones trigonométricas y son **válidas para todos los valores admisibles de la variable**. En el examen de la EPN, resolver este tipo de preguntas requiere reconocer patrones al instante para simplificar expresiones complejas en segundos.
+
+---
+
+## 1. Identidades Fundamentales que DEBES Memorizar
+
+### A. Identidades de Cociente
+> **Regla de oro:** Cuando tengas dudas en un ejercicio, convierte TODAS las funciones a **senos y cosenos**.
+
+- $\tan(x) = \frac{\sin(x)}{\cos(x)}$
+- $\cot(x) = \frac{\cos(x)}{\sin(x)}$
+
+### B. Identidades Recíprocas
+- $\csc(x) = \frac{1}{\sin(x)} \quad \Longleftrightarrow \quad \sin(x) \cdot \csc(x) = 1$
+- $\sec(x) = \frac{1}{\cos(x)} \quad \Longleftrightarrow \quad \cos(x) \cdot \sec(x) = 1$
+- $\cot(x) = \frac{1}{\tan(x)} \quad \Longleftrightarrow \quad \tan(x) \cdot \cot(x) = 1$
+
+### C. Identidades Pitagóricas (Las más evaluadas)
+1. **La Reina de las Identidades:**
+   $$\sin^{2}(x) + \cos^{2}(x) = 1$$
+   - Despejes útiles: $\sin^{2}(x) = 1 - \cos^{2}(x)$
+   - Despejes útiles: $\cos^{2}(x) = 1 - \sin^{2}(x)$
+
+2. **Identidad de la Tangente y Secante (¡La del ejercicio!):**
+   $$1 + \tan^{2}(x) = \sec^{2}(x)$$
+   - Despeje útil: $\sec^{2}(x) - \tan^{2}(x) = 1$
+   - Despeje útil: $\tan^{2}(x) = \sec^{2}(x) - 1$
+
+3. **Identidad de la Cotangente y Cosecante:**
+   $$1 + \cot^{2}(x) = \csc^{2}(x)$$
+   - Despeje útil: $\csc^{2}(x) - \cot^{2}(x) = 1$
+
+---
+
+## 2. Identidades de Ángulo Doble (Fórmulas Esenciales)
+- **Seno del ángulo doble:** 
+  $$\sin(2x) = 2\sin(x)\cos(x)$$
+
+- **Coseno del ángulo doble (Las 3 formas del examen):**
+  $$\cos(2x) = \cos^{2}(x) - \sin^{2}(x)$$
+  $$\cos(2x) = 1 - 2\sin^{2}(x)$$
+  $$\cos(2x) = 2\cos^{2}(x) - 1$$
+
+---
+
+## 3. Truco de Examen: Comprobación Numérica Rápida ⚡
+> Si en el examen te piden simplificar una expresión y no recuerdas la fórmula algebraicamente, **sustituye un ángulo notable conocido** (por ejemplo $x = 30^\circ$ o $x = 45^\circ$) en el enunciado y evalúa las opciones. La opción que dé exactamente el mismo número es la correcta.
+
+
+@@CHAPTER mat|m1|🧮|Fundamentos de Álgebra
+## ¿Por qué importa?
+El álgebra es el idioma con el que se escriben todas las demás preguntas del examen. Si dominas esta parte, la mitad de los errores de física y química desaparecen solos.
+
+> **Analogía:** los números son las palabras y el álgebra es la gramática. Puedes conocer muchas palabras, pero sin gramática no formas una frase correcta.
+
+## 1. Conjuntos numéricos
+- **Naturales** $\mathbb{N}$: $1, 2, 3, \ldots$ (contar).
+- **Enteros** $\mathbb{Z}$: agregan el cero y los negativos.
+- **Racionales** $\mathbb{Q}$: todo lo que se escribe como $\frac{a}{b}$ con $b \neq 0$. Su decimal termina o es periódico.
+- **Irracionales** $\mathbb{I}$: $\sqrt{2}$, $\pi$, $e$. Decimal infinito **no** periódico.
+- **Reales** $\mathbb{R}$: racionales más irracionales. Es la recta completa.
+
+## 2. Jerarquía de operaciones (el orden manda)
+1. Paréntesis, corchetes y llaves (de adentro hacia afuera).
+2. Potencias y raíces.
+3. Multiplicaciones y divisiones (de izquierda a derecha).
+4. Sumas y restas (de izquierda a derecha).
+
+#### Ejemplo resuelto
+Calcular $-(4 - 7)^{2} + 3 \cdot 5 - (-2)^{2}$.
+1. Paréntesis: $4 - 7 = -3$.
+2. Potencias: $(-3)^{2} = 9$ y $(-2)^{2} = 4$.
+3. Queda $-9 + 15 - 4 = 2$.
+
+> **Error clásico:** $-3^{2}$ **no** es $9$. Sin paréntesis, la potencia actúa solo sobre el $3$: $-3^{2} = -9$. En cambio $(-3)^{2} = 9$.
+
+## 3. Leyes de los exponentes
+- $a^{m}\cdot a^{n} = a^{m+n}$
+- $\dfrac{a^{m}}{a^{n}} = a^{m-n}$
+- $(a^{m})^{n} = a^{mn}$
+- $a^{0} = 1$ (con $a \neq 0$)
+- $a^{-n} = \dfrac{1}{a^{n}}$
+- $a^{\frac{m}{n}} = \sqrt[n]{a^{m}}$
+
+**Truco de oro:** cuando veas sumas de potencias, **factoriza la potencia menor**. Por ejemplo $2^{9} - 2^{10} = 2^{9}(1 - 2) = -2^{9}$. Este truco aparece casí siempre en el examen de la EPN.
+
+## 4. Radicales
+- $\sqrt{ab} = \sqrt{a}\sqrt{b}$ y $\sqrt{\frac{a}{b}} = \frac{\sqrt{a}}{\sqrt{b}}$.
+- Simplificar: busca cuadrados perfectos dentro de la raíz. $\sqrt{72} = \sqrt{36 \cdot 2} = 6\sqrt{2}$.
+- Racionalizar: $\dfrac{3}{\sqrt{5}} = \dfrac{3\sqrt{5}}{5}$; con binomios usa el conjugado: $\dfrac{1}{\sqrt{3}-1} = \dfrac{\sqrt{3}+1}{2}$.
+
+## 5. Fracciones sin miedo
+Para sumar o restar: común denominador. Para multiplicar: en línea recta. Para dividir: multiplica por el recíproco.
+
+Fracción compleja: $\dfrac{\frac{a}{b}}{\frac{c}{d}} = \frac{a}{b}\cdot\frac{d}{c}$.
+
+> **Analogía:** dividir para $\frac{1}{2}$ es preguntar «cuántas mitades caben»: por eso el resultado **crece**.
+
+## 6. Productos notables (memorízalos)
+- $(a+b)^{2} = a^{2} + 2ab + b^{2}$
+- $(a-b)^{2} = a^{2} - 2ab + b^{2}$
+- $(a+b)(a-b) = a^{2} - b^{2}$
+- $(a+b)^{3} = a^{3} + 3a^{2}b + 3ab^{2} + b^{3}$
+- $a^{3} \pm b^{3} = (a \pm b)(a^{2} \mp ab + b^{2})$
+
+## 7. Factorización: el menú en orden
+1. **Factor común** siempre primero.
+2. **Diferencia de cuadrados**.
+3. **Trinomio cuadrado perfecto**.
+4. **Trinomio de la forma** $x^{2}+bx+c$: dos números que sumen $b$ y multipliquen $c$.
+5. **Trinomio** $ax^{2}+bx+c$: agrupación o aspa.
+6. **Suma/diferencia de cubos**.
+
+#### Ejemplo resuelto
+Simplificar $\dfrac{x^{2}-9}{x^{2}+6x+9}$ = $\dfrac{(x-3)(x+3)}{(x+3)^{2}} = \dfrac{x-3}{x+3}$, con $x \neq -3$.
+
+> **Regla de oro:** solo se cancelan **factores**, nunca sumandos. $\frac{x+2}{2}$ **no** es $x$.
+
+## 8. División de polinomios y teorema del residuo
+Si divides $P(x)$ para $(x - a)$, el residuo es $P(a)$. Si $P(a) = 0$, entonces $(x-a)$ es factor (teorema del factor). Ruffini es el atajo práctico.
+
+## Errores que cuestan puntos
+- Perder el signo al distribuir un menos: $-(x - 3) = -x + 3$.
+- Escribir $(a+b)^{2} = a^{2}+b^{2}$ (falta el $2ab$).
+- Simplificar sin factorizar.
+- Olvidar las restricciones del denominador.
+## 9. Enteros: reglas de signo sin dudar
+
+Piensa en los enteros como **pasos hacia adelante (+) y hacia atras (-)** sobre una recta.
+
+| Operacion | Regla | Ejemplo |
+|---|---|---|
+| Suma de igual signo | suma y conserva el signo | $-7-5=-12$ |
+| Suma de distinto signo | resta y toma el signo del mayor en valor absoluto | $-9+4=-5$ |
+| Producto/cociente | igual signo $\to +$, distinto signo $\to -$ | $(-3)(-6)=18$ |
+| Potencia de base negativa | exponente par $\to +$, impar $\to -$ | $(-2)^4=16$, $(-2)^3=-8$ |
+
+> [tip] Truco del parentesis: $-(-5)$ es "quitar una deuda de 5", o sea $+5$. Y $-2^4=-16$ pero $(-2)^4=16$: sin parentesis, el signo no entra a la potencia. Esta diferencia aparece casi siempre en el examen.
+
+**Divisibilidad util:** un numero es divisible para 2 si termina en cifra par; para 3 si la suma de sus cifras es multiplo de 3; para 5 si termina en 0 o 5; para 9 si la suma de cifras es multiplo de 9.
+
+**MCD y mcm por descomposicion:** $60=2^2\cdot 3\cdot 5$ y $72=2^3\cdot 3^2$. El MCD toma los **comunes con menor exponente**: $2^2\cdot 3=12$. El mcm toma **todos con mayor exponente**: $2^3\cdot 3^2\cdot 5=360$.
+
+## 10. Racionales: fracciones, decimales y porcentajes
+
+Un racional es cualquier numero que se puede escribir como $\dfrac{a}{b}$ con $b\neq 0$.
+
+- **Decimal exacto a fraccion:** $0{,}375=\dfrac{375}{1000}=\dfrac{3}{8}$.
+- **Decimal periodico puro:** $0{,}\overline{27}=\dfrac{27}{99}=\dfrac{3}{11}$ (tantos nueves como cifras del periodo).
+- **Decimal periodico mixto:** $0{,}1\overline{6}=\dfrac{16-1}{90}=\dfrac{15}{90}=\dfrac{1}{6}$.
+- **Porcentaje:** $x\%$ de $N$ es $\dfrac{x}{100}\cdot N$. Aumentar 20% es multiplicar por $1{,}20$; descontar 20% es multiplicar por $0{,}80$. Ojo: subir 20% y luego bajar 20% **no** devuelve al inicio ($1{,}2\cdot 0{,}8=0{,}96$).
+- **Regla de tres y proporciones:** si $\dfrac{a}{b}=\dfrac{c}{d}$ entonces $ad=bc$ (producto cruzado). En proporcion inversa, lo que crece en uno decrece en el otro: $a\cdot b=c\cdot d$.
+
+## 11. Reales: intervalos, recta y notacion cientifica
+
+$\mathbb{R}$ = racionales + irracionales ($\sqrt{2}$, $\pi$, $e$). Todo real ocupa un punto en la recta numerica.
+
+| Notacion | Significado | Grafico |
+|---|---|---|
+| $[a,b]$ | incluye extremos | bolita llena |
+| $(a,b)$ | excluye extremos | bolita vacia |
+| $[a,\infty)$ | desde $a$ hacia la derecha | el infinito nunca se cierra |
+
+**Notacion cientifica:** $a\times 10^{n}$ con $1\le a<10$. Para multiplicar se suman exponentes; para dividir se restan: $(3\times 10^{5})(2\times 10^{-3})=6\times 10^{2}$.
+
+**Orden en los reales:** si multiplicas una desigualdad por un negativo, **el sentido se invierte**. Ese detalle vale puntos en la seccion de inecuaciones.
+
+## 12. Expresiones algebraicas al detalle
+
+- **Termino, coeficiente, grado:** en $-5x^3y^2$ el coeficiente es $-5$ y el grado es $3+2=5$.
+- **Valor numerico:** reemplazar y calcular. Si $P(x)=2x^2-3x+1$, entonces $P(-2)=2(4)+6+1=15$.
+- **Suma/resta:** solo se combinan **terminos semejantes** (misma parte literal con los mismos exponentes).
+- **Producto:** propiedad distributiva; $(x+3)(x-5)=x^2-2x-15$.
+- **Racionalizacion con binomio:** multiplica por el conjugado, $\dfrac{2}{\sqrt{5}-1}=\dfrac{2(\sqrt{5}+1)}{4}=\dfrac{\sqrt{5}+1}{2}$.
+- **Simplificar fracciones algebraicas:** factoriza primero y luego cancela **factores** (nunca sumandos): $\dfrac{x^2-9}{x^2+6x+9}=\dfrac{(x-3)(x+3)}{(x+3)^2}=\dfrac{x-3}{x+3}$.
+
+> [warn] Cancelar mal es el error numero uno: en $\dfrac{x+3}{3}$ **no** se puede tachar el 3, porque arriba es una suma, no un producto.
+
+## Ejercicios resueltos tipo examen
+
+**1)** Calcular $\dfrac{2}{3}-\dfrac{5}{6}+\dfrac{1}{4}$.
+Denominador comun 12: $\dfrac{8}{12}-\dfrac{10}{12}+\dfrac{3}{12}=\dfrac{1}{12}$.
+
+**2)** Simplificar $\dfrac{(2x^2y^{-1})^3}{4x^{4}y^{-5}}$.
+Arriba: $8x^{6}y^{-3}$. Dividiendo: $\dfrac{8}{4}x^{6-4}y^{-3+5}=2x^{2}y^{2}$.
+
+**3)** Un articulo cuesta 80 USD, sube 25% y luego baja 20%. Precio final: $80\cdot 1{,}25\cdot 0{,}80=80$ USD. Volvio al mismo precio, aunque los porcentajes no se "cancelan" en general.
+
+**4)** Factorizar $3x^3-12x$: factor comun $3x$, luego diferencia de cuadrados: $3x(x^2-4)=3x(x-2)(x+2)$.
+
+## Resumen relampago
+
+| Concepto | Formula clave |
+|---|---|
+| Producto notable | $(a\pm b)^2=a^2\pm 2ab+b^2$ |
+| Diferencia de cuadrados | $a^2-b^2=(a-b)(a+b)$ |
+| Suma/diferencia de cubos | $a^3\pm b^3=(a\pm b)(a^2\mp ab+b^2)$ |
+| Exponentes | $a^m a^n=a^{m+n}$, $(a^m)^n=a^{mn}$, $a^{-n}=\dfrac{1}{a^n}$ |
+| Radical a exponente | $\sqrt[n]{a^m}=a^{m/n}$ |
+
+@@CHAPTER mat|m2|⚖️|Ecuaciones e Inecuaciones
+## La idea central
+Una ecuación es una **balanza**: lo que hagas a un lado debes hacerlo al otro. Una inecuación es una balanza inclinada: puedes hacer lo mismo, pero **si multiplicas o divides por un negativo, la balanza se voltea**.
+
+## 1. Ecuaciones de primer grado
+Pasos: quitar denominadores (multiplicando por el m.c.m.), quitar paréntesis, agrupar $x$ a un lado y números al otro, despejar.
+
+#### Ejemplo resuelto
+$\dfrac{2x}{3} - 4 = \dfrac{x}{2} + 1$. Multiplico todo por 6: $4x - 24 = 3x + 6 \Rightarrow x = 30$.
+
+**Verifica siempre** reemplazando en la ecuación original: es la forma más rápida de descartar opciones en un examen de selección múltiple.
+
+## 2. Sistemas de ecuaciones lineales
+Tres métodos: **sustitución**, **igualación** y **reducción** (suma y resta). En un examen cronometrado, reducción suele ser el más rápido.
+
+Interpretación geométrica:
+- Una solución → rectas que se cortan.
+- Infinitas soluciones → rectas coincidentes.
+- Sin solución → rectas paralelas.
+
+#### Problema tipo
+«3 cuadernos y 2 esferos cuestan 13; 2 cuadernos y 4 esferos cuestan 14». Sea $c$ y $e$: $3c+2e=13$, $2c+4e=14$. Multiplico la primera por 2 y resto: $4c = 12 \Rightarrow c = 3$, $e = 2$.
+
+## 3. Ecuación de segundo grado
+Fórmula general: $$x = \frac{-b \pm \sqrt{b^{2}-4ac}}{2a}$$
+
+**Discriminante** $\Delta = b^{2}-4ac$:
+- $\Delta > 0$: dos raíces reales distintas.
+- $\Delta = 0$: una raíz real doble.
+- $\Delta < 0$: no hay raíces reales.
+
+**Relaciones de Viète** (ahorran muchísimo tiempo):
+$$x_{1}+x_{2} = -\frac{b}{a}, \qquad x_{1}x_{2} = \frac{c}{a}$$
+Con ellas, $x_{1}^{2}+x_{2}^{2} = (x_{1}+x_{2})^{2} - 2x_{1}x_{2}$ sin resolver la ecuación.
+
+## 4. Inecuaciones
+- Lineales: como una ecuación, pero **al multiplicar o dividir por un negativo cambia el sentido**.
+- Cuadráticas: halla las raíces, dibújalas en la recta y analiza el signo. Si $a>0$, la parábola es negativa **entre** las raíces y positiva **fuera**.
+- Racionales: nunca multipliques por el denominador sin analizar su signo; pasa todo a un lado y estudia el signo del cociente.
+
+#### Ejemplo resuelto
+$x^{2}-5x+6 < 0$. Raíces: 2 y 3. Como abre hacia arriba, es negativa entre ellas: $2 < x < 3$.
+
+## 5. Valor absoluto
+$|u|$ es la **distancia de $u$ al cero**. De ahí salen todas las reglas:
+- $|u| = k$ ($k \geq 0$) → $u = k$ **o** $u = -k$.
+- $|u| < k$ → $-k < u < k$ («cerca del cero», intervalo).
+- $|u| > k$ → $u < -k$ **o** $u > k$ («lejos del cero», dos rayos).
+
+> **Analogía:** $|x-5| < 2$ significa «estoy a menos de 2 pasos del punto 5», o sea entre 3 y 7.
+
+## Estrategia para el examen
+1. Si las opciones son números, **reemplaza** en lugar de resolver.
+2. Descarta por signo o por magnitud antes de calcular.
+3. En sistemas, si te piden $x+y$, a veces basta con **sumar las dos ecuaciones**.
+## 6. Problemas verbales: de las palabras a la ecuacion
+
+| Frase | Traduccion |
+|---|---|
+| "un numero aumentado en 5" | $x+5$ |
+| "el triple de un numero menos 4" | $3x-4$ |
+| "dos numeros consecutivos" | $x$ y $x+1$ |
+| "la edad dentro de 6 anios" | $x+6$ |
+| "el 15% de" | $0{,}15x$ |
+
+**Receta:** (1) nombra la incognita con una frase completa, (2) escribe la relacion, (3) resuelve, (4) **verifica en el enunciado**, no en tu ecuacion.
+
+**Ejemplo.** La suma de tres enteros consecutivos es 84. Sea $x$ el menor: $x+(x+1)+(x+2)=84 \Rightarrow 3x+3=84 \Rightarrow x=27$. Los numeros son 27, 28 y 29.
+
+**Mezclas, trabajo y movimiento (los tres clasicos):**
+- Movimiento: $d=v\cdot t$. Si van en sentidos opuestos, las distancias se suman.
+- Trabajo: si A tarda $a$ horas y B tarda $b$, juntos tardan $t$ con $\dfrac{1}{a}+\dfrac{1}{b}=\dfrac{1}{t}$.
+- Mezclas: concentracion $\times$ cantidad = soluto; la suma de solutos se conserva.
+
+## 7. Sistemas lineales: los tres metodos y el analisis de soluciones
+
+Para $\begin{cases} a_1x+b_1y=c_1 \\ a_2x+b_2y=c_2 \end{cases}$:
+
+- **Sustitucion:** despeja la variable con coeficiente 1.
+- **Igualacion:** despeja la misma variable en ambas y iguala.
+- **Reduccion (suma y resta):** iguala coeficientes y elimina. Es el mas rapido en el examen.
+
+**Cuantas soluciones tiene?** Compara las razones:
+
+| Condicion | Tipo | Interpretacion grafica |
+|---|---|---|
+| $\dfrac{a_1}{a_2}\neq\dfrac{b_1}{b_2}$ | solucion unica (compatible determinado) | rectas que se cortan |
+| $\dfrac{a_1}{a_2}=\dfrac{b_1}{b_2}\neq\dfrac{c_1}{c_2}$ | sin solucion (incompatible) | rectas paralelas |
+| $\dfrac{a_1}{a_2}=\dfrac{b_1}{b_2}=\dfrac{c_1}{c_2}$ | infinitas soluciones | la misma recta |
+
+## 8. Segundo grado: mas alla de la formula
+
+Para $ax^2+bx+c=0$ con $a\neq 0$:
+
+- Discriminante $\Delta=b^2-4ac$: si $\Delta>0$ hay dos raices reales distintas; si $\Delta=0$ una raiz doble; si $\Delta<0$ no hay raices reales.
+- **Suma y producto (Vieta):** $x_1+x_2=-\dfrac{b}{a}$ y $x_1x_2=\dfrac{c}{a}$. Sirve para armar la ecuacion a partir de sus raices o para resolver de cabeza.
+- **Vertice de la parabola:** $x_v=-\dfrac{b}{2a}$; si $a>0$ abre hacia arriba y el vertice es el **minimo**.
+- **Ecuaciones reducibles:** bicuadradas ($x^4-5x^2+4=0$, cambia $u=x^2$) y con radicales (aisla la raiz, eleva al cuadrado y **verifica**: pueden aparecer soluciones falsas).
+
+## 9. Inecuaciones cuadraticas y racionales (metodo de signos)
+
+Para $x^2-x-6>0$: factoriza $(x-3)(x+2)>0$, marca las raices $-2$ y $3$ en la recta y evalua el signo en cada zona.
+
+| Zona | $x<-2$ | $-2<x<3$ | $x>3$ |
+|---|---|---|---|
+| Signo | $+$ | $-$ | $+$ |
+
+Solucion: $(-\infty,-2)\cup(3,\infty)$.
+
+> [warn] En una inecuacion racional como $\dfrac{x-1}{x+2}\ge 0$ **nunca** multipliques cruzado: el signo del denominador es desconocido. Usa la tabla de signos y excluye siempre el valor que anula el denominador ($x=-2$).
+
+## 10. Valor absoluto: ecuaciones e inecuaciones
+
+$|x|$ es la **distancia al cero**, por eso nunca es negativo.
+
+- Ecuacion $|x|=k$ con $k\ge 0$: se abre en dos casos, $x=k$ o $x=-k$.
+- Desigualdad $|x|<k$: equivale a $-k<x<k$, un **solo intervalo** (esta cerca del cero).
+- Desigualdad $|x|>k$: equivale a $x<-k$ **o** $x>k$, **dos rayos** (esta lejos del cero).
+- Si $k<0$: $|x|=k$ no tiene solucion y $|x|>k$ se cumple para todo real.
+
+**Ejemplo.** $|2x-1|\le 5 \Rightarrow -5\le 2x-1\le 5 \Rightarrow -2\le x\le 3$.
+
+## Ejercicios resueltos tipo examen
+
+**1)** Resolver $\dfrac{x}{2}-\dfrac{x-1}{3}=2$. Multiplica todo por 6: $3x-2(x-1)=12 \Rightarrow x+2=12 \Rightarrow x=10$.
+
+**2)** Hallar $k$ para que $x^2+kx+9=0$ tenga raiz doble. $\Delta=k^2-36=0 \Rightarrow k=\pm 6$.
+
+**3)** Sistema $\begin{cases} 2x+3y=12 \\ x-y=1 \end{cases}$. De la segunda $x=y+1$; sustituyendo: $2y+2+3y=12 \Rightarrow y=2$, $x=3$.
+
+**4)** Resolver $|3-x|>4$: $3-x>4$ o $3-x<-4$, es decir $x<-1$ o $x>7$.
+
+@@CHAPTER mat|m3|📐|Geometría plana
+## Los cimientos (Moise & Downs)
+- **Postulado de la regla:** a cada punto de una recta le corresponde un número real; la **distancia** entre dos puntos es el valor absoluto de la diferencia de sus coordenadas.
+- Por dos puntos distintos pasa **una única** recta.
+- **Punto medio:** el punto que divide un segmento en dos partes congruentes.
+- **Postulado de las paralelas:** por un punto exterior a una recta pasa exactamente una paralela a ella.
+
+## Ángulos: el vocabulario que se evalúa
+- **Complementarios:** suman $90^\circ$. **Suplementarios:** suman $180^\circ$.
+- **Opuestos por el vértice:** siempre congruentes.
+- **Par lineal:** dos ángulos adyacentes cuyos lados no comunes forman una recta → suplementarios.
+
+### Dos paralelas cortadas por una transversal
+Se forman 8 ángulos y solo hay **dos medidas**: $\alpha$ y $180-\alpha$.
+- **Correspondientes:** congruentes.
+- **Alternos internos** y **alternos externos:** congruentes.
+- **Conjugados (colaterales) internos:** suplementarios.
+
+> **Truco visual:** marca con el mismo color todos los ángulos «agudos» del dibujo y con otro los «obtusos». Cualquier pregunta se responde en segundos.
+
+## Triángulos
+- Suma de ángulos interiores: $180^\circ$.
+- **Ángulo exterior** = suma de los dos interiores no adyacentes.
+- Desigualdad triangular: cada lado es menor que la suma de los otros dos.
+- Clasificación por lados: equilátero, isósceles, escaleno. Por ángulos: acutángulo, rectángulo, obtusángulo.
+- En un triángulo isósceles, **los ángulos de la base son congruentes** (y su recíproco también vale).
+
+### Congruencia (mismo tamaño y forma)
+Criterios: **LAL**, **ALA**, **LLL** y, en rectángulos, **hipotenusa-cateto**. ¡Cuidado! **LLA no es criterio** (caso ambiguo).
+
+Estrategia típica del examen: te dan $\overline{AD} \cong \overline{AE}$ y $\overline{AB} \cong \overline{AC}$ con un ángulo común → aplicas **LAL**, concluyes congruencia de triángulos y de ahí obtienes el ángulo pedido, casi siempre por **suplemento**.
+
+### Semejanza (misma forma, distinto tamaño)
+Criterios: **AA**, **LAL** de semejanza, **LLL** de semejanza.
+- Los lados homólogos son proporcionales: $\frac{a'}{a} = \frac{b'}{b} = \frac{c'}{c} = k$.
+- Los perímetros están en razón $k$ y las **áreas en razón** $k^{2}$.
+- **Teorema de Tales:** rectas paralelas que cortan dos transversales determinan segmentos proporcionales.
+
+> **Analogía:** la semejanza es una fotocopia ampliada; la congruencia es una fotocopia al 100 %.
+
+## Teorema de Pitágoras y áreas
+$c^{2} = a^{2}+b^{2}$. Ternas útiles: (3,4,5), (5,12,13), (8,15,17), (7,24,25) y sus múltiplos.
+
+Áreas básicas: triángulo $\frac{b\cdot h}{2}$, rectángulo $b\cdot h$, trapecio $\frac{(B+b)h}{2}$, círculo $\pi r^{2}$, longitud de circunferencia $2\pi r$.
+
+## Cómo atacar un problema con figura
+1. **Redibuja** la figura en la hoja de apuntes.
+2. Escribe **todo** lo que sabes sobre el dibujo (marcas de congruencia, ángulos rectos).
+3. Busca triángulos congruentes o semejantes.
+4. Usa suma de ángulos y suplementos para cerrar el problema.
+## Axiomas que la EPN evalua textualmente (Moise & Downs)
+
+- **Axioma de la regla:** a cada punto de una recta se le puede asignar un numero real (su coordenada) de modo que la distancia entre dos puntos sea $|a-b|$.
+- **Axioma de adicion de distancias:** $B$ esta **entre** $A$ y $C$ si los tres son colineales y $AB+BC=AC$.
+- **Punto medio:** el unico punto $M$ con $AM=MB$; su coordenada es el promedio.
+- **Axioma de las paralelas (Playfair):** por un punto exterior a una recta pasa **exactamente una** paralela a ella.
+- **Postulado de la medida angular:** a cada angulo le corresponde un numero entre 0 y 180; angulos adyacentes suman sus medidas.
+
+## Angulos entre dos paralelas y una transversal
+
+| Pareja | Posicion | Relacion |
+|---|---|---|
+| Correspondientes | mismo lado, uno arriba y otro abajo | **iguales** |
+| Alternos internos | lados opuestos, entre las paralelas | **iguales** |
+| Alternos externos | lados opuestos, fuera de las paralelas | **iguales** |
+| Conjugados internos (colaterales) | mismo lado, entre las paralelas | **suman 180** |
+| Opuestos por el vertice | cruzados | **iguales** |
+| Adyacentes en linea recta | contiguos | **suman 180** |
+
+> [tip] Truco visual: en la figura clasica solo existen **dos** medidas, una "aguda" y una "obtusa", y siempre suman 180. Identifica cual es cada angulo y ya tienes la respuesta.
+
+## Congruencia de triangulos: los criterios exactos
+
+Dos triangulos son congruentes ($\cong$) si tienen igual forma **y** tamanio.
+
+| Criterio | Que se necesita |
+|---|---|
+| **LLL** | los tres lados iguales |
+| **LAL** | dos lados y el angulo **comprendido** |
+| **ALA** | dos angulos y el lado comun |
+| **LAA** | dos angulos y un lado no comprendido |
+| **HC (rectangulos)** | hipotenusa y un cateto |
+
+> [warn] **LLA no es criterio** (caso ambiguo). Si el angulo no esta entre los dos lados, pueden existir dos triangulos distintos.
+
+**Consecuencia clave:** si dos triangulos son congruentes, **todos** sus elementos correspondientes lo son (lados, angulos, alturas, medianas). En los items del examen se usa para justificar igualdades de segmentos.
+
+## Semejanza de triangulos y teorema de Tales
+
+Semejantes ($\sim$) = misma forma, distinto tamanio. Criterios: **AA**, **LAL** (proporcional) y **LLL** (proporcional).
+
+- Razon de semejanza $k$: lados $\times k$, **perimetros** $\times k$, **areas** $\times k^2$.
+- **Teorema de Tales:** toda paralela a un lado de un triangulo divide a los otros dos en segmentos proporcionales: $\dfrac{AD}{DB}=\dfrac{AE}{EC}$.
+- **Altura sobre la hipotenusa:** $h^2=m\cdot n$ (media geometrica), $a^2=c\cdot m$, y ademas $a\cdot b=c\cdot h$.
+
+**Ejemplo tipico:** una persona de 1,7 m proyecta 2 m de sombra; a la misma hora un poste proyecta 12 m. Por semejanza, $\dfrac{1{,}7}{2}=\dfrac{h}{12} \Rightarrow h=10{,}2$ m.
+
+## Cuadrilateros, poligonos y circunferencia
+
+- Suma de angulos interiores de un poligono de $n$ lados: $180(n-2)$; exteriores siempre $360$.
+- Paralelogramo: lados opuestos iguales y paralelos, diagonales que se bisecan. Rombo: diagonales perpendiculares; area $=\dfrac{D\cdot d}{2}$.
+- Trapecio: area $=\dfrac{(B+b)h}{2}$; la mediana mide $\dfrac{B+b}{2}$.
+- Circunferencia: $L=2\pi r$, area $=\pi r^2$. **Angulo inscrito = mitad del central** que abarca el mismo arco; todo angulo inscrito en una semicircunferencia es recto.
+- Tangente a la circunferencia: siempre perpendicular al radio en el punto de contacto.
+
+## Ejercicios resueltos tipo examen
+
+**1)** Dos rectas paralelas cortadas por una transversal forman un angulo de $63$. El conjugado interno mide $180-63=117$.
+
+**2)** En un triangulo rectangulo los catetos miden 9 y 12. Hipotenusa: $\sqrt{81+144}=15$. Altura sobre la hipotenusa: $h=\dfrac{9\cdot 12}{15}=7{,}2$.
+
+**3)** Dos triangulos semejantes tienen razon $k=3/5$. Si el area del menor es 18, el area del mayor es $18\cdot\left(\dfrac{5}{3}\right)^2=50$.
+
+**4)** Un poligono regular tiene angulos interiores de $150$. Entonces $\dfrac{180(n-2)}{n}=150 \Rightarrow n=12$ lados.
+
+@@CHAPTER mat|m4|📈|Trigonometría y geometría analítica
+## 1. Razones en el triángulo rectángulo
+$$\sin\alpha = \frac{\text{cateto opuesto}}{\text{hipotenusa}}, \quad \cos\alpha = \frac{\text{cateto adyacente}}{\text{hipotenusa}}, \quad \tan\alpha = \frac{\text{opuesto}}{\text{adyacente}}$$
+Recíprocas: $\csc = 1/\sin$, $\sec = 1/\cos$, $\cot = 1/\tan$.
+
+> **Regla mnemotécnica:** SOH-CAH-TOA.
+
+## 2. Valores exactos que debes saber de memoria
+| ángulo | $30^\circ$ | $45^\circ$ | $60^\circ$ |
+| --- | --- | --- | --- |
+| $\sin$ | $\frac{1}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{3}}{2}$ |
+| $\cos$ | $\frac{\sqrt{3}}{2}$ | $\frac{\sqrt{2}}{2}$ | $\frac{1}{2}$ |
+| $\tan$ | $\frac{\sqrt{3}}{3}$ | $1$ | $\sqrt{3}$ |
+
+**Truco de la mano:** $\sin$ de $0, 30, 45, 60, 90$ es $\frac{\sqrt{0}}{2}, \frac{\sqrt{1}}{2}, \frac{\sqrt{2}}{2}, \frac{\sqrt{3}}{2}, \frac{\sqrt{4}}{2}$.
+
+## 3. Circunferencia unitaria y signos
+En el plano, $\cos$ es la coordenada $x$ y $\sin$ la coordenada $y$.
+- Cuadrante I: todo positivo. II: solo $\sin$. III: solo $\tan$. IV: solo $\cos$.
+- Mnemotecnia: **T**odos, **S**enos, **T**angentes, **C**osenos.
+- Ángulo de referencia: el agudo que forma el lado terminal con el eje $x$. Calculas con él y luego pones el signo del cuadrante.
+
+#### Ejemplo
+$\cos(210^\circ)$: referencia $30^\circ$, cuadrante III → coseno negativo → $-\frac{\sqrt{3}}{2}$.
+
+## 4. Identidades imprescindibles
+- Pitagóricas: $\sin^{2}x + \cos^{2}x = 1$; $1+\tan^{2}x = \sec^{2}x$; $1+\cot^{2}x = \csc^{2}x$.
+- Cociente: $\tan x = \frac{\sin x}{\cos x}$.
+- Ángulo doble: $\sin 2x = 2\sin x\cos x$; $\cos 2x = \cos^{2}x - \sin^{2}x$.
+- Suma: $\sin(a\pm b) = \sin a\cos b \pm \cos a\sin b$; $\cos(a\pm b) = \cos a\cos b \mp \sin a\sin b$.
+- Paridad: $\sin(-x) = -\sin x$ (impar), $\cos(-x) = \cos x$ (par).
+
+**Cómo simplificar:** convierte todo a senos y cosenos, busca $1-\cos^{2}x = \sin^{2}x$ y factoriza.
+
+## 5. Ley de senos y ley de cosenos
+$$\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} \qquad\qquad a^{2} = b^{2}+c^{2}-2bc\cos A$$
+- **Senos:** cuando conoces un lado y su ángulo opuesto (casos ALA, AAL, LLA).
+- **Cosenos:** cuando conoces dos lados y el ángulo entre ellos (LAL) o los tres lados (LLL).
+- Si $A = 90^\circ$, la ley de cosenos se convierte en Pitágoras: es su versión general.
+
+## 6. La recta en el plano (Lehmann)
+- Pendiente: $m = \dfrac{y_{2}-y_{1}}{x_{2}-x_{1}} = \tan\theta$.
+- Punto-pendiente: $y - y_{1} = m(x-x_{1})$. Pendiente-intersección: $y = mx+b$. General: $Ax+By+C=0$.
+- **Paralelas:** $m_{1}=m_{2}$. **Perpendiculares:** $m_{1}m_{2} = -1$.
+- Distancia entre puntos: $d = \sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}$.
+- Punto medio: $\left(\frac{x_{1}+x_{2}}{2}, \frac{y_{1}+y_{2}}{2}\right)$.
+- Distancia de un punto a una recta: $d = \dfrac{|Ax_{0}+By_{0}+C|}{\sqrt{A^{2}+B^{2}}}$.
+
+## 7. La circunferencia
+- Canónica: $(x-h)^{2}+(y-k)^{2} = r^{2}$, centro $C(h,k)$, radio $r$.
+- General: $x^{2}+y^{2}+Dx+Ey+F = 0$. Se pasa a canónica **completando cuadrados**: $h = -\frac{D}{2}$, $k = -\frac{E}{2}$, $r = \sqrt{h^{2}+k^{2}-F}$.
+
+#### Ejemplo
+$x^{2}+y^{2}-6x+4y-12=0 \Rightarrow (x-3)^{2}+(y+2)^{2} = 25$: centro $(3,-2)$, radio 5.
+
+> **Error frecuente:** confundir $r^{2}$ con $r$. Si a la derecha aparece 25, el radio es 5.
+## 8. Grados, radianes y angulos de referencia
+
+$180^{\circ}=\pi$ rad. Para convertir, multiplica por $\dfrac{\pi}{180}$ o por $\dfrac{180}{\pi}$.
+
+| Grados | 30 | 45 | 60 | 90 | 180 | 270 |
+|---|---|---|---|---|---|---|
+| Radianes | $\dfrac{\pi}{6}$ | $\dfrac{\pi}{4}$ | $\dfrac{\pi}{3}$ | $\dfrac{\pi}{2}$ | $\pi$ | $\dfrac{3\pi}{2}$ |
+
+**Reduccion al primer cuadrante:** el valor absoluto de la razon es el del angulo de referencia; el signo lo da el cuadrante (regla **CAST**: en I todas positivas, en II solo seno, en III solo tangente, en IV solo coseno).
+
+Ejemplo: $\cos 210^{\circ}=-\cos 30^{\circ}=-\dfrac{\sqrt{3}}{2}$.
+
+## 9. Identidades que hay que reconocer al vuelo
+
+- Pitagoricas: $\sin^2\theta+\cos^2\theta=1$, $1+\tan^2\theta=\sec^2\theta$, $1+\cot^2\theta=\csc^2\theta$.
+- Suma y resta: $\sin(a\pm b)=\sin a\cos b\pm\cos a\sin b$; $\cos(a\pm b)=\cos a\cos b\mp\sin a\sin b$.
+- Angulo doble: $\sin 2a=2\sin a\cos a$; $\cos 2a=\cos^2 a-\sin^2 a=1-2\sin^2 a$.
+- Paridad: $\sin(-x)=-\sin x$ (impar), $\cos(-x)=\cos x$ (par).
+
+> [tip] Para **demostrar** identidades: trabaja un solo lado, pasa todo a senos y cosenos y busca la pitagorica. Nunca muevas terminos de un lado a otro como si fuera ecuacion.
+
+**Ecuaciones trigonometricas basicas:** $2\sin x-1=0 \Rightarrow \sin x=\dfrac{1}{2} \Rightarrow x=30^{\circ}$ o $x=150^{\circ}$ en $[0,360^{\circ})$. Recuerda dar **todas** las soluciones del intervalo pedido.
+
+## 10. Ley de senos y de cosenos: cuando usar cada una
+
+| Datos conocidos | Ley a usar |
+|---|---|
+| LAL (dos lados y el angulo entre ellos) | **cosenos** |
+| LLL (tres lados) | **cosenos** (para hallar un angulo) |
+| ALA o AAL | **senos** |
+| LLA (dos lados y angulo opuesto) | **senos** (caso ambiguo: revisa si hay dos soluciones) |
+
+$\dfrac{a}{\sin A}=\dfrac{b}{\sin B}=\dfrac{c}{\sin C}$, y $a^2=b^2+c^2-2bc\cos A$.
+
+**Area del triangulo:** $A=\dfrac{1}{2}ab\sin C$ y, con los tres lados, Heron: $A=\sqrt{s(s-a)(s-b)(s-c)}$ con $s=\dfrac{a+b+c}{2}$.
+
+## 11. La recta: todas las formas y las distancias
+
+| Forma | Ecuacion |
+|---|---|
+| Punto-pendiente | $y-y_1=m(x-x_1)$ |
+| Pendiente-ordenada | $y=mx+b$ |
+| General | $Ax+By+C=0$, con $m=-\dfrac{A}{B}$ |
+| Simetrica | $\dfrac{x}{a}+\dfrac{y}{b}=1$ |
+
+- Pendiente entre dos puntos: $m=\dfrac{y_2-y_1}{x_2-x_1}$.
+- **Paralelas:** $m_1=m_2$. **Perpendiculares:** $m_1\cdot m_2=-1$.
+- Distancia entre puntos: $d=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$. Punto medio: promedio de coordenadas.
+- Distancia de un punto a una recta: $d=\dfrac{|Ax_0+By_0+C|}{\sqrt{A^2+B^2}}$.
+- Angulo entre rectas: $\tan\theta=\left|\dfrac{m_2-m_1}{1+m_1m_2}\right|$.
+
+## 12. La circunferencia en el plano
+
+Canonica: $(x-h)^2+(y-k)^2=r^2$, centro $(h,k)$ y radio $r$.
+
+De la general $x^2+y^2+Dx+Ey+F=0$ se pasa a la canonica **completando cuadrados**: centro $\left(-\dfrac{D}{2},-\dfrac{E}{2}\right)$ y $r=\sqrt{\dfrac{D^2+E^2-4F}{4}}$.
+
+**Ejemplo.** $x^2+y^2-6x+4y-12=0 \Rightarrow (x-3)^2+(y+2)^2=25$: centro $(3,-2)$, radio 5.
+
+Posicion de una recta respecto a la circunferencia: compara la distancia del centro a la recta con $r$ (mayor: exterior; igual: tangente; menor: secante).
+
+## Ejercicios resueltos tipo examen
+
+**1)** Si $\sin\theta=\dfrac{3}{5}$ y $\theta$ esta en el segundo cuadrante, entonces $\cos\theta=-\dfrac{4}{5}$ y $\tan\theta=-\dfrac{3}{4}$.
+
+**2)** Un triangulo tiene $b=8$, $c=5$ y $A=60^{\circ}$. Entonces $a^2=64+25-2(8)(5)(0{,}5)=49$, luego $a=7$.
+
+**3)** Recta que pasa por $(2,-1)$ y es perpendicular a $y=\dfrac{2}{3}x+4$: la pendiente buscada es $-\dfrac{3}{2}$, y la recta es $y+1=-\dfrac{3}{2}(x-2)$, o sea $3x+2y-4=0$.
+
+**4)** Distancia del punto $(1,2)$ a la recta $3x-4y+5=0$: $d=\dfrac{|3-8+5|}{5}=0$, o sea el punto **pertenece** a la recta.
+
+## 13. Las seis razones trigonometricas (incluye tangente, secante, cosecante y cotangente)
+
+En un triangulo rectangulo con angulo agudo $\theta$, cateto **opuesto** $co$, cateto **adyacente** $ca$ e **hipotenusa** $h$:
+
+| Razon | Definicion con lados | Definicion reciproca | Con coordenadas $(x,y)$ y $r=\sqrt{x^2+y^2}$ |
+|---|---|---|---|
+| Seno | $\sin\theta=\dfrac{co}{h}$ | $\sin\theta=\dfrac{1}{\csc\theta}$ | $y/r$ |
+| Coseno | $\cos\theta=\dfrac{ca}{h}$ | $\cos\theta=\dfrac{1}{\sec\theta}$ | $x/r$ |
+| Tangente | $\tan\theta=\dfrac{co}{ca}$ | $\tan\theta=\dfrac{\sin\theta}{\cos\theta}=\dfrac{1}{\cot\theta}$ | $y/x$ |
+| Cotangente | $\cot\theta=\dfrac{ca}{co}$ | $\cot\theta=\dfrac{\cos\theta}{\sin\theta}=\dfrac{1}{\tan\theta}$ | $x/y$ |
+| Secante | $\sec\theta=\dfrac{h}{ca}$ | $\sec\theta=\dfrac{1}{\cos\theta}$ | $r/x$ |
+| Cosecante | $\csc\theta=\dfrac{h}{co}$ | $\csc\theta=\dfrac{1}{\sin\theta}$ | $r/y$ |
+
+> [tip] **Truco para no confundirte:** la reciproca del **se**no es la **cose**cante y la del **cose**no es la **se**cante (se cruzan). La tangente y la cotangente si se emparejan de forma directa.
+
+**Analogia.** Piensa en una rampa. El **seno** dice que tan alto subes por cada metro de rampa, el **coseno** cuanto avanzas en horizontal por cada metro de rampa y la **tangente** es la pendiente pura: cuanto subes por cada metro que avanzas. La **cotangente** es la pendiente al reves (cuanto avanzas por cada metro que subes), la **secante** compara la rampa con el avance horizontal y la **cosecante** compara la rampa con la altura.
+
+### Dominio: cuando cada una no existe
+
+Una razon reciproca **no esta definida** si su denominador vale cero:
+
+- $\tan\theta$ y $\sec\theta$ no existen donde $\cos\theta=0$, es decir en $90^\circ$, $270^\circ$ ($\theta=\frac{\pi}{2}+k\pi$).
+- $\cot\theta$ y $\csc\theta$ no existen donde $\sin\theta=0$, es decir en $0^\circ$, $180^\circ$, $360^\circ$ ($\theta=k\pi$).
+
+**Rangos:** $-1\le\sin\theta\le 1$ y $-1\le\cos\theta\le 1$; en cambio $|\sec\theta|\ge 1$ y $|\csc\theta|\ge 1$ (nunca valen entre $-1$ y $1$), mientras que $\tan\theta$ y $\cot\theta$ toman **cualquier** valor real.
+
+> [warn] Un item clasico: "puede $\sec\theta=0{,}5$?" La respuesta es **no**, porque la secante nunca esta entre $-1$ y $1$.
+
+### Tabla de valores exactos de las seis razones
+
+| $\theta$ | $\sin$ | $\cos$ | $\tan$ | $\cot$ | $\sec$ | $\csc$ |
+|---|---|---|---|---|---|---|
+| $0^\circ$ | $0$ | $1$ | $0$ | no existe | $1$ | no existe |
+| $30^\circ$ | $\frac{1}{2}$ | $\frac{\sqrt{3}}{2}$ | $\frac{\sqrt{3}}{3}$ | $\sqrt{3}$ | $\frac{2\sqrt{3}}{3}$ | $2$ |
+| $45^\circ$ | $\frac{\sqrt{2}}{2}$ | $\frac{\sqrt{2}}{2}$ | $1$ | $1$ | $\sqrt{2}$ | $\sqrt{2}$ |
+| $60^\circ$ | $\frac{\sqrt{3}}{2}$ | $\frac{1}{2}$ | $\sqrt{3}$ | $\frac{\sqrt{3}}{3}$ | $2$ | $\frac{2\sqrt{3}}{3}$ |
+| $90^\circ$ | $1$ | $0$ | no existe | $0$ | no existe | $1$ |
+
+### Signos por cuadrante (regla CAST ampliada)
+
+| Cuadrante | Positivas | Negativas |
+|---|---|---|
+| I | las seis | ninguna |
+| II | $\sin$, $\csc$ | $\cos$, $\sec$, $\tan$, $\cot$ |
+| III | $\tan$, $\cot$ | $\sin$, $\csc$, $\cos$, $\sec$ |
+| IV | $\cos$, $\sec$ | $\sin$, $\csc$, $\tan$, $\cot$ |
+
+Cada razon tiene **el mismo signo que su reciproca**, siempre.
+
+### Cofunciones y paridad
+
+- Cofunciones (angulos complementarios): $\sin(90^\circ-\theta)=\cos\theta$, $\tan(90^\circ-\theta)=\cot\theta$, $\sec(90^\circ-\theta)=\csc\theta$.
+- Paridad: $\cos$ y $\sec$ son **pares** ($\cos(-\theta)=\cos\theta$); $\sin$, $\csc$, $\tan$ y $\cot$ son **impares** ($\tan(-\theta)=-\tan\theta$).
+- Periodo: $\sin$, $\cos$, $\sec$ y $\csc$ se repiten cada $360^\circ$; $\tan$ y $\cot$ cada $180^\circ$.
+
+### Identidades donde aparecen sec, csc y cot
+
+- $1+\tan^2\theta=\sec^2\theta$ (divide $\sin^2+\cos^2=1$ entre $\cos^2\theta$).
+- $1+\cot^2\theta=\csc^2\theta$ (divide la misma identidad entre $\sin^2\theta$).
+- $\tan\theta\cdot\cot\theta=1$, $\sin\theta\cdot\csc\theta=1$, $\cos\theta\cdot\sec\theta=1$.
+
+> [tip] **Estrategia infalible para simplificar.** Si una expresion mezcla $\sec$, $\csc$, $\tan$ y $\cot$, conviertelo **todo a senos y cosenos**, simplifica la fraccion compuesta y al final vuelve a la razon que pida la respuesta.
+
+### Ejercicios resueltos
+
+**1)** Si $\sin\theta=\frac{3}{5}$ y $\theta$ esta en el cuadrante II, halla las seis razones.
+Con $\sin^2+\cos^2=1$: $\cos\theta=-\frac{4}{5}$ (negativo en II). Entonces $\tan\theta=-\frac{3}{4}$, $\cot\theta=-\frac{4}{3}$, $\sec\theta=-\frac{5}{4}$ y $\csc\theta=\frac{5}{3}$.
+
+**2)** Simplifica $\dfrac{\sec\theta}{\csc\theta}$.
+$\dfrac{1/\cos\theta}{1/\sin\theta}=\dfrac{\sin\theta}{\cos\theta}=\tan\theta$.
+
+**3)** Demuestra que $\csc\theta-\sin\theta=\cos\theta\cot\theta$.
+$\csc\theta-\sin\theta=\dfrac{1-\sin^2\theta}{\sin\theta}=\dfrac{\cos^2\theta}{\sin\theta}=\cos\theta\cdot\dfrac{\cos\theta}{\sin\theta}=\cos\theta\cot\theta$.
+
+**4)** Si $\sec\theta=\frac{13}{5}$ con $\theta$ en el cuadrante IV, halla $\cot\theta$.
+$\cos\theta=\frac{5}{13}$, luego $\sin\theta=-\frac{12}{13}$ (negativo en IV), $\tan\theta=-\frac{12}{5}$ y $\cot\theta=-\frac{5}{12}$.
+
+**5)** Resuelve $2\cos\theta=\sec\theta$ en $[0^\circ,360^\circ)$.
+$2\cos\theta=\frac{1}{\cos\theta}\Rightarrow 2\cos^2\theta=1\Rightarrow \cos\theta=\pm\frac{\sqrt2}{2}$, es decir $\theta=45^\circ,135^\circ,225^\circ,315^\circ$.
+
+@@CHAPTER fis|f1|🚀|Inercia y movimiento
+## 1. Primera ley de Newton (inercia)
+> Todo cuerpo permanece en reposo o en movimiento rectilíneo uniforme **mientras la fuerza neta sobre él sea cero**.
+
+**Analogía:** el pasajero del bus que se va hacia adelante cuando el chofer frena no es empujado por nada: su cuerpo simplemente **quiere seguir**. La inercia es la «terquedad» de la materia y su medida es la **masa**.
+
+Consecuencias que se evalúan:
+- Velocidad constante $\Rightarrow$ fuerza neta cero (no significa «sin fuerzas», sino que se cancelan).
+- Un cuerpo en equilibrio puede estar quieto (**equilibrio estático**) o moverse con velocidad constante (**equilibrio dinámico**).
+
+## 2. Fuerza como vector
+La fuerza tiene magnitud, dirección y sentido; se suma **vectorialmente**.
+- Misma dirección y sentido: se suman. Sentidos opuestos: se restan.
+- Perpendiculares: $R = \sqrt{F_{1}^{2}+F_{2}^{2}}$.
+- Ángulo cualquiera: $R = \sqrt{F_{1}^{2}+F_{2}^{2}+2F_{1}F_{2}\cos\theta}$.
+- Componentes: $F_{x} = F\cos\theta$, $F_{y} = F\sin\theta$.
+
+**Condición de equilibrio:** $\sum F_{x} = 0$ y $\sum F_{y} = 0$.
+
+## 3. Cinemática rectilínea: el vocabulario exacto
+- **Distancia**: longitud total recorrida (escalar, nunca disminuye).
+- **Desplazamiento**: cambio de posición $\Delta x$ (vector; puede ser cero aunque hayas caminado mucho).
+- **Rapidez**: escalar, $\frac{\text{distancia}}{\text{tiempo}}$. **Velocidad**: vector, $\frac{\Delta x}{\Delta t}$.
+- **Aceleración**: $a = \frac{\Delta v}{\Delta t}$. Si $a$ y $v$ tienen el mismo signo, el cuerpo acelera; si tienen signos opuestos, frena.
+
+### Ecuaciones del MRUV
+$$v = v_{0}+at \qquad d = v_{0}t+\tfrac{1}{2}at^{2} \qquad v^{2} = v_{0}^{2}+2ad$$
+MRU es el caso $a = 0$: $d = vt$.
+
+**Gráficas (muy preguntadas):**
+- En $x$-$t$, la **pendiente** es la velocidad.
+- En $v$-$t$, la **pendiente** es la aceleración y el **área bajo la curva** es el desplazamiento.
+
+## 4. Caída libre
+Todos los cuerpos caen con la misma aceleración $g \approx 9{,}8\,\mathrm{m/s^{2}}$ si se desprecia el aire (Galileo tenía razón: la pluma y el martillo llegan juntos en la Luna).
+$$v = gt \qquad h = \tfrac{1}{2}gt^{2} \qquad v^{2} = 2gh$$
+Subida y bajada son simétricas: sube y baja en el mismo tiempo y llega con la misma rapidez.
+
+## 5. Proyectiles
+Se descompone en dos movimientos **independientes**:
+- Horizontal: MRU, $x = v_{0}\cos\theta \cdot t$.
+- Vertical: caída libre, $y = v_{0}\sin\theta \cdot t - \frac{1}{2}gt^{2}$.
+
+Fórmulas útiles (lanzamiento y caída al mismo nivel):
+$$t_{vuelo} = \frac{2v_{0}\sin\theta}{g}, \quad h_{max} = \frac{(v_{0}\sin\theta)^{2}}{2g}, \quad R = \frac{v_{0}^{2}\sin(2\theta)}{g}$$
+El alcance máximo se logra con $\theta = 45^\circ$; $30^\circ$ y $60^\circ$ dan el mismo alcance.
+
+> **Clave conceptual:** en el punto más alto la velocidad **no es cero**: la componente vertical sí, pero la horizontal se mantiene.
+
+## 6. Satélites
+Un satélite es un proyectil que «cae» permanentemente pero nunca llega al suelo porque la Tierra se curva bajo él. Está en **caída libre continua**; por eso los astronautas «flotan» (ingravidez aparente, no ausencia de gravedad).
+## 7. Vectores: componentes y suma
+
+Una fuerza (o velocidad) tiene **magnitud, direccion y sentido**. Para sumar vectores:
+
+- Descompon: $F_x=F\cos\theta$, $F_y=F\sin\theta$.
+- Suma por componentes: $R_x=\sum F_x$, $R_y=\sum F_y$.
+- Recompon: $R=\sqrt{R_x^2+R_y^2}$ y $\tan\theta=\dfrac{R_y}{R_x}$.
+- Perpendiculares clasicas: 3 y 4 dan 5; 6 y 8 dan 10.
+
+> [tip] Dos fuerzas de magnitudes $A$ y $B$ dan una resultante entre $|A-B|$ (opuestas) y $A+B$ (mismo sentido). Si una opcion se sale de ese rango, es incorrecta sin hacer cuentas.
+
+## 8. Equilibrio estatico y dinamico
+
+Equilibrio significa **aceleracion cero**, no necesariamente reposo:
+
+$$\sum F_x=0 \quad y \quad \sum F_y=0$$
+
+- Estatico: el cuerpo esta en reposo (un cuadro colgado, una lampara con dos cables).
+- Dinamico: se mueve con velocidad **constante** (un ascensor a rapidez fija, un paracaidista con velocidad terminal).
+
+**Diagrama de cuerpo libre (DCL):** dibuja solo las fuerzas **sobre** el cuerpo (peso, normal, tension, friccion, fuerza aplicada). Nunca dibujes "la fuerza del movimiento": no existe.
+
+## 9. Cinematica: formulas y graficos
+
+| Movimiento | Formulas |
+|---|---|
+| MRU ($a=0$) | $x=x_0+vt$ |
+| MRUA | $v=v_0+at$; $x=x_0+v_0t+\dfrac{1}{2}at^2$; $v^2=v_0^2+2a\Delta x$ |
+| Velocidad media | $v_m=\dfrac{\Delta x}{\Delta t}$ (con desplazamiento, no distancia) |
+
+**Lectura de graficos (muy preguntado):**
+
+| Grafico | La pendiente es | El area bajo la curva es |
+|---|---|---|
+| posicion vs tiempo | la velocidad | (no se usa) |
+| velocidad vs tiempo | la aceleracion | el desplazamiento |
+| aceleracion vs tiempo | (no se usa) | el cambio de velocidad |
+
+> [warn] **Distancia vs desplazamiento:** si vas 30 m al este y regresas 30 m, la distancia recorrida es 60 m pero el desplazamiento es 0, y la velocidad media tambien es 0 (aunque la rapidez media no).
+
+## 10. Caida libre y proyectiles al detalle
+
+Con $g=9{,}8\ \mathrm{m/s^2}$ (a menudo se usa 10 para estimar):
+
+- Caida desde el reposo: $v=gt$, $h=\dfrac{1}{2}gt^2$.
+- Tiro vertical: sube y baja simetricamente; en el punto mas alto $v=0$ pero **la aceleracion sigue siendo $g$**.
+- Proyectil: el movimiento horizontal es MRU ($x=v_0\cos\theta\, t$) y el vertical es caida libre. Ambos comparten **el mismo tiempo**.
+  - Tiempo de vuelo: $t=\dfrac{2v_0\sin\theta}{g}$.
+  - Altura maxima: $H=\dfrac{v_0^2\sin^2\theta}{2g}$.
+  - Alcance: $R=\dfrac{v_0^2\sin 2\theta}{g}$; el alcance maximo se logra con $45^{\circ}$, y angulos complementarios (30 y 60) dan el mismo alcance.
+
+**Analogia:** un proyectil es una piedra que avanza a velocidad constante mientras cae; su trayectoria es una parabola porque combina lo constante con lo acelerado.
+
+## 11. Satelites y orbitas
+
+Un satelite es un proyectil que "cae" continuamente pero avanza tan rapido que la Tierra se curva bajo el. La fuerza gravitacional hace de fuerza centripeta:
+
+$$\frac{GMm}{r^2}=\frac{mv^2}{r} \ \Rightarrow \ v=\sqrt{\frac{GM}{r}}$$
+
+A mayor radio de orbita, **menor** rapidez orbital y mayor periodo. En orbita hay ingravidez aparente porque satelite y astronauta caen con la misma aceleracion.
+
+## Ejercicios resueltos tipo examen
+
+**1)** Un auto pasa de 0 a 20 m/s en 5 s: $a=4\ \mathrm{m/s^2}$ y recorre $x=\dfrac{1}{2}(4)(25)=50$ m.
+
+**2)** Se lanza una piedra hacia arriba a 20 m/s. Sube durante $t=\dfrac{20}{10}=2$ s y alcanza $H=\dfrac{20^2}{2(10)}=20$ m.
+
+**3)** Desde 45 m de altura se lanza horizontalmente un objeto a 10 m/s. Cae en $t=\sqrt{\dfrac{2h}{g}}=3$ s y aterriza a 30 m de la base.
+
+**4)** Dos fuerzas perpendiculares de 30 N y 40 N sobre un cuerpo de 10 kg: $R=50$ N y $a=5\ \mathrm{m/s^2}$.
+
+@@CHAPTER fis|f2|🎯|Segunda y tercera leyes de Newton
+## 1. Segunda ley
+$$\vec{F}_{neta} = m\vec{a}$$
+La aceleración es **directamente proporcional** a la fuerza neta e **inversamente proporcional** a la masa. Unidad: $1\,\text{N} = 1\,\mathrm{kg\cdot m/s^{2}}$.
+
+**Receta infalible para problemas de dinámica:**
+1. Dibuja el **diagrama de cuerpo libre** (solo las fuerzas que actúan **sobre** el cuerpo).
+2. Elige ejes (conviene uno paralelo al movimiento).
+3. Escribe $\sum F = ma$ en cada eje.
+4. Despeja.
+
+## 2. Peso, masa y normal
+- **Masa**: cantidad de materia, en kg, la misma en todo el universo.
+- **Peso**: fuerza $W = mg$, en newtons, cambia con el planeta.
+- **Normal**: fuerza perpendicular que ejerce la superficie. En un piso horizontal sin fuerzas verticales extra, $N = mg$; en un ascensor que sube acelerando, $N = m(g+a)$.
+
+## 3. Gravitación universal
+$$F = G\frac{m_{1}m_{2}}{r^{2}}, \qquad G = 6{,}674\times10^{-11}\,\mathrm{N\,m^{2}/kg^{2}}$$
+Ley del **inverso del cuadrado**: si la distancia se duplica, la fuerza se reduce a la cuarta parte; si se triplica, a la novena.
+
+## 4. Rozamiento y resistencia del aire
+- Estático: $f_{s} \leq \mu_{s}N$ (se ajusta hasta un máximo).
+- Cinético: $f_{k} = \mu_{k}N$ (constante mientras desliza).
+- Siempre se opone al **movimiento relativo**; no depende del área de contacto ni de la rapidez (modelo básico).
+
+En un plano inclinado sin rozamiento: $a = g\sin\theta$; con rozamiento: $a = g(\sin\theta - \mu\cos\theta)$.
+
+**Velocidad límite:** al caer, la resistencia del aire crece con la rapidez hasta igualar al peso; entonces la fuerza neta es cero y el cuerpo cae con velocidad **constante**. Por eso el paracaidista deja de acelerar.
+
+## 5. Tercera ley
+> A toda acción corresponde una reacción de igual magnitud, misma dirección y sentido opuesto, **aplicada sobre otro cuerpo**.
+
+La clave del examen: **las fuerzas de acción y reacción nunca se anulan entre sí** porque actúan sobre cuerpos distintos. El piso te empuja hacia adelante porque tú empujas al piso hacia atrás; el cohete avanza porque expulsa gases.
+
+## 6. Movimiento circular uniforme
+Rapidez constante, dirección cambiante ⇒ **hay aceleración** (centrípeta):
+$$a_{c} = \frac{v^{2}}{R}, \qquad F_{c} = \frac{mv^{2}}{R}, \qquad v = \frac{2\pi R}{T}$$
+La fuerza centrípeta **no es una fuerza nueva**: es el nombre del papel que cumple la tensión, el rozamiento o la gravedad. La «fuerza centrífuga» que sientes en la curva es un efecto de la inercia, no una fuerza real.
+
+## 7. Momento lineal e impulso
+$$\vec{p} = m\vec{v}, \qquad \vec{J} = \vec{F}\Delta t = \Delta\vec{p}$$
+**Conservación:** si la fuerza externa neta es cero, $p_{antes} = p_{después}$.
+- Choque **perfectamente inelástico** (quedan unidos): $m_{1}v_{1}+m_{2}v_{2} = (m_{1}+m_{2})v_{f}$.
+- Choque **elástico**: se conservan momento **y** energía cinética.
+
+> **Aplicación cotidiana:** el airbag alarga $\Delta t$; como $\Delta p$ es el mismo, la fuerza sobre tu cuerpo disminuye. Esa es toda la física de la seguridad vial.
+## 8. Plano inclinado y sistemas con cuerdas
+
+En un plano de inclinacion $\theta$ (sin friccion): la componente que acelera es $mg\sin\theta$ y la normal vale $N=mg\cos\theta$, asi que $a=g\sin\theta$ (no depende de la masa).
+
+Con friccion cinetica: $a=g(\sin\theta-\mu_k\cos\theta)$. Un bloque permanece en reposo mientras $\tan\theta\le\mu_s$.
+
+**Dos bloques unidos por una cuerda** (maquina de Atwood o bloque sobre mesa): trata el sistema completo para hallar $a=\dfrac{F_{neta}}{m_{total}}$ y luego aisla un bloque para hallar la tension.
+
+## 9. Gravitacion universal
+
+$$F=G\frac{m_1m_2}{r^2}, \quad G=6{,}67\times 10^{-11}\ \mathrm{N\,m^2/kg^2}$$
+
+- Ley del **inverso del cuadrado**: al triplicar la distancia, la fuerza cae 9 veces.
+- Peso $=mg$ con $g=\dfrac{GM}{r^2}$. En la Luna $g$ es aproximadamente $1{,}6\ \mathrm{m/s^2}$: tu masa no cambia, tu peso si.
+- Las mareas y la orbita lunar son consecuencia directa de esta ley.
+
+## 10. Rozamiento y resistencia del aire
+
+| Tipo | Formula | Comportamiento |
+|---|---|---|
+| Estatica | $f_s\le\mu_s N$ | se ajusta hasta un maximo |
+| Cinetica | $f_k=\mu_k N$ | practicamente constante |
+
+Siempre $\mu_s>\mu_k$: cuesta mas arrancar que mantener el movimiento.
+
+**Caida con resistencia del aire:** la fuerza de arrastre crece con la rapidez hasta igualar el peso; ahi la aceleracion se vuelve cero y se alcanza la **velocidad terminal**. Por eso un paracaidista con paracaidas abierto baja a rapidez constante: esta en equilibrio dinamico.
+
+## 11. Tercera ley bien entendida
+
+Las fuerzas de accion y reaccion:
+
+- son de **igual magnitud y sentido opuesto**,
+- actuan sobre **cuerpos distintos** (por eso nunca se cancelan entre si),
+- existen simultaneamente.
+
+> [warn] El error clasico: "si el caballo tira de la carreta con la misma fuerza con que la carreta tira de el, nada se mueve". Falso: esas fuerzas actuan sobre cuerpos diferentes. Lo que mueve a la carreta es la fuerza **del caballo sobre la carreta**, comparada con la friccion del suelo.
+
+## 12. Movimiento circular uniforme
+
+| Magnitud | Formula |
+|---|---|
+| Rapidez tangencial | $v=\dfrac{2\pi r}{T}$ |
+| Aceleracion centripeta | $a_c=\dfrac{v^2}{r}=\omega^2 r$ |
+| Fuerza centripeta | $F_c=\dfrac{mv^2}{r}$ |
+| Frecuencia | $f=\dfrac{1}{T}$ |
+
+En MCU la rapidez es constante pero la **velocidad cambia** (cambia de direccion), por eso hay aceleracion dirigida al centro. La "fuerza centrifuga" no es una fuerza real: es la inercia vista desde el sistema que gira.
+
+## 13. Momento lineal, impulso y choques
+
+$$p=mv, \qquad J=F\Delta t=\Delta p$$
+
+- **Conservacion:** si no hay fuerzas externas netas, $p_{inicial}=p_{final}$ (sirve en choques y explosiones).
+- Choque **elastico**: se conservan momento **y** energia cinetica.
+- Choque **inelastico**: se conserva el momento; parte de la energia se disipa. Si quedan unidos, $m_1v_1+m_2v_2=(m_1+m_2)v_f$.
+- El airbag y flexionar las rodillas al caer alargan $\Delta t$, lo que **reduce la fuerza** para el mismo cambio de momento.
+
+## Ejercicios resueltos tipo examen
+
+**1)** Sobre 4 kg actua una fuerza neta de 12 N: $a=3\ \mathrm{m/s^2}$.
+
+**2)** Bloque de 10 kg sobre superficie horizontal con $\mu_k=0{,}2$, empujado con 30 N: $f_k=0{,}2(100)=20$ N, $F_{neta}=10$ N, $a=1\ \mathrm{m/s^2}$.
+
+**3)** Un carro de 2 kg a 3 m/s choca y queda unido a otro de 1 kg en reposo: $v_f=\dfrac{2(3)}{3}=2$ m/s.
+
+**4)** Una piedra de 0,5 kg gira en circulo de 2 m a 4 m/s: $F_c=\dfrac{0{,}5(16)}{2}=4$ N.
+
+@@CHAPTER fis|f3|⚡|Energía, trabajo y potencia
+## 1. Trabajo
+$$W = F\,d\cos\theta$$
+- $\theta = 0^\circ$ → trabajo máximo positivo. $\theta = 90^\circ$ → **trabajo cero**. $\theta = 180^\circ$ → trabajo negativo (el rozamiento).
+- Unidad: joule, $1\,\text{J} = 1\,\text{N}\cdot\text{m}$.
+
+> Cargar una caja caminando horizontalmente **no** realiza trabajo sobre ella (la fuerza es vertical y el desplazamiento horizontal), por muy cansado que resulte.
+
+## 2. Potencia
+$$P = \frac{W}{t} = Fv$$
+Unidad: watt. Potencia es **rapidez para hacer trabajo**: subir la escalera corriendo o caminando implica el mismo trabajo, pero distinta potencia.
+
+## 3. Energía cinética y teorema trabajo-energía
+$$E_{c} = \tfrac{1}{2}mv^{2}, \qquad W_{neto} = \Delta E_{c} = E_{c,f}-E_{c,i}$$
+La dependencia con $v^{2}$ explica por qué duplicar la rapidez **cuadruplica** la distancia de frenado.
+
+## 4. Fuerzas conservativas y energía potencial
+Una fuerza es **conservativa** si el trabajo que hace no depende del camino (gravedad, resorte). El rozamiento es **no conservativa**: disipa energía como calor.
+$$E_{p} = mgh \qquad E_{p,el} = \tfrac{1}{2}kx^{2}$$
+
+## 5. Conservación de la energía mecánica
+$$E_{m} = E_{c}+E_{p} = \text{constante (sin rozamiento)}$$
+De ahí sale el resultado estrella: un cuerpo que cae desde una altura $h$ llega con
+$$v = \sqrt{2gh}$$
+sin importar su masa.
+
+Si hay rozamiento: $E_{m,i} - E_{m,f} = |W_{rozamiento}|$.
+
+> **Analogía de la montaña rusa:** la energía potencial es «dinero en el banco» y la cinética es «dinero en efectivo». Sin rozamiento solo cambias de cuenta; con rozamiento pagas una comisión en forma de calor.
+
+## 6. Fuentes de energía
+- **Renovables:** solar, eólica, hidráulica, geotérmica, biomasa, mareomotriz.
+- **No renovables:** carbón, petróleo, gas natural, nuclear de fisión.
+- La energía **no se crea ni se destruye**: se transforma y se degrada (parte se vuelve calor no aprovechable). El Sol es, directa o indirectamente, la fuente de casi toda la energía disponible en la Tierra.
+
+## Estrategia de resolución
+1. ¿Hay rozamiento? Si no, usa **conservación de la energía** (más rápido que cinemática).
+2. ¿Te piden velocidad y te dan altura? → $v = \sqrt{2gh}$.
+3. ¿Te piden fuerza media en un choque? → impulso-momento.
+4. Revisa unidades antes de responder: J, W, N, m/s.
+## 7. Trabajo con angulo y trabajo neto
+
+$$W=Fd\cos\theta$$
+
+- Si la fuerza es perpendicular al desplazamiento ($\theta=90^{\circ}$), el trabajo es **cero**: cargar una maleta caminando en horizontal no hace trabajo sobre ella.
+- La friccion hace trabajo **negativo** ($\theta=180^{\circ}$).
+- El trabajo neto es la suma algebraica de todos los trabajos, o el trabajo de la fuerza neta.
+
+## 8. Teorema trabajo-energia y energias
+
+$$W_{neto}=\Delta E_c=\frac{1}{2}mv_f^2-\frac{1}{2}mv_0^2$$
+
+| Energia | Formula | Nota |
+|---|---|---|
+| Cinetica | $E_c=\dfrac{1}{2}mv^2$ | al **duplicar** la rapidez se **cuadruplica** |
+| Potencial gravitatoria | $E_p=mgh$ | depende del nivel de referencia elegido |
+| Potencial elastica | $E_e=\dfrac{1}{2}kx^2$ | resortes, ley de Hooke $F=kx$ |
+
+**Distancia de frenado:** como $E_c\propto v^2$, un auto al doble de rapidez necesita **cuatro veces** mas distancia para detenerse. Es el argumento fisico detras de los limites de velocidad.
+
+## 9. Fuerzas conservativas y conservacion
+
+Una fuerza es **conservativa** si el trabajo que hace no depende del camino (gravedad, resorte). La friccion es **no conservativa**: disipa energia como calor.
+
+$$E_m=E_c+E_p=\text{constante (sin friccion)}$$
+
+Con friccion: $E_{m,inicial}-E_{m,final}=|W_{friccion}|$.
+
+**Ejemplo canonico.** Un cuerpo cae desde 20 m: al llegar al suelo $v=\sqrt{2gh}=20$ m/s, sin importar su masa. A mitad de altura tiene mitad de potencial y mitad de cinetica.
+
+## 10. Potencia, maquinas y eficiencia
+
+$$P=\frac{W}{t}=Fv$$
+
+1 W = 1 J/s; 1 caballo de fuerza son unos 746 W.
+
+Eficiencia: $\eta=\dfrac{E_{util}}{E_{suministrada}}\times 100\%$. Ninguna maquina alcanza el 100%: siempre hay perdidas por friccion y calor. Una maquina simple (palanca, polea, plano inclinado) **no crea energia**: reduce la fuerza a costa de aumentar la distancia.
+
+## 11. Fuentes de energia
+
+| Renovables | No renovables |
+|---|---|
+| solar, eolica, hidraulica, geotermica, biomasa, mareomotriz | carbon, petroleo, gas natural, nuclear (uranio) |
+
+Casi toda la energia disponible en la Tierra proviene, directa o indirectamente, del **Sol** (el viento, la lluvia que mueve las hidroelectricas y hasta los combustibles fosiles). El Ecuador genera la mayor parte de su electricidad con centrales hidroelectricas.
+
+> [tip] La energia no se crea ni se destruye, solo se **transforma y se degrada**: cada transformacion deja una parte como calor que ya no se puede aprovechar.
+
+## Ejercicios resueltos tipo examen
+
+**1)** Una fuerza de 50 N desplaza 4 m un cuerpo formando $60^{\circ}$: $W=50(4)(0{,}5)=100$ J.
+
+**2)** Un motor eleva 200 kg a 5 m en 10 s: $W=mgh=10\,000$ J y $P=1\,000$ W.
+
+**3)** Un cuerpo de 2 kg a 6 m/s frena hasta detenerse: el trabajo de la friccion es $-36$ J.
+
+**4)** Un pendulo se suelta desde 0,45 m de altura: en el punto mas bajo $v=\sqrt{2(10)(0{,}45)}=3$ m/s.
+
+@@CHAPTER qui|q1|⚛️|Estructura atómica y unidades
+## 1. Medición y conversión de unidades
+El método de los **factores de conversión** nunca falla: multiplica por fracciones que valen 1 y cancela unidades.
+$$250\,\text{mL}\times\frac{1\,\text{L}}{1000\,\text{mL}} = 0{,}25\,\text{L}$$
+Prefijos clave: kilo $10^{3}$, deci $10^{-1}$, centi $10^{-2}$, mili $10^{-3}$, micro $10^{-6}$, nano $10^{-9}$.
+Equivalencias útiles: $1\,\mathrm{cm^{3}} = 1\,\text{mL}$; $1\,\mathrm{m^{3}} = 1000\,\text{L}$; $K = ^\circ C + 273{,}15$.
+
+> **Cifras significativas:** en multiplicación y división, el resultado lleva las cifras del dato menos preciso.
+
+## 2. Clasificación de la materia
+- **Sustancias puras**: elementos (una sola clase de átomo, $O_{2}$, Fe) y compuestos (dos o más elementos unidos químicamente, $H_{2}O$).
+- **Mezclas**: homogéneas (disoluciones: agua de mar, bronce, aire) y heterogéneas (arena con hierro, agua con aceite).
+
+**Cambio físico vs. químico:** si la sustancia sigue siendo la misma (fundir, evaporar, disolver, triturar), es **físico**. Si aparecen sustancias nuevas (oxidar, quemar, fermentar, digerir), es **químico**. Señales de cambio químico: gas, precipitado, cambio de color permanente, liberación o absorción notable de calor.
+
+**Propiedades intensivas** (no dependen de la cantidad): densidad, punto de fusión, color. **Extensivas**: masa, volumen, peso.
+
+## 3. Partículas fundamentales
+| Partícula | Carga | Masa relativa | Ubicación |
+| --- | --- | --- | --- |
+| Protón | $+1$ | 1 | núcleo |
+| Neutrón | 0 | 1 | núcleo |
+| Electrón | $-1$ | $\approx 1/1836$ | corteza |
+
+- **Número atómico** $Z$ = protones (define al elemento).
+- **Número de masa** $A$ = protones + neutrones. Entonces **neutrones** $= A - Z$.
+- Átomo neutro: electrones $= Z$. **Catión** (perdió $e^{-}$): $e = Z - carga$. **Anión** (ganó $e^{-}$): $e = Z + |carga|$.
+- **Isótopos**: mismo $Z$, distinto $A$ (mismo elemento, distinta masa).
+
+## 4. Estructura electrónica
+Orden de llenado (Aufbau): $1s\,2s\,2p\,3s\,3p\,4s\,3d\,4p\,5s\,4d\,5p\,6s\ldots$
+Capacidades: $s = 2$, $p = 6$, $d = 10$, $f = 14$.
+
+Principios: **Aufbau** (de menor a mayor energía), **Pauli** (máximo 2 electrones por orbital, con espín opuesto) y **Hund** (primero uno en cada orbital del mismo subnivel, luego se aparean).
+
+#### Ejemplo
+Azufre ($Z=16$): $1s^{2}\,2s^{2}\,2p^{6}\,3s^{2}\,3p^{4}$. Último nivel: 3 → **periodo 3**; electrones de valencia: $2+4 = 6$ → **grupo 16**.
+
+> **Truco:** el número de periodo es el mayor nivel ocupado; el grupo (para representativos) es el número de electrones de valencia (grupos 13-18 = valencia $-10$).
+
+Para iones: quita electrones **primero del nivel más externo** (en metales de transición, primero del $4s$ y luego del $3d$).
+## 5. Cifras significativas y densidad
+
+- Son significativas todas las cifras distintas de cero, los ceros **entre** cifras y los ceros finales si hay punto decimal. $0{,}00450$ tiene 3 cifras significativas.
+- Al multiplicar o dividir, el resultado lleva **las cifras del dato menos preciso**; al sumar, se ajusta por decimales.
+- Densidad: $d=\dfrac{m}{V}$. El agua tiene $1{,}00\ \mathrm{g/cm^3}$; flota lo que tenga densidad menor.
+
+**Conversiones que siempre caen:** $1\ \mathrm{L}=1000\ \mathrm{cm^3}$; $1\ \mathrm{kg}=1000\ \mathrm{g}$; $1\ \mathrm{m^3}=1000\ \mathrm{L}$; $T(\mathrm{K})=T(^{\circ}\mathrm{C})+273{,}15$; $^{\circ}\mathrm{F}=\dfrac{9}{5}\,^{\circ}\mathrm{C}+32$.
+
+> [tip] Metodo del factor unitario: escribe la unidad que quieres eliminar abajo y la que quieres obtener arriba. $2{,}5\ \mathrm{km}\times\dfrac{1000\ \mathrm{m}}{1\ \mathrm{km}}\times\dfrac{100\ \mathrm{cm}}{1\ \mathrm{m}}=250\,000\ \mathrm{cm}$.
+
+## 6. Clasificacion de la materia y tipos de cambio
+
+```
+Materia
+ |- Sustancias puras -> elementos (Fe, O2) y compuestos (H2O, NaCl)
+ |- Mezclas -> homogeneas (disoluciones: aire, acero) y heterogeneas (agua con arena)
+```
+
+- **Propiedades intensivas** (no dependen de la cantidad): densidad, punto de fusion, color.
+- **Propiedades extensivas**: masa, volumen, peso.
+- **Cambio fisico**: cambia la forma o el estado, no la sustancia (fundir hielo, disolver azucar).
+- **Cambio quimico**: aparece una sustancia nueva. Senales: desprendimiento de gas, cambio de color permanente, formacion de precipitado, liberacion o absorcion de calor.
+- Metodos de separacion: filtracion, destilacion, evaporacion, cromatografia, decantacion, tamizado, imantacion.
+
+## 7. Particulas, isotopos e iones
+
+| Particula | Carga | Masa relativa | Ubicacion |
+|---|---|---|---|
+| Proton | $+1$ | 1 uma | nucleo |
+| Neutron | $0$ | 1 uma | nucleo |
+| Electron | $-1$ | 1/1836 uma | orbitales |
+
+- Numero atomico $Z$ = protones (define el elemento). Numero de masa $A=Z+N$.
+- **Isotopos:** mismo $Z$, distinto $N$ (carbono-12 y carbono-14). La masa atomica de la tabla es el **promedio ponderado** de los isotopos.
+- **Iones:** cation = perdio electrones (carga +); anion = gano electrones (carga -). Para $\mathrm{Ca^{2+}}$ con $Z=20$: 20 protones y 18 electrones.
+
+## 8. Estructura electronica paso a paso
+
+Orden de llenado (regla de las diagonales): 1s 2s 2p 3s 3p 4s 3d 4p 5s 4d 5p 6s 4f 5d 6p 7s.
+
+- Principio de **Aufbau** (menor energia primero), principio de exclusion de **Pauli** (maximo 2 electrones por orbital, con espin opuesto) y regla de **Hund** (primero uno en cada orbital del mismo subnivel).
+- Capacidad: s = 2, p = 6, d = 10, f = 14.
+- Ejemplo: $\mathrm{Fe}$ ($Z=26$): $1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6$, o abreviado $[\mathrm{Ar}]4s^2 3d^6$.
+- Los **electrones de valencia** (ultima capa) determinan el comportamiento quimico y el grupo del elemento.
+
+## Ejercicios resueltos tipo examen
+
+**1)** Un atomo tiene $A=35$ y $Z=17$: tiene 17 protones, 17 electrones y 18 neutrones.
+
+**2)** Configuracion del ion $\mathrm{S^{2-}}$ ($Z=16$): gana 2 electrones y queda $1s^2 2s^2 2p^6 3s^2 3p^6$, isoelectronico con el argon.
+
+**3)** 250 mL de una disolucion con densidad $1{,}2\ \mathrm{g/mL}$ tienen una masa de 300 g.
+
+**4)** Clasificar: el aire es una mezcla homogenea; el bronce tambien; la oxidacion del hierro es un cambio quimico.
+
+@@CHAPTER qui|q2|🧪|Tabla periódica y nomenclatura
+## 1. Organización de la tabla
+- **Periodos** (filas, 1-7): nivel de energía más externo.
+- **Grupos** (columnas, 1-18): misma cantidad de electrones de valencia ⇒ propiedades parecidas.
+- Familias: 1 alcalinos, 2 alcalinotérreos, 3-12 metales de transición, 15 nitrogenoides, 16 calcógenos, 17 halógenos, 18 gases nobles.
+- Bloques: $s$, $p$, $d$, $f$ según el subnivel que se está llenando.
+
+## 2. Propiedades periódicas (memoriza las flechas)
+| Propiedad | En un periodo (→) | En un grupo (↓) |
+| --- | --- | --- |
+| Radio atómico | disminuye | aumenta |
+| Energía de ionización | aumenta | disminuye |
+| Afinidad electrónica | aumenta | disminuye |
+| Electronegatividad | aumenta | disminuye |
+| Carácter metálico | disminuye | aumenta |
+
+**Por qué:** al avanzar en un periodo aumenta la carga nuclear pero el nivel es el mismo ⇒ el núcleo «jala» más fuerte y el átomo se encoge. Al bajar en un grupo se agregan niveles ⇒ el átomo crece y los electrones externos están más sueltos.
+
+El más electronegativo es el **flúor** (3,98); los gases nobles son inertes porque tienen el octeto completo.
+
+## 3. Números de oxidación básicos
+- Elemento libre: 0. Ion monoatómico: su carga.
+- Hidrógeno: $+1$ (salvo hidruros metálicos, $-1$). Oxígeno: $-2$ (peroróxidos $-1$).
+- Grupo 1: $+1$; grupo 2: $+2$; aluminio: $+3$.
+- **La suma de los números de oxidación es 0 en un compuesto neutro y es igual a la carga en un ion.**
+
+#### Ejemplo
+En $H_{2}SO_{4}$: $2(+1) + x + 4(-2) = 0 \Rightarrow x = +6$ para el azufre.
+
+## 4. Nomenclatura inorgánica
+### Binarios
+- **Óxidos básicos** (metal + O): $Na_{2}O$ óxido de sodio; $Fe_{2}O_{3}$ óxido de hierro (III).
+- **Óxidos ácidos / anhídridos** (no metal + O): $SO_{2}$ dióxido de azufre; $CO_{2}$ dióxido de carbono.
+- **Hidruros**: metálicos ($LiH$, hidruro de litio) y no metálicos ($NH_{3}$, $CH_{4}$, con nombres propios).
+- **Hidrácidos** (H + no metal de grupos 16-17, en agua): $HCl$ ácido clorhídrico.
+- **Sales binarias**: $NaCl$ cloruro de sodio; $MgS$ sulfuro de magnesio. Terminación **-uro**.
+
+### Ternarios y cuaternarios
+- **Hidróxidos** (metal + OH): $NaOH$, $Ca(OH)_{2}$.
+- **Oxácidos** (H + no metal + O): $H_{2}SO_{4}$ ácido sulfúrico, $HNO_{3}$ ácido nítrico, $H_{2}CO_{3}$ ácido carbónico, $H_{3}PO_{4}$ ácido fosfórico.
+- **Oxisales**: sustituye el H del oxácido por un metal. **-oso → -ito**, **-ico → -ato**: $Na_{2}SO_{4}$ sulfato de sodio, $KNO_{2}$ nitrito de potasio.
+- **Sales ácidas** (cuaternarias): conservan H: $NaHCO_{3}$ bicarbonato (hidrogenocarbonato) de sodio.
+
+**Iones poliatómicos que debes reconocer:** $SO_{4}^{2-}$ sulfato, $NO_{3}^{-}$ nitrato, $CO_{3}^{2-}$ carbonato, $PO_{4}^{3-}$ fosfato, $OH^{-}$ hidróxido, $NH_{4}^{+}$ amonio.
+
+> **Truco del intercambio de valencias:** escribe los símbolos, cruza los números de oxidación como subíndices y simplifica. $Al^{3+}$ y $O^{2-}$ → $Al_{2}O_{3}$.
+## 5. Leer la tabla como un mapa
+
+- **Periodos** (filas, 1 a 7) = numero de niveles de energia. **Grupos** (columnas, 1 a 18) = electrones de valencia.
+- Bloques: s (grupos 1-2), p (13-18), d (metales de transicion), f (lantanidos y actinidos).
+- Familias: 1 alcalinos, 2 alcalinoterreos, 17 halogenos, 18 gases nobles.
+- Metales (izquierda): pierden electrones, forman cationes, conducen. No metales (derecha): ganan electrones, forman aniones. Metaloides: la escalera (B, Si, Ge, As, Sb, Te).
+
+## 6. Propiedades periodicas: las cuatro flechas
+
+| Propiedad | En un periodo (izq. a der.) | En un grupo (arriba a abajo) |
+|---|---|---|
+| Radio atomico | disminuye | aumenta |
+| Energia de ionizacion | aumenta | disminuye |
+| Afinidad electronica | aumenta (mas negativa) | disminuye |
+| Electronegatividad | aumenta | disminuye |
+| Caracter metalico | disminuye | aumenta |
+
+> [tip] Todo se explica con dos ideas: **mas carga nuclear atrae mas** (por eso el radio baja hacia la derecha) y **mas capas alejan al electron** (por eso el radio crece hacia abajo). El fluor es el mas electronegativo (4,0) y el francio el menos.
+
+## 7. Nomenclatura inorganica completa
+
+**Compuestos binarios**
+
+| Tipo | Formacion | Ejemplo |
+|---|---|---|
+| Oxido basico | metal + O | $\mathrm{CaO}$: oxido de calcio |
+| Oxido acido (anhidrido) | no metal + O | $\mathrm{SO_3}$: trioxido de azufre |
+| Hidruro metalico | metal + H | $\mathrm{NaH}$: hidruro de sodio |
+| Hidracido | H + no metal (grupos 16-17) | $\mathrm{HCl(ac)}$: acido clorhidrico |
+| Sal binaria | metal + no metal | $\mathrm{NaCl}$: cloruro de sodio |
+
+Sistema **stock** (numero romano con la valencia): $\mathrm{FeCl_3}$ = cloruro de hierro (III). Sistema **sistematico** (prefijos): $\mathrm{N_2O_5}$ = pentaoxido de dinitrogeno.
+
+**Compuestos ternarios**
+
+- Hidroxidos: metal + $\mathrm{OH}$. $\mathrm{Mg(OH)_2}$ = hidroxido de magnesio.
+- Oxacidos: $\mathrm{H_2SO_4}$ acido sulfurico, $\mathrm{HNO_3}$ acido nitrico, $\mathrm{H_2CO_3}$ acido carbonico, $\mathrm{H_3PO_4}$ acido fosforico.
+- Oxisales: se cambia la terminacion del acido: **-oso** pasa a **-ito**, **-ico** pasa a **-ato**. $\mathrm{NaNO_3}$ nitrato de sodio; $\mathrm{Na_2SO_3}$ sulfito de sodio.
+
+**Compuestos cuaternarios:** sales acidas y basicas. $\mathrm{NaHCO_3}$ = hidrogenocarbonato (bicarbonato) de sodio; $\mathrm{Ca(HSO_4)_2}$ = hidrogenosulfato de calcio.
+
+**Iones poliatomicos que hay que memorizar:** $\mathrm{NO_3^-}$ nitrato, $\mathrm{SO_4^{2-}}$ sulfato, $\mathrm{CO_3^{2-}}$ carbonato, $\mathrm{PO_4^{3-}}$ fosfato, $\mathrm{OH^-}$ hidroxido, $\mathrm{NH_4^+}$ amonio.
+
+> [warn] La formula se arma **cruzando valencias** y simplificando: $\mathrm{Al^{3+}}$ con $\mathrm{O^{2-}}$ da $\mathrm{Al_2O_3}$. Si los numeros se pueden simplificar, hay que hacerlo (excepto en peroxidos).
+
+## Ejercicios resueltos tipo examen
+
+**1)** Ordenar por radio atomico creciente: F, O, Li. Respuesta: F < O < Li (el radio crece hacia la izquierda).
+
+**2)** Nombre de $\mathrm{Cu_2O}$: el cobre actua con valencia 1, entonces es oxido de cobre (I) o oxido cuproso.
+
+**3)** Formula del sulfato de aluminio: $\mathrm{Al^{3+}}$ y $\mathrm{SO_4^{2-}}$ dan $\mathrm{Al_2(SO_4)_3}$.
+
+**4)** Cual tiene mayor energia de ionizacion, Na o Mg? El magnesio, porque esta mas a la derecha en el mismo periodo.
+
+@@CHAPTER qui|q3|🔗|Enlace químico y geometría
+## 1. ¿Por qué se unen los átomos?
+Para alcanzar la configuración estable del gas noble más cercano: la **regla del octeto** (8 electrones de valencia; 2 para H y He).
+
+## 2. Tipos de enlace
+| Tipo | Quiénes | Qué pasa | Ejemplo |
+| --- | --- | --- | --- |
+| Iónico | metal + no metal | transferencia de electrones | $NaCl$ |
+| Covalente | no metal + no metal | electrones compartidos | $H_{2}O$ |
+| Metálico | metal + metal | «mar de electrones» | Cu |
+
+**Criterio práctico con la diferencia de electronegatividad $\Delta EN$:**
+- $\Delta EN \geq 1{,}7$ → iónico.
+- $0{,}4 \leq \Delta EN < 1{,}7$ → covalente **polar**.
+- $\Delta EN < 0{,}4$ → covalente **no polar**.
+
+Propiedades típicas: los iónicos son sólidos duros, de alto punto de fusión y conducen electricidad **disueltos o fundidos**; los covalentes moleculares tienen puntos de fusión bajos y no conducen; los metálicos son dúctiles, maleables y buenos conductores.
+
+## 3. Estructuras de Lewis paso a paso
+1. Cuenta los electrones de valencia **totales** (suma iones: resta si es catión, suma si es anión).
+2. Coloca el átomo central (el menos electronegativo, nunca el H).
+3. Une con enlaces simples (2 $e^{-}$ cada uno).
+4. Completa octetos de los periféricos.
+5. Los electrones sobrantes van al central; si falta, forma enlaces dobles o triples.
+
+#### Ejemplo
+$CO_{2}$: $4 + 2(6) = 16$ electrones → dos enlaces dobles O=C=O.
+
+## 4. Geometría molecular (TRPEV)
+Los pares electrónicos se repelen y se colocan lo más lejos posible.
+| Pares enlazantes + libres | Geometría | Ejemplo |
+| --- | --- | --- |
+| 2 + 0 | lineal ($180^\circ$) | $CO_{2}$ |
+| 3 + 0 | trigonal plana ($120^\circ$) | $BF_{3}$ |
+| 4 + 0 | tetraédrica ($109{,}5^\circ$) | $CH_{4}$ |
+| 3 + 1 | piramidal trigonal | $NH_{3}$ |
+| 2 + 2 | angular | $H_{2}O$ |
+
+**Polaridad de la molécula:** depende de los enlaces **y** de la geometría. $CO_{2}$ tiene enlaces polares pero es apolar porque los dipolos se cancelan; $H_{2}O$ es angular y por eso es polar.
+
+## 5. Fuerzas intermoleculares (de más débil a más fuerte)
+1. **Dispersión de London**: en todas las moléculas; únicas en las apolares ($CH_{4}$, $Cl_{2}$).
+2. **Dipolo-dipolo**: entre moléculas polares ($HCl$).
+3. **Puente de hidrógeno**: cuando el H está unido a **F, O o N** ($H_{2}O$, $NH_{3}$, alcoholes).
+4. **Ion-dipolo**: sales disueltas en agua.
+
+> **Por eso el agua es rara y maravillosa:** los puentes de hidrógeno explican su alto punto de ebullición, su tensión superficial y que el hielo flote.
+
+**Analogía:** el enlace covalente es el matrimonio dentro de la molécula; las fuerzas intermoleculares son la amistad entre vecinos. Para hervir el agua no rompes matrimonios, solo separas vecinos.
+## 6. Prediccion del tipo de enlace por electronegatividad
+
+| Diferencia $\Delta EN$ | Tipo de enlace |
+|---|---|
+| $0$ a $0{,}4$ | covalente no polar |
+| $0{,}4$ a $1{,}7$ | covalente polar |
+| mayor a $1{,}7$ | ionico |
+
+Regla practica: **metal + no metal = ionico**; **no metal + no metal = covalente**; **metal + metal = metalico** (mar de electrones, por eso conducen y son maleables).
+
+| Propiedad | Ionico | Covalente molecular | Metalico |
+|---|---|---|---|
+| Punto de fusion | muy alto | bajo | variable, suele ser alto |
+| Conduce electricidad | fundido o disuelto | no | si, en estado solido |
+| Solubilidad en agua | alta | baja (salvo polares) | insoluble |
+
+## 7. Lewis: procedimiento infalible
+
+1. Cuenta los electrones de valencia totales (suma o resta la carga si es ion).
+2. Elige el atomo central: el **menos electronegativo** (nunca el hidrogeno).
+3. Une con enlaces simples y completa octetos de los atomos externos.
+4. Si faltan electrones al central, forma **enlaces dobles o triples**.
+5. Verifica: total de electrones colocados = total calculado.
+
+**Excepciones:** H (2 electrones), Be (4), B (6), y expansion del octeto en el periodo 3 en adelante ($\mathrm{PCl_5}$, $\mathrm{SF_6}$).
+
+**Resonancia:** cuando hay varias estructuras validas equivalentes ($\mathrm{O_3}$, $\mathrm{NO_3^-}$), la real es un promedio de todas.
+
+## 8. Geometria molecular (TRPEV/VSEPR)
+
+Los pares de electrones se repelen y se alejan lo maximo posible.
+
+| Pares enlazantes + libres | Geometria | Angulo | Ejemplo |
+|---|---|---|---|
+| 2 + 0 | lineal | 180 | $\mathrm{CO_2}$ |
+| 3 + 0 | trigonal plana | 120 | $\mathrm{BF_3}$ |
+| 4 + 0 | tetraedrica | 109,5 | $\mathrm{CH_4}$ |
+| 3 + 1 | piramidal trigonal | 107 | $\mathrm{NH_3}$ |
+| 2 + 2 | angular | 104,5 | $\mathrm{H_2O}$ |
+
+**Polaridad de la molecula:** depende de los enlaces **y** de la geometria. El $\mathrm{CO_2}$ tiene enlaces polares pero es apolar porque son simetricos; el agua es polar porque es angular.
+
+## 9. Fuerzas intermoleculares y sus efectos
+
+De mas debil a mas fuerte:
+
+1. **Dispersion de London** (todas las moleculas; crecen con la masa molar).
+2. **Dipolo-dipolo** (moleculas polares).
+3. **Puente de hidrogeno** (H unido a F, O o N). Es la razon de que el agua hierva a 100 grados, de que el hielo flote y de que el ADN mantenga su doble helice.
+4. Ion-dipolo (en disoluciones de sales en agua).
+
+> [tip] "Lo semejante disuelve a lo semejante": lo polar se disuelve en polar (sal y azucar en agua) y lo apolar en apolar (aceite en gasolina).
+
+## Ejercicios resueltos tipo examen
+
+**1)** Tipo de enlace en $\mathrm{KBr}$: metal + no metal, con $\Delta EN$ grande, entonces ionico.
+
+**2)** Geometria del $\mathrm{NH_3}$: 3 enlaces y 1 par libre, piramidal trigonal, angulo cercano a 107 grados y molecula polar.
+
+**3)** Por que el $\mathrm{H_2O}$ hierve mucho mas alto que el $\mathrm{H_2S}$? Porque forma puentes de hidrogeno y el sulfuro solo dipolo-dipolo.
+
+**4)** Electrones de valencia totales en $\mathrm{CO_2}$: $4+2(6)=16$, distribuidos en dos dobles enlaces y cuatro pares libres.
+
+@@CHAPTER qui|q4|⚖️|Estequiometría
+## 1. El mol: la docena del químico
+Un mol son $6{,}022\times10^{23}$ partículas (número de Avogadro). La **masa molar** $M$ (g/mol) es numéricamente igual a la masa atómica o molecular.
+
+El triángulo maestro:
+$$n = \frac{m}{M}, \qquad N = n\cdot N_{A}, \qquad V_{gas,CN} = n \cdot 22{,}4\,\text{L}$$
+
+#### Ejemplo
+$50\,\text{g}$ de $CaCO_{3}$ ($M = 100{,}09$): $n = 0{,}4996 \approx 0{,}5\,\text{mol}$, es decir $3{,}01\times10^{23}$ unidades fórmula.
+
+## 2. Composición porcentual
+$$\%\,elemento = \frac{masa\ del\ elemento\ en\ 1\ mol}{masa\ molar}\times100$$
+
+## 3. Fórmula empírica y molecular
+1. Toma 100 g ⇒ los porcentajes se vuelven gramos.
+2. Divide cada masa para su masa atómica → moles.
+3. Divide todos para el menor → proporción.
+4. Multiplica hasta obtener enteros → **fórmula empírica**.
+5. $n = \frac{M_{molecular}}{M_{empírica}}$ → **fórmula molecular** $= (empírica)_{n}$.
+
+Ejemplo clásico: empírica $CH_{2}O$ (30 g/mol) y masa molar 180 ⇒ $n = 6$ ⇒ $C_{6}H_{12}O_{6}$.
+
+## 4. Balanceo de ecuaciones
+Ley de conservación de la masa: **el mismo número de átomos de cada elemento a ambos lados**. Solo se cambian **coeficientes**, jamás los subíndices.
+Orden recomendado: metales → no metales → hidrógeno → oxígeno.
+$$CH_{4}+2O_{2} \rightarrow CO_{2}+2H_{2}O$$
+
+## 5. Cálculos estequiométricos (la autopista)
+$$\text{gramos A} \rightarrow \text{moles A} \rightarrow \text{moles B} \rightarrow \text{gramos B}$$
+El paso del centro usa la **relación de coeficientes** de la ecuación balanceada.
+
+#### Ejemplo
+¿Cuántos gramos de $CO_{2}$ se producen al quemar $16\,\text{g}$ de $CH_{4}$?
+$n(CH_{4}) = 1\,\text{mol} \Rightarrow n(CO_{2}) = 1\,\text{mol} \Rightarrow m = 44\,\text{g}$.
+
+## 6. Reactivo limitante y rendimiento
+- Calcula los moles de cada reactivo y **divídelos para su coeficiente**. El menor cociente es el **limitante**; él decide cuánto producto se forma. El otro queda **en exceso**.
+- **Rendimiento porcentual:** $\%R = \frac{real}{teórico}\times100$.
+
+> **Analogía del sánduche:** con 10 panes y 4 quesos, si cada sánduche lleva 1 pan y 1 queso, el queso es el limitante: solo salen 4 sánduches y sobran 6 panes.
+
+## Checklist antes de responder
+1. ¿La ecuación está balanceada?
+2. ¿Convertí gramos a moles?
+3. ¿Usé la relación correcta de coeficientes?
+4. ¿La respuesta tiene sentido en magnitud y unidades?
+## 7. Tipos de reacciones quimicas
+
+| Tipo | Esquema | Ejemplo |
+|---|---|---|
+| Sintesis | $A+B\to AB$ | $2\mathrm{H_2}+\mathrm{O_2}\to 2\mathrm{H_2O}$ |
+| Descomposicion | $AB\to A+B$ | $2\mathrm{H_2O_2}\to 2\mathrm{H_2O}+\mathrm{O_2}$ |
+| Desplazamiento simple | $A+BC\to AC+B$ | $\mathrm{Zn}+2\mathrm{HCl}\to \mathrm{ZnCl_2}+\mathrm{H_2}$ |
+| Doble desplazamiento | $AB+CD\to AD+CB$ | $\mathrm{AgNO_3}+\mathrm{NaCl}\to \mathrm{AgCl}+\mathrm{NaNO_3}$ |
+| Combustion | hidrocarburo + $\mathrm{O_2}$ | $\mathrm{CH_4}+2\mathrm{O_2}\to \mathrm{CO_2}+2\mathrm{H_2O}$ |
+| Neutralizacion | acido + base | $\mathrm{HCl}+\mathrm{NaOH}\to \mathrm{NaCl}+\mathrm{H_2O}$ |
+
+**Balanceo por tanteo:** ajusta primero metales, luego no metales, despues hidrogeno y **al final oxigeno**. Nunca cambies los subindices: solo los coeficientes.
+
+## 8. La "autopista" estequiometrica
+
+```
+gramos A --(masa molar A)--> moles A --(coeficientes)--> moles B --(masa molar B)--> gramos B
+```
+
+Todo problema de estequiometria es recorrer ese camino. Para gases en condiciones normales, 1 mol ocupa **22,4 L**; para disoluciones, $M=\dfrac{\text{moles de soluto}}{\text{litros de disolucion}}$.
+
+**Ejemplo completo.** Cuantos gramos de $\mathrm{CO_2}$ produce la combustion de 32 g de $\mathrm{CH_4}$?
+$32\ \mathrm{g}\div 16\ \mathrm{g/mol}=2$ mol de $\mathrm{CH_4}$; la relacion es 1:1, entonces 2 mol de $\mathrm{CO_2}$, es decir $2\times 44=88$ g.
+
+## 9. Reactivo limitante y rendimiento
+
+1. Convierte **cada** reactivo a moles.
+2. Divide las moles de cada uno para su coeficiente: **el menor cociente manda** (ese es el limitante).
+3. Calcula el producto a partir del limitante; el otro reactivo queda en exceso.
+
+$$\text{Rendimiento} = \frac{\text{real}}{\text{teorico}}\times 100\%$$
+
+> [tip] Analogia: para armar un sanduche necesitas 2 panes y 1 queso. Con 10 panes y 8 quesos solo puedes hacer 5 sanduches: **el pan es el limitante** aunque haya mas unidades.
+
+## 10. Leyes ponderales y conservacion
+
+- **Ley de Lavoisier:** la masa total se conserva; por eso la ecuacion debe estar balanceada.
+- **Ley de Proust (proporciones definidas):** un compuesto siempre tiene la misma proporcion en masa; el agua es 11,2% H y 88,8% O, siempre.
+
+## Ejercicios resueltos tipo examen
+
+**1)** Masa molar del $\mathrm{Ca(OH)_2}$: $40+2(16+1)=74\ \mathrm{g/mol}$.
+
+**2)** Cuantas moleculas hay en 0,5 mol de $\mathrm{N_2}$? $0{,}5\times 6{,}022\times 10^{23}=3{,}01\times 10^{23}$.
+
+**3)** Un compuesto tiene 40% C, 6,7% H y 53,3% O. Dividiendo para las masas atomicas se obtiene 3,33 : 6,7 : 3,33, o sea $\mathrm{CH_2O}$ como formula empirica. Si su masa molar es 180, la molecular es $\mathrm{C_6H_{12}O_6}$.
+
+**4)** Balancear $\mathrm{C_3H_8}+\mathrm{O_2}\to \mathrm{CO_2}+\mathrm{H_2O}$: $\mathrm{C_3H_8}+5\mathrm{O_2}\to 3\mathrm{CO_2}+4\mathrm{H_2O}$.
+
+@@CHAPTER len|l1|🧠|Pensamiento lógico y comunicación
+## 1. ¿Qué es un argumento?
+Un **argumento** es un conjunto de proposiciones donde unas (**premisas**) sostienen a otra (**conclusión**). No es una pelea ni una opinión suelta.
+
+Palabras señal:
+- Premisas: *porque, ya que, dado que, puesto que, en vista de que*.
+- Conclusión: *por lo tanto, en consecuencia, luego, así que, se sigue que*.
+
+**Validez ≠ verdad.** Un argumento es **válido** si la conclusión se sigue necesariamente de las premisas, aunque las premisas sean falsas. Es **sólido** si además las premisas son verdaderas.
+
+## 2. Proposiciones y conectores
+| Conector | Símbolo | Verdadero cuando |
+| --- | --- | --- |
+| Conjunción (y) | $p \wedge q$ | ambas son verdaderas |
+| Disyunción (o) | $p \vee q$ | al menos una es verdadera |
+| Condicional (si… entonces) | $p \rightarrow q$ | salvo si $p$ es V y $q$ es F |
+| Bicondicional (si y solo si) | $p \leftrightarrow q$ | ambas tienen el mismo valor |
+| Negación | $\neg p$ | $p$ es falsa |
+
+### El condicional y sus parientes (¡muy preguntado!)
+Dado «Si llueve, entonces la calle se moja» ($p \rightarrow q$):
+- **Recíproca:** $q \rightarrow p$ (si la calle se moja, llovió). **No** equivale.
+- **Inversa:** $\neg p \rightarrow \neg q$. **No** equivale.
+- **Contrarrecíproca:** $\neg q \rightarrow \neg p$ (si la calle no se mojó, no llovió). **Sí equivale siempre.**
+
+### Reglas de inferencia
+- **Modus ponens:** $p \rightarrow q$, $p$ ⇒ $q$. ✅
+- **Modus tollens:** $p \rightarrow q$, $\neg q$ ⇒ $\neg p$. ✅
+- **Silogismo hipotético:** $p\rightarrow q$, $q\rightarrow r$ ⇒ $p\rightarrow r$. ✅
+- **Falacia de afirmar el consecuente:** $p\rightarrow q$, $q$ ⇒ $p$. ❌
+- **Falacia de negar el antecedente:** $p\rightarrow q$, $\neg p$ ⇒ $\neg q$. ❌
+
+### Leyes de De Morgan
+$\neg(p \wedge q) \equiv \neg p \vee \neg q$ y $\neg(p \vee q) \equiv \neg p \wedge \neg q$.
+Negar «todos son X» es «**al menos uno** no es X» (no «ninguno es X»).
+
+## 3. Silogismos categóricos
+Cuatro formas: **A** (todo S es P), **E** (ningún S es P), **I** (algunos S son P), **O** (algunos S no son P).
+Usa **diagramas de Venn**: dibuja tres círculos, sombrea lo vacío, marca con X lo que existe y comprueba si la conclusión queda forzada.
+
+> Con dos premisas particulares («algunos…») **nunca** se obtiene conclusión válida.
+
+## 4. Falacias frecuentes
+- **Ad hominem:** atacar a la persona, no al argumento.
+- **Ad verecundiam:** apelar a una autoridad no pertinente.
+- **Ad populum:** «todos lo hacen, luego es correcto».
+- **Ad baculum:** amenaza. **Ad misericordiam:** apelar a la lástima.
+- **Falsa causa (post hoc):** confundir sucesión con causa.
+- **Generalización apresurada:** concluir de pocos casos.
+- **Falsa dicotomía:** presentar solo dos opciones.
+- **Hombre de paja:** deformar la postura del otro para refutarla.
+- **Petición de principio:** usar la conclusión como premisa.
+
+## 5. Analogías y series
+En «A es a B como C es a D» primero **nombra la relación en voz alta** (parte-todo, causa-efecto, instrumento-oficio, género-especie, sinónimo, antónimo, intensidad) y después busca la opción que la reproduce **en el mismo orden**.
+
+## 6. Hecho vs. opinión
+- **Hecho:** verificable objetivamente («Quito está a 2 850 m.s.n.m.»).
+- **Juicio de valor:** contiene valoración subjetiva («Quito es la ciudad más linda»). Pistas: adjetivos valorativos, «debería», «es mejor».
+## 7. La comunicacion: elementos y funciones
+
+| Elemento | Que es | En un examen se pregunta como... |
+|---|---|---|
+| Emisor | quien produce el mensaje | "quien enuncia el texto" |
+| Receptor | a quien va dirigido | "el destinatario" |
+| Mensaje | el contenido | "lo que se comunica" |
+| Codigo | el sistema de signos (la lengua) | "el idioma o los simbolos" |
+| Canal | el medio fisico | "oral, escrito, digital" |
+| Referente | la realidad de la que se habla | "el tema" |
+| Contexto | la situacion que rodea | "las circunstancias" |
+
+**Funciones del lenguaje (Jakobson):**
+
+- **Referencial**: informar (noticias, textos cientificos).
+- **Emotiva**: expresar al emisor ("me siento agotado").
+- **Apelativa o conativa**: influir en el receptor (ordenes, publicidad).
+- **Fatica**: abrir o mantener el contacto ("alo?", "me escuchas?").
+- **Metalinguistica**: hablar de la lengua misma ("'haber' no es lo mismo que 'a ver'").
+- **Poetica**: centrar la atencion en la forma del mensaje (literatura, eslogans).
+
+**Barreras comunicativas:** fisicas (ruido), semanticas (ambiguedad, tecnicismos), psicologicas (prejuicios) y culturales.
+
+## 8. Deduccion, induccion y abduccion
+
+| Tipo | Va de... | Conclusion |
+|---|---|---|
+| Deductivo | lo general a lo particular | necesaria si las premisas son verdaderas (valido) |
+| Inductivo | casos particulares a una generalizacion | probable, nunca segura |
+| Abductivo | un hecho a su mejor explicacion | hipotesis plausible |
+
+> [tip] **Validez no es verdad.** Un razonamiento puede ser valido con premisas falsas ("todos los gatos vuelan; Micifuz es gato; luego Micifuz vuela": valido pero no solido). Un argumento **solido** es valido *y* con premisas verdaderas.
+
+## 9. Logica proposicional aplicada
+
+| Conector | Simbolo | Verdadero cuando |
+|---|---|---|
+| Conjuncion (y) | $p\wedge q$ | ambas son verdaderas |
+| Disyuncion (o) | $p\vee q$ | al menos una es verdadera |
+| Condicional (si... entonces) | $p\to q$ | falso solo si $p$ es verdadera y $q$ falsa |
+| Bicondicional (si y solo si) | $p\leftrightarrow q$ | ambas tienen el mismo valor |
+| Negacion | $\neg p$ | invierte el valor |
+
+**Del condicional $p\to q$ se derivan:**
+
+- Reciproca: $q\to p$ (no equivale).
+- Inversa: $\neg p\to\neg q$ (no equivale).
+- **Contrarreciproca: $\neg q\to\neg p$ (si equivale)**. Es la clave de muchisimos items.
+
+**Reglas de inferencia:** modus ponens ($p\to q$, $p$, luego $q$), modus tollens ($p\to q$, $\neg q$, luego $\neg p$) y silogismo hipotetico ($p\to q$, $q\to r$, luego $p\to r$).
+
+**Falacias formales:** afirmar el consecuente ($p\to q$, $q$, luego $p$) y negar el antecedente ($p\to q$, $\neg p$, luego $\neg q$). Ambas son **invalidas**.
+
+**Leyes de De Morgan:** $\neg(p\wedge q)\equiv \neg p\vee\neg q$ y $\neg(p\vee q)\equiv\neg p\wedge\neg q$. Negar "todos" da "al menos uno no"; negar "algun" da "ninguno".
+
+## 10. Catalogo de falacias informales
+
+| Falacia | En que consiste | Ejemplo |
+|---|---|---|
+| Ad hominem | atacar a la persona | "no le creas, es un fracasado" |
+| Ad verecundiam | apelar a autoridad no pertinente | "lo dijo un actor famoso" |
+| Ad populum | apelar a la mayoria | "todos lo hacen, luego esta bien" |
+| Falsa causa | confundir correlacion con causa | "desde que uso esta pulsera no me enfermo" |
+| Generalizacion apresurada | pocos casos, gran conclusion | "dos taxistas groseros: todos lo son" |
+| Falsa dicotomia | reducir a dos opciones | "o estudias ingenieria o fracasas" |
+| Hombre de paja | deformar la postura ajena | responder a algo que el otro no dijo |
+| Pendiente resbaladiza | cadena catastrofica sin sustento | "si repruebas una materia, perderas tu vida" |
+| Peticion de principio | usar la conclusion como premisa | "es legal porque asi lo dice la ley que lo permite" |
+| Ad ignorantiam | "no se ha probado lo contrario" | "nadie demostro que no existan, luego existen" |
+
+## 11. Juicios de valor, hechos y opiniones
+
+- **Hecho:** verificable ($\to$ "Quito esta a 2.850 m sobre el nivel del mar").
+- **Opinion:** creencia personal, no verificable directamente ("Quito es la ciudad mas linda").
+- **Juicio de valor:** evalua segun un criterio explicito o implicito ("la medida fue injusta porque afecto a los mas pobres"). Un buen juicio de valor **declara su criterio** y se apoya en evidencia.
+
+> [warn] En los items de lectura critica, pregunta siempre: esto se puede comprobar? Si la respuesta es no, es opinion o valoracion, aunque suene muy segura.
+
+## Ejercicios resueltos tipo examen
+
+**1)** "Si llueve, la cancha se moja. La cancha no esta mojada." Conclusion valida: **no llovio** (modus tollens).
+
+**2)** Negar "todos los estudiantes aprobaron": **al menos un estudiante no aprobo**.
+
+**3)** "El ministro no puede tener razon porque es antipatico": falacia **ad hominem**.
+
+**4)** "Todos los A son B. Algunos C son A." Conclusion valida: **algunos C son B**.
+
+@@CHAPTER len|l2|📚|Lectura e interpretación de textos
+## 1. Los tres niveles de lectura
+1. **Literal:** qué dice el texto (datos explícitos).
+2. **Inferencial:** qué se deduce sin estar escrito (implicaciones, propósito, tono).
+3. **Crítico:** qué tan válido es (evaluar argumentos, sesgos, evidencia).
+
+La mayoría de preguntas del examen son de los niveles 1 y 2.
+
+## 2. Idea principal, tema y título
+- **Tema:** de qué trata, en pocas palabras (un sintagma: «la deforestación amazónica»).
+- **Idea principal:** la afirmación central sobre ese tema (una oración completa).
+- **Ideas secundarias:** ejemplos, datos y explicaciones que la apoyan.
+
+> **Prueba rápida:** si eliminas una oración y el texto pierde el sentido, era la principal; si solo pierde detalle, era secundaria.
+
+## 3. Tipología textual
+| Tipo | Intención | Marca típica |
+| --- | --- | --- |
+| Narrativo | contar hechos | verbos en pasado, secuencia |
+| Descriptivo | mostrar cómo es | adjetivos, presente |
+| Expositivo | informar/explicar | datos, tercera persona |
+| Argumentativo | convencer | tesis + razones |
+| Instructivo | dirigir la acción | imperativos, pasos |
+
+Funciones del lenguaje: referencial (informar), apelativa (convencer), expresiva (emociones), poética (forma), fática (contacto), metalingüística (hablar del propio idioma).
+
+## 4. Estrategia para responder rápido
+1. Lee **primero la pregunta**, luego el texto: sabrás qué buscar.
+2. Subraya conectores y nombres propios: suelen marcar la respuesta.
+3. **La respuesta está en el texto**, no en tu opinión ni en tu conocimiento previo.
+4. Descarta opciones **demasiado absolutas** («siempre», «nunca», «todos») y las que son verdaderas pero **no responden** lo preguntado.
+5. Cuidado con opciones que copian palabras del texto pero cambian el sentido.
+
+## 5. Vocabulario por contexto
+Si no conoces una palabra:
+- Busca **pistas en la oración**: definiciones, ejemplos, contrastes («pero», «a diferencia de»).
+- Analiza **raíces y afijos**: *bio-* vida, *-logía* estudio, *in-/des-* negación, *hiper-* exceso, *sub-* debajo, *re-* repetición, *poli-* muchos, *anti-* contra.
+- Reemplaza tu candidata en la oración y verifica que no cambie el sentido.
+
+## 6. Conectores lógicos (el GPS del texto)
+- **Adición:** además, asimismo, también, incluso.
+- **Oposición:** sin embargo, no obstante, pero, en cambio, aunque.
+- **Causa:** porque, debido a, ya que, puesto que.
+- **Consecuencia:** por lo tanto, en consecuencia, de modo que, así pues.
+- **Condición:** si, siempre que, a menos que.
+- **Orden:** en primer lugar, luego, finalmente.
+- **Ejemplificación:** por ejemplo, en particular, tal como.
+- **Síntesis:** en resumen, en síntesis, en conclusión.
+
+La mitad de las preguntas de completación se resuelven identificando si la relación entre las dos partes es de **suma, contraste o causa**.
+
+## 7. Inferencia bien hecha
+Una inferencia válida se apoya en el texto y no agrega información nueva. Si para aceptar la opción necesitas suponer algo que el texto no dice, esa opción es incorrecta.
+## 8. Estructura interna de los textos
+
+| Estructura | Como se reconoce |
+|---|---|
+| Problema-solucion | plantea una dificultad y luego propone salidas |
+| Causa-efecto | "debido a", "por lo tanto", "como consecuencia" |
+| Comparacion-contraste | "en cambio", "a diferencia de", "igualmente" |
+| Enumeracion | "en primer lugar", "por ultimo" |
+| Secuencia temporal | fechas y marcadores cronologicos |
+
+Saber la estructura te dice **donde** esta la respuesta: en un texto problema-solucion, la idea principal casi siempre esta en la propuesta final.
+
+## 9. Lectura critica: evaluar, no solo entender
+
+Preguntas que debes hacerle a todo texto argumentativo:
+
+1. **Cual es la tesis?** (la postura que defiende, no el tema).
+2. **Con que argumentos la sostiene?** (datos, ejemplos, autoridades, analogias).
+3. **Que tipo de evidencia usa?** Es suficiente, actual y pertinente?
+4. **Que supone sin decirlo?** (presuposiciones).
+5. **Cual es la intencion?** Informar, persuadir, entretener, criticar, vender.
+6. **Que tono adopta?** Objetivo, ironico, alarmista, didactico, polemico.
+7. **Hay sesgos o falacias?**
+
+> [tip] Tema, tesis e idea principal no son lo mismo. Tema = de que trata (una palabra o frase). Tesis = que sostiene el autor (una oracion completa con postura). Idea principal = la afirmacion mas importante del fragmento.
+
+## 10. Tipos de pregunta y como atacarlas
+
+| Tipo de item | Estrategia |
+|---|---|
+| Literal ("segun el texto...") | la respuesta esta escrita; localiza la linea |
+| Inferencial ("se deduce que...") | debe seguirse del texto, sin agregar informacion externa |
+| De vocabulario | sustituye la palabra por cada opcion y relee la oracion |
+| De proposito ("el autor busca...") | mira el titulo, el cierre y los verbos usados |
+| De estructura ("la funcion del parrafo 3 es...") | pregunta que aporta ese parrafo al conjunto |
+| De actitud o tono | fijate en los adjetivos valorativos |
+
+**Descarte inteligente:** son falsas casi siempre las opciones con "siempre", "nunca", "todos", "ninguno" (absolutismos), las que solo repiten palabras del texto sin responder, y las que son verdaderas en el mundo real pero **no estan en el texto**.
+
+## 11. Inferencia bien hecha vs. sobreinterpretacion
+
+Una inferencia valida se apoya en lo que el texto dice mas conocimiento general razonable. Si necesitas inventar un dato, ya no es inferencia.
+
+**Ejemplo.** Texto: "Pese a la lluvia, el estadio estaba lleno."
+- Inferencia valida: el publico estaba muy motivado.
+- Sobreinterpretacion: el equipo local gano el partido (el texto no lo dice).
+
+## 12. Conectores: el mapa de las ideas
+
+| Relacion | Conectores |
+|---|---|
+| Adicion | ademas, asimismo, tambien, incluso |
+| Oposicion | sin embargo, no obstante, en cambio, aunque |
+| Causa | porque, ya que, debido a, puesto que |
+| Consecuencia | por lo tanto, en consecuencia, asi que, de ahi que |
+| Condicion | si, siempre que, a menos que |
+| Ejemplificacion | por ejemplo, tal como, a saber |
+| Conclusion | en sintesis, en definitiva, para terminar |
+
+> [warn] Cuidado con "sin embargo": marca un **giro**. Muchas veces la idea principal del autor esta justo despues de ese conector, no antes.
+
+## Ejercicio resuelto tipo examen
+
+**Texto.** "Durante decadas se creyo que memorizar era la mejor forma de aprender. Hoy sabemos que recuperar la informacion de memoria, es decir autoevaluarse, produce aprendizajes mas duraderos que releer. Sin embargo, la mayoria de estudiantes sigue prefiriendo releer porque genera una sensacion de fluidez que confunden con dominio."
+
+- **Tema:** los metodos de estudio.
+- **Tesis:** autoevaluarse es mas eficaz que releer.
+- **Inferencia valida:** la sensacion de familiaridad no garantiza aprendizaje.
+- **Proposito:** persuadir al lector de cambiar su tecnica de estudio.
+- **Palabra clave del giro:** "sin embargo", que introduce la conducta contradictoria de los estudiantes.
+
+@@CHAPTER len|l3|✍️|Comunicación escrita
+## 1. El párrafo
+Un párrafo desarrolla **una sola idea**. Estructura típica: oración temática + oraciones de desarrollo + cierre.
+Cualidades: **unidad** (una idea), **coherencia** (orden lógico) y **cohesión** (conectores, pronombres, sinónimos).
+
+Ejercicio clásico del examen: **detectar la oración intrusa** (la que no aporta a la idea central) u **ordenar oraciones** para formar un párrafo. Para ordenar: busca la oración **general sin pronombres ni conectores** (esa va primera) y sigue las pistas de referencia («este fenómeno», «dicha propuesta»).
+
+## 2. Puntuación esencial
+**Coma**
+- Enumeraciones: *compré pan, leche y queso* (no coma antes de «y» en enumeración simple).
+- Vocativo: *María, ven acá.*
+- Incisos y aposiciones: *Quito, capital del Ecuador, está…*
+- Antes de *pero, sino, aunque*.
+- Tras conectores como *sin embargo, por lo tanto, además* (y punto y coma o punto antes).
+- **Nunca** entre sujeto y verbo.
+
+**Punto y coma:** separa elementos que ya llevan comas y une oraciones muy relacionadas.
+**Dos puntos:** antes de enumeraciones, citas textuales y explicaciones.
+**Comillas:** citas y sentido irónico. **Paréntesis:** información accesoria.
+
+> La coma cambia vidas: «Vamos a comer, niños» no es lo mismo que «Vamos a comer niños».
+
+## 3. Acentuación
+- **Agudas:** tildan si terminan en vocal, *n* o *s* (*café, canción, comás*).
+- **Graves/llanas:** tildan si **no** terminan en vocal, *n* ni *s* (*árbol, lápiz*).
+- **Esdrújulas y sobresdrújulas:** siempre tildan (*máquina, dígamelo*).
+- **Hiato** con vocal cerrada tónica: siempre tilde (*día, raíz, baúl*).
+- **Tilde diacrítica:** *tú/tu, él/el, mí/mi, sí/si, sé/se, más/mas, té/te, dé/de, aún(todavía)/aun(incluso)*.
+- Interrogativos y exclamativos siempre con tilde: *qué, quién, cómo, cuándo, dónde, cuánto*.
+
+## 4. Concordancia
+- **Sujeto-verbo** en número y persona: *La mayoría de los estudiantes **aprobó*** (también se admite *aprobaron*).
+- **Sustantivo-adjetivo** en género y número.
+- Ojo con sujetos largos: identifica el **núcleo** (*El grupo de alumnos **llega** temprano*).
+- **Quesuísmo, dequeismo y queismo:** se dice *estoy seguro **de que*** y *pienso **que*** (no *pienso de que*). Truco: pregunta «¿De qué estoy seguro?» → lleva *de*; «¿Qué pienso?» → sin *de*.
+
+## 5. Errores frecuentes de escritura
+- *Haber / a ver*, *hay / ahí / ay*, *echo / hecho*, *sino / si no*, *porque / por qué / porqué / por que*.
+- *Halla / haya / aya*, *valla / vaya*, *ha / a*.
+- Queda mal: *le dije a los niños* → correcto: ***les*** *dije a los niños*.
+
+## 6. Escribir para convencer
+Estructura argumentativa: **introducción con tesis → argumentos con evidencia → contraargumento y refutación → conclusión**.
+Tipos de argumento: de autoridad, por datos, por ejemplos, por analogía, por causa-efecto.
+Un buen texto argumentativo es **claro, ordenado y respetuoso**: si atacas a la persona en lugar de la idea, caes en falacia.
+
+## 7. Checklist antes de entregar cualquier escrito
+1. ¿Hay una idea por párrafo?
+2. ¿Los conectores expresan la relación real?
+3. ¿Concuerdan sujetos y verbos?
+4. ¿Las tildes diacríticas están puestas?
+5. ¿Sobra alguna palabra? Casi siempre sí.
+## 8. El parrafo: unidad, coherencia y cohesion
+
+- **Unidad:** una sola idea central por parrafo, expresada en la oracion topica.
+- **Coherencia:** las ideas se ordenan de forma logica (general a particular, causa a efecto, cronologica).
+- **Cohesion:** los mecanismos que enlazan (conectores, sinonimos, pronombres, elipsis).
+
+| Tipo de parrafo | Funcion |
+|---|---|
+| Introductorio | presenta el tema y anuncia la tesis |
+| De desarrollo | explica, ejemplifica o argumenta |
+| De transicion | enlaza dos bloques |
+| Conclusivo | sintetiza y cierra |
+
+**Ordenar oraciones (item frecuente):** localiza la oracion mas general (va primero), sigue las marcas de referencia ("este proceso", "dicha medida" siempre apuntan a algo ya mencionado) y deja para el final las que empiezan con "en conclusion" o "por eso".
+
+## 9. Puntuacion con reglas claras
+
+| Signo | Se usa para | Ejemplo |
+|---|---|---|
+| Coma enumerativa | separar elementos de una serie | "compre pan, queso y leche" |
+| Coma vocativa | aislar a quien se llama | "Ana, ven aca" |
+| Coma explicativa | encerrar aclaraciones | "Quito, capital del Ecuador, esta en los Andes" |
+| Coma de conector | tras conectores como "sin embargo" | "Sin embargo, no asistio" |
+| Punto y coma | separar elementos que ya llevan comas o ideas muy ligadas | "Vinieron Ana, la medica; Luis, el chofer" |
+| Dos puntos | anunciar enumeracion, cita o explicacion | "Hay tres motivos: tiempo, dinero y salud" |
+| Comillas | citas textuales y usos irregulares | dijo que era "imposible" |
+| Raya o parentesis | incisos | la reunion (la tercera del mes) fue larga |
+
+> [warn] **Nunca** se pone coma entre el sujeto y el verbo: "Los estudiantes de la EPN, rindieron el examen" es incorrecto.
+
+## 10. Acentuacion completa
+
+| Tipo | Silaba tonica | Lleva tilde cuando |
+|---|---|---|
+| Aguda | ultima | termina en vocal, n o s (cancion, cafe, compas) |
+| Grave o llana | penultima | **no** termina en vocal, n ni s (arbol, lapiz, dificil) |
+| Esdrujula | antepenultima | **siempre** (matematica, examenes) |
+| Sobresdrujula | anterior | **siempre** (digaselo) |
+
+- **Hiato con tilde:** vocal debil tonica junto a fuerte lleva tilde siempre (dia, rio, baul, oido).
+- **Tilde diacritica:** el/el, tu/tu, mi/mi, si/si, se/se, mas/mas, te/te, de/de, aun/aun.
+- **Interrogativos y exclamativos** siempre con tilde: que, quien, cuando, donde, como, cuanto.
+
+## 11. Concordancia y errores frecuentes
+
+- Sujeto y verbo concuerdan en numero y persona: "la mayoria de los estudiantes **aprobo**" (o "aprobaron", ambas aceptadas, pero manten la eleccion).
+- Sustantivo y adjetivo concuerdan en genero y numero: "problemas complejos".
+- **Dequeismo:** "pienso *de que* vendra" (incorrecto) por "pienso que vendra".
+- **Queismo:** "me alegro *que* vinieras" por "me alegro **de** que vinieras".
+- **Laismo/leismo:** "le vi" por "lo vi".
+- **Haber impersonal siempre en singular:** "**hubo** muchos problemas", no "hubieron".
+- Homofonos que confunden: haber/a ver, hay/ahi/ay, echo/hecho, halla/haya/aya, porque/por que/porque/por que, sino/si no.
+
+## 12. Escribir para convencer
+
+Estructura de un texto argumentativo eficaz:
+
+1. **Introduccion:** contextualiza y enuncia la tesis en una oracion clara.
+2. **Desarrollo:** un argumento por parrafo, con evidencia (datos, ejemplos, autoridad) y explicacion de por que esa evidencia apoya la tesis.
+3. **Contraargumento y refutacion:** reconoce la objecion mas fuerte y respondela. Esto **aumenta** la credibilidad.
+4. **Conclusion:** retoma la tesis con otras palabras y cierra con una proyeccion o llamado.
+
+Registro academico: evita muletillas, coloquialismos y la primera persona excesiva; prefiere oraciones de menos de 25 palabras y voz activa.
+
+## Ejercicios resueltos tipo examen
+
+**1)** Corregir: "Hubieron muchos aspirantes que no llegaron a tiempo" $\to$ "**Hubo** muchos aspirantes que no llegaron a tiempo".
+
+**2)** Cual lleva tilde: examenes, imagenes, jovenes? Todas: son esdrujulas al pasar al plural.
+
+**3)** Puntuar: "Estudie mucho sin embargo no aprobe" $\to$ "Estudie mucho; sin embargo, no aprobe".
+
+**4)** "Me alegro de que hayas venido" es correcto; "me alegro que hayas venido" incurre en queismo.
+
+@@CHAPTER gen|g1|🎯|Cómo rendir el examen EPN
+## Estructura real de la prueba
+- **Cuatro áreas:** Matemática, Física, Química y Lenguaje. Selección múltiple, formato digital presencial.
+- **210 minutos** en total: **90 minutos de Matemática** (componente **filtro**) y luego **120 minutos** para Física, Química y Lenguaje.
+- Calificación sobre **1 000 puntos**.
+
+> Matemática es filtro: si no la superas, el resto no cuenta. Prioriza ahí tu tiempo de estudio.
+
+## Gestión del tiempo
+1. **Primera pasada:** responde solo lo que sabes en menos de 60 segundos. Marca las demás con «Marcar pregunta».
+2. **Segunda pasada:** vuelve a las marcadas con la cabeza fresca.
+3. **Tercera pasada:** nunca dejes una en blanco si no hay penalización por error.
+
+Regla práctica: si llevas más de 2 minutos en una pregunta, márcala y avanza. Una pregunta difícil vale lo mismo que una fácil.
+
+## Técnicas para selección múltiple
+- **Reemplaza las opciones** en la ecuación: suele ser más rápido que resolver.
+- **Estima**: descarta por orden de magnitud, signo o unidades.
+- **Casos particulares**: si la pregunta es general, prueba con $x=0$ o $x=1$.
+- Analiza **unidades** en Física y Química: muchas opciones se caen solas.
+- Si dudas entre dos, elige la más **específica y moderada**; desconfía de los absolutos.
+
+## Plan de estudio eficiente (método de 3 vueltas)
+1. **Vuelta 1 – comprender:** lee el capítulo de «Aprende» del tema y resuelve un simulacro en nivel **Fácil**.
+2. **Vuelta 2 – consolidar:** simulacros en nivel **Intermedio** revisando cada explicación, incluso de las que acertaste.
+3. **Vuelta 3 – dominar:** niveles **Difícil** y **Experto** con el cronómetro activo y el modo **Simulacro completo**.
+
+**Repaso espaciado:** revisa un tema al día 1, 3, 7 y 15. Es la forma más barata de no olvidar.
+**Práctica de recuperación:** intentar responder **antes** de mirar la explicación fija mucho más que releer.
+
+## El día del examen
+- Duerme bien: una noche completa rinde más que tres horas extra de repaso.
+- Lee el enunciado **completo** antes de mirar las opciones.
+- Respira: 4 segundos inhalar, 4 sostener, 4 exhalar. Baja las pulsaciones en un minuto.
+- Revisa que no quede ninguna pregunta sin responder antes de enviar.
+## Como usar este simulador para aprobar
+
+1. **Diagnostico (dia 1).** Rinde un simulador de cada materia en nivel intermedio sin estudiar. Mira la seccion Estadisticas: te dira exactamente cuales son tus temas debiles.
+2. **Ciclo de estudio.** Lee el capitulo que el simulador te recomienda en "Que estudiar ahora", cierra la teoria y rinde un simulador de esa materia. Si superas el 85% en ese tema, pasa al siguiente de la lista.
+3. **Sube la dificultad.** Cuando domines el nivel intermedio, cambia a dificil y luego a experto en Configuracion.
+4. **Simulacro completo.** Una vez por semana, rinde el modo mezclado con tiempo real para entrenar resistencia y manejo del reloj.
+5. **Repaso final.** En la ultima semana revisa solo los intentos con nota baja del historial y los temas marcados en rojo.
+
+## Distribucion oficial de la prueba
+
+| Momento | Area | Tiempo |
+|---|---|---|
+| Primer bloque | Matematica (filtro) | hasta 90 minutos |
+| Segundo bloque | Quimica, Fisica y Lenguaje | hasta 120 minutos |
+| Total | 4 areas, seleccion multiple | 210 minutos |
+
+La calificacion es sobre **1.000 puntos** sin decimales, y solo quienes aprueban Matematica rinden las otras tres areas. Por eso el simulador te sugiere priorizar Matematica cuando tu promedio en esa area esta bajo.
+</script>
+
+<script src="bank.js"></script>
+<script src="theory.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

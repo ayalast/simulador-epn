@@ -1,0 +1,20 @@
+# Cloudflare Pages — https://simulador-epn.pages.dev
+# Cuenta: 44af12f62893c26eb15fab9bc9ddd90c
+#
+# Auto-deploy: GitHub Actions (.github/workflows/deploy-pages.yml) en cada push a main.
+# (Este proyecto es Direct Upload; no admite conexión Git nativa de Pages.)
+#
+# Manual:
+#   npm run deploy
+
+name = "simulador-epn"
+compatibility_date = "2026-08-04"
+pages_build_output_dir = "./public"
+
+[[kv_namespaces]]
+binding = "EPN_SYNC"
+id = "aef6efc94d33435abefe11d1105d2e3d"
+
+[[env.production.kv_namespaces]]
+binding = "EPN_SYNC"
+id = "aef6efc94d33435abefe11d1105d2e3d"

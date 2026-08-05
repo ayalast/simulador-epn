@@ -5,3 +5,14 @@ Thumbs.db
 
 # Backup local si existe
 *.bak
+
+# Cloudflare / Wrangler
+.wrangler/
+.dev.vars
+.env
+.env.*
+!.env.example
+node_modules/
+public/
+.recovery-live/
+wrangler.toml.localbak

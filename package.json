@@ -1,0 +1,18 @@
+{
+  "name": "simulador-epn",
+  "private": true,
+  "description": "Simulador de admisión EPN 2026-B — Cloudflare Pages (simulador-epn.pages.dev)",
+  "scripts": {
+    "sync": "node scripts/sync-public.mjs",
+    "dev": "node scripts/sync-public.mjs && wrangler pages dev public --port 8788",
+    "deploy": "node scripts/sync-public.mjs && wrangler pages deploy --project-name=simulador-epn --commit-dirty=true",
+    "deploy:preview": "node scripts/sync-public.mjs && wrangler pages deploy --project-name=simulador-epn --branch=preview --commit-dirty=true",
+    "cf:whoami": "wrangler whoami",
+    "cf:list": "wrangler pages deployment list --project-name=simulador-epn",
+    "cf:projects": "wrangler pages project list",
+    "cf:download-config": "wrangler pages download config simulador-epn"
+  },
+  "devDependencies": {
+    "wrangler": "^4.76.0"
+  }
+}

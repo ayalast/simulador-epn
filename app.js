@@ -444,6 +444,20 @@ function figHtml(f){
 /* =====================================================================
    MINI-MARKDOWN para la sección Aprende
    ===================================================================== */
+
+/* ---------- LaTeX / Math Renderer Helper ---------- */
+function tex(expr){
+  if(!expr) return '';
+  var isBlock = expr.startsWith('$') && expr.endsWith('$');
+  var raw = expr.replace(/^\$\$?|\$\$?$/g, '').trim();
+  if(typeof katex !== 'undefined') {
+    try {
+      return katex.renderToString(raw, { displayMode: isBlock, throwOnError: false });
+    } catch(e){}
+  }
+  return '<code class="tex-expr">' + escH(expr) + '</code>';
+}
+
 function inlineMd(s){
   return String(s).split(/(\$\$[^$]*\$\$|\$[^$]*\$)/g).map(function(p){
     if(p.charAt(0)==='$') return tex(p);
@@ -569,7 +583,7 @@ function chapterToc(body){
 
 /* ---------- configuración y almacenamiento ---------- */
 var CFG_KEY='epn_cfg_v3', HIST_KEY='epn_hist_v1', SEEN_KEY='epn_seen_v1', UI_KEY='epn_ui_v1';
-var DEFAULT_CFG = {minutes:30, count:9, mixMinutes:90, mixCount:20, level:'medio', noRepeat:true,
+var DEFAULT_CFG = {minutes:30, count: 15, mixMinutes:90, mixCount:20, level:'medio', noRepeat:true,
   shuffleOptions:true, shuffleQuestions:true, showFeedback:true, student:'AYALA PABON ETHAN FARID'};
 function load(key, def){ try{ var v = JSON.parse(localStorage.getItem(key)); return v==null? def : v; }catch(e){ return def; } }
 function save(key, val){ try{ localStorage.setItem(key, JSON.stringify(val)); }catch(e){} }
@@ -723,10 +737,12 @@ function planQuestions(k){
 function clearPlan(k){ delete PLAN[planKey(k)]; savePlan(); }
 function planBox(k){
   var qs = planQuestions(k);
+  var adminBtnHtml = '<button class="btn sec mini" data-act="openadmin" style="border-color:#7b2cbf;color:#7b2cbf;font-weight:600;margin-left:6px">🔑 Inspeccionar y editar preguntas (Admin)</button>';
+  
   if(!qs){
     return '<div class="planbox"><b>Preguntas del próximo intento</b>'+
-      '<div class="hint">Se eligen automáticamente al empezar, repartidas entre todos los temas y sin repetir ninguna que ya hayas visto. Si prefieres, puedes barajarlas ahora y ver de antemano cómo quedan distribuidas.</div>'+
-      '<div style="margin-top:8px"><button class="btn sec" data-act="reshuffle" data-c="'+k+'">\u21bb Barajar preguntas del próximo simulador</button></div></div>';
+      '<div class="hint">Se eligen automáticamente al empezar, repartidas entre todos los temas y sin repetir ninguna que ya hayas visto. Puedes barajarlas o inspeccionarlas antes de empezar.</div>'+
+      '<div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn sec mini" data-act="reshuffle" data-c="'+k+'">↻ Barajar preguntas del próximo simulador</button>'+adminBtnHtml+'</div></div>';
   }
   var by = {};
   qs.forEach(function(q){ var key = (k==='mix'? COURSES[q.__s].short+' · ':'')+q.t; by[key]=(by[key]||0)+1; });
@@ -735,8 +751,8 @@ function planBox(k){
   return '<div class="planbox"><b>Preguntas del próximo intento (ya barajadas)</b>'+
     '<div class="hint">'+qs.length+' preguntas · '+nuevas+' que nunca te han salido · nivel '+levelName(cfg.level)+'</div>'+
     '<div class="chips">'+chips+'</div>'+
-    '<div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn sec" data-act="reshuffle" data-c="'+k+'">\u21bb Volver a barajar</button>'+
-    '<button class="btn ghost" data-act="clearplan" data-c="'+k+'">Quitar selección</button></div></div>';
+    '<div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn sec mini" data-act="reshuffle" data-c="'+k+'">↻ Volver a barajar</button>'+
+    '<button class="btn ghost mini" data-act="clearplan" data-c="'+k+'">Quitar selección</button>'+adminBtnHtml+'</div></div>';
 }
 function buildAttempt(courseKey){
   var n = countFor(courseKey), picked = [], notes = [];
@@ -757,7 +773,8 @@ function buildAttempt(courseKey){
     if(cfg.shuffleOptions) order = shuffle(order);
     return {src:q, order:order, subj:q.__s};
   });
-  if(notes.length) S.toast = notes.join(' ');
+  // Do not set intrusive toast during attempt start
+  S.toast = null;
   return {course:courseKey, level:cfg.level, qs:qs, ans:qs.map(function(){return null;}), flags:qs.map(function(){return false;}),
           cur:0, start:new Date(), end:null, finished:false, limitMs:minutesFor(courseKey)*60000, historic:false};
 }
@@ -868,7 +885,7 @@ function exportProgress(){
     setTimeout(function(){ URL.revokeObjectURL(url); a.remove(); }, 500);
     S.toast = 'Progreso exportado. Guarda ese archivo .json y vuelve a importarlo cuando actualices la aplicación.';
   }catch(e){ S.toast = 'No se pudo exportar: '+e.message; }
-  S.modal = null; render();
+  S.modal = null; cloudSync(); render();
 }
 function importProgress(text){
   var data;
@@ -885,7 +902,7 @@ function importProgress(text){
   });
   if(data.cfg) { Object.keys(DEFAULT_CFG).forEach(function(k){ if(data.cfg[k]!==undefined) cfg[k]=data.cfg[k]; }); }
   if(data.ui && data.ui.read){ UI.read = Object.assign({}, UI.read||{}, data.ui.read); }
-  saveHist(); saveSeen(); saveCfg(); saveUI();
+  saveHist(); saveSeen(); pushCloudState(); saveCfg(); saveUI();
   S.modal = null;
   S.toast = 'Progreso importado: '+nuevos+' intento(s) nuevos y '+vistas+' pregunta(s) vistas añadidas. Tu configuración también se restauró.';
   render();
@@ -1995,22 +2012,27 @@ function viewCourse(){
   var lv = LEVELS.map(function(l){ return '<button class="pill '+l.c+(cfg.level===l.k?' on':'')+'" data-act="setlevel" data-l="'+l.k+'">'+l.n+'</button>'; }).join('');
   var hs = liveHist().filter(function(r){ return r.course===k; }).sort(function(a,b){return b.ts-a.ts;});
   return navbar('')+'<div class="wrap">'+drawer('quiz')+'<div class="main">'+
-    pagehead(c.full,'01-SEA-EPN_2026-2 \u203a '+c.full)+toastHtml()+
+    pagehead(c.full,'01-SEA-EPN_2026-2 › '+c.full)+toastHtml()+
     '<div style="max-width:840px">'+
-    '<p>'+c.desc+' Cada intento toma <b>'+countFor(k)+' preguntas</b> distintas'+(k==='mix'?' repartidas entre las cuatro \u00e1reas':'')+' de un banco interno de <b>'+bankOf(k).length+'</b>.</p>'+
+    '<p>'+c.desc+' Cada intento toma <b>'+countFor(k)+' preguntas</b> distintas'+(k==='mix'?' repartidas entre las cuatro áreas':'')+' de un banco interno de <b>'+bankOf(k).length+'</b>.</p>'+
     '<div style="margin:14px 0 6px;font-weight:600;font-size:14px">Dificultad</div><div class="pills">'+lv+'</div>'+
     '<table class="quizsummary"><tbody>'+
-    '<tr><th>M\u00e9todo de calificaci\u00f3n</th><td>Calificaci\u00f3n m\u00e1s alta</td></tr>'+
-    '<tr><th>L\u00edmite de tiempo</th><td>'+minutesFor(k)+' minutos</td></tr>'+
+    '<tr><th>Método de calificación</th><td>Calificación más alta</td></tr>'+
+    '<tr><th>Límite de tiempo</th><td>'+minutesFor(k)+' minutos</td></tr>'+
     '<tr><th>Preguntas</th><td>'+countFor(k)+' (1,00 punto cada una)</td></tr>'+
-    '<tr><th>Dificultad</th><td>'+levelName(cfg.level)+' \u00b7 '+pool+' preguntas en este nivel</td></tr>'+
-    '<tr><th>Sin repetir</th><td>'+(cfg.noRepeat? 'Activado \u00b7 '+fresh+' preguntas nuevas disponibles' : 'Desactivado (pueden repetirse)')+'</td></tr>'+
-    '<tr><th>Intentos rendidos</th><td>'+hs.length+(hs.length?' \u00b7 \u00faltimo '+fmtCorta(hs[0].ts)+' ('+recPct(hs[0])+'%)':'')+'</td></tr>'+
+    '<tr><th>Dificultad</th><td>'+levelName(cfg.level)+' · '+pool+' preguntas en este nivel</td></tr>'+
+    '<tr><th>Sin repetir</th><td>'+(cfg.noRepeat? 'Activado · '+fresh+' preguntas nuevas disponibles' : 'Desactivado (pueden repetirse)')+'</td></tr>'+
+    '<tr><th>Intentos rendidos</th><td>'+hs.length+(hs.length?' · último '+fmtCorta(hs[0].ts)+' ('+recPct(hs[0])+'%)':'')+'</td></tr>'+
     '</tbody></table>'+
-    (k==='mix'? '<div class="infobox">El examen real dura 210 minutos: 90 de Matem\u00e1tica (componente filtro) y 120 para F\u00edsica, Qu\u00edmica y Lenguaje. Puedes reproducir esos tiempos desde la configuraci\u00f3n.</div>':'')+
+    (k==='mix'? '<div class="infobox">El examen real dura 210 minutos: 90 de Matemática (componente filtro) y 120 para Física, Química y Lenguaje. Puedes reproducir esos tiempos desde la configuración.</div>':'')+
     planBox(k)+
+    '<label class="switch" style="margin:14px 0 10px;display:flex;align-items:center;gap:10px;cursor:pointer;background:rgba(217,130,43,0.08);padding:10px 14px;border-radius:8px;border:1px solid rgba(217,130,43,0.25)">'+
+    '<input type="checkbox" id="chkNoSave" style="width:18px;height:18px;cursor:pointer" '+(S.noSave?'checked':'')+'>'+
+    '<span style="font-weight:600;color:#d9822b">⚙ Modo de prueba: No guardar este intento en el historial</span></label>'+
+    '<div class="hint" style="margin:-4px 0 14px">Ideal para testeo o prácticas rápidas. Si está activado, la nota no afectará tus estadísticas ni el banco de preguntas vistas.</div>'+
     '<div style="margin:18px 0 10px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn" data-act="start">Intentar resolver el cuestionario ahora</button>'+
-    '<button class="btn sec" data-act="cfg">\u2699 Configuraci\u00f3n</button>'+
+    '<button class="btn sec" data-act="cfg">⚙ Configuración</button>'+
+    '<button class="btn sec" data-act="openadmin" style="border-color:#7b2cbf;color:#7b2cbf;font-weight:600">🔑 Editor de preguntas (Admin)</button>'+
     (hs.length? '<button class="btn sec" data-act="histtabgo" data-t="'+k+'">Historial de esta materia</button>':'')+'</div>'+
     '</div>'+actnav()+'</div></div>'+drawerBtn()+sitefooter();
 }
@@ -2095,6 +2117,128 @@ function viewReview(){
     actnav()+'</div>'+navBlock('review')+'</div>'+drawerBtn()+sitefooter();
 }
 
+
+/* ---------- SEGURIDAD Y SINCRONIZACIÓN EN LA NUBE (PIN: 235677) ---------- */
+var SECURITY_PIN = "235677";
+var PIN_KEY = "epn_pin_v1";
+
+function isPinAuthenticated() {
+  var saved = load(PIN_KEY, null);
+  return saved === SECURITY_PIN;
+}
+
+function verifyPin(inputPin) {
+  if (String(inputPin).trim() === SECURITY_PIN) {
+    save(PIN_KEY, SECURITY_PIN);
+    return true;
+  }
+  return false;
+}
+
+function cloudSync() {
+  if (!isPinAuthenticated()) return;
+  var pin = SECURITY_PIN;
+  
+  fetch('/api/sync?pin=' + pin)
+    .then(function(res){ return res.json(); })
+    .then(function(res){
+      if(res && res.ok && res.data && res.data.data) {
+        var cloud = res.data.data;
+        var cloudHist = cloud.hist || [];
+        var changed = false;
+        
+        cloudHist.forEach(function(cRec){
+          var exists = HIST.some(function(lRec){ return lRec.id === cRec.id || (lRec.ts === cRec.ts && lRec.score === cRec.score); });
+          if(!exists) {
+            HIST.push(cRec);
+            changed = true;
+          }
+        });
+        
+        if(cloud.seen) {
+          Object.keys(cloud.seen).forEach(function(k){
+            if(Array.isArray(cloud.seen[k])) {
+              cloud.seen[k].forEach(function(idx){
+                if(!SEENSET[k][idx]) {
+                  SEENSET[k][idx] = true;
+                  if(SEEN[k].indexOf(idx) < 0) SEEN[k].push(idx);
+                  changed = true;
+                }
+              });
+            }
+          });
+        }
+
+        if(changed) {
+          saveHist();
+          saveSeen();
+          if(typeof rerenderKeepScroll === 'function') rerenderKeepScroll();
+        }
+        pushCloudState();
+      } else {
+        pushCloudState();
+      }
+    })
+    .catch(function(err){
+      console.log('Cloud sync offline fallback');
+    });
+}
+
+function pushCloudState() {
+  if (!isPinAuthenticated()) return;
+  var payload = {
+    hist: HIST,
+    seen: SEEN,
+    cfg: cfg
+  };
+  fetch('/api/sync?pin=' + SECURITY_PIN, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ data: payload })
+  }).catch(function(err){ console.log('Push sync offline fallback'); });
+}
+
+
+/* ---------- MODO ADMINISTRADOR Y EDITOR DE PRÓXIMO INTENTO (PIN: Netkaizen5 - SIEMPRE PIDE CLAVE) ---------- */
+var ADMIN_PIN = "Netkaizen5";
+var ADMIN_SESSION = false;
+
+function isAdminAuthenticated() {
+  return ADMIN_SESSION === true;
+}
+
+function verifyAdminPin(inputPin) {
+  if (String(inputPin).trim() === ADMIN_PIN) {
+    ADMIN_SESSION = true;
+    return true;
+  }
+  return false;
+}
+
+function swapPlanQuestion(courseKey, qIndex) {
+  var p = PLAN[planKey(courseKey)];
+  if (!p || !p.ids || !p.ids[qIndex]) return;
+  var target = p.ids[qIndex];
+  var subjBank = BANK[target.s] || [];
+  
+  var currentIds = new Set(p.ids.map(function(x){ return x.s + '_' + x.i; }));
+  var candidates = subjBank.filter(function(q){ return !currentIds.has(q.__s + '_' + q.__i); });
+  
+  if (!candidates.length) candidates = subjBank;
+  var replacement = shuffle(candidates)[0];
+  if (replacement) {
+    p.ids[qIndex] = { s: replacement.__s, i: replacement.__i };
+    savePlan();
+  }
+}
+
+function removePlanQuestion(courseKey, qIndex) {
+  var p = PLAN[planKey(courseKey)];
+  if (!p || !p.ids || !p.ids[qIndex]) return;
+  p.ids.splice(qIndex, 1);
+  savePlan();
+}
+
 /* ---------- MODALES ---------- */
 function modalCfg(){
   var lv = LEVELS.map(function(l){ return '<button class="pill '+l.c+(cfg.level===l.k?' on':'')+'" data-act="setlevel" data-l="'+l.k+'">'+l.n+'</button>'; }).join('');
@@ -2105,6 +2249,7 @@ function modalCfg(){
     '<div class="hint">100 preguntas por materia y por nivel. \u00abMezclado\u00bb combina los cuatro niveles.</div></div>'+
     '<div class="field"><label>L\u00edmite de tiempo por materia (minutos)</label><input id="cfgmin" type="number" min="1" max="300" value="'+cfg.minutes+'"></div>'+
     '<div class="field"><label>Preguntas por intento (una materia)</label><input id="cfgcount" type="number" min="1" max="100" value="'+cfg.count+'"></div>'+
+    '<label class="switch" style="margin-top:6px;display:flex;align-items:center;gap:8px;cursor:pointer"><input id="cfgsetdefault" type="checkbox"><span style="font-size:13px;color:#1f7a3f;font-weight:600">Establecer este número de preguntas como predeterminado para todos los simuladores</span></label>'+
     '<div class="field"><label>Simulacro completo: minutos</label><input id="cfgmixmin" type="number" min="1" max="300" value="'+cfg.mixMinutes+'"><div class="hint">El examen real dura 210 minutos en total.</div></div>'+
     '<div class="field"><label>Simulacro completo: preguntas</label><input id="cfgmixcount" type="number" min="4" max="120" value="'+cfg.mixCount+'"></div>'+
     '<div class="field"><label>Nombre del estudiante</label><input id="cfgname" type="text" value="'+escH(cfg.student)+'"></div>'+
@@ -2149,6 +2294,65 @@ function modalConfirm(){
 }
 
 /* ---------- RENDER ---------- */
+
+function renderAdminModal(){
+  if (!isAdminAuthenticated()) {
+    return '<div class="modalbg" data-act="closemodal"><div class="modalcard" style="max-width:420px;text-align:center" data-stop="1">'+
+      '<div style="font-size:36px;margin-bottom:8px">🔑</div>'+
+      '<h2 style="margin:0 0 6px">Acceso de Administrador</h2>'+
+      '<p class="th-sub" style="margin-bottom:16px">Ingresa la contraseña de administrador para continuar.</p>'+
+      '<div style="margin-bottom:16px"><input type="password" id="adminpininput" class="cfgfield" placeholder="Contraseña Admin" style="font-size:18px;text-align:center" autofocus /></div>'+
+      '<div id="adminpinerr" style="color:#b3261e;font-size:13px;margin-bottom:12px;display:none">Contraseña de administrador incorrecta.</div>'+
+      '<div style="display:flex;gap:10px"><button class="btn ghost" data-act="closemodal">Cancelar</button><button class="btn" data-act="verifyadminpin" style="flex:1">Autenticar</button></div>'+
+      '</div></div>';
+  }
+
+  var k = S.course || 'mat';
+  var p = PLAN[planKey(k)];
+  if(!p || !p.ids || !p.ids.length) {
+    makePlan(k);
+    p = PLAN[planKey(k)];
+  }
+
+  var planQs = (p && p.ids) ? p.ids.map(function(x){ return (BANK[x.s]||[])[x.i]; }).filter(function(q){ return !!q; }) : [];
+
+  var qListHtml = planQs.map(function(q, ix){
+    var subjName = (COURSES[q.__s]||{}).short || q.__s;
+    return '<div style="background:#f8f9fa;border:1px solid #cbd5e1;border-radius:8px;padding:12px;margin-bottom:10px;text-align:left">'+
+      '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;flex-wrap:wrap;gap:6px">'+
+      '<div><b>#'+(ix+1)+'</b> <span class="chip light">'+subjName+'</span> <span class="chip" style="background:#e0e7ff;color:#3730a3">'+escH(q.t)+'</span> <span class="chip">'+levelName(q.d)+'</span></div>'+
+      '<div style="display:flex;gap:6px">'+
+      '<button class="btn sec mini" data-act="swapplanswap" data-ix="'+ix+'">↻ Mezclar / Cambiar</button>'+
+      '<button class="btn ghost mini" data-act="swaplanremove" data-ix="'+ix+'" style="color:#b3261e">✕ Quitar</button>'+
+      '</div></div>'+
+      '<div style="font-size:14px;margin-bottom:6px;color:#1e293b"><b>Pregunta:</b> '+md(q.q)+'</div>'+
+      '<div style="font-size:13px;color:#1f7a3f"><b>Respuesta Correcta:</b> '+escH(q.o[q.a])+'</div>'+
+      '</div>';
+  }).join('');
+
+  return '<div class="modalbg" data-act="closemodal"><div class="modalcard" style="max-width:760px;max-height:85vh;overflow-y:auto" data-stop="1">'+
+    '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">'+
+    '<h2 style="margin:0">🔑 Editor del Próximo Intento ('+(COURSES[k]||{}).short+')</h2>'+
+    '<button class="closex" data-act="closemodal">✕</button></div>'+
+    '<p class="th-sub">Inspecciona y edita manualmente las <b>'+planQs.length+' preguntas</b> que saldrán en el próximo simulador. Puedes quitar o cambiar cualquier pregunta antes de empezar.</p>'+
+    '<div style="margin-bottom:16px">'+(qListHtml||'<div class="emptybox">No hay preguntas preparadas en este intento.</div>')+'</div>'+
+    '<div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between">'+
+    '<button class="btn sec" data-act="reshuffle" data-c="'+k+'">↻ Re-barajar todo el intento</button>'+
+    '<button class="btn" data-act="closemodal">✅ Confirmar y Guardar Próximo Intento</button>'+
+    '</div></div></div>';
+}
+
+function renderPinModal(){
+  return '<div class="modalbg"><div class="modalcard" style="max-width:420px;text-align:center" data-stop="1">'+
+    '<div style="font-size:36px;margin-bottom:8px">🔒</div>'+
+    '<h2 style="margin:0 0 6px">Acceso Privado al Aula Virtual</h2>'+
+    '<p class="th-sub" style="margin-bottom:16px">Ingresa el PIN de seguridad de 6 dígitos (235677) para acceder y sincronizar tu progreso unificado.</p>'+
+    '<div style="margin-bottom:16px"><input type="password" id="pininput" class="cfgfield" placeholder="PIN de 6 dígitos" style="font-size:22px;letter-spacing:6px;text-align:center" autofocus /></div>'+
+    '<div id="pinerr" style="color:#b3261e;font-size:13px;margin-bottom:12px;display:none">PIN de seguridad incorrecto. Inténtalo de nuevo.</div>'+
+    '<button class="btn" data-act="verifypin" style="width:100%;padding:12px">Ingresar al Aula Virtual</button>'+
+    '</div></div>';
+}
+
 function render(){
   var html = '';
   if(S.view==='home') html = viewHome();
@@ -2161,7 +2365,20 @@ function render(){
   else if(S.view==='summary') html = viewSummary();
   else if(S.view==='review') html = viewReview();
   el('root').innerHTML = html;
-  el('modalroot').innerHTML = S.modal==='cfg'? modalCfg() : (S.modal==='confirm'? modalConfirm() : (S.modal==='exit'? modalExit() : ''));
+  
+  var modalHtml = '';
+  if (!isPinAuthenticated()) {
+    modalHtml = renderPinModal();
+  } else if (S.modal === 'admin') {
+    modalHtml = renderAdminModal();
+  } else if (S.modal === 'cfg') {
+    modalHtml = modalCfg();
+  } else if (S.modal === 'confirm') {
+    modalHtml = modalConfirm();
+  } else if (S.modal === 'exit') {
+    modalHtml = modalExit();
+  }
+  el('modalroot').innerHTML = modalHtml;
   if(S.scrollTop!==false) window.scrollTo(0,0);
 }
 
@@ -2179,6 +2396,7 @@ function startTimer(){
 }
 function stopTimer(){ if(S.tick){ clearInterval(S.tick); S.tick = null; } }
 function recordAttempt(a){
+  if(a.noSave) return null;
   var score = a.qs.reduce(function(s,_,ix){ return s+(isCorrect(ix)?1:0); },0);
   var rec = { id:'a'+a.start.getTime(), ts:a.start.getTime(), course:a.course, level:a.level,
     min:Math.round(a.limitMs/60000), durMs:(a.end-a.start), n:a.qs.length, score:score,
@@ -2186,6 +2404,7 @@ function recordAttempt(a){
   HIST.push(rec); saveHist();
   a.qs.forEach(function(q){ if(!SEENSET[q.subj][q.src.__i]){ SEENSET[q.subj][q.src.__i]=1; SEEN[q.subj].push(q.src.__i); } });
   saveSeen();
+  pushCloudState();
   return rec;
 }
 function finishAttempt(auto){
@@ -2193,16 +2412,23 @@ function finishAttempt(auto){
   a.finished = true;
   a.end = new Date(Math.min(Date.now(), a.start.getTime()+a.limitMs));
   stopTimer();
-  if(!a.historic) recordAttempt(a);
+    if(!a.historic && !a.noSave) recordAttempt(a);
   S.modal = null; S.onePage = null; S.view = 'review';
-  S.toast = auto? 'Se acab\u00f3 el tiempo: el intento se envi\u00f3 autom\u00e1ticamente y qued\u00f3 guardado en tu historial.'
-                : 'Intento guardado en tu historial. Puedes volver a revisarlo cuando quieras.';
+  if(a.noSave){
+    S.toast = '⚙ Modo de prueba activo: Este intento no fue guardado en tu historial ni alteró las preguntas vistas.';
+  } else {
+    S.toast = auto? 'Se acabó el tiempo: el intento se envió automáticamente y quedó guardado en tu historial.'
+                  : 'Intento guardado en tu historial. Puedes volver a revisarlo cuando quieras.';
+  }
   render();
 }
 function startAttempt(k){
   S.toast = null;
   S.course = k || S.course || 'mat';
+  var chkEl = el('chkNoSave');
+  if(chkEl) S.noSave = chkEl.checked;
   S.attempt = buildAttempt(S.course);
+  if(S.noSave) S.attempt.noSave = true;
   S.view = 'attempt'; S.onePage = null; S.modal = null;
   render(); startTimer();
 }
@@ -2253,11 +2479,43 @@ document.addEventListener('click', function(e){
     case 'forcefinish': finishAttempt(false); break;
     case 'toggledrawer': UI.drawer = !UI.drawer; saveUI(); rerenderKeepScroll(); break;
     case 'cfg': S.modal = 'cfg'; render(); break;
-    case 'closemodal': S.modal = null; render(); break;
+    case 'closemodal': ADMIN_SESSION = false; S.modal = null; render(); break;
     case 'setlevel': cfg.level = t.dataset.l; saveCfg(); rerenderKeepScroll(); break;
+        case 'verifypin':
+      var p = (el('pininput')||{}).value || '';
+      if(verifyPin(p)){
+        S.modal = null;
+        cloudSync();
+        render();
+      } else {
+        var errEl = el('pinerr');
+        if(errEl) errEl.style.display = 'block';
+      }
+      break;
+            case 'openadmin': ADMIN_SESSION = false; S.modal = 'admin'; render(); break;
+    case 'verifyadminpin':
+      var ap = (el('adminpininput')||{}).value || '';
+      if(verifyAdminPin(ap)){
+        S.modal = 'admin';
+        render();
+      } else {
+        var aErr = el('adminpinerr');
+        if(aErr) aErr.style.display = 'block';
+      }
+      break;
+    case 'swapplanswap':
+      swapPlanQuestion(S.course||'mat', +t.dataset.ix);
+      render(); break;
+    case 'swaplanremove':
+      removePlanQuestion(S.course||'mat', +t.dataset.ix);
+      render(); break;
     case 'savecfg':
+      var cnt = Math.max(1, Math.min(100, +el('cfgcount').value||15));
+      cfg.count = cnt;
+      if(el('cfgsetdefault') && el('cfgsetdefault').checked) {
+        DEFAULT_CFG.count = cnt;
+      }
       cfg.minutes = Math.max(1, Math.min(300, +el('cfgmin').value||30));
-      cfg.count = Math.max(1, Math.min(100, +el('cfgcount').value||9));
       cfg.mixMinutes = Math.max(1, Math.min(300, +el('cfgmixmin').value||90));
       cfg.mixCount = Math.max(4, Math.min(120, +el('cfgmixcount').value||20));
       cfg.student = el('cfgname').value.trim()||DEFAULT_CFG.student;

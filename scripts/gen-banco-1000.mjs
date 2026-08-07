@@ -88,13 +88,19 @@ const LEN_BASE = [
 const LEN_TOPICS = LEN_BASE;
 
 function figForMat(topic, id){
+  // Llamado desde matQuestion con acceso a n y a valores ac,bc,angleB etc. via closure en switch
+  // Aquí solo fallback genérico si se llama fuera del switch
   const seed=id;
   if(topic==='4.1.3-geom') return [helpers.figTriangulo({a:6,b:5,c:7, seed, labels:{A:'A',B:'B',C:'C'}})];
   if(topic==='4.1.4-razTrig') return [helpers.figTriangulo({a:3,b:4,c:5, seed, labels:{A:'A',B:'B',C:'C'}})];
-  if(topic==='4.1.4-leySenosCosenos') return [helpers.figTriangulo({a:7,b:8,c:5, seed, labels:{A:'A',B:'B',C:'C'}})];
+  if(topic==='4.1.4-leySenosCosenos') return [helpers.figTrianguloLeyCosenos({ab:5,ac:7,angleA:60})];
   if(topic==='4.1.4-rectaCirc') return [helpers.figParalelas({angulo:38})];
   return [];
 }
+function figForMatRectangulo(ac, bc, id){ return [helpers.figTrianguloRectangulo({ac, bc, labels:{A:'A',B:'B',C:'C'}, seed:id})]; }
+function figForMatIsosceles(angleB, id){ return [helpers.figTrianguloIsosceles({ab_ac:'AB=AC', angleB, labels:{A:'A',B:'B',C:'C'}})]; }
+function figForMatLeyCosenos(ab, ac, angleA, id){ return [helpers.figTrianguloLeyCosenos({ab, ac, angleA, labels:{A:'A',B:'B',C:'C'}})]; }
+function figForMatRecta(ax,ay,bx,by, id){ return [helpers.figPlanoRecta({ax,ay,bx,by, labels:{A:'A',B:'B'}})]; }
 function figForFis(figType, id, vars={}){
   if(figType==='vector') return [helpers.figVector({vx: vars.vx||3, vy: vars.vy||4})];
   if(figType==='dcl') return [helpers.figDCL({forces:[{label:'F₁', fx:30, fy:8},{label:'F₂', fx:-12, fy:16}], title:'DCL'})];
@@ -112,7 +118,7 @@ function matQuestion(topic, n, id){
   // plantillas abarcables: cada topic tiene 3-4 variantes con números aleatorizados
   let prompt, opts, ans, exp, maths=[];
   const a = 2 + (n%5), b = 3 + (n%4), c = 5 + (n%3);
-  const figs = topic.fig ? figForMat(code, id) : [];
+  let figs = topic.fig ? figForMat(code, id) : [];
   switch(code){
     case '4.1.1-enteros': {
       const x = -7 - (n%6), y = 4 + (n%5);
@@ -215,31 +221,32 @@ function matQuestion(topic, n, id){
       exp = `$|${a}x-${b}|=${c}$ equivale a $${a}x-${b}=${c}$ o $${a}x-${b}=-${c}$; de ahí $x_{1}=\\frac{${b+c}}{${a}}$ y $x_{2}=\\frac{${b-c}}{${a}}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot ${b}}{${a}}=${sumStr}$. Tomar solo una rama es el error típico.`;
       break; }
     case '4.1.3-geom': {
-      // paralelas y ángulos correspondientes
       const variants = n%4;
       if(variants<2){
-        prompt = `Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ como en la figura. Si uno de los ángulos agudos mide $${38 + (n%12)}^\\circ$, ¿cuánto mide su correspondiente en la otra paralela?`;
         const ang = 38+(n%12);
+        prompt = `Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ como en la figura. Si uno de los ángulos agudos mide $${ang}^\\circ$, ¿cuánto mide su correspondiente en la otra paralela?`;
         opts = [`$${ang}^\\circ$`, `$${180-ang}^\\circ$`, `$${ang+10}^\\circ$`, `$${90}^\\circ$`];
         ans=0;
         exp = `Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $${ang}^\\circ$. El suplemento $${180-ang}^\\circ$ corresponde a ángulos conjugados, no correspondientes.`;
+        figs = [helpers.figParalelas({angulo: ang})];
       } else {
-        prompt = `En el triángulo $ABC$ de la figura, $AB=AC$ (isósceles en $A$). Si $\\angle B=${50+(n%10)}^\\circ$, halle $\\angle A$.`;
         const angB = 50+(n%10);
         const angA = 180-2*angB;
+        prompt = `En el triángulo $ABC$ de la figura, $AB=AC$ (isósceles en $A$). Si $\\angle B=${angB}^\\circ$, halle $\\angle A$.`;
         opts = [`$${angA}^\\circ$`, `$${angB}^\\circ$`, `$${180-angB}^\\circ$`, `$${angA+10}^\\circ$`];
         ans=0;
         exp = `En isósceles base $BC$, $\\angle B=\\angle C=${angB}^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot ${angB}^\\circ=${angA}^\\circ$.`;
+        figs = figForMatIsosceles(angB, id);
       }
       break; }
     case '4.1.4-razTrig': {
-      prompt = `En el triángulo rectángulo de la figura (recto en $C$), $AC=${3+(n%3)}$ y $BC=${4+(n%2)}$. Calcule $\\sin(A)$.`;
-      const ac=3+(n%3), bc=4+(n%2), hyp=Math.hypot(ac,bc);
-      const sinA = bc/hyp;
+      const ac=3+(n%3), bc=4+(n%2);
+      prompt = `En el triángulo rectángulo de la figura (recto en $C$), $AC=${ac}$ y $BC=${bc}$. Calcule $\\sin(A)$.`;
+      const hyp=Math.hypot(ac,bc);
       opts = [`$\\dfrac{${bc}}{${hyp.toFixed(0)}}$`, `$\\dfrac{${ac}}{${hyp.toFixed(0)}}$`, `$\\dfrac{${hyp.toFixed(0)}}{${bc}}$`, `$\\dfrac{${bc}}{${ac}}$`];
-      // hyp es 5 para 3-4-5
       ans=0;
       exp = `$\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{${bc}}{${hyp.toFixed(0)}}$. Intercambiar catetos o invertir la fracción da los distractores.`;
+      figs = figForMatRectangulo(ac, bc, id);
       break; }
     case '4.1.4-identTrig': {
       prompt = `Simplifique $\\dfrac{\\sin^{2}x + \\cos^{2}x}{\\sec x}$ a su mínima expresión.`;
@@ -248,20 +255,22 @@ function matQuestion(topic, n, id){
       exp = `Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error.`;
       break; }
     case '4.1.4-leySenosCosenos': {
-      const ang=60; // fijo para usar cos60=0.5
+      const ang=60;
       prompt = `En $\\triangle ABC$, $AB=5$, $AC=7$ y $\\angle A=60^\\circ$ (ver figura). Halle $BC$ usando ley de cosenos.`;
-      const bc2 = 25+49-2*5*7*Math.cos(Math.PI/3);
-      const bc = Math.sqrt(bc2);
+      const bc2 = Math.round(25+49-2*5*7*Math.cos(Math.PI/3));
       opts = [`$\\sqrt{${bc2}}$`, `$\\sqrt{${25+49}}$`, `$${bc2}$`, `$\\sqrt{${bc2+10}}$`];
       ans=0;
       exp = `$BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=${bc2}$, luego $BC=\\sqrt{${bc2}}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.`;
+      figs = figForMatLeyCosenos(5, 7, 60, id);
       break; }
     case '4.1.4-rectaCirc': {
-      prompt = `Halle la pendiente $m$ de la recta que pasa por $A(${a},${b})$ y $B(${a+2},${b+4})$.`;
-      const m = 4/2;
+      const bx = a+2, by = b+4;
+      const m = (by - b)/(bx - a);
+      prompt = `Halle la pendiente $m$ de la recta que pasa por $A(${a},${b})$ y $B(${bx},${by})$.`;
       opts = [`$${m}$`, `$\\frac{1}{${m}}$`, `$${-m}$`, `$${m+1}$`];
       ans=0;
-      exp = `$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{${b+4}-${b}}{${a+2}-${a}}=\\frac{4}{2}=${m}$. Invertir el cociente o el signo son los errores.`;
+      exp = `$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{${by}-${b}}{${bx}-${a}}=\\frac{4}{2}=${m}$. Invertir el cociente o el signo son los errores.`;
+      figs = figForMatRecta(a,b,bx,by, id);
       break; }
     default: {
       prompt = `Simplifique $\\frac{x^{2}-9}{x-3}$ para $x\\neq 3$.`;

@@ -23,7 +23,6 @@ function arrow(x1,y1,x2,y2, color='#0e2a47', w=2){
 export function figTriangulo({ a=5, b=4, c=6, labels={A:'A',B:'B',C:'C'}, seed='' }={}){
   const h = hash(seed||`${a}-${b}-${c}`);
   const jitter = (h%7)-3;
-  // Triángulo escaleno visual genérico 120,220 - 280,220 - 170+jitter,70
   const p1='120,220', p2='280,220', p3=`${170+jitter},70`;
   const inner = `
     <rect x="0" y="0" width="400" height="300" rx="10" fill="#fff" stroke="#e3e8ee"/>
@@ -31,7 +30,87 @@ export function figTriangulo({ a=5, b=4, c=6, labels={A:'A',B:'B',C:'C'}, seed='
     <text x="115" y="238" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.A||'A')}</text>
     <text x="285" y="238" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.B||'B')}</text>
     <text x="${168+jitter}" y="58" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.C||'C')}</text>
-    <text x="200" y="238" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#5b6b7a">${a} · base</text>
+  `;
+  return svgWrap(inner);
+}
+export function figTrianguloRectangulo({ ac=3, bc=4, labels={A:'A',B:'B',C:'C'}, seed='' }={}){
+  // Rectángulo en C: AC ⟂ BC, C arriba, A abajo-izq, B derecha
+  // AC vertical-ish, BC horizontal-ish para que el ángulo recto se vea claro
+  const pC='170,80', pA='110,220', pB='290,120';
+  const midAC=`${(110+170)/2 -6},${(220+80)/2 +4}`;
+  const midBC=`${(290+170)/2 +4},${(120+80)/2 -6}`;
+  const inner = `
+    <rect x="0" y="0" width="400" height="300" rx="10" fill="#fff" stroke="#e3e8ee"/>
+    <polygon points="${pA} ${pB} ${pC}" fill="#eaf2fb" stroke="#0e2a47" stroke-width="2.2" stroke-linejoin="round"/>
+    <!-- marca ángulo recto en C -->
+    <path d="M 170 100 L 190 100 L 190 80" fill="none" stroke="#b3261e" stroke-width="2.2"/>
+    <text x="196" y="96" font-size="10" font-family="sans-serif" fill="#b3261e">∟</text>
+    <text x="102" y="238" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.A||'A')}</text>
+    <text x="298" y="136" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.B||'B')}</text>
+    <text x="170" y="68" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.C||'C')}</text>
+    <text x="${midAC.split(',')[0]}" y="${midAC.split(',')[1]}" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#0e2a47" transform="rotate(-68 ${midAC})">AC=${ac}</text>
+    <text x="${midBC.split(',')[0]}" y="${midBC.split(',')[1]}" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#0e2a47">BC=${bc}</text>
+    <text x="200" y="288" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#64748b">recto en C</text>
+  `;
+  return svgWrap(inner);
+}
+export function figTrianguloIsosceles({ ab_ac='AB=AC', angleB=50, labels={A:'A',B:'B',C:'C'} }={}){
+  const pA='110,220', pB='290,220', pC='200,70';
+  const inner = `
+    <rect x="0" y="0" width="400" height="300" rx="10" fill="#fff" stroke="#e3e8ee"/>
+    <polygon points="${pA} ${pB} ${pC}" fill="#eaf2fb" stroke="#0e2a47" stroke-width="2.2" stroke-linejoin="round"/>
+    <!-- marcas de igualdad AB = AC -->
+    <line x1="150" y1="150" x2="160" y2="142" stroke="#b3261e" stroke-width="2"/>
+    <line x1="240" y1="150" x2="250" y2="142" stroke="#b3261e" stroke-width="2"/>
+    <text x="102" y="238" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.A||'A')}</text>
+    <text x="298" y="238" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.B||'B')}</text>
+    <text x="200" y="58" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.C||'C')}</text>
+    <text x="200" y="248" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#5b6b7a">${esc(ab_ac)}</text>
+    <text x="132" y="214" font-size="10" font-family="sans-serif" fill="#b3261e">∠B=${angleB}°</text>
+  `;
+  return svgWrap(inner);
+}
+export function figTrianguloLeyCosenos({ ab=5, ac=7, angleA=60, labels={A:'A',B:'B',C:'C'} }={}){
+  // A en origen con ángulo 60° entre AB (horizontal) y AC (60°)
+  const Ax=110,Ay=220, Bx=280,By=220;
+  const rad=angleA*Math.PI/180;
+  const lenAC=110; // visual
+  const Cx=Ax+lenAC*Math.cos(rad), Cy=Ay-lenAC*Math.sin(rad);
+  const inner = `
+    <rect x="0" y="0" width="400" height="300" rx="10" fill="#fff" stroke="#e3e8ee"/>
+    <polygon points="${Ax},${Ay} ${Bx},${By} ${Cx.toFixed(1)},${Cy.toFixed(1)}" fill="#eaf2fb" stroke="#0e2a47" stroke-width="2.2" stroke-linejoin="round"/>
+    <path d="M ${Ax+28},${Ay} A 28 28 0 0 0 ${(Ax+28*Math.cos(rad)).toFixed(1)},${(Ay-28*Math.sin(rad)).toFixed(1)}" fill="none" stroke="#b3261e" stroke-width="1.8"/>
+    <text x="${Ax+36}" y="${Ay-10}" font-size="11" font-family="sans-serif" fill="#b3261e">∠A=${angleA}°</text>
+    <text x="${102}" y="${Ay+14}" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.A||'A')}</text>
+    <text x="${Bx+8}" y="${By+6}" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.B||'B')}</text>
+    <text x="${Cx.toFixed(1)}" y="${(Cy-10).toFixed(1)}" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.C||'C')}</text>
+    <text x="${(Ax+Bx)/2}" y="${Ay+16}" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#0e2a47">AB=${ab}</text>
+    <text x="${(Ax+Cx)/2 -8}" y="${(Ay+Cy)/2}" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#0e2a47" transform="rotate(-30 ${(Ax+Cx)/2} ${(Ay+Cy)/2})">AC=${ac}</text>
+    <text x="200" y="288" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#64748b">BC = ? (ley de cosenos)</text>
+  `;
+  return svgWrap(inner);
+}
+export function figPlanoRecta({ ax=2, ay=2, bx=6, by=8, labels={A:'A',B:'B'} }={}){
+  // Plano cartesiano con puntos A(ax,ay) B(bx,by) y recta
+  const W=400,H=300, ox=70,oy=240, scale=22;
+  const Xax=ax*scale+ox, Yay=oy-ay*scale, Xbx=bx*scale+ox, Yby=oy-by*scale;
+  // ejes
+  const inner = `
+    <rect x="0" y="0" width="400" height="300" rx="10" fill="#fff" stroke="#e3e8ee"/>
+    <line x1="50" y1="${oy}" x2="380" y2="${oy}" stroke="#334155" stroke-width="1.6"/>
+    <line x1="${ox}" y1="30" x2="${ox}" y2="270" stroke="#334155" stroke-width="1.6"/>
+    <polygon points="380,${oy} 372,${oy-4} 372,${oy+4}" fill="#334155"/>
+    <polygon points="${ox},30 ${ox-4},38 ${ox+4},38" fill="#334155"/>
+    <text x="384" y="${oy+4}" font-size="10" font-family="sans-serif" fill="#334155">x</text>
+    <text x="${ox-10}" y="26" font-size="10" font-family="sans-serif" fill="#334155">y</text>
+    <!-- recta -->
+    <line x1="${Xax}" y1="${Yay}" x2="${Xbx}" y2="${Yby}" stroke="#0e2a47" stroke-width="2.2"/>
+    <line x1="60" y1="${(oy - ((-3)*scale + oy - Yay)/1 )}" x2="380" y2="${(oy - (12*scale))}" stroke="#0e2a47" stroke-width="1.4" stroke-dasharray="6 4" opacity="0.35"/>
+    <circle cx="${Xax}" cy="${Yay}" r="5" fill="#b3261e" stroke="#fff" stroke-width="2"/>
+    <circle cx="${Xbx}" cy="${Yby}" r="5" fill="#0f766e" stroke="#fff" stroke-width="2"/>
+    <text x="${Xax-10}" y="${Yay+16}" font-size="11" font-family="sans-serif" fill="#b3261e">${esc(labels.A||'A')}(${ax},${ay})</text>
+    <text x="${Xbx+8}" y="${Yby-8}" font-size="11" font-family="sans-serif" fill="#0f766e">${esc(labels.B||'B')}(${bx},${by})</text>
+    <text x="200" y="288" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#64748b">m = Δy/Δx</text>
   `;
   return svgWrap(inner);
 }
@@ -164,5 +243,5 @@ export function figTrabajoEnergia({}={}){
   `;
   return svgWrap(inner);
 }
-export const FIG_HELPERS = { figTriangulo, figParalelas, figVector, figProyectil, figPlanoInclinado, figCircular, figDCL, figTrabajoEnergia };
+export const FIG_HELPERS = { figTriangulo, figTrianguloRectangulo, figTrianguloIsosceles, figTrianguloLeyCosenos, figPlanoRecta, figParalelas, figVector, figProyectil, figPlanoInclinado, figCircular, figDCL, figTrabajoEnergia };
 export default FIG_HELPERS;

@@ -18,6 +18,17 @@ button{font-family:inherit}
 .navlinks a{color:#fff;opacity:.95;cursor:pointer}
 .navlinks a.active{font-weight:700;text-decoration:none}
 .navright{margin-left:auto;display:flex;align-items:center;gap:14px}
+.area-toggle{display:inline-flex;align-items:center;gap:7px;cursor:pointer;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.20);border-radius:999px;padding:3px 6px 3px 7px;user-select:none;transition:background .2s,border-color .2s,box-shadow .2s;margin:0 4px;flex:0 0 auto}
+.area-toggle:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.28)}
+.area-toggle.is-guia{background:linear-gradient(135deg,rgba(255,185,0,.18),rgba(196,92,38,.22));border-color:rgba(255,185,0,.35);box-shadow:0 0 0 1px rgba(255,185,0,.12) inset}
+.area-lab{font-size:11.5px;font-weight:700;letter-spacing:.35px;opacity:.72;transition:opacity .2s,color .2s;white-space:nowrap}
+.area-lab.on{opacity:1;color:#fff;text-shadow:0 1px 0 rgba(0,0,0,.15)}
+.area-toggle.is-guia .area-lab.guia.on{color:#ffb900}
+.area-track{position:relative;width:42px;height:22px;background:rgba(255,255,255,.22);border-radius:999px;flex:0 0 42px;transition:background .25s}
+.area-toggle.is-guia .area-track{background:#ffb900}
+.area-thumb{position:absolute;top:2px;left:2px;width:18px;height:18px;background:#fff;border-radius:50%;box-shadow:0 1px 4px rgba(0,0,0,.28);transition:transform .28s cubic-bezier(.4,0,.2,1)}
+.area-toggle.is-guia .area-thumb{transform:translateX(20px);background:#0e2a47}
+@media(max-width:700px){.area-toggle{padding:2px 5px;gap:5px}.area-lab{font-size:10.5px}.area-track{width:38px;height:20px;flex-basis:38px}.area-thumb{width:16px;height:16px}.area-toggle.is-guia .area-thumb{transform:translateX(18px)}}
 .icon-btn{background:none;border:0;color:#fff;font-size:15px;cursor:pointer;opacity:.9;padding:4px;border-radius:50%}
 .icon-btn:hover{background:rgba(255,255,255,.12)}
 .avatar{width:28px;height:28px;border-radius:50%;background:#c9d6e2;color:#0e2a47;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700}

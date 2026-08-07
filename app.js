@@ -908,36 +908,37 @@ function attemptFromRecord(r){
 }
 
 /* ---------- CHROME ---------- */
+function areaToggleHtml(){
+  var guia = isGuia();
+  return '<button class="area-toggle'+(guia?' is-guia':'')+'" data-act="togglearea" role="switch" aria-checked="'+(guia?'true':'false')+'" title="'+(guia?'Cambiar a Aula Barreno':'Cambiar a Gu\u00eda Oficial EPN')+'">'
+    +'<span class="area-lab '+(guia?'':'on')+'">AULA</span>'
+    +'<span class="area-track" aria-hidden="true"><span class="area-thumb"></span></span>'
+    +'<span class="area-lab guia '+(guia?'on':'')+'">GU\u00cdA EPN</span>'
+  +'</button>';
+}
 function navbar(active){
-  if(isGuia()){
-    return '<div class="navbar guia-nav">'+
-      '<div class="brand" data-act="home"><div class="shield guia">G</div><div class="btxt"><span class="l1"><b>EPN</b><i> gu\u00eda oficial</i></span><span class="sub">TEMARIO 2026-B \u00b7 \u00c1REA PARALELA</span></div></div>'+
-      '<div class="navlinks">'+
-        '<a data-act="home" class="'+(active==='home'?'active':'')+'">Inicio gu\u00eda</a>'+
-        '<a data-act="learn" class="'+(active==='learn'||active==='chapter'?'active':'')+'">Aprender</a>'+
-        '<a data-act="guiawork" class="'+(active==='guiawork'?'active':'')+'">Talleres</a>'+
-        '<a data-act="exitguia">Volver al aula</a>'+
-      '</div>'+
-      '<div class="navright">'+
-        '<button class="icon-btn" data-act="cfg" title="Configuraci\u00f3n">\u2699</button>'+
-        '<div class="avatar">'+escH((cfg.student||'A').trim().charAt(0))+'</div>'+
-      '</div>'+
-    '</div>';
-  }
-  return '<div class="navbar">'+
-    '<div class="brand" data-act="home"><div class="shield">EPN</div><div class="btxt"><span class="l1"><b>EPN</b><i>en l\u00ednea</i></span><span class="sub">AULA VIRTUAL VINCULACI\u00d3N</span></div></div>'+
-    '<div class="navlinks">'+
-      '<a data-act="home" class="'+(active==='home'?'active':'')+'">P\u00e1gina Principal</a>'+
-      '<a data-act="learn" class="'+(active==='learn'?'active':'')+'">Aprende</a>'+
-      '<a data-act="stats" class="'+(active==='stats'?'active':'')+'">Estad\u00edsticas</a>'+
-      '<a data-act="history" class="'+(active==='history'?'active':'')+'">Historial</a>'+
-    '</div>'+
-    '<div class="navright">'+
-      '<button class="icon-btn" data-act="cfg" title="Configuraci\u00f3n">\u2699</button>'+
-      '<button class="icon-btn" title="Notificaciones">\uD83D\uDD14</button>'+
-      '<div class="avatar">'+escH((cfg.student||'A').trim().charAt(0))+'</div>'+
-    '</div>'+
-  '</div>';
+  var guia = isGuia();
+  var brand = guia
+    ? '<div class="brand" data-act="home"><div class="shield guia">G</div><div class="btxt"><span class="l1"><b>EPN</b><i> gu\u00eda oficial</i></span><span class="sub">TEMARIO 2026-B \u00b7 \u00c1REA PARALELA</span></div></div>'
+    : '<div class="brand" data-act="home"><div class="shield">EPN</div><div class="btxt"><span class="l1"><b>EPN</b><i>en l\u00ednea</i></span><span class="sub">AULA VIRTUAL VINCULACI\u00d3N</span></div></div>';
+  var links = guia
+    ? '<a data-act="home" class="'+(active==='home'?'active':'')+'">Inicio gu\u00eda</a>'
+      +'<a data-act="learn" class="'+(active==='learn'||active==='chapter'?'active':'')+'">Aprender</a>'
+      +'<a data-act="guiawork" class="'+(active==='guiawork'?'active':'')+'">Talleres</a>'
+    : '<a data-act="home" class="'+(active==='home'?'active':'')+'">P\u00e1gina Principal</a>'
+      +'<a data-act="learn" class="'+(active==='learn'?'active':'')+'">Aprende</a>'
+      +'<a data-act="stats" class="'+(active==='stats'?'active':'')+'">Estad\u00edsticas</a>'
+      +'<a data-act="history" class="'+(active==='history'?'active':'')+'">Historial</a>';
+  var notif = guia ? '' : '<button class="icon-btn" title="Notificaciones">\uD83D\uDD14</button>';
+  return '<div class="navbar'+(guia?' guia-nav':'')+'">'
+    +brand
+    +areaToggleHtml()
+    +'<div class="navlinks">'+links+'</div>'
+    +'<div class="navright">'
+      +'<button class="icon-btn" data-act="cfg" title="Configuraci\u00f3n">\u2699</button>'
+      +notif
+      +'<div class="avatar">'+escH((cfg.student||'A').trim().charAt(0))+'</div>'
+    +'</div></div>';
 }
 function drawer(active){
   if(!UI.drawer) return '';
@@ -2775,13 +2776,17 @@ case 'start-guia-69':
       S.chapter = chId;
       render();
       break;
+    case 'togglearea':
+      if(blocked()) break;
+      if(isGuia()) exitGuia(); else enterGuia('home');
+      break;
     case 'enterguialearn': enterGuia('learn'); break;
     case 'exitguia': exitGuia(); break;
     case 'guiaplaceholder':
       S.toast = 'Taller \u00ab'+(t.dataset.id||'')+'\u00bb a\u00fan no cableado. Usa Aprender para la teor\u00eda; el banco de preguntas vendr\u00e1 despu\u00e9s.';
       render(); break;
-    case 'stats': if(blocked()) break; if(isGuia()){ S.toast='Las estad\u00edsticas de intentos viven en el aula. Puedes volver con \u00abVolver al aula\u00bb.'; render(); break; } go('stats'); break;
-    case 'history': if(blocked()) break; if(isGuia()){ S.toast='El historial de intentos vive en el aula.'; render(); break; } S.histTab='all'; go('history'); break;
+    case 'stats': if(blocked()) break; if(isGuia()){ S.toast='Las estad\u00edsticas viven en el Aula. Usa el toggle GU\u00cdA EPN \u2194 AULA arriba para volver.'; render(); break; } go('stats'); break;
+    case 'history': if(blocked()) break; if(isGuia()){ S.toast='El historial vive en el Aula. Usa el toggle arriba para volver.'; render(); break; } S.histTab='all'; go('history'); break;
     case 'histtab': S.histTab = t.dataset.t; render(); break;
     case 'histtabgo': if(blocked()) break; S.histTab = t.dataset.t; go('history'); break;
     case 'chapter':

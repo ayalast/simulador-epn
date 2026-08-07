@@ -4,6 +4,8 @@ body{font-family:"Open Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,
 a{color:#0f6cbf;text-decoration:none}
 a:hover{text-decoration:underline}
 button{font-family:inherit}
+button:focus-visible, a:focus-visible{outline:2px solid #0f6cbf; outline-offset:2px}
+.pill:focus-visible{outline:2px solid #0e2a47}
 
 /* ---------- NAVBAR ---------- */
 .navbar{background:#0e2a47;color:#fff;height:50px;display:flex;align-items:center;padding:0 16px;gap:22px;position:sticky;top:0;z-index:60}
@@ -84,8 +86,10 @@ table.quizreviewsummary td{padding:5px 12px;border-bottom:1px solid #f0f0f0}
 .feedback{margin-top:12px;font-size:13.5px;border-top:1px dashed #b9d4d4;padding-top:10px}
 .feedback .right{color:#25683a;font-weight:600}
 .feedback .wrong{color:#a1231a;font-weight:600}
-.figure{display:flex;justify-content:center;margin:6px 0 14px}
-.figure svg{background:#fff;border-radius:4px;max-width:100%;height:auto}
+.figure{display:flex;justify-content:center;margin:10px 0 14px;overflow-x:auto}
+.figure svg{background:#fff;border-radius:4px;max-width:100%;height:auto;display:block}
+.figure svg text{font-family:"Open Sans",sans-serif}
+@media(max-width:700px){.figure{margin:8px -8px 14px; padding:0 8px} .figure svg{max-width:480px; width:100%}}
 
 /* ---------- NAV BLOCK ---------- */
 .block{border:1px solid #e0e3e6;border-radius:6px;padding:12px 14px 14px;font-size:13px;background:#fff}

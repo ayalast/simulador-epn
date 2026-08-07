@@ -546,7 +546,11 @@ function syncHash(){
       if(S.view === 'learn') h = '#guia/aprender';
       else if(S.view === 'chapter' && S.chapter) h = '#guia/aprender/'+S.chapter;
       else if(S.view === 'guiawork') h = '#guia/talleres';
-      else if(S.view === 'attempt') h = '#guia/examen69';
+      else if(S.view === 'attempt'){
+        if(S.attempt && GUIA_COURSES.indexOf(S.attempt.course)>=0) h = '#guia/simulador/'+S.attempt.course;
+        else h = '#guia/examen69';
+      }
+      else if(S.view === 'course' && S.course && GUIA_COURSES.indexOf(S.course)>=0) h = '#guia/simulador/'+S.course;
       else if(S.view === 'home') h = '#guia';
     } else {
       if(S.view === 'course' && S.course) h = '#' + S.course;
@@ -627,7 +631,11 @@ function applyHashRoute(){
     if(parts[1]==='aprender' && parts[2]){ S.chapter = parts[2]; S.view = 'chapter'; }
     else if(parts[1]==='aprender'){ S.view = 'learn'; }
     else if(parts[1]==='talleres'){ S.view = 'guiawork'; }
-    else if(parts[1]==='guia1000'){ S.view = 'home'; }
+    else if(parts[1]==='simulador' && parts[2]){
+      var gc = parts[2];
+      if(GUIA_COURSES.indexOf(gc)>=0){ S.course = gc; S.view = 'course'; }
+      else { S.view = 'home'; }
+    }
     else { S.view = 'home'; }
   }
 }
@@ -1080,15 +1088,25 @@ function navbar(active){
 function drawer(active){
   if(!UI.drawer) return '';
   if(isGuia()){
+    var guiaSimLinks = GUIA_COURSES.map(function(k){
+      var c=COURSES[k];
+      return '<li><a class="'+(active==='course'&&S.course===k?'active':'')+'" data-act="course" data-c="'+k+'">'+escH(c.short)+' \u00b7 '+escH(c.name.split('—')[0].trim())+'</a></li>';
+    }).join('');
+    var seenTot = SEEN1000.mat.length + SEEN1000.fis.length + SEEN1000.qui.length + SEEN1000.len.length;
     return '<div class="drawer"><button class="closex" data-act="toggledrawer" title="Ocultar men\u00fa">\u2715</button>'+
       '<h6>\u25be Gu\u00eda oficial 2026-B</h6><ul>'+
       '<li><a class="'+(active==='home'?'active':'')+'" data-act="home">Inicio gu\u00eda</a></li>'+
       '<li><a class="'+(active==='learn'?'active':'')+'" data-act="learn">Aprender (teor\u00eda 1:1)</a></li>'+
-      '<li><a class="'+(active==='guiawork'?'active':'')+'" data-act="guiawork">Talleres (pr\u00f3ximamente)</a></li>'+
-      '<li><a data-act="exitguia">Volver al aula Barreno</a></li>'+
+      '<li><a class="'+(active==='guiawork'?'active':'')+'" data-act="guiawork">Talleres</a></li>'+
+      '</ul>'+
+      '<h6>\u25be Simuladores (1000 banco)</h6><ul>'+guiaSimLinks+'</ul>'+
+      '<div style="padding:8px 16px; font-size:11px; color:#6b7783;">Vistas: '+seenTot+'/1000 \u00b7 Nivel intermedio</div>'+
+      '<h6>\u25be Navegaci\u00f3n</h6><ul>'+
+      '<li><a data-act="exitguia">\u2190 Volver al aula Barreno</a></li>'+
       '</ul></div>';
   }
-  var items = CKEYS.map(function(k){
+  var aulaGuiaLink = '<li><a data-act="enterguia" style="font-weight:700; color:#0e2a47; background:#fff7ef; border-left:3px solid #c45c26;">\u2192 Gu\u00eda oficial EPN (1000 banco)</a></li>';
+  var items = CKEYS.filter(function(k){ return GUIA_COURSES.indexOf(k)<0; }).map(function(k){
     return '<li><a class="'+(active==='quiz'&&S.course===k?'active':'')+'" data-act="course" data-c="'+k+'">'+COURSES[k].full+'</a></li>';
   }).join('');
   return '<div class="drawer"><button class="closex" data-act="toggledrawer" title="Ocultar men\u00fa">\u2715</button>'+
@@ -1096,7 +1114,7 @@ function drawer(active){
     '<li><a class="'+(active==='learn'?'active':'')+'" data-act="learn">Aprende (teor\u00eda)</a></li>'+
     '<li><a class="'+(active==='stats'?'active':'')+'" data-act="stats">Estad\u00edsticas</a></li>'+
     '<li><a class="'+(active==='history'?'active':'')+'" data-act="history">Historial de intentos</a></li>'+
-    '<li><a data-act="enterguia">Gu\u00eda oficial EPN (nueva \u00e1rea)</a></li>'+
+    aulaGuiaLink+
     items+
     '</ul></div>';
 }
@@ -1761,8 +1779,9 @@ function explainHtml(ix){
   
   if(src.e){
     var expBody = inlineMd(src.e);
-    var linkBtn = src.ch ? '<div class="solvelink" style="margin-top:14px;"><button class="btn primary" data-act="go-theory-chapter" data-ch="'+src.ch+'">📖 Estudiar teoría relacionada en la Guía</button></div>' : '';
-    return '<div class="solvebox" style="border-left:4px solid #0078d4; background:#f4f8fc;"><div class="solvehead" style="color:#004578; font-weight:700; font-size:15px;">💡 Explicación pedagógica paso a paso</div><div class="solvebody" style="font-size:14px; line-height:1.6; color:#242424; margin-top:8px;">'+expBody+'</div>'+linkBtn+'</div>';
+    var chLabel = src.ch ? (function(){ var b=(window.GUIA_THEORY||[]).find(function(c){return c.id===src.ch;}); return b? b.t : src.ch; })() : '';
+    var linkBtn = src.ch ? '<div class="solvelink" style="margin-top:14px;"><button class="btn primary" data-act="go-theory-chapter" data-ch="'+src.ch+'">📖 Estudiar teoría: '+(chLabel? escH(chLabel): src.ch)+'</button> <span style="font-size:12px; color:#5b6b7a; margin-left:6px;">Teoría autosuficiente — sin conocimientos previos</span></div>' : '';
+    return '<div class="solvebox" style="border-left:4px solid #0078d4; background:#f4f8fc;"><div class="solvehead" style="color:#004578; font-weight:700; font-size:15px;">💡 Explicación pedagógica paso a paso (desde cero)</div><div class="solvebody" style="font-size:14px; line-height:1.6; color:#242424; margin-top:8px;">'+expBody+'</div>'+linkBtn+'</div>';
   }
   var m = methodFor(src, subj);
   var steps = (m? m.st.slice() : []);
@@ -1826,14 +1845,21 @@ function statsFor(k){
   var live = liveHist();
   var rs = k==='all'? live : live.filter(function(r){ return r.course===k; });
   var totQ=0, totOk=0, totMs=0, byTopic={}, bySubj={};
+  var isG1000Stats = GUIA_COURSES.indexOf(k)>=0;
+  var bank1000ForStats = window.GUIA_BANK_1000 || {mat:[],fis:[],qui:[],len:[]};
+  var g1000ById={}; if(isG1000Stats){ ['mat','fis','qui','len'].forEach(function(sub){ (bank1000ForStats[sub]||[]).forEach(function(q){ g1000ById[q.id]=q; }); }); }
   live.forEach(function(r){
     r.qs.forEach(function(x){
       if(k!=='all' && k!=='mix' && x.k!==k) return;
       if(k==='mix' && r.course!=='mix') return;
-      var src = BANK[x.k][x.i]; if(!src) return;
-      var ok = (x.sel===src.a);
+      var src;
+      if(x.id && g1000ById[x.id]) src = g1000ById[x.id];
+      else src = BANK[x.k] && BANK[x.k][x.i];
+      if(!src) return;
+      var srcAns = (src.a!=null? src.a : src.ans);
+      var ok = (x.sel===srcAns);
       totQ++; if(ok) totOk++;
-      var tk = COURSES[x.k].short+' \u00b7 '+src.t;
+      var tk = (COURSES[x.k]? COURSES[x.k].short : x.k)+' \u00b7 '+(src.t||src.topics&&src.topics[0]||'');
       byTopic[tk] = byTopic[tk] || {ok:0,n:0}; byTopic[tk].n++; if(ok) byTopic[tk].ok++;
       bySubj[x.k] = bySubj[x.k] || {ok:0,n:0}; bySubj[x.k].n++; if(ok) bySubj[x.k].ok++;
     });
@@ -1893,9 +1919,18 @@ function donutRow(){
   return '<div class="spark" style="display:flex;gap:10px;justify-content:space-around;flex-wrap:wrap">'+cells+'</div>';
 }
 function coverageHtml(){
+  var bank1000 = window.GUIA_BANK_1000 || {mat:[],fis:[],qui:[],len:[]};
+  var guiaRow = '';
+  if(bank1000.mat.length){
+    var seen1000Tot = SEEN1000.mat.length + SEEN1000.fis.length + SEEN1000.qui.length + SEEN1000.len.length;
+    var tot1000 = bank1000.mat.length + bank1000.fis.length + bank1000.qui.length + bank1000.len.length;
+    var pct1000 = tot1000? Math.round(seen1000Tot/tot1000*100):0;
+    guiaRow = '<tr style="background:#f0f7ff;"><td><b>Guía 1000</b> (4 materias)</td><td>'+seen1000Tot+' / '+tot1000+'</td><td>'+pct1000+'%<div class="covbar"><span style="width:'+pct1000+'%;background:#0e2a47"></span></div></td></tr>';
+  }
   return '<table class="histtable"><thead><tr><th>Materia</th><th>Preguntas vistas</th><th>Cobertura del banco</th></tr></thead><tbody>'+
+    guiaRow+
     SUBJ.map(function(k){
-      var seen = SEEN[k].length, tot = BANK[k].length, pct = Math.round(seen/tot*100);
+      var seen = SEEN[k].length, tot = BANK[k].length, pct = tot? Math.round(seen/tot*100):0;
       return '<tr><td>'+COURSES[k].short+'</td><td>'+seen+' / '+tot+'</td><td>'+pct+'%<div class="covbar"><span style="width:'+pct+'%"></span></div></td></tr>';
     }).join('')+'</tbody></table>';
 }
@@ -2431,25 +2466,53 @@ function viewChapter(){
 
 function viewCourse(){
   var c = COURSES[S.course], k = S.course;
-  var pool = k==='mix'? EXAM.reduce(function(s,x){ return s+levelPool(x).length; },0) : levelPool(k).length;
-  var fresh = k==='mix'? EXAM.reduce(function(s,x){ return s+levelPool(x).filter(function(q){return !SEENSET[x][q.__i];}).length; },0)
-                       : levelPool(k).filter(function(q){ return !SEENSET[k][q.__i]; }).length;
-  var lv = LEVELS.map(function(l){ return '<button class="pill '+l.c+(cfg.level===l.k?' on':'')+'" data-act="setlevel" data-l="'+l.k+'">'+l.n+'</button>'; }).join('');
+  var isG1000 = GUIA_COURSES.indexOf(k)>=0;
+  var bank1000 = window.GUIA_BANK_1000 || {mat:[],fis:[],qui:[],len:[]};
+  var subjForG = ({guia_mat30:'mat', guia_fis:'fis', guia_qui:'qui', guia_len:'len'})[k];
+  var pool, fresh;
+  if(isG1000){
+    if(k==='guia_fql120'){
+      pool = bank1000.fis.length + bank1000.qui.length + bank1000.len.length;
+      fresh = (bank1000.fis.filter(function(q){return !SEEN1000SET.fis[q.id];}).length)
+            + (bank1000.qui.filter(function(q){return !SEEN1000SET.qui[q.id];}).length)
+            + (bank1000.len.filter(function(q){return !SEEN1000SET.len[q.id];}).length);
+    } else if(subjForG){
+      var arr = bank1000[subjForG]||[];
+      pool = arr.length;
+      fresh = arr.filter(function(q){return !SEEN1000SET[subjForG][q.id];}).length;
+    } else { pool=0; fresh=0; }
+  } else {
+    pool = k==='mix'? EXAM.reduce(function(s,x){ return s+levelPool(x).length; },0) : levelPool(k).length;
+    fresh = k==='mix'? EXAM.reduce(function(s,x){ return s+levelPool(x).filter(function(q){return !SEENSET[x][q.__i];}).length; },0)
+                     : levelPool(k).filter(function(q){ return !SEENSET[k][q.__i]; }).length;
+  }
+  var guiaBadge = isG1000 ? '<span style="background:#0e2a47;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:middle;">Guía EPN · Día '+(k==='guia_mat30'?'1':'2')+'</span>' : '';
+  var lv = LEVELS.map(function(l){
+    var disabled = isG1000 && l.k!=='medio';
+    return '<button class="pill '+l.c+(cfg.level===l.k?' on':'')+(disabled?' disabled':'')+'" data-act="setlevel" data-l="'+l.k+'"'+(disabled?' disabled title="Solo nivel intermedio en banco 1000 (fácil/difícil próximamente)"':'')+'>'+l.n+(disabled?' 🔒':'')+'</button>';
+  }).join('');
   var hs = liveHist().filter(function(r){ return r.course===k; }).sort(function(a,b){return b.ts-a.ts;});
-  return navbar('')+'<div class="wrap">'+drawer('quiz')+'<div class="main">'+
-    pagehead(c.full,'01-SEA-EPN_2026-2 › '+c.full)+toastHtml()+
+  var crumbBase = isG1000 ? 'Guía oficial EPN \u203a Simuladores' : '01-SEA-EPN_2026-2';
+  var totalBank = isG1000 ? (k==='guia_fql120'? 750 : 250) : bankOf(k).length;
+  var perInfo = '';
+  if(k==='guia_fql120') perInfo = ' <span style="color:#64748b;">(20 FIS + 20 QUI + 20 LEN, intercaladas 1-1-1)</span>';
+  else if(subjForG) perInfo = ' <span style="color:#64748b;">(cobertura máxima de '+(bank1000[subjForG].length? Object.keys((function(){var m={};bank1000[subjForG].forEach(function(q){m[q.topics[0]]=1;});return m;})()).length : '-')+' temas)</span>';
+  return navbar(isG1000?'home':'')+'<div class="wrap">'+drawer(isG1000?'home':'quiz')+'<div class="main">'+
+    pagehead(c.full+guiaBadge, crumbBase+' \u203a '+c.full)+toastHtml()+
     '<div style="max-width:840px">'+
-    '<p>'+c.desc+' Cada intento toma <b>'+countFor(k)+' preguntas</b> distintas'+(k==='mix'?' repartidas entre las cuatro áreas':'')+' de un banco interno de <b>'+bankOf(k).length+'</b>.</p>'+
+    '<p>'+c.desc+' Cada intento toma <b>'+countFor(k)+' preguntas</b> distintas'+(k==='mix'?' repartidas entre las cuatro áreas': perInfo)+' de un banco de <b>'+totalBank+'</b>'+(isG1000?' (banco 1000 original)':'')+'.</p>'+
     '<div style="margin:14px 0 6px;font-weight:600;font-size:14px">Dificultad</div><div class="pills">'+lv+'</div>'+
+    (isG1000? '<div class="hint" style="margin-top:6px;">Banco 1000 solo en <b>nivel intermedio</b> (mismo exigido por la EPN). Fácil/difícil/experta se añadirán después.</div>' : '')+
     '<table class="quizsummary"><tbody>'+
     '<tr><th>Método de calificación</th><td>Calificación más alta</td></tr>'+
     '<tr><th>Límite de tiempo</th><td>'+minutesFor(k)+' minutos</td></tr>'+
     '<tr><th>Preguntas</th><td>'+countFor(k)+' (1,00 punto cada una)</td></tr>'+
-    '<tr><th>Dificultad</th><td>'+levelName(cfg.level)+' · '+pool+' preguntas en este nivel</td></tr>'+
+    '<tr><th>Banco</th><td>'+pool+' preguntas (nivel intermedio)</td></tr>'+
     '<tr><th>Sin repetir</th><td>'+(cfg.noRepeat? 'Activado · '+fresh+' preguntas nuevas disponibles' : 'Desactivado (pueden repetirse)')+'</td></tr>'+
     '<tr><th>Intentos rendidos</th><td>'+hs.length+(hs.length?' · último '+fmtCorta(hs[0].ts)+' ('+recPct(hs[0])+'%)':'')+'</td></tr>'+
     '</tbody></table>'+
     (k==='mix'? '<div class="infobox">El examen real dura 210 minutos: 90 de Matemática (componente filtro) y 120 para Física, Química y Lenguaje. Puedes reproducir esos tiempos desde la configuración.</div>':'')+
+    (isG1000? '<div class="infobox" style="border-left:4px solid #0e2a47;"><b>Cobertura garantizada:</b> cada intento cubre el máximo de temas distintos antes de repetir tema. Si pides menos preguntas que temas, todas serán de temas distintos; si pides más, se hace una ronda completa por todos los temas antes de repetir.</div>':'')+
     planBox(k)+
     '<label class="switch" style="margin:14px 0 10px;display:flex;align-items:center;gap:10px;cursor:pointer;background:rgba(217,130,43,0.08);padding:10px 14px;border-radius:8px;border:1px solid rgba(217,130,43,0.25)">'+
     '<input type="checkbox" id="chkNoSave" style="width:18px;height:18px;cursor:pointer" '+(S.noSave?'checked':'')+'>'+
@@ -2584,9 +2647,22 @@ function cloudSync() {
           Object.keys(cloud.seen).forEach(function(k){
             if(Array.isArray(cloud.seen[k])) {
               cloud.seen[k].forEach(function(idx){
-                if(!SEENSET[k][idx]) {
+                if(SEENSET[k] && !SEENSET[k][idx]) {
                   SEENSET[k][idx] = true;
-                  if(SEEN[k].indexOf(idx) < 0) SEEN[k].push(idx);
+                  if(SEEN[k] && SEEN[k].indexOf(idx) < 0) SEEN[k].push(idx);
+                  changed = true;
+                }
+              });
+            }
+          });
+        }
+        if(cloud.seen1000) {
+          Object.keys(cloud.seen1000).forEach(function(k){
+            if(Array.isArray(cloud.seen1000[k])) {
+              cloud.seen1000[k].forEach(function(id){
+                if(SEEN1000SET[k] && !SEEN1000SET[k][id]) {
+                  SEEN1000SET[k][id] = true;
+                  if(SEEN1000[k].indexOf(id) < 0) SEEN1000[k].push(id);
                   changed = true;
                 }
               });
@@ -2597,6 +2673,7 @@ function cloudSync() {
         if(changed) {
           saveHist();
           saveSeen();
+          saveSeen1000();
           if(typeof rerenderKeepScroll === 'function') rerenderKeepScroll();
         }
         pushCloudState();
@@ -2614,6 +2691,7 @@ function pushCloudState() {
   var payload = {
     hist: HIST,
     seen: SEEN,
+    seen1000: SEEN1000,
     cfg: cfg
   };
   fetch('/api/sync?pin=' + SECURITY_PIN, {
@@ -2982,6 +3060,16 @@ case 'start-guia-69':
       if(blocked()) break;
       if(isGuia()) exitGuia(); else enterGuia('home');
       break;
+    case 'course':
+      if(blocked()) break;
+      // cursos guía 1000 requieren área guía
+      var cc = t.dataset.c || 'mat';
+      if(GUIA_COURSES.indexOf(cc)>=0){
+        S.area='guia'; S.course=cc; go('course');
+      } else {
+        S.course=cc; go('course');
+      }
+      break;
     case 'enterguialearn': enterGuia('learn'); break;
     case 'exitguia': exitGuia(); break;
     case 'guiaplaceholder':
@@ -3010,8 +3098,7 @@ case 'start-guia-69':
       S.toast = 'Preguntas barajadas para el pr\u00f3ximo intento de '+COURSES[ck].short+'.'+(nts.length? ' '+nts.join(' '):'');
       render(); break;
     case 'clearplan': clearPlan(t.dataset.c || S.course); S.toast = null; render(); break;
-    case 'anchor': var n = document.getElementById(t.dataset.id); if(n) n.scrollIntoView({behavior:'smooth',block:'start'}); break;
-    case 'course': if(blocked()) break; S.course = t.dataset.c||'mat'; go('course'); break;
+    case 'anchor': var anchorEl = document.getElementById(t.dataset.id); if(anchorEl) anchorEl.scrollIntoView({behavior:'smooth',block:'start'}); break;
     case 'stayin': S.modal = null; render(); break;
     case 'forcefinish': finishAttempt(false); break;
     case 'toggledrawer': UI.drawer = !UI.drawer; saveUI(); rerenderKeepScroll(); break;

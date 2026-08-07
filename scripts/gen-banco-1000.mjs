@@ -123,8 +123,13 @@ function matQuestion(topic, n, id){
     case '4.1.1-enteros': {
       const x = -7 - (n%6), y = 4 + (n%5);
       const res = x + y + y;
+      // ensure 4 distinct: res, res+2, res-2, -res distinct
+      let eOpts=[res+2, res-2, -res];
+      if(eOpts[0]===res) eOpts[0]=res+1;
+      if(eOpts[1]===res || eOpts[1]===eOpts[0]) eOpts[1]=res+3;
+      if(eOpts[2]===res || eOpts[2]===eOpts[0] || eOpts[2]===eOpts[1]) eOpts[2]=res+4;
       prompt = `Calcule $${x} + ${y} - (${-y})$ y seleccione el resultado correcto.`;
-      opts = [`$${res}$`, `$${res+2}$`, `$${res-2}$`, `$${-res}$`];
+      opts = [`$${res}$`, `$${eOpts[0]}$`, `$${eOpts[1]}$`, `$${eOpts[2]}$`];
       ans=0; maths=[`${x}+${y}`];
       exp = `Paso 1: ${x}+${y}=${x+y}. Paso 2: restar $(${ -y})$ es sumar ${y}: ${x+y}+${y}=${res}. Las otras opciones confunden el signo del paréntesis o duplican el error de signo. Por eso la correcta es $${res}$.`;
       break; }
@@ -175,21 +180,29 @@ function matQuestion(topic, n, id){
       break; }
     case '4.1.2-ec1': {
       const sol = 3 + (n%5);
-      prompt = `Resuelva $\\dfrac{${a}x}{${b}} - ${c} = ${a*sol/b - c + 1}$ y halle $x$.`;
-      // en realidad inventamos sol y ajustamos RHS para que cierre: (a/b)sol - c = RHS -1? simplificamos: ponemos ecuación (a x)/b = a*sol/b
       prompt = `Resuelva $\\dfrac{${a}x}{${b}} = \\dfrac{${a*sol}}{${b}}$ y halle $x$.`;
-      opts = [`$${sol}$`, `$${sol+1}$`, `$${sol* b / a |0}$`, `$${-sol}$`];
+      // ensure 4 distinct opts: sol, sol+1, sol-1, -sol are distinct unless sol=0
+      let candEc1 = [sol+1, Math.floor(sol*b/a), -sol, sol+2];
+      // ensure sol*b/a distinct from others
+      if(candEc1[1]===sol || candEc1[1]===sol+1 || candEc1[1]===-sol) candEc1[1]=sol+3;
+      opts = [`$${sol}$`, `$${candEc1[0]}$`, `$${candEc1[1]}$`, `$${candEc1[2]}$`];
+      // if still duplicate, tweak
+      let seenEc1=new Set([sol]); for(let i=1;i<opts.length;i++){ let v=candEc1[i-1]; let tries=0; while(seenEc1.has(v) && tries++<5) v+=1; seenEc1.add(v); opts[i]=`$${v}$`; }
       ans=0;
-      exp = `Multiplica por $${b}$: $${a}x=${a*sol}$ de donde $x=${sol}$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.`;
+      exp = `Multiplica por $${b}$: $${a}x=${a*sol}$ de donde $x=${sol}$. Confundir $a/b$ con $b/a$ da $${Math.floor(sol*b/a)}$ o cambiar de signo da $${-sol}$.`;
       break; }
     case '4.1.2-sistLin': {
-      const x0=2+(n%3), y0=1+(n%4);
-      // sistema: 2x+y=..., x+ y=...
+      const x0=2+(n%5), y0=1+(n%7);
       const eq1 = 2*x0 + y0, eq2 = x0 + y0;
       prompt = `Resuelva $\\begin{cases} 2x+y=${eq1} \\\\ x+y=${eq2} \\end{cases}$ y halle $x$.`;
-      opts = [`$${x0}$`, `$${y0}$`, `$${x0+1}$`, `$${x0-1}$`];
+      // ensure 4 distinct
+      let d1=y0, d2=x0+1, d3=x0-1;
+      if(d1===x0) d1=x0+2;
+      if(d2===x0||d2===d1) d2=x0+3;
+      if(d3===x0||d3===d1||d3===d2) d3=x0-2;
+      opts = [`$${x0}$`, `$${d1}$`, `$${d2}$`, `$${d3}$`];
       ans=0;
-      exp = `Resta ambas: $(2x+y)-(x+y)=x=${eq1-eq2}=${x0}$. Sustituyendo $y=${eq2}-${x0}=${y0}$. Intercambiar $x$ con $y$ es el distractor típico.`;
+      exp = `Resta ambas: $(2x+y)-(x+y)=x=${eq1}-${eq2}=${x0}$. Sustituyendo $y=${eq2}-${x0}=${y0}$. Intercambiar $x$ con $y$ es el distractor típico.`;
       break; }
     case '4.1.2-ec2': {
       // x^2 - Sx + P =0 con raíces r1,r2 pequeñas
@@ -210,13 +223,16 @@ function matQuestion(topic, n, id){
       break; }
     case '4.1.2-va': {
       prompt = `Resuelva $|${a}x - ${b}| = ${c}$ y halle la suma de sus soluciones.`;
-      // |a x - b|=c => a x - b = ±c => x = (b ± c)/a
       const x1 = (b+c)/a, x2=(b-c)/a;
       const sum = x1+x2;
-      // ensure integer-ish; adjust b to make divisible? keep fractional as distractor
       const sumStr = Number.isInteger(sum)? `${sum}` : `\\frac{${b*2}}{${a}}`;
-      opts = [`$${sumStr}$`, `$${c}$`, `$${(x1).toFixed(1)}$`, `$${b}$`];
-      // fix: if sum not integer, correct is 2b/a
+      let d1 = `${c}`, d2 = isFinite(x1) ? `${x1.toFixed(1).replace(/\.0$/,'')}` : `${c+1}`, d3 = `${b}`;
+      let seenVa=new Set([sumStr]);
+      if(seenVa.has(d1)){ d1=`${c+1}`; if(seenVa.has(d1)) d1=`${c+2}`; } seenVa.add(d1);
+      if(seenVa.has(d2) || d2===d1){ d2=`${(x1+2).toFixed(1).replace(/\.0$/,'')}`; if(seenVa.has(d2)) d2=`${(x1+3).toFixed(1).replace(/\.0$/,'')}`; } seenVa.add(d2);
+      if(seenVa.has(d3)){ d3=`${b+2}`; if(seenVa.has(d3)) d3=`${b+3}`; } seenVa.add(d3);
+      // ensure opts distinct by string
+      opts = [`$${sumStr}$`, `$${d1}$`, `$${d2}$`, `$${d3}$`];
       ans=0;
       exp = `$|${a}x-${b}|=${c}$ equivale a $${a}x-${b}=${c}$ o $${a}x-${b}=-${c}$; de ahí $x_{1}=\\frac{${b+c}}{${a}}$ y $x_{2}=\\frac{${b-c}}{${a}}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot ${b}}{${a}}=${sumStr}$. Tomar solo una rama es el error típico.`;
       break; }
@@ -241,11 +257,15 @@ function matQuestion(topic, n, id){
       break; }
     case '4.1.4-razTrig': {
       const ac=3+(n%3), bc=4+(n%2);
-      prompt = `En el triángulo rectángulo de la figura (recto en $C$), $AC=${ac}$ y $BC=${bc}$. Calcule $\\sin(A)$.`;
       const hyp=Math.hypot(ac,bc);
-      opts = [`$\\dfrac{${bc}}{${hyp.toFixed(0)}}$`, `$\\dfrac{${ac}}{${hyp.toFixed(0)}}$`, `$\\dfrac{${hyp.toFixed(0)}}{${bc}}$`, `$\\dfrac{${bc}}{${ac}}$`];
+      const hypI=Math.round(hyp);
+      let ropts = [`$\\dfrac{${bc}}{${hypI}}$`, `$\\dfrac{${ac}}{${hypI}}$`, `$\\dfrac{${hypI}}{${bc}}$`, `$\\dfrac{${bc}}{${ac}}$`];
+      // ensure distinct: if ac==bc duplicates first two
+      if(ac===bc) ropts[1]=`$\\dfrac{${ac+1}}{${hypI}}$`;
+      prompt = `En el triángulo rectángulo de la figura (recto en $C$), $AC=${ac}$ y $BC=${bc}$. Calcule $\\sin(A)$.`;
+      opts = ropts;
       ans=0;
-      exp = `$\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{${bc}}{${hyp.toFixed(0)}}$. Intercambiar catetos o invertir la fracción da los distractores.`;
+      exp = `$\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{${bc}}{${hypI}}$. Intercambiar catetos o invertir la fracción da los distractores.`;
       figs = figForMatRectangulo(ac, bc, id);
       break; }
     case '4.1.4-identTrig': {

@@ -380,7 +380,7 @@ window.GUIA_BANK_1000 = {
         "$-1$",
         "$1$",
         "$-3$",
-        "$1$"
+        "$3$"
       ],
       "ans": 0,
       "exp": "Paso 1: -11+5=-6. Paso 2: restar $(-5)$ es sumar 5: -6+5=-1. Las otras opciones confunden el signo del paréntesis o duplican el error de signo. Por eso la correcta es $-1$.",
@@ -404,7 +404,7 @@ window.GUIA_BANK_1000 = {
         "$0$",
         "$2$",
         "$-2$",
-        "$0$"
+        "$4$"
       ],
       "ans": 0,
       "exp": "Paso 1: -12+6=-6. Paso 2: restar $(-6)$ es sumar 6: -6+6=0. Las otras opciones confunden el signo del paréntesis o duplican el error de signo. Por eso la correcta es $0$.",
@@ -1795,11 +1795,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$3$",
         "$4$",
-        "$4$",
+        "$6$",
         "$-3$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $3$: $2x=6$ de donde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $3$: $2x=6$ de donde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $4$ o cambiar de signo da $-3$.",
       "maths": [],
       "imgs": []
     },
@@ -1817,11 +1817,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$4$",
         "$5$",
-        "$5$",
+        "$7$",
         "$-4$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $4$: $3x=12$ de donde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $4$: $3x=12$ de donde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $5$ o cambiar de signo da $-4$.",
       "maths": [],
       "imgs": []
     },
@@ -1839,11 +1839,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$5$",
         "$6$",
-        "$6$",
+        "$8$",
         "$-5$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $5$: $4x=20$ de donde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $5$: $4x=20$ de donde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $6$ o cambiar de signo da $-5$.",
       "maths": [],
       "imgs": []
     },
@@ -1861,11 +1861,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$6$",
         "$7$",
-        "$7$",
+        "$9$",
         "$-6$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $6$: $5x=30$ de donde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $6$: $5x=30$ de donde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $7$ o cambiar de signo da $-6$.",
       "maths": [],
       "imgs": []
     },
@@ -1887,7 +1887,7 @@ window.GUIA_BANK_1000 = {
         "$-7$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $3$: $6x=42$ de donde $x=7$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $3$: $6x=42$ de donde $x=7$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $3$ o cambiar de signo da $-7$.",
       "maths": [],
       "imgs": []
     },
@@ -1909,7 +1909,7 @@ window.GUIA_BANK_1000 = {
         "$-3$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $4$: $2x=6$ de donde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $4$: $2x=6$ de donde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $6$ o cambiar de signo da $-3$.",
       "maths": [],
       "imgs": []
     },
@@ -1931,7 +1931,7 @@ window.GUIA_BANK_1000 = {
         "$-4$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $5$: $3x=12$ de donde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $5$: $3x=12$ de donde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $6$ o cambiar de signo da $-4$.",
       "maths": [],
       "imgs": []
     },
@@ -1953,7 +1953,7 @@ window.GUIA_BANK_1000 = {
         "$-5$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $6$: $4x=20$ de donde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $6$: $4x=20$ de donde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $7$ o cambiar de signo da $-5$.",
       "maths": [],
       "imgs": []
     },
@@ -1975,7 +1975,7 @@ window.GUIA_BANK_1000 = {
         "$-6$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $3$: $5x=30$ de donde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $3$: $5x=30$ de donde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $3$ o cambiar de signo da $-6$.",
       "maths": [],
       "imgs": []
     },
@@ -1997,7 +1997,7 @@ window.GUIA_BANK_1000 = {
         "$-7$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $4$: $6x=42$ de donde $x=7$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $4$: $6x=42$ de donde $x=7$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $4$ o cambiar de signo da $-7$.",
       "maths": [],
       "imgs": []
     },
@@ -2019,7 +2019,7 @@ window.GUIA_BANK_1000 = {
         "$-3$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $5$: $2x=6$ de donde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $5$: $2x=6$ de donde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $7$ o cambiar de signo da $-3$.",
       "maths": [],
       "imgs": []
     },
@@ -2041,7 +2041,7 @@ window.GUIA_BANK_1000 = {
         "$-4$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $6$: $3x=12$ de donde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $6$: $3x=12$ de donde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $8$ o cambiar de signo da $-4$.",
       "maths": [],
       "imgs": []
     },
@@ -2063,7 +2063,7 @@ window.GUIA_BANK_1000 = {
         "$-5$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $3$: $4x=20$ de donde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $3$: $4x=20$ de donde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $3$ o cambiar de signo da $-5$.",
       "maths": [],
       "imgs": []
     },
@@ -2085,7 +2085,7 @@ window.GUIA_BANK_1000 = {
         "$-6$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $4$: $5x=30$ de donde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $4$: $5x=30$ de donde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $4$ o cambiar de signo da $-6$.",
       "maths": [],
       "imgs": []
     },
@@ -2107,7 +2107,7 @@ window.GUIA_BANK_1000 = {
         "$-7$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $5$: $6x=42$ de donde $x=7$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $5$: $6x=42$ de donde $x=7$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $5$ o cambiar de signo da $-7$.",
       "maths": [],
       "imgs": []
     },
@@ -2129,7 +2129,7 @@ window.GUIA_BANK_1000 = {
         "$-3$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $6$: $2x=6$ de donde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $6$: $2x=6$ de donde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $9$ o cambiar de signo da $-3$.",
       "maths": [],
       "imgs": []
     },
@@ -2147,11 +2147,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$4$",
         "$5$",
-        "$4$",
+        "$7$",
         "$-4$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $3$: $3x=12$ de donde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $3$: $3x=12$ de donde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $4$ o cambiar de signo da $-4$.",
       "maths": [],
       "imgs": []
     },
@@ -2169,11 +2169,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$5$",
         "$6$",
-        "$5$",
+        "$8$",
         "$-5$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $4$: $4x=20$ de donde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $4$: $4x=20$ de donde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $5$ o cambiar de signo da $-5$.",
       "maths": [],
       "imgs": []
     },
@@ -2191,11 +2191,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$6$",
         "$7$",
-        "$6$",
+        "$9$",
         "$-6$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $5$: $5x=30$ de donde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $5$: $5x=30$ de donde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $6$ o cambiar de signo da $-6$.",
       "maths": [],
       "imgs": []
     },
@@ -2209,15 +2209,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=8 \\\\ x+y=6 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva $\\begin{cases} 2x+y=14 \\\\ x+y=8 \\end{cases}$ y halle $x$.",
       "opts": [
+        "$6$",
         "$2$",
-        "$4$",
-        "$3$",
-        "$1$"
+        "$7$",
+        "$5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=6-2=4$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=14-8=6$. Sustituyendo $y=8-6=2$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2231,15 +2231,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=7 \\\\ x+y=4 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva $\\begin{cases} 2x+y=7 \\\\ x+y=5 \\end{cases}$ y halle $x$.",
       "opts": [
+        "$2$",
         "$3$",
-        "$1$",
-        "$4$",
-        "$2$"
+        "$5$",
+        "$1$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=4-3=1$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=7-5=2$. Sustituyendo $y=5-2=3$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2253,15 +2253,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=10 \\\\ x+y=6 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva $\\begin{cases} 2x+y=10 \\\\ x+y=7 \\end{cases}$ y halle $x$.",
       "opts": [
+        "$3$",
         "$4$",
-        "$2$",
-        "$5$",
-        "$3$"
+        "$6$",
+        "$2$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=6-4=2$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=10-7=3$. Sustituyendo $y=7-3=4$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2275,15 +2275,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=7 \\\\ x+y=5 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva $\\begin{cases} 2x+y=13 \\\\ x+y=9 \\end{cases}$ y halle $x$.",
       "opts": [
-        "$2$",
-        "$3$",
-        "$3$",
-        "$1$"
+        "$4$",
+        "$5$",
+        "$7$",
+        "$3$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=5-2=3$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=13-9=4$. Sustituyendo $y=9-4=5$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2297,15 +2297,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=10 \\\\ x+y=7 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva $\\begin{cases} 2x+y=16 \\\\ x+y=11 \\end{cases}$ y halle $x$.",
       "opts": [
-        "$3$",
-        "$4$",
-        "$4$",
-        "$2$"
+        "$5$",
+        "$6$",
+        "$8$",
+        "$4$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=7-3=4$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=16-11=5$. Sustituyendo $y=11-5=6$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2313,6 +2313,182 @@ window.GUIA_BANK_1000 = {
       "id": "mat-104",
       "s": "mat",
       "n": 104,
+      "d": "intermedio",
+      "topics": [
+        "4.1.2-sistLin"
+      ],
+      "ch": "m2",
+      "t": "Sistemas lineales",
+      "prompt": "Resuelva $\\begin{cases} 2x+y=19 \\\\ x+y=13 \\end{cases}$ y halle $x$.",
+      "opts": [
+        "$6$",
+        "$7$",
+        "$9$",
+        "$5$"
+      ],
+      "ans": 0,
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=19-13=6$. Sustituyendo $y=13-6=7$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "maths": [],
+      "imgs": []
+    },
+    {
+      "id": "mat-105",
+      "s": "mat",
+      "n": 105,
+      "d": "intermedio",
+      "topics": [
+        "4.1.2-sistLin"
+      ],
+      "ch": "m2",
+      "t": "Sistemas lineales",
+      "prompt": "Resuelva $\\begin{cases} 2x+y=5 \\\\ x+y=3 \\end{cases}$ y halle $x$.",
+      "opts": [
+        "$2$",
+        "$1$",
+        "$3$",
+        "$0$"
+      ],
+      "ans": 0,
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=5-3=2$. Sustituyendo $y=3-2=1$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "maths": [],
+      "imgs": []
+    },
+    {
+      "id": "mat-106",
+      "s": "mat",
+      "n": 106,
+      "d": "intermedio",
+      "topics": [
+        "4.1.2-sistLin"
+      ],
+      "ch": "m2",
+      "t": "Sistemas lineales",
+      "prompt": "Resuelva $\\begin{cases} 2x+y=8 \\\\ x+y=5 \\end{cases}$ y halle $x$.",
+      "opts": [
+        "$3$",
+        "$2$",
+        "$4$",
+        "$1$"
+      ],
+      "ans": 0,
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=8-5=3$. Sustituyendo $y=5-3=2$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "maths": [],
+      "imgs": []
+    },
+    {
+      "id": "mat-107",
+      "s": "mat",
+      "n": 107,
+      "d": "intermedio",
+      "topics": [
+        "4.1.2-sistLin"
+      ],
+      "ch": "m2",
+      "t": "Sistemas lineales",
+      "prompt": "Resuelva $\\begin{cases} 2x+y=11 \\\\ x+y=7 \\end{cases}$ y halle $x$.",
+      "opts": [
+        "$4$",
+        "$3$",
+        "$5$",
+        "$2$"
+      ],
+      "ans": 0,
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=11-7=4$. Sustituyendo $y=7-4=3$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "maths": [],
+      "imgs": []
+    },
+    {
+      "id": "mat-108",
+      "s": "mat",
+      "n": 108,
+      "d": "intermedio",
+      "topics": [
+        "4.1.2-sistLin"
+      ],
+      "ch": "m2",
+      "t": "Sistemas lineales",
+      "prompt": "Resuelva $\\begin{cases} 2x+y=14 \\\\ x+y=9 \\end{cases}$ y halle $x$.",
+      "opts": [
+        "$5$",
+        "$4$",
+        "$6$",
+        "$3$"
+      ],
+      "ans": 0,
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=14-9=5$. Sustituyendo $y=9-5=4$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "maths": [],
+      "imgs": []
+    },
+    {
+      "id": "mat-109",
+      "s": "mat",
+      "n": 109,
+      "d": "intermedio",
+      "topics": [
+        "4.1.2-sistLin"
+      ],
+      "ch": "m2",
+      "t": "Sistemas lineales",
+      "prompt": "Resuelva $\\begin{cases} 2x+y=17 \\\\ x+y=11 \\end{cases}$ y halle $x$.",
+      "opts": [
+        "$6$",
+        "$5$",
+        "$7$",
+        "$4$"
+      ],
+      "ans": 0,
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=17-11=6$. Sustituyendo $y=11-6=5$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "maths": [],
+      "imgs": []
+    },
+    {
+      "id": "mat-110",
+      "s": "mat",
+      "n": 110,
+      "d": "intermedio",
+      "topics": [
+        "4.1.2-sistLin"
+      ],
+      "ch": "m2",
+      "t": "Sistemas lineales",
+      "prompt": "Resuelva $\\begin{cases} 2x+y=10 \\\\ x+y=8 \\end{cases}$ y halle $x$.",
+      "opts": [
+        "$2$",
+        "$6$",
+        "$3$",
+        "$1$"
+      ],
+      "ans": 0,
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=10-8=2$. Sustituyendo $y=8-2=6$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "maths": [],
+      "imgs": []
+    },
+    {
+      "id": "mat-111",
+      "s": "mat",
+      "n": 111,
+      "d": "intermedio",
+      "topics": [
+        "4.1.2-sistLin"
+      ],
+      "ch": "m2",
+      "t": "Sistemas lineales",
+      "prompt": "Resuelva $\\begin{cases} 2x+y=13 \\\\ x+y=10 \\end{cases}$ y halle $x$.",
+      "opts": [
+        "$3$",
+        "$7$",
+        "$4$",
+        "$2$"
+      ],
+      "ans": 0,
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=13-10=3$. Sustituyendo $y=10-3=7$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "maths": [],
+      "imgs": []
+    },
+    {
+      "id": "mat-112",
+      "s": "mat",
+      "n": 112,
       "d": "intermedio",
       "topics": [
         "4.1.2-sistLin"
@@ -2327,146 +2503,58 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=5-4=1$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=9-5=4$. Sustituyendo $y=5-4=1$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
     {
-      "id": "mat-105",
+      "id": "mat-113",
       "s": "mat",
-      "n": 105,
+      "n": 113,
       "d": "intermedio",
       "topics": [
         "4.1.2-sistLin"
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=6 \\\\ x+y=4 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva $\\begin{cases} 2x+y=12 \\\\ x+y=7 \\end{cases}$ y halle $x$.",
       "opts": [
-        "$2$",
-        "$2$",
-        "$3$",
-        "$1$"
-      ],
-      "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=4-2=2$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
-      "maths": [],
-      "imgs": []
-    },
-    {
-      "id": "mat-106",
-      "s": "mat",
-      "n": 106,
-      "d": "intermedio",
-      "topics": [
-        "4.1.2-sistLin"
-      ],
-      "ch": "m2",
-      "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=9 \\\\ x+y=6 \\end{cases}$ y halle $x$.",
-      "opts": [
-        "$3$",
-        "$3$",
-        "$4$",
-        "$2$"
-      ],
-      "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=6-3=3$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
-      "maths": [],
-      "imgs": []
-    },
-    {
-      "id": "mat-107",
-      "s": "mat",
-      "n": 107,
-      "d": "intermedio",
-      "topics": [
-        "4.1.2-sistLin"
-      ],
-      "ch": "m2",
-      "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=12 \\\\ x+y=8 \\end{cases}$ y halle $x$.",
-      "opts": [
-        "$4$",
-        "$4$",
         "$5$",
-        "$3$"
-      ],
-      "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=8-4=4$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
-      "maths": [],
-      "imgs": []
-    },
-    {
-      "id": "mat-108",
-      "s": "mat",
-      "n": 108,
-      "d": "intermedio",
-      "topics": [
-        "4.1.2-sistLin"
-      ],
-      "ch": "m2",
-      "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=5 \\\\ x+y=3 \\end{cases}$ y halle $x$.",
-      "opts": [
         "$2$",
-        "$1$",
-        "$3$",
-        "$1$"
+        "$6$",
+        "$4$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=3-2=1$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=12-7=5$. Sustituyendo $y=7-5=2$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
     {
-      "id": "mat-109",
+      "id": "mat-114",
       "s": "mat",
-      "n": 109,
+      "n": 114,
       "d": "intermedio",
       "topics": [
         "4.1.2-sistLin"
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=8 \\\\ x+y=5 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva $\\begin{cases} 2x+y=15 \\\\ x+y=9 \\end{cases}$ y halle $x$.",
       "opts": [
+        "$6$",
         "$3$",
-        "$2$",
-        "$4$",
-        "$2$"
+        "$7$",
+        "$5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=5-3=2$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=15-9=6$. Sustituyendo $y=9-6=3$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
     {
-      "id": "mat-110",
+      "id": "mat-115",
       "s": "mat",
-      "n": 110,
-      "d": "intermedio",
-      "topics": [
-        "4.1.2-sistLin"
-      ],
-      "ch": "m2",
-      "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=11 \\\\ x+y=7 \\end{cases}$ y halle $x$.",
-      "opts": [
-        "$4$",
-        "$3$",
-        "$5$",
-        "$3$"
-      ],
-      "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=7-4=3$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
-      "maths": [],
-      "imgs": []
-    },
-    {
-      "id": "mat-111",
-      "s": "mat",
-      "n": 111,
+      "n": 115,
       "d": "intermedio",
       "topics": [
         "4.1.2-sistLin"
@@ -2481,95 +2569,7 @@ window.GUIA_BANK_1000 = {
         "$1$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=6-2=4$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
-      "maths": [],
-      "imgs": []
-    },
-    {
-      "id": "mat-112",
-      "s": "mat",
-      "n": 112,
-      "d": "intermedio",
-      "topics": [
-        "4.1.2-sistLin"
-      ],
-      "ch": "m2",
-      "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=7 \\\\ x+y=4 \\end{cases}$ y halle $x$.",
-      "opts": [
-        "$3$",
-        "$1$",
-        "$4$",
-        "$2$"
-      ],
-      "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=4-3=1$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
-      "maths": [],
-      "imgs": []
-    },
-    {
-      "id": "mat-113",
-      "s": "mat",
-      "n": 113,
-      "d": "intermedio",
-      "topics": [
-        "4.1.2-sistLin"
-      ],
-      "ch": "m2",
-      "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=10 \\\\ x+y=6 \\end{cases}$ y halle $x$.",
-      "opts": [
-        "$4$",
-        "$2$",
-        "$5$",
-        "$3$"
-      ],
-      "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=6-4=2$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
-      "maths": [],
-      "imgs": []
-    },
-    {
-      "id": "mat-114",
-      "s": "mat",
-      "n": 114,
-      "d": "intermedio",
-      "topics": [
-        "4.1.2-sistLin"
-      ],
-      "ch": "m2",
-      "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=7 \\\\ x+y=5 \\end{cases}$ y halle $x$.",
-      "opts": [
-        "$2$",
-        "$3$",
-        "$3$",
-        "$1$"
-      ],
-      "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=5-2=3$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
-      "maths": [],
-      "imgs": []
-    },
-    {
-      "id": "mat-115",
-      "s": "mat",
-      "n": 115,
-      "d": "intermedio",
-      "topics": [
-        "4.1.2-sistLin"
-      ],
-      "ch": "m2",
-      "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=10 \\\\ x+y=7 \\end{cases}$ y halle $x$.",
-      "opts": [
-        "$3$",
-        "$4$",
-        "$4$",
-        "$2$"
-      ],
-      "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=7-3=4$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=8-6=2$. Sustituyendo $y=6-2=4$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2583,15 +2583,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=9 \\\\ x+y=5 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva $\\begin{cases} 2x+y=11 \\\\ x+y=8 \\end{cases}$ y halle $x$.",
       "opts": [
-        "$4$",
-        "$1$",
+        "$3$",
         "$5$",
-        "$3$"
+        "$4$",
+        "$2$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=5-4=1$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=11-8=3$. Sustituyendo $y=8-3=5$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2605,15 +2605,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=6 \\\\ x+y=4 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva $\\begin{cases} 2x+y=14 \\\\ x+y=10 \\end{cases}$ y halle $x$.",
       "opts": [
-        "$2$",
-        "$2$",
-        "$3$",
-        "$1$"
+        "$4$",
+        "$6$",
+        "$5$",
+        "$3$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=4-2=2$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=14-10=4$. Sustituyendo $y=10-4=6$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3556,7 +3556,7 @@ window.GUIA_BANK_1000 = {
         "$3$",
         "$6$",
         "$4.5$",
-        "$3$"
+        "$5$"
       ],
       "ans": 0,
       "exp": "Paso desde cero: $|2x-3|=6$ equivale a $2x-3=6$ o $2x-3=-6$; de ahí $x_{1}=\\frac{9}{2}$ y $x_{2}=\\frac{-3}{2}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 3}{2}=3$. Tomar solo una rama es el error típico.",
@@ -3600,7 +3600,7 @@ window.GUIA_BANK_1000 = {
         "$\\frac{10}{4}$",
         "$5$",
         "$2.5$",
-        "$5$"
+        "$7$"
       ],
       "ans": 0,
       "exp": "Paso desde cero: $|4x-5|=5$ equivale a $4x-5=5$ o $4x-5=-5$; de ahí $x_{1}=\\frac{10}{4}$ y $x_{2}=\\frac{0}{4}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 5}{4}=\\frac{10}{4}$. Tomar solo una rama es el error típico.",
@@ -3622,7 +3622,7 @@ window.GUIA_BANK_1000 = {
         "$\\frac{12}{5}$",
         "$6$",
         "$2.4$",
-        "$6$"
+        "$8$"
       ],
       "ans": 0,
       "exp": "Paso desde cero: $|5x-6|=6$ equivale a $5x-6=6$ o $5x-6=-6$; de ahí $x_{1}=\\frac{12}{5}$ y $x_{2}=\\frac{0}{5}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 6}{5}=\\frac{12}{5}$. Tomar solo una rama es el error típico.",
@@ -3666,7 +3666,7 @@ window.GUIA_BANK_1000 = {
         "$4$",
         "$5$",
         "$4.5$",
-        "$4$"
+        "$6$"
       ],
       "ans": 0,
       "exp": "Paso desde cero: $|2x-4|=5$ equivale a $2x-4=5$ o $2x-4=-5$; de ahí $x_{1}=\\frac{9}{2}$ y $x_{2}=\\frac{-1}{2}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 4}{2}=4$. Tomar solo una rama es el error típico.",
@@ -3775,8 +3775,8 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$5$",
         "$7$",
-        "$6.0$",
-        "$5$"
+        "$6$",
+        "$8$"
       ],
       "ans": 0,
       "exp": "Paso desde cero: $|2x-5|=7$ equivale a $2x-5=7$ o $2x-5=-7$; de ahí $x_{1}=\\frac{12}{2}$ y $x_{2}=\\frac{-2}{2}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 5}{2}=5$. Tomar solo una rama es el error típico.",
@@ -3864,7 +3864,7 @@ window.GUIA_BANK_1000 = {
         "$\\frac{10}{6}$",
         "$5$",
         "$1.7$",
-        "$5$"
+        "$7$"
       ],
       "ans": 0,
       "exp": "Paso desde cero: $|6x-5|=5$ equivale a $6x-5=5$ o $6x-5=-5$; de ahí $x_{1}=\\frac{10}{6}$ y $x_{2}=\\frac{0}{6}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 5}{6}=\\frac{10}{6}$. Tomar solo una rama es el error típico.",
@@ -4532,7 +4532,7 @@ window.GUIA_BANK_1000 = {
       "prompt": "En el triángulo rectángulo de la figura (recto en $C$), $AC=4$ y $BC=4$. Calcule $\\sin(A)$.",
       "opts": [
         "$\\dfrac{4}{6}$",
-        "$\\dfrac{4}{6}$",
+        "$\\dfrac{5}{6}$",
         "$\\dfrac{6}{4}$",
         "$\\dfrac{4}{4}$"
       ],
@@ -4556,7 +4556,7 @@ window.GUIA_BANK_1000 = {
       "prompt": "En el triángulo rectángulo de la figura (recto en $C$), $AC=5$ y $BC=5$. Calcule $\\sin(A)$.",
       "opts": [
         "$\\dfrac{5}{7}$",
-        "$\\dfrac{5}{7}$",
+        "$\\dfrac{6}{7}$",
         "$\\dfrac{7}{5}$",
         "$\\dfrac{5}{5}$"
       ],
@@ -4676,7 +4676,7 @@ window.GUIA_BANK_1000 = {
       "prompt": "En el triángulo rectángulo de la figura (recto en $C$), $AC=4$ y $BC=4$. Calcule $\\sin(A)$.",
       "opts": [
         "$\\dfrac{4}{6}$",
-        "$\\dfrac{4}{6}$",
+        "$\\dfrac{5}{6}$",
         "$\\dfrac{6}{4}$",
         "$\\dfrac{4}{4}$"
       ],
@@ -4700,7 +4700,7 @@ window.GUIA_BANK_1000 = {
       "prompt": "En el triángulo rectángulo de la figura (recto en $C$), $AC=5$ y $BC=5$. Calcule $\\sin(A)$.",
       "opts": [
         "$\\dfrac{5}{7}$",
-        "$\\dfrac{5}{7}$",
+        "$\\dfrac{6}{7}$",
         "$\\dfrac{7}{5}$",
         "$\\dfrac{5}{5}$"
       ],

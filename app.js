@@ -1,5 +1,16 @@
 /* =====================================================================
    Mini renderizador de LaTeX (subconjunto) — sin dependencias externas
+
+   PIPELINE SEGURO (anti-colisión ES ↔ trig/macros):
+   - Solo se tipografía math DENTRO de delimitadores $...$ / $$...$$.
+   - El texto plano NUNCA se reescribe: «sin», «tanto», «cosas», «coseno»,
+     «como», «para», «log», etc. permanecen prosa española.
+   - Las funciones trig/macros SOLO se reconocen con barra: \sin \cos \tan
+     \sec \csc \cot \log \ln \lim \max \min (nunca tokens desnudos).
+   - NO hay preprocess tipo replace(/sin|tan|cos/g) ni auto-\ delante de
+     palabras. Prohibido: convertir «tanto»→\tan, «cosas»→\cos, etc.
+   - Delimitadores: $$...$$ primero; inline $...$ exige ≥1 carácter (así
+     un `$$` suelto no se interpreta como math vacío).
    ===================================================================== */
 (function(){
   var SYM = {
@@ -16,8 +27,15 @@
     'Re':'\u211D','left':'','right':'','!':'','quad':'\u2003','qquad':'\u2003\u2003',
     ',':'\u2009',';':'\u2005',' ':' '
   };
+  /* Solo con \nombre — nunca auto-detectar "sin"/"tan" desnudos en prosa o math. */
   var FUNCS = ['sin','cos','tan','cot','sec','csc','log','ln','lim','max','min','arcsin','arccos','arctan','mod'];
   var REL = ['=','<','>','+','\u2212','\u00B1','\u2260','\u2264','\u2265','\u2248','\u2245','\u21D2','\u2192','\u00D7','\u22C5','\u2227','\u2228'];
+
+  /* Tokens que colisionan con prosa ES si un preprocess mete `\` o $...$ a ciegas. */
+  var SPANISH_MATH_FALSE_FRIENDS = [
+    'sin','sen','tanto','tantos','cosas','coseno','tangente','secante','como','para',
+    'log','maximo','minimo','limite','cotangente'
+  ];
 
   function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 
@@ -76,6 +94,7 @@
       if(c==='{'||c==='}'){ i++; continue; }
       if(c==='-'){ out+='<span class="mo">\u2212</span>'; i++; continue; }
       if('=+<>'.indexOf(c)>=0){ out+='<span class="mo">'+esc(c)+'</span>'; i++; continue; }
+      /* Letras sueltas en math = variables; NO agrupar "sin"/"tan" como función. */
       if(/[a-zA-Z]/.test(c)){ out+='<span class="mi">'+c+'</span>'; i++; continue; }
       if(c===' '){ out+=' '; i++; continue; }
       out+=esc(c); i++;
@@ -83,15 +102,37 @@
     return out;
   }
 
-  window.tex = function(src){
+  /**
+   * splitMath(src) — separa prosa y math por delimitadores $ / $$.
+   * Inline exige contenido no vacío para no tragarse un `$$` de display.
+   */
+  var MATH_SPLIT_RE = /(\$\$[^$]*\$\$|\$[^$]+\$)/g;
+
+  function renderMathPart(p){
+    if(p.indexOf('$$')===0 && p.lastIndexOf('$$')===p.length-2 && p.length>=4)
+      return '<span class="mjx mjx-display">'+parse(p.slice(2,-2))+'</span>';
+    if(p.charAt(0)==='$' && p.charAt(p.length-1)==='$' && p.length>=3)
+      return '<span class="mjx">'+parse(p.slice(1,-1))+'</span>';
+    return esc(p);
+  }
+
+  /**
+   * tex(src) — único renderizador público.
+   * Prosa fuera de $...$ se escapa tal cual (sin→sin, tanto→tanto).
+   * Solo \sin/\cos/\tan/... DENTRO de delimitadores se ven como función.
+   */
+  function tex(src){
     if(src==null) return '';
-    var parts = String(src).split(/(\$\$[^$]*\$\$|\$[^$]*\$)/g);
-    return parts.map(function(p){
-      if(p.indexOf('$$')===0 && p.lastIndexOf('$$')===p.length-2 && p.length>3) return '<span class="mjx mjx-display">'+parse(p.slice(2,-2))+'</span>';
-      if(p.charAt(0)==='$' && p.charAt(p.length-1)==='$' && p.length>1) return '<span class="mjx">'+parse(p.slice(1,-1))+'</span>';
+    return String(src).split(MATH_SPLIT_RE).map(function(p){
+      if(!p) return '';
+      if(p.charAt(0)==='$') return renderMathPart(p);
       return esc(p).replace(/&lt;br\s*\/?&gt;/g,'<br>').replace(/&lt;b&gt;/g,'<b>').replace(/&lt;\/b&gt;/g,'</b>');
     }).join('');
-  };
+  }
+
+  window.tex = tex;
+  window.MATH_SPLIT_RE = MATH_SPLIT_RE;
+  window.SPANISH_MATH_FALSE_FRIENDS = SPANISH_MATH_FALSE_FRIENDS;
 })();
 
 
@@ -443,62 +484,8 @@ function figHtml(f){
 
 /* =====================================================================
    MINI-MARKDOWN para la sección Aprende
+   (usa window.tex — solo math en $...$; prosa ES intacta)
    ===================================================================== */
-
-/* ---------- LaTeX / Math Renderer Helper ---------- */
-function tex(expr){
-  if(!expr) return '';
-  var isBlock = expr.startsWith('$') && expr.endsWith('$');
-  var raw = expr.replace(/^\$\$?|\$\$?$/g, '').trim();
-  if(typeof katex !== 'undefined') {
-    try {
-      return katex.renderToString(raw, { displayMode: isBlock, throwOnError: false });
-    } catch(e){}
-  }
-  return '<code class="tex-expr">' + escH(expr) + '</code>';
-}
-
-function inlineMd(s){
-  return String(s).split(/(\$\$[^$]*\$\$|\$[^$]*\$)/g).map(function(p){
-    if(p.charAt(0)==='$') return tex(p);
-    return escH(p)
-      .replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>')
-      .replace(/(^|[^*])\*([^*]+)\*/g,'$1<i>$2</i>')
-      .replace(/`([^`]+)`/g,'<code>$1</code>');
-  }).join('');
-}
-function md(src){
-  var lines=String(src).split('\n'), out='', i=0;
-  function flushPara(buf){ if(buf.length) out+='<p>'+inlineMd(buf.join(' '))+'</p>'; }
-  var para=[];
-  while(i<lines.length){
-    var L=lines[i];
-    if(/^\s*$/.test(L)){ flushPara(para); para=[]; i++; continue; }
-    if(/^####\s+/.test(L)){ flushPara(para); para=[]; out+='<h4>'+inlineMd(L.replace(/^####\s+/,''))+'</h4>'; i++; continue; }
-    if(/^###\s+/.test(L)){ flushPara(para); para=[]; out+='<h3>'+inlineMd(L.replace(/^###\s+/,''))+'</h3>'; i++; continue; }
-    if(/^##\s+/.test(L)){ flushPara(para); para=[]; out+='<h2>'+inlineMd(L.replace(/^##\s+/,''))+'</h2>'; i++; continue; }
-    if(/^---\s*$/.test(L)){ flushPara(para); para=[]; out+='<hr>'; i++; continue; }
-    if(/^>\s?/.test(L)){ flushPara(para); para=[]; var q=[];
-      while(i<lines.length && /^>\s?/.test(lines[i])){ q.push(lines[i].replace(/^>\s?/,'')); i++; }
-      out+='<blockquote>'+inlineMd(q.join(' '))+'</blockquote>'; continue; }
-    if(/^\|/.test(L)){ flushPara(para); para=[]; var rows=[];
-      while(i<lines.length && /^\|/.test(lines[i])){ rows.push(lines[i]); i++; }
-      var cells=rows.map(function(r){ return r.replace(/^\|/,'').replace(/\|\s*$/,'').split('|').map(function(c){return c.trim();}); })
-        .filter(function(r){ return !r.every(function(c){return /^:?-{2,}:?$/.test(c);}); });
-      out+='<table><thead><tr>'+cells[0].map(function(c){return '<th>'+inlineMd(c)+'</th>';}).join('')+'</tr></thead><tbody>'+
-        cells.slice(1).map(function(r){return '<tr>'+r.map(function(c){return '<td>'+inlineMd(c)+'</td>';}).join('')+'</tr>';}).join('')+'</tbody></table>';
-      continue; }
-    if(/^-\s+/.test(L)){ flushPara(para); para=[]; var li=[];
-      while(i<lines.length && /^-\s+/.test(lines[i])){ li.push(lines[i].replace(/^-\s+/,'')); i++; }
-      out+='<ul>'+li.map(function(x){return '<li>'+inlineMd(x)+'</li>';}).join('')+'</ul>'; continue; }
-    if(/^\d+\.\s+/.test(L)){ flushPara(para); para=[]; var lo=[];
-      while(i<lines.length && /^\d+\.\s+/.test(lines[i])){ lo.push(lines[i].replace(/^\d+\.\s+/,'')); i++; }
-      out+='<ol>'+lo.map(function(x){return '<li>'+inlineMd(x)+'</li>';}).join('')+'</ol>'; continue; }
-    para.push(L); i++;
-  }
-  flushPara(para);
-  return out;
-}
 
 /* =====================================================================
    APLICACIÓN  ·  Simulador EPN 2026-B
@@ -517,11 +504,138 @@ function md(src){
   window.THEORY = out;
 })();
 var BANK = window.BANK, THEORY = window.THEORY;
+var GUIA_THEORY = window.GUIA_THEORY || [];
 
-/* ---------- markdown → HTML (mejorado) ---------- */
+/* ---------- Área paralela: Guía oficial EPN (no altera cursos del aula) ---------- */
+function theoryBook(){
+  return (S.area === 'guia' && GUIA_THEORY && GUIA_THEORY.length) ? GUIA_THEORY : THEORY;
+}
+function isGuia(){ return S.area === 'guia'; }
+function guiaLearnOrder(){ return ['mat','fis','qui','len','gen']; }
+var GUIA_WORKSHOPS = [
+  {k:'mat', code:'4.1', title:'Talleres de Matemática', items:[
+    {id:'gw-m1', code:'4.1.1', t:'Fundamentos de Álgebra'},
+    {id:'gw-m2', code:'4.1.2', t:'Ecuaciones e Inecuaciones'},
+    {id:'gw-m3', code:'4.1.3', t:'Geometría plana'},
+    {id:'gw-m4', code:'4.1.4', t:'Trigonometría · Rectas y circunferencias'}
+  ]},
+  {k:'fis', code:'4.2', title:'Talleres de Física', items:[
+    {id:'gw-f1', code:'4.2.1', t:'Inercia y movimiento'},
+    {id:'gw-f2', code:'4.2.2', t:'Segunda y tercera leyes de Newton'},
+    {id:'gw-f3', code:'4.2.3', t:'Energía, trabajo y potencia'}
+  ]},
+  {k:'qui', code:'4.3', title:'Talleres de Química', items:[
+    {id:'gw-q1', code:'4.3.1', t:'Estructura atómica'},
+    {id:'gw-q2', code:'4.3.2', t:'Tabla periódica y nomenclatura'},
+    {id:'gw-q3', code:'4.3.3', t:'Enlace químico'},
+    {id:'gw-q4', code:'4.3.4', t:'Estequiometría'}
+  ]},
+  {k:'len', code:'4.4', title:'Talleres de Lenguaje', items:[
+    {id:'gw-l1', code:'4.4.1', t:'Pensamiento lógico y comunicación'},
+    {id:'gw-l2', code:'4.4.2', t:'Lectura e interpretación'},
+    {id:'gw-l3', code:'4.4.3', t:'Comunicación escrita · Falacias'}
+  ]}
+];
+var IS_POPSTATE = false;
+
+function syncHash(){
+  try{
+    var h = '';
+    if(isGuia()){
+      h = '#guia';
+      if(S.view === 'learn') h = '#guia/aprender';
+      else if(S.view === 'chapter' && S.chapter) h = '#guia/aprender/'+S.chapter;
+      else if(S.view === 'guiawork') h = '#guia/talleres';
+      else if(S.view === 'attempt') h = '#guia/examen69';
+      else if(S.view === 'home') h = '#guia';
+    } else {
+      if(S.view === 'course' && S.course) h = '#' + S.course;
+      else if(S.view === 'chapter' && S.chapter) h = '#aprender/' + S.chapter;
+      else if(S.view === 'learn') h = '#aprender';
+      else if(S.view === 'history') h = '#historial';
+      else if(S.view === 'stats') h = '#estadisticas';
+    }
+    if(h && location.hash !== h){
+      if(!IS_POPSTATE){
+        history.pushState({ area: S.area, view: S.view, chapter: S.chapter, course: S.course }, '', h);
+      } else {
+        history.replaceState({ area: S.area, view: S.view, chapter: S.chapter, course: S.course }, '', h);
+      }
+    }
+  }catch(e){}
+}
+
+window.addEventListener('popstate', function(e){
+  IS_POPSTATE = true;
+  if(e.state){
+    if(e.state.area) S.area = e.state.area;
+    if(e.state.view) S.view = e.state.view;
+    if(e.state.chapter) S.chapter = e.state.chapter;
+    if(e.state.course) S.course = e.state.course;
+  } else {
+    applyHashRoute();
+  }
+  render();
+  IS_POPSTATE = false;
+});
+
+window.addEventListener('keydown', function(e){
+  if(e.altKey && (e.key === 'ArrowLeft' || e.keyCode === 37)){
+    e.preventDefault();
+    history.back();
+  }
+});
+/* old syncHash replaced */
+function _oldSyncHash(){
+  try{
+    if(isGuia()){
+      var h = '#guia';
+      if(S.view === 'learn') h = '#guia/aprender';
+      else if(S.view === 'chapter' && S.chapter) h = '#guia/aprender/'+S.chapter;
+      else if(S.view === 'guiawork') h = '#guia/talleres';
+      else if(S.view === 'home') h = '#guia';
+      if(location.hash !== h) history.replaceState(null, '', h);
+    } else if(String(location.hash||'').indexOf('#guia')===0){
+      history.replaceState(null, '', location.pathname + location.search);
+    }
+  }catch(e){}
+}
+function enterGuia(view){
+  if(blocked()) return;
+  stopTimer();
+  S.area = 'guia';
+  S.toast = null;
+  S.modal = null;
+  S.view = view || 'home';
+  render();
+}
+function exitGuia(){
+  if(blocked()) return;
+  stopTimer();
+  S.area = 'aula';
+  S.toast = null;
+  S.modal = null;
+  S.view = 'home';
+  render();
+}
+function applyHashRoute(){
+  var h = String(location.hash||'').replace(/^#/, '');
+  if(!h) return;
+  if(h.indexOf('guia')===0){
+    S.area = 'guia';
+    var parts = h.split('/');
+    if(parts[1]==='aprender' && parts[2]){ S.chapter = parts[2]; S.view = 'chapter'; }
+    else if(parts[1]==='aprender'){ S.view = 'learn'; }
+    else if(parts[1]==='talleres'){ S.view = 'guiawork'; }
+    else { S.view = 'home'; }
+  }
+}
+
+/* ---------- markdown → HTML (mejorado; math solo en delimitadores) ---------- */
 function inlineMd(s){
   var math = [];
-  var txt = String(s).replace(/(\$\$[^$]*\$\$|\$[^$]*\$)/g, function(m){ math.push(m); return '\u0000'+(math.length-1)+'\u0000'; });
+  var splitRe = window.MATH_SPLIT_RE || /(\$\$[^$]*\$\$|\$[^$]+\$)/g;
+  var txt = String(s).replace(splitRe, function(m){ math.push(m); return '\u0000'+(math.length-1)+'\u0000'; });
   txt = escH(txt)
     .replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>')
     .replace(/(^|[^*\w])\*([^*]+)\*/g,'$1<i>$2</i>')
@@ -596,17 +710,21 @@ function saveHist(){ save(HIST_KEY, HIST); }
 function saveSeen(){ save(SEEN_KEY, SEEN); }
 function saveUI(){ save(UI_KEY, UI); }
 var SEENSET = {};
-['mat','trig','fis','qui','len'].forEach(function(k){ SEEN[k] = SEEN[k]||[]; SEENSET[k] = {}; SEEN[k].forEach(function(i){ SEENSET[k][i]=1; }); });
+['mat','trig','ineq','fis','qui','len'].forEach(function(k){ SEEN[k] = SEEN[k]||[]; SEENSET[k] = {}; SEEN[k].forEach(function(i){ SEENSET[k][i]=1; }); });
 
 var LEVELS = [{k:'facil',n:'F\u00e1cil',c:'f1'},{k:'medio',n:'Intermedio',c:'f2'},{k:'dificil',n:'Dif\u00edcil',c:'f3'},{k:'experto',n:'Experto',c:'f4'},{k:'todos',n:'Mezclado',c:'f0'}];
 function levelName(k){ for(var i=0;i<LEVELS.length;i++) if(LEVELS[i].k===k) return LEVELS[i].n; return k; }
 
-var S = { view:'home', course:'mat', attempt:null, modal:null, tick:null, onePage:null, chapter:null, scrollTop:true, histTab:'all', toast:null, viewingRecord:null };
+var S = { view:'home', area:'aula', course:'mat', attempt:null, modal:null, tick:null, onePage:null, chapter:null, scrollTop:true, histTab:'all', toast:null, viewingRecord:null };
 
 var COURSES = {
+  guia69:{key:'guia69',name:'Simulador Completo Guía 2026-B (69P)',short:'Guía Completo 69P',full:'Guía Oficial EPN 2026-B — Examen Completo 69 Preguntas',desc:'Examen simulador completo de 69 preguntas oficiales (Matemáticas, Lenguaje, Física y Química) con soluciones paso a paso desde cero.'},
   trig:{key:'trig',name:'Identidades Trigonométricas',short:'Trigonometría Especial',full:'Taller Especializado: Identidades Trigonométricas',color:'#7b2cbf',icon:'📐',
        desc:'Práctica enfocada en identidades pitagóricas, recíprocas, de cociente, simplificación de expresiones y ecuaciones.',
-       prev:'Examen Lenguaje EPN 2026-B',next:'Simulacro completo EPN 2026-B'},
+       prev:'Examen Lenguaje EPN 2026-B',next:'Taller Especializado: Inecuaciones y Valor Absoluto'},
+  ineq:{key:'ineq',name:'Inecuaciones y Valor Absoluto',short:'Inecuaciones |x|',full:'Taller Especializado: Inecuaciones y Valor Absoluto',color:'#0f766e',icon:'📏',
+       desc:'Práctica enfocada en relaciones de orden, intervalos, inecuaciones lineales y polinómicas, y desigualdades con valor absoluto (Clases 16–17 Barreno).',
+       prev:'Taller Especializado: Identidades Trigonométricas',next:'Simulacro completo EPN 2026-B'},
   mat:{key:'mat',name:'Matem\u00e1ticas',short:'Matem\u00e1tica',full:'Examen Matem\u00e1ticas EPN 2026-B',color:'#f7a1c4',icon:'\u2713',
        desc:'Fundamentos de \u00e1lgebra, ecuaciones e inecuaciones, geometr\u00eda plana y trigonometr\u00eda.',
        prev:'Lineamientos para la admisi\u00f3n 2026-B',next:'Examen F\u00edsica EPN 2026-B'},
@@ -623,8 +741,9 @@ var COURSES = {
        desc:'Las cuatro \u00e1reas mezcladas en un solo intento cronometrado, como el examen real.',
        prev:'Examen Lenguaje EPN 2026-B',next:'Estad\u00edsticas de progreso'}
 };
-var CKEYS = ['mat','trig','fis','qui','len','mix'];
-var SUBJ = ['mat','trig','fis','qui','len'];
+var CKEYS = ['mat','trig','ineq','fis','qui','len','mix'];
+var SUBJ = ['mat','trig','ineq','fis','qui','len'];
+var EXAM = ['mat','fis','qui','len'];
 SUBJ.forEach(function(k){ BANK[k].forEach(function(q,i){ q.__s=k; q.__i=i; }); });
 function bankOf(k){ return k==='mix' ? BANK.mat.concat(BANK.fis,BANK.qui,BANK.len) : (BANK[k]||[]); }
 
@@ -721,7 +840,7 @@ function makePlan(k){
   var notes = [], picked = [];
   if(k==='mix'){
     var n = countFor(k), per = Math.floor(n/4), extra = n - per*4;
-    SUBJ.forEach(function(x,ix){ picked = picked.concat(pickForSubject(x, per + (ix<extra?1:0), notes)); });
+    EXAM.forEach(function(x,ix){ picked = picked.concat(pickForSubject(x, per + (ix<extra?1:0), notes)); });
   } else { picked = pickForSubject(k, countFor(k), notes); }
   picked = shuffle(picked);
   PLAN[planKey(k)] = {ts:Date.now(), ids:picked.map(function(q){ return {s:q.__s, i:q.__i}; })};
@@ -763,7 +882,7 @@ function buildAttempt(courseKey){
     notes.push('Se usaron las preguntas que barajaste previamente.');
   } else if(courseKey==='mix'){
     var per = Math.floor(n/4), extra = n - per*4;
-    SUBJ.forEach(function(k,ix){ picked = picked.concat(pickForSubject(k, per + (ix<extra?1:0), notes)); });
+    EXAM.forEach(function(k,ix){ picked = picked.concat(pickForSubject(k, per + (ix<extra?1:0), notes)); });
   } else {
     picked = pickForSubject(courseKey, n, notes);
   }
@@ -790,6 +909,21 @@ function attemptFromRecord(r){
 
 /* ---------- CHROME ---------- */
 function navbar(active){
+  if(isGuia()){
+    return '<div class="navbar guia-nav">'+
+      '<div class="brand" data-act="home"><div class="shield guia">G</div><div class="btxt"><span class="l1"><b>EPN</b><i> gu\u00eda oficial</i></span><span class="sub">TEMARIO 2026-B \u00b7 \u00c1REA PARALELA</span></div></div>'+
+      '<div class="navlinks">'+
+        '<a data-act="home" class="'+(active==='home'?'active':'')+'">Inicio gu\u00eda</a>'+
+        '<a data-act="learn" class="'+(active==='learn'||active==='chapter'?'active':'')+'">Aprender</a>'+
+        '<a data-act="guiawork" class="'+(active==='guiawork'?'active':'')+'">Talleres</a>'+
+        '<a data-act="exitguia">Volver al aula</a>'+
+      '</div>'+
+      '<div class="navright">'+
+        '<button class="icon-btn" data-act="cfg" title="Configuraci\u00f3n">\u2699</button>'+
+        '<div class="avatar">'+escH((cfg.student||'A').trim().charAt(0))+'</div>'+
+      '</div>'+
+    '</div>';
+  }
   return '<div class="navbar">'+
     '<div class="brand" data-act="home"><div class="shield">EPN</div><div class="btxt"><span class="l1"><b>EPN</b><i>en l\u00ednea</i></span><span class="sub">AULA VIRTUAL VINCULACI\u00d3N</span></div></div>'+
     '<div class="navlinks">'+
@@ -807,6 +941,15 @@ function navbar(active){
 }
 function drawer(active){
   if(!UI.drawer) return '';
+  if(isGuia()){
+    return '<div class="drawer"><button class="closex" data-act="toggledrawer" title="Ocultar men\u00fa">\u2715</button>'+
+      '<h6>\u25be Gu\u00eda oficial 2026-B</h6><ul>'+
+      '<li><a class="'+(active==='home'?'active':'')+'" data-act="home">Inicio gu\u00eda</a></li>'+
+      '<li><a class="'+(active==='learn'?'active':'')+'" data-act="learn">Aprender (teor\u00eda 1:1)</a></li>'+
+      '<li><a class="'+(active==='guiawork'?'active':'')+'" data-act="guiawork">Talleres (pr\u00f3ximamente)</a></li>'+
+      '<li><a data-act="exitguia">Volver al aula Barreno</a></li>'+
+      '</ul></div>';
+  }
   var items = CKEYS.map(function(k){
     return '<li><a class="'+(active==='quiz'&&S.course===k?'active':'')+'" data-act="course" data-c="'+k+'">'+COURSES[k].full+'</a></li>';
   }).join('');
@@ -815,6 +958,7 @@ function drawer(active){
     '<li><a class="'+(active==='learn'?'active':'')+'" data-act="learn">Aprende (teor\u00eda)</a></li>'+
     '<li><a class="'+(active==='stats'?'active':'')+'" data-act="stats">Estad\u00edsticas</a></li>'+
     '<li><a class="'+(active==='history'?'active':'')+'" data-act="history">Historial de intentos</a></li>'+
+    '<li><a data-act="enterguia">Gu\u00eda oficial EPN (nueva \u00e1rea)</a></li>'+
     items+
     '</ul></div>';
 }
@@ -924,7 +1068,7 @@ var METHODS = [
       '**Simplifica** dividiendo numerador y denominador por su MCD hasta dejar la fraccion irreducible.']},
  {k:'mat', re:/notación científica/i, h:'Reales',
   st:['**Multiplica (o divide) por separado** los coeficientes y las potencias de $10$.',
-      '**Suma los exponentes** al multiplicar y restalos al dividir: $10^{a}\cdot10^{b}=10^{a+b}$.',
+      '**Suma los exponentes** al multiplicar y restalos al dividir: $10^{a}\\cdot10^{b}=10^{a+b}$.',
       '**Normaliza el resultado**: el coeficiente debe quedar entre $1$ y $10$; si te pasas, corre la coma y ajusta el exponente.']},
  {k:'mat', re:/es igual a:|simplificada/i, t:'Fundamentos', h:'exponentes',
   st:['**Detecta las leyes de exponentes** que intervienen.',
@@ -934,12 +1078,12 @@ var METHODS = [
       '**Si hay sumas de potencias**, factoriza la potencia mas pequena en lugar de intentar sumar exponentes.']},
  {k:'mat', re:/racionalizar/i, h:'Radicales',
   st:['**Identifica el radical del denominador**: hay que eliminarlo sin cambiar el valor de la expresion.',
-      '**Si el denominador es $\sqrt{a}$**, multiplica numerador y denominador por $\sqrt{a}$.',
-      '**Si es un binomio $a+\sqrt{b}$**, multiplica por su **conjugado** $a-\sqrt{b}$ para usar $(x+y)(x-y)=x^{2}-y^{2}$.',
+      '**Si el denominador es $\\sqrt{a}$**, multiplica numerador y denominador por $\\sqrt{a}$.',
+      '**Si es un binomio $a+\\sqrt{b}$**, multiplica por su **conjugado** $a-\\sqrt{b}$ para usar $(x+y)(x-y)=x^{2}-y^{2}$.',
       '**Opera y simplifica** el resultado; el denominador queda sin raices.']},
  {k:'mat', re:/El desarrollo de/i, h:'Productos notables',
   st:['**Reconoce el producto notable** antes de multiplicar termino a termino.',
-      '**Binomio al cuadrado:** $(a\pm b)^{2}=a^{2}\pm 2ab+b^{2}$. El error tipico es olvidar el doble producto $2ab$.',
+      '**Binomio al cuadrado:** $(a\\pm b)^{2}=a^{2}\\pm 2ab+b^{2}$. El error tipico es olvidar el doble producto $2ab$.',
       '**Suma por diferencia:** $(a+b)(a-b)=a^{2}-b^{2}$.',
       '**Binomios con termino comun:** $(x+a)(x+b)=x^{2}+(a+b)x+ab$.',
       '**Verifica** el signo y el grado de cada termino del resultado.']},
@@ -972,17 +1116,17 @@ var METHODS = [
       '**Comprueba** que el par $(x,y)$ satisface **las dos** ecuaciones.']},
  {k:'mat', re:/discriminante/i, h:'segundo grado',
   st:['**Escribe la ecuacion en la forma $ax^{2}+bx+c=0$** e identifica $a$, $b$ y $c$ con sus signos.',
-      '**Aplica $\Delta=b^{2}-4ac$**, cuidando que $b^{2}$ siempre es positivo.',
-      '**Interpreta:** $\Delta>0$ dos raices reales distintas, $\Delta=0$ una raiz doble, $\Delta<0$ sin solución real.']},
+      '**Aplica $\\Delta=b^{2}-4ac$**, cuidando que $b^{2}$ siempre es positivo.',
+      '**Interpreta:** $\\Delta>0$ dos raices reales distintas, $\\Delta=0$ una raiz doble, $\\Delta<0$ sin solución real.']},
  {k:'mat', re:/raíces de|soluciones de la ecuación \$x\^/i, h:'segundo grado',
   st:['**Ordena la ecuacion** como $ax^{2}+bx+c=0$.',
       '**Intenta factorizar primero** (dos numeros que sumen $b$ y multipliquen $c$ si $a=1$): es mas rapido que la formula.',
-      '**Si no factoriza, usa la formula** $x=\dfrac{-b\pm\sqrt{b^{2}-4ac}}{2a}$.',
+      '**Si no factoriza, usa la formula** $x=\\dfrac{-b\\pm\\sqrt{b^{2}-4ac}}{2a}$.',
       '**Recuerda Vieta** para verificar o para preguntas de suma y producto: $x_{1}+x_{2}=-b/a$ y $x_{1}x_{2}=c/a$.',
       '**Verifica** sustituyendo al menos una raiz.']},
  {k:'mat', re:/conjunto solución de la inecuación \$\|x|conjunto solución de la ecuación \$\|x/i, h:'Valor absoluto',
   st:['**Recuerda el significado:** $|x-a|$ es la distancia entre $x$ y $a$.',
-      '**Ecuacion $|u|=k$ (con $k\ge0$):** se abre en dos casos, $u=k$ y $u=-k$.',
+      '**Ecuacion $|u|=k$ (con $k\\ge0$):** se abre en dos casos, $u=k$ y $u=-k$.',
       '**Desigualdad $|u|<k$:** equivale a la doble desigualdad $-k<u<k$ (un solo intervalo).',
       '**Desigualdad $|u|>k$:** equivale a $u<-k$ **o** $u>k$ (dos rayos separados).',
       '**Despeja $x$** en cada caso y escribe la solución en notacion de intervalos.']},
@@ -997,8 +1141,8 @@ var METHODS = [
       '**Escribe el resultado como intervalo** y ubicalo en la recta real para comprobar.']},
  {k:'mat', re:/transversal|paralelas/i, h:'paralelas',
   st:['**Ubica el tipo de par de angulos:** correspondientes, alternos internos, alternos externos o conjugados.',
-      '**Aplica la regla:** correspondientes y alternos son **iguales**; conjugados (colaterales) son **suplementarios** (suman $180^{\circ}$).',
-      '**Usa tambien** angulos opuestos por el vertice (iguales) y el par lineal (suman $180^{\circ}$).',
+      '**Aplica la regla:** correspondientes y alternos son **iguales**; conjugados (colaterales) son **suplementarios** (suman $180^{\\circ}$).',
+      '**Usa tambien** angulos opuestos por el vertice (iguales) y el par lineal (suman $180^{\\circ}$).',
       '**Plantea la ecuacion** con esa relacion y despeja el angulo pedido.']},
  {k:'mat', re:/congruentes/i, h:'Congruencia',
   st:['**Recuerda los criterios validos:** LLL, LAL, ALA, LAA y (en rectangulos) hipotenusa-cateto.',
@@ -1017,15 +1161,15 @@ var METHODS = [
       '**Revisa las unidades y que la hipotenusa sea el lado mayor.**']},
  {k:'mat', re:/distancia entre los puntos/i, h:'recta',
   st:['**Anota las coordenadas** $A(x_{1},y_{1})$ y $B(x_{2},y_{2})$.',
-      '**Aplica $d=\sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}$** (es Pitagoras en el plano).',
+      '**Aplica $d=\\sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}$** (es Pitagoras en el plano).',
       '**Eleva al cuadrado antes de sumar**: las diferencias negativas se vuelven positivas.',
       '**Simplifica el radical** si se puede.']},
  {k:'mat', re:/punto medio/i, h:'recta',
-  st:['**Usa la formula del punto medio:** $M=\left(\dfrac{x_{1}+x_{2}}{2},\dfrac{y_{1}+y_{2}}{2}\right)$.',
+  st:['**Usa la formula del punto medio:** $M=\\left(\\dfrac{x_{1}+x_{2}}{2},\\dfrac{y_{1}+y_{2}}{2}\\right)$.',
       '**Promedia cada coordenada por separado**, no las mezcles.',
       '**Comprueba** que $M$ quede entre los dos puntos.']},
  {k:'mat', re:/pendiente de la recta|ecuación de la recta/i, h:'recta',
-  st:['**Pendiente:** $m=\dfrac{y_{2}-y_{1}}{x_{2}-x_{1}}$ (cuidado con el orden y los signos).',
+  st:['**Pendiente:** $m=\\dfrac{y_{2}-y_{1}}{x_{2}-x_{1}}$ (cuidado con el orden y los signos).',
       '**Con un punto y la pendiente** usa la forma punto-pendiente $y-y_{1}=m(x-x_{1})$.',
       '**Ordena** a la forma pedida (explicita $y=mx+b$ o general $Ax+By+C=0$).',
       '**Recuerda:** rectas paralelas tienen igual $m$; perpendiculares cumplen $m_{1}m_{2}=-1$.']},
@@ -1033,27 +1177,27 @@ var METHODS = [
   st:['**Forma canonica:** $(x-h)^{2}+(y-k)^{2}=r^{2}$, con centro $(h,k)$ y radio $r$.',
       '**Ojo con los signos:** $(x+3)^{2}$ significa $h=-3$.',
       '**Si la ecuacion esta en forma general**, completa cuadrados en $x$ y en $y$: suma a ambos lados el cuadrado de la mitad del coeficiente lineal.',
-      '**Lee centro y radio** de la forma canonica ($r=\sqrt{\text{lado derecho}}$).']},
+      '**Lee centro y radio** de la forma canonica ($r=\\sqrt{\\text{lado derecho}}$).']},
  {k:'mat', re:/valor exacto/i, h:'razones',
   st:['**Ubica el angulo de referencia** y el cuadrante del angulo dado.',
       '**Determina el signo** con la regla CAST: en I todas positivas, en II solo seno y cosecante, en III tangente y cotangente, en IV coseno y secante.',
-      '**Usa la tabla de valores exactos** de $30^{\circ}$, $45^{\circ}$ y $60^{\circ}$.',
+      '**Usa la tabla de valores exactos** de $30^{\\circ}$, $45^{\\circ}$ y $60^{\\circ}$.',
       '**Combina signo y valor** para dar la respuesta.']},
  {k:'mat', re:/cateto opuesto|razones trigonom/i, h:'razones',
-  st:['**Escribe las definiciones:** $\sin=\frac{co}{h}$, $\cos=\frac{ca}{h}$, $\tan=\frac{co}{ca}$; y sus reciprocas $\csc$, $\sec$, $\cot$.',
+  st:['**Escribe las definiciones:** $\\sin=\\frac{co}{h}$, $\\cos=\\frac{ca}{h}$, $\\tan=\\frac{co}{ca}$; y sus reciprocas $\\csc$, $\\sec$, $\\cot$.',
       '**Identifica en la figura** cual lado es opuesto, cual adyacente y cual la hipotenusa respecto del angulo dado.',
       '**Si falta un lado, usa Pitagoras** antes de calcular la razon.',
       '**Simplifica y racionaliza** si el resultado queda con raiz en el denominador.']},
  {k:'mat', re:/para todo valor admisible/i, h:'Identidades',
   st:['**Convierte todo a senos y cosenos**: es la estrategia que casi siempre funciona.',
-      '**Aplica las identidades pitagoricas:** $\sin^{2}x+\cos^{2}x=1$, $1+\tan^{2}x=\sec^{2}x$, $1+\cot^{2}x=\csc^{2}x$.',
-      '**Usa las de doble angulo** si aparece $2x$: $\sin 2x=2\sin x\cos x$, $\cos 2x=\cos^{2}x-\sin^{2}x$.',
+      '**Aplica las identidades pitagoricas:** $\\sin^{2}x+\\cos^{2}x=1$, $1+\\tan^{2}x=\\sec^{2}x$, $1+\\cot^{2}x=\\csc^{2}x$.',
+      '**Usa las de doble angulo** si aparece $2x$: $\\sin 2x=2\\sin x\\cos x$, $\\cos 2x=\\cos^{2}x-\\sin^{2}x$.',
       '**Simplifica la fraccion** y compara con las opciones.']},
  {k:'mat', re:/ley de senos|\bA = |dos lados miden/i, t:'Trigonometr', h:'Ley de senos',
   st:['**Decide que ley usar:** con dos angulos y un lado (AAL/ALA) o dos lados y un angulo opuesto (LLA) va la **ley de senos**; con dos lados y el angulo comprendido (LAL) o tres lados (LLL) va la **ley de cosenos**.',
-      '**Ley de senos:** $\dfrac{a}{\sin A}=\dfrac{b}{\sin B}=\dfrac{c}{\sin C}$.',
-      '**Ley de cosenos:** $c^{2}=a^{2}+b^{2}-2ab\cos C$.',
-      '**Recuerda** que los angulos del triangulo suman $180^{\circ}$ para hallar el que falte.',
+      '**Ley de senos:** $\\dfrac{a}{\\sin A}=\\dfrac{b}{\\sin B}=\\dfrac{c}{\\sin C}$.',
+      '**Ley de cosenos:** $c^{2}=a^{2}+b^{2}-2ab\\cos C$.',
+      '**Recuerda** que los angulos del triangulo suman $180^{\\circ}$ para hallar el que falte.',
       '**Sustituye y despeja** el elemento pedido.']},
 
  /* ---- FISICA ---- */
@@ -1065,18 +1209,18 @@ var METHODS = [
       '**Recuerda:** la inercia se mide por la **masa**, no por el peso.']},
  {k:'fis', re:/hacia el este|hacia el norte|perpendiculares|forman entre sí un ángulo/i, h:'Vectores',
   st:['**Distingue distancia de desplazamiento:** la distancia suma trayectos, el desplazamiento es el vector del inicio al final.',
-      '**Descompone cada vector** en componentes $x$ e $y$ ($F_{x}=F\cos\theta$, $F_{y}=F\sin\theta$).',
+      '**Descompone cada vector** en componentes $x$ e $y$ ($F_{x}=F\\cos\\theta$, $F_{y}=F\\sin\\theta$).',
       '**Suma componentes** por separado.',
-      '**Halla la magnitud** con $R=\sqrt{R_{x}^{2}+R_{y}^{2}}$ y la direccion con $\tan\theta=R_{y}/R_{x}$.',
+      '**Halla la magnitud** con $R=\\sqrt{R_{x}^{2}+R_{y}^{2}}$ y la direccion con $\\tan\\theta=R_{y}/R_{x}$.',
       '**Si son perpendiculares**, basta Pitagoras.']},
  {k:'fis', re:/acelera|velocidad inicial|móvil/i, h:'Cinem',
   st:['**Lista los datos** ($v_{0}$, $v$, $a$, $t$, $d$) y marca cual te piden.',
-      '**Elige la ecuacion del MRUA** que use solo lo que tienes: $v=v_{0}+at$, $d=v_{0}t+\frac{1}{2}at^{2}$, $v^{2}=v_{0}^{2}+2ad$.',
+      '**Elige la ecuacion del MRUA** que use solo lo que tienes: $v=v_{0}+at$, $d=v_{0}t+\\frac{1}{2}at^{2}$, $v^{2}=v_{0}^{2}+2ad$.',
       '**Cuida los signos:** si el cuerpo frena, la aceleracion es negativa.',
       '**Sustituye con unidades del SI** y despeja.']},
  {k:'fis', re:/cae libremente|se suelta desde el reposo|proyectil/i, h:'Caida',
-  st:['**En caida libre** la aceleracion es $g\approx 9{,}8\ \mathrm{m/s^{2}}$ y no depende de la masa.',
-      '**Desde el reposo:** $v=gt$ y $h=\frac{1}{2}gt^{2}$.',
+  st:['**En caida libre** la aceleracion es $g\\approx 9{,}8\ \\mathrm{m/s^{2}}$ y no depende de la masa.',
+      '**Desde el reposo:** $v=gt$ y $h=\\frac{1}{2}gt^{2}$.',
       '**En proyectiles separa los ejes:** en $x$ el movimiento es uniforme ($x=v_{0x}t$) y en $y$ es caida libre.',
       '**En el punto mas alto** la velocidad vertical es cero, pero la horizontal se mantiene.',
       '**El tiempo es el puente** entre ambos ejes.']},
@@ -1084,22 +1228,22 @@ var METHODS = [
   st:['**Aplica la segunda ley:** $F_{neta}=ma$, siempre con la **fuerza neta** (suma vectorial), no una fuerza aislada.',
       '**Despeja lo pedido:** $a=F/m$, $m=F/a$ o $F=ma$.',
       '**Si hay rozamiento**, restalo: $F_{neta}=F_{aplicada}-\mu N$.',
-      '**Verifica unidades:** $1\ \mathrm{N}=1\ \mathrm{kg\cdot m/s^{2}}$.']},
+      '**Verifica unidades:** $1\ \\mathrm{N}=1\ \\mathrm{kg\\cdot m/s^{2}}$.']},
  {k:'fis', re:/rozamiento|fricción|coeficiente/i, h:'Rozamiento',
-  st:['**Calcula la normal:** en horizontal $N=mg$; en un plano inclinado $N=mg\cos\theta$.',
+  st:['**Calcula la normal:** en horizontal $N=mg$; en un plano inclinado $N=mg\\cos\\theta$.',
       '**Halla el rozamiento:** $f=\mu N$.',
       '**Plantea la segunda ley** en la direccion del movimiento restando el rozamiento.',
       '**Recuerda:** el rozamiento estatico maximo es mayor que el cinetico y siempre se opone al movimiento.']},
  {k:'fis', re:/plano inclinado/i, h:'inclinado',
   st:['**Gira los ejes:** pon el eje $x$ paralelo al plano.',
-      '**Descompone el peso:** componente que empuja $mg\sin\theta$ y componente perpendicular $mg\cos\theta$.',
-      '**La normal vale $N=mg\cos\theta$** (no $mg$).',
+      '**Descompone el peso:** componente que empuja $mg\\sin\\theta$ y componente perpendicular $mg\\cos\\theta$.',
+      '**La normal vale $N=mg\\cos\\theta$** (no $mg$).',
       '**Aplica $\sum F=ma$** a lo largo del plano, restando el rozamiento si lo hay.']},
  {k:'fis', re:/distancia entre dos masas|gravitacional|esferas de/i, h:'Gravitaci',
-  st:['**Usa la ley de gravitacion:** $F=G\dfrac{m_{1}m_{2}}{r^{2}}$.',
+  st:['**Usa la ley de gravitacion:** $F=G\\dfrac{m_{1}m_{2}}{r^{2}}$.',
       '**Es inversa al cuadrado:** si la distancia se duplica, la fuerza cae a la **cuarta parte**; si se triplica, a la novena.',
       '**La fuerza es proporcional a las masas:** duplicar una masa duplica la fuerza.',
-      '**Sustituye con $G=6{,}67\times10^{-11}$** en unidades del SI.']},
+      '**Sustituye con $G=6{,}67\\times10^{-11}$** en unidades del SI.']},
  {k:'fis', re:/tercera ley|acción|reacción|caballo|cohete|caminas/i, h:'Tercera ley',
   st:['**Enuncia la tercera ley:** a toda accion corresponde una reaccion igual en magnitud y opuesta en direccion.',
       '**Clave:** el par accion-reaccion actua sobre **cuerpos distintos**, por eso nunca se cancela entre si.',
@@ -1107,32 +1251,32 @@ var METHODS = [
       '**Para saber si hay movimiento**, analiza solo las fuerzas sobre **un** cuerpo.']},
  {k:'fis', re:/circunferencia de radio|circular uniforme|centrípeta/i, h:'circular',
   st:['**En el MCU la rapidez es constante pero la velocidad cambia de direccion**, por eso hay aceleracion.',
-      '**Aceleracion centripeta:** $a_{c}=\dfrac{v^{2}}{r}$, dirigida hacia el centro.',
-      '**Fuerza centripeta:** $F_{c}=m\dfrac{v^{2}}{r}$; es el papel que cumple alguna fuerza real (tension, rozamiento, gravedad).',
-      '**Periodo y frecuencia:** $v=\dfrac{2\pi r}{T}$ y $f=1/T$.']},
+      '**Aceleracion centripeta:** $a_{c}=\\dfrac{v^{2}}{r}$, dirigida hacia el centro.',
+      '**Fuerza centripeta:** $F_{c}=m\\dfrac{v^{2}}{r}$; es el papel que cumple alguna fuerza real (tension, rozamiento, gravedad).',
+      '**Periodo y frecuencia:** $v=\\dfrac{2\\pi r}{T}$ y $f=1/T$.']},
  {k:'fis', re:/momento lineal|cantidad de movimiento|impulso|choca/i, h:'Momento',
   st:['**Momento lineal:** $p=mv$ (vector, con signo segun el sentido).',
-      '**Impulso:** $J=F\Delta t=\Delta p$.',
+      '**Impulso:** $J=F\\Delta t=\\Delta p$.',
       '**En choques se conserva el momento total:** $m_{1}v_{1}+m_{2}v_{2}=(m_{1}+m_{2})v_{f}$ si quedan unidos.',
       '**Asigna signos opuestos** a cuerpos que se mueven en sentidos contrarios antes de sumar.']},
  {k:'fis', re:/trabajo de|fuerza horizontal constante|ángulo de .* con la hori/i, h:'Trabajo',
-  st:['**Trabajo:** $W=Fd\cos\theta$, donde $\theta$ es el angulo entre la fuerza y el desplazamiento.',
+  st:['**Trabajo:** $W=Fd\\cos\\theta$, donde $\\theta$ es el angulo entre la fuerza y el desplazamiento.',
       '**Si la fuerza es perpendicular al movimiento, el trabajo es cero** (por eso la normal no trabaja).',
       '**Suma el trabajo de cada fuerza** para obtener el trabajo neto (el rozamiento aporta trabajo negativo).',
-      '**Unidad:** el julio, $1\ \mathrm{J}=1\ \mathrm{N\cdot m}$.']},
+      '**Unidad:** el julio, $1\ \\mathrm{J}=1\ \\mathrm{N\\cdot m}$.']},
  {k:'fis', re:/potencia|vatio/i, h:'Potencia',
-  st:['**Potencia es trabajo por unidad de tiempo:** $P=\dfrac{W}{t}$, tambien $P=Fv$.',
-      '**Unidad:** el vatio, $1\ \mathrm{W}=1\ \mathrm{J/s}$.',
+  st:['**Potencia es trabajo por unidad de tiempo:** $P=\\dfrac{W}{t}$, tambien $P=Fv$.',
+      '**Unidad:** el vatio, $1\ \\mathrm{W}=1\ \\mathrm{J/s}$.',
       '**Convierte el tiempo a segundos** antes de dividir.']},
  {k:'fis', re:/energía cinética|rapidez de un cuerpo se multiplica/i, h:'cinética',
-  st:['**Energia cinetica:** $E_{c}=\frac{1}{2}mv^{2}$.',
+  st:['**Energia cinetica:** $E_{c}=\\frac{1}{2}mv^{2}$.',
       '**Depende del cuadrado de la rapidez:** si $v$ se duplica, $E_{c}$ se **cuadruplica**; si se triplica, se multiplica por nueve.',
-      '**Teorema trabajo-energia:** el trabajo neto es igual al cambio de energia cinetica, $W_{neto}=\Delta E_{c}$.']},
+      '**Teorema trabajo-energia:** el trabajo neto es igual al cambio de energia cinetica, $W_{neto}=\\Delta E_{c}$.']},
  {k:'fis', re:/potencial gravitacional|desde el reposo a .* de altura|péndulo|conserva/i, h:'Conservaci',
   st:['**Energia potencial gravitatoria:** $E_{p}=mgh$, medida desde el nivel de referencia que elijas.',
       '**Sin rozamiento la energia mecanica se conserva:** $E_{c1}+E_{p1}=E_{c2}+E_{p2}$.',
       '**En el punto mas alto** toda la energia es potencial; **en el mas bajo**, cinetica.',
-      '**De ahi sale $v=\sqrt{2gh}$** para una caida desde el reposo.',
+      '**De ahi sale $v=\\sqrt{2gh}$** para una caida desde el reposo.',
       '**Con rozamiento**, la diferencia de energia se convirtio en calor.']},
  {k:'fis', re:/renovable|fuente de energ/i, h:'Fuentes',
   st:['**Renovables:** solar, eolica, hidraulica, geotermica, biomasa y mareomotriz (se reponen naturalmente).',
@@ -1141,10 +1285,10 @@ var METHODS = [
 
  /* ---- QUIMICA ---- */
  {k:'qui', re:/transformar/i, h:'unidades',
-  st:['**Escribe el factor de conversion** como una fraccion que valga 1 (por ejemplo $\frac{1000\ \mathrm{g}}{1\ \mathrm{kg}}$).',
+  st:['**Escribe el factor de conversion** como una fraccion que valga 1 (por ejemplo $\\frac{1000\ \\mathrm{g}}{1\ \\mathrm{kg}}$).',
       '**Coloca la unidad que quieres eliminar abajo** para que se cancele.',
       '**Multiplica y cancela unidades** hasta que quede la pedida.',
-      '**En unidades cubicas eleva el factor al cubo:** $1\ \mathrm{m^{3}}=10^{6}\ \mathrm{cm^{3}}$.']},
+      '**En unidades cubicas eleva el factor al cubo:** $1\ \\mathrm{m^{3}}=10^{6}\ \\mathrm{cm^{3}}$.']},
  {k:'qui', re:/constituye|cambio químico|mezcla|sustancia pura/i, h:'Clasificaci',
   st:['**Distingue sustancia pura de mezcla:** la pura tiene composicion fija (elemento o compuesto).',
       '**Mezcla homogenea (disolucion)** se ve uniforme; **heterogenea** deja distinguir sus fases.',
@@ -1157,7 +1301,7 @@ var METHODS = [
       '**Verifica:** los isotopos tienen igual $Z$ y distinto $A$.']},
  {k:'qui', re:/configuración electrónica|electrones de valencia/i, h:'electrónica',
   st:['**Cuenta los electrones** (iguales a $Z$ si el atomo es neutro).',
-      '**Sigue el orden de llenado (Aufbau):** $1s\,2s\,2p\,3s\,3p\,4s\,3d\,4p\dots$',
+      '**Sigue el orden de llenado (Aufbau):** $1s\\,2s\\,2p\\,3s\\,3p\\,4s\\,3d\\,4p\dots$',
       '**Respeta la capacidad:** $s$ hasta 2, $p$ hasta 6, $d$ hasta 10, $f$ hasta 14.',
       '**Los electrones de valencia** son los del ultimo nivel $n$ (grupo A = numero de valencia).',
       '**Comprueba** que la suma de superindices sea el total de electrones.']},
@@ -1178,8 +1322,8 @@ var METHODS = [
       '**Nombra segun el sistema:** prefijos griegos (mono-, di-, tri-) o terminaciones -oso/-ico.',
       '**Verifica que la carga total sea cero.**']},
  {k:'qui', re:/diferencia de electronegatividad|enlace/i, h:'electronegatividad',
-  st:['**Calcula $\Delta$EN** restando las electronegatividades (mayor menos menor).',
-      '**Clasifica:** $\Delta<0{,}4$ covalente no polar; entre $0{,}4$ y $1{,}7$ covalente polar; $\Delta>1{,}7$ ionico.',
+  st:['**Calcula $\\Delta$EN** restando las electronegatividades (mayor menos menor).',
+      '**Clasifica:** $\\Delta<0{,}4$ covalente no polar; entre $0{,}4$ y $1{,}7$ covalente polar; $\\Delta>1{,}7$ ionico.',
       '**Comprueba con el tipo de elementos:** metal + no metal suele ser ionico; no metal + no metal, covalente.']},
  {k:'qui', re:/repulsión de pares|geometría/i, h:'TRPEV',
   st:['**Dibuja la estructura de Lewis** y cuenta los pares alrededor del atomo central.',
@@ -1193,25 +1337,25 @@ var METHODS = [
  {k:'qui', re:/masa molar/i, h:'mol',
   st:['**Escribe la formula** y cuenta los atomos de cada elemento.',
       '**Multiplica cada masa atomica por su subindice** y suma todo.',
-      '**El resultado se expresa en $\mathrm{g/mol}$.**',
+      '**El resultado se expresa en $\\mathrm{g/mol}$.**',
       '**Verifica** que no hayas olvidado subindices dentro de parentesis.']},
  {k:'qui', re:/La masa de \$/i, h:'mol',
-  st:['**Relacion clave:** $n=\dfrac{m}{M}$, es decir $m=n\cdot M$.',
+  st:['**Relacion clave:** $n=\\dfrac{m}{M}$, es decir $m=n\\cdot M$.',
       '**Multiplica los moles por la masa molar** para obtener gramos.',
-      '**Comprueba unidades:** $\mathrm{mol}\times\mathrm{g/mol}=\mathrm{g}$.']},
+      '**Comprueba unidades:** $\\mathrm{mol}\\times\\mathrm{g/mol}=\\mathrm{g}$.']},
  {k:'qui', re:/ecuación balanceada|balance/i, h:'estequiom',
   st:['**Verifica el balanceo:** debe haber los mismos atomos de cada elemento a cada lado.',
       '**Lee los coeficientes como moles:** son la receta de la reaccion.',
       '**Arma la proporcion** entre la sustancia dada y la pedida.',
-      '**Recorre la autopista:** gramos $\to$ moles $\to$ (razon molar) $\to$ moles $\to$ gramos.']},
+      '**Recorre la autopista:** gramos $\\to$ moles $\\to$ (razon molar) $\\to$ moles $\\to$ gramos.']},
  {k:'qui', re:/fórmula empírica/i, h:'empírica',
   st:['**Calcula la masa de la formula empirica.**',
       '**Divide la masa molar entre esa masa:** obtienes un numero entero $n$.',
       '**Multiplica todos los subindices por $n$** para obtener la formula molecular.']},
  {k:'qui', re:/mol de cualquier sustancia|Avogadro|reactivo limitante|rendimiento/i, h:'mol',
-  st:['**Un mol contiene $6{,}022\times10^{23}$ particulas** (numero de Avogadro) y ocupa $22{,}4\ \mathrm{L}$ si es gas en condiciones normales.',
+  st:['**Un mol contiene $6{,}022\\times10^{23}$ particulas** (numero de Avogadro) y ocupa $22{,}4\ \\mathrm{L}$ si es gas en condiciones normales.',
       '**Reactivo limitante:** convierte cada reactivo a moles y divide entre su coeficiente; el menor cociente manda.',
-      '**Rendimiento:** $\%=\dfrac{\text{real}}{\text{teorico}}\times100$.']},
+      '**Rendimiento:** $\%=\\dfrac{\\text{real}}{\\text{teorico}}\\times100$.']},
 
  /* ---- LENGUAJE ---- */
  {k:'len', re:/función del lenguaje|elementos de la comunicaci/i, h:'comunicaci',
@@ -1224,9 +1368,9 @@ var METHODS = [
       '**Compara con el catalogo** y elige la que describe exactamente la maniobra.']},
  {k:'len', re:/silogismo|premisa|se concluye|todos los|válid/i, h:'lógic',
   st:['**Identifica premisas y conclusion.**',
-      '**Traduce a simbolos** si hay condicionales: $p\to q$.',
-      '**Aplica las reglas validas:** modus ponens ($p\to q$ y $p$, luego $q$) y modus tollens ($p\to q$ y $\neg q$, luego $\neg p$).',
-      '**Recuerda la equivalencia** con la contrarreciproca $\neg q\to\neg p$; la reciproca y la inversa **no** equivalen.',
+      '**Traduce a simbolos** si hay condicionales: $p\\to q$.',
+      '**Aplica las reglas validas:** modus ponens ($p\\to q$ y $p$, luego $q$) y modus tollens ($p\\to q$ y $\neg q$, luego $\neg p$).',
+      '**Recuerda la equivalencia** con la contrarreciproca $\neg q\\to\neg p$; la reciproca y la inversa **no** equivalen.',
       '**Descarta** afirmar el consecuente y negar el antecedente: son invalidos.']},
  {k:'len', re:/idea principal|tema del texto|título|texto anterior|según el texto|se infiere|se deduce/i, h:'lectura',
   st:['**Lee primero la pregunta** y luego el texto buscando esa información.',
@@ -1274,7 +1418,7 @@ var METHODS = [
   st:['**Reconoce que es composicion porcentual:** se compara la masa de un elemento con la masa total del compuesto.',
       '**Calcula la masa del elemento dentro de una mol de compuesto:** masa atomica multiplicada por el numero de atomos de ese elemento en la formula.',
       '**Toma la masa molar $M$ del compuesto** (viene dada en el enunciado).',
-      '**Aplica la formula:** $\%\,\text{masa} = \dfrac{\text{masa del elemento}}{M} \times 100$.',
+      '**Aplica la formula:** $\%\\,\\text{masa} = \\dfrac{\\text{masa del elemento}}{M} \\times 100$.',
       '**Redondea igual que las opciones** y verifica que la suma de todos los porcentajes del compuesto sea $100\%$.']},
  {k:'qui', re:/electronegativ|energía de ionización|radio atómico|carácter metálico/i, h:'periodicas',
   st:['**Reconoce que se pregunta por una propiedad periodica** (electronegatividad, radio, energia de ionizacion o caracter metalico).',
@@ -1289,9 +1433,9 @@ var METHODS = [
       '**Para tipos de cambio:** es fisico si no cambia la identidad de las sustancias (cambios de estado, disolucion) y es quimico si se forman sustancias nuevas (combustion, oxidacion, precipitacion).',
       '**Justifica con la evidencia del enunciado** antes de elegir la opción.']},
  {k:'fis', re:/trabajo realizado por (su )?peso|trabajo.*perpendicular|rapidez constante.*trabajo/i, h:'trabajo',
-  st:['**Recuerda la definicion de trabajo:** $W = F\,d\,\cos\theta$, donde $\theta$ es el angulo entre la fuerza y el desplazamiento.',
+  st:['**Recuerda la definicion de trabajo:** $W = F\\,d\\,\\cos\\theta$, donde $\\theta$ es el angulo entre la fuerza y el desplazamiento.',
       '**Dibuja o imagina el vector fuerza y el vector desplazamiento** del caso descrito.',
-      '**Mira el angulo entre ambos:** si son perpendiculares, $\cos 90^{\circ} = 0$ y el trabajo es nulo aunque la fuerza exista.',
+      '**Mira el angulo entre ambos:** si son perpendiculares, $\\cos 90^{\\circ} = 0$ y el trabajo es nulo aunque la fuerza exista.',
       '**Interpreta el signo:** trabajo positivo si la fuerza favorece el movimiento y negativo si se opone (como el rozamiento).',
       '**Relaciona con la energia:** trabajo total nulo significa energia cinetica constante, es decir, rapidez constante.']},
  {k:'len', re:/ es a .* como /i, h:'analog',
@@ -1327,14 +1471,14 @@ var METHODS = [
       '**Cuidado con los signos:** si aparece $(x+3)^{2}$ la coordenada del centro es $-3$; el radio siempre es positivo.']},
  {k:'mat', t:'Geometr', re:/en la figura|de la figura/i, h:'triangul',
   st:['**Observa la figura y anota todos los datos marcados:** lados iguales, angulos conocidos, paralelas y rectas que se cortan.',
-      '**Recuerda los teoremas basicos:** los angulos interiores de un triangulo suman $180^{\circ}$, los opuestos por el vertice son iguales y los suplementarios suman $180^{\circ}$.',
+      '**Recuerda los teoremas basicos:** los angulos interiores de un triangulo suman $180^{\\circ}$, los opuestos por el vertice son iguales y los suplementarios suman $180^{\\circ}$.',
       '**Busca triangulos congruentes o semejantes** (LAL, ALA, LLL para congruencia; AA para semejanza) y traslada los angulos o lados correspondientes.',
       '**Escribe la ecuacion que relaciona el dato pedido** con los valores conocidos y despeja.',
-      '**Verifica la coherencia geometrica:** ningun angulo negativo ni mayor que $180^{\circ}$, y el resultado debe encajar con la figura.']},
+      '**Verifica la coherencia geometrica:** ningun angulo negativo ni mayor que $180^{\\circ}$, y el resultado debe encajar con la figura.']},
  {k:'qui', re:/número de moléculas|número de átomos|Avogadro/i, h:'mol',
   st:['**Identifica el dato de partida** (gramos, moles o numero de particulas) y lo que se pide.',
       '**Convierte gramos a moles** con $n = m/M$, donde $M$ es la masa molar dada.',
-      '**Pasa de moles a particulas** multiplicando por el numero de Avogadro: $N = n \times 6.022 \times 10^{23}$.',
+      '**Pasa de moles a particulas** multiplicando por el numero de Avogadro: $N = n \\times 6.022 \\times 10^{23}$.',
       '**Opera con notacion cientifica:** multiplica las mantisas y suma los exponentes.',
       '**Compara el orden de magnitud con las opciones**: el error tipico es fallar en una potencia de diez.']},
  {k:'qui', re:/número de moles|cuántos moles|masa molar/i, h:'mol',
@@ -1476,6 +1620,12 @@ function texStep(t){
 function explainHtml(ix){
   var a = S.attempt, Q = a.qs[ix], src = Q.src, subj = Q.subj || (a.course==='mix'? Q.subj : a.course);
   if(subj==='mix') subj = 'mat';
+  
+  if(src.e){
+    var expBody = inlineMd(src.e);
+    var linkBtn = src.ch ? '<div class="solvelink" style="margin-top:14px;"><button class="btn primary" data-act="go-theory-chapter" data-ch="'+src.ch+'">📖 Estudiar teoría relacionada en la Guía</button></div>' : '';
+    return '<div class="solvebox" style="border-left:4px solid #0078d4; background:#f4f8fc;"><div class="solvehead" style="color:#004578; font-weight:700; font-size:15px;">💡 Explicación pedagógica paso a paso</div><div class="solvebody" style="font-size:14px; line-height:1.6; color:#242424; margin-top:8px;">'+expBody+'</div>'+linkBtn+'</div>';
+  }
   var m = methodFor(src, subj);
   var steps = (m? m.st.slice() : []);
   var body = '<div class="solvebox"><div class="solvehead">⚙ Cómo se resuelve, paso a paso</div><ol class="solvesteps">';
@@ -1630,8 +1780,9 @@ function normWords(s){
     .split(/[^a-z0-9]+/).filter(function(w){ return w.length>3 && ['para','como','entre','sobre','desde','cada','todo','todos'].indexOf(w)<0; });
 }
 function chapterFor(k, topic){
-  var chs=THEORY.filter(function(c){ return c.s===k; });
-  if(!chs.length) return THEORY[0];
+  var book = theoryBook();
+  var chs=book.filter(function(c){ return c.s===k; });
+  if(!chs.length) return book[0];
   var tw=normWords(topic), best=chs[0], bestScore=-1;
   chs.forEach(function(c){
     var title=normWords(c.t), cw=normWords(c.t+' '+c.body.slice(0,900)), sc=0;
@@ -1837,7 +1988,84 @@ function viewHistory(){
 }
 
 /* ---------- VISTAS ---------- */
+function viewGuiaHome(){
+  var book = theoryBook();
+  var thcards = guiaLearnOrder().map(function(k){
+    var chs = book.filter(function(ch){ return ch.s===k; });
+    if(!chs.length) return '';
+    var g = GUIDE[k];
+    var inner = chs.map(function(ch){
+      var st = chapterProgress(ch.id);
+      return '<div class="th-card" data-act="chapter" data-id="'+ch.id+'"><div class="ic">'+ch.ic+'</div>'+
+        '<div><b>'+escH(ch.t)+'</b><span>'+((g.secs[ch.id]||{}).code||'')+' \u00b7 '+st+'</span></div></div>';
+    }).join('');
+    return '<div class="thgroup"><div class="thgh"><span class="thdot" style="background:'+g.color+'"></span>'+
+      '<b>'+g.code+' '+escH(g.name)+'</b><span class="thgn">'+chs.length+' cap\u00edtulo'+(chs.length>1?'s':'')+'</span>'+
+      '</div><div class="th-list">'+inner+'</div></div>';
+  }).join('');
+  var ws = GUIA_WORKSHOPS.map(function(block){
+    var g = GUIDE[block.k];
+    var cards = block.items.map(function(it){
+      return '<div class="gcard guia-soon" data-act="guiaplaceholder" data-id="'+it.id+'">'+
+        '<div class="gtop"><span class="gic">\u23F3</span><div><div class="gcode">'+it.code+'</div>'+
+        '<div class="gt">'+escH(it.t)+'</div></div></div>'+
+        '<p class="th-sub" style="margin:8px 0 0">Taller / simulador por tema \u2014 <b>pr\u00f3ximamente</b>. La teor\u00eda ya est\u00e1 en Aprender.</p>'+
+        '<div class="gmeta"><span class="soon-pill">Scaffold listo</span></div></div>';
+    }).join('');
+    return '<div class="subjhead"><span class="bar" style="background:'+g.color+'"></span><h2>'+block.code+'. '+escH(block.title)+'</h2>'+
+      '<span class="cnt">Estructura vac\u00eda lista para cablear bancos</span></div><div class="gcards">'+cards+'</div>';
+  }).join('');
+  return navbar('home')+
+    '<div class="homehero guia-hero"><h2>Gu\u00eda oficial EPN 2026-B</h2>'+
+    '<p>Temario exacto del examen de admisi\u00f3n \u00b7 Matem\u00e1tica, F\u00edsica, Qu\u00edmica y Lenguaje \u00b7 \u00c1rea paralela (no altera el aula Barreno)</p>'+
+    '<div class="stats"><div><b>'+book.length+'</b><span>CAP\u00cdTULOS APRENDER</span></div>'+
+    '<div><b>4</b><span>\u00c1REAS OFICIALES</span></div>'+
+    '<div><b>'+GUIA_WORKSHOPS.reduce(function(s,b){return s+b.items.length;},0)+'</b><span>TALLERES (PLACEHOLDER)</span></div>'+
+    '<div><b>210</b><span>MINUTOS EXAMEN REAL</span></div></div></div>'+
+    '<div style="padding:0 26px 40px">'+toastHtml()+
+        '<div class="guia-sim-hero-card" style="background: linear-gradient(135deg, #0e2a47 0%, #005a9e 100%); color:#fff; padding:22px; border-radius:12px; margin:20px 0 26px; box-shadow:0 4px 14px rgba(0,0,0,0.12);">'+
+    '<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">'+
+    '<div><span style="background:#ffb900; color:#000; font-weight:800; padding:3px 10px; border-radius:20px; font-size:12px; text-transform:uppercase;">⚡ Examen Oficial Resuelto</span>'+
+    '<h3 style="font-size:22px; margin:8px 0 4px; color:#fff;">Simulador Completo EPN — 69 Preguntas Oficiales</h3>'+
+    '<p style="margin:0; opacity:0.9; font-size:14px; max-width:650px;">Matemáticas (Q02-Q19), Lenguaje (Q20-Q32), Física (Q33-Q50) y Química (Q51-Q70). Incluye explicaciones paso a paso desde cero e hipervínculos directos a la teoría del Aula Guía.</p></div>'+
+    '<button class="btn primary xl" data-act="start-guia-69" style="background:#ffb900; color:#000; font-weight:bold; font-size:16px; padding:12px 24px; border:none; border-radius:8px; cursor:pointer;">Iniciar Examen Completo (69P)</button>'+
+    '</div></div>'+
+'<div class="guia-banner"><b>Modo gu\u00eda activo.</b> Aqu\u00ed estudias el temario 1:1 de la gu\u00eda PDF. Los talleres por tema se cablear\u00e1n despu\u00e9s; por ahora usa <b>Aprender</b>.</div>'+
+    '<div style="margin:18px 0 10px;display:flex;gap:10px;flex-wrap:wrap">'+
+    '<button class="btn" data-act="learn">Abrir Aprender ('+book.length+' cap\u00edtulos)</button>'+
+    '<button class="btn sec" data-act="guiawork">Ver talleres (pr\u00f3ximamente)</button>'+
+    '<button class="btn ghost" data-act="exitguia">Volver al aula</button></div>'+
+    '<h2 style="font-size:20px;margin:28px 0 0">Aprender \u2014 teor\u00eda 1:1 con la gu\u00eda</h2>'+
+    '<p class="th-sub">Cada tarjeta es una secci\u00f3n oficial (4.1.x \u2026 4.4.x), con la teor\u00eda justa y necesaria. Huecos de clases Barreno ya completados en el mismo estilo pedag\u00f3gico.</p>'+
+    '<div class="thgroups">'+thcards+'</div>'+
+    '<h2 style="font-size:20px;margin:34px 0 0">Talleres por tema (scaffold)</h2>'+
+    '<p class="th-sub">Placeholders listos para futuros bancos de preguntas. No implementados a\u00fan.</p>'+
+    ws+
+    '</div>'+sitefooter();
+}
+function viewGuiaWorkshops(){
+  var ws = GUIA_WORKSHOPS.map(function(block){
+    var g = GUIDE[block.k];
+    var cards = block.items.map(function(it){
+      return '<div class="gcard guia-soon" data-act="guiaplaceholder" data-id="'+it.id+'">'+
+        '<div class="gtop"><span class="gic">\u23F3</span><div><div class="gcode">'+it.code+'</div>'+
+        '<div class="gt">'+escH(it.t)+'</div></div></div>'+
+        '<ul><li>Banco de preguntas: pendiente</li><li>Simulador cronometrado: pendiente</li><li>Teor\u00eda: disponible en Aprender</li></ul>'+
+        '<div class="gmeta"><span class="soon-pill">Pr\u00f3ximamente</span></div></div>';
+    }).join('');
+    return '<div class="subjhead"><span class="bar" style="background:'+g.color+'"></span><h2>'+escH(block.title)+'</h2></div>'+
+      '<div class="gcards">'+cards+'</div>';
+  }).join('');
+  return navbar('guiawork')+'<div class="wrap">'+drawer('guiawork')+'<div class="main reading">'+
+    pagehead('Talleres de la gu\u00eda (scaffold)','Gu\u00eda oficial 2026-B \u203a Talleres','mix')+toastHtml()+
+    '<p class="th-sub">Estructura de cursos vac\u00edos alineada al temario oficial. Cuando Bryan lo pida, aqu\u00ed se cablear\u00e1n los bancos anti-overfitting por tema.</p>'+
+    ws+
+    '<div style="margin:16px 0;display:flex;gap:10px;flex-wrap:wrap"><button class="btn" data-act="learn">Ir a Aprender</button>'+
+    '<button class="btn ghost" data-act="home">Inicio gu\u00eda</button></div>'+
+    '</div></div>'+drawerBtn()+sitefooter();
+}
 function viewHome(){
+  if(isGuia()) return viewGuiaHome();
   var total = SUBJ.reduce(function(s,k){ return s+BANK[k].length; },0);
   var st = statsFor('all');
   var cards = CKEYS.map(function(k){
@@ -1856,7 +2084,7 @@ function viewHome(){
       (hs.length? '<button class="btn ghost" data-act="histtabgo" data-t="'+k+'">Historial ('+hs.length+')</button>':'')+
       '</div></div></div>';
   }).join('');
-  var thcards = ['trig','mat','fis','qui','len','gen'].map(function(k){
+  var thcards = ['trig','ineq','mat','fis','qui','len','gen'].map(function(k){
     var chs = THEORY.filter(function(ch){ return ch.s===k; });
     if(!chs.length) return '';
     var g = GUIDE[k];
@@ -1879,7 +2107,15 @@ function viewHome(){
     '<div><b>'+st.attempts+'</b><span>INTENTOS RENDIDOS</span></div>'+
     '<div><b>'+(st.attempts? st.avg+'%':'\u2014')+'</b><span>PROMEDIO</span></div>'+
     '<div><b>'+levelName(cfg.level)+'</b><span>DIFICULTAD ACTUAL</span></div></div></div>'+
-    '<div style="padding:0 26px 40px">'+toastHtml()+'<div class="cards">'+cards+'</div>'+
+    '<div style="padding:0 26px 40px">'+toastHtml()+
+    '<div class="guia-cta card" style="display:flex;gap:18px;align-items:flex-start;padding:18px 20px;margin-bottom:22px;border:2px solid #0e2a47">'+
+      '<div class="cimg" style="background:#0e2a47;min-width:64px;height:64px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:28px;color:#fff">G</div>'+
+      '<div class="cbody" style="flex:1"><span class="badge ok">Nueva \u00e1rea</span>'+
+      '<h3 style="margin:6px 0">Gu\u00eda oficial EPN 2026-B</h3>'+
+      '<p>Espacio paralelo alineado al PDF de la gu\u00eda: teor\u00eda Aprender 1:1 por materia/tema, y scaffold de talleres futuros. <b>No modifica</b> los cuestionarios actuales (trig, ineq, mix, etc.).</p>'+
+      '<div class="cbtns"><button class="btn" data-act="enterguia">Entrar a la gu\u00eda oficial</button>'+
+      '<button class="btn sec" data-act="enterguialearn">Ir directo a Aprender</button></div></div></div>'+
+    '<div class="cards">'+cards+'</div>'+
     '<h2 style="font-size:20px;margin:30px 0 0">Aprende: teor\u00eda completa de la gu\u00eda</h2>'+
     '<p class="th-sub">Las 4 \u00e1reas del examen y sus 15 cap\u00edtulos, con la teor\u00eda suficiente para resolver cualquier pregunta del banco.</p>'+
     '<div class="thgroups">'+thcards+'</div>'+
@@ -1897,6 +2133,13 @@ var GUIDE = {
     bib:['Guía de Estudio EPN 2026-B — Módulo de Trigonometría'],
     secs:{
       t1:{ code:'T.1', items:['Identidades pitagóricas fundamentales','Identidades recíprocas y de cociente','Identidades de ángulo doble','Comprobación numérica rápida (Truco de examen)'] }
+    } },
+  ineq:{ code:'★', name:'Taller Especializado: Inecuaciones y Valor Absoluto', color:'#0f766e',
+    purpose:'Dominar relaciones de orden, intervalos, inecuaciones lineales/polinómicas y desigualdades con valor absoluto (Clases 16–17).',
+    time:'Taller intensivo de práctica y lectura',
+    bib:['Guía de Estudio EPN 2026-B — Módulo 4.1.2 (Inecuaciones y valor absoluto)','Apuntes Barreno: Clases 16 y 17'],
+    secs:{
+      i1:{ code:'I.1', items:['Relaciones de orden e intervalos','Inecuaciones lineales y cadenas (invertir con negativo)','Inecuaciones polinómicas por signos','Valor absoluto: |x|<a, |x|>a, casos extremos y propiedades'] }
     } },
   mat:{ code:'4.1', name:'Matemática', color:'#f7a1c4',
     purpose:'Evaluar la capacidad de razonamiento algebraico, geometrico y trigonometrico.',
@@ -1954,9 +2197,10 @@ function subjectTopicSummary(k){
   return dom+'/'+pri.length+' temas dominados';
 }
 function viewLearn(){
-  var order = ['trig','mat','fis','qui','len','gen'];
+  var book = theoryBook();
+  var order = isGuia() ? guiaLearnOrder() : ['trig','ineq','mat','fis','qui','len','gen'];
   var html = order.map(function(k){
-    var g = GUIDE[k], chs = THEORY.filter(function(c){ return c.s===k; });
+    var g = GUIDE[k], chs = book.filter(function(c){ return c.s===k; });
     if(!chs.length) return '';
     var cards = chs.map(function(ch){
       var sec = (g.secs && g.secs[ch.id]) || {code:'', items:[]};
@@ -1969,29 +2213,38 @@ function viewLearn(){
         '<div class="gmeta"><span>\u23F1 '+mins+' min de lectura</span><span>'+chapterProgress(ch.id)+'</span></div>'+
         '</div>';
     }).join('');
-    var nq = (k==='gen')? 0 : BANK[k].length;
+    var nq = (k==='gen' || isGuia())? 0 : BANK[k].length;
     return '<div class="subjhead"><span class="bar" style="background:'+g.color+'"></span><h2>'+g.code+'. '+g.name+'</h2>'+
-      '<span class="cnt">'+(nq? nq+' preguntas en el banco \u00b7 '+subjectTopicSummary(k) : 'Guia oficial')+'</span></div>'+
+      '<span class="cnt">'+(nq? nq+' preguntas en el banco \u00b7 '+subjectTopicSummary(k) : (isGuia()? 'Temario oficial 1:1' : 'Guia oficial'))+'</span></div>'+
       '<p class="th-sub">'+g.purpose+' <b>'+g.time+'</b></p>'+
       '<div class="gcards">'+cards+'</div>'+
       '<details class="planbox"><summary>Bibliografia sugerida por la EPN para '+g.name+'</summary>'+
       '<ol class="planlist">'+g.bib.map(function(b){ return '<li>'+escH(b)+'</li>'; }).join('')+'</ol></details>'+
       (nq? '<div style="margin:6px 0 4px"><button class="btn sec" data-act="quickstart" data-c="'+k+'">Practicar '+g.name+' ahora</button></div>' : '');
   }).join('');
+  var headTitle = isGuia()
+    ? 'Aprender \u2014 teor\u00eda 1:1 gu\u00eda oficial 2026-B'
+    : 'Aprende \u2014 teor\u00eda completa de la guia 2026-B';
+  var headCrumb = isGuia() ? 'Gu\u00eda oficial \u203a Aprender' : '01-SEA-EPN_2026-2 \u203a Aprende';
+  var intro = isGuia()
+    ? '<p class="th-sub">Temario <b>exacto</b> de la gu\u00eda PDF (secciones 4.1\u20134.4): Mate, F\u00edsica, Qu\u00edmica y Lenguaje. Contenido sintetizado de clases Barreno donde aplica, y huecos completados en el mismo estilo pedag\u00f3gico.</p>'
+    : '<p class="th-sub">Aqui esta desarrollado <b>todo el temario oficial</b> del examen de admision (areas 4.1 a 4.4 de la guia): conceptos desde cero, formulas, analogias, ejemplos resueltos, errores frecuentes y trucos de examen. Cada tarjeta corresponde a una seccion exacta de la guia.</p>';
   return navbar('learn')+'<div class="wrap">'+drawer('learn')+'<div class="main reading">'+
-    pagehead('Aprende \u2014 teoría completa de la guia 2026-B','01-SEA-EPN_2026-2 \u203a Aprende','mix')+toastHtml()+
-    '<p class="th-sub">Aqui esta desarrollado <b>todo el temario oficial</b> del examen de admision (areas 4.1 a 4.4 de la guia): conceptos desde cero, formulas, analogias, ejemplos resueltos, errores frecuentes y trucos de examen. Cada tarjeta corresponde a una seccion exacta de la guia.</p>'+
+    pagehead(headTitle, headCrumb,'mix')+toastHtml()+
+    intro+
     html+'</div></div>'+drawerBtn()+sitefooter();
 }
 function viewChapter(){
-  var ids = THEORY.map(function(c){return c.id;});
+  var book = theoryBook();
+  var ids = book.map(function(c){return c.id;});
   var ix = ids.indexOf(S.chapter);
-  var ch = THEORY[ix]; if(!ch) return viewLearn();
-  var prev = THEORY[ix-1], next = THEORY[ix+1];
+  var ch = book[ix]; if(!ch) return viewLearn();
+  var prev = book[ix-1], next = book[ix+1];
   var words = ch.body.split(/\s+/).length;
+  var crumbBase = isGuia()? 'Gu\u00eda oficial \u203a Aprender' : '01-SEA-EPN_2026-2 \u203a Aprende';
   return navbar('learn')+'<div class="wrap">'+drawer('learn')+'<div class="main reading">'+
-    pagehead(ch.ic+' '+escH(ch.t),'01-SEA-EPN_2026-2 \u203a Aprende \u203a '+escH(ch.t),'mix')+
-    '<div class="readbar"><span>Cap\u00edtulo '+(ix+1)+' de '+THEORY.length+'</span><span>\u00b7</span><span>\u2248'+Math.max(2,Math.round(words/180))+' min de lectura</span>'+
+    pagehead(ch.ic+' '+escH(ch.t), crumbBase+' \u203a '+escH(ch.t),'mix')+
+    '<div class="readbar"><span>Cap\u00edtulo '+(ix+1)+' de '+book.length+'</span><span>\u00b7</span><span>\u2248'+Math.max(2,Math.round(words/180))+' min de lectura</span>'+
     '<span>\u00b7</span><a data-act="learn">\u2039 Volver al \u00edndice</a></div>'+
     chapterToc(ch.body)+
     '<div class="theory">'+md(ch.body)+'</div>'+
@@ -2000,14 +2253,15 @@ function viewChapter(){
       (next? '<button class="btn" data-act="chapter" data-id="'+next.id+'">'+escH(next.t)+' \u203a</button>':'<span></span>')+
     '</div>'+
     '<div style="margin:8px 0 16px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn sec" data-act="learn">Volver a Aprende</button>'+
-    (ch.s!=='gen'? '<button class="btn" data-act="quickstart" data-c="'+ch.s+'">Practicar '+COURSES[ch.s].short+' ahora</button>':'')+'</div>'+
+    (!isGuia() && ch.s!=='gen'? '<button class="btn" data-act="quickstart" data-c="'+ch.s+'">Practicar '+COURSES[ch.s].short+' ahora</button>':'')+
+    (isGuia()? '<button class="btn ghost" data-act="home">Inicio gu\u00eda</button>':'')+'</div>'+
     '</div></div>'+drawerBtn()+sitefooter();
 }
 
 function viewCourse(){
   var c = COURSES[S.course], k = S.course;
-  var pool = k==='mix'? SUBJ.reduce(function(s,x){ return s+levelPool(x).length; },0) : levelPool(k).length;
-  var fresh = k==='mix'? SUBJ.reduce(function(s,x){ return s+levelPool(x).filter(function(q){return !SEENSET[x][q.__i];}).length; },0)
+  var pool = k==='mix'? EXAM.reduce(function(s,x){ return s+levelPool(x).length; },0) : levelPool(k).length;
+  var fresh = k==='mix'? EXAM.reduce(function(s,x){ return s+levelPool(x).filter(function(q){return !SEENSET[x][q.__i];}).length; },0)
                        : levelPool(k).filter(function(q){ return !SEENSET[k][q.__i]; }).length;
   var lv = LEVELS.map(function(l){ return '<button class="pill '+l.c+(cfg.level===l.k?' on':'')+'" data-act="setlevel" data-l="'+l.k+'">'+l.n+'</button>'; }).join('');
   var hs = liveHist().filter(function(r){ return r.course===k; }).sort(function(a,b){return b.ts-a.ts;});
@@ -2358,6 +2612,7 @@ function render(){
   if(S.view==='home') html = viewHome();
   else if(S.view==='learn') html = viewLearn();
   else if(S.view==='chapter') html = viewChapter();
+  else if(S.view==='guiawork') html = viewGuiaWorkshops();
   else if(S.view==='stats') html = viewStats();
   else if(S.view==='history') html = viewHistory();
   else if(S.view==='course') html = viewCourse();
@@ -2380,6 +2635,7 @@ function render(){
   }
   el('modalroot').innerHTML = modalHtml;
   if(S.scrollTop!==false) window.scrollTo(0,0);
+  syncHash();
 }
 
 /* ---------- TIMER Y CICLO DEL INTENTO ---------- */
@@ -2422,6 +2678,56 @@ function finishAttempt(auto){
   }
   render();
 }
+
+function buildGuia69Attempt(){
+  var rawList = window.GUIA_BANK_69 || [];
+  var qs = rawList.map(function(q){
+    var order = q.opts.map(function(_,ix){return ix;});
+    return {
+      src: {
+        t: q.t,
+        q: q.prompt,
+        o: q.opts,
+        a: q.ans,
+        e: q.exp,
+        ch: q.ch,
+        maths: q.maths,
+        imgs: q.imgs,
+        __s: q.s,
+        n: q.n,
+        d: 'intermedio'
+      },
+      order: order,
+      subj: q.s
+    };
+  });
+  return {
+    course: 'guia69',
+    isGuia69: true,
+    level: 'oficial',
+    qs: qs,
+    ans: qs.map(function(){return null;}),
+    flags: qs.map(function(){return false;}),
+    cur: 0,
+    start: new Date(),
+    end: null,
+    finished: false,
+    limitMs: 90 * 60000,
+    historic: false
+  };
+}
+
+function startGuia69Exam(){
+  S.toast = null;
+  S.area = 'guia';
+  S.attempt = buildGuia69Attempt();
+  S.view = 'attempt';
+  S.onePage = null;
+  S.modal = null;
+  render();
+  startTimer();
+}
+
 function startAttempt(k){
   S.toast = null;
   S.course = k || S.course || 'mat';
@@ -2455,13 +2761,37 @@ document.addEventListener('click', function(e){
   switch(act){
     case 'home': if(blocked()) break; stopTimer(); go('home'); break;
     case 'learn': if(blocked()) break; go('learn'); break;
-    case 'stats': if(blocked()) break; go('stats'); break;
-    case 'history': if(blocked()) break; S.histTab='all'; go('history'); break;
+    case 'guiawork': if(blocked()) break; go('guiawork'); break;
+    case 'enterguia': enterGuia('home'); break;
+case 'start-guia-69':
+      if(blocked()) break;
+      startGuia69Exam();
+      break;
+    case 'go-theory-chapter':
+      if(blocked()) break;
+      var chId = t.dataset.ch || 'm1';
+      S.area = 'guia';
+      S.view = 'chapter';
+      S.chapter = chId;
+      render();
+      break;
+    case 'enterguialearn': enterGuia('learn'); break;
+    case 'exitguia': exitGuia(); break;
+    case 'guiaplaceholder':
+      S.toast = 'Taller \u00ab'+(t.dataset.id||'')+'\u00bb a\u00fan no cableado. Usa Aprender para la teor\u00eda; el banco de preguntas vendr\u00e1 despu\u00e9s.';
+      render(); break;
+    case 'stats': if(blocked()) break; if(isGuia()){ S.toast='Las estad\u00edsticas de intentos viven en el aula. Puedes volver con \u00abVolver al aula\u00bb.'; render(); break; } go('stats'); break;
+    case 'history': if(blocked()) break; if(isGuia()){ S.toast='El historial de intentos vive en el aula.'; render(); break; } S.histTab='all'; go('history'); break;
     case 'histtab': S.histTab = t.dataset.t; render(); break;
     case 'histtabgo': if(blocked()) break; S.histTab = t.dataset.t; go('history'); break;
     case 'chapter':
       if(blocked()) break;
       S.chapter = t.dataset.id; go('chapter');
+      try{
+        UI.read = UI.read || {};
+        UI.read[S.chapter] = 1;
+        saveUI();
+      }catch(err){}
       var hh = t.dataset.h;
       if(hh) setTimeout(function(){ var n2 = document.getElementById(hh); if(n2) n2.scrollIntoView({behavior:'smooth', block:'start'}); }, 80);
       break;
@@ -2567,5 +2897,6 @@ document.addEventListener('click', function(e){
   }
 });
 window.addEventListener('beforeunload', function(e){ if(inProgress()){ e.preventDefault(); e.returnValue=''; } });
-
+window.addEventListener('hashchange', function(){ applyHashRoute(); render(); });
+applyHashRoute();
 render();

@@ -62,6 +62,55 @@ Las identidades trigonométricas son ecuaciones que involucran funciones trigono
 > Si en el examen te piden simplificar una expresión y no recuerdas la fórmula algebraicamente, **sustituye un ángulo notable conocido** (por ejemplo $x = 30^\circ$ o $x = 45^\circ$) en el enunciado y evalúa las opciones. La opción que dé exactamente el mismo número es la correcta.
 
 
+@@CHAPTER ineq|i1|📏|Taller Especializado: Inecuaciones y Valor Absoluto
+## ¿Por qué importan las inecuaciones y el valor absoluto?
+En el examen EPN (módulo 4.1.2) no basta con «despejar $x$»: debes **invertir el sentido** cuando corresponde, escribir el **conjunto solución** en intervalos y reconocer que $|x|$ es una **distancia**. Las Clases 16 y 17 de Barreno concentran exactamente este bloque.
+
+---
+
+## 1. Relaciones de orden e intervalos
+- $A > B \iff A - B \in \mathbb{R}^{+}$; análogamente $<$.
+- $\ge$ y $\le$ incluyen la igualdad.
+- Notación: $]a,b[ = (a,b)$ abierto; $[a,b]$ cerrado; semirrectas $[a,+\infty[$, $]-\infty,b]$, etc.
+
+> **Regla de oro:** sumar/restar el mismo número **no** cambia el sentido. Multiplicar o dividir por un **negativo** **invierte** la desigualdad.
+
+## 2. Inecuaciones lineales y cadenas
+Ejemplo: $3x - 7 < 4 \Rightarrow 3x < 11 \Rightarrow x < \frac{11}{3}$.
+Cadena: $a < x < b$ es la conjunción $(x > a)\land(x < b)$. Opera en **los tres** miembros a la vez; si divides por negativo, invierte **ambos** sentidos.
+
+## 3. Inecuaciones polinómicas
+Llevar a $P(x) \ge 0$ (o $>0$), factorizar, marcar ceros en la recta y estudiar el **signo del producto** por intervalos.
+Ejemplo guía: $x^{2} \le -2x + 15 \Rightarrow x^{2} + 2x - 15 \le 0 \Rightarrow (x+5)(x-3)\le 0 \Rightarrow x\in[-5,3]$.
+
+## 4. Valor absoluto como distancia
+$|x|$ = distancia de $x$ al origen. $d(A,B)=|A-B|=|B-A|$. Propiedades clave:
+$$
+|x|\ge 0,\quad |x|=0\Leftrightarrow x=0,\quad |x|=|-x|,
+$$
+$$
+|xy|=|x||y|,\quad \Bigl|\frac{x}{y}\Bigr|=\frac{|x|}{|y|}\ (y\neq 0),\quad |x+y|\le|x|+|y|,
+$$
+y $\sqrt{a^{2}}=|a|$.
+
+## 5. Inecuaciones con un valor absoluto ($a>0$)
+$$
+|x|<a \iff -a<x<a,\qquad |x|>a \iff x<-a\ \lor\ x>a.
+$$
+Con $\le$/$\ge$ se cierran extremos. Para $|ax+b|<c$ ($c>0$): $-c < ax+b < c$ y operar en los tres miembros. Para $>$: desdoblar en dos inecuaciones unidas por $\lor$.
+
+## 6. Casos extremos (trampas de examen)
+- $|f(x)|=0$ solo si $f(x)=0$.
+- $|f(x)|<0$ es **vacío** (porque $|\,|\ge 0$).
+- $|f(x)|\le 0$ fuerza $|f|=0$.
+- Si el lado derecho de $|f|=g$ es negativo, **no hay solución**.
+
+## 7. Racionales y dominio
+Al trabajar cocientes, **excluir** ceros del denominador. Preferible pasar todo a un lado: $\frac{N}{D}>0$ y tabla de signos, en lugar de multiplicar por $D$ sin estudiar el signo de $D$.
+
+> **Truco de examen:** si dudan entre intervalos abiertos/cerrados, mira si la desigualdad es estricta ($<$ / $>)$ o no ($\le$ / $\ge$), y si el punto anula un denominador.
+
+
 @@CHAPTER mat|m1|🧮|Fundamentos de Álgebra
 ## ¿Por qué importa?
 El álgebra es el idioma con el que se escriben todas las demás preguntas del examen. Si dominas esta parte, la mitad de los errores de física y química desaparecen solos.
@@ -1857,6 +1906,8 @@ La calificacion es sobre **1.000 puntos** sin decimales, y solo quienes aprueban
 
 <script src="bank.js"></script>
 <script src="theory.js"></script>
+<script src="guia-theory.js"></script>
+<script src="guia-bank-69.js"></script>
 <script src="app.js"></script>
 </body>
 </html>

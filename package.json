@@ -5,7 +5,10 @@
   "scripts": {
     "sync": "node scripts/sync-public.mjs",
     "smoke:math": "node scripts/smoke-math-prose.mjs",
-    "predeploy": "node scripts/smoke-math-prose.mjs",
+    "predeploy": "node scripts/smoke-banco-1000.mjs && node scripts/smoke-figuras.mjs && node scripts/smoke-math-prose.mjs && node scripts/smoke-sampler-coverage.mjs",
+    "smoke:banco": "node scripts/smoke-banco-1000.mjs",
+    "smoke:figs": "node scripts/smoke-figuras.mjs",
+    "smoke:sampler": "node scripts/smoke-sampler-coverage.mjs",
     "dev": "node scripts/sync-public.mjs && wrangler pages dev public --port 8788",
     "deploy": "node scripts/smoke-math-prose.mjs && node scripts/sync-public.mjs && wrangler pages deploy --project-name=simulador-epn --commit-dirty=true",
     "deploy:preview": "node scripts/smoke-math-prose.mjs && node scripts/sync-public.mjs && wrangler pages deploy --project-name=simulador-epn --branch=preview --commit-dirty=true",

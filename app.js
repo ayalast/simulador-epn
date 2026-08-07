@@ -627,6 +627,7 @@ function applyHashRoute(){
     if(parts[1]==='aprender' && parts[2]){ S.chapter = parts[2]; S.view = 'chapter'; }
     else if(parts[1]==='aprender'){ S.view = 'learn'; }
     else if(parts[1]==='talleres'){ S.view = 'guiawork'; }
+    else if(parts[1]==='guia1000'){ S.view = 'home'; }
     else { S.view = 'home'; }
   }
 }
@@ -704,21 +705,32 @@ function save(key, val){ try{ localStorage.setItem(key, JSON.stringify(val)); }c
 var cfg = Object.assign({}, DEFAULT_CFG, load(CFG_KEY, {}));
 var HIST = load(HIST_KEY, []);
 var SEEN = load(SEEN_KEY, {mat:[],fis:[],qui:[],len:[]});
+var SEEN1000_KEY='epn_seen1000_v1';
+var SEEN1000 = load(SEEN1000_KEY, {mat:[],fis:[],qui:[],len:[]});
 var UI = load(UI_KEY, {drawer:true});
 function saveCfg(){ save(CFG_KEY, cfg); }
 function saveHist(){ save(HIST_KEY, HIST); }
 function saveSeen(){ save(SEEN_KEY, SEEN); }
+function saveSeen1000(){ save(SEEN1000_KEY, SEEN1000); }
 function saveUI(){ save(UI_KEY, UI); }
 var SEENSET = {};
 ['mat','trig','ineq','fis','qui','len'].forEach(function(k){ SEEN[k] = SEEN[k]||[]; SEENSET[k] = {}; SEEN[k].forEach(function(i){ SEENSET[k][i]=1; }); });
+var SEEN1000SET = {};
+['mat','fis','qui','len'].forEach(function(k){ SEEN1000[k]=SEEN1000[k]||[]; SEEN1000SET[k]={}; SEEN1000[k].forEach(function(id){ SEEN1000SET[k][id]=1; }); });
 
 var LEVELS = [{k:'facil',n:'F\u00e1cil',c:'f1'},{k:'medio',n:'Intermedio',c:'f2'},{k:'dificil',n:'Dif\u00edcil',c:'f3'},{k:'experto',n:'Experto',c:'f4'},{k:'todos',n:'Mezclado',c:'f0'}];
+var GUIA_COURSES = ['guia_mat30','guia_fql120','guia_fis','guia_qui','guia_len'];
 function levelName(k){ for(var i=0;i<LEVELS.length;i++) if(LEVELS[i].k===k) return LEVELS[i].n; return k; }
 
 var S = { view:'home', area:'aula', course:'mat', attempt:null, modal:null, tick:null, onePage:null, chapter:null, scrollTop:true, histTab:'all', toast:null, viewingRecord:null };
 
 var COURSES = {
   guia69:{key:'guia69',name:'Simulador Completo Guía 2026-B (69P)',short:'Guía Completo 69P',full:'Guía Oficial EPN 2026-B — Examen Completo 69 Preguntas',desc:'Examen simulador completo de 69 preguntas oficiales (Matemáticas, Lenguaje, Física y Química) con soluciones paso a paso desde cero.'},
+  guia_mat30:{key:'guia_mat30',name:'Matemáticas EPN — Día 1 (30 preg · 90 min)',short:'MAT Día 1',full:'Simulador Matemáticas EPN 2026-B — Día 1 (30 preguntas · 90 min)',desc:'Simulador fiel al Día 1 real de la EPN: solo Matemáticas, 30 preguntas nivel intermedio con máxima cobertura de los 14 temas de la guía (4.1.1–4.1.4), 90 minutos. Ideal para el filtro.',color:'#d62828',icon:'🧮'},
+  guia_fql120:{key:'guia_fql120',name:'Combinado F-Q-L — Día 2 (60 preg · 120 min)',short:'F-Q-L Día 2',full:'Simulador Combinado EPN 2026-B — Día 2 (Física+Química+Lenguaje · 60 preg · 120 min)',desc:'Simulador fiel al Día 2 real: Física+Química+Lenguaje, 60 preguntas (20+20+20) nivel intermedio, 120 min (40 por materia), cobertura máxima por materia e intercalado.',color:'#0e2a47',icon:'🧪'},
+  guia_fis:{key:'guia_fis',name:'Física EPN — Individual (20 preg · 40 min)',short:'FIS 20',full:'Simulador Física EPN 2026-B — Individual (20 preguntas · 40 min)',desc:'Práctica focalizada de Física (15 temas 4.2.1–4.2.3), 20 preguntas nivel intermedio, 40 min, con figuras DCL/vectores/proyectiles validadas.',color:'#2a9d8f',icon:'⚙️'},
+  guia_qui:{key:'guia_qui',name:'Química EPN — Individual (20 preg · 40 min)',short:'QUI 20',full:'Simulador Química EPN 2026-B — Individual (20 preguntas · 40 min)',desc:'Práctica focalizada de Química (16 temas 4.3.1–4.3.4), 20 preguntas nivel intermedio, 40 min.',color:'#6a994e',icon:'⚗️'},
+  guia_len:{key:'guia_len',name:'Lenguaje EPN — Individual (20 preg · 40 min)',short:'LEN 20',full:'Simulador Lenguaje EPN 2026-B — Individual (20 preguntas · 40 min)',desc:'Práctica focalizada de Lenguaje (9 temas 4.4.1–4.4.3), 20 preguntas nivel intermedio, 40 min, falacias y lectura crítica.',color:'#e9c46a',icon:'📝'},
   trig:{key:'trig',name:'Identidades Trigonométricas',short:'Trigonometría Especial',full:'Taller Especializado: Identidades Trigonométricas',color:'#7b2cbf',icon:'📐',
        desc:'Práctica enfocada en identidades pitagóricas, recíprocas, de cociente, simplificación de expresiones y ecuaciones.',
        prev:'Examen Lenguaje EPN 2026-B',next:'Taller Especializado: Inecuaciones y Valor Absoluto'},
@@ -741,11 +753,11 @@ var COURSES = {
        desc:'Las cuatro \u00e1reas mezcladas en un solo intento cronometrado, como el examen real.',
        prev:'Examen Lenguaje EPN 2026-B',next:'Estad\u00edsticas de progreso'}
 };
-var CKEYS = ['mat','trig','ineq','fis','qui','len','mix'];
+var CKEYS = ['mat','trig','ineq','fis','qui','len','mix','guia_mat30','guia_fql120','guia_fis','guia_qui','guia_len'];
 var SUBJ = ['mat','trig','ineq','fis','qui','len'];
 var EXAM = ['mat','fis','qui','len'];
 SUBJ.forEach(function(k){ BANK[k].forEach(function(q,i){ q.__s=k; q.__i=i; }); });
-function bankOf(k){ return k==='mix' ? BANK.mat.concat(BANK.fis,BANK.qui,BANK.len) : (BANK[k]||[]); }
+function bankOf(k){ if(k==='guia_mat30'||k==='guia_fis'||k==='guia_qui'||k==='guia_len'||k==='guia_fql120') return []; return k==='mix' ? BANK.mat.concat(BANK.fis,BANK.qui,BANK.len) : (BANK[k]||[]); }
 
 function freshPool(k){
   var pool = levelPool(k);
@@ -753,8 +765,9 @@ function freshPool(k){
   var fresh = pool.filter(function(q){ return !SEENSET[k][q.__i]; });
   return {pool:fresh, reset:false, all:pool};
 }
-function countFor(k){ return k==='mix'? cfg.mixCount : cfg.count; }
-function minutesFor(k){ return k==='mix'? cfg.mixMinutes : cfg.minutes; }
+function countFor(k){ if(k==='guia_mat30') return 30; if(k==='guia_fql120') return 60; if(k==='guia_fis'||k==='guia_qui'||k==='guia_len') return 20; return k==='mix'? cfg.mixCount : cfg.count; }
+function minutesFor(k){ if(k==='guia_mat30') return 90; if(k==='guia_fql120') return 120; if(k==='guia_fis'||k==='guia_qui'||k==='guia_len') return 40; return k==='mix'? cfg.mixMinutes : cfg.minutes; }
+function isGuia1000Course(k){ return GUIA_COURSES.indexOf(k)>=0; }
 
 /* ---------- utilidades ---------- */
 function el(id){return document.getElementById(id);}
@@ -784,6 +797,63 @@ function pickSpread(pool, n){
 
 /* ---------- Anti-Overfitting & Concept Generalization Engine ---------- */
 function levelPool(k){ return cfg.level==='todos'? BANK[k].slice() : BANK[k].filter(function(q){return q.d===cfg.level;}); }
+
+/* ---------- Banco 1000 intermedio: pick por topics con cobertura máxima ---------- */
+function pickForGuia1000(subject, want, notes){
+  var bank1000 = window.GUIA_BANK_1000 || {mat:[],fis:[],qui:[],len:[]};
+  var pool = bank1000[subject] || [];
+  if(!pool.length) return [];
+  // filtra nivel intermedio (futuro: cfg.level para difícil/experta)
+  var levelPool1000 = pool.filter(function(q){ return q.d==='intermedio'; });
+  var byTopic = {};
+  levelPool1000.forEach(function(q){ var top=(q.topics&&q.topics[0])||'misc'; (byTopic[top]=byTopic[top]||[]).push(q); });
+  var topics = shuffle(Object.keys(byTopic));
+  // separa unseen/seen por SEEN1000SET
+  var unseenByTopic={}, seenByTopic={};
+  topics.forEach(function(t){
+    var arr=byTopic[t]||[];
+    unseenByTopic[t]=arr.filter(function(q){ return !SEEN1000SET[subject][q.id]; });
+    seenByTopic[t]=arr.filter(function(q){ return SEEN1000SET[subject][q.id]; });
+    // shuffle dentro de cada topic
+    unseenByTopic[t]=shuffle(unseenByTopic[t]); seenByTopic[t]=shuffle(seenByTopic[t]);
+  });
+  function popRandom(arr){ if(!arr.length) return null; var idx=Math.floor(Math.random()*arr.length); return arr.splice(idx,1)[0]; }
+  var result=[];
+  var guard=0;
+  while(result.length < want && guard++ < 40){
+    var added=0;
+    for(var ti=0; ti<topics.length && result.length<want; ti++){
+      var t=topics[ti];
+      var pick = popRandom(unseenByTopic[t]) || popRandom(seenByTopic[t]);
+      if(!pick){
+        // roba del topic con más remanente
+        var best=null, bestLen=-1;
+        for(var k2=0;k2<topics.length;k2++){ var tt=topics[k2]; var len=(unseenByTopic[tt].length+seenByTopic[tt].length); if(len>bestLen){best=tt;bestLen=len;} }
+        if(best && bestLen>0) pick = popRandom(unseenByTopic[best]) || popRandom(seenByTopic[best]);
+      }
+      if(pick){ result.push(pick); added++; }
+    }
+    if(added===0) break;
+  }
+  // si faltó por pool pequeño, completa con lo que quede sin respetar cobertura (avisa)
+  if(result.length < want){
+    var rest=[];
+    topics.forEach(function(t){ rest=rest.concat(unseenByTopic[t], seenByTopic[t]); });
+    rest=shuffle(rest);
+    while(result.length<want && rest.length) result.push(rest.shift());
+    if(result.length<want) notes.push('Banco intermedio de '+subject.toUpperCase()+' con '+pool.length+' preguntas: se completó con repetición porque el banco es menor que lo pedido.');
+  }
+  // marca SEEN1000
+  result.forEach(function(q){ if(!SEEN1000SET[subject][q.id]){ SEEN1000SET[subject][q.id]=1; SEEN1000[subject].push(q.id); } });
+  saveSeen1000();
+  // verifica cobertura
+  var distinctTopics = {};
+  result.forEach(function(q){ distinctTopics[(q.topics&&q.topics[0])||'misc']=1; });
+  var distinctCount=Object.keys(distinctTopics).length;
+  var T=topics.length;
+  if(want<=T && distinctCount < want) notes.push('Cobertura: se esperaban '+want+' temas distintos y se obtuvieron '+distinctCount+'.');
+  return shuffle(result).slice(0,want);
+}
 
 function pickForSubject(k, want, notes){
   var subjBank = BANK[k] || [];
@@ -874,6 +944,10 @@ function planBox(k){
     '<button class="btn ghost mini" data-act="clearplan" data-c="'+k+'">Quitar selección</button>'+adminBtnHtml+'</div></div>';
 }
 function buildAttempt(courseKey){
+  // Guia 1000 cursos usan sampler dedicado por topics + SEEN1000
+  if(isGuia1000Course(courseKey)){
+    return buildGuia1000Attempt(courseKey);
+  }
   var n = countFor(courseKey), picked = [], notes = [];
   var planned = planQuestions(courseKey);
   if(planned && planned.length){
@@ -892,12 +966,75 @@ function buildAttempt(courseKey){
     if(cfg.shuffleOptions) order = shuffle(order);
     return {src:q, order:order, subj:q.__s};
   });
-  // Do not set intrusive toast during attempt start
   S.toast = null;
   return {course:courseKey, level:cfg.level, qs:qs, ans:qs.map(function(){return null;}), flags:qs.map(function(){return false;}),
           cur:0, start:new Date(), end:null, finished:false, limitMs:minutesFor(courseKey)*60000, historic:false};
 }
+function buildGuia1000Attempt(courseKey){
+  var notes=[];
+  var picked=[];
+  if(courseKey==='guia_mat30'){
+    picked = pickForGuia1000('mat', 30, notes);
+  } else if(courseKey==='guia_fis'){
+    picked = pickForGuia1000('fis', 20, notes);
+  } else if(courseKey==='guia_qui'){
+    picked = pickForGuia1000('qui', 20, notes);
+  } else if(courseKey==='guia_len'){
+    picked = pickForGuia1000('len', 20, notes);
+  } else if(courseKey==='guia_fql120'){
+    var fis = pickForGuia1000('fis', 20, notes);
+    var qui = pickForGuia1000('qui', 20, notes);
+    var len = pickForGuia1000('len', 20, notes);
+    // intercala 1-1-1 para no agrupar por materia
+    var maxLen=Math.max(fis.length, qui.length, len.length);
+    for(var i=0;i<maxLen;i++){
+      if(fis[i]) picked.push(fis[i]);
+      if(qui[i]) picked.push(qui[i]);
+      if(len[i]) picked.push(len[i]);
+    }
+    // si por algún motivo faltan, completa
+    if(picked.length<60){
+      var extraPool = [].concat(fis,qui,len);
+      var need=60-picked.length;
+      var already={}; picked.forEach(function(q){ already[q.id]=1; });
+      var rest=extraPool.filter(function(q){ return !already[q.id]; });
+      picked = picked.concat(shuffle(rest).slice(0, need));
+    }
+  }
+  if(picked.length===0){
+    S.toast='Banco 1000 aún no cargado. Verifica que guia-bank-1000-intermedio.js esté incluido.';
+    picked=[];
+  } else if(notes.length){
+    S.toast = notes.join(' ');
+  } else {
+    S.toast = null;
+  }
+  // map a formato attempt: src con shape compatible + order
+  var qs = picked.map(function(q){
+    var order = q.opts.map(function(_,ix){return ix;});
+    if(cfg.shuffleOptions) order = shuffle(order);
+    return {
+      src: { t: q.t, q: q.prompt, o: q.opts, a: q.ans, e: q.exp, ch: q.ch, maths: q.maths||[], imgs: q.imgs||[], __s: q.s, n: q.n, d: q.d, topics: q.topics, id: q.id },
+      order: order,
+      subj: q.s
+    };
+  });
+  if(cfg.shuffleQuestions) qs = shuffle(qs);
+  return { course: courseKey, level: 'intermedio', qs: qs, ans: qs.map(function(){return null;}), flags: qs.map(function(){return false;}), cur:0, start:new Date(), end:null, finished:false, limitMs: minutesFor(courseKey)*60000, historic:false, isGuia1000:true };
+}
 function attemptFromRecord(r){
+  // Guia 1000 records store id
+  if(GUIA_COURSES.indexOf(r.course)>=0){
+    var bank1000 = window.GUIA_BANK_1000||{mat:[],fis:[],qui:[],len:[]};
+    var byId={}; ['mat','fis','qui','len'].forEach(function(sub){ (bank1000[sub]||[]).forEach(function(q){ byId[q.id]=q; }); });
+    var qs = r.qs.map(function(x){
+      var q = byId[x.id] || byId[x.k+'-'+String(x.i).padStart(3,'0')] || null;
+      if(!q) return null;
+      var src = { t:q.t, q:q.prompt, o:q.opts, a:q.ans, e:q.exp, ch:q.ch, maths:q.maths||[], imgs:q.imgs||[], __s:q.s, n:q.n, d:q.d, topics:q.topics, id:q.id };
+      return {src:src, order:src.o.map(function(_,ix){return ix;}), subj:q.s};
+    }).filter(Boolean);
+    return {course:r.course, level:r.level, qs:qs, ans:r.qs.map(function(x){ return x.sel==null? null : x.sel; }), flags:qs.map(function(){return false;}), cur:0, start:new Date(r.ts), end:new Date(r.ts + r.durMs), finished:true, limitMs:r.min*60000, historic:true, recId:r.id, isGuia1000:true};
+  }
   var qs = r.qs.map(function(x){
     var src = BANK[x.k][x.i];
     return {src:src, order:src.o.map(function(_,ix){return ix;}), subj:x.k};
@@ -1664,6 +1801,7 @@ function questionHtml(ix, mode){
   if(src.stem) body += '<div class="stembox">'+tex(src.stem)+'</div>';
   body += '<div class="qtext">'+tex(src.q)+'</div>';
   if(src.fig) body += figHtml(src.fig);
+  if(src.imgs && src.imgs.length){ src.imgs.forEach(function(svg){ body += '<div class="figure">'+svg+'</div>'; }); }
   if(src.q2) body += '<div class="qtext">'+tex(src.q2)+'</div>';
   body += '<div class="answer">'+Q.order.map(function(origIx, pos){
     var checked = a.ans[ix]===pos, cls = 'option';
@@ -2031,7 +2169,39 @@ function viewGuiaHome(){
     '<p style="margin:0; opacity:0.9; font-size:14px; max-width:650px;">Matemáticas (Q02-Q19), Lenguaje (Q20-Q32), Física (Q33-Q50) y Química (Q51-Q70). Incluye explicaciones paso a paso desde cero e hipervínculos directos a la teoría del Aula Guía.</p></div>'+
     '<button class="btn primary xl" data-act="start-guia-69" style="background:#ffb900; color:#000; font-weight:bold; font-size:16px; padding:12px 24px; border:none; border-radius:8px; cursor:pointer;">Iniciar Examen Completo (69P)</button>'+
     '</div></div>'+
-'<div class="guia-banner"><b>Modo gu\u00eda activo.</b> Aqu\u00ed estudias el temario 1:1 de la gu\u00eda PDF. Los talleres por tema se cablear\u00e1n despu\u00e9s; por ahora usa <b>Aprender</b>.</div>'+
+    (function(){
+      var banco = (window.GUIA_BANK_1000 && window.GUIA_BANK_1000.mat) ? window.GUIA_BANK_1000 : null;
+      var tot1000 = banco ? (banco.mat.length + banco.fis.length + banco.qui.length + banco.len.length) : 0;
+      var seenTot = SEEN1000.mat.length + SEEN1000.fis.length + SEEN1000.qui.length + SEEN1000.len.length;
+      var pct1000 = tot1000 ? Math.round(seenTot/tot1000*100) : 0;
+      var sims = [
+        {act:'start-guia-mat30', title:'Matemáticas — Día 1', sub:'30 preg · 90 min · 14 temas 4.1 · Filtro real', color:'#d62828', icon:'🧮'},
+        {act:'start-guia-fql120', title:'Combinado F-Q-L — Día 2', sub:'60 preg (20+20+20) · 120 min · Intercalado', color:'#0e2a47', icon:'🧪'},
+        {act:'start-guia-fis', title:'Física individual', sub:'20 preg · 40 min · 15 temas 4.2', color:'#2a9d8f', icon:'⚙️'},
+        {act:'start-guia-qui', title:'Química individual', sub:'20 preg · 40 min · 16 temas 4.3', color:'#6a994e', icon:'⚗️'},
+        {act:'start-guia-len', title:'Lenguaje individual', sub:'20 preg · 40 min · 9 temas 4.4', color:'#e9c46a', icon:'📝'}
+      ];
+      var avail = tot1000>=1000;
+      var banner1000 = '<div style="background:#fff; border:1.5px solid #0e2a47; border-radius:12px; padding:18px 22px; margin:0 0 26px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">'
+        +'<div><span style="background:#0e2a47; color:#fff; font-weight:800; padding:3px 10px; border-radius:20px; font-size:11px; text-transform:uppercase;">🆕 Banco 1000 — Nivel intermedio</span>'
+        +'<h3 style="font-size:18px; margin:8px 0 4px; color:#0e2a47;">Simuladores por materia — Banco original 1000 (250×4)</h3>'
+        +'<p style="margin:0; color:#475569; font-size:13px; max-width:680px;">Preguntas originales inspiradas en las 69 oficiales, estrictamente alineadas al temario 4.1–4.4. Cada intento prioriza la <b>máxima cobertura temática</b> y evita repetir lo ya visto hasta agotar el banco. Nivel intermedio (mismo exigido por la EPN). Listo para escalar a difícil/experta.</p>'
+        +'<div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap; align-items:center;">'
+        +'<span class="chip" style="background:#e0f2fe; color:#0e2a47;">'+tot1000+'/1000 preguntas</span>'
+        +'<span class="chip" style="background:#dcfce7; color:#14532d;">Vistas: '+seenTot+' ('+pct1000+'%)</span>'
+        +'<span class="chip light">Figuras: 246 validadas</span>'
+        +'</div></div>'
+        +'<div style="font-size:11px; color:#64748b; text-align:right;">'+(avail?'✓ Banco completo':'Banco en construcción')+'</div>'
+        +'</div>';
+      var cards = sims.map(function(s){
+        return '<div class="card" style="border-top:4px solid '+s.color+'">'
+          +'<div class="cimg" style="background:'+s.color+'">'+s.icon+'</div>'
+          +'<div class="cbody"><h3>'+s.title+'</h3><p>'+s.sub+'</p>'
+          +'<div class="cbtns"><button class="btn" data-act="'+s.act+'" style="background:'+s.color+'; border-color:'+s.color+';">▶ Iniciar</button></div></div></div>';
+      }).join('');
+      return banner1000 + '<div class="cards" style="margin-bottom:26px">'+cards+'</div>';
+    })()+
+'<div class="guia-banner"><b>Modo gu\u00eda activo.</b> Aqu\u00ed estudias el temario 1:1 de la gu\u00eda PDF. Usa <b>Aprender</b> para la teoría y los simuladores de arriba para practicar con cobertura máxima.</div>'+
     '<div style="margin:18px 0 10px;display:flex;gap:10px;flex-wrap:wrap">'+
     '<button class="btn" data-act="learn">Abrir Aprender ('+book.length+' cap\u00edtulos)</button>'+
     '<button class="btn sec" data-act="guiawork">Ver talleres (pr\u00f3ximamente)</button>'+
@@ -2655,12 +2825,24 @@ function stopTimer(){ if(S.tick){ clearInterval(S.tick); S.tick = null; } }
 function recordAttempt(a){
   if(a.noSave) return null;
   var score = a.qs.reduce(function(s,_,ix){ return s+(isCorrect(ix)?1:0); },0);
+  // Para guia1000, guarda id + sel + subj para reconstrucción; para legacy guarda k/i
+  var qsRec = a.qs.map(function(q,ix){
+    var sel = (a.ans[ix]==null? null : q.order[a.ans[ix]]);
+    if(a.isGuia1000 || GUIA_COURSES.indexOf(a.course)>=0){
+      return {k:q.subj, id:q.src.id, sel:sel};
+    }
+    return {k:q.subj, i:q.src.__i, sel:sel};
+  });
   var rec = { id:'a'+a.start.getTime(), ts:a.start.getTime(), course:a.course, level:a.level,
-    min:Math.round(a.limitMs/60000), durMs:(a.end-a.start), n:a.qs.length, score:score,
-    qs:a.qs.map(function(q,ix){ return {k:q.subj, i:q.src.__i, sel:(a.ans[ix]==null? null : q.order[a.ans[ix]])}; }) };
+    min:Math.round(a.limitMs/60000), durMs:(a.end-a.start), n:a.qs.length, score:score, qs:qsRec };
   HIST.push(rec); saveHist();
-  a.qs.forEach(function(q){ if(!SEENSET[q.subj][q.src.__i]){ SEENSET[q.subj][q.src.__i]=1; SEEN[q.subj].push(q.src.__i); } });
-  saveSeen();
+  if(a.isGuia1000){
+    // SEEN1000 ya se marcó al generar, no duplicar; asegura persistencia
+    saveSeen1000();
+  } else {
+    a.qs.forEach(function(q){ if(!SEENSET[q.subj][q.src.__i]){ SEENSET[q.subj][q.src.__i]=1; SEEN[q.subj].push(q.src.__i); } });
+    saveSeen();
+  }
   pushCloudState();
   return rec;
 }
@@ -2767,6 +2949,26 @@ document.addEventListener('click', function(e){
 case 'start-guia-69':
       if(blocked()) break;
       startGuia69Exam();
+      break;
+    case 'start-guia-mat30':
+      if(blocked()) break;
+      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_mat30'); S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer();
+      break;
+    case 'start-guia-fql120':
+      if(blocked()) break;
+      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_fql120'); S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer();
+      break;
+    case 'start-guia-fis':
+      if(blocked()) break;
+      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_fis'); S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer();
+      break;
+    case 'start-guia-qui':
+      if(blocked()) break;
+      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_qui'); S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer();
+      break;
+    case 'start-guia-len':
+      if(blocked()) break;
+      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_len'); S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer();
       break;
     case 'go-theory-chapter':
       if(blocked()) break;

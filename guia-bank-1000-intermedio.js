@@ -1,6 +1,6 @@
 /**
  * guia-bank-1000-intermedio.js — Banco 1000 preguntas originales nivel intermedio (250×4)
- * Generado por scripts/gen-banco-1000.mjs — NO editar a mano (re-generable).
+ * Generado por scripts/gen-banco-1000.mjs + enrich-exps.mjs + fix-ident-ch.mjs — NO editar a mano (re-generable).
  * Schema: { id, s, n, d, topics:[], ch, t, prompt, opts:[4], ans, exp, maths:[], imgs:[svg] }
  */
 window.GUIA_BANK_1000 = {
@@ -479,7 +479,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{20}{12}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $3\\cdot 4=12$: $\\frac{4\\cdot 4}{12}+\\frac{3}{12}=\\frac{19}{12}=\\frac{19}{12}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $3\\cdot 4=12$: $\\frac{4\\cdot 4}{12}+\\frac{3}{12}=\\frac{19}{12}=\\frac{19}{12}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -501,7 +501,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{8}{10}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $4\\cdot 5=20$: $\\frac{2\\cdot 5}{20}+\\frac{4}{20}=\\frac{14}{20}=\\frac{7}{10}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $4\\cdot 5=20$: $\\frac{2\\cdot 5}{20}+\\frac{4}{20}=\\frac{14}{20}=\\frac{7}{10}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -523,7 +523,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{24}{30}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $5\\cdot 6=30$: $\\frac{3\\cdot 6}{30}+\\frac{5}{30}=\\frac{23}{30}=\\frac{23}{30}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $5\\cdot 6=30$: $\\frac{3\\cdot 6}{30}+\\frac{5}{30}=\\frac{23}{30}=\\frac{23}{30}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -545,7 +545,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{18}{21}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $6\\cdot 7=42$: $\\frac{4\\cdot 7}{42}+\\frac{6}{42}=\\frac{34}{42}=\\frac{17}{21}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $6\\cdot 7=42$: $\\frac{4\\cdot 7}{42}+\\frac{6}{42}=\\frac{34}{42}=\\frac{17}{21}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -567,7 +567,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{20}{24}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $3\\cdot 8=24$: $\\frac{2\\cdot 8}{24}+\\frac{3}{24}=\\frac{19}{24}=\\frac{19}{24}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $3\\cdot 8=24$: $\\frac{2\\cdot 8}{24}+\\frac{3}{24}=\\frac{19}{24}=\\frac{19}{24}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -589,7 +589,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{2}{1}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $4\\cdot 4=16$: $\\frac{3\\cdot 4}{16}+\\frac{4}{16}=\\frac{16}{16}=\\frac{1}{1}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $4\\cdot 4=16$: $\\frac{3\\cdot 4}{16}+\\frac{4}{16}=\\frac{16}{16}=\\frac{1}{1}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -611,7 +611,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{2}{1}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $5\\cdot 5=25$: $\\frac{4\\cdot 5}{25}+\\frac{5}{25}=\\frac{25}{25}=\\frac{1}{1}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $5\\cdot 5=25$: $\\frac{4\\cdot 5}{25}+\\frac{5}{25}=\\frac{25}{25}=\\frac{1}{1}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -633,7 +633,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{2}{2}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $6\\cdot 6=36$: $\\frac{2\\cdot 6}{36}+\\frac{6}{36}=\\frac{18}{36}=\\frac{1}{2}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $6\\cdot 6=36$: $\\frac{2\\cdot 6}{36}+\\frac{6}{36}=\\frac{18}{36}=\\frac{1}{2}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -655,7 +655,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{9}{7}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $3\\cdot 7=21$: $\\frac{3\\cdot 7}{21}+\\frac{3}{21}=\\frac{24}{21}=\\frac{8}{7}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $3\\cdot 7=21$: $\\frac{3\\cdot 7}{21}+\\frac{3}{21}=\\frac{24}{21}=\\frac{8}{7}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -677,7 +677,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{10}{8}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $4\\cdot 8=32$: $\\frac{4\\cdot 8}{32}+\\frac{4}{32}=\\frac{36}{32}=\\frac{9}{8}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $4\\cdot 8=32$: $\\frac{4\\cdot 8}{32}+\\frac{4}{32}=\\frac{36}{32}=\\frac{9}{8}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -699,7 +699,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{14}{20}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $5\\cdot 4=20$: $\\frac{2\\cdot 4}{20}+\\frac{5}{20}=\\frac{13}{20}=\\frac{13}{20}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $5\\cdot 4=20$: $\\frac{2\\cdot 4}{20}+\\frac{5}{20}=\\frac{13}{20}=\\frac{13}{20}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -721,7 +721,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{8}{10}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $6\\cdot 5=30$: $\\frac{3\\cdot 5}{30}+\\frac{6}{30}=\\frac{21}{30}=\\frac{7}{10}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $6\\cdot 5=30$: $\\frac{3\\cdot 5}{30}+\\frac{6}{30}=\\frac{21}{30}=\\frac{7}{10}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -743,7 +743,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{4}{2}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $3\\cdot 6=18$: $\\frac{4\\cdot 6}{18}+\\frac{3}{18}=\\frac{27}{18}=\\frac{3}{2}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $3\\cdot 6=18$: $\\frac{4\\cdot 6}{18}+\\frac{3}{18}=\\frac{27}{18}=\\frac{3}{2}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -765,7 +765,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{10}{14}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $4\\cdot 7=28$: $\\frac{2\\cdot 7}{28}+\\frac{4}{28}=\\frac{18}{28}=\\frac{9}{14}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $4\\cdot 7=28$: $\\frac{2\\cdot 7}{28}+\\frac{4}{28}=\\frac{18}{28}=\\frac{9}{14}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -787,7 +787,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{30}{40}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $5\\cdot 8=40$: $\\frac{3\\cdot 8}{40}+\\frac{5}{40}=\\frac{29}{40}=\\frac{29}{40}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $5\\cdot 8=40$: $\\frac{3\\cdot 8}{40}+\\frac{5}{40}=\\frac{29}{40}=\\frac{29}{40}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -809,7 +809,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{12}{12}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $6\\cdot 4=24$: $\\frac{4\\cdot 4}{24}+\\frac{6}{24}=\\frac{22}{24}=\\frac{11}{12}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $6\\cdot 4=24$: $\\frac{4\\cdot 4}{24}+\\frac{6}{24}=\\frac{22}{24}=\\frac{11}{12}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -831,7 +831,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{14}{15}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $3\\cdot 5=15$: $\\frac{2\\cdot 5}{15}+\\frac{3}{15}=\\frac{13}{15}=\\frac{13}{15}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $3\\cdot 5=15$: $\\frac{2\\cdot 5}{15}+\\frac{3}{15}=\\frac{13}{15}=\\frac{13}{15}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -853,7 +853,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{12}{12}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $4\\cdot 6=24$: $\\frac{3\\cdot 6}{24}+\\frac{4}{24}=\\frac{22}{24}=\\frac{11}{12}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $4\\cdot 6=24$: $\\frac{3\\cdot 6}{24}+\\frac{4}{24}=\\frac{22}{24}=\\frac{11}{12}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -875,7 +875,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{34}{35}$"
       ],
       "ans": 0,
-      "exp": "Común denominador $5\\cdot 7=35$: $\\frac{4\\cdot 7}{35}+\\frac{5}{35}=\\frac{33}{35}=\\frac{33}{35}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
+      "exp": "Paso desde cero: Común denominador $5\\cdot 7=35$: $\\frac{4\\cdot 7}{35}+\\frac{5}{35}=\\frac{33}{35}=\\frac{33}{35}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.",
       "maths": [],
       "imgs": []
     },
@@ -897,7 +897,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{38}$"
       ],
       "ans": 2,
-      "exp": "Aproxima: $\\sqrt{37}\\approx 6.08$, $\\frac{36}{6}=6$, $\\pi\\approx 3.14$. El menor es $\\pi$. Comparar sin aproximar lleva a error.",
+      "exp": "Aproxima: $\\sqrt{37}\\approx 6.08$, $\\frac{36}{6}=6$, $\\pi\\approx 3.14$. El menor es $\\pi$. Paso 1: identifica qué es cada número (raíz, fracción, constante). Paso 2: aproxima con dos decimales para comparar. Paso 3: ordena y elige el menor. Comparar sin aproximar o confundir raíz con fracción lleva al error. Este mismo método sirve para cualquier terna de reales.",
       "maths": [],
       "imgs": []
     },
@@ -919,7 +919,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{6}$"
       ],
       "ans": 1,
-      "exp": "Aproxima: $\\sqrt{5}\\approx 2.24$, $\\frac{6}{3}=2$, $\\pi\\approx 3.14$. El menor es $\\dfrac{6}{3} = 2$. Comparar sin aproximar lleva a error.",
+      "exp": "Aproxima: $\\sqrt{5}\\approx 2.24$, $\\frac{6}{3}=2$, $\\pi\\approx 3.14$. El menor es $\\dfrac{6}{3} = 2$. Paso 1: identifica qué es cada número (raíz, fracción, constante). Paso 2: aproxima con dos decimales para comparar. Paso 3: ordena y elige el menor. Comparar sin aproximar o confundir raíz con fracción lleva al error. Este mismo método sirve para cualquier terna de reales.",
       "maths": [],
       "imgs": []
     },
@@ -941,7 +941,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{11}$"
       ],
       "ans": 1,
-      "exp": "Aproxima: $\\sqrt{10}\\approx 3.16$, $\\frac{12}{4}=3$, $\\pi\\approx 3.14$. El menor es $\\dfrac{12}{4} = 3$. Comparar sin aproximar lleva a error.",
+      "exp": "Aproxima: $\\sqrt{10}\\approx 3.16$, $\\frac{12}{4}=3$, $\\pi\\approx 3.14$. El menor es $\\dfrac{12}{4} = 3$. Paso 1: identifica qué es cada número (raíz, fracción, constante). Paso 2: aproxima con dos decimales para comparar. Paso 3: ordena y elige el menor. Comparar sin aproximar o confundir raíz con fracción lleva al error. Este mismo método sirve para cualquier terna de reales.",
       "maths": [],
       "imgs": []
     },
@@ -963,7 +963,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{18}$"
       ],
       "ans": 2,
-      "exp": "Aproxima: $\\sqrt{17}\\approx 4.12$, $\\frac{20}{5}=4$, $\\pi\\approx 3.14$. El menor es $\\pi$. Comparar sin aproximar lleva a error.",
+      "exp": "Aproxima: $\\sqrt{17}\\approx 4.12$, $\\frac{20}{5}=4$, $\\pi\\approx 3.14$. El menor es $\\pi$. Paso 1: identifica qué es cada número (raíz, fracción, constante). Paso 2: aproxima con dos decimales para comparar. Paso 3: ordena y elige el menor. Comparar sin aproximar o confundir raíz con fracción lleva al error. Este mismo método sirve para cualquier terna de reales.",
       "maths": [],
       "imgs": []
     },
@@ -985,7 +985,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{27}$"
       ],
       "ans": 2,
-      "exp": "Aproxima: $\\sqrt{26}\\approx 5.10$, $\\frac{30}{6}=5$, $\\pi\\approx 3.14$. El menor es $\\pi$. Comparar sin aproximar lleva a error.",
+      "exp": "Aproxima: $\\sqrt{26}\\approx 5.10$, $\\frac{30}{6}=5$, $\\pi\\approx 3.14$. El menor es $\\pi$. Paso 1: identifica qué es cada número (raíz, fracción, constante). Paso 2: aproxima con dos decimales para comparar. Paso 3: ordena y elige el menor. Comparar sin aproximar o confundir raíz con fracción lleva al error. Este mismo método sirve para cualquier terna de reales.",
       "maths": [],
       "imgs": []
     },
@@ -1007,7 +1007,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{38}$"
       ],
       "ans": 2,
-      "exp": "Aproxima: $\\sqrt{37}\\approx 6.08$, $\\frac{18}{3}=6$, $\\pi\\approx 3.14$. El menor es $\\pi$. Comparar sin aproximar lleva a error.",
+      "exp": "Aproxima: $\\sqrt{37}\\approx 6.08$, $\\frac{18}{3}=6$, $\\pi\\approx 3.14$. El menor es $\\pi$. Paso 1: identifica qué es cada número (raíz, fracción, constante). Paso 2: aproxima con dos decimales para comparar. Paso 3: ordena y elige el menor. Comparar sin aproximar o confundir raíz con fracción lleva al error. Este mismo método sirve para cualquier terna de reales.",
       "maths": [],
       "imgs": []
     },
@@ -1029,7 +1029,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{6}$"
       ],
       "ans": 1,
-      "exp": "Aproxima: $\\sqrt{5}\\approx 2.24$, $\\frac{8}{4}=2$, $\\pi\\approx 3.14$. El menor es $\\dfrac{8}{4} = 2$. Comparar sin aproximar lleva a error.",
+      "exp": "Aproxima: $\\sqrt{5}\\approx 2.24$, $\\frac{8}{4}=2$, $\\pi\\approx 3.14$. El menor es $\\dfrac{8}{4} = 2$. Paso 1: identifica qué es cada número (raíz, fracción, constante). Paso 2: aproxima con dos decimales para comparar. Paso 3: ordena y elige el menor. Comparar sin aproximar o confundir raíz con fracción lleva al error. Este mismo método sirve para cualquier terna de reales.",
       "maths": [],
       "imgs": []
     },
@@ -1051,7 +1051,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{11}$"
       ],
       "ans": 1,
-      "exp": "Aproxima: $\\sqrt{10}\\approx 3.16$, $\\frac{15}{5}=3$, $\\pi\\approx 3.14$. El menor es $\\dfrac{15}{5} = 3$. Comparar sin aproximar lleva a error.",
+      "exp": "Aproxima: $\\sqrt{10}\\approx 3.16$, $\\frac{15}{5}=3$, $\\pi\\approx 3.14$. El menor es $\\dfrac{15}{5} = 3$. Paso 1: identifica qué es cada número (raíz, fracción, constante). Paso 2: aproxima con dos decimales para comparar. Paso 3: ordena y elige el menor. Comparar sin aproximar o confundir raíz con fracción lleva al error. Este mismo método sirve para cualquier terna de reales.",
       "maths": [],
       "imgs": []
     },
@@ -1073,7 +1073,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{18}$"
       ],
       "ans": 2,
-      "exp": "Aproxima: $\\sqrt{17}\\approx 4.12$, $\\frac{24}{6}=4$, $\\pi\\approx 3.14$. El menor es $\\pi$. Comparar sin aproximar lleva a error.",
+      "exp": "Aproxima: $\\sqrt{17}\\approx 4.12$, $\\frac{24}{6}=4$, $\\pi\\approx 3.14$. El menor es $\\pi$. Paso 1: identifica qué es cada número (raíz, fracción, constante). Paso 2: aproxima con dos decimales para comparar. Paso 3: ordena y elige el menor. Comparar sin aproximar o confundir raíz con fracción lleva al error. Este mismo método sirve para cualquier terna de reales.",
       "maths": [],
       "imgs": []
     },
@@ -1095,7 +1095,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{27}$"
       ],
       "ans": 2,
-      "exp": "Aproxima: $\\sqrt{26}\\approx 5.10$, $\\frac{15}{3}=5$, $\\pi\\approx 3.14$. El menor es $\\pi$. Comparar sin aproximar lleva a error.",
+      "exp": "Aproxima: $\\sqrt{26}\\approx 5.10$, $\\frac{15}{3}=5$, $\\pi\\approx 3.14$. El menor es $\\pi$. Paso 1: identifica qué es cada número (raíz, fracción, constante). Paso 2: aproxima con dos decimales para comparar. Paso 3: ordena y elige el menor. Comparar sin aproximar o confundir raíz con fracción lleva al error. Este mismo método sirve para cualquier terna de reales.",
       "maths": [],
       "imgs": []
     },
@@ -1117,7 +1117,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{38}$"
       ],
       "ans": 2,
-      "exp": "Aproxima: $\\sqrt{37}\\approx 6.08$, $\\frac{24}{4}=6$, $\\pi\\approx 3.14$. El menor es $\\pi$. Comparar sin aproximar lleva a error.",
+      "exp": "Aproxima: $\\sqrt{37}\\approx 6.08$, $\\frac{24}{4}=6$, $\\pi\\approx 3.14$. El menor es $\\pi$. Paso 1: identifica qué es cada número (raíz, fracción, constante). Paso 2: aproxima con dos decimales para comparar. Paso 3: ordena y elige el menor. Comparar sin aproximar o confundir raíz con fracción lleva al error. Este mismo método sirve para cualquier terna de reales.",
       "maths": [],
       "imgs": []
     },
@@ -1139,7 +1139,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{6}$"
       ],
       "ans": 1,
-      "exp": "Aproxima: $\\sqrt{5}\\approx 2.24$, $\\frac{10}{5}=2$, $\\pi\\approx 3.14$. El menor es $\\dfrac{10}{5} = 2$. Comparar sin aproximar lleva a error.",
+      "exp": "Aproxima: $\\sqrt{5}\\approx 2.24$, $\\frac{10}{5}=2$, $\\pi\\approx 3.14$. El menor es $\\dfrac{10}{5} = 2$. Paso 1: identifica qué es cada número (raíz, fracción, constante). Paso 2: aproxima con dos decimales para comparar. Paso 3: ordena y elige el menor. Comparar sin aproximar o confundir raíz con fracción lleva al error. Este mismo método sirve para cualquier terna de reales.",
       "maths": [],
       "imgs": []
     },
@@ -1161,7 +1161,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{11}$"
       ],
       "ans": 1,
-      "exp": "Aproxima: $\\sqrt{10}\\approx 3.16$, $\\frac{18}{6}=3$, $\\pi\\approx 3.14$. El menor es $\\dfrac{18}{6} = 3$. Comparar sin aproximar lleva a error.",
+      "exp": "Aproxima: $\\sqrt{10}\\approx 3.16$, $\\frac{18}{6}=3$, $\\pi\\approx 3.14$. El menor es $\\dfrac{18}{6} = 3$. Paso 1: identifica qué es cada número (raíz, fracción, constante). Paso 2: aproxima con dos decimales para comparar. Paso 3: ordena y elige el menor. Comparar sin aproximar o confundir raíz con fracción lleva al error. Este mismo método sirve para cualquier terna de reales.",
       "maths": [],
       "imgs": []
     },
@@ -1183,7 +1183,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{18}$"
       ],
       "ans": 2,
-      "exp": "Aproxima: $\\sqrt{17}\\approx 4.12$, $\\frac{12}{3}=4$, $\\pi\\approx 3.14$. El menor es $\\pi$. Comparar sin aproximar lleva a error.",
+      "exp": "Aproxima: $\\sqrt{17}\\approx 4.12$, $\\frac{12}{3}=4$, $\\pi\\approx 3.14$. El menor es $\\pi$. Paso 1: identifica qué es cada número (raíz, fracción, constante). Paso 2: aproxima con dos decimales para comparar. Paso 3: ordena y elige el menor. Comparar sin aproximar o confundir raíz con fracción lleva al error. Este mismo método sirve para cualquier terna de reales.",
       "maths": [],
       "imgs": []
     },
@@ -1205,7 +1205,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{27}$"
       ],
       "ans": 2,
-      "exp": "Aproxima: $\\sqrt{26}\\approx 5.10$, $\\frac{20}{4}=5$, $\\pi\\approx 3.14$. El menor es $\\pi$. Comparar sin aproximar lleva a error.",
+      "exp": "Aproxima: $\\sqrt{26}\\approx 5.10$, $\\frac{20}{4}=5$, $\\pi\\approx 3.14$. El menor es $\\pi$. Paso 1: identifica qué es cada número (raíz, fracción, constante). Paso 2: aproxima con dos decimales para comparar. Paso 3: ordena y elige el menor. Comparar sin aproximar o confundir raíz con fracción lleva al error. Este mismo método sirve para cualquier terna de reales.",
       "maths": [],
       "imgs": []
     },
@@ -1227,7 +1227,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{38}$"
       ],
       "ans": 2,
-      "exp": "Aproxima: $\\sqrt{37}\\approx 6.08$, $\\frac{30}{5}=6$, $\\pi\\approx 3.14$. El menor es $\\pi$. Comparar sin aproximar lleva a error.",
+      "exp": "Aproxima: $\\sqrt{37}\\approx 6.08$, $\\frac{30}{5}=6$, $\\pi\\approx 3.14$. El menor es $\\pi$. Paso 1: identifica qué es cada número (raíz, fracción, constante). Paso 2: aproxima con dos decimales para comparar. Paso 3: ordena y elige el menor. Comparar sin aproximar o confundir raíz con fracción lleva al error. Este mismo método sirve para cualquier terna de reales.",
       "maths": [],
       "imgs": []
     },
@@ -1249,7 +1249,7 @@ window.GUIA_BANK_1000 = {
         "$-114$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-6$)=2(-6)^{2}-6(-6)+6=72 +36+6=114$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-6$)=2(-6)^{2}-6(-6)+6=72 +36+6=114$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1271,7 +1271,7 @@ window.GUIA_BANK_1000 = {
         "$-43$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-3$)=3(-3)^{2}-3(-3)+7=27 +9+7=43$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-3$)=3(-3)^{2}-3(-3)+7=27 +9+7=43$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1293,7 +1293,7 @@ window.GUIA_BANK_1000 = {
         "$-85$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-4$)=4(-4)^{2}-4(-4)+5=64 +16+5=85$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-4$)=4(-4)^{2}-4(-4)+5=64 +16+5=85$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1315,7 +1315,7 @@ window.GUIA_BANK_1000 = {
         "$-156$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-5$)=5(-5)^{2}-5(-5)+6=125 +25+6=156$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-5$)=5(-5)^{2}-5(-5)+6=125 +25+6=156$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1337,7 +1337,7 @@ window.GUIA_BANK_1000 = {
         "$-259$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-6$)=6(-6)^{2}-6(-6)+7=216 +36+7=259$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-6$)=6(-6)^{2}-6(-6)+7=216 +36+7=259$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1359,7 +1359,7 @@ window.GUIA_BANK_1000 = {
         "$-32$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-3$)=2(-3)^{2}-3(-3)+5=18 +9+5=32$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-3$)=2(-3)^{2}-3(-3)+5=18 +9+5=32$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1381,7 +1381,7 @@ window.GUIA_BANK_1000 = {
         "$-70$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-4$)=3(-4)^{2}-4(-4)+6=48 +16+6=70$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-4$)=3(-4)^{2}-4(-4)+6=48 +16+6=70$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1403,7 +1403,7 @@ window.GUIA_BANK_1000 = {
         "$-132$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-5$)=4(-5)^{2}-5(-5)+7=100 +25+7=132$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-5$)=4(-5)^{2}-5(-5)+7=100 +25+7=132$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1425,7 +1425,7 @@ window.GUIA_BANK_1000 = {
         "$-221$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-6$)=5(-6)^{2}-6(-6)+5=180 +36+5=221$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-6$)=5(-6)^{2}-6(-6)+5=180 +36+5=221$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1447,7 +1447,7 @@ window.GUIA_BANK_1000 = {
         "$-69$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-3$)=6(-3)^{2}-3(-3)+6=54 +9+6=69$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-3$)=6(-3)^{2}-3(-3)+6=54 +9+6=69$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1469,7 +1469,7 @@ window.GUIA_BANK_1000 = {
         "$-55$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-4$)=2(-4)^{2}-4(-4)+7=32 +16+7=55$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-4$)=2(-4)^{2}-4(-4)+7=32 +16+7=55$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1491,7 +1491,7 @@ window.GUIA_BANK_1000 = {
         "$-105$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-5$)=3(-5)^{2}-5(-5)+5=75 +25+5=105$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-5$)=3(-5)^{2}-5(-5)+5=75 +25+5=105$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1513,7 +1513,7 @@ window.GUIA_BANK_1000 = {
         "$-186$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-6$)=4(-6)^{2}-6(-6)+6=144 +36+6=186$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-6$)=4(-6)^{2}-6(-6)+6=144 +36+6=186$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1535,7 +1535,7 @@ window.GUIA_BANK_1000 = {
         "$-61$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-3$)=5(-3)^{2}-3(-3)+7=45 +9+7=61$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-3$)=5(-3)^{2}-3(-3)+7=45 +9+7=61$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1557,7 +1557,7 @@ window.GUIA_BANK_1000 = {
         "$-117$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-4$)=6(-4)^{2}-4(-4)+5=96 +16+5=117$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-4$)=6(-4)^{2}-4(-4)+5=96 +16+5=117$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1579,7 +1579,7 @@ window.GUIA_BANK_1000 = {
         "$-81$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-5$)=2(-5)^{2}-5(-5)+6=50 +25+6=81$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-5$)=2(-5)^{2}-5(-5)+6=50 +25+6=81$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1601,7 +1601,7 @@ window.GUIA_BANK_1000 = {
         "$-151$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-6$)=3(-6)^{2}-6(-6)+7=108 +36+7=151$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-6$)=3(-6)^{2}-6(-6)+7=108 +36+7=151$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1623,7 +1623,7 @@ window.GUIA_BANK_1000 = {
         "$-50$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-3$)=4(-3)^{2}-3(-3)+5=36 +9+5=50$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-3$)=4(-3)^{2}-3(-3)+5=36 +9+5=50$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1645,7 +1645,7 @@ window.GUIA_BANK_1000 = {
         "$-102$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-4$)=5(-4)^{2}-4(-4)+6=80 +16+6=102$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-4$)=5(-4)^{2}-4(-4)+6=80 +16+6=102$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1667,7 +1667,7 @@ window.GUIA_BANK_1000 = {
         "$-182$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-5$)=6(-5)^{2}-5(-5)+7=150 +25+7=182$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-5$)=6(-5)^{2}-5(-5)+7=150 +25+7=182$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1689,7 +1689,7 @@ window.GUIA_BANK_1000 = {
         "$-113$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-6$)=2(-6)^{2}-6(-6)+5=72 +36+5=113$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-6$)=2(-6)^{2}-6(-6)+5=72 +36+5=113$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1711,7 +1711,7 @@ window.GUIA_BANK_1000 = {
         "$-42$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-3$)=3(-3)^{2}-3(-3)+6=27 +9+6=42$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-3$)=3(-3)^{2}-3(-3)+6=27 +9+6=42$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1733,7 +1733,7 @@ window.GUIA_BANK_1000 = {
         "$-87$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-4$)=4(-4)^{2}-4(-4)+7=64 +16+7=87$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-4$)=4(-4)^{2}-4(-4)+7=64 +16+7=87$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1755,7 +1755,7 @@ window.GUIA_BANK_1000 = {
         "$-155$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-5$)=5(-5)^{2}-5(-5)+5=125 +25+5=155$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-5$)=5(-5)^{2}-5(-5)+5=125 +25+5=155$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1777,7 +1777,7 @@ window.GUIA_BANK_1000 = {
         "$-258$"
       ],
       "ans": 0,
-      "exp": "Reemplazo directo: $P(-6$)=6(-6)^{2}-6(-6)+6=216 +36+6=258$. Olvidar el signo de $x$ o el cuadrado genera los distractores.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-6$)=6(-6)^{2}-6(-6)+6=216 +36+6=258$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1799,7 +1799,7 @@ window.GUIA_BANK_1000 = {
         "$-3$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $3$: $2x=6$ de donde $x=3$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $3$: $2x=6$ de donde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -1821,7 +1821,7 @@ window.GUIA_BANK_1000 = {
         "$-4$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $4$: $3x=12$ de donde $x=4$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $4$: $3x=12$ de donde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -1843,7 +1843,7 @@ window.GUIA_BANK_1000 = {
         "$-5$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $5$: $4x=20$ de donde $x=5$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $5$: $4x=20$ de donde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -1865,7 +1865,7 @@ window.GUIA_BANK_1000 = {
         "$-6$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $6$: $5x=30$ de donde $x=6$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $6$: $5x=30$ de donde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -1887,7 +1887,7 @@ window.GUIA_BANK_1000 = {
         "$-7$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $3$: $6x=42$ de donde $x=7$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $3$: $6x=42$ de donde $x=7$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -1909,7 +1909,7 @@ window.GUIA_BANK_1000 = {
         "$-3$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $4$: $2x=6$ de donde $x=3$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $4$: $2x=6$ de donde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -1931,7 +1931,7 @@ window.GUIA_BANK_1000 = {
         "$-4$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $5$: $3x=12$ de donde $x=4$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $5$: $3x=12$ de donde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -1953,7 +1953,7 @@ window.GUIA_BANK_1000 = {
         "$-5$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $6$: $4x=20$ de donde $x=5$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $6$: $4x=20$ de donde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -1975,7 +1975,7 @@ window.GUIA_BANK_1000 = {
         "$-6$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $3$: $5x=30$ de donde $x=6$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $3$: $5x=30$ de donde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -1997,7 +1997,7 @@ window.GUIA_BANK_1000 = {
         "$-7$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $4$: $6x=42$ de donde $x=7$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $4$: $6x=42$ de donde $x=7$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -2019,7 +2019,7 @@ window.GUIA_BANK_1000 = {
         "$-3$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $5$: $2x=6$ de donde $x=3$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $5$: $2x=6$ de donde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -2041,7 +2041,7 @@ window.GUIA_BANK_1000 = {
         "$-4$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $6$: $3x=12$ de donde $x=4$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $6$: $3x=12$ de donde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -2063,7 +2063,7 @@ window.GUIA_BANK_1000 = {
         "$-5$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $3$: $4x=20$ de donde $x=5$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $3$: $4x=20$ de donde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -2085,7 +2085,7 @@ window.GUIA_BANK_1000 = {
         "$-6$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $4$: $5x=30$ de donde $x=6$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $4$: $5x=30$ de donde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -2107,7 +2107,7 @@ window.GUIA_BANK_1000 = {
         "$-7$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $5$: $6x=42$ de donde $x=7$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $5$: $6x=42$ de donde $x=7$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -2129,7 +2129,7 @@ window.GUIA_BANK_1000 = {
         "$-3$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $6$: $2x=6$ de donde $x=3$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $6$: $2x=6$ de donde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -2151,7 +2151,7 @@ window.GUIA_BANK_1000 = {
         "$-4$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $3$: $3x=12$ de donde $x=4$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $3$: $3x=12$ de donde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -2173,7 +2173,7 @@ window.GUIA_BANK_1000 = {
         "$-5$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $4$: $4x=20$ de donde $x=5$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $4$: $4x=20$ de donde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -2195,7 +2195,7 @@ window.GUIA_BANK_1000 = {
         "$-6$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $5$: $5x=30$ de donde $x=6$. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
+      "exp": "Multiplica por $5$: $5x=30$ de donde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ o cambiar de signo da los distractores.",
       "maths": [],
       "imgs": []
     },
@@ -2217,7 +2217,7 @@ window.GUIA_BANK_1000 = {
         "$1$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=6-2=4$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=6-2=4$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2239,7 +2239,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=4-3=1$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=4-3=1$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2261,7 +2261,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=6-4=2$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=6-4=2$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2283,7 +2283,7 @@ window.GUIA_BANK_1000 = {
         "$1$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=5-2=3$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=5-2=3$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2305,7 +2305,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=7-3=4$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=7-3=4$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2327,7 +2327,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=5-4=1$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=5-4=1$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2349,7 +2349,7 @@ window.GUIA_BANK_1000 = {
         "$1$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=4-2=2$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=4-2=2$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2371,7 +2371,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=6-3=3$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=6-3=3$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2393,7 +2393,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=8-4=4$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=8-4=4$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2415,7 +2415,7 @@ window.GUIA_BANK_1000 = {
         "$1$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=3-2=1$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=3-2=1$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2437,7 +2437,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=5-3=2$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=5-3=2$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2459,7 +2459,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=7-4=3$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=7-4=3$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2481,7 +2481,7 @@ window.GUIA_BANK_1000 = {
         "$1$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=6-2=4$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=6-2=4$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2503,7 +2503,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=4-3=1$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=4-3=1$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2525,7 +2525,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=6-4=2$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=6-4=2$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2547,7 +2547,7 @@ window.GUIA_BANK_1000 = {
         "$1$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=5-2=3$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=5-2=3$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2569,7 +2569,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=7-3=4$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=3=3$. Sustituyendo $y=7-3=4$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2591,7 +2591,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=5-4=1$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=4=4$. Sustituyendo $y=5-4=1$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2613,7 +2613,7 @@ window.GUIA_BANK_1000 = {
         "$1$"
       ],
       "ans": 0,
-      "exp": "Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=4-2=2$. Intercambiar $x$ con $y$ es el distractor típico.",
+      "exp": "Paso desde cero: Resta ambas: $(2x+y)-(x+y)=x=2=2$. Sustituyendo $y=4-2=2$. Intercambiar $x$ con $y$ es el distractor típico. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2635,7 +2635,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=12$. No hace falta hallar $3$ y $4$ aunque factorizando $(x-3)(x-4)=0$ se verifican. Confundir suma con producto da el distractor $7$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=12$. No hace falta hallar $3$ y $4$ aunque factorizando $(x-3)(x-4)=0$ se verifican. Confundir suma con producto da el distractor $7$.",
       "maths": [],
       "imgs": []
     },
@@ -2657,7 +2657,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=20$. No hace falta hallar $4$ y $5$ aunque factorizando $(x-4)(x-5)=0$ se verifican. Confundir suma con producto da el distractor $9$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=20$. No hace falta hallar $4$ y $5$ aunque factorizando $(x-4)(x-5)=0$ se verifican. Confundir suma con producto da el distractor $9$.",
       "maths": [],
       "imgs": []
     },
@@ -2679,7 +2679,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=6$. No hace falta hallar $2$ y $3$ aunque factorizando $(x-2)(x-3)=0$ se verifican. Confundir suma con producto da el distractor $5$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=6$. No hace falta hallar $2$ y $3$ aunque factorizando $(x-2)(x-3)=0$ se verifican. Confundir suma con producto da el distractor $5$.",
       "maths": [],
       "imgs": []
     },
@@ -2701,7 +2701,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=12$. No hace falta hallar $3$ y $4$ aunque factorizando $(x-3)(x-4)=0$ se verifican. Confundir suma con producto da el distractor $7$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=12$. No hace falta hallar $3$ y $4$ aunque factorizando $(x-3)(x-4)=0$ se verifican. Confundir suma con producto da el distractor $7$.",
       "maths": [],
       "imgs": []
     },
@@ -2723,7 +2723,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=20$. No hace falta hallar $4$ y $5$ aunque factorizando $(x-4)(x-5)=0$ se verifican. Confundir suma con producto da el distractor $9$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=20$. No hace falta hallar $4$ y $5$ aunque factorizando $(x-4)(x-5)=0$ se verifican. Confundir suma con producto da el distractor $9$.",
       "maths": [],
       "imgs": []
     },
@@ -2745,7 +2745,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=6$. No hace falta hallar $2$ y $3$ aunque factorizando $(x-2)(x-3)=0$ se verifican. Confundir suma con producto da el distractor $5$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=6$. No hace falta hallar $2$ y $3$ aunque factorizando $(x-2)(x-3)=0$ se verifican. Confundir suma con producto da el distractor $5$.",
       "maths": [],
       "imgs": []
     },
@@ -2767,7 +2767,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=12$. No hace falta hallar $3$ y $4$ aunque factorizando $(x-3)(x-4)=0$ se verifican. Confundir suma con producto da el distractor $7$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=12$. No hace falta hallar $3$ y $4$ aunque factorizando $(x-3)(x-4)=0$ se verifican. Confundir suma con producto da el distractor $7$.",
       "maths": [],
       "imgs": []
     },
@@ -2789,7 +2789,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=20$. No hace falta hallar $4$ y $5$ aunque factorizando $(x-4)(x-5)=0$ se verifican. Confundir suma con producto da el distractor $9$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=20$. No hace falta hallar $4$ y $5$ aunque factorizando $(x-4)(x-5)=0$ se verifican. Confundir suma con producto da el distractor $9$.",
       "maths": [],
       "imgs": []
     },
@@ -2811,7 +2811,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=6$. No hace falta hallar $2$ y $3$ aunque factorizando $(x-2)(x-3)=0$ se verifican. Confundir suma con producto da el distractor $5$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=6$. No hace falta hallar $2$ y $3$ aunque factorizando $(x-2)(x-3)=0$ se verifican. Confundir suma con producto da el distractor $5$.",
       "maths": [],
       "imgs": []
     },
@@ -2833,7 +2833,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=12$. No hace falta hallar $3$ y $4$ aunque factorizando $(x-3)(x-4)=0$ se verifican. Confundir suma con producto da el distractor $7$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=12$. No hace falta hallar $3$ y $4$ aunque factorizando $(x-3)(x-4)=0$ se verifican. Confundir suma con producto da el distractor $7$.",
       "maths": [],
       "imgs": []
     },
@@ -2855,7 +2855,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=20$. No hace falta hallar $4$ y $5$ aunque factorizando $(x-4)(x-5)=0$ se verifican. Confundir suma con producto da el distractor $9$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=20$. No hace falta hallar $4$ y $5$ aunque factorizando $(x-4)(x-5)=0$ se verifican. Confundir suma con producto da el distractor $9$.",
       "maths": [],
       "imgs": []
     },
@@ -2877,7 +2877,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=6$. No hace falta hallar $2$ y $3$ aunque factorizando $(x-2)(x-3)=0$ se verifican. Confundir suma con producto da el distractor $5$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=6$. No hace falta hallar $2$ y $3$ aunque factorizando $(x-2)(x-3)=0$ se verifican. Confundir suma con producto da el distractor $5$.",
       "maths": [],
       "imgs": []
     },
@@ -2899,7 +2899,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=12$. No hace falta hallar $3$ y $4$ aunque factorizando $(x-3)(x-4)=0$ se verifican. Confundir suma con producto da el distractor $7$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=12$. No hace falta hallar $3$ y $4$ aunque factorizando $(x-3)(x-4)=0$ se verifican. Confundir suma con producto da el distractor $7$.",
       "maths": [],
       "imgs": []
     },
@@ -2921,7 +2921,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=20$. No hace falta hallar $4$ y $5$ aunque factorizando $(x-4)(x-5)=0$ se verifican. Confundir suma con producto da el distractor $9$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=20$. No hace falta hallar $4$ y $5$ aunque factorizando $(x-4)(x-5)=0$ se verifican. Confundir suma con producto da el distractor $9$.",
       "maths": [],
       "imgs": []
     },
@@ -2943,7 +2943,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=6$. No hace falta hallar $2$ y $3$ aunque factorizando $(x-2)(x-3)=0$ se verifican. Confundir suma con producto da el distractor $5$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=6$. No hace falta hallar $2$ y $3$ aunque factorizando $(x-2)(x-3)=0$ se verifican. Confundir suma con producto da el distractor $5$.",
       "maths": [],
       "imgs": []
     },
@@ -2965,7 +2965,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=12$. No hace falta hallar $3$ y $4$ aunque factorizando $(x-3)(x-4)=0$ se verifican. Confundir suma con producto da el distractor $7$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=12$. No hace falta hallar $3$ y $4$ aunque factorizando $(x-3)(x-4)=0$ se verifican. Confundir suma con producto da el distractor $7$.",
       "maths": [],
       "imgs": []
     },
@@ -2987,7 +2987,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=20$. No hace falta hallar $4$ y $5$ aunque factorizando $(x-4)(x-5)=0$ se verifican. Confundir suma con producto da el distractor $9$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=20$. No hace falta hallar $4$ y $5$ aunque factorizando $(x-4)(x-5)=0$ se verifican. Confundir suma con producto da el distractor $9$.",
       "maths": [],
       "imgs": []
     },
@@ -3009,7 +3009,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=6$. No hace falta hallar $2$ y $3$ aunque factorizando $(x-2)(x-3)=0$ se verifican. Confundir suma con producto da el distractor $5$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=6$. No hace falta hallar $2$ y $3$ aunque factorizando $(x-2)(x-3)=0$ se verifican. Confundir suma con producto da el distractor $5$.",
       "maths": [],
       "imgs": []
     },
@@ -3031,7 +3031,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=12$. No hace falta hallar $3$ y $4$ aunque factorizando $(x-3)(x-4)=0$ se verifican. Confundir suma con producto da el distractor $7$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=12$. No hace falta hallar $3$ y $4$ aunque factorizando $(x-3)(x-4)=0$ se verifican. Confundir suma con producto da el distractor $7$.",
       "maths": [],
       "imgs": []
     },
@@ -3053,7 +3053,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=20$. No hace falta hallar $4$ y $5$ aunque factorizando $(x-4)(x-5)=0$ se verifican. Confundir suma con producto da el distractor $9$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=20$. No hace falta hallar $4$ y $5$ aunque factorizando $(x-4)(x-5)=0$ se verifican. Confundir suma con producto da el distractor $9$.",
       "maths": [],
       "imgs": []
     },
@@ -3075,7 +3075,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=6$. No hace falta hallar $2$ y $3$ aunque factorizando $(x-2)(x-3)=0$ se verifican. Confundir suma con producto da el distractor $5$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=6$. No hace falta hallar $2$ y $3$ aunque factorizando $(x-2)(x-3)=0$ se verifican. Confundir suma con producto da el distractor $5$.",
       "maths": [],
       "imgs": []
     },
@@ -3097,7 +3097,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=12$. No hace falta hallar $3$ y $4$ aunque factorizando $(x-3)(x-4)=0$ se verifican. Confundir suma con producto da el distractor $7$.",
+      "exp": "Paso desde cero: Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=12$. No hace falta hallar $3$ y $4$ aunque factorizando $(x-3)(x-4)=0$ se verifican. Confundir suma con producto da el distractor $7$.",
       "maths": [],
       "imgs": []
     },
@@ -3119,7 +3119,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3141,7 +3141,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3163,7 +3163,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3185,7 +3185,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3207,7 +3207,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3229,7 +3229,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3251,7 +3251,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3273,7 +3273,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3295,7 +3295,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3317,7 +3317,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3339,7 +3339,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3361,7 +3361,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3383,7 +3383,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3405,7 +3405,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3427,7 +3427,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3449,7 +3449,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3471,7 +3471,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3493,7 +3493,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3515,7 +3515,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3537,7 +3537,7 @@ window.GUIA_BANK_1000 = {
         "$6$"
       ],
       "ans": 0,
-      "exp": "$|6x-6|=5$ equivale a $6x-6=5$ o $6x-6=-5$; de ahí $x_{1}=\\frac{11}{6}$ y $x_{2}=\\frac{1}{6}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 6}{6}=2$. Tomar solo una rama es el error típico.",
+      "exp": "Paso desde cero: $|6x-6|=5$ equivale a $6x-6=5$ o $6x-6=-5$; de ahí $x_{1}=\\frac{11}{6}$ y $x_{2}=\\frac{1}{6}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 6}{6}=2$. Tomar solo una rama es el error típico.",
       "maths": [],
       "imgs": []
     },
@@ -3559,7 +3559,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "$|2x-3|=6$ equivale a $2x-3=6$ o $2x-3=-6$; de ahí $x_{1}=\\frac{9}{2}$ y $x_{2}=\\frac{-3}{2}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 3}{2}=3$. Tomar solo una rama es el error típico.",
+      "exp": "Paso desde cero: $|2x-3|=6$ equivale a $2x-3=6$ o $2x-3=-6$; de ahí $x_{1}=\\frac{9}{2}$ y $x_{2}=\\frac{-3}{2}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 3}{2}=3$. Tomar solo una rama es el error típico.",
       "maths": [],
       "imgs": []
     },
@@ -3581,7 +3581,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "$|3x-4|=7$ equivale a $3x-4=7$ o $3x-4=-7$; de ahí $x_{1}=\\frac{11}{3}$ y $x_{2}=\\frac{-3}{3}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 4}{3}=\\frac{8}{3}$. Tomar solo una rama es el error típico.",
+      "exp": "Paso desde cero: $|3x-4|=7$ equivale a $3x-4=7$ o $3x-4=-7$; de ahí $x_{1}=\\frac{11}{3}$ y $x_{2}=\\frac{-3}{3}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 4}{3}=\\frac{8}{3}$. Tomar solo una rama es el error típico.",
       "maths": [],
       "imgs": []
     },
@@ -3603,7 +3603,7 @@ window.GUIA_BANK_1000 = {
         "$5$"
       ],
       "ans": 0,
-      "exp": "$|4x-5|=5$ equivale a $4x-5=5$ o $4x-5=-5$; de ahí $x_{1}=\\frac{10}{4}$ y $x_{2}=\\frac{0}{4}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 5}{4}=\\frac{10}{4}$. Tomar solo una rama es el error típico.",
+      "exp": "Paso desde cero: $|4x-5|=5$ equivale a $4x-5=5$ o $4x-5=-5$; de ahí $x_{1}=\\frac{10}{4}$ y $x_{2}=\\frac{0}{4}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 5}{4}=\\frac{10}{4}$. Tomar solo una rama es el error típico.",
       "maths": [],
       "imgs": []
     },
@@ -3625,7 +3625,7 @@ window.GUIA_BANK_1000 = {
         "$6$"
       ],
       "ans": 0,
-      "exp": "$|5x-6|=6$ equivale a $5x-6=6$ o $5x-6=-6$; de ahí $x_{1}=\\frac{12}{5}$ y $x_{2}=\\frac{0}{5}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 6}{5}=\\frac{12}{5}$. Tomar solo una rama es el error típico.",
+      "exp": "Paso desde cero: $|5x-6|=6$ equivale a $5x-6=6$ o $5x-6=-6$; de ahí $x_{1}=\\frac{12}{5}$ y $x_{2}=\\frac{0}{5}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 6}{5}=\\frac{12}{5}$. Tomar solo una rama es el error típico.",
       "maths": [],
       "imgs": []
     },
@@ -3647,7 +3647,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "$|6x-3|=7$ equivale a $6x-3=7$ o $6x-3=-7$; de ahí $x_{1}=\\frac{10}{6}$ y $x_{2}=\\frac{-4}{6}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 3}{6}=1$. Tomar solo una rama es el error típico.",
+      "exp": "Paso desde cero: $|6x-3|=7$ equivale a $6x-3=7$ o $6x-3=-7$; de ahí $x_{1}=\\frac{10}{6}$ y $x_{2}=\\frac{-4}{6}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 3}{6}=1$. Tomar solo una rama es el error típico.",
       "maths": [],
       "imgs": []
     },
@@ -3669,7 +3669,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "$|2x-4|=5$ equivale a $2x-4=5$ o $2x-4=-5$; de ahí $x_{1}=\\frac{9}{2}$ y $x_{2}=\\frac{-1}{2}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 4}{2}=4$. Tomar solo una rama es el error típico.",
+      "exp": "Paso desde cero: $|2x-4|=5$ equivale a $2x-4=5$ o $2x-4=-5$; de ahí $x_{1}=\\frac{9}{2}$ y $x_{2}=\\frac{-1}{2}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 4}{2}=4$. Tomar solo una rama es el error típico.",
       "maths": [],
       "imgs": []
     },
@@ -3691,7 +3691,7 @@ window.GUIA_BANK_1000 = {
         "$5$"
       ],
       "ans": 0,
-      "exp": "$|3x-5|=6$ equivale a $3x-5=6$ o $3x-5=-6$; de ahí $x_{1}=\\frac{11}{3}$ y $x_{2}=\\frac{-1}{3}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 5}{3}=\\frac{10}{3}$. Tomar solo una rama es el error típico.",
+      "exp": "Paso desde cero: $|3x-5|=6$ equivale a $3x-5=6$ o $3x-5=-6$; de ahí $x_{1}=\\frac{11}{3}$ y $x_{2}=\\frac{-1}{3}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 5}{3}=\\frac{10}{3}$. Tomar solo una rama es el error típico.",
       "maths": [],
       "imgs": []
     },
@@ -3713,7 +3713,7 @@ window.GUIA_BANK_1000 = {
         "$6$"
       ],
       "ans": 0,
-      "exp": "$|4x-6|=7$ equivale a $4x-6=7$ o $4x-6=-7$; de ahí $x_{1}=\\frac{13}{4}$ y $x_{2}=\\frac{-1}{4}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 6}{4}=3$. Tomar solo una rama es el error típico.",
+      "exp": "Paso desde cero: $|4x-6|=7$ equivale a $4x-6=7$ o $4x-6=-7$; de ahí $x_{1}=\\frac{13}{4}$ y $x_{2}=\\frac{-1}{4}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 6}{4}=3$. Tomar solo una rama es el error típico.",
       "maths": [],
       "imgs": []
     },
@@ -3735,7 +3735,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "$|5x-3|=5$ equivale a $5x-3=5$ o $5x-3=-5$; de ahí $x_{1}=\\frac{8}{5}$ y $x_{2}=\\frac{-2}{5}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 3}{5}=\\frac{6}{5}$. Tomar solo una rama es el error típico.",
+      "exp": "Paso desde cero: $|5x-3|=5$ equivale a $5x-3=5$ o $5x-3=-5$; de ahí $x_{1}=\\frac{8}{5}$ y $x_{2}=\\frac{-2}{5}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 3}{5}=\\frac{6}{5}$. Tomar solo una rama es el error típico.",
       "maths": [],
       "imgs": []
     },
@@ -3757,7 +3757,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "$|6x-4|=6$ equivale a $6x-4=6$ o $6x-4=-6$; de ahí $x_{1}=\\frac{10}{6}$ y $x_{2}=\\frac{-2}{6}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 4}{6}=\\frac{8}{6}$. Tomar solo una rama es el error típico.",
+      "exp": "Paso desde cero: $|6x-4|=6$ equivale a $6x-4=6$ o $6x-4=-6$; de ahí $x_{1}=\\frac{10}{6}$ y $x_{2}=\\frac{-2}{6}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 4}{6}=\\frac{8}{6}$. Tomar solo una rama es el error típico.",
       "maths": [],
       "imgs": []
     },
@@ -3779,7 +3779,7 @@ window.GUIA_BANK_1000 = {
         "$5$"
       ],
       "ans": 0,
-      "exp": "$|2x-5|=7$ equivale a $2x-5=7$ o $2x-5=-7$; de ahí $x_{1}=\\frac{12}{2}$ y $x_{2}=\\frac{-2}{2}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 5}{2}=5$. Tomar solo una rama es el error típico.",
+      "exp": "Paso desde cero: $|2x-5|=7$ equivale a $2x-5=7$ o $2x-5=-7$; de ahí $x_{1}=\\frac{12}{2}$ y $x_{2}=\\frac{-2}{2}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 5}{2}=5$. Tomar solo una rama es el error típico.",
       "maths": [],
       "imgs": []
     },
@@ -3801,7 +3801,7 @@ window.GUIA_BANK_1000 = {
         "$6$"
       ],
       "ans": 0,
-      "exp": "$|3x-6|=5$ equivale a $3x-6=5$ o $3x-6=-5$; de ahí $x_{1}=\\frac{11}{3}$ y $x_{2}=\\frac{1}{3}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 6}{3}=4$. Tomar solo una rama es el error típico.",
+      "exp": "Paso desde cero: $|3x-6|=5$ equivale a $3x-6=5$ o $3x-6=-5$; de ahí $x_{1}=\\frac{11}{3}$ y $x_{2}=\\frac{1}{3}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 6}{3}=4$. Tomar solo una rama es el error típico.",
       "maths": [],
       "imgs": []
     },
@@ -3823,7 +3823,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "$|4x-3|=6$ equivale a $4x-3=6$ o $4x-3=-6$; de ahí $x_{1}=\\frac{9}{4}$ y $x_{2}=\\frac{-3}{4}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 3}{4}=\\frac{6}{4}$. Tomar solo una rama es el error típico.",
+      "exp": "Paso desde cero: $|4x-3|=6$ equivale a $4x-3=6$ o $4x-3=-6$; de ahí $x_{1}=\\frac{9}{4}$ y $x_{2}=\\frac{-3}{4}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 3}{4}=\\frac{6}{4}$. Tomar solo una rama es el error típico.",
       "maths": [],
       "imgs": []
     },
@@ -3845,7 +3845,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "$|5x-4|=7$ equivale a $5x-4=7$ o $5x-4=-7$; de ahí $x_{1}=\\frac{11}{5}$ y $x_{2}=\\frac{-3}{5}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 4}{5}=\\frac{8}{5}$. Tomar solo una rama es el error típico.",
+      "exp": "Paso desde cero: $|5x-4|=7$ equivale a $5x-4=7$ o $5x-4=-7$; de ahí $x_{1}=\\frac{11}{5}$ y $x_{2}=\\frac{-3}{5}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 4}{5}=\\frac{8}{5}$. Tomar solo una rama es el error típico.",
       "maths": [],
       "imgs": []
     },
@@ -3867,7 +3867,7 @@ window.GUIA_BANK_1000 = {
         "$5$"
       ],
       "ans": 0,
-      "exp": "$|6x-5|=5$ equivale a $6x-5=5$ o $6x-5=-5$; de ahí $x_{1}=\\frac{10}{6}$ y $x_{2}=\\frac{0}{6}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 5}{6}=\\frac{10}{6}$. Tomar solo una rama es el error típico.",
+      "exp": "Paso desde cero: $|6x-5|=5$ equivale a $6x-5=5$ o $6x-5=-5$; de ahí $x_{1}=\\frac{10}{6}$ y $x_{2}=\\frac{0}{6}$. La suma es $x_{1}+x_{2}=\\frac{2\\cdot 5}{6}=\\frac{10}{6}$. Tomar solo una rama es el error típico.",
       "maths": [],
       "imgs": []
     },
@@ -3889,7 +3889,7 @@ window.GUIA_BANK_1000 = {
         "$80^\\circ$"
       ],
       "ans": 0,
-      "exp": "En isósceles base $BC$, $\\angle B=\\angle C=55^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 55^\\circ=70^\\circ$.",
+      "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=55^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 55^\\circ=70^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 172,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -3913,7 +3913,7 @@ window.GUIA_BANK_1000 = {
         "$90^\\circ$"
       ],
       "ans": 0,
-      "exp": "Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $46^\\circ$. El suplemento $134^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
+      "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $46^\\circ$. El suplemento $134^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 173,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"171\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -3937,7 +3937,7 @@ window.GUIA_BANK_1000 = {
         "$90^\\circ$"
       ],
       "ans": 0,
-      "exp": "Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $47^\\circ$. El suplemento $133^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
+      "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $47^\\circ$. El suplemento $133^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 167,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -3961,7 +3961,7 @@ window.GUIA_BANK_1000 = {
         "$74^\\circ$"
       ],
       "ans": 0,
-      "exp": "En isósceles base $BC$, $\\angle B=\\angle C=58^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 58^\\circ=64^\\circ$.",
+      "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=58^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 58^\\circ=64^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 168,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"166\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -3985,7 +3985,7 @@ window.GUIA_BANK_1000 = {
         "$72^\\circ$"
       ],
       "ans": 0,
-      "exp": "En isósceles base $BC$, $\\angle B=\\angle C=59^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 59^\\circ=62^\\circ$.",
+      "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=59^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 59^\\circ=62^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 169,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"167\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4009,7 +4009,7 @@ window.GUIA_BANK_1000 = {
         "$90^\\circ$"
       ],
       "ans": 0,
-      "exp": "Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $38^\\circ$. El suplemento $142^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
+      "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $38^\\circ$. El suplemento $142^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 170,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"168\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4033,7 +4033,7 @@ window.GUIA_BANK_1000 = {
         "$90^\\circ$"
       ],
       "ans": 0,
-      "exp": "Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $39^\\circ$. El suplemento $141^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
+      "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $39^\\circ$. El suplemento $141^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 171,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"169\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4057,7 +4057,7 @@ window.GUIA_BANK_1000 = {
         "$86^\\circ$"
       ],
       "ans": 0,
-      "exp": "En isósceles base $BC$, $\\angle B=\\angle C=52^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 52^\\circ=76^\\circ$.",
+      "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=52^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 52^\\circ=76^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 172,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4081,7 +4081,7 @@ window.GUIA_BANK_1000 = {
         "$84^\\circ$"
       ],
       "ans": 0,
-      "exp": "En isósceles base $BC$, $\\angle B=\\angle C=53^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 53^\\circ=74^\\circ$.",
+      "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=53^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 53^\\circ=74^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 173,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"171\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4105,7 +4105,7 @@ window.GUIA_BANK_1000 = {
         "$90^\\circ$"
       ],
       "ans": 0,
-      "exp": "Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $42^\\circ$. El suplemento $138^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
+      "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $42^\\circ$. El suplemento $138^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 167,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4129,7 +4129,7 @@ window.GUIA_BANK_1000 = {
         "$90^\\circ$"
       ],
       "ans": 0,
-      "exp": "Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $43^\\circ$. El suplemento $137^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
+      "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $43^\\circ$. El suplemento $137^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 168,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"166\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4153,7 +4153,7 @@ window.GUIA_BANK_1000 = {
         "$78^\\circ$"
       ],
       "ans": 0,
-      "exp": "En isósceles base $BC$, $\\angle B=\\angle C=56^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 56^\\circ=68^\\circ$.",
+      "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=56^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 56^\\circ=68^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 169,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"167\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4177,7 +4177,7 @@ window.GUIA_BANK_1000 = {
         "$76^\\circ$"
       ],
       "ans": 0,
-      "exp": "En isósceles base $BC$, $\\angle B=\\angle C=57^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 57^\\circ=66^\\circ$.",
+      "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=57^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 57^\\circ=66^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 170,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"168\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4201,7 +4201,7 @@ window.GUIA_BANK_1000 = {
         "$90^\\circ$"
       ],
       "ans": 0,
-      "exp": "Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $46^\\circ$. El suplemento $134^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
+      "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $46^\\circ$. El suplemento $134^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 171,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"169\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4225,7 +4225,7 @@ window.GUIA_BANK_1000 = {
         "$90^\\circ$"
       ],
       "ans": 0,
-      "exp": "Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $47^\\circ$. El suplemento $133^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
+      "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $47^\\circ$. El suplemento $133^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 172,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4249,7 +4249,7 @@ window.GUIA_BANK_1000 = {
         "$90^\\circ$"
       ],
       "ans": 0,
-      "exp": "En isósceles base $BC$, $\\angle B=\\angle C=50^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 50^\\circ=80^\\circ$.",
+      "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=50^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 50^\\circ=80^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 173,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"171\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4273,7 +4273,7 @@ window.GUIA_BANK_1000 = {
         "$88^\\circ$"
       ],
       "ans": 0,
-      "exp": "En isósceles base $BC$, $\\angle B=\\angle C=51^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 51^\\circ=78^\\circ$.",
+      "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=51^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 51^\\circ=78^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 167,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4297,7 +4297,7 @@ window.GUIA_BANK_1000 = {
         "$90^\\circ$"
       ],
       "ans": 0,
-      "exp": "Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $38^\\circ$. El suplemento $142^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
+      "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $38^\\circ$. El suplemento $142^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 168,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"166\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4321,7 +4321,7 @@ window.GUIA_BANK_1000 = {
         "$90^\\circ$"
       ],
       "ans": 0,
-      "exp": "Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $39^\\circ$. El suplemento $141^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
+      "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $39^\\circ$. El suplemento $141^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 169,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"167\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4345,7 +4345,7 @@ window.GUIA_BANK_1000 = {
         "$82^\\circ$"
       ],
       "ans": 0,
-      "exp": "En isósceles base $BC$, $\\angle B=\\angle C=54^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 54^\\circ=72^\\circ$.",
+      "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=54^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 54^\\circ=72^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 170,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"168\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4369,7 +4369,7 @@ window.GUIA_BANK_1000 = {
         "$80^\\circ$"
       ],
       "ans": 0,
-      "exp": "En isósceles base $BC$, $\\angle B=\\angle C=55^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 55^\\circ=70^\\circ$.",
+      "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=55^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 55^\\circ=70^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 171,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"169\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4393,7 +4393,7 @@ window.GUIA_BANK_1000 = {
         "$90^\\circ$"
       ],
       "ans": 0,
-      "exp": "Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $42^\\circ$. El suplemento $138^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
+      "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $42^\\circ$. El suplemento $138^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 172,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4417,7 +4417,7 @@ window.GUIA_BANK_1000 = {
         "$90^\\circ$"
       ],
       "ans": 0,
-      "exp": "Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $43^\\circ$. El suplemento $137^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
+      "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $43^\\circ$. El suplemento $137^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 173,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"171\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4441,7 +4441,7 @@ window.GUIA_BANK_1000 = {
         "$74^\\circ$"
       ],
       "ans": 0,
-      "exp": "En isósceles base $BC$, $\\angle B=\\angle C=58^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 58^\\circ=64^\\circ$.",
+      "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=58^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 58^\\circ=64^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 167,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4465,7 +4465,7 @@ window.GUIA_BANK_1000 = {
         "$72^\\circ$"
       ],
       "ans": 0,
-      "exp": "En isósceles base $BC$, $\\angle B=\\angle C=59^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 59^\\circ=62^\\circ$.",
+      "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=59^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 59^\\circ=62^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 168,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"166\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">6 · base</text>\n  </svg>"
@@ -4489,7 +4489,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{4}{5}$"
       ],
       "ans": 0,
-      "exp": "$\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{6}$. Intercambiar catetos o invertir la fracción da los distractores.",
+      "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 169,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"167\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">3 · base</text>\n  </svg>"
@@ -4513,7 +4513,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{5}{3}$"
       ],
       "ans": 0,
-      "exp": "$\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{6}$. Intercambiar catetos o invertir la fracción da los distractores.",
+      "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 170,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"168\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">3 · base</text>\n  </svg>"
@@ -4537,7 +4537,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{4}{4}$"
       ],
       "ans": 0,
-      "exp": "$\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{6}$. Intercambiar catetos o invertir la fracción da los distractores.",
+      "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 171,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"169\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">3 · base</text>\n  </svg>"
@@ -4561,7 +4561,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{5}{5}$"
       ],
       "ans": 0,
-      "exp": "$\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{7}$. Intercambiar catetos o invertir la fracción da los distractores.",
+      "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{7}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 172,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">3 · base</text>\n  </svg>"
@@ -4585,7 +4585,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{4}{3}$"
       ],
       "ans": 0,
-      "exp": "$\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{5}$. Intercambiar catetos o invertir la fracción da los distractores.",
+      "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{5}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 173,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"171\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">3 · base</text>\n  </svg>"
@@ -4609,7 +4609,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{5}{4}$"
       ],
       "ans": 0,
-      "exp": "$\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{6}$. Intercambiar catetos o invertir la fracción da los distractores.",
+      "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 167,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">3 · base</text>\n  </svg>"
@@ -4633,7 +4633,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{4}{5}$"
       ],
       "ans": 0,
-      "exp": "$\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{6}$. Intercambiar catetos o invertir la fracción da los distractores.",
+      "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 168,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"166\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">3 · base</text>\n  </svg>"
@@ -4657,7 +4657,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{5}{3}$"
       ],
       "ans": 0,
-      "exp": "$\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{6}$. Intercambiar catetos o invertir la fracción da los distractores.",
+      "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 169,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"167\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">3 · base</text>\n  </svg>"
@@ -4681,7 +4681,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{4}{4}$"
       ],
       "ans": 0,
-      "exp": "$\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{6}$. Intercambiar catetos o invertir la fracción da los distractores.",
+      "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 170,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"168\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">3 · base</text>\n  </svg>"
@@ -4705,7 +4705,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{5}{5}$"
       ],
       "ans": 0,
-      "exp": "$\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{7}$. Intercambiar catetos o invertir la fracción da los distractores.",
+      "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{7}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 171,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"169\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">3 · base</text>\n  </svg>"
@@ -4729,7 +4729,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{4}{3}$"
       ],
       "ans": 0,
-      "exp": "$\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{5}$. Intercambiar catetos o invertir la fracción da los distractores.",
+      "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{5}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 172,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">3 · base</text>\n  </svg>"
@@ -4753,7 +4753,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{5}{4}$"
       ],
       "ans": 0,
-      "exp": "$\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{6}$. Intercambiar catetos o invertir la fracción da los distractores.",
+      "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 173,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"171\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">3 · base</text>\n  </svg>"
@@ -4777,7 +4777,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{4}{5}$"
       ],
       "ans": 0,
-      "exp": "$\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{6}$. Intercambiar catetos o invertir la fracción da los distractores.",
+      "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 167,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">3 · base</text>\n  </svg>"
@@ -4791,7 +4791,7 @@ window.GUIA_BANK_1000 = {
       "topics": [
         "4.1.4-identTrig"
       ],
-      "ch": "m3",
+      "ch": "m4",
       "t": "Identidades trigonométricas",
       "prompt": "Simplifique $\\dfrac{\\sin^{2}x + \\cos^{2}x}{\\sec x}$ a su mínima expresión.",
       "opts": [
@@ -4801,7 +4801,7 @@ window.GUIA_BANK_1000 = {
         "$\\sec x$"
       ],
       "ans": 0,
-      "exp": "Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error.",
+      "exp": "Paso desde cero: Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -4813,7 +4813,7 @@ window.GUIA_BANK_1000 = {
       "topics": [
         "4.1.4-identTrig"
       ],
-      "ch": "m3",
+      "ch": "m4",
       "t": "Identidades trigonométricas",
       "prompt": "Simplifique $\\dfrac{\\sin^{2}x + \\cos^{2}x}{\\sec x}$ a su mínima expresión.",
       "opts": [
@@ -4823,7 +4823,7 @@ window.GUIA_BANK_1000 = {
         "$\\sec x$"
       ],
       "ans": 0,
-      "exp": "Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error.",
+      "exp": "Paso desde cero: Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -4835,7 +4835,7 @@ window.GUIA_BANK_1000 = {
       "topics": [
         "4.1.4-identTrig"
       ],
-      "ch": "m3",
+      "ch": "m4",
       "t": "Identidades trigonométricas",
       "prompt": "Simplifique $\\dfrac{\\sin^{2}x + \\cos^{2}x}{\\sec x}$ a su mínima expresión.",
       "opts": [
@@ -4845,7 +4845,7 @@ window.GUIA_BANK_1000 = {
         "$\\sec x$"
       ],
       "ans": 0,
-      "exp": "Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error.",
+      "exp": "Paso desde cero: Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -4857,7 +4857,7 @@ window.GUIA_BANK_1000 = {
       "topics": [
         "4.1.4-identTrig"
       ],
-      "ch": "m3",
+      "ch": "m4",
       "t": "Identidades trigonométricas",
       "prompt": "Simplifique $\\dfrac{\\sin^{2}x + \\cos^{2}x}{\\sec x}$ a su mínima expresión.",
       "opts": [
@@ -4867,7 +4867,7 @@ window.GUIA_BANK_1000 = {
         "$\\sec x$"
       ],
       "ans": 0,
-      "exp": "Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error.",
+      "exp": "Paso desde cero: Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -4879,7 +4879,7 @@ window.GUIA_BANK_1000 = {
       "topics": [
         "4.1.4-identTrig"
       ],
-      "ch": "m3",
+      "ch": "m4",
       "t": "Identidades trigonométricas",
       "prompt": "Simplifique $\\dfrac{\\sin^{2}x + \\cos^{2}x}{\\sec x}$ a su mínima expresión.",
       "opts": [
@@ -4889,7 +4889,7 @@ window.GUIA_BANK_1000 = {
         "$\\sec x$"
       ],
       "ans": 0,
-      "exp": "Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error.",
+      "exp": "Paso desde cero: Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -4901,7 +4901,7 @@ window.GUIA_BANK_1000 = {
       "topics": [
         "4.1.4-identTrig"
       ],
-      "ch": "m3",
+      "ch": "m4",
       "t": "Identidades trigonométricas",
       "prompt": "Simplifique $\\dfrac{\\sin^{2}x + \\cos^{2}x}{\\sec x}$ a su mínima expresión.",
       "opts": [
@@ -4911,7 +4911,7 @@ window.GUIA_BANK_1000 = {
         "$\\sec x$"
       ],
       "ans": 0,
-      "exp": "Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error.",
+      "exp": "Paso desde cero: Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -4923,7 +4923,7 @@ window.GUIA_BANK_1000 = {
       "topics": [
         "4.1.4-identTrig"
       ],
-      "ch": "m3",
+      "ch": "m4",
       "t": "Identidades trigonométricas",
       "prompt": "Simplifique $\\dfrac{\\sin^{2}x + \\cos^{2}x}{\\sec x}$ a su mínima expresión.",
       "opts": [
@@ -4933,7 +4933,7 @@ window.GUIA_BANK_1000 = {
         "$\\sec x$"
       ],
       "ans": 0,
-      "exp": "Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error.",
+      "exp": "Paso desde cero: Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -4945,7 +4945,7 @@ window.GUIA_BANK_1000 = {
       "topics": [
         "4.1.4-identTrig"
       ],
-      "ch": "m3",
+      "ch": "m4",
       "t": "Identidades trigonométricas",
       "prompt": "Simplifique $\\dfrac{\\sin^{2}x + \\cos^{2}x}{\\sec x}$ a su mínima expresión.",
       "opts": [
@@ -4955,7 +4955,7 @@ window.GUIA_BANK_1000 = {
         "$\\sec x$"
       ],
       "ans": 0,
-      "exp": "Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error.",
+      "exp": "Paso desde cero: Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -4967,7 +4967,7 @@ window.GUIA_BANK_1000 = {
       "topics": [
         "4.1.4-identTrig"
       ],
-      "ch": "m3",
+      "ch": "m4",
       "t": "Identidades trigonométricas",
       "prompt": "Simplifique $\\dfrac{\\sin^{2}x + \\cos^{2}x}{\\sec x}$ a su mínima expresión.",
       "opts": [
@@ -4977,7 +4977,7 @@ window.GUIA_BANK_1000 = {
         "$\\sec x$"
       ],
       "ans": 0,
-      "exp": "Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error.",
+      "exp": "Paso desde cero: Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -4989,7 +4989,7 @@ window.GUIA_BANK_1000 = {
       "topics": [
         "4.1.4-identTrig"
       ],
-      "ch": "m3",
+      "ch": "m4",
       "t": "Identidades trigonométricas",
       "prompt": "Simplifique $\\dfrac{\\sin^{2}x + \\cos^{2}x}{\\sec x}$ a su mínima expresión.",
       "opts": [
@@ -4999,7 +4999,7 @@ window.GUIA_BANK_1000 = {
         "$\\sec x$"
       ],
       "ans": 0,
-      "exp": "Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error.",
+      "exp": "Paso desde cero: Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5011,7 +5011,7 @@ window.GUIA_BANK_1000 = {
       "topics": [
         "4.1.4-identTrig"
       ],
-      "ch": "m3",
+      "ch": "m4",
       "t": "Identidades trigonométricas",
       "prompt": "Simplifique $\\dfrac{\\sin^{2}x + \\cos^{2}x}{\\sec x}$ a su mínima expresión.",
       "opts": [
@@ -5021,7 +5021,7 @@ window.GUIA_BANK_1000 = {
         "$\\sec x$"
       ],
       "ans": 0,
-      "exp": "Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error.",
+      "exp": "Paso desde cero: Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5033,7 +5033,7 @@ window.GUIA_BANK_1000 = {
       "topics": [
         "4.1.4-identTrig"
       ],
-      "ch": "m3",
+      "ch": "m4",
       "t": "Identidades trigonométricas",
       "prompt": "Simplifique $\\dfrac{\\sin^{2}x + \\cos^{2}x}{\\sec x}$ a su mínima expresión.",
       "opts": [
@@ -5043,7 +5043,7 @@ window.GUIA_BANK_1000 = {
         "$\\sec x$"
       ],
       "ans": 0,
-      "exp": "Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error.",
+      "exp": "Paso desde cero: Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5055,7 +5055,7 @@ window.GUIA_BANK_1000 = {
       "topics": [
         "4.1.4-identTrig"
       ],
-      "ch": "m3",
+      "ch": "m4",
       "t": "Identidades trigonométricas",
       "prompt": "Simplifique $\\dfrac{\\sin^{2}x + \\cos^{2}x}{\\sec x}$ a su mínima expresión.",
       "opts": [
@@ -5065,7 +5065,7 @@ window.GUIA_BANK_1000 = {
         "$\\sec x$"
       ],
       "ans": 0,
-      "exp": "Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error.",
+      "exp": "Paso desde cero: Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5087,7 +5087,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{48.99999999999999}$"
       ],
       "ans": 0,
-      "exp": "$BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
+      "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 167,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">7 · base</text>\n  </svg>"
@@ -5111,7 +5111,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{48.99999999999999}$"
       ],
       "ans": 0,
-      "exp": "$BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
+      "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 168,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"166\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">7 · base</text>\n  </svg>"
@@ -5135,7 +5135,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{48.99999999999999}$"
       ],
       "ans": 0,
-      "exp": "$BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
+      "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 169,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"167\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">7 · base</text>\n  </svg>"
@@ -5159,7 +5159,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{48.99999999999999}$"
       ],
       "ans": 0,
-      "exp": "$BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
+      "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 170,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"168\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">7 · base</text>\n  </svg>"
@@ -5183,7 +5183,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{48.99999999999999}$"
       ],
       "ans": 0,
-      "exp": "$BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
+      "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 171,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"169\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">7 · base</text>\n  </svg>"
@@ -5207,7 +5207,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{48.99999999999999}$"
       ],
       "ans": 0,
-      "exp": "$BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
+      "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 172,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">7 · base</text>\n  </svg>"
@@ -5231,7 +5231,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{48.99999999999999}$"
       ],
       "ans": 0,
-      "exp": "$BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
+      "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 173,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"171\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">7 · base</text>\n  </svg>"
@@ -5255,7 +5255,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{48.99999999999999}$"
       ],
       "ans": 0,
-      "exp": "$BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
+      "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 167,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">7 · base</text>\n  </svg>"
@@ -5279,7 +5279,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{48.99999999999999}$"
       ],
       "ans": 0,
-      "exp": "$BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
+      "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 168,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"166\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">7 · base</text>\n  </svg>"
@@ -5303,7 +5303,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{48.99999999999999}$"
       ],
       "ans": 0,
-      "exp": "$BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
+      "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 169,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"167\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">7 · base</text>\n  </svg>"
@@ -5327,7 +5327,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{48.99999999999999}$"
       ],
       "ans": 0,
-      "exp": "$BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
+      "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 170,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"168\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">7 · base</text>\n  </svg>"
@@ -5351,7 +5351,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{48.99999999999999}$"
       ],
       "ans": 0,
-      "exp": "$BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
+      "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 171,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"169\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">7 · base</text>\n  </svg>"
@@ -5375,7 +5375,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{48.99999999999999}$"
       ],
       "ans": 0,
-      "exp": "$BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
+      "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=38.99999999999999$, luego $BC=\\sqrt{38.99999999999999}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 172,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"238\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">7 · base</text>\n  </svg>"
@@ -5399,7 +5399,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{10-6}{8-6}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores.",
+      "exp": "Paso desde cero: $m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{10-6}{8-6}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 38°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
@@ -5423,7 +5423,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{7-3}{4-2}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores.",
+      "exp": "Paso desde cero: $m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{7-3}{4-2}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 38°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
@@ -5447,7 +5447,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{8-4}{5-3}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores.",
+      "exp": "Paso desde cero: $m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{8-4}{5-3}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 38°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
@@ -5471,7 +5471,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{9-5}{6-4}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores.",
+      "exp": "Paso desde cero: $m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{9-5}{6-4}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 38°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
@@ -5495,7 +5495,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{10-6}{7-5}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores.",
+      "exp": "Paso desde cero: $m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{10-6}{7-5}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 38°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
@@ -5519,7 +5519,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{7-3}{8-6}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores.",
+      "exp": "Paso desde cero: $m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{7-3}{8-6}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 38°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
@@ -5543,7 +5543,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{8-4}{4-2}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores.",
+      "exp": "Paso desde cero: $m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{8-4}{4-2}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 38°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
@@ -5567,7 +5567,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{9-5}{5-3}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores.",
+      "exp": "Paso desde cero: $m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{9-5}{5-3}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 38°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
@@ -5591,7 +5591,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{10-6}{6-4}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores.",
+      "exp": "Paso desde cero: $m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{10-6}{6-4}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 38°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
@@ -5615,7 +5615,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{7-3}{7-5}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores.",
+      "exp": "Paso desde cero: $m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{7-3}{7-5}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 38°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
@@ -5639,7 +5639,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{8-4}{8-6}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores.",
+      "exp": "Paso desde cero: $m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{8-4}{8-6}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 38°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
@@ -5663,7 +5663,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{9-5}{4-2}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores.",
+      "exp": "Paso desde cero: $m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{9-5}{4-2}=\\frac{4}{2}=2$. Invertir el cociente o el signo son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 38°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
@@ -5689,7 +5689,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5711,7 +5711,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5733,7 +5733,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5755,7 +5755,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5777,7 +5777,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5799,7 +5799,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5821,7 +5821,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5843,7 +5843,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5865,7 +5865,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5887,7 +5887,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5909,7 +5909,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5931,7 +5931,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5953,7 +5953,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5975,7 +5975,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -5997,7 +5997,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6019,7 +6019,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6041,7 +6041,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6063,7 +6063,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6085,7 +6085,7 @@ window.GUIA_BANK_1000 = {
         "$mg+N$"
       ],
       "ans": 0,
-      "exp": "Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.",
+      "exp": "Paso desde cero: Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6107,7 +6107,7 @@ window.GUIA_BANK_1000 = {
         "$9.6$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{5^{2}+4^{2}}=\\sqrt{41}=6.4$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{5^{2}+4^{2}}=\\sqrt{41}=6.4$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"220\" y1=\"220\" x2=\"220\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"220,108 208.44314162024315,109.56173761888606 215.93948219089626,118.93216333220242\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"150\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=5</text>\n    <text x=\"230\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"228\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6131,7 +6131,7 @@ window.GUIA_BANK_1000 = {
         "$8.7$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{3^{2}+5^{2}}=\\sqrt{34}=5.8$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{3^{2}+5^{2}}=\\sqrt{34}=5.8$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"164\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"164\" y1=\"220\" x2=\"164\" y2=\"80\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"164\" y2=\"80\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"164,80 153.71008489144947,85.48795472456028 164,91.66190378969061\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"122\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=3</text>\n    <text x=\"174\" y=\"150\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=5</text>\n    <text x=\"172\" y=\"72\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6155,7 +6155,7 @@ window.GUIA_BANK_1000 = {
         "$8.6$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{4^{2}+4^{2}}=\\sqrt{32}=5.7$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{4^{2}+4^{2}}=\\sqrt{32}=5.7$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"192\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"192\" y1=\"220\" x2=\"192\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"192\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"192,108 180.68629150101523,110.82842712474618 189.17157287525382,119.31370849898477\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"136\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=4</text>\n    <text x=\"202\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"200\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6179,7 +6179,7 @@ window.GUIA_BANK_1000 = {
         "$10.6$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{5^{2}+5^{2}}=\\sqrt{50}=7.1$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{5^{2}+5^{2}}=\\sqrt{50}=7.1$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"220\" y1=\"220\" x2=\"220\" y2=\"80\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"80\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"220,80 208.68629150101523,82.82842712474618 217.17157287525382,91.31370849898477\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"150\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=5</text>\n    <text x=\"230\" y=\"150\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=5</text>\n    <text x=\"228\" y=\"72\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6203,7 +6203,7 @@ window.GUIA_BANK_1000 = {
         "$7.5$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{3^{2}+4^{2}}=\\sqrt{25}=5.0$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{3^{2}+4^{2}}=\\sqrt{25}=5.0$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"164\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"164\" y1=\"220\" x2=\"164\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"164\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"164,108 153.2,112.4 162.8,119.6\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"122\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=3</text>\n    <text x=\"174\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"172\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6227,7 +6227,7 @@ window.GUIA_BANK_1000 = {
         "$9.6$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{4^{2}+5^{2}}=\\sqrt{41}=6.4$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{4^{2}+5^{2}}=\\sqrt{41}=6.4$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"192\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"192\" y1=\"220\" x2=\"192\" y2=\"80\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"192\" y2=\"80\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"192,80 181.06783666779756,84.06051780910376 190.43826238111393,91.55685837975686\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"136\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=4</text>\n    <text x=\"202\" y=\"150\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=5</text>\n    <text x=\"200\" y=\"72\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6251,7 +6251,7 @@ window.GUIA_BANK_1000 = {
         "$9.6$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{5^{2}+4^{2}}=\\sqrt{41}=6.4$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{5^{2}+4^{2}}=\\sqrt{41}=6.4$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"220\" y1=\"220\" x2=\"220\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"220,108 208.44314162024315,109.56173761888606 215.93948219089626,118.93216333220242\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"150\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=5</text>\n    <text x=\"230\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"228\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6275,7 +6275,7 @@ window.GUIA_BANK_1000 = {
         "$8.7$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{3^{2}+5^{2}}=\\sqrt{34}=5.8$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{3^{2}+5^{2}}=\\sqrt{34}=5.8$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"164\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"164\" y1=\"220\" x2=\"164\" y2=\"80\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"164\" y2=\"80\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"164,80 153.71008489144947,85.48795472456028 164,91.66190378969061\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"122\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=3</text>\n    <text x=\"174\" y=\"150\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=5</text>\n    <text x=\"172\" y=\"72\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6299,7 +6299,7 @@ window.GUIA_BANK_1000 = {
         "$8.6$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{4^{2}+4^{2}}=\\sqrt{32}=5.7$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{4^{2}+4^{2}}=\\sqrt{32}=5.7$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"192\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"192\" y1=\"220\" x2=\"192\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"192\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"192,108 180.68629150101523,110.82842712474618 189.17157287525382,119.31370849898477\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"136\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=4</text>\n    <text x=\"202\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"200\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6323,7 +6323,7 @@ window.GUIA_BANK_1000 = {
         "$10.6$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{5^{2}+5^{2}}=\\sqrt{50}=7.1$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{5^{2}+5^{2}}=\\sqrt{50}=7.1$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"220\" y1=\"220\" x2=\"220\" y2=\"80\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"80\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"220,80 208.68629150101523,82.82842712474618 217.17157287525382,91.31370849898477\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"150\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=5</text>\n    <text x=\"230\" y=\"150\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=5</text>\n    <text x=\"228\" y=\"72\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6347,7 +6347,7 @@ window.GUIA_BANK_1000 = {
         "$7.5$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{3^{2}+4^{2}}=\\sqrt{25}=5.0$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{3^{2}+4^{2}}=\\sqrt{25}=5.0$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"164\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"164\" y1=\"220\" x2=\"164\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"164\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"164,108 153.2,112.4 162.8,119.6\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"122\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=3</text>\n    <text x=\"174\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"172\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6371,7 +6371,7 @@ window.GUIA_BANK_1000 = {
         "$9.6$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{4^{2}+5^{2}}=\\sqrt{41}=6.4$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{4^{2}+5^{2}}=\\sqrt{41}=6.4$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"192\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"192\" y1=\"220\" x2=\"192\" y2=\"80\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"192\" y2=\"80\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"192,80 181.06783666779756,84.06051780910376 190.43826238111393,91.55685837975686\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"136\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=4</text>\n    <text x=\"202\" y=\"150\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=5</text>\n    <text x=\"200\" y=\"72\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6395,7 +6395,7 @@ window.GUIA_BANK_1000 = {
         "$9.6$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{5^{2}+4^{2}}=\\sqrt{41}=6.4$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{5^{2}+4^{2}}=\\sqrt{41}=6.4$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"220\" y1=\"220\" x2=\"220\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"220,108 208.44314162024315,109.56173761888606 215.93948219089626,118.93216333220242\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"150\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=5</text>\n    <text x=\"230\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"228\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6419,7 +6419,7 @@ window.GUIA_BANK_1000 = {
         "$8.7$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{3^{2}+5^{2}}=\\sqrt{34}=5.8$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{3^{2}+5^{2}}=\\sqrt{34}=5.8$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"164\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"164\" y1=\"220\" x2=\"164\" y2=\"80\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"164\" y2=\"80\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"164,80 153.71008489144947,85.48795472456028 164,91.66190378969061\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"122\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=3</text>\n    <text x=\"174\" y=\"150\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=5</text>\n    <text x=\"172\" y=\"72\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6443,7 +6443,7 @@ window.GUIA_BANK_1000 = {
         "$8.6$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{4^{2}+4^{2}}=\\sqrt{32}=5.7$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{4^{2}+4^{2}}=\\sqrt{32}=5.7$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"192\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"192\" y1=\"220\" x2=\"192\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"192\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"192,108 180.68629150101523,110.82842712474618 189.17157287525382,119.31370849898477\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"136\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=4</text>\n    <text x=\"202\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"200\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6467,7 +6467,7 @@ window.GUIA_BANK_1000 = {
         "$10.6$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{5^{2}+5^{2}}=\\sqrt{50}=7.1$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{5^{2}+5^{2}}=\\sqrt{50}=7.1$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"220\" y1=\"220\" x2=\"220\" y2=\"80\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"80\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"220,80 208.68629150101523,82.82842712474618 217.17157287525382,91.31370849898477\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"150\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=5</text>\n    <text x=\"230\" y=\"150\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=5</text>\n    <text x=\"228\" y=\"72\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6491,7 +6491,7 @@ window.GUIA_BANK_1000 = {
         "$7.5$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{3^{2}+4^{2}}=\\sqrt{25}=5.0$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{3^{2}+4^{2}}=\\sqrt{25}=5.0$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"164\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"164\" y1=\"220\" x2=\"164\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"164\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"164,108 153.2,112.4 162.8,119.6\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"122\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=3</text>\n    <text x=\"174\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"172\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6515,7 +6515,7 @@ window.GUIA_BANK_1000 = {
         "$9.6$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{4^{2}+5^{2}}=\\sqrt{41}=6.4$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{4^{2}+5^{2}}=\\sqrt{41}=6.4$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"192\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"192\" y1=\"220\" x2=\"192\" y2=\"80\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"192\" y2=\"80\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"192,80 181.06783666779756,84.06051780910376 190.43826238111393,91.55685837975686\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"136\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=4</text>\n    <text x=\"202\" y=\"150\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=5</text>\n    <text x=\"200\" y=\"72\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6539,7 +6539,7 @@ window.GUIA_BANK_1000 = {
         "$9.6$"
       ],
       "ans": 0,
-      "exp": "$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{5^{2}+4^{2}}=\\sqrt{41}=6.4$. Sumar componentes sin Pitágoras es el error.",
+      "exp": "Paso desde cero: $|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{5^{2}+4^{2}}=\\sqrt{41}=6.4$. Sumar componentes sin Pitágoras es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"220\" y1=\"220\" x2=\"220\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"220,108 208.44314162024315,109.56173761888606 215.93948219089626,118.93216333220242\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"150\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=5</text>\n    <text x=\"230\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"228\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6563,7 +6563,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -6587,7 +6587,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -6611,7 +6611,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -6635,7 +6635,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -6659,7 +6659,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -6683,7 +6683,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -6707,7 +6707,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -6731,7 +6731,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -6755,7 +6755,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -6779,7 +6779,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -6803,7 +6803,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -6827,7 +6827,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -6851,7 +6851,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -6875,7 +6875,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -6899,7 +6899,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -6923,7 +6923,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -6947,7 +6947,7 @@ window.GUIA_BANK_1000 = {
         "$22\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=5+3\\cdot 4=17\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=5+3\\cdot 4=17\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"220\" y1=\"220\" x2=\"220\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"220,108 208.44314162024315,109.56173761888606 215.93948219089626,118.93216333220242\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"150\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=5</text>\n    <text x=\"230\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"228\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6971,7 +6971,7 @@ window.GUIA_BANK_1000 = {
         "$23\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=6+4\\cdot 3=18\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=6+4\\cdot 3=18\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"248\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"248\" y1=\"220\" x2=\"248\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"248\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"248,108 236.3512958792702,108.55470019622523 243.00769823397292,118.53930372827936\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"164\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=6</text>\n    <text x=\"258\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"256\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -6995,7 +6995,7 @@ window.GUIA_BANK_1000 = {
         "$20\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=7+2\\cdot 4=15\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=7+2\\cdot 4=15\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"276\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"276\" y1=\"220\" x2=\"276\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"276\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"276,108 264.3407349486144,107.75193053082158 270.29440220889643,118.17084823631508\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"178\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=7</text>\n    <text x=\"286\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"284\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -7019,7 +7019,7 @@ window.GUIA_BANK_1000 = {
         "$22\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=8+3\\cdot 3=17\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=8+3\\cdot 3=17\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"304\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"304\" y1=\"220\" x2=\"304\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"304\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"304,108 292.3724465170011,107.10557280900008 297.7390096630006,117.83869910099907\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"192\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=8</text>\n    <text x=\"314\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"312\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -7043,7 +7043,7 @@ window.GUIA_BANK_1000 = {
         "$30\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=9+4\\cdot 4=25\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=9+4\\cdot 4=25\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"332\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"332\" y1=\"220\" x2=\"332\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"332\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"332,108 320.4250537174767,106.57851536881293 325.2987153101181,117.54425395225601\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"206\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=9</text>\n    <text x=\"342\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"340\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -7067,7 +7067,7 @@ window.GUIA_BANK_1000 = {
         "$16\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=5+2\\cdot 3=11\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=5+2\\cdot 3=11\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"220\" y1=\"220\" x2=\"220\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"220,108 208.44314162024315,109.56173761888606 215.93948219089626,118.93216333220242\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"150\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=5</text>\n    <text x=\"230\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"228\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -7091,7 +7091,7 @@ window.GUIA_BANK_1000 = {
         "$23\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=6+3\\cdot 4=18\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=6+3\\cdot 4=18\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"248\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"248\" y1=\"220\" x2=\"248\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"248\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"248,108 236.3512958792702,108.55470019622523 243.00769823397292,118.53930372827936\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"164\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=6</text>\n    <text x=\"258\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"256\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -7115,7 +7115,7 @@ window.GUIA_BANK_1000 = {
         "$24\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=7+4\\cdot 3=19\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=7+4\\cdot 3=19\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"276\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"276\" y1=\"220\" x2=\"276\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"276\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"276,108 264.3407349486144,107.75193053082158 270.29440220889643,118.17084823631508\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"178\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=7</text>\n    <text x=\"286\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"284\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -7139,7 +7139,7 @@ window.GUIA_BANK_1000 = {
         "$21\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=8+2\\cdot 4=16\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=8+2\\cdot 4=16\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"304\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"304\" y1=\"220\" x2=\"304\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"304\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"304,108 292.3724465170011,107.10557280900008 297.7390096630006,117.83869910099907\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"192\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=8</text>\n    <text x=\"314\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"312\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -7163,7 +7163,7 @@ window.GUIA_BANK_1000 = {
         "$23\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=9+3\\cdot 3=18\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=9+3\\cdot 3=18\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"332\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"332\" y1=\"220\" x2=\"332\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"332\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"332,108 320.4250537174767,106.57851536881293 325.2987153101181,117.54425395225601\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"206\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=9</text>\n    <text x=\"342\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"340\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -7187,7 +7187,7 @@ window.GUIA_BANK_1000 = {
         "$26\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=5+4\\cdot 4=21\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=5+4\\cdot 4=21\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"220\" y1=\"220\" x2=\"220\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"220,108 208.44314162024315,109.56173761888606 215.93948219089626,118.93216333220242\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"150\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=5</text>\n    <text x=\"230\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"228\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -7211,7 +7211,7 @@ window.GUIA_BANK_1000 = {
         "$17\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=6+2\\cdot 3=12\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=6+2\\cdot 3=12\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"248\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"248\" y1=\"220\" x2=\"248\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"248\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"248,108 236.3512958792702,108.55470019622523 243.00769823397292,118.53930372827936\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"164\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=6</text>\n    <text x=\"258\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"256\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -7235,7 +7235,7 @@ window.GUIA_BANK_1000 = {
         "$24\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=7+3\\cdot 4=19\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=7+3\\cdot 4=19\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"276\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"276\" y1=\"220\" x2=\"276\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"276\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"276,108 264.3407349486144,107.75193053082158 270.29440220889643,118.17084823631508\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"178\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=7</text>\n    <text x=\"286\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"284\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -7259,7 +7259,7 @@ window.GUIA_BANK_1000 = {
         "$25\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=8+4\\cdot 3=20\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=8+4\\cdot 3=20\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"304\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"304\" y1=\"220\" x2=\"304\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"304\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"304,108 292.3724465170011,107.10557280900008 297.7390096630006,117.83869910099907\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"192\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=8</text>\n    <text x=\"314\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"312\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -7283,7 +7283,7 @@ window.GUIA_BANK_1000 = {
         "$22\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=9+2\\cdot 4=17\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=9+2\\cdot 4=17\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"332\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"332\" y1=\"220\" x2=\"332\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"332\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"332,108 320.4250537174767,106.57851536881293 325.2987153101181,117.54425395225601\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"206\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=9</text>\n    <text x=\"342\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"340\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -7307,7 +7307,7 @@ window.GUIA_BANK_1000 = {
         "$19\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=5+3\\cdot 3=14\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=5+3\\cdot 3=14\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"220\" y1=\"220\" x2=\"220\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"220\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"220,108 208.44314162024315,109.56173761888606 215.93948219089626,118.93216333220242\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"150\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=5</text>\n    <text x=\"230\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"228\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -7331,7 +7331,7 @@ window.GUIA_BANK_1000 = {
         "$27\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=6+4\\cdot 4=22\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=6+4\\cdot 4=22\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"248\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"248\" y1=\"220\" x2=\"248\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"248\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"248,108 236.3512958792702,108.55470019622523 243.00769823397292,118.53930372827936\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"164\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=6</text>\n    <text x=\"258\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"256\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -7355,7 +7355,7 @@ window.GUIA_BANK_1000 = {
         "$18\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=7+2\\cdot 3=13\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=7+2\\cdot 3=13\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"276\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"276\" y1=\"220\" x2=\"276\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"276\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"276,108 264.3407349486144,107.75193053082158 270.29440220889643,118.17084823631508\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"178\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=7</text>\n    <text x=\"286\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"284\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -7379,7 +7379,7 @@ window.GUIA_BANK_1000 = {
         "$25\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "MRUV: $v=v_0+at=8+3\\cdot 4=20\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores.",
+      "exp": "Paso desde cero: MRUV: $v=v_0+at=8+3\\cdot 4=20\\,\\mathrm{m/s}$. Olvidar $v_0$ o confundir $a$ con $v$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- ejes -->\n    <line x1=\"40\" y1=\"220\" x2=\"370\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <line x1=\"80\" y1=\"260\" x2=\"80\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.2\" stroke-dasharray=\"4 4\"/>\n    <text x=\"365\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"68\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <!-- componentes -->\n    <line x1=\"80\" y1=\"220\" x2=\"304\" y2=\"220\" stroke=\"#0f766e\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"304\" y1=\"220\" x2=\"304\" y2=\"108\" stroke=\"#7b2cbf\" stroke-width=\"1.6\" stroke-dasharray=\"6 3\"/>\n    <line x1=\"80\" y1=\"220\" x2=\"304\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"304,108 292.3724465170011,107.10557280900008 297.7390096630006,117.83869910099907\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"192\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">vₓ=8</text>\n    <text x=\"314\" y=\"164\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#7b2cbf\">vᵧ=4</text>\n    <text x=\"312\" y=\"100\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">v⃗</text>\n  </svg>"
@@ -7403,7 +7403,7 @@ window.GUIA_BANK_1000 = {
         "$8.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "$h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{80/10}=2.83\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{80/10}=2.83\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=40 m</text>\n  </svg>"
@@ -7427,7 +7427,7 @@ window.GUIA_BANK_1000 = {
         "$9.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "$h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{90/10}=3.00\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{90/10}=3.00\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=45 m</text>\n  </svg>"
@@ -7451,7 +7451,7 @@ window.GUIA_BANK_1000 = {
         "$10.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "$h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{100/10}=3.16\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{100/10}=3.16\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=50 m</text>\n  </svg>"
@@ -7475,7 +7475,7 @@ window.GUIA_BANK_1000 = {
         "$11.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "$h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{110/10}=3.32\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{110/10}=3.32\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=55 m</text>\n  </svg>"
@@ -7499,7 +7499,7 @@ window.GUIA_BANK_1000 = {
         "$12.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "$h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{120/10}=3.46\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{120/10}=3.46\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=60 m</text>\n  </svg>"
@@ -7523,7 +7523,7 @@ window.GUIA_BANK_1000 = {
         "$13.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "$h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{130/10}=3.61\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{130/10}=3.61\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=65 m</text>\n  </svg>"
@@ -7547,7 +7547,7 @@ window.GUIA_BANK_1000 = {
         "$4.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "$h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{40/10}=2.00\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{40/10}=2.00\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=20 m</text>\n  </svg>"
@@ -7571,7 +7571,7 @@ window.GUIA_BANK_1000 = {
         "$5.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "$h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{50/10}=2.24\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{50/10}=2.24\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=25 m</text>\n  </svg>"
@@ -7595,7 +7595,7 @@ window.GUIA_BANK_1000 = {
         "$6.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "$h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{60/10}=2.45\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{60/10}=2.45\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=30 m</text>\n  </svg>"
@@ -7619,7 +7619,7 @@ window.GUIA_BANK_1000 = {
         "$7.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "$h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{70/10}=2.65\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{70/10}=2.65\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=35 m</text>\n  </svg>"
@@ -7643,7 +7643,7 @@ window.GUIA_BANK_1000 = {
         "$8.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "$h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{80/10}=2.83\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{80/10}=2.83\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=40 m</text>\n  </svg>"
@@ -7667,7 +7667,7 @@ window.GUIA_BANK_1000 = {
         "$9.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "$h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{90/10}=3.00\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{90/10}=3.00\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=45 m</text>\n  </svg>"
@@ -7691,7 +7691,7 @@ window.GUIA_BANK_1000 = {
         "$10.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "$h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{100/10}=3.16\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{100/10}=3.16\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=50 m</text>\n  </svg>"
@@ -7715,7 +7715,7 @@ window.GUIA_BANK_1000 = {
         "$11.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "$h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{110/10}=3.32\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{110/10}=3.32\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=55 m</text>\n  </svg>"
@@ -7739,7 +7739,7 @@ window.GUIA_BANK_1000 = {
         "$12.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "$h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{120/10}=3.46\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{120/10}=3.46\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=60 m</text>\n  </svg>"
@@ -7763,7 +7763,7 @@ window.GUIA_BANK_1000 = {
         "$13.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "$h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{130/10}=3.61\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{130/10}=3.61\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=65 m</text>\n  </svg>"
@@ -7787,7 +7787,7 @@ window.GUIA_BANK_1000 = {
         "$63.4\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=24^{2}\\sin74^\\circ/10\\approx 55.4\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=24^{2}\\sin74^\\circ/10\\approx 55.4\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=24 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -7811,7 +7811,7 @@ window.GUIA_BANK_1000 = {
         "$73.0\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=26^{2}\\sin74^\\circ/10\\approx 65.0\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=26^{2}\\sin74^\\circ/10\\approx 65.0\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=26 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -7835,7 +7835,7 @@ window.GUIA_BANK_1000 = {
         "$46.5\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=20^{2}\\sin74^\\circ/10\\approx 38.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=20^{2}\\sin74^\\circ/10\\approx 38.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=20 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -7859,7 +7859,7 @@ window.GUIA_BANK_1000 = {
         "$54.5\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=22^{2}\\sin74^\\circ/10\\approx 46.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=22^{2}\\sin74^\\circ/10\\approx 46.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=22 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -7883,7 +7883,7 @@ window.GUIA_BANK_1000 = {
         "$63.4\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=24^{2}\\sin74^\\circ/10\\approx 55.4\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=24^{2}\\sin74^\\circ/10\\approx 55.4\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=24 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -7907,7 +7907,7 @@ window.GUIA_BANK_1000 = {
         "$73.0\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=26^{2}\\sin74^\\circ/10\\approx 65.0\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=26^{2}\\sin74^\\circ/10\\approx 65.0\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=26 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -7931,7 +7931,7 @@ window.GUIA_BANK_1000 = {
         "$46.5\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=20^{2}\\sin74^\\circ/10\\approx 38.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=20^{2}\\sin74^\\circ/10\\approx 38.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=20 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -7955,7 +7955,7 @@ window.GUIA_BANK_1000 = {
         "$54.5\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=22^{2}\\sin74^\\circ/10\\approx 46.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=22^{2}\\sin74^\\circ/10\\approx 46.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=22 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -7979,7 +7979,7 @@ window.GUIA_BANK_1000 = {
         "$63.4\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=24^{2}\\sin74^\\circ/10\\approx 55.4\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=24^{2}\\sin74^\\circ/10\\approx 55.4\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=24 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -8003,7 +8003,7 @@ window.GUIA_BANK_1000 = {
         "$73.0\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=26^{2}\\sin74^\\circ/10\\approx 65.0\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=26^{2}\\sin74^\\circ/10\\approx 65.0\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=26 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -8027,7 +8027,7 @@ window.GUIA_BANK_1000 = {
         "$46.5\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=20^{2}\\sin74^\\circ/10\\approx 38.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=20^{2}\\sin74^\\circ/10\\approx 38.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=20 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -8051,7 +8051,7 @@ window.GUIA_BANK_1000 = {
         "$54.5\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=22^{2}\\sin74^\\circ/10\\approx 46.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=22^{2}\\sin74^\\circ/10\\approx 46.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=22 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -8075,7 +8075,7 @@ window.GUIA_BANK_1000 = {
         "$63.4\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=24^{2}\\sin74^\\circ/10\\approx 55.4\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=24^{2}\\sin74^\\circ/10\\approx 55.4\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=24 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -8099,7 +8099,7 @@ window.GUIA_BANK_1000 = {
         "$73.0\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=26^{2}\\sin74^\\circ/10\\approx 65.0\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=26^{2}\\sin74^\\circ/10\\approx 65.0\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=26 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -8123,7 +8123,7 @@ window.GUIA_BANK_1000 = {
         "$46.5\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=20^{2}\\sin74^\\circ/10\\approx 38.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=20^{2}\\sin74^\\circ/10\\approx 38.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=20 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -8147,7 +8147,7 @@ window.GUIA_BANK_1000 = {
         "$54.5\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=22^{2}\\sin74^\\circ/10\\approx 46.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=22^{2}\\sin74^\\circ/10\\approx 46.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=22 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -8171,7 +8171,7 @@ window.GUIA_BANK_1000 = {
         "$63.4\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=24^{2}\\sin74^\\circ/10\\approx 55.4\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=24^{2}\\sin74^\\circ/10\\approx 55.4\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=24 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -8195,7 +8195,7 @@ window.GUIA_BANK_1000 = {
         "$73.0\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=26^{2}\\sin74^\\circ/10\\approx 65.0\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=26^{2}\\sin74^\\circ/10\\approx 65.0\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=26 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -8219,7 +8219,7 @@ window.GUIA_BANK_1000 = {
         "$46.5\\,\\mathrm{m}$"
       ],
       "ans": 0,
-      "exp": "$R=v_0^{2}\\sin2\\theta/g=20^{2}\\sin74^\\circ/10\\approx 38.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores.",
+      "exp": "Paso desde cero: $R=v_0^{2}\\sin2\\theta/g=20^{2}\\sin74^\\circ/10\\approx 38.5\\,\\mathrm{m}$. Usar $\\sin\\theta$ en vez de $\\sin2\\theta$ o olvidar $g$ da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=20 m/s · 37°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=0 m</text>\n  </svg>"
@@ -8243,7 +8243,7 @@ window.GUIA_BANK_1000 = {
         "$6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=3\\cdot 4=12\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=3\\cdot 4=12\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8267,7 +8267,7 @@ window.GUIA_BANK_1000 = {
         "$10\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=4\\cdot 5=20\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=4\\cdot 5=20\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8291,7 +8291,7 @@ window.GUIA_BANK_1000 = {
         "$6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=2\\cdot 6=12\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=2\\cdot 6=12\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8315,7 +8315,7 @@ window.GUIA_BANK_1000 = {
         "$4.5\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=3\\cdot 3=9\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=3\\cdot 3=9\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8339,7 +8339,7 @@ window.GUIA_BANK_1000 = {
         "$8\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=4\\cdot 4=16\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=4\\cdot 4=16\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8363,7 +8363,7 @@ window.GUIA_BANK_1000 = {
         "$5\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=2\\cdot 5=10\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=2\\cdot 5=10\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8387,7 +8387,7 @@ window.GUIA_BANK_1000 = {
         "$9\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=3\\cdot 6=18\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=3\\cdot 6=18\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8411,7 +8411,7 @@ window.GUIA_BANK_1000 = {
         "$6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=4\\cdot 3=12\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=4\\cdot 3=12\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8435,7 +8435,7 @@ window.GUIA_BANK_1000 = {
         "$4\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=2\\cdot 4=8\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=2\\cdot 4=8\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8459,7 +8459,7 @@ window.GUIA_BANK_1000 = {
         "$7.5\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=3\\cdot 5=15\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=3\\cdot 5=15\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8483,7 +8483,7 @@ window.GUIA_BANK_1000 = {
         "$12\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=4\\cdot 6=24\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=4\\cdot 6=24\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8507,7 +8507,7 @@ window.GUIA_BANK_1000 = {
         "$3\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=2\\cdot 3=6\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=2\\cdot 3=6\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8531,7 +8531,7 @@ window.GUIA_BANK_1000 = {
         "$6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=3\\cdot 4=12\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=3\\cdot 4=12\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8555,7 +8555,7 @@ window.GUIA_BANK_1000 = {
         "$10\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=4\\cdot 5=20\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=4\\cdot 5=20\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8579,7 +8579,7 @@ window.GUIA_BANK_1000 = {
         "$6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=2\\cdot 6=12\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=2\\cdot 6=12\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8603,7 +8603,7 @@ window.GUIA_BANK_1000 = {
         "$4.5\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=3\\cdot 3=9\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=3\\cdot 3=9\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8627,7 +8627,7 @@ window.GUIA_BANK_1000 = {
         "$8\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=4\\cdot 4=16\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=4\\cdot 4=16\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8651,7 +8651,7 @@ window.GUIA_BANK_1000 = {
         "$5\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=2\\cdot 5=10\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=2\\cdot 5=10\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8675,7 +8675,7 @@ window.GUIA_BANK_1000 = {
         "$9\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "2da ley: $F_{\\text{neta}}=ma=3\\cdot 6=18\\,\\mathrm{N}$ en la dirección de $\\vec a$.",
+      "exp": "Paso desde cero: 2da ley: $F_{\\text{neta}}=ma=3\\cdot 6=18\\,\\mathrm{N}$ en la dirección de $\\vec a$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -8699,7 +8699,7 @@ window.GUIA_BANK_1000 = {
         "$27.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "$N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 13.8\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error.",
+      "exp": "Paso desde cero: $N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 13.8\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- plano -->\n    <polygon points=\"40,220 360,220 360,190 110,190\" fill=\"#f1f5f9\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"190\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <!-- bloque -->\n    <rect x=\"130\" y=\"152\" width=\"56\" height=\"36\" rx=\"4\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"158\" y=\"175\" text-anchor=\"middle\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">m=4 kg</text>\n    <!-- ángulo -->\n    <path d=\"M 110 190 A 30 30 0 0 0 138 177\" fill=\"none\" stroke=\"#c45c26\" stroke-width=\"1.6\"/>\n    <text x=\"132\" y=\"204\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">θ=30°</text>\n    <!-- fuerzas -->\n    <line x1=\"158\" y1=\"152\" x2=\"158\" y2=\"110\" stroke=\"#b3261e\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,110 152,120 164,120\" fill=\"#b3261e\" stroke=\"#b3261e\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"122\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">N</text>\n    <line x1=\"158\" y1=\"170\" x2=\"158\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,210 164,200 152,200\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">mg</text>\n    <line x1=\"130\" y1=\"170\" x2=\"96\" y2=\"182\" stroke=\"#7b2cbf\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"96,182 107.42682404223972,184.32974082414597 103.43298262941808,173.0138568211513\" fill=\"#7b2cbf\" stroke=\"#7b2cbf\" stroke-linejoin=\"round\"/>\n    <text x=\"68\" y=\"180\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">f=μN μ=0.4</text>\n  </svg>"
@@ -8723,7 +8723,7 @@ window.GUIA_BANK_1000 = {
         "$13.8\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "$N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 6.9\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error.",
+      "exp": "Paso desde cero: $N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 6.9\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- plano -->\n    <polygon points=\"40,220 360,220 360,190 110,190\" fill=\"#f1f5f9\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"190\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <!-- bloque -->\n    <rect x=\"130\" y=\"152\" width=\"56\" height=\"36\" rx=\"4\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"158\" y=\"175\" text-anchor=\"middle\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">m=4 kg</text>\n    <!-- ángulo -->\n    <path d=\"M 110 190 A 30 30 0 0 0 138 177\" fill=\"none\" stroke=\"#c45c26\" stroke-width=\"1.6\"/>\n    <text x=\"132\" y=\"204\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">θ=30°</text>\n    <!-- fuerzas -->\n    <line x1=\"158\" y1=\"152\" x2=\"158\" y2=\"110\" stroke=\"#b3261e\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,110 152,120 164,120\" fill=\"#b3261e\" stroke=\"#b3261e\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"122\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">N</text>\n    <line x1=\"158\" y1=\"170\" x2=\"158\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,210 164,200 152,200\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">mg</text>\n    <line x1=\"130\" y1=\"170\" x2=\"96\" y2=\"182\" stroke=\"#7b2cbf\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"96,182 107.42682404223972,184.32974082414597 103.43298262941808,173.0138568211513\" fill=\"#7b2cbf\" stroke=\"#7b2cbf\" stroke-linejoin=\"round\"/>\n    <text x=\"68\" y=\"180\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">f=μN μ=0.2</text>\n  </svg>"
@@ -8747,7 +8747,7 @@ window.GUIA_BANK_1000 = {
         "$20.8\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "$N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 10.4\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error.",
+      "exp": "Paso desde cero: $N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 10.4\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- plano -->\n    <polygon points=\"40,220 360,220 360,190 110,190\" fill=\"#f1f5f9\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"190\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <!-- bloque -->\n    <rect x=\"130\" y=\"152\" width=\"56\" height=\"36\" rx=\"4\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"158\" y=\"175\" text-anchor=\"middle\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">m=4 kg</text>\n    <!-- ángulo -->\n    <path d=\"M 110 190 A 30 30 0 0 0 138 177\" fill=\"none\" stroke=\"#c45c26\" stroke-width=\"1.6\"/>\n    <text x=\"132\" y=\"204\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">θ=30°</text>\n    <!-- fuerzas -->\n    <line x1=\"158\" y1=\"152\" x2=\"158\" y2=\"110\" stroke=\"#b3261e\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,110 152,120 164,120\" fill=\"#b3261e\" stroke=\"#b3261e\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"122\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">N</text>\n    <line x1=\"158\" y1=\"170\" x2=\"158\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,210 164,200 152,200\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">mg</text>\n    <line x1=\"130\" y1=\"170\" x2=\"96\" y2=\"182\" stroke=\"#7b2cbf\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"96,182 107.42682404223972,184.32974082414597 103.43298262941808,173.0138568211513\" fill=\"#7b2cbf\" stroke=\"#7b2cbf\" stroke-linejoin=\"round\"/>\n    <text x=\"68\" y=\"180\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">f=μN μ=0.3</text>\n  </svg>"
@@ -8771,7 +8771,7 @@ window.GUIA_BANK_1000 = {
         "$27.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "$N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 13.8\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error.",
+      "exp": "Paso desde cero: $N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 13.8\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- plano -->\n    <polygon points=\"40,220 360,220 360,190 110,190\" fill=\"#f1f5f9\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"190\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <!-- bloque -->\n    <rect x=\"130\" y=\"152\" width=\"56\" height=\"36\" rx=\"4\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"158\" y=\"175\" text-anchor=\"middle\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">m=4 kg</text>\n    <!-- ángulo -->\n    <path d=\"M 110 190 A 30 30 0 0 0 138 177\" fill=\"none\" stroke=\"#c45c26\" stroke-width=\"1.6\"/>\n    <text x=\"132\" y=\"204\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">θ=30°</text>\n    <!-- fuerzas -->\n    <line x1=\"158\" y1=\"152\" x2=\"158\" y2=\"110\" stroke=\"#b3261e\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,110 152,120 164,120\" fill=\"#b3261e\" stroke=\"#b3261e\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"122\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">N</text>\n    <line x1=\"158\" y1=\"170\" x2=\"158\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,210 164,200 152,200\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">mg</text>\n    <line x1=\"130\" y1=\"170\" x2=\"96\" y2=\"182\" stroke=\"#7b2cbf\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"96,182 107.42682404223972,184.32974082414597 103.43298262941808,173.0138568211513\" fill=\"#7b2cbf\" stroke=\"#7b2cbf\" stroke-linejoin=\"round\"/>\n    <text x=\"68\" y=\"180\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">f=μN μ=0.4</text>\n  </svg>"
@@ -8795,7 +8795,7 @@ window.GUIA_BANK_1000 = {
         "$13.8\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "$N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 6.9\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error.",
+      "exp": "Paso desde cero: $N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 6.9\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- plano -->\n    <polygon points=\"40,220 360,220 360,190 110,190\" fill=\"#f1f5f9\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"190\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <!-- bloque -->\n    <rect x=\"130\" y=\"152\" width=\"56\" height=\"36\" rx=\"4\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"158\" y=\"175\" text-anchor=\"middle\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">m=4 kg</text>\n    <!-- ángulo -->\n    <path d=\"M 110 190 A 30 30 0 0 0 138 177\" fill=\"none\" stroke=\"#c45c26\" stroke-width=\"1.6\"/>\n    <text x=\"132\" y=\"204\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">θ=30°</text>\n    <!-- fuerzas -->\n    <line x1=\"158\" y1=\"152\" x2=\"158\" y2=\"110\" stroke=\"#b3261e\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,110 152,120 164,120\" fill=\"#b3261e\" stroke=\"#b3261e\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"122\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">N</text>\n    <line x1=\"158\" y1=\"170\" x2=\"158\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,210 164,200 152,200\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">mg</text>\n    <line x1=\"130\" y1=\"170\" x2=\"96\" y2=\"182\" stroke=\"#7b2cbf\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"96,182 107.42682404223972,184.32974082414597 103.43298262941808,173.0138568211513\" fill=\"#7b2cbf\" stroke=\"#7b2cbf\" stroke-linejoin=\"round\"/>\n    <text x=\"68\" y=\"180\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">f=μN μ=0.2</text>\n  </svg>"
@@ -8819,7 +8819,7 @@ window.GUIA_BANK_1000 = {
         "$20.8\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "$N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 10.4\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error.",
+      "exp": "Paso desde cero: $N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 10.4\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- plano -->\n    <polygon points=\"40,220 360,220 360,190 110,190\" fill=\"#f1f5f9\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"190\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <!-- bloque -->\n    <rect x=\"130\" y=\"152\" width=\"56\" height=\"36\" rx=\"4\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"158\" y=\"175\" text-anchor=\"middle\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">m=4 kg</text>\n    <!-- ángulo -->\n    <path d=\"M 110 190 A 30 30 0 0 0 138 177\" fill=\"none\" stroke=\"#c45c26\" stroke-width=\"1.6\"/>\n    <text x=\"132\" y=\"204\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">θ=30°</text>\n    <!-- fuerzas -->\n    <line x1=\"158\" y1=\"152\" x2=\"158\" y2=\"110\" stroke=\"#b3261e\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,110 152,120 164,120\" fill=\"#b3261e\" stroke=\"#b3261e\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"122\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">N</text>\n    <line x1=\"158\" y1=\"170\" x2=\"158\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,210 164,200 152,200\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">mg</text>\n    <line x1=\"130\" y1=\"170\" x2=\"96\" y2=\"182\" stroke=\"#7b2cbf\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"96,182 107.42682404223972,184.32974082414597 103.43298262941808,173.0138568211513\" fill=\"#7b2cbf\" stroke=\"#7b2cbf\" stroke-linejoin=\"round\"/>\n    <text x=\"68\" y=\"180\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">f=μN μ=0.3</text>\n  </svg>"
@@ -8843,7 +8843,7 @@ window.GUIA_BANK_1000 = {
         "$27.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "$N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 13.8\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error.",
+      "exp": "Paso desde cero: $N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 13.8\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- plano -->\n    <polygon points=\"40,220 360,220 360,190 110,190\" fill=\"#f1f5f9\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"190\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <!-- bloque -->\n    <rect x=\"130\" y=\"152\" width=\"56\" height=\"36\" rx=\"4\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"158\" y=\"175\" text-anchor=\"middle\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">m=4 kg</text>\n    <!-- ángulo -->\n    <path d=\"M 110 190 A 30 30 0 0 0 138 177\" fill=\"none\" stroke=\"#c45c26\" stroke-width=\"1.6\"/>\n    <text x=\"132\" y=\"204\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">θ=30°</text>\n    <!-- fuerzas -->\n    <line x1=\"158\" y1=\"152\" x2=\"158\" y2=\"110\" stroke=\"#b3261e\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,110 152,120 164,120\" fill=\"#b3261e\" stroke=\"#b3261e\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"122\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">N</text>\n    <line x1=\"158\" y1=\"170\" x2=\"158\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,210 164,200 152,200\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">mg</text>\n    <line x1=\"130\" y1=\"170\" x2=\"96\" y2=\"182\" stroke=\"#7b2cbf\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"96,182 107.42682404223972,184.32974082414597 103.43298262941808,173.0138568211513\" fill=\"#7b2cbf\" stroke=\"#7b2cbf\" stroke-linejoin=\"round\"/>\n    <text x=\"68\" y=\"180\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">f=μN μ=0.4</text>\n  </svg>"
@@ -8867,7 +8867,7 @@ window.GUIA_BANK_1000 = {
         "$13.8\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "$N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 6.9\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error.",
+      "exp": "Paso desde cero: $N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 6.9\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- plano -->\n    <polygon points=\"40,220 360,220 360,190 110,190\" fill=\"#f1f5f9\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"190\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <!-- bloque -->\n    <rect x=\"130\" y=\"152\" width=\"56\" height=\"36\" rx=\"4\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"158\" y=\"175\" text-anchor=\"middle\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">m=4 kg</text>\n    <!-- ángulo -->\n    <path d=\"M 110 190 A 30 30 0 0 0 138 177\" fill=\"none\" stroke=\"#c45c26\" stroke-width=\"1.6\"/>\n    <text x=\"132\" y=\"204\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">θ=30°</text>\n    <!-- fuerzas -->\n    <line x1=\"158\" y1=\"152\" x2=\"158\" y2=\"110\" stroke=\"#b3261e\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,110 152,120 164,120\" fill=\"#b3261e\" stroke=\"#b3261e\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"122\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">N</text>\n    <line x1=\"158\" y1=\"170\" x2=\"158\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,210 164,200 152,200\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">mg</text>\n    <line x1=\"130\" y1=\"170\" x2=\"96\" y2=\"182\" stroke=\"#7b2cbf\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"96,182 107.42682404223972,184.32974082414597 103.43298262941808,173.0138568211513\" fill=\"#7b2cbf\" stroke=\"#7b2cbf\" stroke-linejoin=\"round\"/>\n    <text x=\"68\" y=\"180\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">f=μN μ=0.2</text>\n  </svg>"
@@ -8891,7 +8891,7 @@ window.GUIA_BANK_1000 = {
         "$20.8\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "$N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 10.4\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error.",
+      "exp": "Paso desde cero: $N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 10.4\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- plano -->\n    <polygon points=\"40,220 360,220 360,190 110,190\" fill=\"#f1f5f9\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"190\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <!-- bloque -->\n    <rect x=\"130\" y=\"152\" width=\"56\" height=\"36\" rx=\"4\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"158\" y=\"175\" text-anchor=\"middle\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">m=4 kg</text>\n    <!-- ángulo -->\n    <path d=\"M 110 190 A 30 30 0 0 0 138 177\" fill=\"none\" stroke=\"#c45c26\" stroke-width=\"1.6\"/>\n    <text x=\"132\" y=\"204\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">θ=30°</text>\n    <!-- fuerzas -->\n    <line x1=\"158\" y1=\"152\" x2=\"158\" y2=\"110\" stroke=\"#b3261e\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,110 152,120 164,120\" fill=\"#b3261e\" stroke=\"#b3261e\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"122\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">N</text>\n    <line x1=\"158\" y1=\"170\" x2=\"158\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,210 164,200 152,200\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">mg</text>\n    <line x1=\"130\" y1=\"170\" x2=\"96\" y2=\"182\" stroke=\"#7b2cbf\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"96,182 107.42682404223972,184.32974082414597 103.43298262941808,173.0138568211513\" fill=\"#7b2cbf\" stroke=\"#7b2cbf\" stroke-linejoin=\"round\"/>\n    <text x=\"68\" y=\"180\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">f=μN μ=0.3</text>\n  </svg>"
@@ -8915,7 +8915,7 @@ window.GUIA_BANK_1000 = {
         "$27.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "$N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 13.8\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error.",
+      "exp": "Paso desde cero: $N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 13.8\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- plano -->\n    <polygon points=\"40,220 360,220 360,190 110,190\" fill=\"#f1f5f9\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"190\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <!-- bloque -->\n    <rect x=\"130\" y=\"152\" width=\"56\" height=\"36\" rx=\"4\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"158\" y=\"175\" text-anchor=\"middle\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">m=4 kg</text>\n    <!-- ángulo -->\n    <path d=\"M 110 190 A 30 30 0 0 0 138 177\" fill=\"none\" stroke=\"#c45c26\" stroke-width=\"1.6\"/>\n    <text x=\"132\" y=\"204\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">θ=30°</text>\n    <!-- fuerzas -->\n    <line x1=\"158\" y1=\"152\" x2=\"158\" y2=\"110\" stroke=\"#b3261e\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,110 152,120 164,120\" fill=\"#b3261e\" stroke=\"#b3261e\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"122\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">N</text>\n    <line x1=\"158\" y1=\"170\" x2=\"158\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,210 164,200 152,200\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">mg</text>\n    <line x1=\"130\" y1=\"170\" x2=\"96\" y2=\"182\" stroke=\"#7b2cbf\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"96,182 107.42682404223972,184.32974082414597 103.43298262941808,173.0138568211513\" fill=\"#7b2cbf\" stroke=\"#7b2cbf\" stroke-linejoin=\"round\"/>\n    <text x=\"68\" y=\"180\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">f=μN μ=0.4</text>\n  </svg>"
@@ -8939,7 +8939,7 @@ window.GUIA_BANK_1000 = {
         "$13.8\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "$N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 6.9\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error.",
+      "exp": "Paso desde cero: $N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 6.9\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- plano -->\n    <polygon points=\"40,220 360,220 360,190 110,190\" fill=\"#f1f5f9\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"190\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <!-- bloque -->\n    <rect x=\"130\" y=\"152\" width=\"56\" height=\"36\" rx=\"4\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"158\" y=\"175\" text-anchor=\"middle\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">m=4 kg</text>\n    <!-- ángulo -->\n    <path d=\"M 110 190 A 30 30 0 0 0 138 177\" fill=\"none\" stroke=\"#c45c26\" stroke-width=\"1.6\"/>\n    <text x=\"132\" y=\"204\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">θ=30°</text>\n    <!-- fuerzas -->\n    <line x1=\"158\" y1=\"152\" x2=\"158\" y2=\"110\" stroke=\"#b3261e\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,110 152,120 164,120\" fill=\"#b3261e\" stroke=\"#b3261e\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"122\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">N</text>\n    <line x1=\"158\" y1=\"170\" x2=\"158\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,210 164,200 152,200\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">mg</text>\n    <line x1=\"130\" y1=\"170\" x2=\"96\" y2=\"182\" stroke=\"#7b2cbf\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"96,182 107.42682404223972,184.32974082414597 103.43298262941808,173.0138568211513\" fill=\"#7b2cbf\" stroke=\"#7b2cbf\" stroke-linejoin=\"round\"/>\n    <text x=\"68\" y=\"180\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">f=μN μ=0.2</text>\n  </svg>"
@@ -8963,7 +8963,7 @@ window.GUIA_BANK_1000 = {
         "$20.8\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "$N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 10.4\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error.",
+      "exp": "Paso desde cero: $N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 10.4\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- plano -->\n    <polygon points=\"40,220 360,220 360,190 110,190\" fill=\"#f1f5f9\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"190\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <!-- bloque -->\n    <rect x=\"130\" y=\"152\" width=\"56\" height=\"36\" rx=\"4\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"158\" y=\"175\" text-anchor=\"middle\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">m=4 kg</text>\n    <!-- ángulo -->\n    <path d=\"M 110 190 A 30 30 0 0 0 138 177\" fill=\"none\" stroke=\"#c45c26\" stroke-width=\"1.6\"/>\n    <text x=\"132\" y=\"204\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">θ=30°</text>\n    <!-- fuerzas -->\n    <line x1=\"158\" y1=\"152\" x2=\"158\" y2=\"110\" stroke=\"#b3261e\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,110 152,120 164,120\" fill=\"#b3261e\" stroke=\"#b3261e\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"122\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">N</text>\n    <line x1=\"158\" y1=\"170\" x2=\"158\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,210 164,200 152,200\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">mg</text>\n    <line x1=\"130\" y1=\"170\" x2=\"96\" y2=\"182\" stroke=\"#7b2cbf\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"96,182 107.42682404223972,184.32974082414597 103.43298262941808,173.0138568211513\" fill=\"#7b2cbf\" stroke=\"#7b2cbf\" stroke-linejoin=\"round\"/>\n    <text x=\"68\" y=\"180\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">f=μN μ=0.3</text>\n  </svg>"
@@ -8987,7 +8987,7 @@ window.GUIA_BANK_1000 = {
         "$27.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "$N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 13.8\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error.",
+      "exp": "Paso desde cero: $N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 13.8\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- plano -->\n    <polygon points=\"40,220 360,220 360,190 110,190\" fill=\"#f1f5f9\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"190\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <!-- bloque -->\n    <rect x=\"130\" y=\"152\" width=\"56\" height=\"36\" rx=\"4\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"158\" y=\"175\" text-anchor=\"middle\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">m=4 kg</text>\n    <!-- ángulo -->\n    <path d=\"M 110 190 A 30 30 0 0 0 138 177\" fill=\"none\" stroke=\"#c45c26\" stroke-width=\"1.6\"/>\n    <text x=\"132\" y=\"204\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">θ=30°</text>\n    <!-- fuerzas -->\n    <line x1=\"158\" y1=\"152\" x2=\"158\" y2=\"110\" stroke=\"#b3261e\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,110 152,120 164,120\" fill=\"#b3261e\" stroke=\"#b3261e\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"122\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">N</text>\n    <line x1=\"158\" y1=\"170\" x2=\"158\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,210 164,200 152,200\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">mg</text>\n    <line x1=\"130\" y1=\"170\" x2=\"96\" y2=\"182\" stroke=\"#7b2cbf\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"96,182 107.42682404223972,184.32974082414597 103.43298262941808,173.0138568211513\" fill=\"#7b2cbf\" stroke=\"#7b2cbf\" stroke-linejoin=\"round\"/>\n    <text x=\"68\" y=\"180\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">f=μN μ=0.4</text>\n  </svg>"
@@ -9011,7 +9011,7 @@ window.GUIA_BANK_1000 = {
         "$13.8\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "$N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 6.9\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error.",
+      "exp": "Paso desde cero: $N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 6.9\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- plano -->\n    <polygon points=\"40,220 360,220 360,190 110,190\" fill=\"#f1f5f9\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"190\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <!-- bloque -->\n    <rect x=\"130\" y=\"152\" width=\"56\" height=\"36\" rx=\"4\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"158\" y=\"175\" text-anchor=\"middle\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">m=4 kg</text>\n    <!-- ángulo -->\n    <path d=\"M 110 190 A 30 30 0 0 0 138 177\" fill=\"none\" stroke=\"#c45c26\" stroke-width=\"1.6\"/>\n    <text x=\"132\" y=\"204\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">θ=30°</text>\n    <!-- fuerzas -->\n    <line x1=\"158\" y1=\"152\" x2=\"158\" y2=\"110\" stroke=\"#b3261e\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,110 152,120 164,120\" fill=\"#b3261e\" stroke=\"#b3261e\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"122\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">N</text>\n    <line x1=\"158\" y1=\"170\" x2=\"158\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,210 164,200 152,200\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">mg</text>\n    <line x1=\"130\" y1=\"170\" x2=\"96\" y2=\"182\" stroke=\"#7b2cbf\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"96,182 107.42682404223972,184.32974082414597 103.43298262941808,173.0138568211513\" fill=\"#7b2cbf\" stroke=\"#7b2cbf\" stroke-linejoin=\"round\"/>\n    <text x=\"68\" y=\"180\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">f=μN μ=0.2</text>\n  </svg>"
@@ -9035,7 +9035,7 @@ window.GUIA_BANK_1000 = {
         "$20.8\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "$N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 10.4\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error.",
+      "exp": "Paso desde cero: $N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 10.4\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- plano -->\n    <polygon points=\"40,220 360,220 360,190 110,190\" fill=\"#f1f5f9\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"190\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <!-- bloque -->\n    <rect x=\"130\" y=\"152\" width=\"56\" height=\"36\" rx=\"4\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"158\" y=\"175\" text-anchor=\"middle\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">m=4 kg</text>\n    <!-- ángulo -->\n    <path d=\"M 110 190 A 30 30 0 0 0 138 177\" fill=\"none\" stroke=\"#c45c26\" stroke-width=\"1.6\"/>\n    <text x=\"132\" y=\"204\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">θ=30°</text>\n    <!-- fuerzas -->\n    <line x1=\"158\" y1=\"152\" x2=\"158\" y2=\"110\" stroke=\"#b3261e\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,110 152,120 164,120\" fill=\"#b3261e\" stroke=\"#b3261e\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"122\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">N</text>\n    <line x1=\"158\" y1=\"170\" x2=\"158\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,210 164,200 152,200\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">mg</text>\n    <line x1=\"130\" y1=\"170\" x2=\"96\" y2=\"182\" stroke=\"#7b2cbf\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"96,182 107.42682404223972,184.32974082414597 103.43298262941808,173.0138568211513\" fill=\"#7b2cbf\" stroke=\"#7b2cbf\" stroke-linejoin=\"round\"/>\n    <text x=\"68\" y=\"180\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">f=μN μ=0.3</text>\n  </svg>"
@@ -9059,7 +9059,7 @@ window.GUIA_BANK_1000 = {
         "$27.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "$N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 13.8\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error.",
+      "exp": "Paso desde cero: $N=mg\\cos\\theta\\approx 34.6\\,\\mathrm{N}$, luego $f=\\mu N\\approx 13.8\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <!-- plano -->\n    <polygon points=\"40,220 360,220 360,190 110,190\" fill=\"#f1f5f9\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"110\" y2=\"190\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <!-- bloque -->\n    <rect x=\"130\" y=\"152\" width=\"56\" height=\"36\" rx=\"4\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"158\" y=\"175\" text-anchor=\"middle\" font-size=\"12\" font-family=\"sans-serif\" fill=\"#0e2a47\">m=4 kg</text>\n    <!-- ángulo -->\n    <path d=\"M 110 190 A 30 30 0 0 0 138 177\" fill=\"none\" stroke=\"#c45c26\" stroke-width=\"1.6\"/>\n    <text x=\"132\" y=\"204\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">θ=30°</text>\n    <!-- fuerzas -->\n    <line x1=\"158\" y1=\"152\" x2=\"158\" y2=\"110\" stroke=\"#b3261e\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,110 152,120 164,120\" fill=\"#b3261e\" stroke=\"#b3261e\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"122\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">N</text>\n    <line x1=\"158\" y1=\"170\" x2=\"158\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"158,210 164,200 152,200\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"166\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">mg</text>\n    <line x1=\"130\" y1=\"170\" x2=\"96\" y2=\"182\" stroke=\"#7b2cbf\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"96,182 107.42682404223972,184.32974082414597 103.43298262941808,173.0138568211513\" fill=\"#7b2cbf\" stroke=\"#7b2cbf\" stroke-linejoin=\"round\"/>\n    <text x=\"68\" y=\"180\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">f=μN μ=0.4</text>\n  </svg>"
@@ -9083,7 +9083,7 @@ window.GUIA_BANK_1000 = {
         "Solo actúa una fuerza"
       ],
       "ans": 0,
-      "exp": "Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
+      "exp": "Paso desde cero: Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -9107,7 +9107,7 @@ window.GUIA_BANK_1000 = {
         "Solo actúa una fuerza"
       ],
       "ans": 0,
-      "exp": "Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
+      "exp": "Paso desde cero: Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -9131,7 +9131,7 @@ window.GUIA_BANK_1000 = {
         "Solo actúa una fuerza"
       ],
       "ans": 0,
-      "exp": "Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
+      "exp": "Paso desde cero: Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -9155,7 +9155,7 @@ window.GUIA_BANK_1000 = {
         "Solo actúa una fuerza"
       ],
       "ans": 0,
-      "exp": "Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
+      "exp": "Paso desde cero: Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -9179,7 +9179,7 @@ window.GUIA_BANK_1000 = {
         "Solo actúa una fuerza"
       ],
       "ans": 0,
-      "exp": "Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
+      "exp": "Paso desde cero: Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -9203,7 +9203,7 @@ window.GUIA_BANK_1000 = {
         "Solo actúa una fuerza"
       ],
       "ans": 0,
-      "exp": "Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
+      "exp": "Paso desde cero: Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -9227,7 +9227,7 @@ window.GUIA_BANK_1000 = {
         "Solo actúa una fuerza"
       ],
       "ans": 0,
-      "exp": "Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
+      "exp": "Paso desde cero: Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -9251,7 +9251,7 @@ window.GUIA_BANK_1000 = {
         "Solo actúa una fuerza"
       ],
       "ans": 0,
-      "exp": "Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
+      "exp": "Paso desde cero: Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -9275,7 +9275,7 @@ window.GUIA_BANK_1000 = {
         "Solo actúa una fuerza"
       ],
       "ans": 0,
-      "exp": "Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
+      "exp": "Paso desde cero: Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -9299,7 +9299,7 @@ window.GUIA_BANK_1000 = {
         "Solo actúa una fuerza"
       ],
       "ans": 0,
-      "exp": "Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
+      "exp": "Paso desde cero: Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -9323,7 +9323,7 @@ window.GUIA_BANK_1000 = {
         "Solo actúa una fuerza"
       ],
       "ans": 0,
-      "exp": "Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
+      "exp": "Paso desde cero: Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -9347,7 +9347,7 @@ window.GUIA_BANK_1000 = {
         "Solo actúa una fuerza"
       ],
       "ans": 0,
-      "exp": "Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
+      "exp": "Paso desde cero: Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -9371,7 +9371,7 @@ window.GUIA_BANK_1000 = {
         "Solo actúa una fuerza"
       ],
       "ans": 0,
-      "exp": "Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
+      "exp": "Paso desde cero: Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -9395,7 +9395,7 @@ window.GUIA_BANK_1000 = {
         "Solo actúa una fuerza"
       ],
       "ans": 0,
-      "exp": "Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
+      "exp": "Paso desde cero: Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -9419,7 +9419,7 @@ window.GUIA_BANK_1000 = {
         "Solo actúa una fuerza"
       ],
       "ans": 0,
-      "exp": "Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
+      "exp": "Paso desde cero: Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -9443,7 +9443,7 @@ window.GUIA_BANK_1000 = {
         "Solo actúa una fuerza"
       ],
       "ans": 0,
-      "exp": "Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
+      "exp": "Paso desde cero: Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -9467,7 +9467,7 @@ window.GUIA_BANK_1000 = {
         "$49.0\\,\\mathrm{m/s^{2}}$"
       ],
       "ans": 0,
-      "exp": "$a_c=v^{2}/R=7^{2}/5=9.8\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores.",
+      "exp": "Paso desde cero: $a_c=v^{2}/R=7^{2}/5=9.8\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"88\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"200\" y=\"148\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" dx=\"6\" dy=\"-6\">O</text>\n    <line x1=\"200\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"270,100 258.3752361256181,100.92998110995055 265.35009445024724,110.69478276443138\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"268\" y=\"96\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">r=5 m</text>\n    <!-- velocidad tangencial -->\n    <line x1=\"270\" y1=\"100\" x2=\"295\" y2=\"68\" stroke=\"#c45c26\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"295,68 284.11541333792945,72.18637948541175 293.57170582262427,79.57410798907952\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"298\" y=\"64\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#c45c26\">v=ωr ω=1.4 rad/s</text>\n    <!-- ángulo -->\n    <path d=\"M 240 150 A 40 40 0 0 0 260 122\" fill=\"none\" stroke=\"#7b2cbf\" stroke-width=\"1.6\"/>\n    <text x=\"248\" y=\"142\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">θ</text>\n  </svg>"
@@ -9491,7 +9491,7 @@ window.GUIA_BANK_1000 = {
         "$64.0\\,\\mathrm{m/s^{2}}$"
       ],
       "ans": 0,
-      "exp": "$a_c=v^{2}/R=8^{2}/6=10.7\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores.",
+      "exp": "Paso desde cero: $a_c=v^{2}/R=8^{2}/6=10.7\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"88\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"200\" y=\"148\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" dx=\"6\" dy=\"-6\">O</text>\n    <line x1=\"200\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"270,100 258.3752361256181,100.92998110995055 265.35009445024724,110.69478276443138\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"268\" y=\"96\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">r=6 m</text>\n    <!-- velocidad tangencial -->\n    <line x1=\"270\" y1=\"100\" x2=\"295\" y2=\"68\" stroke=\"#c45c26\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"295,68 284.11541333792945,72.18637948541175 293.57170582262427,79.57410798907952\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"298\" y=\"64\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#c45c26\">v=ωr ω=1.3 rad/s</text>\n    <!-- ángulo -->\n    <path d=\"M 240 150 A 40 40 0 0 0 260 122\" fill=\"none\" stroke=\"#7b2cbf\" stroke-width=\"1.6\"/>\n    <text x=\"248\" y=\"142\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">θ</text>\n  </svg>"
@@ -9515,7 +9515,7 @@ window.GUIA_BANK_1000 = {
         "$36.0\\,\\mathrm{m/s^{2}}$"
       ],
       "ans": 0,
-      "exp": "$a_c=v^{2}/R=6^{2}/7=5.1\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores.",
+      "exp": "Paso desde cero: $a_c=v^{2}/R=6^{2}/7=5.1\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"88\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"200\" y=\"148\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" dx=\"6\" dy=\"-6\">O</text>\n    <line x1=\"200\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"270,100 258.3752361256181,100.92998110995055 265.35009445024724,110.69478276443138\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"268\" y=\"96\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">r=7 m</text>\n    <!-- velocidad tangencial -->\n    <line x1=\"270\" y1=\"100\" x2=\"295\" y2=\"68\" stroke=\"#c45c26\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"295,68 284.11541333792945,72.18637948541175 293.57170582262427,79.57410798907952\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"298\" y=\"64\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#c45c26\">v=ωr ω=0.9 rad/s</text>\n    <!-- ángulo -->\n    <path d=\"M 240 150 A 40 40 0 0 0 260 122\" fill=\"none\" stroke=\"#7b2cbf\" stroke-width=\"1.6\"/>\n    <text x=\"248\" y=\"142\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">θ</text>\n  </svg>"
@@ -9539,7 +9539,7 @@ window.GUIA_BANK_1000 = {
         "$49.0\\,\\mathrm{m/s^{2}}$"
       ],
       "ans": 0,
-      "exp": "$a_c=v^{2}/R=7^{2}/8=6.1\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores.",
+      "exp": "Paso desde cero: $a_c=v^{2}/R=7^{2}/8=6.1\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"88\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"200\" y=\"148\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" dx=\"6\" dy=\"-6\">O</text>\n    <line x1=\"200\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"270,100 258.3752361256181,100.92998110995055 265.35009445024724,110.69478276443138\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"268\" y=\"96\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">r=8 m</text>\n    <!-- velocidad tangencial -->\n    <line x1=\"270\" y1=\"100\" x2=\"295\" y2=\"68\" stroke=\"#c45c26\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"295,68 284.11541333792945,72.18637948541175 293.57170582262427,79.57410798907952\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"298\" y=\"64\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#c45c26\">v=ωr ω=0.9 rad/s</text>\n    <!-- ángulo -->\n    <path d=\"M 240 150 A 40 40 0 0 0 260 122\" fill=\"none\" stroke=\"#7b2cbf\" stroke-width=\"1.6\"/>\n    <text x=\"248\" y=\"142\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">θ</text>\n  </svg>"
@@ -9563,7 +9563,7 @@ window.GUIA_BANK_1000 = {
         "$64.0\\,\\mathrm{m/s^{2}}$"
       ],
       "ans": 0,
-      "exp": "$a_c=v^{2}/R=8^{2}/5=12.8\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores.",
+      "exp": "Paso desde cero: $a_c=v^{2}/R=8^{2}/5=12.8\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"88\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"200\" y=\"148\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" dx=\"6\" dy=\"-6\">O</text>\n    <line x1=\"200\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"270,100 258.3752361256181,100.92998110995055 265.35009445024724,110.69478276443138\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"268\" y=\"96\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">r=5 m</text>\n    <!-- velocidad tangencial -->\n    <line x1=\"270\" y1=\"100\" x2=\"295\" y2=\"68\" stroke=\"#c45c26\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"295,68 284.11541333792945,72.18637948541175 293.57170582262427,79.57410798907952\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"298\" y=\"64\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#c45c26\">v=ωr ω=1.6 rad/s</text>\n    <!-- ángulo -->\n    <path d=\"M 240 150 A 40 40 0 0 0 260 122\" fill=\"none\" stroke=\"#7b2cbf\" stroke-width=\"1.6\"/>\n    <text x=\"248\" y=\"142\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">θ</text>\n  </svg>"
@@ -9587,7 +9587,7 @@ window.GUIA_BANK_1000 = {
         "$36.0\\,\\mathrm{m/s^{2}}$"
       ],
       "ans": 0,
-      "exp": "$a_c=v^{2}/R=6^{2}/6=6.0\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores.",
+      "exp": "Paso desde cero: $a_c=v^{2}/R=6^{2}/6=6.0\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"88\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"200\" y=\"148\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" dx=\"6\" dy=\"-6\">O</text>\n    <line x1=\"200\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"270,100 258.3752361256181,100.92998110995055 265.35009445024724,110.69478276443138\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"268\" y=\"96\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">r=6 m</text>\n    <!-- velocidad tangencial -->\n    <line x1=\"270\" y1=\"100\" x2=\"295\" y2=\"68\" stroke=\"#c45c26\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"295,68 284.11541333792945,72.18637948541175 293.57170582262427,79.57410798907952\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"298\" y=\"64\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#c45c26\">v=ωr ω=1.0 rad/s</text>\n    <!-- ángulo -->\n    <path d=\"M 240 150 A 40 40 0 0 0 260 122\" fill=\"none\" stroke=\"#7b2cbf\" stroke-width=\"1.6\"/>\n    <text x=\"248\" y=\"142\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">θ</text>\n  </svg>"
@@ -9611,7 +9611,7 @@ window.GUIA_BANK_1000 = {
         "$49.0\\,\\mathrm{m/s^{2}}$"
       ],
       "ans": 0,
-      "exp": "$a_c=v^{2}/R=7^{2}/7=7.0\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores.",
+      "exp": "Paso desde cero: $a_c=v^{2}/R=7^{2}/7=7.0\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"88\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"200\" y=\"148\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" dx=\"6\" dy=\"-6\">O</text>\n    <line x1=\"200\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"270,100 258.3752361256181,100.92998110995055 265.35009445024724,110.69478276443138\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"268\" y=\"96\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">r=7 m</text>\n    <!-- velocidad tangencial -->\n    <line x1=\"270\" y1=\"100\" x2=\"295\" y2=\"68\" stroke=\"#c45c26\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"295,68 284.11541333792945,72.18637948541175 293.57170582262427,79.57410798907952\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"298\" y=\"64\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#c45c26\">v=ωr ω=1.0 rad/s</text>\n    <!-- ángulo -->\n    <path d=\"M 240 150 A 40 40 0 0 0 260 122\" fill=\"none\" stroke=\"#7b2cbf\" stroke-width=\"1.6\"/>\n    <text x=\"248\" y=\"142\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">θ</text>\n  </svg>"
@@ -9635,7 +9635,7 @@ window.GUIA_BANK_1000 = {
         "$64.0\\,\\mathrm{m/s^{2}}$"
       ],
       "ans": 0,
-      "exp": "$a_c=v^{2}/R=8^{2}/8=8.0\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores.",
+      "exp": "Paso desde cero: $a_c=v^{2}/R=8^{2}/8=8.0\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"88\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"200\" y=\"148\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" dx=\"6\" dy=\"-6\">O</text>\n    <line x1=\"200\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"270,100 258.3752361256181,100.92998110995055 265.35009445024724,110.69478276443138\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"268\" y=\"96\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">r=8 m</text>\n    <!-- velocidad tangencial -->\n    <line x1=\"270\" y1=\"100\" x2=\"295\" y2=\"68\" stroke=\"#c45c26\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"295,68 284.11541333792945,72.18637948541175 293.57170582262427,79.57410798907952\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"298\" y=\"64\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#c45c26\">v=ωr ω=1.0 rad/s</text>\n    <!-- ángulo -->\n    <path d=\"M 240 150 A 40 40 0 0 0 260 122\" fill=\"none\" stroke=\"#7b2cbf\" stroke-width=\"1.6\"/>\n    <text x=\"248\" y=\"142\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">θ</text>\n  </svg>"
@@ -9659,7 +9659,7 @@ window.GUIA_BANK_1000 = {
         "$36.0\\,\\mathrm{m/s^{2}}$"
       ],
       "ans": 0,
-      "exp": "$a_c=v^{2}/R=6^{2}/5=7.2\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores.",
+      "exp": "Paso desde cero: $a_c=v^{2}/R=6^{2}/5=7.2\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"88\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"200\" y=\"148\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" dx=\"6\" dy=\"-6\">O</text>\n    <line x1=\"200\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"270,100 258.3752361256181,100.92998110995055 265.35009445024724,110.69478276443138\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"268\" y=\"96\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">r=5 m</text>\n    <!-- velocidad tangencial -->\n    <line x1=\"270\" y1=\"100\" x2=\"295\" y2=\"68\" stroke=\"#c45c26\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"295,68 284.11541333792945,72.18637948541175 293.57170582262427,79.57410798907952\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"298\" y=\"64\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#c45c26\">v=ωr ω=1.2 rad/s</text>\n    <!-- ángulo -->\n    <path d=\"M 240 150 A 40 40 0 0 0 260 122\" fill=\"none\" stroke=\"#7b2cbf\" stroke-width=\"1.6\"/>\n    <text x=\"248\" y=\"142\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">θ</text>\n  </svg>"
@@ -9683,7 +9683,7 @@ window.GUIA_BANK_1000 = {
         "$49.0\\,\\mathrm{m/s^{2}}$"
       ],
       "ans": 0,
-      "exp": "$a_c=v^{2}/R=7^{2}/6=8.2\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores.",
+      "exp": "Paso desde cero: $a_c=v^{2}/R=7^{2}/6=8.2\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"88\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"200\" y=\"148\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" dx=\"6\" dy=\"-6\">O</text>\n    <line x1=\"200\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"270,100 258.3752361256181,100.92998110995055 265.35009445024724,110.69478276443138\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"268\" y=\"96\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">r=6 m</text>\n    <!-- velocidad tangencial -->\n    <line x1=\"270\" y1=\"100\" x2=\"295\" y2=\"68\" stroke=\"#c45c26\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"295,68 284.11541333792945,72.18637948541175 293.57170582262427,79.57410798907952\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"298\" y=\"64\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#c45c26\">v=ωr ω=1.2 rad/s</text>\n    <!-- ángulo -->\n    <path d=\"M 240 150 A 40 40 0 0 0 260 122\" fill=\"none\" stroke=\"#7b2cbf\" stroke-width=\"1.6\"/>\n    <text x=\"248\" y=\"142\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">θ</text>\n  </svg>"
@@ -9707,7 +9707,7 @@ window.GUIA_BANK_1000 = {
         "$64.0\\,\\mathrm{m/s^{2}}$"
       ],
       "ans": 0,
-      "exp": "$a_c=v^{2}/R=8^{2}/7=9.1\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores.",
+      "exp": "Paso desde cero: $a_c=v^{2}/R=8^{2}/7=9.1\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"88\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"200\" y=\"148\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" dx=\"6\" dy=\"-6\">O</text>\n    <line x1=\"200\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"270,100 258.3752361256181,100.92998110995055 265.35009445024724,110.69478276443138\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"268\" y=\"96\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">r=7 m</text>\n    <!-- velocidad tangencial -->\n    <line x1=\"270\" y1=\"100\" x2=\"295\" y2=\"68\" stroke=\"#c45c26\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"295,68 284.11541333792945,72.18637948541175 293.57170582262427,79.57410798907952\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"298\" y=\"64\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#c45c26\">v=ωr ω=1.1 rad/s</text>\n    <!-- ángulo -->\n    <path d=\"M 240 150 A 40 40 0 0 0 260 122\" fill=\"none\" stroke=\"#7b2cbf\" stroke-width=\"1.6\"/>\n    <text x=\"248\" y=\"142\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">θ</text>\n  </svg>"
@@ -9731,7 +9731,7 @@ window.GUIA_BANK_1000 = {
         "$36.0\\,\\mathrm{m/s^{2}}$"
       ],
       "ans": 0,
-      "exp": "$a_c=v^{2}/R=6^{2}/8=4.5\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores.",
+      "exp": "Paso desde cero: $a_c=v^{2}/R=6^{2}/8=4.5\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"88\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"200\" y=\"148\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" dx=\"6\" dy=\"-6\">O</text>\n    <line x1=\"200\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"270,100 258.3752361256181,100.92998110995055 265.35009445024724,110.69478276443138\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"268\" y=\"96\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">r=8 m</text>\n    <!-- velocidad tangencial -->\n    <line x1=\"270\" y1=\"100\" x2=\"295\" y2=\"68\" stroke=\"#c45c26\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"295,68 284.11541333792945,72.18637948541175 293.57170582262427,79.57410798907952\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"298\" y=\"64\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#c45c26\">v=ωr ω=0.8 rad/s</text>\n    <!-- ángulo -->\n    <path d=\"M 240 150 A 40 40 0 0 0 260 122\" fill=\"none\" stroke=\"#7b2cbf\" stroke-width=\"1.6\"/>\n    <text x=\"248\" y=\"142\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">θ</text>\n  </svg>"
@@ -9755,7 +9755,7 @@ window.GUIA_BANK_1000 = {
         "$49.0\\,\\mathrm{m/s^{2}}$"
       ],
       "ans": 0,
-      "exp": "$a_c=v^{2}/R=7^{2}/5=9.8\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores.",
+      "exp": "Paso desde cero: $a_c=v^{2}/R=7^{2}/5=9.8\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"88\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"200\" y=\"148\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" dx=\"6\" dy=\"-6\">O</text>\n    <line x1=\"200\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"270,100 258.3752361256181,100.92998110995055 265.35009445024724,110.69478276443138\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"268\" y=\"96\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">r=5 m</text>\n    <!-- velocidad tangencial -->\n    <line x1=\"270\" y1=\"100\" x2=\"295\" y2=\"68\" stroke=\"#c45c26\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"295,68 284.11541333792945,72.18637948541175 293.57170582262427,79.57410798907952\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"298\" y=\"64\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#c45c26\">v=ωr ω=1.4 rad/s</text>\n    <!-- ángulo -->\n    <path d=\"M 240 150 A 40 40 0 0 0 260 122\" fill=\"none\" stroke=\"#7b2cbf\" stroke-width=\"1.6\"/>\n    <text x=\"248\" y=\"142\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">θ</text>\n  </svg>"
@@ -9779,7 +9779,7 @@ window.GUIA_BANK_1000 = {
         "$64.0\\,\\mathrm{m/s^{2}}$"
       ],
       "ans": 0,
-      "exp": "$a_c=v^{2}/R=8^{2}/6=10.7\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores.",
+      "exp": "Paso desde cero: $a_c=v^{2}/R=8^{2}/6=10.7\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"88\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"200\" y=\"148\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" dx=\"6\" dy=\"-6\">O</text>\n    <line x1=\"200\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"270,100 258.3752361256181,100.92998110995055 265.35009445024724,110.69478276443138\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"268\" y=\"96\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">r=6 m</text>\n    <!-- velocidad tangencial -->\n    <line x1=\"270\" y1=\"100\" x2=\"295\" y2=\"68\" stroke=\"#c45c26\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"295,68 284.11541333792945,72.18637948541175 293.57170582262427,79.57410798907952\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"298\" y=\"64\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#c45c26\">v=ωr ω=1.3 rad/s</text>\n    <!-- ángulo -->\n    <path d=\"M 240 150 A 40 40 0 0 0 260 122\" fill=\"none\" stroke=\"#7b2cbf\" stroke-width=\"1.6\"/>\n    <text x=\"248\" y=\"142\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">θ</text>\n  </svg>"
@@ -9803,7 +9803,7 @@ window.GUIA_BANK_1000 = {
         "$36.0\\,\\mathrm{m/s^{2}}$"
       ],
       "ans": 0,
-      "exp": "$a_c=v^{2}/R=6^{2}/7=5.1\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores.",
+      "exp": "Paso desde cero: $a_c=v^{2}/R=6^{2}/7=5.1\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"88\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"200\" y=\"148\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" dx=\"6\" dy=\"-6\">O</text>\n    <line x1=\"200\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"270,100 258.3752361256181,100.92998110995055 265.35009445024724,110.69478276443138\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"268\" y=\"96\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">r=7 m</text>\n    <!-- velocidad tangencial -->\n    <line x1=\"270\" y1=\"100\" x2=\"295\" y2=\"68\" stroke=\"#c45c26\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"295,68 284.11541333792945,72.18637948541175 293.57170582262427,79.57410798907952\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"298\" y=\"64\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#c45c26\">v=ωr ω=0.9 rad/s</text>\n    <!-- ángulo -->\n    <path d=\"M 240 150 A 40 40 0 0 0 260 122\" fill=\"none\" stroke=\"#7b2cbf\" stroke-width=\"1.6\"/>\n    <text x=\"248\" y=\"142\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">θ</text>\n  </svg>"
@@ -9827,7 +9827,7 @@ window.GUIA_BANK_1000 = {
         "$49.0\\,\\mathrm{m/s^{2}}$"
       ],
       "ans": 0,
-      "exp": "$a_c=v^{2}/R=7^{2}/8=6.1\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores.",
+      "exp": "Paso desde cero: $a_c=v^{2}/R=7^{2}/8=6.1\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"88\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2\"/>\n    <circle cx=\"200\" cy=\"150\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"200\" y=\"148\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" dx=\"6\" dy=\"-6\">O</text>\n    <line x1=\"200\" y1=\"150\" x2=\"270\" y2=\"100\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"270,100 258.3752361256181,100.92998110995055 265.35009445024724,110.69478276443138\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/>\n    <text x=\"268\" y=\"96\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">r=8 m</text>\n    <!-- velocidad tangencial -->\n    <line x1=\"270\" y1=\"100\" x2=\"295\" y2=\"68\" stroke=\"#c45c26\" stroke-width=\"1.8\" stroke-linecap=\"round\"/><polygon points=\"295,68 284.11541333792945,72.18637948541175 293.57170582262427,79.57410798907952\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"298\" y=\"64\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#c45c26\">v=ωr ω=0.9 rad/s</text>\n    <!-- ángulo -->\n    <path d=\"M 240 150 A 40 40 0 0 0 260 122\" fill=\"none\" stroke=\"#7b2cbf\" stroke-width=\"1.6\"/>\n    <text x=\"248\" y=\"142\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#7b2cbf\">θ</text>\n  </svg>"
@@ -9851,7 +9851,7 @@ window.GUIA_BANK_1000 = {
         "Ninguna magnitud"
       ],
       "ans": 0,
-      "exp": "Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$.",
+      "exp": "Paso desde cero: Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -9873,7 +9873,7 @@ window.GUIA_BANK_1000 = {
         "Ninguna magnitud"
       ],
       "ans": 0,
-      "exp": "Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$.",
+      "exp": "Paso desde cero: Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -9895,7 +9895,7 @@ window.GUIA_BANK_1000 = {
         "Ninguna magnitud"
       ],
       "ans": 0,
-      "exp": "Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$.",
+      "exp": "Paso desde cero: Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -9917,7 +9917,7 @@ window.GUIA_BANK_1000 = {
         "Ninguna magnitud"
       ],
       "ans": 0,
-      "exp": "Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$.",
+      "exp": "Paso desde cero: Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -9939,7 +9939,7 @@ window.GUIA_BANK_1000 = {
         "Ninguna magnitud"
       ],
       "ans": 0,
-      "exp": "Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$.",
+      "exp": "Paso desde cero: Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -9961,7 +9961,7 @@ window.GUIA_BANK_1000 = {
         "Ninguna magnitud"
       ],
       "ans": 0,
-      "exp": "Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$.",
+      "exp": "Paso desde cero: Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -9983,7 +9983,7 @@ window.GUIA_BANK_1000 = {
         "Ninguna magnitud"
       ],
       "ans": 0,
-      "exp": "Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$.",
+      "exp": "Paso desde cero: Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -10005,7 +10005,7 @@ window.GUIA_BANK_1000 = {
         "Ninguna magnitud"
       ],
       "ans": 0,
-      "exp": "Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$.",
+      "exp": "Paso desde cero: Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -10027,7 +10027,7 @@ window.GUIA_BANK_1000 = {
         "Ninguna magnitud"
       ],
       "ans": 0,
-      "exp": "Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$.",
+      "exp": "Paso desde cero: Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -10049,7 +10049,7 @@ window.GUIA_BANK_1000 = {
         "Ninguna magnitud"
       ],
       "ans": 0,
-      "exp": "Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$.",
+      "exp": "Paso desde cero: Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -10071,7 +10071,7 @@ window.GUIA_BANK_1000 = {
         "Ninguna magnitud"
       ],
       "ans": 0,
-      "exp": "Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$.",
+      "exp": "Paso desde cero: Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -10093,7 +10093,7 @@ window.GUIA_BANK_1000 = {
         "Ninguna magnitud"
       ],
       "ans": 0,
-      "exp": "Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$.",
+      "exp": "Paso desde cero: Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -10115,7 +10115,7 @@ window.GUIA_BANK_1000 = {
         "Ninguna magnitud"
       ],
       "ans": 0,
-      "exp": "Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$.",
+      "exp": "Paso desde cero: Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -10137,7 +10137,7 @@ window.GUIA_BANK_1000 = {
         "Ninguna magnitud"
       ],
       "ans": 0,
-      "exp": "Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$.",
+      "exp": "Paso desde cero: Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -10159,7 +10159,7 @@ window.GUIA_BANK_1000 = {
         "Ninguna magnitud"
       ],
       "ans": 0,
-      "exp": "Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$.",
+      "exp": "Paso desde cero: Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -10181,7 +10181,7 @@ window.GUIA_BANK_1000 = {
         "Ninguna magnitud"
       ],
       "ans": 0,
-      "exp": "Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$.",
+      "exp": "Paso desde cero: Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -10587,7 +10587,7 @@ window.GUIA_BANK_1000 = {
         "$108\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 3\\cdot 6^{2}=0.5\\cdot 3\\cdot 36=54\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
+      "exp": "Paso desde cero: Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 3\\cdot 6^{2}=0.5\\cdot 3\\cdot 36=54\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
       "maths": [],
       "imgs": []
     },
@@ -10609,7 +10609,7 @@ window.GUIA_BANK_1000 = {
         "$196\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 4\\cdot 7^{2}=0.5\\cdot 4\\cdot 49=98\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
+      "exp": "Paso desde cero: Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 4\\cdot 7^{2}=0.5\\cdot 4\\cdot 49=98\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
       "maths": [],
       "imgs": []
     },
@@ -10631,7 +10631,7 @@ window.GUIA_BANK_1000 = {
         "$128\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 2\\cdot 8^{2}=0.5\\cdot 2\\cdot 64=64\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
+      "exp": "Paso desde cero: Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 2\\cdot 8^{2}=0.5\\cdot 2\\cdot 64=64\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
       "maths": [],
       "imgs": []
     },
@@ -10653,7 +10653,7 @@ window.GUIA_BANK_1000 = {
         "$243\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 3\\cdot 9^{2}=0.5\\cdot 3\\cdot 81=121.5\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
+      "exp": "Paso desde cero: Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 3\\cdot 9^{2}=0.5\\cdot 3\\cdot 81=121.5\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
       "maths": [],
       "imgs": []
     },
@@ -10675,7 +10675,7 @@ window.GUIA_BANK_1000 = {
         "$144\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 4\\cdot 6^{2}=0.5\\cdot 4\\cdot 36=72\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
+      "exp": "Paso desde cero: Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 4\\cdot 6^{2}=0.5\\cdot 4\\cdot 36=72\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
       "maths": [],
       "imgs": []
     },
@@ -10697,7 +10697,7 @@ window.GUIA_BANK_1000 = {
         "$98\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 2\\cdot 7^{2}=0.5\\cdot 2\\cdot 49=49\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
+      "exp": "Paso desde cero: Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 2\\cdot 7^{2}=0.5\\cdot 2\\cdot 49=49\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
       "maths": [],
       "imgs": []
     },
@@ -10719,7 +10719,7 @@ window.GUIA_BANK_1000 = {
         "$192\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 3\\cdot 8^{2}=0.5\\cdot 3\\cdot 64=96\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
+      "exp": "Paso desde cero: Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 3\\cdot 8^{2}=0.5\\cdot 3\\cdot 64=96\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
       "maths": [],
       "imgs": []
     },
@@ -10741,7 +10741,7 @@ window.GUIA_BANK_1000 = {
         "$324\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 4\\cdot 9^{2}=0.5\\cdot 4\\cdot 81=162\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
+      "exp": "Paso desde cero: Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 4\\cdot 9^{2}=0.5\\cdot 4\\cdot 81=162\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
       "maths": [],
       "imgs": []
     },
@@ -10763,7 +10763,7 @@ window.GUIA_BANK_1000 = {
         "$72\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 2\\cdot 6^{2}=0.5\\cdot 2\\cdot 36=36\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
+      "exp": "Paso desde cero: Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 2\\cdot 6^{2}=0.5\\cdot 2\\cdot 36=36\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
       "maths": [],
       "imgs": []
     },
@@ -10785,7 +10785,7 @@ window.GUIA_BANK_1000 = {
         "$147\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 3\\cdot 7^{2}=0.5\\cdot 3\\cdot 49=73.5\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
+      "exp": "Paso desde cero: Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 3\\cdot 7^{2}=0.5\\cdot 3\\cdot 49=73.5\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
       "maths": [],
       "imgs": []
     },
@@ -10807,7 +10807,7 @@ window.GUIA_BANK_1000 = {
         "$256\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 4\\cdot 8^{2}=0.5\\cdot 4\\cdot 64=128\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
+      "exp": "Paso desde cero: Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 4\\cdot 8^{2}=0.5\\cdot 4\\cdot 64=128\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
       "maths": [],
       "imgs": []
     },
@@ -10829,7 +10829,7 @@ window.GUIA_BANK_1000 = {
         "$162\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 2\\cdot 9^{2}=0.5\\cdot 2\\cdot 81=81\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
+      "exp": "Paso desde cero: Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 2\\cdot 9^{2}=0.5\\cdot 2\\cdot 81=81\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
       "maths": [],
       "imgs": []
     },
@@ -10851,7 +10851,7 @@ window.GUIA_BANK_1000 = {
         "$108\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 3\\cdot 6^{2}=0.5\\cdot 3\\cdot 36=54\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
+      "exp": "Paso desde cero: Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 3\\cdot 6^{2}=0.5\\cdot 3\\cdot 36=54\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
       "maths": [],
       "imgs": []
     },
@@ -10873,7 +10873,7 @@ window.GUIA_BANK_1000 = {
         "$196\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 4\\cdot 7^{2}=0.5\\cdot 4\\cdot 49=98\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
+      "exp": "Paso desde cero: Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 4\\cdot 7^{2}=0.5\\cdot 4\\cdot 49=98\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
       "maths": [],
       "imgs": []
     },
@@ -10895,7 +10895,7 @@ window.GUIA_BANK_1000 = {
         "$128\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 2\\cdot 8^{2}=0.5\\cdot 2\\cdot 64=64\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
+      "exp": "Paso desde cero: Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 2\\cdot 8^{2}=0.5\\cdot 2\\cdot 64=64\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
       "maths": [],
       "imgs": []
     },
@@ -10917,7 +10917,7 @@ window.GUIA_BANK_1000 = {
         "$243\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 3\\cdot 9^{2}=0.5\\cdot 3\\cdot 81=121.5\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
+      "exp": "Paso desde cero: Definición: $E_c=\\tfrac12 mv^{2}=0.5\\cdot 3\\cdot 9^{2}=0.5\\cdot 3\\cdot 81=121.5\\,\\mathrm{J}$. Olvidar el $\\tfrac12$ o no elevar $v$ al cuadrado (usar $mv$ o $\\tfrac12 mv$) da los distractores. Unidades $\\mathrm{J}$ coherentes.",
       "maths": [],
       "imgs": []
     },
@@ -10939,7 +10939,7 @@ window.GUIA_BANK_1000 = {
         "$170\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "$E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 5=150\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
+      "exp": "Paso desde cero: $E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 5=150\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
       "maths": [],
       "imgs": []
     },
@@ -10961,7 +10961,7 @@ window.GUIA_BANK_1000 = {
         "$200\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "$E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 6=180\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
+      "exp": "Paso desde cero: $E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 6=180\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
       "maths": [],
       "imgs": []
     },
@@ -10983,7 +10983,7 @@ window.GUIA_BANK_1000 = {
         "$230\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "$E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 7=210\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
+      "exp": "Paso desde cero: $E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 7=210\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
       "maths": [],
       "imgs": []
     },
@@ -11005,7 +11005,7 @@ window.GUIA_BANK_1000 = {
         "$260\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "$E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 8=240\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
+      "exp": "Paso desde cero: $E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 8=240\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
       "maths": [],
       "imgs": []
     },
@@ -11027,7 +11027,7 @@ window.GUIA_BANK_1000 = {
         "$170\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "$E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 5=150\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
+      "exp": "Paso desde cero: $E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 5=150\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
       "maths": [],
       "imgs": []
     },
@@ -11049,7 +11049,7 @@ window.GUIA_BANK_1000 = {
         "$200\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "$E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 6=180\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
+      "exp": "Paso desde cero: $E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 6=180\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
       "maths": [],
       "imgs": []
     },
@@ -11071,7 +11071,7 @@ window.GUIA_BANK_1000 = {
         "$230\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "$E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 7=210\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
+      "exp": "Paso desde cero: $E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 7=210\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
       "maths": [],
       "imgs": []
     },
@@ -11093,7 +11093,7 @@ window.GUIA_BANK_1000 = {
         "$260\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "$E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 8=240\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
+      "exp": "Paso desde cero: $E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 8=240\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
       "maths": [],
       "imgs": []
     },
@@ -11115,7 +11115,7 @@ window.GUIA_BANK_1000 = {
         "$170\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "$E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 5=150\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
+      "exp": "Paso desde cero: $E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 5=150\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
       "maths": [],
       "imgs": []
     },
@@ -11137,7 +11137,7 @@ window.GUIA_BANK_1000 = {
         "$200\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "$E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 6=180\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
+      "exp": "Paso desde cero: $E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 6=180\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
       "maths": [],
       "imgs": []
     },
@@ -11159,7 +11159,7 @@ window.GUIA_BANK_1000 = {
         "$230\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "$E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 7=210\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
+      "exp": "Paso desde cero: $E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 7=210\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
       "maths": [],
       "imgs": []
     },
@@ -11181,7 +11181,7 @@ window.GUIA_BANK_1000 = {
         "$260\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "$E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 8=240\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
+      "exp": "Paso desde cero: $E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 8=240\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
       "maths": [],
       "imgs": []
     },
@@ -11203,7 +11203,7 @@ window.GUIA_BANK_1000 = {
         "$170\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "$E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 5=150\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
+      "exp": "Paso desde cero: $E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 5=150\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
       "maths": [],
       "imgs": []
     },
@@ -11225,7 +11225,7 @@ window.GUIA_BANK_1000 = {
         "$200\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "$E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 6=180\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
+      "exp": "Paso desde cero: $E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 6=180\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
       "maths": [],
       "imgs": []
     },
@@ -11247,7 +11247,7 @@ window.GUIA_BANK_1000 = {
         "$230\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "$E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 7=210\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
+      "exp": "Paso desde cero: $E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 7=210\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
       "maths": [],
       "imgs": []
     },
@@ -11269,7 +11269,7 @@ window.GUIA_BANK_1000 = {
         "$260\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "$E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 8=240\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
+      "exp": "Paso desde cero: $E_p=mgh$ con $g=10\\,\\mathrm{m/s^{2}}$: $E_p=3\\cdot 10\\cdot 8=240\\,\\mathrm{J}$ respecto al nivel $h=0$ (suelo). Omitir $g$ o dividir entre 2 son los errores.",
       "maths": [],
       "imgs": []
     },
@@ -11291,7 +11291,7 @@ window.GUIA_BANK_1000 = {
         "$14.6\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 8}=\\sqrt{160}=12.6\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
+      "exp": "Paso desde cero: Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 8}=\\sqrt{160}=12.6\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -11315,7 +11315,7 @@ window.GUIA_BANK_1000 = {
         "$16.1\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 10}=\\sqrt{200}=14.1\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
+      "exp": "Paso desde cero: Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 10}=\\sqrt{200}=14.1\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -11339,7 +11339,7 @@ window.GUIA_BANK_1000 = {
         "$17.5\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 12}=\\sqrt{240}=15.5\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
+      "exp": "Paso desde cero: Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 12}=\\sqrt{240}=15.5\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -11363,7 +11363,7 @@ window.GUIA_BANK_1000 = {
         "$18.7\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 14}=\\sqrt{280}=16.7\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
+      "exp": "Paso desde cero: Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 14}=\\sqrt{280}=16.7\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -11387,7 +11387,7 @@ window.GUIA_BANK_1000 = {
         "$14.6\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 8}=\\sqrt{160}=12.6\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
+      "exp": "Paso desde cero: Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 8}=\\sqrt{160}=12.6\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -11411,7 +11411,7 @@ window.GUIA_BANK_1000 = {
         "$16.1\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 10}=\\sqrt{200}=14.1\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
+      "exp": "Paso desde cero: Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 10}=\\sqrt{200}=14.1\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -11435,7 +11435,7 @@ window.GUIA_BANK_1000 = {
         "$17.5\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 12}=\\sqrt{240}=15.5\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
+      "exp": "Paso desde cero: Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 12}=\\sqrt{240}=15.5\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -11459,7 +11459,7 @@ window.GUIA_BANK_1000 = {
         "$18.7\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 14}=\\sqrt{280}=16.7\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
+      "exp": "Paso desde cero: Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 14}=\\sqrt{280}=16.7\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -11483,7 +11483,7 @@ window.GUIA_BANK_1000 = {
         "$14.6\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 8}=\\sqrt{160}=12.6\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
+      "exp": "Paso desde cero: Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 8}=\\sqrt{160}=12.6\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -11507,7 +11507,7 @@ window.GUIA_BANK_1000 = {
         "$16.1\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 10}=\\sqrt{200}=14.1\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
+      "exp": "Paso desde cero: Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 10}=\\sqrt{200}=14.1\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -11531,7 +11531,7 @@ window.GUIA_BANK_1000 = {
         "$17.5\\,\\mathrm{m/s}$"
       ],
       "ans": 0,
-      "exp": "Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 12}=\\sqrt{240}=15.5\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
+      "exp": "Paso desde cero: Sin roce: $E_m$ se conserva, $mgh=\\tfrac12 mv^{2}$ (se cancela $m$). De ahí $v=\\sqrt{2gh}=\\sqrt{2\\cdot10\\cdot 12}=\\sqrt{240}=15.5\\,\\mathrm{m/s}$. Olvidar el factor 2 o usar $\\sqrt{gh}$ da los distractores.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -11557,7 +11557,7 @@ window.GUIA_BANK_1000 = {
         "$30000\\,\\mathrm{mL}$"
       ],
       "ans": 0,
-      "exp": "$1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego multiplica por $1000$: paso inverso. Dividir sería el error.",
+      "exp": "$1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego multiplica por $1000$: paso inverso. Dividir sería el error. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -11579,7 +11579,7 @@ window.GUIA_BANK_1000 = {
         "$350\\,\\mathrm{L}$"
       ],
       "ans": 0,
-      "exp": "Factor: $1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego divide entre $1000$: $350/1000=0.35\\,\\mathrm{L}$. Multiplicar o dividir entre $100$ es el error por confundir $\\mathrm{mL}$ con $\\mathrm{cL}$.",
+      "exp": "Paso desde cero: Factor: $1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego divide entre $1000$: $350/1000=0.35\\,\\mathrm{L}$. Multiplicar o dividir entre $100$ es el error por confundir $\\mathrm{mL}$ con $\\mathrm{cL}$.",
       "maths": [],
       "imgs": []
     },
@@ -11601,7 +11601,7 @@ window.GUIA_BANK_1000 = {
         "$40000\\,\\mathrm{mL}$"
       ],
       "ans": 0,
-      "exp": "$1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego multiplica por $1000$: paso inverso. Dividir sería el error.",
+      "exp": "$1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego multiplica por $1000$: paso inverso. Dividir sería el error. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -11623,7 +11623,7 @@ window.GUIA_BANK_1000 = {
         "$450\\,\\mathrm{L}$"
       ],
       "ans": 0,
-      "exp": "Factor: $1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego divide entre $1000$: $450/1000=0.45\\,\\mathrm{L}$. Multiplicar o dividir entre $100$ es el error por confundir $\\mathrm{mL}$ con $\\mathrm{cL}$.",
+      "exp": "Paso desde cero: Factor: $1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego divide entre $1000$: $450/1000=0.45\\,\\mathrm{L}$. Multiplicar o dividir entre $100$ es el error por confundir $\\mathrm{mL}$ con $\\mathrm{cL}$.",
       "maths": [],
       "imgs": []
     },
@@ -11645,7 +11645,7 @@ window.GUIA_BANK_1000 = {
         "$30000\\,\\mathrm{mL}$"
       ],
       "ans": 0,
-      "exp": "$1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego multiplica por $1000$: paso inverso. Dividir sería el error.",
+      "exp": "$1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego multiplica por $1000$: paso inverso. Dividir sería el error. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -11667,7 +11667,7 @@ window.GUIA_BANK_1000 = {
         "$300\\,\\mathrm{L}$"
       ],
       "ans": 0,
-      "exp": "Factor: $1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego divide entre $1000$: $300/1000=0.3\\,\\mathrm{L}$. Multiplicar o dividir entre $100$ es el error por confundir $\\mathrm{mL}$ con $\\mathrm{cL}$.",
+      "exp": "Paso desde cero: Factor: $1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego divide entre $1000$: $300/1000=0.3\\,\\mathrm{L}$. Multiplicar o dividir entre $100$ es el error por confundir $\\mathrm{mL}$ con $\\mathrm{cL}$.",
       "maths": [],
       "imgs": []
     },
@@ -11689,7 +11689,7 @@ window.GUIA_BANK_1000 = {
         "$40000\\,\\mathrm{mL}$"
       ],
       "ans": 0,
-      "exp": "$1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego multiplica por $1000$: paso inverso. Dividir sería el error.",
+      "exp": "$1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego multiplica por $1000$: paso inverso. Dividir sería el error. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -11711,7 +11711,7 @@ window.GUIA_BANK_1000 = {
         "$400\\,\\mathrm{L}$"
       ],
       "ans": 0,
-      "exp": "Factor: $1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego divide entre $1000$: $400/1000=0.4\\,\\mathrm{L}$. Multiplicar o dividir entre $100$ es el error por confundir $\\mathrm{mL}$ con $\\mathrm{cL}$.",
+      "exp": "Paso desde cero: Factor: $1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego divide entre $1000$: $400/1000=0.4\\,\\mathrm{L}$. Multiplicar o dividir entre $100$ es el error por confundir $\\mathrm{mL}$ con $\\mathrm{cL}$.",
       "maths": [],
       "imgs": []
     },
@@ -11733,7 +11733,7 @@ window.GUIA_BANK_1000 = {
         "$30000\\,\\mathrm{mL}$"
       ],
       "ans": 0,
-      "exp": "$1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego multiplica por $1000$: paso inverso. Dividir sería el error.",
+      "exp": "$1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego multiplica por $1000$: paso inverso. Dividir sería el error. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -11755,7 +11755,7 @@ window.GUIA_BANK_1000 = {
         "$250\\,\\mathrm{L}$"
       ],
       "ans": 0,
-      "exp": "Factor: $1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego divide entre $1000$: $250/1000=0.25\\,\\mathrm{L}$. Multiplicar o dividir entre $100$ es el error por confundir $\\mathrm{mL}$ con $\\mathrm{cL}$.",
+      "exp": "Paso desde cero: Factor: $1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego divide entre $1000$: $250/1000=0.25\\,\\mathrm{L}$. Multiplicar o dividir entre $100$ es el error por confundir $\\mathrm{mL}$ con $\\mathrm{cL}$.",
       "maths": [],
       "imgs": []
     },
@@ -11777,7 +11777,7 @@ window.GUIA_BANK_1000 = {
         "$40000\\,\\mathrm{mL}$"
       ],
       "ans": 0,
-      "exp": "$1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego multiplica por $1000$: paso inverso. Dividir sería el error.",
+      "exp": "$1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego multiplica por $1000$: paso inverso. Dividir sería el error. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -11799,7 +11799,7 @@ window.GUIA_BANK_1000 = {
         "$350\\,\\mathrm{L}$"
       ],
       "ans": 0,
-      "exp": "Factor: $1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego divide entre $1000$: $350/1000=0.35\\,\\mathrm{L}$. Multiplicar o dividir entre $100$ es el error por confundir $\\mathrm{mL}$ con $\\mathrm{cL}$.",
+      "exp": "Paso desde cero: Factor: $1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego divide entre $1000$: $350/1000=0.35\\,\\mathrm{L}$. Multiplicar o dividir entre $100$ es el error por confundir $\\mathrm{mL}$ con $\\mathrm{cL}$.",
       "maths": [],
       "imgs": []
     },
@@ -11821,7 +11821,7 @@ window.GUIA_BANK_1000 = {
         "$30000\\,\\mathrm{mL}$"
       ],
       "ans": 0,
-      "exp": "$1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego multiplica por $1000$: paso inverso. Dividir sería el error.",
+      "exp": "$1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego multiplica por $1000$: paso inverso. Dividir sería el error. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -11843,7 +11843,7 @@ window.GUIA_BANK_1000 = {
         "$450\\,\\mathrm{L}$"
       ],
       "ans": 0,
-      "exp": "Factor: $1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego divide entre $1000$: $450/1000=0.45\\,\\mathrm{L}$. Multiplicar o dividir entre $100$ es el error por confundir $\\mathrm{mL}$ con $\\mathrm{cL}$.",
+      "exp": "Paso desde cero: Factor: $1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego divide entre $1000$: $450/1000=0.45\\,\\mathrm{L}$. Multiplicar o dividir entre $100$ es el error por confundir $\\mathrm{mL}$ con $\\mathrm{cL}$.",
       "maths": [],
       "imgs": []
     },
@@ -11865,7 +11865,7 @@ window.GUIA_BANK_1000 = {
         "$40000\\,\\mathrm{mL}$"
       ],
       "ans": 0,
-      "exp": "$1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego multiplica por $1000$: paso inverso. Dividir sería el error.",
+      "exp": "$1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego multiplica por $1000$: paso inverso. Dividir sería el error. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -11887,7 +11887,7 @@ window.GUIA_BANK_1000 = {
         "$300\\,\\mathrm{L}$"
       ],
       "ans": 0,
-      "exp": "Factor: $1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego divide entre $1000$: $300/1000=0.3\\,\\mathrm{L}$. Multiplicar o dividir entre $100$ es el error por confundir $\\mathrm{mL}$ con $\\mathrm{cL}$.",
+      "exp": "Paso desde cero: Factor: $1\\,\\mathrm{L}=1000\\,\\mathrm{mL}$ luego divide entre $1000$: $300/1000=0.3\\,\\mathrm{L}$. Multiplicar o dividir entre $100$ es el error por confundir $\\mathrm{mL}$ con $\\mathrm{cL}$.",
       "maths": [],
       "imgs": []
     },
@@ -11953,7 +11953,7 @@ window.GUIA_BANK_1000 = {
         "Descomposición química"
       ],
       "ans": 0,
-      "exp": "Sublimación sólido→gas del mismo $\\mathrm{I_2}$ sin alterar composición ni formar nueva sustancia: por definición es físico. Químico exigiría ruptura/formación de enlaces y nuevas sustancias con propiedades distintas.",
+      "exp": "Paso desde cero: Sublimación sólido→gas del mismo $\\mathrm{I_2}$ sin alterar composición ni formar nueva sustancia: por definición es físico. Químico exigiría ruptura/formación de enlaces y nuevas sustancias con propiedades distintas.",
       "maths": [],
       "imgs": []
     },
@@ -12019,7 +12019,7 @@ window.GUIA_BANK_1000 = {
         "Descomposición química"
       ],
       "ans": 0,
-      "exp": "Sublimación sólido→gas del mismo $\\mathrm{I_2}$ sin alterar composición ni formar nueva sustancia: por definición es físico. Químico exigiría ruptura/formación de enlaces y nuevas sustancias con propiedades distintas.",
+      "exp": "Paso desde cero: Sublimación sólido→gas del mismo $\\mathrm{I_2}$ sin alterar composición ni formar nueva sustancia: por definición es físico. Químico exigiría ruptura/formación de enlaces y nuevas sustancias con propiedades distintas.",
       "maths": [],
       "imgs": []
     },
@@ -12085,7 +12085,7 @@ window.GUIA_BANK_1000 = {
         "Descomposición química"
       ],
       "ans": 0,
-      "exp": "Sublimación sólido→gas del mismo $\\mathrm{I_2}$ sin alterar composición ni formar nueva sustancia: por definición es físico. Químico exigiría ruptura/formación de enlaces y nuevas sustancias con propiedades distintas.",
+      "exp": "Paso desde cero: Sublimación sólido→gas del mismo $\\mathrm{I_2}$ sin alterar composición ni formar nueva sustancia: por definición es físico. Químico exigiría ruptura/formación de enlaces y nuevas sustancias con propiedades distintas.",
       "maths": [],
       "imgs": []
     },
@@ -12151,7 +12151,7 @@ window.GUIA_BANK_1000 = {
         "Descomposición química"
       ],
       "ans": 0,
-      "exp": "Sublimación sólido→gas del mismo $\\mathrm{I_2}$ sin alterar composición ni formar nueva sustancia: por definición es físico. Químico exigiría ruptura/formación de enlaces y nuevas sustancias con propiedades distintas.",
+      "exp": "Paso desde cero: Sublimación sólido→gas del mismo $\\mathrm{I_2}$ sin alterar composición ni formar nueva sustancia: por definición es físico. Químico exigiría ruptura/formación de enlaces y nuevas sustancias con propiedades distintas.",
       "maths": [],
       "imgs": []
     },
@@ -12217,7 +12217,7 @@ window.GUIA_BANK_1000 = {
         "Descomposición química"
       ],
       "ans": 0,
-      "exp": "Sublimación sólido→gas del mismo $\\mathrm{I_2}$ sin alterar composición ni formar nueva sustancia: por definición es físico. Químico exigiría ruptura/formación de enlaces y nuevas sustancias con propiedades distintas.",
+      "exp": "Paso desde cero: Sublimación sólido→gas del mismo $\\mathrm{I_2}$ sin alterar composición ni formar nueva sustancia: por definición es físico. Químico exigiría ruptura/formación de enlaces y nuevas sustancias con propiedades distintas.",
       "maths": [],
       "imgs": []
     },
@@ -12261,7 +12261,7 @@ window.GUIA_BANK_1000 = {
         "$23$"
       ],
       "ans": 0,
-      "exp": "Catión $2+$ pierde $2$ electrones respecto al neutro: $e^-=Z-2=14-2=12$. Anión los ganaría. Confundir $A$ (nucleones) con $Z$ es el error.",
+      "exp": "Catión $2+$ pierde $2$ electrones respecto al neutro: $e^-=Z-2=14-2=12$. Anión los ganaría. Confundir $A$ (nucleones) con $Z$ es el error. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -12283,7 +12283,7 @@ window.GUIA_BANK_1000 = {
         "$16$"
       ],
       "ans": 0,
-      "exp": "Neutro: $e^-=Z=15$ por neutralidad; $A$ es nucleones y $A-Z$ neutrones. Confundir $A$ con electrones es el distractor típico.",
+      "exp": "Neutro: $e^-=Z=15$ por neutralidad; $A$ es nucleones y $A-Z$ neutrones. Confundir $A$ con electrones es el distractor típico. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -12305,7 +12305,7 @@ window.GUIA_BANK_1000 = {
         "$25$"
       ],
       "ans": 0,
-      "exp": "Catión $2+$ pierde $2$ electrones respecto al neutro: $e^-=Z-2=11-2=9$. Anión los ganaría. Confundir $A$ (nucleones) con $Z$ es el error.",
+      "exp": "Catión $2+$ pierde $2$ electrones respecto al neutro: $e^-=Z-2=11-2=9$. Anión los ganaría. Confundir $A$ (nucleones) con $Z$ es el error. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -12327,7 +12327,7 @@ window.GUIA_BANK_1000 = {
         "$13$"
       ],
       "ans": 0,
-      "exp": "Neutro: $e^-=Z=12$ por neutralidad; $A$ es nucleones y $A-Z$ neutrones. Confundir $A$ con electrones es el distractor típico.",
+      "exp": "Neutro: $e^-=Z=12$ por neutralidad; $A$ es nucleones y $A-Z$ neutrones. Confundir $A$ con electrones es el distractor típico. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -12349,7 +12349,7 @@ window.GUIA_BANK_1000 = {
         "$24$"
       ],
       "ans": 0,
-      "exp": "Catión $2+$ pierde $2$ electrones respecto al neutro: $e^-=Z-2=13-2=11$. Anión los ganaría. Confundir $A$ (nucleones) con $Z$ es el error.",
+      "exp": "Catión $2+$ pierde $2$ electrones respecto al neutro: $e^-=Z-2=13-2=11$. Anión los ganaría. Confundir $A$ (nucleones) con $Z$ es el error. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -12371,7 +12371,7 @@ window.GUIA_BANK_1000 = {
         "$15$"
       ],
       "ans": 0,
-      "exp": "Neutro: $e^-=Z=14$ por neutralidad; $A$ es nucleones y $A-Z$ neutrones. Confundir $A$ con electrones es el distractor típico.",
+      "exp": "Neutro: $e^-=Z=14$ por neutralidad; $A$ es nucleones y $A-Z$ neutrones. Confundir $A$ con electrones es el distractor típico. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -12393,7 +12393,7 @@ window.GUIA_BANK_1000 = {
         "$23$"
       ],
       "ans": 0,
-      "exp": "Catión $2+$ pierde $2$ electrones respecto al neutro: $e^-=Z-2=15-2=13$. Anión los ganaría. Confundir $A$ (nucleones) con $Z$ es el error.",
+      "exp": "Catión $2+$ pierde $2$ electrones respecto al neutro: $e^-=Z-2=15-2=13$. Anión los ganaría. Confundir $A$ (nucleones) con $Z$ es el error. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -12415,7 +12415,7 @@ window.GUIA_BANK_1000 = {
         "$12$"
       ],
       "ans": 0,
-      "exp": "Neutro: $e^-=Z=11$ por neutralidad; $A$ es nucleones y $A-Z$ neutrones. Confundir $A$ con electrones es el distractor típico.",
+      "exp": "Neutro: $e^-=Z=11$ por neutralidad; $A$ es nucleones y $A-Z$ neutrones. Confundir $A$ con electrones es el distractor típico. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -12437,7 +12437,7 @@ window.GUIA_BANK_1000 = {
         "$25$"
       ],
       "ans": 0,
-      "exp": "Catión $2+$ pierde $2$ electrones respecto al neutro: $e^-=Z-2=12-2=10$. Anión los ganaría. Confundir $A$ (nucleones) con $Z$ es el error.",
+      "exp": "Catión $2+$ pierde $2$ electrones respecto al neutro: $e^-=Z-2=12-2=10$. Anión los ganaría. Confundir $A$ (nucleones) con $Z$ es el error. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -12459,7 +12459,7 @@ window.GUIA_BANK_1000 = {
         "$14$"
       ],
       "ans": 0,
-      "exp": "Neutro: $e^-=Z=13$ por neutralidad; $A$ es nucleones y $A-Z$ neutrones. Confundir $A$ con electrones es el distractor típico.",
+      "exp": "Neutro: $e^-=Z=13$ por neutralidad; $A$ es nucleones y $A-Z$ neutrones. Confundir $A$ con electrones es el distractor típico. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -12481,7 +12481,7 @@ window.GUIA_BANK_1000 = {
         "$24$"
       ],
       "ans": 0,
-      "exp": "Catión $2+$ pierde $2$ electrones respecto al neutro: $e^-=Z-2=14-2=12$. Anión los ganaría. Confundir $A$ (nucleones) con $Z$ es el error.",
+      "exp": "Catión $2+$ pierde $2$ electrones respecto al neutro: $e^-=Z-2=14-2=12$. Anión los ganaría. Confundir $A$ (nucleones) con $Z$ es el error. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -12503,7 +12503,7 @@ window.GUIA_BANK_1000 = {
         "$16$"
       ],
       "ans": 0,
-      "exp": "Neutro: $e^-=Z=15$ por neutralidad; $A$ es nucleones y $A-Z$ neutrones. Confundir $A$ con electrones es el distractor típico.",
+      "exp": "Neutro: $e^-=Z=15$ por neutralidad; $A$ es nucleones y $A-Z$ neutrones. Confundir $A$ con electrones es el distractor típico. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -12525,7 +12525,7 @@ window.GUIA_BANK_1000 = {
         "$23$"
       ],
       "ans": 0,
-      "exp": "Catión $2+$ pierde $2$ electrones respecto al neutro: $e^-=Z-2=11-2=9$. Anión los ganaría. Confundir $A$ (nucleones) con $Z$ es el error.",
+      "exp": "Catión $2+$ pierde $2$ electrones respecto al neutro: $e^-=Z-2=11-2=9$. Anión los ganaría. Confundir $A$ (nucleones) con $Z$ es el error. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -12547,7 +12547,7 @@ window.GUIA_BANK_1000 = {
         "$13$"
       ],
       "ans": 0,
-      "exp": "Neutro: $e^-=Z=12$ por neutralidad; $A$ es nucleones y $A-Z$ neutrones. Confundir $A$ con electrones es el distractor típico.",
+      "exp": "Neutro: $e^-=Z=12$ por neutralidad; $A$ es nucleones y $A-Z$ neutrones. Confundir $A$ con electrones es el distractor típico. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -12569,7 +12569,7 @@ window.GUIA_BANK_1000 = {
         "$25$"
       ],
       "ans": 0,
-      "exp": "Catión $2+$ pierde $2$ electrones respecto al neutro: $e^-=Z-2=13-2=11$. Anión los ganaría. Confundir $A$ (nucleones) con $Z$ es el error.",
+      "exp": "Catión $2+$ pierde $2$ electrones respecto al neutro: $e^-=Z-2=13-2=11$. Anión los ganaría. Confundir $A$ (nucleones) con $Z$ es el error. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -12591,7 +12591,7 @@ window.GUIA_BANK_1000 = {
         "$15$"
       ],
       "ans": 0,
-      "exp": "Neutro: $e^-=Z=14$ por neutralidad; $A$ es nucleones y $A-Z$ neutrones. Confundir $A$ con electrones es el distractor típico.",
+      "exp": "Neutro: $e^-=Z=14$ por neutralidad; $A$ es nucleones y $A-Z$ neutrones. Confundir $A$ con electrones es el distractor típico. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -12613,7 +12613,7 @@ window.GUIA_BANK_1000 = {
         "$1s^{2}2s^{2}2p^{6}$"
       ],
       "ans": 0,
-      "exp": "Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
+      "exp": "Paso desde cero: Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
       "maths": [],
       "imgs": []
     },
@@ -12635,7 +12635,7 @@ window.GUIA_BANK_1000 = {
         "$1s^{2}2s^{2}2p^{6}$"
       ],
       "ans": 0,
-      "exp": "Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
+      "exp": "Paso desde cero: Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
       "maths": [],
       "imgs": []
     },
@@ -12657,7 +12657,7 @@ window.GUIA_BANK_1000 = {
         "$1s^{2}2s^{2}2p^{6}$"
       ],
       "ans": 0,
-      "exp": "Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
+      "exp": "Paso desde cero: Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
       "maths": [],
       "imgs": []
     },
@@ -12679,7 +12679,7 @@ window.GUIA_BANK_1000 = {
         "$1s^{2}2s^{2}2p^{6}$"
       ],
       "ans": 0,
-      "exp": "Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
+      "exp": "Paso desde cero: Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
       "maths": [],
       "imgs": []
     },
@@ -12701,7 +12701,7 @@ window.GUIA_BANK_1000 = {
         "$1s^{2}2s^{2}2p^{6}$"
       ],
       "ans": 0,
-      "exp": "Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
+      "exp": "Paso desde cero: Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
       "maths": [],
       "imgs": []
     },
@@ -12723,7 +12723,7 @@ window.GUIA_BANK_1000 = {
         "$1s^{2}2s^{2}2p^{6}$"
       ],
       "ans": 0,
-      "exp": "Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
+      "exp": "Paso desde cero: Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
       "maths": [],
       "imgs": []
     },
@@ -12745,7 +12745,7 @@ window.GUIA_BANK_1000 = {
         "$1s^{2}2s^{2}2p^{6}$"
       ],
       "ans": 0,
-      "exp": "Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
+      "exp": "Paso desde cero: Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
       "maths": [],
       "imgs": []
     },
@@ -12767,7 +12767,7 @@ window.GUIA_BANK_1000 = {
         "$1s^{2}2s^{2}2p^{6}$"
       ],
       "ans": 0,
-      "exp": "Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
+      "exp": "Paso desde cero: Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
       "maths": [],
       "imgs": []
     },
@@ -12789,7 +12789,7 @@ window.GUIA_BANK_1000 = {
         "$1s^{2}2s^{2}2p^{6}$"
       ],
       "ans": 0,
-      "exp": "Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
+      "exp": "Paso desde cero: Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
       "maths": [],
       "imgs": []
     },
@@ -12811,7 +12811,7 @@ window.GUIA_BANK_1000 = {
         "$1s^{2}2s^{2}2p^{6}$"
       ],
       "ans": 0,
-      "exp": "Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
+      "exp": "Paso desde cero: Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
       "maths": [],
       "imgs": []
     },
@@ -12833,7 +12833,7 @@ window.GUIA_BANK_1000 = {
         "$1s^{2}2s^{2}2p^{6}$"
       ],
       "ans": 0,
-      "exp": "Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
+      "exp": "Paso desde cero: Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
       "maths": [],
       "imgs": []
     },
@@ -12855,7 +12855,7 @@ window.GUIA_BANK_1000 = {
         "$1s^{2}2s^{2}2p^{6}$"
       ],
       "ans": 0,
-      "exp": "Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
+      "exp": "Paso desde cero: Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
       "maths": [],
       "imgs": []
     },
@@ -12877,7 +12877,7 @@ window.GUIA_BANK_1000 = {
         "$1s^{2}2s^{2}2p^{6}$"
       ],
       "ans": 0,
-      "exp": "Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
+      "exp": "Paso desde cero: Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
       "maths": [],
       "imgs": []
     },
@@ -12899,7 +12899,7 @@ window.GUIA_BANK_1000 = {
         "$1s^{2}2s^{2}2p^{6}$"
       ],
       "ans": 0,
-      "exp": "Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
+      "exp": "Paso desde cero: Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
       "maths": [],
       "imgs": []
     },
@@ -12921,7 +12921,7 @@ window.GUIA_BANK_1000 = {
         "$1s^{2}2s^{2}2p^{6}$"
       ],
       "ans": 0,
-      "exp": "Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
+      "exp": "Paso desde cero: Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
       "maths": [],
       "imgs": []
     },
@@ -12943,7 +12943,7 @@ window.GUIA_BANK_1000 = {
         "$1s^{2}2s^{2}2p^{6}$"
       ],
       "ans": 0,
-      "exp": "Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
+      "exp": "Paso desde cero: Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.",
       "maths": [],
       "imgs": []
     },
@@ -12965,7 +12965,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Ne}$"
       ],
       "ans": 0,
-      "exp": "Configuración electrónica da capa externa $n=3$ y electrones de valencia; ubica periodo y grupo.",
+      "exp": "Configuración electrónica da capa externa $n=3$ y electrones de valencia; ubica periodo y grupo. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -12987,7 +12987,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Mg}$"
       ],
       "ans": 0,
-      "exp": "Grupo 1 alcalinos, periodo 3 (tercera fila): $\\mathrm{Na}$ ($Z=11$: $1s^{2}2s^{2}2p^{6}3s^{1}$). $\\mathrm{K}$ es periodo 4 y $\\mathrm{Mg}$ grupo 2.",
+      "exp": "Paso desde cero: Grupo 1 alcalinos, periodo 3 (tercera fila): $\\mathrm{Na}$ ($Z=11$: $1s^{2}2s^{2}2p^{6}3s^{1}$). $\\mathrm{K}$ es periodo 4 y $\\mathrm{Mg}$ grupo 2. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13009,7 +13009,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Ne}$"
       ],
       "ans": 0,
-      "exp": "Configuración electrónica da capa externa $n=3$ y electrones de valencia; ubica periodo y grupo.",
+      "exp": "Configuración electrónica da capa externa $n=3$ y electrones de valencia; ubica periodo y grupo. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13031,7 +13031,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Mg}$"
       ],
       "ans": 0,
-      "exp": "Grupo 1 alcalinos, periodo 3 (tercera fila): $\\mathrm{Na}$ ($Z=11$: $1s^{2}2s^{2}2p^{6}3s^{1}$). $\\mathrm{K}$ es periodo 4 y $\\mathrm{Mg}$ grupo 2.",
+      "exp": "Paso desde cero: Grupo 1 alcalinos, periodo 3 (tercera fila): $\\mathrm{Na}$ ($Z=11$: $1s^{2}2s^{2}2p^{6}3s^{1}$). $\\mathrm{K}$ es periodo 4 y $\\mathrm{Mg}$ grupo 2. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13053,7 +13053,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Ne}$"
       ],
       "ans": 0,
-      "exp": "Configuración electrónica da capa externa $n=3$ y electrones de valencia; ubica periodo y grupo.",
+      "exp": "Configuración electrónica da capa externa $n=3$ y electrones de valencia; ubica periodo y grupo. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13075,7 +13075,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Mg}$"
       ],
       "ans": 0,
-      "exp": "Grupo 1 alcalinos, periodo 3 (tercera fila): $\\mathrm{Na}$ ($Z=11$: $1s^{2}2s^{2}2p^{6}3s^{1}$). $\\mathrm{K}$ es periodo 4 y $\\mathrm{Mg}$ grupo 2.",
+      "exp": "Paso desde cero: Grupo 1 alcalinos, periodo 3 (tercera fila): $\\mathrm{Na}$ ($Z=11$: $1s^{2}2s^{2}2p^{6}3s^{1}$). $\\mathrm{K}$ es periodo 4 y $\\mathrm{Mg}$ grupo 2. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13097,7 +13097,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Ne}$"
       ],
       "ans": 0,
-      "exp": "Configuración electrónica da capa externa $n=3$ y electrones de valencia; ubica periodo y grupo.",
+      "exp": "Configuración electrónica da capa externa $n=3$ y electrones de valencia; ubica periodo y grupo. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13119,7 +13119,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Mg}$"
       ],
       "ans": 0,
-      "exp": "Grupo 1 alcalinos, periodo 3 (tercera fila): $\\mathrm{Na}$ ($Z=11$: $1s^{2}2s^{2}2p^{6}3s^{1}$). $\\mathrm{K}$ es periodo 4 y $\\mathrm{Mg}$ grupo 2.",
+      "exp": "Paso desde cero: Grupo 1 alcalinos, periodo 3 (tercera fila): $\\mathrm{Na}$ ($Z=11$: $1s^{2}2s^{2}2p^{6}3s^{1}$). $\\mathrm{K}$ es periodo 4 y $\\mathrm{Mg}$ grupo 2. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13141,7 +13141,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Ne}$"
       ],
       "ans": 0,
-      "exp": "Configuración electrónica da capa externa $n=3$ y electrones de valencia; ubica periodo y grupo.",
+      "exp": "Configuración electrónica da capa externa $n=3$ y electrones de valencia; ubica periodo y grupo. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13163,7 +13163,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Mg}$"
       ],
       "ans": 0,
-      "exp": "Grupo 1 alcalinos, periodo 3 (tercera fila): $\\mathrm{Na}$ ($Z=11$: $1s^{2}2s^{2}2p^{6}3s^{1}$). $\\mathrm{K}$ es periodo 4 y $\\mathrm{Mg}$ grupo 2.",
+      "exp": "Paso desde cero: Grupo 1 alcalinos, periodo 3 (tercera fila): $\\mathrm{Na}$ ($Z=11$: $1s^{2}2s^{2}2p^{6}3s^{1}$). $\\mathrm{K}$ es periodo 4 y $\\mathrm{Mg}$ grupo 2. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13185,7 +13185,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Ne}$"
       ],
       "ans": 0,
-      "exp": "Configuración electrónica da capa externa $n=3$ y electrones de valencia; ubica periodo y grupo.",
+      "exp": "Configuración electrónica da capa externa $n=3$ y electrones de valencia; ubica periodo y grupo. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13207,7 +13207,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Mg}$"
       ],
       "ans": 0,
-      "exp": "Grupo 1 alcalinos, periodo 3 (tercera fila): $\\mathrm{Na}$ ($Z=11$: $1s^{2}2s^{2}2p^{6}3s^{1}$). $\\mathrm{K}$ es periodo 4 y $\\mathrm{Mg}$ grupo 2.",
+      "exp": "Paso desde cero: Grupo 1 alcalinos, periodo 3 (tercera fila): $\\mathrm{Na}$ ($Z=11$: $1s^{2}2s^{2}2p^{6}3s^{1}$). $\\mathrm{K}$ es periodo 4 y $\\mathrm{Mg}$ grupo 2. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13229,7 +13229,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Ne}$"
       ],
       "ans": 0,
-      "exp": "Configuración electrónica da capa externa $n=3$ y electrones de valencia; ubica periodo y grupo.",
+      "exp": "Configuración electrónica da capa externa $n=3$ y electrones de valencia; ubica periodo y grupo. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13251,7 +13251,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Mg}$"
       ],
       "ans": 0,
-      "exp": "Grupo 1 alcalinos, periodo 3 (tercera fila): $\\mathrm{Na}$ ($Z=11$: $1s^{2}2s^{2}2p^{6}3s^{1}$). $\\mathrm{K}$ es periodo 4 y $\\mathrm{Mg}$ grupo 2.",
+      "exp": "Paso desde cero: Grupo 1 alcalinos, periodo 3 (tercera fila): $\\mathrm{Na}$ ($Z=11$: $1s^{2}2s^{2}2p^{6}3s^{1}$). $\\mathrm{K}$ es periodo 4 y $\\mathrm{Mg}$ grupo 2. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13273,7 +13273,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Ne}$"
       ],
       "ans": 0,
-      "exp": "Configuración electrónica da capa externa $n=3$ y electrones de valencia; ubica periodo y grupo.",
+      "exp": "Configuración electrónica da capa externa $n=3$ y electrones de valencia; ubica periodo y grupo. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13295,7 +13295,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Mg}$"
       ],
       "ans": 0,
-      "exp": "Grupo 1 alcalinos, periodo 3 (tercera fila): $\\mathrm{Na}$ ($Z=11$: $1s^{2}2s^{2}2p^{6}3s^{1}$). $\\mathrm{K}$ es periodo 4 y $\\mathrm{Mg}$ grupo 2.",
+      "exp": "Paso desde cero: Grupo 1 alcalinos, periodo 3 (tercera fila): $\\mathrm{Na}$ ($Z=11$: $1s^{2}2s^{2}2p^{6}3s^{1}$). $\\mathrm{K}$ es periodo 4 y $\\mathrm{Mg}$ grupo 2. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13317,7 +13317,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Na}=\\mathrm{Mg}=\\mathrm{Al}$"
       ],
       "ans": 0,
-      "exp": "En un periodo el radio decrece a la derecha por mayor $Z_{ef}$: $\\mathrm{Al}$ menor, $\\mathrm{Na}$ mayor.",
+      "exp": "En un periodo el radio decrece a la derecha por mayor $Z_{ef}$: $\\mathrm{Al}$ menor, $\\mathrm{Na}$ mayor. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13339,7 +13339,7 @@ window.GUIA_BANK_1000 = {
         "Número de capas"
       ],
       "ans": 0,
-      "exp": "$EI$ y electronegatividad crecen arriba-derecha por mayor carga efectiva; radio y carácter metálico crecen abajo-izquierda.",
+      "exp": "$EI$ y electronegatividad crecen arriba-derecha por mayor carga efectiva; radio y carácter metálico crecen abajo-izquierda. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13361,7 +13361,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Na}=\\mathrm{Mg}=\\mathrm{Al}$"
       ],
       "ans": 0,
-      "exp": "En un periodo el radio decrece a la derecha por mayor $Z_{ef}$: $\\mathrm{Al}$ menor, $\\mathrm{Na}$ mayor.",
+      "exp": "En un periodo el radio decrece a la derecha por mayor $Z_{ef}$: $\\mathrm{Al}$ menor, $\\mathrm{Na}$ mayor. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13383,7 +13383,7 @@ window.GUIA_BANK_1000 = {
         "Número de capas"
       ],
       "ans": 0,
-      "exp": "$EI$ y electronegatividad crecen arriba-derecha por mayor carga efectiva; radio y carácter metálico crecen abajo-izquierda.",
+      "exp": "$EI$ y electronegatividad crecen arriba-derecha por mayor carga efectiva; radio y carácter metálico crecen abajo-izquierda. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13405,7 +13405,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Na}=\\mathrm{Mg}=\\mathrm{Al}$"
       ],
       "ans": 0,
-      "exp": "En un periodo el radio decrece a la derecha por mayor $Z_{ef}$: $\\mathrm{Al}$ menor, $\\mathrm{Na}$ mayor.",
+      "exp": "En un periodo el radio decrece a la derecha por mayor $Z_{ef}$: $\\mathrm{Al}$ menor, $\\mathrm{Na}$ mayor. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13427,7 +13427,7 @@ window.GUIA_BANK_1000 = {
         "Número de capas"
       ],
       "ans": 0,
-      "exp": "$EI$ y electronegatividad crecen arriba-derecha por mayor carga efectiva; radio y carácter metálico crecen abajo-izquierda.",
+      "exp": "$EI$ y electronegatividad crecen arriba-derecha por mayor carga efectiva; radio y carácter metálico crecen abajo-izquierda. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13449,7 +13449,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Na}=\\mathrm{Mg}=\\mathrm{Al}$"
       ],
       "ans": 0,
-      "exp": "En un periodo el radio decrece a la derecha por mayor $Z_{ef}$: $\\mathrm{Al}$ menor, $\\mathrm{Na}$ mayor.",
+      "exp": "En un periodo el radio decrece a la derecha por mayor $Z_{ef}$: $\\mathrm{Al}$ menor, $\\mathrm{Na}$ mayor. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13471,7 +13471,7 @@ window.GUIA_BANK_1000 = {
         "Número de capas"
       ],
       "ans": 0,
-      "exp": "$EI$ y electronegatividad crecen arriba-derecha por mayor carga efectiva; radio y carácter metálico crecen abajo-izquierda.",
+      "exp": "$EI$ y electronegatividad crecen arriba-derecha por mayor carga efectiva; radio y carácter metálico crecen abajo-izquierda. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13493,7 +13493,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Na}=\\mathrm{Mg}=\\mathrm{Al}$"
       ],
       "ans": 0,
-      "exp": "En un periodo el radio decrece a la derecha por mayor $Z_{ef}$: $\\mathrm{Al}$ menor, $\\mathrm{Na}$ mayor.",
+      "exp": "En un periodo el radio decrece a la derecha por mayor $Z_{ef}$: $\\mathrm{Al}$ menor, $\\mathrm{Na}$ mayor. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13515,7 +13515,7 @@ window.GUIA_BANK_1000 = {
         "Número de capas"
       ],
       "ans": 0,
-      "exp": "$EI$ y electronegatividad crecen arriba-derecha por mayor carga efectiva; radio y carácter metálico crecen abajo-izquierda.",
+      "exp": "$EI$ y electronegatividad crecen arriba-derecha por mayor carga efectiva; radio y carácter metálico crecen abajo-izquierda. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13537,7 +13537,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Na}=\\mathrm{Mg}=\\mathrm{Al}$"
       ],
       "ans": 0,
-      "exp": "En un periodo el radio decrece a la derecha por mayor $Z_{ef}$: $\\mathrm{Al}$ menor, $\\mathrm{Na}$ mayor.",
+      "exp": "En un periodo el radio decrece a la derecha por mayor $Z_{ef}$: $\\mathrm{Al}$ menor, $\\mathrm{Na}$ mayor. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13559,7 +13559,7 @@ window.GUIA_BANK_1000 = {
         "Número de capas"
       ],
       "ans": 0,
-      "exp": "$EI$ y electronegatividad crecen arriba-derecha por mayor carga efectiva; radio y carácter metálico crecen abajo-izquierda.",
+      "exp": "$EI$ y electronegatividad crecen arriba-derecha por mayor carga efectiva; radio y carácter metálico crecen abajo-izquierda. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13581,7 +13581,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Na}=\\mathrm{Mg}=\\mathrm{Al}$"
       ],
       "ans": 0,
-      "exp": "En un periodo el radio decrece a la derecha por mayor $Z_{ef}$: $\\mathrm{Al}$ menor, $\\mathrm{Na}$ mayor.",
+      "exp": "En un periodo el radio decrece a la derecha por mayor $Z_{ef}$: $\\mathrm{Al}$ menor, $\\mathrm{Na}$ mayor. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13603,7 +13603,7 @@ window.GUIA_BANK_1000 = {
         "Número de capas"
       ],
       "ans": 0,
-      "exp": "$EI$ y electronegatividad crecen arriba-derecha por mayor carga efectiva; radio y carácter metálico crecen abajo-izquierda.",
+      "exp": "$EI$ y electronegatividad crecen arriba-derecha por mayor carga efectiva; radio y carácter metálico crecen abajo-izquierda. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13625,7 +13625,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Na}=\\mathrm{Mg}=\\mathrm{Al}$"
       ],
       "ans": 0,
-      "exp": "En un periodo el radio decrece a la derecha por mayor $Z_{ef}$: $\\mathrm{Al}$ menor, $\\mathrm{Na}$ mayor.",
+      "exp": "En un periodo el radio decrece a la derecha por mayor $Z_{ef}$: $\\mathrm{Al}$ menor, $\\mathrm{Na}$ mayor. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13647,7 +13647,7 @@ window.GUIA_BANK_1000 = {
         "Número de capas"
       ],
       "ans": 0,
-      "exp": "$EI$ y electronegatividad crecen arriba-derecha por mayor carga efectiva; radio y carácter metálico crecen abajo-izquierda.",
+      "exp": "$EI$ y electronegatividad crecen arriba-derecha por mayor carga efectiva; radio y carácter metálico crecen abajo-izquierda. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13669,7 +13669,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Al_2SO_4}$"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{Al^{3+}}$ y $\\mathrm{SO_4^{2-}}$: mcm $6$, $2$ Al y $3$ sulfatos. Balance de cargas.",
+      "exp": "$\\mathrm{Al^{3+}}$ y $\\mathrm{SO_4^{2-}}$: mcm $6$, $2$ Al y $3$ sulfatos. Balance de cargas. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13691,7 +13691,7 @@ window.GUIA_BANK_1000 = {
         "Sulfato de hidrógeno"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{S}$ con $+6$ da sufijo -úrico ($\\mathrm{H_2SO_4}$); $+4$ sería -oso, $-2$ -hídrico.",
+      "exp": "$\\mathrm{S}$ con $+6$ da sufijo -úrico ($\\mathrm{H_2SO_4}$); $+4$ sería -oso, $-2$ -hídrico. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13713,7 +13713,7 @@ window.GUIA_BANK_1000 = {
         "Hidróxido de hierro"
       ],
       "ans": 0,
-      "exp": "O es $-2$ cada uno ($-6$), $2$ Fe deben sumar $+6$ luego $+3$ cada uno: Stock (III). Peróxido tendría $\\mathrm{O_2^{2-}}$ e hidróxido $\\mathrm{OH^-}$.",
+      "exp": "Paso desde cero: O es $-2$ cada uno ($-6$), $2$ Fe deben sumar $+6$ luego $+3$ cada uno: Stock (III). Peróxido tendría $\\mathrm{O_2^{2-}}$ e hidróxido $\\mathrm{OH^-}$.",
       "maths": [],
       "imgs": []
     },
@@ -13735,7 +13735,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Al_2SO_4}$"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{Al^{3+}}$ y $\\mathrm{SO_4^{2-}}$: mcm $6$, $2$ Al y $3$ sulfatos. Balance de cargas.",
+      "exp": "$\\mathrm{Al^{3+}}$ y $\\mathrm{SO_4^{2-}}$: mcm $6$, $2$ Al y $3$ sulfatos. Balance de cargas. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13757,7 +13757,7 @@ window.GUIA_BANK_1000 = {
         "Sulfato de hidrógeno"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{S}$ con $+6$ da sufijo -úrico ($\\mathrm{H_2SO_4}$); $+4$ sería -oso, $-2$ -hídrico.",
+      "exp": "$\\mathrm{S}$ con $+6$ da sufijo -úrico ($\\mathrm{H_2SO_4}$); $+4$ sería -oso, $-2$ -hídrico. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13779,7 +13779,7 @@ window.GUIA_BANK_1000 = {
         "Hidróxido de hierro"
       ],
       "ans": 0,
-      "exp": "O es $-2$ cada uno ($-6$), $2$ Fe deben sumar $+6$ luego $+3$ cada uno: Stock (III). Peróxido tendría $\\mathrm{O_2^{2-}}$ e hidróxido $\\mathrm{OH^-}$.",
+      "exp": "Paso desde cero: O es $-2$ cada uno ($-6$), $2$ Fe deben sumar $+6$ luego $+3$ cada uno: Stock (III). Peróxido tendría $\\mathrm{O_2^{2-}}$ e hidróxido $\\mathrm{OH^-}$.",
       "maths": [],
       "imgs": []
     },
@@ -13801,7 +13801,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Al_2SO_4}$"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{Al^{3+}}$ y $\\mathrm{SO_4^{2-}}$: mcm $6$, $2$ Al y $3$ sulfatos. Balance de cargas.",
+      "exp": "$\\mathrm{Al^{3+}}$ y $\\mathrm{SO_4^{2-}}$: mcm $6$, $2$ Al y $3$ sulfatos. Balance de cargas. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13823,7 +13823,7 @@ window.GUIA_BANK_1000 = {
         "Sulfato de hidrógeno"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{S}$ con $+6$ da sufijo -úrico ($\\mathrm{H_2SO_4}$); $+4$ sería -oso, $-2$ -hídrico.",
+      "exp": "$\\mathrm{S}$ con $+6$ da sufijo -úrico ($\\mathrm{H_2SO_4}$); $+4$ sería -oso, $-2$ -hídrico. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13845,7 +13845,7 @@ window.GUIA_BANK_1000 = {
         "Hidróxido de hierro"
       ],
       "ans": 0,
-      "exp": "O es $-2$ cada uno ($-6$), $2$ Fe deben sumar $+6$ luego $+3$ cada uno: Stock (III). Peróxido tendría $\\mathrm{O_2^{2-}}$ e hidróxido $\\mathrm{OH^-}$.",
+      "exp": "Paso desde cero: O es $-2$ cada uno ($-6$), $2$ Fe deben sumar $+6$ luego $+3$ cada uno: Stock (III). Peróxido tendría $\\mathrm{O_2^{2-}}$ e hidróxido $\\mathrm{OH^-}$.",
       "maths": [],
       "imgs": []
     },
@@ -13867,7 +13867,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Al_2SO_4}$"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{Al^{3+}}$ y $\\mathrm{SO_4^{2-}}$: mcm $6$, $2$ Al y $3$ sulfatos. Balance de cargas.",
+      "exp": "$\\mathrm{Al^{3+}}$ y $\\mathrm{SO_4^{2-}}$: mcm $6$, $2$ Al y $3$ sulfatos. Balance de cargas. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13889,7 +13889,7 @@ window.GUIA_BANK_1000 = {
         "Sulfato de hidrógeno"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{S}$ con $+6$ da sufijo -úrico ($\\mathrm{H_2SO_4}$); $+4$ sería -oso, $-2$ -hídrico.",
+      "exp": "$\\mathrm{S}$ con $+6$ da sufijo -úrico ($\\mathrm{H_2SO_4}$); $+4$ sería -oso, $-2$ -hídrico. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13911,7 +13911,7 @@ window.GUIA_BANK_1000 = {
         "Hidróxido de hierro"
       ],
       "ans": 0,
-      "exp": "O es $-2$ cada uno ($-6$), $2$ Fe deben sumar $+6$ luego $+3$ cada uno: Stock (III). Peróxido tendría $\\mathrm{O_2^{2-}}$ e hidróxido $\\mathrm{OH^-}$.",
+      "exp": "Paso desde cero: O es $-2$ cada uno ($-6$), $2$ Fe deben sumar $+6$ luego $+3$ cada uno: Stock (III). Peróxido tendría $\\mathrm{O_2^{2-}}$ e hidróxido $\\mathrm{OH^-}$.",
       "maths": [],
       "imgs": []
     },
@@ -13933,7 +13933,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Al_2SO_4}$"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{Al^{3+}}$ y $\\mathrm{SO_4^{2-}}$: mcm $6$, $2$ Al y $3$ sulfatos. Balance de cargas.",
+      "exp": "$\\mathrm{Al^{3+}}$ y $\\mathrm{SO_4^{2-}}$: mcm $6$, $2$ Al y $3$ sulfatos. Balance de cargas. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13955,7 +13955,7 @@ window.GUIA_BANK_1000 = {
         "Sulfato de hidrógeno"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{S}$ con $+6$ da sufijo -úrico ($\\mathrm{H_2SO_4}$); $+4$ sería -oso, $-2$ -hídrico.",
+      "exp": "$\\mathrm{S}$ con $+6$ da sufijo -úrico ($\\mathrm{H_2SO_4}$); $+4$ sería -oso, $-2$ -hídrico. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -13977,7 +13977,7 @@ window.GUIA_BANK_1000 = {
         "Hidróxido de hierro"
       ],
       "ans": 0,
-      "exp": "O es $-2$ cada uno ($-6$), $2$ Fe deben sumar $+6$ luego $+3$ cada uno: Stock (III). Peróxido tendría $\\mathrm{O_2^{2-}}$ e hidróxido $\\mathrm{OH^-}$.",
+      "exp": "Paso desde cero: O es $-2$ cada uno ($-6$), $2$ Fe deben sumar $+6$ luego $+3$ cada uno: Stock (III). Peróxido tendría $\\mathrm{O_2^{2-}}$ e hidróxido $\\mathrm{OH^-}$.",
       "maths": [],
       "imgs": []
     },
@@ -13999,7 +13999,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{Al_2SO_4}$"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{Al^{3+}}$ y $\\mathrm{SO_4^{2-}}$: mcm $6$, $2$ Al y $3$ sulfatos. Balance de cargas.",
+      "exp": "$\\mathrm{Al^{3+}}$ y $\\mathrm{SO_4^{2-}}$: mcm $6$, $2$ Al y $3$ sulfatos. Balance de cargas. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14021,7 +14021,7 @@ window.GUIA_BANK_1000 = {
         "Moléculas discretas aisladas"
       ],
       "ans": 0,
-      "exp": "Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
+      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
       "maths": [],
       "imgs": []
     },
@@ -14043,7 +14043,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O}$ y $\\mathrm{O}$"
       ],
       "ans": 0,
-      "exp": "Metal alcalino + halógeno: transferencia electrónica por gran $\\Delta EN$, forma red iónica. Pares no metal-no metal son covalentes.",
+      "exp": "Metal alcalino + halógeno: transferencia electrónica por gran $\\Delta EN$, forma red iónica. Pares no metal-no metal son covalentes. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14065,7 +14065,7 @@ window.GUIA_BANK_1000 = {
         "Moléculas discretas aisladas"
       ],
       "ans": 0,
-      "exp": "Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
+      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
       "maths": [],
       "imgs": []
     },
@@ -14087,7 +14087,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O}$ y $\\mathrm{O}$"
       ],
       "ans": 0,
-      "exp": "Metal alcalino + halógeno: transferencia electrónica por gran $\\Delta EN$, forma red iónica. Pares no metal-no metal son covalentes.",
+      "exp": "Metal alcalino + halógeno: transferencia electrónica por gran $\\Delta EN$, forma red iónica. Pares no metal-no metal son covalentes. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14109,7 +14109,7 @@ window.GUIA_BANK_1000 = {
         "Moléculas discretas aisladas"
       ],
       "ans": 0,
-      "exp": "Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
+      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
       "maths": [],
       "imgs": []
     },
@@ -14131,7 +14131,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O}$ y $\\mathrm{O}$"
       ],
       "ans": 0,
-      "exp": "Metal alcalino + halógeno: transferencia electrónica por gran $\\Delta EN$, forma red iónica. Pares no metal-no metal son covalentes.",
+      "exp": "Metal alcalino + halógeno: transferencia electrónica por gran $\\Delta EN$, forma red iónica. Pares no metal-no metal son covalentes. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14153,7 +14153,7 @@ window.GUIA_BANK_1000 = {
         "Moléculas discretas aisladas"
       ],
       "ans": 0,
-      "exp": "Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
+      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
       "maths": [],
       "imgs": []
     },
@@ -14175,7 +14175,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O}$ y $\\mathrm{O}$"
       ],
       "ans": 0,
-      "exp": "Metal alcalino + halógeno: transferencia electrónica por gran $\\Delta EN$, forma red iónica. Pares no metal-no metal son covalentes.",
+      "exp": "Metal alcalino + halógeno: transferencia electrónica por gran $\\Delta EN$, forma red iónica. Pares no metal-no metal son covalentes. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14197,7 +14197,7 @@ window.GUIA_BANK_1000 = {
         "Moléculas discretas aisladas"
       ],
       "ans": 0,
-      "exp": "Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
+      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
       "maths": [],
       "imgs": []
     },
@@ -14219,7 +14219,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O}$ y $\\mathrm{O}$"
       ],
       "ans": 0,
-      "exp": "Metal alcalino + halógeno: transferencia electrónica por gran $\\Delta EN$, forma red iónica. Pares no metal-no metal son covalentes.",
+      "exp": "Metal alcalino + halógeno: transferencia electrónica por gran $\\Delta EN$, forma red iónica. Pares no metal-no metal son covalentes. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14241,7 +14241,7 @@ window.GUIA_BANK_1000 = {
         "Moléculas discretas aisladas"
       ],
       "ans": 0,
-      "exp": "Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
+      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
       "maths": [],
       "imgs": []
     },
@@ -14263,7 +14263,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O}$ y $\\mathrm{O}$"
       ],
       "ans": 0,
-      "exp": "Metal alcalino + halógeno: transferencia electrónica por gran $\\Delta EN$, forma red iónica. Pares no metal-no metal son covalentes.",
+      "exp": "Metal alcalino + halógeno: transferencia electrónica por gran $\\Delta EN$, forma red iónica. Pares no metal-no metal son covalentes. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14285,7 +14285,7 @@ window.GUIA_BANK_1000 = {
         "Moléculas discretas aisladas"
       ],
       "ans": 0,
-      "exp": "Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
+      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
       "maths": [],
       "imgs": []
     },
@@ -14307,7 +14307,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O}$ y $\\mathrm{O}$"
       ],
       "ans": 0,
-      "exp": "Metal alcalino + halógeno: transferencia electrónica por gran $\\Delta EN$, forma red iónica. Pares no metal-no metal son covalentes.",
+      "exp": "Metal alcalino + halógeno: transferencia electrónica por gran $\\Delta EN$, forma red iónica. Pares no metal-no metal son covalentes. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14329,7 +14329,7 @@ window.GUIA_BANK_1000 = {
         "Moléculas discretas aisladas"
       ],
       "ans": 0,
-      "exp": "Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
+      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
       "maths": [],
       "imgs": []
     },
@@ -14351,7 +14351,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O}$ y $\\mathrm{O}$"
       ],
       "ans": 0,
-      "exp": "Metal alcalino + halógeno: transferencia electrónica por gran $\\Delta EN$, forma red iónica. Pares no metal-no metal son covalentes.",
+      "exp": "Metal alcalino + halógeno: transferencia electrónica por gran $\\Delta EN$, forma red iónica. Pares no metal-no metal son covalentes. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14373,7 +14373,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O_2}$"
       ],
       "ans": 0,
-      "exp": "Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
+      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
       "maths": [],
       "imgs": []
     },
@@ -14395,7 +14395,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{CaF_2}$"
       ],
       "ans": 0,
-      "exp": "Misma electronegatividad ($\\Delta EN=0$) comparte por igual; los iónicos tienen $\\Delta EN$ grande.",
+      "exp": "Misma electronegatividad ($\\Delta EN=0$) comparte por igual; los iónicos tienen $\\Delta EN$ grande. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14417,7 +14417,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O_2}$"
       ],
       "ans": 0,
-      "exp": "Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
+      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
       "maths": [],
       "imgs": []
     },
@@ -14439,7 +14439,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{CaF_2}$"
       ],
       "ans": 0,
-      "exp": "Misma electronegatividad ($\\Delta EN=0$) comparte por igual; los iónicos tienen $\\Delta EN$ grande.",
+      "exp": "Misma electronegatividad ($\\Delta EN=0$) comparte por igual; los iónicos tienen $\\Delta EN$ grande. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14461,7 +14461,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O_2}$"
       ],
       "ans": 0,
-      "exp": "Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
+      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
       "maths": [],
       "imgs": []
     },
@@ -14483,7 +14483,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{CaF_2}$"
       ],
       "ans": 0,
-      "exp": "Misma electronegatividad ($\\Delta EN=0$) comparte por igual; los iónicos tienen $\\Delta EN$ grande.",
+      "exp": "Misma electronegatividad ($\\Delta EN=0$) comparte por igual; los iónicos tienen $\\Delta EN$ grande. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14505,7 +14505,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O_2}$"
       ],
       "ans": 0,
-      "exp": "Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
+      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
       "maths": [],
       "imgs": []
     },
@@ -14527,7 +14527,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{CaF_2}$"
       ],
       "ans": 0,
-      "exp": "Misma electronegatividad ($\\Delta EN=0$) comparte por igual; los iónicos tienen $\\Delta EN$ grande.",
+      "exp": "Misma electronegatividad ($\\Delta EN=0$) comparte por igual; los iónicos tienen $\\Delta EN$ grande. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14549,7 +14549,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O_2}$"
       ],
       "ans": 0,
-      "exp": "Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
+      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
       "maths": [],
       "imgs": []
     },
@@ -14571,7 +14571,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{CaF_2}$"
       ],
       "ans": 0,
-      "exp": "Misma electronegatividad ($\\Delta EN=0$) comparte por igual; los iónicos tienen $\\Delta EN$ grande.",
+      "exp": "Misma electronegatividad ($\\Delta EN=0$) comparte por igual; los iónicos tienen $\\Delta EN$ grande. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14593,7 +14593,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O_2}$"
       ],
       "ans": 0,
-      "exp": "Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
+      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
       "maths": [],
       "imgs": []
     },
@@ -14615,7 +14615,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{CaF_2}$"
       ],
       "ans": 0,
-      "exp": "Misma electronegatividad ($\\Delta EN=0$) comparte por igual; los iónicos tienen $\\Delta EN$ grande.",
+      "exp": "Misma electronegatividad ($\\Delta EN=0$) comparte por igual; los iónicos tienen $\\Delta EN$ grande. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14637,7 +14637,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O_2}$"
       ],
       "ans": 0,
-      "exp": "Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
+      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
       "maths": [],
       "imgs": []
     },
@@ -14659,7 +14659,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{CaF_2}$"
       ],
       "ans": 0,
-      "exp": "Misma electronegatividad ($\\Delta EN=0$) comparte por igual; los iónicos tienen $\\Delta EN$ grande.",
+      "exp": "Misma electronegatividad ($\\Delta EN=0$) comparte por igual; los iónicos tienen $\\Delta EN$ grande. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14681,7 +14681,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O_2}$"
       ],
       "ans": 0,
-      "exp": "Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
+      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
       "maths": [],
       "imgs": []
     },
@@ -14703,7 +14703,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{CaF_2}$"
       ],
       "ans": 0,
-      "exp": "Misma electronegatividad ($\\Delta EN=0$) comparte por igual; los iónicos tienen $\\Delta EN$ grande.",
+      "exp": "Misma electronegatividad ($\\Delta EN=0$) comparte por igual; los iónicos tienen $\\Delta EN$ grande. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14725,7 +14725,7 @@ window.GUIA_BANK_1000 = {
         "$1$ triple"
       ],
       "ans": 0,
-      "exp": "Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
+      "exp": "Paso desde cero: Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
       "maths": [],
       "imgs": []
     },
@@ -14747,7 +14747,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "O con $6e^-$ valencia forma $2$ enlaces y quedan $4e^-$ = $2$ pares libres. Octeto completo.",
+      "exp": "O con $6e^-$ valencia forma $2$ enlaces y quedan $4e^-$ = $2$ pares libres. Octeto completo. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14769,7 +14769,7 @@ window.GUIA_BANK_1000 = {
         "$1$ triple"
       ],
       "ans": 0,
-      "exp": "Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
+      "exp": "Paso desde cero: Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
       "maths": [],
       "imgs": []
     },
@@ -14791,7 +14791,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "O con $6e^-$ valencia forma $2$ enlaces y quedan $4e^-$ = $2$ pares libres. Octeto completo.",
+      "exp": "O con $6e^-$ valencia forma $2$ enlaces y quedan $4e^-$ = $2$ pares libres. Octeto completo. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14813,7 +14813,7 @@ window.GUIA_BANK_1000 = {
         "$1$ triple"
       ],
       "ans": 0,
-      "exp": "Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
+      "exp": "Paso desde cero: Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
       "maths": [],
       "imgs": []
     },
@@ -14835,7 +14835,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "O con $6e^-$ valencia forma $2$ enlaces y quedan $4e^-$ = $2$ pares libres. Octeto completo.",
+      "exp": "O con $6e^-$ valencia forma $2$ enlaces y quedan $4e^-$ = $2$ pares libres. Octeto completo. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14857,7 +14857,7 @@ window.GUIA_BANK_1000 = {
         "$1$ triple"
       ],
       "ans": 0,
-      "exp": "Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
+      "exp": "Paso desde cero: Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
       "maths": [],
       "imgs": []
     },
@@ -14879,7 +14879,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "O con $6e^-$ valencia forma $2$ enlaces y quedan $4e^-$ = $2$ pares libres. Octeto completo.",
+      "exp": "O con $6e^-$ valencia forma $2$ enlaces y quedan $4e^-$ = $2$ pares libres. Octeto completo. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14901,7 +14901,7 @@ window.GUIA_BANK_1000 = {
         "$1$ triple"
       ],
       "ans": 0,
-      "exp": "Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
+      "exp": "Paso desde cero: Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
       "maths": [],
       "imgs": []
     },
@@ -14923,7 +14923,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "O con $6e^-$ valencia forma $2$ enlaces y quedan $4e^-$ = $2$ pares libres. Octeto completo.",
+      "exp": "O con $6e^-$ valencia forma $2$ enlaces y quedan $4e^-$ = $2$ pares libres. Octeto completo. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14945,7 +14945,7 @@ window.GUIA_BANK_1000 = {
         "$1$ triple"
       ],
       "ans": 0,
-      "exp": "Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
+      "exp": "Paso desde cero: Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
       "maths": [],
       "imgs": []
     },
@@ -14967,7 +14967,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "O con $6e^-$ valencia forma $2$ enlaces y quedan $4e^-$ = $2$ pares libres. Octeto completo.",
+      "exp": "O con $6e^-$ valencia forma $2$ enlaces y quedan $4e^-$ = $2$ pares libres. Octeto completo. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -14989,7 +14989,7 @@ window.GUIA_BANK_1000 = {
         "$1$ triple"
       ],
       "ans": 0,
-      "exp": "Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
+      "exp": "Paso desde cero: Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
       "maths": [],
       "imgs": []
     },
@@ -15011,7 +15011,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "O con $6e^-$ valencia forma $2$ enlaces y quedan $4e^-$ = $2$ pares libres. Octeto completo.",
+      "exp": "O con $6e^-$ valencia forma $2$ enlaces y quedan $4e^-$ = $2$ pares libres. Octeto completo. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -15033,7 +15033,7 @@ window.GUIA_BANK_1000 = {
         "$1$ triple"
       ],
       "ans": 0,
-      "exp": "Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
+      "exp": "Paso desde cero: Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
       "maths": [],
       "imgs": []
     },
@@ -15055,7 +15055,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "O con $6e^-$ valencia forma $2$ enlaces y quedan $4e^-$ = $2$ pares libres. Octeto completo.",
+      "exp": "O con $6e^-$ valencia forma $2$ enlaces y quedan $4e^-$ = $2$ pares libres. Octeto completo. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -15077,7 +15077,7 @@ window.GUIA_BANK_1000 = {
         "Plana trigonal $120^\\circ$"
       ],
       "ans": 0,
-      "exp": "VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
+      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
       "maths": [],
       "imgs": []
     },
@@ -15099,7 +15099,7 @@ window.GUIA_BANK_1000 = {
         "Piramidal"
       ],
       "ans": 0,
-      "exp": "VSEPR AX₂: dos dominios de pares enlazantes sin pares libres repelen al máximo en $180^\\circ$; por eso $\\mathrm{CO_2}$ es lineal y no angular. Tetraédrica requiere 4 dominios.",
+      "exp": "Paso desde cero: VSEPR AX₂: dos dominios de pares enlazantes sin pares libres repelen al máximo en $180^\\circ$; por eso $\\mathrm{CO_2}$ es lineal y no angular. Tetraédrica requiere 4 dominios.",
       "maths": [],
       "imgs": []
     },
@@ -15121,7 +15121,7 @@ window.GUIA_BANK_1000 = {
         "Plana trigonal $120^\\circ$"
       ],
       "ans": 0,
-      "exp": "VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
+      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
       "maths": [],
       "imgs": []
     },
@@ -15143,7 +15143,7 @@ window.GUIA_BANK_1000 = {
         "Piramidal"
       ],
       "ans": 0,
-      "exp": "VSEPR AX₂: dos dominios de pares enlazantes sin pares libres repelen al máximo en $180^\\circ$; por eso $\\mathrm{CO_2}$ es lineal y no angular. Tetraédrica requiere 4 dominios.",
+      "exp": "Paso desde cero: VSEPR AX₂: dos dominios de pares enlazantes sin pares libres repelen al máximo en $180^\\circ$; por eso $\\mathrm{CO_2}$ es lineal y no angular. Tetraédrica requiere 4 dominios.",
       "maths": [],
       "imgs": []
     },
@@ -15165,7 +15165,7 @@ window.GUIA_BANK_1000 = {
         "Plana trigonal $120^\\circ$"
       ],
       "ans": 0,
-      "exp": "VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
+      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
       "maths": [],
       "imgs": []
     },
@@ -15187,7 +15187,7 @@ window.GUIA_BANK_1000 = {
         "Piramidal"
       ],
       "ans": 0,
-      "exp": "VSEPR AX₂: dos dominios de pares enlazantes sin pares libres repelen al máximo en $180^\\circ$; por eso $\\mathrm{CO_2}$ es lineal y no angular. Tetraédrica requiere 4 dominios.",
+      "exp": "Paso desde cero: VSEPR AX₂: dos dominios de pares enlazantes sin pares libres repelen al máximo en $180^\\circ$; por eso $\\mathrm{CO_2}$ es lineal y no angular. Tetraédrica requiere 4 dominios.",
       "maths": [],
       "imgs": []
     },
@@ -15209,7 +15209,7 @@ window.GUIA_BANK_1000 = {
         "Plana trigonal $120^\\circ$"
       ],
       "ans": 0,
-      "exp": "VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
+      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
       "maths": [],
       "imgs": []
     },
@@ -15231,7 +15231,7 @@ window.GUIA_BANK_1000 = {
         "Piramidal"
       ],
       "ans": 0,
-      "exp": "VSEPR AX₂: dos dominios de pares enlazantes sin pares libres repelen al máximo en $180^\\circ$; por eso $\\mathrm{CO_2}$ es lineal y no angular. Tetraédrica requiere 4 dominios.",
+      "exp": "Paso desde cero: VSEPR AX₂: dos dominios de pares enlazantes sin pares libres repelen al máximo en $180^\\circ$; por eso $\\mathrm{CO_2}$ es lineal y no angular. Tetraédrica requiere 4 dominios.",
       "maths": [],
       "imgs": []
     },
@@ -15253,7 +15253,7 @@ window.GUIA_BANK_1000 = {
         "Plana trigonal $120^\\circ$"
       ],
       "ans": 0,
-      "exp": "VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
+      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
       "maths": [],
       "imgs": []
     },
@@ -15275,7 +15275,7 @@ window.GUIA_BANK_1000 = {
         "Piramidal"
       ],
       "ans": 0,
-      "exp": "VSEPR AX₂: dos dominios de pares enlazantes sin pares libres repelen al máximo en $180^\\circ$; por eso $\\mathrm{CO_2}$ es lineal y no angular. Tetraédrica requiere 4 dominios.",
+      "exp": "Paso desde cero: VSEPR AX₂: dos dominios de pares enlazantes sin pares libres repelen al máximo en $180^\\circ$; por eso $\\mathrm{CO_2}$ es lineal y no angular. Tetraédrica requiere 4 dominios.",
       "maths": [],
       "imgs": []
     },
@@ -15297,7 +15297,7 @@ window.GUIA_BANK_1000 = {
         "Plana trigonal $120^\\circ$"
       ],
       "ans": 0,
-      "exp": "VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
+      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
       "maths": [],
       "imgs": []
     },
@@ -15319,7 +15319,7 @@ window.GUIA_BANK_1000 = {
         "Piramidal"
       ],
       "ans": 0,
-      "exp": "VSEPR AX₂: dos dominios de pares enlazantes sin pares libres repelen al máximo en $180^\\circ$; por eso $\\mathrm{CO_2}$ es lineal y no angular. Tetraédrica requiere 4 dominios.",
+      "exp": "Paso desde cero: VSEPR AX₂: dos dominios de pares enlazantes sin pares libres repelen al máximo en $180^\\circ$; por eso $\\mathrm{CO_2}$ es lineal y no angular. Tetraédrica requiere 4 dominios.",
       "maths": [],
       "imgs": []
     },
@@ -15341,7 +15341,7 @@ window.GUIA_BANK_1000 = {
         "Plana trigonal $120^\\circ$"
       ],
       "ans": 0,
-      "exp": "VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
+      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
       "maths": [],
       "imgs": []
     },
@@ -15363,7 +15363,7 @@ window.GUIA_BANK_1000 = {
         "Piramidal"
       ],
       "ans": 0,
-      "exp": "VSEPR AX₂: dos dominios de pares enlazantes sin pares libres repelen al máximo en $180^\\circ$; por eso $\\mathrm{CO_2}$ es lineal y no angular. Tetraédrica requiere 4 dominios.",
+      "exp": "Paso desde cero: VSEPR AX₂: dos dominios de pares enlazantes sin pares libres repelen al máximo en $180^\\circ$; por eso $\\mathrm{CO_2}$ es lineal y no angular. Tetraédrica requiere 4 dominios.",
       "maths": [],
       "imgs": []
     },
@@ -15385,7 +15385,7 @@ window.GUIA_BANK_1000 = {
         "Plana trigonal $120^\\circ$"
       ],
       "ans": 0,
-      "exp": "VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
+      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
       "maths": [],
       "imgs": []
     },
@@ -15407,7 +15407,7 @@ window.GUIA_BANK_1000 = {
         "Piramidal"
       ],
       "ans": 0,
-      "exp": "VSEPR AX₂: dos dominios de pares enlazantes sin pares libres repelen al máximo en $180^\\circ$; por eso $\\mathrm{CO_2}$ es lineal y no angular. Tetraédrica requiere 4 dominios.",
+      "exp": "Paso desde cero: VSEPR AX₂: dos dominios de pares enlazantes sin pares libres repelen al máximo en $180^\\circ$; por eso $\\mathrm{CO_2}$ es lineal y no angular. Tetraédrica requiere 4 dominios.",
       "maths": [],
       "imgs": []
     },
@@ -15429,7 +15429,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{He}$"
       ],
       "ans": 0,
-      "exp": "Puentes de hidrógeno son las fuerzas intermoleculares más fuertes entre estas: $\\mathrm{H_2O}$ hierve a $100^\\circ$ frente a $\\mathrm{H_2S}$ ($-60^\\circ$) o $\\mathrm{CH_4}$ (London muy débil) y $\\mathrm{He}$ casi sin interacción.",
+      "exp": "Paso desde cero: Puentes de hidrógeno son las fuerzas intermoleculares más fuertes entre estas: $\\mathrm{H_2O}$ hierve a $100^\\circ$ frente a $\\mathrm{H_2S}$ ($-60^\\circ$) o $\\mathrm{CH_4}$ (London muy débil) y $\\mathrm{He}$ casi sin interacción.",
       "maths": [],
       "imgs": []
     },
@@ -15451,7 +15451,7 @@ window.GUIA_BANK_1000 = {
         "Metálica"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
+      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
       "maths": [],
       "imgs": []
     },
@@ -15473,7 +15473,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{He}$"
       ],
       "ans": 0,
-      "exp": "Puentes de hidrógeno son las fuerzas intermoleculares más fuertes entre estas: $\\mathrm{H_2O}$ hierve a $100^\\circ$ frente a $\\mathrm{H_2S}$ ($-60^\\circ$) o $\\mathrm{CH_4}$ (London muy débil) y $\\mathrm{He}$ casi sin interacción.",
+      "exp": "Paso desde cero: Puentes de hidrógeno son las fuerzas intermoleculares más fuertes entre estas: $\\mathrm{H_2O}$ hierve a $100^\\circ$ frente a $\\mathrm{H_2S}$ ($-60^\\circ$) o $\\mathrm{CH_4}$ (London muy débil) y $\\mathrm{He}$ casi sin interacción.",
       "maths": [],
       "imgs": []
     },
@@ -15495,7 +15495,7 @@ window.GUIA_BANK_1000 = {
         "Metálica"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
+      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
       "maths": [],
       "imgs": []
     },
@@ -15517,7 +15517,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{He}$"
       ],
       "ans": 0,
-      "exp": "Puentes de hidrógeno son las fuerzas intermoleculares más fuertes entre estas: $\\mathrm{H_2O}$ hierve a $100^\\circ$ frente a $\\mathrm{H_2S}$ ($-60^\\circ$) o $\\mathrm{CH_4}$ (London muy débil) y $\\mathrm{He}$ casi sin interacción.",
+      "exp": "Paso desde cero: Puentes de hidrógeno son las fuerzas intermoleculares más fuertes entre estas: $\\mathrm{H_2O}$ hierve a $100^\\circ$ frente a $\\mathrm{H_2S}$ ($-60^\\circ$) o $\\mathrm{CH_4}$ (London muy débil) y $\\mathrm{He}$ casi sin interacción.",
       "maths": [],
       "imgs": []
     },
@@ -15539,7 +15539,7 @@ window.GUIA_BANK_1000 = {
         "Metálica"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
+      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
       "maths": [],
       "imgs": []
     },
@@ -15561,7 +15561,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{He}$"
       ],
       "ans": 0,
-      "exp": "Puentes de hidrógeno son las fuerzas intermoleculares más fuertes entre estas: $\\mathrm{H_2O}$ hierve a $100^\\circ$ frente a $\\mathrm{H_2S}$ ($-60^\\circ$) o $\\mathrm{CH_4}$ (London muy débil) y $\\mathrm{He}$ casi sin interacción.",
+      "exp": "Paso desde cero: Puentes de hidrógeno son las fuerzas intermoleculares más fuertes entre estas: $\\mathrm{H_2O}$ hierve a $100^\\circ$ frente a $\\mathrm{H_2S}$ ($-60^\\circ$) o $\\mathrm{CH_4}$ (London muy débil) y $\\mathrm{He}$ casi sin interacción.",
       "maths": [],
       "imgs": []
     },
@@ -15583,7 +15583,7 @@ window.GUIA_BANK_1000 = {
         "Metálica"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
+      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
       "maths": [],
       "imgs": []
     },
@@ -15605,7 +15605,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{He}$"
       ],
       "ans": 0,
-      "exp": "Puentes de hidrógeno son las fuerzas intermoleculares más fuertes entre estas: $\\mathrm{H_2O}$ hierve a $100^\\circ$ frente a $\\mathrm{H_2S}$ ($-60^\\circ$) o $\\mathrm{CH_4}$ (London muy débil) y $\\mathrm{He}$ casi sin interacción.",
+      "exp": "Paso desde cero: Puentes de hidrógeno son las fuerzas intermoleculares más fuertes entre estas: $\\mathrm{H_2O}$ hierve a $100^\\circ$ frente a $\\mathrm{H_2S}$ ($-60^\\circ$) o $\\mathrm{CH_4}$ (London muy débil) y $\\mathrm{He}$ casi sin interacción.",
       "maths": [],
       "imgs": []
     },
@@ -15627,7 +15627,7 @@ window.GUIA_BANK_1000 = {
         "Metálica"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
+      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
       "maths": [],
       "imgs": []
     },
@@ -15649,7 +15649,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{He}$"
       ],
       "ans": 0,
-      "exp": "Puentes de hidrógeno son las fuerzas intermoleculares más fuertes entre estas: $\\mathrm{H_2O}$ hierve a $100^\\circ$ frente a $\\mathrm{H_2S}$ ($-60^\\circ$) o $\\mathrm{CH_4}$ (London muy débil) y $\\mathrm{He}$ casi sin interacción.",
+      "exp": "Paso desde cero: Puentes de hidrógeno son las fuerzas intermoleculares más fuertes entre estas: $\\mathrm{H_2O}$ hierve a $100^\\circ$ frente a $\\mathrm{H_2S}$ ($-60^\\circ$) o $\\mathrm{CH_4}$ (London muy débil) y $\\mathrm{He}$ casi sin interacción.",
       "maths": [],
       "imgs": []
     },
@@ -15671,7 +15671,7 @@ window.GUIA_BANK_1000 = {
         "Metálica"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
+      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
       "maths": [],
       "imgs": []
     },
@@ -15693,7 +15693,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{He}$"
       ],
       "ans": 0,
-      "exp": "Puentes de hidrógeno son las fuerzas intermoleculares más fuertes entre estas: $\\mathrm{H_2O}$ hierve a $100^\\circ$ frente a $\\mathrm{H_2S}$ ($-60^\\circ$) o $\\mathrm{CH_4}$ (London muy débil) y $\\mathrm{He}$ casi sin interacción.",
+      "exp": "Paso desde cero: Puentes de hidrógeno son las fuerzas intermoleculares más fuertes entre estas: $\\mathrm{H_2O}$ hierve a $100^\\circ$ frente a $\\mathrm{H_2S}$ ($-60^\\circ$) o $\\mathrm{CH_4}$ (London muy débil) y $\\mathrm{He}$ casi sin interacción.",
       "maths": [],
       "imgs": []
     },
@@ -15715,7 +15715,7 @@ window.GUIA_BANK_1000 = {
         "Metálica"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
+      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
       "maths": [],
       "imgs": []
     },
@@ -15737,7 +15737,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{He}$"
       ],
       "ans": 0,
-      "exp": "Puentes de hidrógeno son las fuerzas intermoleculares más fuertes entre estas: $\\mathrm{H_2O}$ hierve a $100^\\circ$ frente a $\\mathrm{H_2S}$ ($-60^\\circ$) o $\\mathrm{CH_4}$ (London muy débil) y $\\mathrm{He}$ casi sin interacción.",
+      "exp": "Paso desde cero: Puentes de hidrógeno son las fuerzas intermoleculares más fuertes entre estas: $\\mathrm{H_2O}$ hierve a $100^\\circ$ frente a $\\mathrm{H_2S}$ ($-60^\\circ$) o $\\mathrm{CH_4}$ (London muy débil) y $\\mathrm{He}$ casi sin interacción.",
       "maths": [],
       "imgs": []
     },
@@ -15759,7 +15759,7 @@ window.GUIA_BANK_1000 = {
         "Metálica"
       ],
       "ans": 0,
-      "exp": "$\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
+      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
       "maths": [],
       "imgs": []
     },
@@ -15803,7 +15803,7 @@ window.GUIA_BANK_1000 = {
         "$2\\,\\mathrm{mol}$"
       ],
       "ans": 0,
-      "exp": "$n=m/M=18/18=1\\,\\mathrm{mol}=N_A$ entidades; $18\\,\\mathrm{mol}$ sería $324\\,\\mathrm{g}$.",
+      "exp": "$n=m/M=18/18=1\\,\\mathrm{mol}=N_A$ entidades; $18\\,\\mathrm{mol}$ sería $324\\,\\mathrm{g}$. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -15847,7 +15847,7 @@ window.GUIA_BANK_1000 = {
         "$2\\,\\mathrm{mol}$"
       ],
       "ans": 0,
-      "exp": "$n=m/M=18/18=1\\,\\mathrm{mol}=N_A$ entidades; $18\\,\\mathrm{mol}$ sería $324\\,\\mathrm{g}$.",
+      "exp": "$n=m/M=18/18=1\\,\\mathrm{mol}=N_A$ entidades; $18\\,\\mathrm{mol}$ sería $324\\,\\mathrm{g}$. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -15891,7 +15891,7 @@ window.GUIA_BANK_1000 = {
         "$2\\,\\mathrm{mol}$"
       ],
       "ans": 0,
-      "exp": "$n=m/M=18/18=1\\,\\mathrm{mol}=N_A$ entidades; $18\\,\\mathrm{mol}$ sería $324\\,\\mathrm{g}$.",
+      "exp": "$n=m/M=18/18=1\\,\\mathrm{mol}=N_A$ entidades; $18\\,\\mathrm{mol}$ sería $324\\,\\mathrm{g}$. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -15935,7 +15935,7 @@ window.GUIA_BANK_1000 = {
         "$2\\,\\mathrm{mol}$"
       ],
       "ans": 0,
-      "exp": "$n=m/M=18/18=1\\,\\mathrm{mol}=N_A$ entidades; $18\\,\\mathrm{mol}$ sería $324\\,\\mathrm{g}$.",
+      "exp": "$n=m/M=18/18=1\\,\\mathrm{mol}=N_A$ entidades; $18\\,\\mathrm{mol}$ sería $324\\,\\mathrm{g}$. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -15979,7 +15979,7 @@ window.GUIA_BANK_1000 = {
         "$2\\,\\mathrm{mol}$"
       ],
       "ans": 0,
-      "exp": "$n=m/M=18/18=1\\,\\mathrm{mol}=N_A$ entidades; $18\\,\\mathrm{mol}$ sería $324\\,\\mathrm{g}$.",
+      "exp": "$n=m/M=18/18=1\\,\\mathrm{mol}=N_A$ entidades; $18\\,\\mathrm{mol}$ sería $324\\,\\mathrm{g}$. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -16023,7 +16023,7 @@ window.GUIA_BANK_1000 = {
         "$2\\,\\mathrm{mol}$"
       ],
       "ans": 0,
-      "exp": "$n=m/M=18/18=1\\,\\mathrm{mol}=N_A$ entidades; $18\\,\\mathrm{mol}$ sería $324\\,\\mathrm{g}$.",
+      "exp": "$n=m/M=18/18=1\\,\\mathrm{mol}=N_A$ entidades; $18\\,\\mathrm{mol}$ sería $324\\,\\mathrm{g}$. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -16067,7 +16067,7 @@ window.GUIA_BANK_1000 = {
         "$2\\,\\mathrm{mol}$"
       ],
       "ans": 0,
-      "exp": "$n=m/M=18/18=1\\,\\mathrm{mol}=N_A$ entidades; $18\\,\\mathrm{mol}$ sería $324\\,\\mathrm{g}$.",
+      "exp": "$n=m/M=18/18=1\\,\\mathrm{mol}=N_A$ entidades; $18\\,\\mathrm{mol}$ sería $324\\,\\mathrm{g}$. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -16111,7 +16111,7 @@ window.GUIA_BANK_1000 = {
         "$2\\,\\mathrm{mol}$"
       ],
       "ans": 0,
-      "exp": "$n=m/M=18/18=1\\,\\mathrm{mol}=N_A$ entidades; $18\\,\\mathrm{mol}$ sería $324\\,\\mathrm{g}$.",
+      "exp": "$n=m/M=18/18=1\\,\\mathrm{mol}=N_A$ entidades; $18\\,\\mathrm{mol}$ sería $324\\,\\mathrm{g}$. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -16133,7 +16133,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{FeO_2}$"
       ],
       "ans": 0,
-      "exp": "Por $100\\,\\mathrm{g}$: $70/56=1.25\\,\\mathrm{mol}\\,\\mathrm{Fe}$, $30/16=1.875\\,\\mathrm{mol}\\,\\mathrm{O}$ → $1.25:1.875=1:1.5=2:3$ luego $\\mathrm{Fe_2O_3}$. Divide entre el menor para obtener enteros.",
+      "exp": "Paso desde cero: Por $100\\,\\mathrm{g}$: $70/56=1.25\\,\\mathrm{mol}\\,\\mathrm{Fe}$, $30/16=1.875\\,\\mathrm{mol}\\,\\mathrm{O}$ → $1.25:1.875=1:1.5=2:3$ luego $\\mathrm{Fe_2O_3}$. Divide entre el menor para obtener enteros.",
       "maths": [],
       "imgs": []
     },
@@ -16155,7 +16155,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{C_3H_6O}$"
       ],
       "ans": 0,
-      "exp": "Por $100\\,\\mathrm{g}$: $40/12=3.33$, $6.7/1=6.7$, $53.3/16=3.33$ → $1:2:1$ empírica $\\mathrm{CH_2O}$ ($30$), factor $60/30=2$ → $\\mathrm{C_2H_4O_2}$. Paso a paso evita confundir empírica con molecular.",
+      "exp": "Paso desde cero: Por $100\\,\\mathrm{g}$: $40/12=3.33$, $6.7/1=6.7$, $53.3/16=3.33$ → $1:2:1$ empírica $\\mathrm{CH_2O}$ ($30$), factor $60/30=2$ → $\\mathrm{C_2H_4O_2}$. Paso a paso evita confundir empírica con molecular.",
       "maths": [],
       "imgs": []
     },
@@ -16177,7 +16177,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{FeO_2}$"
       ],
       "ans": 0,
-      "exp": "Por $100\\,\\mathrm{g}$: $70/56=1.25\\,\\mathrm{mol}\\,\\mathrm{Fe}$, $30/16=1.875\\,\\mathrm{mol}\\,\\mathrm{O}$ → $1.25:1.875=1:1.5=2:3$ luego $\\mathrm{Fe_2O_3}$. Divide entre el menor para obtener enteros.",
+      "exp": "Paso desde cero: Por $100\\,\\mathrm{g}$: $70/56=1.25\\,\\mathrm{mol}\\,\\mathrm{Fe}$, $30/16=1.875\\,\\mathrm{mol}\\,\\mathrm{O}$ → $1.25:1.875=1:1.5=2:3$ luego $\\mathrm{Fe_2O_3}$. Divide entre el menor para obtener enteros.",
       "maths": [],
       "imgs": []
     },
@@ -16199,7 +16199,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{C_3H_6O}$"
       ],
       "ans": 0,
-      "exp": "Por $100\\,\\mathrm{g}$: $40/12=3.33$, $6.7/1=6.7$, $53.3/16=3.33$ → $1:2:1$ empírica $\\mathrm{CH_2O}$ ($30$), factor $60/30=2$ → $\\mathrm{C_2H_4O_2}$. Paso a paso evita confundir empírica con molecular.",
+      "exp": "Paso desde cero: Por $100\\,\\mathrm{g}$: $40/12=3.33$, $6.7/1=6.7$, $53.3/16=3.33$ → $1:2:1$ empírica $\\mathrm{CH_2O}$ ($30$), factor $60/30=2$ → $\\mathrm{C_2H_4O_2}$. Paso a paso evita confundir empírica con molecular.",
       "maths": [],
       "imgs": []
     },
@@ -16221,7 +16221,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{FeO_2}$"
       ],
       "ans": 0,
-      "exp": "Por $100\\,\\mathrm{g}$: $70/56=1.25\\,\\mathrm{mol}\\,\\mathrm{Fe}$, $30/16=1.875\\,\\mathrm{mol}\\,\\mathrm{O}$ → $1.25:1.875=1:1.5=2:3$ luego $\\mathrm{Fe_2O_3}$. Divide entre el menor para obtener enteros.",
+      "exp": "Paso desde cero: Por $100\\,\\mathrm{g}$: $70/56=1.25\\,\\mathrm{mol}\\,\\mathrm{Fe}$, $30/16=1.875\\,\\mathrm{mol}\\,\\mathrm{O}$ → $1.25:1.875=1:1.5=2:3$ luego $\\mathrm{Fe_2O_3}$. Divide entre el menor para obtener enteros.",
       "maths": [],
       "imgs": []
     },
@@ -16243,7 +16243,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{C_3H_6O}$"
       ],
       "ans": 0,
-      "exp": "Por $100\\,\\mathrm{g}$: $40/12=3.33$, $6.7/1=6.7$, $53.3/16=3.33$ → $1:2:1$ empírica $\\mathrm{CH_2O}$ ($30$), factor $60/30=2$ → $\\mathrm{C_2H_4O_2}$. Paso a paso evita confundir empírica con molecular.",
+      "exp": "Paso desde cero: Por $100\\,\\mathrm{g}$: $40/12=3.33$, $6.7/1=6.7$, $53.3/16=3.33$ → $1:2:1$ empírica $\\mathrm{CH_2O}$ ($30$), factor $60/30=2$ → $\\mathrm{C_2H_4O_2}$. Paso a paso evita confundir empírica con molecular.",
       "maths": [],
       "imgs": []
     },
@@ -16265,7 +16265,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{FeO_2}$"
       ],
       "ans": 0,
-      "exp": "Por $100\\,\\mathrm{g}$: $70/56=1.25\\,\\mathrm{mol}\\,\\mathrm{Fe}$, $30/16=1.875\\,\\mathrm{mol}\\,\\mathrm{O}$ → $1.25:1.875=1:1.5=2:3$ luego $\\mathrm{Fe_2O_3}$. Divide entre el menor para obtener enteros.",
+      "exp": "Paso desde cero: Por $100\\,\\mathrm{g}$: $70/56=1.25\\,\\mathrm{mol}\\,\\mathrm{Fe}$, $30/16=1.875\\,\\mathrm{mol}\\,\\mathrm{O}$ → $1.25:1.875=1:1.5=2:3$ luego $\\mathrm{Fe_2O_3}$. Divide entre el menor para obtener enteros.",
       "maths": [],
       "imgs": []
     },
@@ -16287,7 +16287,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{C_3H_6O}$"
       ],
       "ans": 0,
-      "exp": "Por $100\\,\\mathrm{g}$: $40/12=3.33$, $6.7/1=6.7$, $53.3/16=3.33$ → $1:2:1$ empírica $\\mathrm{CH_2O}$ ($30$), factor $60/30=2$ → $\\mathrm{C_2H_4O_2}$. Paso a paso evita confundir empírica con molecular.",
+      "exp": "Paso desde cero: Por $100\\,\\mathrm{g}$: $40/12=3.33$, $6.7/1=6.7$, $53.3/16=3.33$ → $1:2:1$ empírica $\\mathrm{CH_2O}$ ($30$), factor $60/30=2$ → $\\mathrm{C_2H_4O_2}$. Paso a paso evita confundir empírica con molecular.",
       "maths": [],
       "imgs": []
     },
@@ -16309,7 +16309,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{FeO_2}$"
       ],
       "ans": 0,
-      "exp": "Por $100\\,\\mathrm{g}$: $70/56=1.25\\,\\mathrm{mol}\\,\\mathrm{Fe}$, $30/16=1.875\\,\\mathrm{mol}\\,\\mathrm{O}$ → $1.25:1.875=1:1.5=2:3$ luego $\\mathrm{Fe_2O_3}$. Divide entre el menor para obtener enteros.",
+      "exp": "Paso desde cero: Por $100\\,\\mathrm{g}$: $70/56=1.25\\,\\mathrm{mol}\\,\\mathrm{Fe}$, $30/16=1.875\\,\\mathrm{mol}\\,\\mathrm{O}$ → $1.25:1.875=1:1.5=2:3$ luego $\\mathrm{Fe_2O_3}$. Divide entre el menor para obtener enteros.",
       "maths": [],
       "imgs": []
     },
@@ -16331,7 +16331,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{C_3H_6O}$"
       ],
       "ans": 0,
-      "exp": "Por $100\\,\\mathrm{g}$: $40/12=3.33$, $6.7/1=6.7$, $53.3/16=3.33$ → $1:2:1$ empírica $\\mathrm{CH_2O}$ ($30$), factor $60/30=2$ → $\\mathrm{C_2H_4O_2}$. Paso a paso evita confundir empírica con molecular.",
+      "exp": "Paso desde cero: Por $100\\,\\mathrm{g}$: $40/12=3.33$, $6.7/1=6.7$, $53.3/16=3.33$ → $1:2:1$ empírica $\\mathrm{CH_2O}$ ($30$), factor $60/30=2$ → $\\mathrm{C_2H_4O_2}$. Paso a paso evita confundir empírica con molecular.",
       "maths": [],
       "imgs": []
     },
@@ -16353,7 +16353,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{FeO_2}$"
       ],
       "ans": 0,
-      "exp": "Por $100\\,\\mathrm{g}$: $70/56=1.25\\,\\mathrm{mol}\\,\\mathrm{Fe}$, $30/16=1.875\\,\\mathrm{mol}\\,\\mathrm{O}$ → $1.25:1.875=1:1.5=2:3$ luego $\\mathrm{Fe_2O_3}$. Divide entre el menor para obtener enteros.",
+      "exp": "Paso desde cero: Por $100\\,\\mathrm{g}$: $70/56=1.25\\,\\mathrm{mol}\\,\\mathrm{Fe}$, $30/16=1.875\\,\\mathrm{mol}\\,\\mathrm{O}$ → $1.25:1.875=1:1.5=2:3$ luego $\\mathrm{Fe_2O_3}$. Divide entre el menor para obtener enteros.",
       "maths": [],
       "imgs": []
     },
@@ -16375,7 +16375,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{C_3H_6O}$"
       ],
       "ans": 0,
-      "exp": "Por $100\\,\\mathrm{g}$: $40/12=3.33$, $6.7/1=6.7$, $53.3/16=3.33$ → $1:2:1$ empírica $\\mathrm{CH_2O}$ ($30$), factor $60/30=2$ → $\\mathrm{C_2H_4O_2}$. Paso a paso evita confundir empírica con molecular.",
+      "exp": "Paso desde cero: Por $100\\,\\mathrm{g}$: $40/12=3.33$, $6.7/1=6.7$, $53.3/16=3.33$ → $1:2:1$ empírica $\\mathrm{CH_2O}$ ($30$), factor $60/30=2$ → $\\mathrm{C_2H_4O_2}$. Paso a paso evita confundir empírica con molecular.",
       "maths": [],
       "imgs": []
     },
@@ -16397,7 +16397,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{FeO_2}$"
       ],
       "ans": 0,
-      "exp": "Por $100\\,\\mathrm{g}$: $70/56=1.25\\,\\mathrm{mol}\\,\\mathrm{Fe}$, $30/16=1.875\\,\\mathrm{mol}\\,\\mathrm{O}$ → $1.25:1.875=1:1.5=2:3$ luego $\\mathrm{Fe_2O_3}$. Divide entre el menor para obtener enteros.",
+      "exp": "Paso desde cero: Por $100\\,\\mathrm{g}$: $70/56=1.25\\,\\mathrm{mol}\\,\\mathrm{Fe}$, $30/16=1.875\\,\\mathrm{mol}\\,\\mathrm{O}$ → $1.25:1.875=1:1.5=2:3$ luego $\\mathrm{Fe_2O_3}$. Divide entre el menor para obtener enteros.",
       "maths": [],
       "imgs": []
     },
@@ -16419,7 +16419,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{C_3H_6O}$"
       ],
       "ans": 0,
-      "exp": "Por $100\\,\\mathrm{g}$: $40/12=3.33$, $6.7/1=6.7$, $53.3/16=3.33$ → $1:2:1$ empírica $\\mathrm{CH_2O}$ ($30$), factor $60/30=2$ → $\\mathrm{C_2H_4O_2}$. Paso a paso evita confundir empírica con molecular.",
+      "exp": "Paso desde cero: Por $100\\,\\mathrm{g}$: $40/12=3.33$, $6.7/1=6.7$, $53.3/16=3.33$ → $1:2:1$ empírica $\\mathrm{CH_2O}$ ($30$), factor $60/30=2$ → $\\mathrm{C_2H_4O_2}$. Paso a paso evita confundir empírica con molecular.",
       "maths": [],
       "imgs": []
     },
@@ -16441,7 +16441,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{FeO_2}$"
       ],
       "ans": 0,
-      "exp": "Por $100\\,\\mathrm{g}$: $70/56=1.25\\,\\mathrm{mol}\\,\\mathrm{Fe}$, $30/16=1.875\\,\\mathrm{mol}\\,\\mathrm{O}$ → $1.25:1.875=1:1.5=2:3$ luego $\\mathrm{Fe_2O_3}$. Divide entre el menor para obtener enteros.",
+      "exp": "Paso desde cero: Por $100\\,\\mathrm{g}$: $70/56=1.25\\,\\mathrm{mol}\\,\\mathrm{Fe}$, $30/16=1.875\\,\\mathrm{mol}\\,\\mathrm{O}$ → $1.25:1.875=1:1.5=2:3$ luego $\\mathrm{Fe_2O_3}$. Divide entre el menor para obtener enteros.",
       "maths": [],
       "imgs": []
     },
@@ -16463,7 +16463,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{C_3H_6O}$"
       ],
       "ans": 0,
-      "exp": "Por $100\\,\\mathrm{g}$: $40/12=3.33$, $6.7/1=6.7$, $53.3/16=3.33$ → $1:2:1$ empírica $\\mathrm{CH_2O}$ ($30$), factor $60/30=2$ → $\\mathrm{C_2H_4O_2}$. Paso a paso evita confundir empírica con molecular.",
+      "exp": "Paso desde cero: Por $100\\,\\mathrm{g}$: $40/12=3.33$, $6.7/1=6.7$, $53.3/16=3.33$ → $1:2:1$ empírica $\\mathrm{CH_2O}$ ($30$), factor $60/30=2$ → $\\mathrm{C_2H_4O_2}$. Paso a paso evita confundir empírica con molecular.",
       "maths": [],
       "imgs": []
     },
@@ -16485,7 +16485,7 @@ window.GUIA_BANK_1000 = {
         "Doble desplazamiento"
       ],
       "ans": 0,
-      "exp": "Un solo reactivo se rompe en dos productos más simples: criterio de descomposición. Síntesis sería al revés y desplazamientos involucran intercambio de elementos entre dos compuestos.",
+      "exp": "Paso desde cero: Un solo reactivo se rompe en dos productos más simples: criterio de descomposición. Síntesis sería al revés y desplazamientos involucran intercambio de elementos entre dos compuestos.",
       "maths": [],
       "imgs": []
     },
@@ -16507,7 +16507,7 @@ window.GUIA_BANK_1000 = {
         "$7$"
       ],
       "ans": 0,
-      "exp": "Tanteo: $\\mathrm{C_3H_8+5O_2\\to3CO_2+4H_2O}$: $3$ C, $8$ H, $10$ O ambos lados. $3$ o $4$ desbalancean O.",
+      "exp": "Tanteo: $\\mathrm{C_3H_8+5O_2\\to3CO_2+4H_2O}$: $3$ C, $8$ H, $10$ O ambos lados. $3$ o $4$ desbalancean O. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -16529,7 +16529,7 @@ window.GUIA_BANK_1000 = {
         "Doble desplazamiento"
       ],
       "ans": 0,
-      "exp": "Un solo reactivo se rompe en dos productos más simples: criterio de descomposición. Síntesis sería al revés y desplazamientos involucran intercambio de elementos entre dos compuestos.",
+      "exp": "Paso desde cero: Un solo reactivo se rompe en dos productos más simples: criterio de descomposición. Síntesis sería al revés y desplazamientos involucran intercambio de elementos entre dos compuestos.",
       "maths": [],
       "imgs": []
     },
@@ -16551,7 +16551,7 @@ window.GUIA_BANK_1000 = {
         "$7$"
       ],
       "ans": 0,
-      "exp": "Tanteo: $\\mathrm{C_3H_8+5O_2\\to3CO_2+4H_2O}$: $3$ C, $8$ H, $10$ O ambos lados. $3$ o $4$ desbalancean O.",
+      "exp": "Tanteo: $\\mathrm{C_3H_8+5O_2\\to3CO_2+4H_2O}$: $3$ C, $8$ H, $10$ O ambos lados. $3$ o $4$ desbalancean O. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -16573,7 +16573,7 @@ window.GUIA_BANK_1000 = {
         "Doble desplazamiento"
       ],
       "ans": 0,
-      "exp": "Un solo reactivo se rompe en dos productos más simples: criterio de descomposición. Síntesis sería al revés y desplazamientos involucran intercambio de elementos entre dos compuestos.",
+      "exp": "Paso desde cero: Un solo reactivo se rompe en dos productos más simples: criterio de descomposición. Síntesis sería al revés y desplazamientos involucran intercambio de elementos entre dos compuestos.",
       "maths": [],
       "imgs": []
     },
@@ -16595,7 +16595,7 @@ window.GUIA_BANK_1000 = {
         "$7$"
       ],
       "ans": 0,
-      "exp": "Tanteo: $\\mathrm{C_3H_8+5O_2\\to3CO_2+4H_2O}$: $3$ C, $8$ H, $10$ O ambos lados. $3$ o $4$ desbalancean O.",
+      "exp": "Tanteo: $\\mathrm{C_3H_8+5O_2\\to3CO_2+4H_2O}$: $3$ C, $8$ H, $10$ O ambos lados. $3$ o $4$ desbalancean O. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -16617,7 +16617,7 @@ window.GUIA_BANK_1000 = {
         "Doble desplazamiento"
       ],
       "ans": 0,
-      "exp": "Un solo reactivo se rompe en dos productos más simples: criterio de descomposición. Síntesis sería al revés y desplazamientos involucran intercambio de elementos entre dos compuestos.",
+      "exp": "Paso desde cero: Un solo reactivo se rompe en dos productos más simples: criterio de descomposición. Síntesis sería al revés y desplazamientos involucran intercambio de elementos entre dos compuestos.",
       "maths": [],
       "imgs": []
     },
@@ -16639,7 +16639,7 @@ window.GUIA_BANK_1000 = {
         "$7$"
       ],
       "ans": 0,
-      "exp": "Tanteo: $\\mathrm{C_3H_8+5O_2\\to3CO_2+4H_2O}$: $3$ C, $8$ H, $10$ O ambos lados. $3$ o $4$ desbalancean O.",
+      "exp": "Tanteo: $\\mathrm{C_3H_8+5O_2\\to3CO_2+4H_2O}$: $3$ C, $8$ H, $10$ O ambos lados. $3$ o $4$ desbalancean O. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -16661,7 +16661,7 @@ window.GUIA_BANK_1000 = {
         "Doble desplazamiento"
       ],
       "ans": 0,
-      "exp": "Un solo reactivo se rompe en dos productos más simples: criterio de descomposición. Síntesis sería al revés y desplazamientos involucran intercambio de elementos entre dos compuestos.",
+      "exp": "Paso desde cero: Un solo reactivo se rompe en dos productos más simples: criterio de descomposición. Síntesis sería al revés y desplazamientos involucran intercambio de elementos entre dos compuestos.",
       "maths": [],
       "imgs": []
     },
@@ -16683,7 +16683,7 @@ window.GUIA_BANK_1000 = {
         "$7$"
       ],
       "ans": 0,
-      "exp": "Tanteo: $\\mathrm{C_3H_8+5O_2\\to3CO_2+4H_2O}$: $3$ C, $8$ H, $10$ O ambos lados. $3$ o $4$ desbalancean O.",
+      "exp": "Tanteo: $\\mathrm{C_3H_8+5O_2\\to3CO_2+4H_2O}$: $3$ C, $8$ H, $10$ O ambos lados. $3$ o $4$ desbalancean O. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -16705,7 +16705,7 @@ window.GUIA_BANK_1000 = {
         "Doble desplazamiento"
       ],
       "ans": 0,
-      "exp": "Un solo reactivo se rompe en dos productos más simples: criterio de descomposición. Síntesis sería al revés y desplazamientos involucran intercambio de elementos entre dos compuestos.",
+      "exp": "Paso desde cero: Un solo reactivo se rompe en dos productos más simples: criterio de descomposición. Síntesis sería al revés y desplazamientos involucran intercambio de elementos entre dos compuestos.",
       "maths": [],
       "imgs": []
     },
@@ -16727,7 +16727,7 @@ window.GUIA_BANK_1000 = {
         "$7$"
       ],
       "ans": 0,
-      "exp": "Tanteo: $\\mathrm{C_3H_8+5O_2\\to3CO_2+4H_2O}$: $3$ C, $8$ H, $10$ O ambos lados. $3$ o $4$ desbalancean O.",
+      "exp": "Tanteo: $\\mathrm{C_3H_8+5O_2\\to3CO_2+4H_2O}$: $3$ C, $8$ H, $10$ O ambos lados. $3$ o $4$ desbalancean O. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -16749,7 +16749,7 @@ window.GUIA_BANK_1000 = {
         "Doble desplazamiento"
       ],
       "ans": 0,
-      "exp": "Un solo reactivo se rompe en dos productos más simples: criterio de descomposición. Síntesis sería al revés y desplazamientos involucran intercambio de elementos entre dos compuestos.",
+      "exp": "Paso desde cero: Un solo reactivo se rompe en dos productos más simples: criterio de descomposición. Síntesis sería al revés y desplazamientos involucran intercambio de elementos entre dos compuestos.",
       "maths": [],
       "imgs": []
     },
@@ -16771,7 +16771,7 @@ window.GUIA_BANK_1000 = {
         "$7$"
       ],
       "ans": 0,
-      "exp": "Tanteo: $\\mathrm{C_3H_8+5O_2\\to3CO_2+4H_2O}$: $3$ C, $8$ H, $10$ O ambos lados. $3$ o $4$ desbalancean O.",
+      "exp": "Tanteo: $\\mathrm{C_3H_8+5O_2\\to3CO_2+4H_2O}$: $3$ C, $8$ H, $10$ O ambos lados. $3$ o $4$ desbalancean O. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -16793,7 +16793,7 @@ window.GUIA_BANK_1000 = {
         "Doble desplazamiento"
       ],
       "ans": 0,
-      "exp": "Un solo reactivo se rompe en dos productos más simples: criterio de descomposición. Síntesis sería al revés y desplazamientos involucran intercambio de elementos entre dos compuestos.",
+      "exp": "Paso desde cero: Un solo reactivo se rompe en dos productos más simples: criterio de descomposición. Síntesis sería al revés y desplazamientos involucran intercambio de elementos entre dos compuestos.",
       "maths": [],
       "imgs": []
     },
@@ -16815,7 +16815,7 @@ window.GUIA_BANK_1000 = {
         "$7$"
       ],
       "ans": 0,
-      "exp": "Tanteo: $\\mathrm{C_3H_8+5O_2\\to3CO_2+4H_2O}$: $3$ C, $8$ H, $10$ O ambos lados. $3$ o $4$ desbalancean O.",
+      "exp": "Tanteo: $\\mathrm{C_3H_8+5O_2\\to3CO_2+4H_2O}$: $3$ C, $8$ H, $10$ O ambos lados. $3$ o $4$ desbalancean O. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -16837,7 +16837,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{AlCl_3}$"
       ],
       "ans": 0,
-      "exp": "Relación $2:3$: $4\\,\\mathrm{Al}$ necesitarían $6\\,\\mathrm{Cl_2}$, solo hay $3$ → $\\mathrm{Cl_2}$ limita.",
+      "exp": "Relación $2:3$: $4\\,\\mathrm{Al}$ necesitarían $6\\,\\mathrm{Cl_2}$, solo hay $3$ → $\\mathrm{Cl_2}$ limita. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -16859,7 +16859,7 @@ window.GUIA_BANK_1000 = {
         "Ambos"
       ],
       "ans": 0,
-      "exp": "Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ que se agota primero y limita $\\mathrm{NH_3}$.",
+      "exp": "Paso desde cero: Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ que se agota primero y limita $\\mathrm{NH_3}$.",
       "maths": [],
       "imgs": []
     },
@@ -16881,7 +16881,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{AlCl_3}$"
       ],
       "ans": 0,
-      "exp": "Relación $2:3$: $4\\,\\mathrm{Al}$ necesitarían $6\\,\\mathrm{Cl_2}$, solo hay $3$ → $\\mathrm{Cl_2}$ limita.",
+      "exp": "Relación $2:3$: $4\\,\\mathrm{Al}$ necesitarían $6\\,\\mathrm{Cl_2}$, solo hay $3$ → $\\mathrm{Cl_2}$ limita. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -16903,7 +16903,7 @@ window.GUIA_BANK_1000 = {
         "Ambos"
       ],
       "ans": 0,
-      "exp": "Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ que se agota primero y limita $\\mathrm{NH_3}$.",
+      "exp": "Paso desde cero: Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ que se agota primero y limita $\\mathrm{NH_3}$.",
       "maths": [],
       "imgs": []
     },
@@ -16925,7 +16925,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{AlCl_3}$"
       ],
       "ans": 0,
-      "exp": "Relación $2:3$: $4\\,\\mathrm{Al}$ necesitarían $6\\,\\mathrm{Cl_2}$, solo hay $3$ → $\\mathrm{Cl_2}$ limita.",
+      "exp": "Relación $2:3$: $4\\,\\mathrm{Al}$ necesitarían $6\\,\\mathrm{Cl_2}$, solo hay $3$ → $\\mathrm{Cl_2}$ limita. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -16947,7 +16947,7 @@ window.GUIA_BANK_1000 = {
         "Ambos"
       ],
       "ans": 0,
-      "exp": "Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ que se agota primero y limita $\\mathrm{NH_3}$.",
+      "exp": "Paso desde cero: Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ que se agota primero y limita $\\mathrm{NH_3}$.",
       "maths": [],
       "imgs": []
     },
@@ -16969,7 +16969,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{AlCl_3}$"
       ],
       "ans": 0,
-      "exp": "Relación $2:3$: $4\\,\\mathrm{Al}$ necesitarían $6\\,\\mathrm{Cl_2}$, solo hay $3$ → $\\mathrm{Cl_2}$ limita.",
+      "exp": "Relación $2:3$: $4\\,\\mathrm{Al}$ necesitarían $6\\,\\mathrm{Cl_2}$, solo hay $3$ → $\\mathrm{Cl_2}$ limita. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -16991,7 +16991,7 @@ window.GUIA_BANK_1000 = {
         "Ambos"
       ],
       "ans": 0,
-      "exp": "Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ que se agota primero y limita $\\mathrm{NH_3}$.",
+      "exp": "Paso desde cero: Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ que se agota primero y limita $\\mathrm{NH_3}$.",
       "maths": [],
       "imgs": []
     },
@@ -17013,7 +17013,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{AlCl_3}$"
       ],
       "ans": 0,
-      "exp": "Relación $2:3$: $4\\,\\mathrm{Al}$ necesitarían $6\\,\\mathrm{Cl_2}$, solo hay $3$ → $\\mathrm{Cl_2}$ limita.",
+      "exp": "Relación $2:3$: $4\\,\\mathrm{Al}$ necesitarían $6\\,\\mathrm{Cl_2}$, solo hay $3$ → $\\mathrm{Cl_2}$ limita. Paso desde cero: identifica el tema, escribe la definición o ecuación base, aplica la regla (conversión, Aufbau, balance de cargas, $n=m/M$) y verifica unidades. Los distractores invierten factores o confunden conceptos cercanos.",
       "maths": [],
       "imgs": []
     },
@@ -17035,7 +17035,7 @@ window.GUIA_BANK_1000 = {
         "Ambos"
       ],
       "ans": 0,
-      "exp": "Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ que se agota primero y limita $\\mathrm{NH_3}$.",
+      "exp": "Paso desde cero: Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ que se agota primero y limita $\\mathrm{NH_3}$.",
       "maths": [],
       "imgs": []
     }
@@ -17059,7 +17059,7 @@ window.GUIA_BANK_1000 = {
         "El emisor sin receptor"
       ],
       "ans": 0,
-      "exp": "La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
+      "exp": "Paso desde cero: La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
       "maths": [],
       "imgs": []
     },
@@ -17081,7 +17081,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17125,7 +17125,7 @@ window.GUIA_BANK_1000 = {
         "El emisor sin receptor"
       ],
       "ans": 0,
-      "exp": "La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
+      "exp": "Paso desde cero: La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
       "maths": [],
       "imgs": []
     },
@@ -17147,7 +17147,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17191,7 +17191,7 @@ window.GUIA_BANK_1000 = {
         "El emisor sin receptor"
       ],
       "ans": 0,
-      "exp": "La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
+      "exp": "Paso desde cero: La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
       "maths": [],
       "imgs": []
     },
@@ -17213,7 +17213,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17257,7 +17257,7 @@ window.GUIA_BANK_1000 = {
         "El emisor sin receptor"
       ],
       "ans": 0,
-      "exp": "La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
+      "exp": "Paso desde cero: La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
       "maths": [],
       "imgs": []
     },
@@ -17279,7 +17279,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17323,7 +17323,7 @@ window.GUIA_BANK_1000 = {
         "El emisor sin receptor"
       ],
       "ans": 0,
-      "exp": "La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
+      "exp": "Paso desde cero: La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
       "maths": [],
       "imgs": []
     },
@@ -17345,7 +17345,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17389,7 +17389,7 @@ window.GUIA_BANK_1000 = {
         "El emisor sin receptor"
       ],
       "ans": 0,
-      "exp": "La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
+      "exp": "Paso desde cero: La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
       "maths": [],
       "imgs": []
     },
@@ -17411,7 +17411,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17455,7 +17455,7 @@ window.GUIA_BANK_1000 = {
         "El emisor sin receptor"
       ],
       "ans": 0,
-      "exp": "La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
+      "exp": "Paso desde cero: La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
       "maths": [],
       "imgs": []
     },
@@ -17477,7 +17477,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17521,7 +17521,7 @@ window.GUIA_BANK_1000 = {
         "El emisor sin receptor"
       ],
       "ans": 0,
-      "exp": "La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
+      "exp": "Paso desde cero: La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
       "maths": [],
       "imgs": []
     },
@@ -17543,7 +17543,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17587,7 +17587,7 @@ window.GUIA_BANK_1000 = {
         "El emisor sin receptor"
       ],
       "ans": 0,
-      "exp": "La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
+      "exp": "Paso desde cero: La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
       "maths": [],
       "imgs": []
     },
@@ -17609,7 +17609,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17653,7 +17653,7 @@ window.GUIA_BANK_1000 = {
         "El emisor sin receptor"
       ],
       "ans": 0,
-      "exp": "La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
+      "exp": "Paso desde cero: La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
       "maths": [],
       "imgs": []
     },
@@ -17675,7 +17675,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17697,7 +17697,7 @@ window.GUIA_BANK_1000 = {
         "Todos rindieron Lenguaje"
       ],
       "ans": 0,
-      "exp": "Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
+      "exp": "Paso desde cero: Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
       "maths": [],
       "imgs": []
     },
@@ -17719,7 +17719,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17741,7 +17741,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17763,7 +17763,7 @@ window.GUIA_BANK_1000 = {
         "Todos rindieron Lenguaje"
       ],
       "ans": 0,
-      "exp": "Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
+      "exp": "Paso desde cero: Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
       "maths": [],
       "imgs": []
     },
@@ -17785,7 +17785,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17807,7 +17807,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17829,7 +17829,7 @@ window.GUIA_BANK_1000 = {
         "Todos rindieron Lenguaje"
       ],
       "ans": 0,
-      "exp": "Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
+      "exp": "Paso desde cero: Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
       "maths": [],
       "imgs": []
     },
@@ -17851,7 +17851,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17873,7 +17873,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17895,7 +17895,7 @@ window.GUIA_BANK_1000 = {
         "Todos rindieron Lenguaje"
       ],
       "ans": 0,
-      "exp": "Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
+      "exp": "Paso desde cero: Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
       "maths": [],
       "imgs": []
     },
@@ -17917,7 +17917,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17939,7 +17939,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -17961,7 +17961,7 @@ window.GUIA_BANK_1000 = {
         "Todos rindieron Lenguaje"
       ],
       "ans": 0,
-      "exp": "Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
+      "exp": "Paso desde cero: Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
       "maths": [],
       "imgs": []
     },
@@ -17983,7 +17983,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18005,7 +18005,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18027,7 +18027,7 @@ window.GUIA_BANK_1000 = {
         "Todos rindieron Lenguaje"
       ],
       "ans": 0,
-      "exp": "Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
+      "exp": "Paso desde cero: Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
       "maths": [],
       "imgs": []
     },
@@ -18049,7 +18049,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18071,7 +18071,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18093,7 +18093,7 @@ window.GUIA_BANK_1000 = {
         "Todos rindieron Lenguaje"
       ],
       "ans": 0,
-      "exp": "Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
+      "exp": "Paso desde cero: Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
       "maths": [],
       "imgs": []
     },
@@ -18115,7 +18115,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18137,7 +18137,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18159,7 +18159,7 @@ window.GUIA_BANK_1000 = {
         "Todos rindieron Lenguaje"
       ],
       "ans": 0,
-      "exp": "Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
+      "exp": "Paso desde cero: Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
       "maths": [],
       "imgs": []
     },
@@ -18181,7 +18181,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18203,7 +18203,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18225,7 +18225,7 @@ window.GUIA_BANK_1000 = {
         "Todos rindieron Lenguaje"
       ],
       "ans": 0,
-      "exp": "Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
+      "exp": "Paso desde cero: Silogismo Barbara: $\\forall x (Aprobado(x)\\to RindióMat(x))$ y $Aprobado(\\text{Ana})$ permiten instanciar y concluir $RindióMat(\\text{Ana})$ por modus ponens universal. Negar la conclusión o cuantificar sobre otro predicado es inválido.",
       "maths": [],
       "imgs": []
     },
@@ -18247,7 +18247,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18269,7 +18269,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18291,7 +18291,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18335,7 +18335,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18379,7 +18379,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18423,7 +18423,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18467,7 +18467,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18511,7 +18511,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18555,7 +18555,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18599,7 +18599,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18643,7 +18643,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18687,7 +18687,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18731,7 +18731,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18775,7 +18775,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18819,7 +18819,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18863,7 +18863,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18907,7 +18907,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18929,7 +18929,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18951,7 +18951,7 @@ window.GUIA_BANK_1000 = {
         "Falsa causa"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes.",
+      "exp": "Paso desde cero: De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -18973,7 +18973,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -18995,7 +18995,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19017,7 +19017,7 @@ window.GUIA_BANK_1000 = {
         "Falsa causa"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes.",
+      "exp": "Paso desde cero: De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -19039,7 +19039,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19061,7 +19061,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19083,7 +19083,7 @@ window.GUIA_BANK_1000 = {
         "Falsa causa"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes.",
+      "exp": "Paso desde cero: De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -19105,7 +19105,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19127,7 +19127,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19149,7 +19149,7 @@ window.GUIA_BANK_1000 = {
         "Falsa causa"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes.",
+      "exp": "Paso desde cero: De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -19171,7 +19171,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19193,7 +19193,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19215,7 +19215,7 @@ window.GUIA_BANK_1000 = {
         "Falsa causa"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes.",
+      "exp": "Paso desde cero: De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -19237,7 +19237,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19259,7 +19259,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19281,7 +19281,7 @@ window.GUIA_BANK_1000 = {
         "Falsa causa"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes.",
+      "exp": "Paso desde cero: De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -19303,7 +19303,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19325,7 +19325,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19347,7 +19347,7 @@ window.GUIA_BANK_1000 = {
         "Falsa causa"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes.",
+      "exp": "Paso desde cero: De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -19369,7 +19369,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19391,7 +19391,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19413,7 +19413,7 @@ window.GUIA_BANK_1000 = {
         "Falsa causa"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes.",
+      "exp": "Paso desde cero: De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -19435,7 +19435,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19457,7 +19457,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19479,7 +19479,7 @@ window.GUIA_BANK_1000 = {
         "Falsa causa"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes.",
+      "exp": "Paso desde cero: De $p\\to q$ y $q\\to r$ se sigue $p\\to r$ por silogismo hipotético (corte). Modus ponens necesitaría afirmar $p$; las falacias son irrelevantes. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -19501,7 +19501,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19523,7 +19523,7 @@ window.GUIA_BANK_1000 = {
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19545,7 +19545,7 @@ window.GUIA_BANK_1000 = {
         "Por ejemplo"
       ],
       "ans": 0,
-      "exp": "\"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
+      "exp": "Paso desde cero: \"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
       "maths": [],
       "imgs": []
     },
@@ -19567,7 +19567,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta estudiar"
       ],
       "ans": 0,
-      "exp": "Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria.",
+      "exp": "Paso desde cero: Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -19589,7 +19589,7 @@ window.GUIA_BANK_1000 = {
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19611,7 +19611,7 @@ window.GUIA_BANK_1000 = {
         "Por ejemplo"
       ],
       "ans": 0,
-      "exp": "\"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
+      "exp": "Paso desde cero: \"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
       "maths": [],
       "imgs": []
     },
@@ -19633,7 +19633,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta estudiar"
       ],
       "ans": 0,
-      "exp": "Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria.",
+      "exp": "Paso desde cero: Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -19655,7 +19655,7 @@ window.GUIA_BANK_1000 = {
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19677,7 +19677,7 @@ window.GUIA_BANK_1000 = {
         "Por ejemplo"
       ],
       "ans": 0,
-      "exp": "\"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
+      "exp": "Paso desde cero: \"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
       "maths": [],
       "imgs": []
     },
@@ -19699,7 +19699,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta estudiar"
       ],
       "ans": 0,
-      "exp": "Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria.",
+      "exp": "Paso desde cero: Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -19721,7 +19721,7 @@ window.GUIA_BANK_1000 = {
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19743,7 +19743,7 @@ window.GUIA_BANK_1000 = {
         "Por ejemplo"
       ],
       "ans": 0,
-      "exp": "\"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
+      "exp": "Paso desde cero: \"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
       "maths": [],
       "imgs": []
     },
@@ -19765,7 +19765,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta estudiar"
       ],
       "ans": 0,
-      "exp": "Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria.",
+      "exp": "Paso desde cero: Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -19787,7 +19787,7 @@ window.GUIA_BANK_1000 = {
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19809,7 +19809,7 @@ window.GUIA_BANK_1000 = {
         "Por ejemplo"
       ],
       "ans": 0,
-      "exp": "\"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
+      "exp": "Paso desde cero: \"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
       "maths": [],
       "imgs": []
     },
@@ -19831,7 +19831,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta estudiar"
       ],
       "ans": 0,
-      "exp": "Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria.",
+      "exp": "Paso desde cero: Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -19853,7 +19853,7 @@ window.GUIA_BANK_1000 = {
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19875,7 +19875,7 @@ window.GUIA_BANK_1000 = {
         "Por ejemplo"
       ],
       "ans": 0,
-      "exp": "\"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
+      "exp": "Paso desde cero: \"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
       "maths": [],
       "imgs": []
     },
@@ -19897,7 +19897,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta estudiar"
       ],
       "ans": 0,
-      "exp": "Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria.",
+      "exp": "Paso desde cero: Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -19919,7 +19919,7 @@ window.GUIA_BANK_1000 = {
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -19941,7 +19941,7 @@ window.GUIA_BANK_1000 = {
         "Por ejemplo"
       ],
       "ans": 0,
-      "exp": "\"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
+      "exp": "Paso desde cero: \"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
       "maths": [],
       "imgs": []
     },
@@ -19963,7 +19963,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta estudiar"
       ],
       "ans": 0,
-      "exp": "Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria.",
+      "exp": "Paso desde cero: Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -19985,7 +19985,7 @@ window.GUIA_BANK_1000 = {
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -20007,7 +20007,7 @@ window.GUIA_BANK_1000 = {
         "Por ejemplo"
       ],
       "ans": 0,
-      "exp": "\"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
+      "exp": "Paso desde cero: \"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
       "maths": [],
       "imgs": []
     },
@@ -20029,7 +20029,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta estudiar"
       ],
       "ans": 0,
-      "exp": "Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria.",
+      "exp": "Paso desde cero: Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -20051,7 +20051,7 @@ window.GUIA_BANK_1000 = {
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -20073,7 +20073,7 @@ window.GUIA_BANK_1000 = {
         "Por ejemplo"
       ],
       "ans": 0,
-      "exp": "\"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
+      "exp": "Paso desde cero: \"Por ello la guía recomienda...\" marca consecuencia lógica de lo anterior; \"sin embargo/en cambio\" marcan contraste y \"por ejemplo\" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.",
       "maths": [],
       "imgs": []
     },
@@ -20095,7 +20095,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta estudiar"
       ],
       "ans": 0,
-      "exp": "Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria.",
+      "exp": "Paso desde cero: Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -20117,7 +20117,7 @@ window.GUIA_BANK_1000 = {
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -20139,7 +20139,7 @@ window.GUIA_BANK_1000 = {
         "Que el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -20161,7 +20161,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -20183,7 +20183,7 @@ window.GUIA_BANK_1000 = {
         "Que el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -20205,7 +20205,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -20227,7 +20227,7 @@ window.GUIA_BANK_1000 = {
         "Que el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -20249,7 +20249,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -20271,7 +20271,7 @@ window.GUIA_BANK_1000 = {
         "Que el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -20293,7 +20293,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -20315,7 +20315,7 @@ window.GUIA_BANK_1000 = {
         "Que el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -20337,7 +20337,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -20359,7 +20359,7 @@ window.GUIA_BANK_1000 = {
         "Que el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -20381,7 +20381,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -20403,7 +20403,7 @@ window.GUIA_BANK_1000 = {
         "Que el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -20425,7 +20425,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -20447,7 +20447,7 @@ window.GUIA_BANK_1000 = {
         "Que el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -20469,7 +20469,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -20491,7 +20491,7 @@ window.GUIA_BANK_1000 = {
         "Que el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -20513,7 +20513,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -20535,7 +20535,7 @@ window.GUIA_BANK_1000 = {
         "Que el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -20557,7 +20557,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -20579,7 +20579,7 @@ window.GUIA_BANK_1000 = {
         "Que el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -20601,7 +20601,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -20623,7 +20623,7 @@ window.GUIA_BANK_1000 = {
         "Que el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -20645,7 +20645,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -20667,7 +20667,7 @@ window.GUIA_BANK_1000 = {
         "Que el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -20689,7 +20689,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -20711,7 +20711,7 @@ window.GUIA_BANK_1000 = {
         "Que el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -20733,7 +20733,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -20755,7 +20755,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -20777,7 +20777,7 @@ window.GUIA_BANK_1000 = {
         "1-3-2"
       ],
       "ans": 0,
-      "exp": "Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio.",
+      "exp": "Paso desde cero: Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -20799,7 +20799,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -20821,7 +20821,7 @@ window.GUIA_BANK_1000 = {
         "1-3-2"
       ],
       "ans": 0,
-      "exp": "Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio.",
+      "exp": "Paso desde cero: Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -20843,7 +20843,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -20865,7 +20865,7 @@ window.GUIA_BANK_1000 = {
         "1-3-2"
       ],
       "ans": 0,
-      "exp": "Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio.",
+      "exp": "Paso desde cero: Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -20887,7 +20887,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -20909,7 +20909,7 @@ window.GUIA_BANK_1000 = {
         "1-3-2"
       ],
       "ans": 0,
-      "exp": "Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio.",
+      "exp": "Paso desde cero: Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -20931,7 +20931,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -20953,7 +20953,7 @@ window.GUIA_BANK_1000 = {
         "1-3-2"
       ],
       "ans": 0,
-      "exp": "Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio.",
+      "exp": "Paso desde cero: Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -20975,7 +20975,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -20997,7 +20997,7 @@ window.GUIA_BANK_1000 = {
         "1-3-2"
       ],
       "ans": 0,
-      "exp": "Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio.",
+      "exp": "Paso desde cero: Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -21019,7 +21019,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -21041,7 +21041,7 @@ window.GUIA_BANK_1000 = {
         "1-3-2"
       ],
       "ans": 0,
-      "exp": "Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio.",
+      "exp": "Paso desde cero: Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -21063,7 +21063,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -21085,7 +21085,7 @@ window.GUIA_BANK_1000 = {
         "1-3-2"
       ],
       "ans": 0,
-      "exp": "Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio.",
+      "exp": "Paso desde cero: Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -21107,7 +21107,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -21129,7 +21129,7 @@ window.GUIA_BANK_1000 = {
         "1-3-2"
       ],
       "ans": 0,
-      "exp": "Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio.",
+      "exp": "Paso desde cero: Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -21151,7 +21151,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -21173,7 +21173,7 @@ window.GUIA_BANK_1000 = {
         "1-3-2"
       ],
       "ans": 0,
-      "exp": "Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio.",
+      "exp": "Paso desde cero: Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -21195,7 +21195,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -21217,7 +21217,7 @@ window.GUIA_BANK_1000 = {
         "1-3-2"
       ],
       "ans": 0,
-      "exp": "Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio.",
+      "exp": "Paso desde cero: Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -21239,7 +21239,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -21261,7 +21261,7 @@ window.GUIA_BANK_1000 = {
         "1-3-2"
       ],
       "ans": 0,
-      "exp": "Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio.",
+      "exp": "Paso desde cero: Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -21283,7 +21283,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -21305,7 +21305,7 @@ window.GUIA_BANK_1000 = {
         "1-3-2"
       ],
       "ans": 0,
-      "exp": "Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio.",
+      "exp": "Paso desde cero: Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -21327,7 +21327,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -21349,7 +21349,7 @@ window.GUIA_BANK_1000 = {
         "1-3-2"
       ],
       "ans": 0,
-      "exp": "Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio.",
+      "exp": "Paso desde cero: Secuencia: necesidad institucional (2) → qué mide la prueba (3) → consecuencia instrumental (1) con conector \"por ello\" al final, no al inicio. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -21393,7 +21393,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -21415,7 +21415,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -21459,7 +21459,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -21481,7 +21481,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -21525,7 +21525,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -21547,7 +21547,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -21591,7 +21591,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -21613,7 +21613,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -21657,7 +21657,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -21679,7 +21679,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -21723,7 +21723,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -21745,7 +21745,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -21789,7 +21789,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -21811,7 +21811,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -21855,7 +21855,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -21877,7 +21877,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -21921,7 +21921,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -21943,7 +21943,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -22031,7 +22031,7 @@ window.GUIA_BANK_1000 = {
         "Estoy seguro de que que vienes."
       ],
       "ans": 0,
-      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra).",
+      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -22097,7 +22097,7 @@ window.GUIA_BANK_1000 = {
         "Estoy seguro de que que vienes."
       ],
       "ans": 0,
-      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra).",
+      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -22163,7 +22163,7 @@ window.GUIA_BANK_1000 = {
         "Estoy seguro de que que vienes."
       ],
       "ans": 0,
-      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra).",
+      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -22229,7 +22229,7 @@ window.GUIA_BANK_1000 = {
         "Estoy seguro de que que vienes."
       ],
       "ans": 0,
-      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra).",
+      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -22295,7 +22295,7 @@ window.GUIA_BANK_1000 = {
         "Estoy seguro de que que vienes."
       ],
       "ans": 0,
-      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra).",
+      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -22361,7 +22361,7 @@ window.GUIA_BANK_1000 = {
         "Estoy seguro de que que vienes."
       ],
       "ans": 0,
-      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra).",
+      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -22427,7 +22427,7 @@ window.GUIA_BANK_1000 = {
         "Estoy seguro de que que vienes."
       ],
       "ans": 0,
-      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra).",
+      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -22493,7 +22493,7 @@ window.GUIA_BANK_1000 = {
         "Estoy seguro de que que vienes."
       ],
       "ans": 0,
-      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra).",
+      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -22537,7 +22537,7 @@ window.GUIA_BANK_1000 = {
         "El emisor sin receptor"
       ],
       "ans": 0,
-      "exp": "La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
+      "exp": "Paso desde cero: La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y \"emisor sin receptor\" niega la comunicación.",
       "maths": [],
       "imgs": []
     }

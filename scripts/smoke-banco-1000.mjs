@@ -53,7 +53,8 @@ for (const s of subjects){
     if(!q.prompt || typeof q.prompt!=='string' || q.prompt.length<10) fails.push(label+' prompt corto');
     if(!Array.isArray(q.opts)||q.opts.length!==4) fails.push(label+' opts debe ser 4');
     if(typeof q.ans!=='number'||q.ans<0||q.ans>3) fails.push(label+' ans fuera 0..3');
-    if(!q.exp || q.exp.length<80) fails.push(label+' exp muy corta (<80)');
+    if(!q.exp || q.exp.length<150) fails.push(label+' exp muy corta (<150, mínimo pedagógico)');
+    if(q.exp && q.exp.length>=150 && !/Paso|desde cero|por qué|porque/i.test(q.exp)) fails.push(label+' exp sin marcador pedagógico (debe tener Paso/desde cero)');
     // TeX delimitado: si hay \sin etc fuera de $ es sospechoso
     const hasBackslashCmd = /\\(sin|cos|tan|frac|sqrt|theta|pi|Delta)/.test(q.prompt);
     const hasDollar = q.prompt.includes('$');

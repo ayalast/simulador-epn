@@ -27,7 +27,7 @@ const MAT_BASE = [
   {code:'4.1.2-va', ch:'m2', t:'Valor absoluto', count:5},
   {code:'4.1.3-geom', ch:'m3', t:'Geometría plana', count:8, fig:true},
   {code:'4.1.4-razTrig', ch:'m3', t:'Razones trigonométricas', count:4, fig:true},
-  {code:'4.1.4-identTrig', ch:'m3', t:'Identidades trigonométricas', count:4},
+  {code:'4.1.4-identTrig', ch:'m4', t:'Identidades trigonométricas', count:4},
   {code:'4.1.4-leySenosCosenos', ch:'m4', t:'Ley senos y cosenos', count:4, fig:true},
   {code:'4.1.4-rectaCirc', ch:'m4', t:'Rectas y circunferencias', count:5, fig:true},
 ];

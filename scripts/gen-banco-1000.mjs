@@ -124,16 +124,27 @@ function matQuestion(topic, n, id){
       break; }
     case '4.1.1-racionales': {
       const p = 2 + (n%3), q = 3 + (n%4), r = 4 + (n%5);
-      prompt = `Simplifique $\\dfrac{${p}}{${q}} + \\dfrac{1}{${r}}$ y elija la fracción irreducible.`;
-      // calcula
       const num = p*r + q, den = q*r;
-      // simplifica por 1 (dejamos como está para ejemplo, distractor simplificado mal)
-      prompt = `Simplifique $\\dfrac{${p}}{${q}} + \\dfrac{1}{${r}}$ y elija la fracción irreducible.`;
       const g = ((a,b)=>{ while(b){ const t=a%b; a=b; b=t;} return a;})(num,den);
       const ns=num/g, ds=den/g;
-      opts = [`$\\dfrac{${ns}}{${ds}}$`, `$\\dfrac{${num}}{${den}}$`, `$\\dfrac{${num+1}}{${den}}$`, `$\\dfrac{${ns+1}}{${ds}}$`];
+      // ensure 4 numerically distinct fractions
+      const correctVal = ns/ds;
+      const valOf = (cn,cd)=>cn/cd;
+      let cands = [[num,den],[num+1,den],[ns+1,ds],[num-1,den],[ns,ds+1],[ns+2,ds]];
+      let distracts=[];
+      for(let pair of cands){
+        if(distracts.length>=3) break;
+        let v=valOf(pair[0],pair[1]);
+        if(Math.abs(v-correctVal)>1e-9 && !distracts.some(d=>Math.abs(valOf(d[0],d[1])-v)<1e-9)){
+          let gg=((a,b)=>{while(b){let t=a%b;a=b;b=t;}return a;})(pair[0],pair[1]);
+          distracts.push([pair[0]/gg, pair[1]/gg]);
+        }
+      }
+      while(distracts.length<3) distracts.push([ns+distracts.length+1, ds]);
+      prompt = `Simplifique $\\dfrac{${p}}{${q}} + \\dfrac{1}{${r}}$ y elija la fracción irreducible.`;
+      opts = [`$\\dfrac{${ns}}{${ds}}$`, ...distracts.slice(0,3).map(d=> `$\\dfrac{${d[0]}}{${d[1]}}$`)];
       ans=0;
-      exp = `Común denominador $${q}\\cdot ${r}=${den}$: $\\frac{${p}\\cdot ${r}}{${den}}+\\frac{${q}}{${den}}=\\frac{${num}}{${den}}=\\frac{${ns}}{${ds}}$ irreducible. Los distractores olvidan simplificar o suman numeradores sin común denominador.`;
+      exp = `Común denominador $${q}\\cdot ${r}=${den}$: $\\frac{${p}\\cdot ${r}}{${den}}+\\frac{${q}}{${den}}=\\frac{${num}}{${den}}=\\frac{${ns}}{${ds}}$ irreducible. Paso desde cero: suma con común denominador y luego simplifica dividiendo por el MCD ${g}. Los distractores olvidan simplificar o suman numeradores sin común denominador.`;
       break; }
     case '4.1.1-reales': {
       prompt = `Ordene de menor a mayor: $\\sqrt{${a*a+1}}$, $\\dfrac{${a*b}}{${b}}$, $\\pi$ aproximado $3.14$. ¿Cuál es el menor?`;

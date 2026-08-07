@@ -546,6 +546,8 @@ function syncHash(){
       if(S.view === 'learn') h = '#guia/aprender';
       else if(S.view === 'chapter' && S.chapter) h = '#guia/aprender/'+S.chapter;
       else if(S.view === 'guiawork') h = '#guia/talleres';
+      else if(S.view === 'stats') h = '#guia/estadisticas';
+      else if(S.view === 'history') h = '#guia/historial';
       else if(S.view === 'attempt'){
         if(S.attempt && GUIA_COURSES.indexOf(S.attempt.course)>=0) h = '#guia/simulador/'+S.attempt.course;
         else h = '#guia/examen69';
@@ -631,6 +633,8 @@ function applyHashRoute(){
     if(parts[1]==='aprender' && parts[2]){ S.chapter = parts[2]; S.view = 'chapter'; }
     else if(parts[1]==='aprender'){ S.view = 'learn'; }
     else if(parts[1]==='talleres'){ S.view = 'guiawork'; }
+    else if(parts[1]==='estadisticas'){ S.view = 'stats'; }
+    else if(parts[1]==='historial'){ S.view = 'history'; }
     else if(parts[1]==='simulador' && parts[2]){
       var gc = parts[2];
       if(GUIA_COURSES.indexOf(gc)>=0){ S.course = gc; S.view = 'course'; }
@@ -707,7 +711,8 @@ function chapterToc(body){
 /* ---------- configuración y almacenamiento ---------- */
 var CFG_KEY='epn_cfg_v3', HIST_KEY='epn_hist_v1', SEEN_KEY='epn_seen_v1', UI_KEY='epn_ui_v1';
 var DEFAULT_CFG = {minutes:30, count: 15, mixMinutes:90, mixCount:20, level:'medio', noRepeat:true,
-  shuffleOptions:true, shuffleQuestions:true, showFeedback:true, student:'AYALA PABON ETHAN FARID'};
+  shuffleOptions:true, shuffleQuestions:true, showFeedback:true, student:'AYALA PABON ETHAN FARID',
+  guiaCfg:{ guia_mat30:{n:30, min:90}, guia_fql120:{n:60, min:120}, guia_fis:{n:20, min:40}, guia_qui:{n:20, min:40}, guia_len:{n:20, min:40} } };
 function load(key, def){ try{ var v = JSON.parse(localStorage.getItem(key)); return v==null? def : v; }catch(e){ return def; } }
 function save(key, val){ try{ localStorage.setItem(key, JSON.stringify(val)); }catch(e){} }
 var cfg = Object.assign({}, DEFAULT_CFG, load(CFG_KEY, {}));
@@ -773,8 +778,22 @@ function freshPool(k){
   var fresh = pool.filter(function(q){ return !SEENSET[k][q.__i]; });
   return {pool:fresh, reset:false, all:pool};
 }
-function countFor(k){ if(k==='guia_mat30') return 30; if(k==='guia_fql120') return 60; if(k==='guia_fis'||k==='guia_qui'||k==='guia_len') return 20; return k==='mix'? cfg.mixCount : cfg.count; }
-function minutesFor(k){ if(k==='guia_mat30') return 90; if(k==='guia_fql120') return 120; if(k==='guia_fis'||k==='guia_qui'||k==='guia_len') return 40; return k==='mix'? cfg.mixMinutes : cfg.minutes; }
+function countFor(k){
+  if(GUIA_COURSES.indexOf(k)>=0){
+    cfg.guiaCfg = cfg.guiaCfg || {guia_mat30:{n:30,min:90}, guia_fql120:{n:60,min:120}, guia_fis:{n:20,min:40}, guia_qui:{n:20,min:40}, guia_len:{n:20,min:40}};
+    var g=cfg.guiaCfg[k]; if(g && g.n) return Math.max(5, Math.min(60, g.n));
+    if(k==='guia_mat30') return 30; if(k==='guia_fql120') return 60; return 20;
+  }
+  return k==='mix'? cfg.mixCount : cfg.count;
+}
+function minutesFor(k){
+  if(GUIA_COURSES.indexOf(k)>=0){
+    cfg.guiaCfg = cfg.guiaCfg || {guia_mat30:{n:30,min:90}, guia_fql120:{n:60,min:120}, guia_fis:{n:20,min:40}, guia_qui:{n:20,min:40}, guia_len:{n:20,min:40}};
+    var g=cfg.guiaCfg[k]; if(g && g.min) return Math.max(10, Math.min(180, g.min));
+    if(k==='guia_mat30') return 90; if(k==='guia_fql120') return 120; return 40;
+  }
+  return k==='mix'? cfg.mixMinutes : cfg.minutes;
+}
 function isGuia1000Course(k){ return GUIA_COURSES.indexOf(k)>=0; }
 
 /* ---------- utilidades ---------- */
@@ -1069,6 +1088,8 @@ function navbar(active){
   var links = guia
     ? '<a data-act="home" class="'+(active==='home'?'active':'')+'">Inicio gu\u00eda</a>'
       +'<a data-act="learn" class="'+(active==='learn'||active==='chapter'?'active':'')+'">Aprender</a>'
+      +'<a data-act="stats" class="'+(active==='stats'?'active':'')+'">Estadísticas</a>'
+      +'<a data-act="history" class="'+(active==='history'?'active':'')+'">Historial</a>'
       +'<a data-act="guiawork" class="'+(active==='guiawork'?'active':'')+'">Talleres</a>'
     : '<a data-act="home" class="'+(active==='home'?'active':'')+'">P\u00e1gina Principal</a>'
       +'<a data-act="learn" class="'+(active==='learn'?'active':'')+'">Aprende</a>'
@@ -2512,7 +2533,8 @@ function viewCourse(){
     '<tr><th>Intentos rendidos</th><td>'+hs.length+(hs.length?' · último '+fmtCorta(hs[0].ts)+' ('+recPct(hs[0])+'%)':'')+'</td></tr>'+
     '</tbody></table>'+
     (k==='mix'? '<div class="infobox">El examen real dura 210 minutos: 90 de Matemática (componente filtro) y 120 para Física, Química y Lenguaje. Puedes reproducir esos tiempos desde la configuración.</div>':'')+
-    (isG1000? '<div class="infobox" style="border-left:4px solid #0e2a47;"><b>Cobertura garantizada:</b> cada intento cubre el máximo de temas distintos antes de repetir tema. Si pides menos preguntas que temas, todas serán de temas distintos; si pides más, se hace una ronda completa por todos los temas antes de repetir.</div>':'')+
+    (isG1000? '<div class="infobox" style="border-left:4px solid #0e2a47;"><b>Cobertura garantizada:</b> cada intento cubre el máximo de temas distintos antes de repetir tema. Si pides menos preguntas que temas, todas serán de temas distintos; si pides más, se hace una ronda completa por todos los temas antes de repetir. Ajusta N y minutos en <b>Configuración → Simuladores Guía EPN</b>.</div>':'')+
+    (isG1000? '<div style="margin:10px 0; display:flex; gap:8px; flex-wrap:wrap;"><button class="btn sec" data-act="cfg">⚙ Ajustar N y tiempo de este simulador</button><span style="font-size:12px; color:#64748b; align-self:center;">Cada simulador recuerda su propio N/minutos.</span></div>':'')+
     planBox(k)+
     '<label class="switch" style="margin:14px 0 10px;display:flex;align-items:center;gap:10px;cursor:pointer;background:rgba(217,130,43,0.08);padding:10px 14px;border-radius:8px;border:1px solid rgba(217,130,43,0.25)">'+
     '<input type="checkbox" id="chkNoSave" style="width:18px;height:18px;cursor:pointer" '+(S.noSave?'checked':'')+'>'+
@@ -2744,17 +2766,36 @@ function removePlanQuestion(courseKey, qIndex) {
 
 /* ---------- MODALES ---------- */
 function modalCfg(){
+  cfg.guiaCfg = cfg.guiaCfg || {guia_mat30:{n:30,min:90}, guia_fql120:{n:60,min:120}, guia_fis:{n:20,min:40}, guia_qui:{n:20,min:40}, guia_len:{n:20,min:40}};
   var lv = LEVELS.map(function(l){ return '<button class="pill '+l.c+(cfg.level===l.k?' on':'')+'" data-act="setlevel" data-l="'+l.k+'">'+l.n+'</button>'; }).join('');
+  var guiaCfgHtml = '';
+  try {
+    var gc = cfg.guiaCfg;
+    guiaCfgHtml = '<div class="field" style="background:#f0f7ff; border:1px solid #cfe0f3; border-radius:8px; padding:12px; margin:14px 0;">'
+      +'<label style="color:#0e2a47; font-weight:700;">⚙ Simuladores Guía EPN (banco 1000) — por simulador</label>'
+      +'<div class="hint" style="margin-bottom:10px;">Ajusta N y minutos para cada uno de los 5 simuladores guía. Quedan guardados y el simulador los respeta al iniciar.</div>'
+      + GUIA_COURSES.map(function(k){
+          var v=gc[k]||{n:countFor(k), min:minutesFor(k)};
+          return '<div style="display:flex; gap:8px; align-items:center; margin-bottom:8px; flex-wrap:wrap;">'
+            +'<span style="min-width:110px; font-weight:600; font-size:13px;">'+COURSES[k].short+'</span>'
+            +'<label style="font-size:12px;">Preguntas <input id="gc-n-'+k+'" type="number" min="5" max="60" value="'+v.n+'" style="width:70px; padding:4px 6px; border:1px solid #cbd5e1; border-radius:4px;"></label>'
+            +'<label style="font-size:12px;">Minutos <input id="gc-min-'+k+'" type="number" min="10" max="180" value="'+v.min+'" style="width:70px; padding:4px 6px; border:1px solid #cbd5e1; border-radius:4px;"></label>'
+            +'<span style="font-size:11px; color:#64748b;">'+(k==='guia_mat30'?'Día 1 filtro':'')+(k==='guia_fql120'?'Día 2 intercalado':'')+'</span>'
+            +'</div>';
+        }).join('')
+      +'</div>';
+  } catch(e){ guiaCfgHtml=''; }
   return '<div class="modalbg" data-act="closemodal"><div class="modal" data-stop="1">'+
     '<header>Configuraci\u00f3n del simulador<button data-act="closemodal">\u2715</button></header>'+
     '<div class="body">'+
     '<div class="field"><label>Dificultad de las preguntas</label><div class="pills">'+lv+'</div>'+
-    '<div class="hint">100 preguntas por materia y por nivel. \u00abMezclado\u00bb combina los cuatro niveles.</div></div>'+
-    '<div class="field"><label>L\u00edmite de tiempo por materia (minutos)</label><input id="cfgmin" type="number" min="1" max="300" value="'+cfg.minutes+'"></div>'+
-    '<div class="field"><label>Preguntas por intento (una materia)</label><input id="cfgcount" type="number" min="1" max="100" value="'+cfg.count+'"></div>'+
+    '<div class="hint">Aula Barreno: 100 por materia y nivel. Guía 1000: solo nivel intermedio por ahora. \u00abMezclado\u00bb combina niveles del aula.</div></div>'+
+    guiaCfgHtml+
+    '<div class="field"><label>L\u00edmite de tiempo por materia (minutos) — Aula</label><input id="cfgmin" type="number" min="1" max="300" value="'+cfg.minutes+'"></div>'+
+    '<div class="field"><label>Preguntas por intento (una materia) — Aula</label><input id="cfgcount" type="number" min="1" max="100" value="'+cfg.count+'"></div>'+
     '<label class="switch" style="margin-top:6px;display:flex;align-items:center;gap:8px;cursor:pointer"><input id="cfgsetdefault" type="checkbox"><span style="font-size:13px;color:#1f7a3f;font-weight:600">Establecer este número de preguntas como predeterminado para todos los simuladores</span></label>'+
-    '<div class="field"><label>Simulacro completo: minutos</label><input id="cfgmixmin" type="number" min="1" max="300" value="'+cfg.mixMinutes+'"><div class="hint">El examen real dura 210 minutos en total.</div></div>'+
-    '<div class="field"><label>Simulacro completo: preguntas</label><input id="cfgmixcount" type="number" min="4" max="120" value="'+cfg.mixCount+'"></div>'+
+    '<div class="field"><label>Simulacro completo: minutos — Aula</label><input id="cfgmixmin" type="number" min="1" max="300" value="'+cfg.mixMinutes+'"><div class="hint">El examen real dura 210 minutos en total.</div></div>'+
+    '<div class="field"><label>Simulacro completo: preguntas — Aula</label><input id="cfgmixcount" type="number" min="4" max="120" value="'+cfg.mixCount+'"></div>'+
     '<div class="field"><label>Nombre del estudiante</label><input id="cfgname" type="text" value="'+escH(cfg.student)+'"></div>'+
     '<label class="switch"><input id="cfgnr" type="checkbox" '+(cfg.noRepeat?'checked':'')+'> No repetir preguntas de intentos anteriores</label>'+
     '<div class="hint" style="margin:-4px 0 10px">Cuando se agotan las preguntas nuevas de un nivel, el ciclo se reinicia autom\u00e1ticamente.</div>'+
@@ -3075,8 +3116,8 @@ case 'start-guia-69':
     case 'guiaplaceholder':
       S.toast = 'Taller \u00ab'+(t.dataset.id||'')+'\u00bb a\u00fan no cableado. Usa Aprender para la teor\u00eda; el banco de preguntas vendr\u00e1 despu\u00e9s.';
       render(); break;
-    case 'stats': if(blocked()) break; if(isGuia()){ S.toast='Las estad\u00edsticas viven en el Aula. Usa el toggle GU\u00cdA EPN \u2194 AULA arriba para volver.'; render(); break; } go('stats'); break;
-    case 'history': if(blocked()) break; if(isGuia()){ S.toast='El historial vive en el Aula. Usa el toggle arriba para volver.'; render(); break; } S.histTab='all'; go('history'); break;
+    case 'stats': if(blocked()) break; go('stats'); break;
+    case 'history': if(blocked()) break; S.histTab='all'; go('history'); break;
     case 'histtab': S.histTab = t.dataset.t; render(); break;
     case 'histtabgo': if(blocked()) break; S.histTab = t.dataset.t; go('history'); break;
     case 'chapter':
@@ -3142,6 +3183,13 @@ case 'start-guia-69':
       cfg.minutes = Math.max(1, Math.min(300, +el('cfgmin').value||30));
       cfg.mixMinutes = Math.max(1, Math.min(300, +el('cfgmixmin').value||90));
       cfg.mixCount = Math.max(4, Math.min(120, +el('cfgmixcount').value||20));
+      // guarda config guía 1000 por simulador
+      cfg.guiaCfg = cfg.guiaCfg || {guia_mat30:{n:30,min:90}, guia_fql120:{n:60,min:120}, guia_fis:{n:20,min:40}, guia_qui:{n:20,min:40}, guia_len:{n:20,min:40}};
+      GUIA_COURSES.forEach(function(k){
+        var nEl=el('gc-n-'+k), mEl=el('gc-min-'+k);
+        if(nEl) cfg.guiaCfg[k].n = Math.max(5, Math.min(60, parseInt(nEl.value,10)||countFor(k)));
+        if(mEl) cfg.guiaCfg[k].min = Math.max(10, Math.min(180, parseInt(mEl.value,10)||minutesFor(k)));
+      });
       cfg.student = el('cfgname').value.trim()||DEFAULT_CFG.student;
       cfg.noRepeat = el('cfgnr').checked;
       cfg.shuffleQuestions = el('cfgsq').checked;

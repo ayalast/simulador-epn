@@ -1,6 +1,6 @@
 /**
  * guia-bank-1000-intermedio.js — Banco 1000 preguntas originales nivel intermedio (250×4)
- * Generado por scripts/gen-banco-1000.mjs + enrich-exps.mjs + fix-ident-ch.mjs — NO editar a mano (re-generable).
+ * Generado por scripts/gen-banco-1000.mjs + enrich-exps.mjs + fix-curated.mjs — NO editar a mano (re-generable).
  * Schema: { id, s, n, d, topics:[], ch, t, prompt, opts:[4], ans, exp, maths:[], imgs:[svg] }
  */
 window.GUIA_BANK_1000 = {
@@ -12543,7 +12543,7 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$12$",
         "$24$",
-        "$12$",
+        "$11$",
         "$13$"
       ],
       "ans": 0,

@@ -1,0 +1,282 @@
+[
+  {
+    "page": 44,
+    "score": 139,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p044-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p044-crop.png",
+    "bbox": [
+      51.436801757812496,
+      113.31360351562499,
+      377.203212890625,
+      535.0920166015625
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 338,
+    "score": 73,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p338-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p338-crop.png",
+    "bbox": [
+      51.316318359374996,
+      114.98184448242188,
+      376.31966796875,
+      542.9698211669922
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 336,
+    "score": 72,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p336-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p336-crop.png",
+    "bbox": [
+      51.17519897460937,
+      114.68879516601562,
+      375.28479248046875,
+      541.5859771728516
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 183,
+    "score": 69,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p183-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p183-crop.png",
+    "bbox": [
+      51.06239868164062,
+      113.35680175781249,
+      374.45759033203126,
+      535.2960083007813
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 317,
+    "score": 60,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p317-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p317-crop.png",
+    "bbox": [
+      51.55079956054687,
+      113.86601806640624,
+      378.03919677734376,
+      537.7006408691407
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 323,
+    "score": 59,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p323-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p323-crop.png",
+    "bbox": [
+      51.40656005859375,
+      114.386044921875,
+      376.9814404296875,
+      540.1563232421875
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 346,
+    "score": 57,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p346-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p346-crop.png",
+    "bbox": [
+      51.435479736328126,
+      114.47280395507812,
+      377.1935180664062,
+      540.5660186767578
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 337,
+    "score": 57,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p337-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p337-crop.png",
+    "bbox": [
+      51.088681640625,
+      113.085,
+      374.65033203125,
+      534.0125
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 468,
+    "score": 56,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p468-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p468-crop.png",
+    "bbox": [
+      51.146400146484375,
+      113.56200439453124,
+      375.07360107421874,
+      536.2650207519531
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 318,
+    "score": 55,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p318-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p318-crop.png",
+    "bbox": [
+      51.55079956054687,
+      114.68879516601562,
+      378.03919677734376,
+      541.5859771728516
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 53,
+    "score": 55,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p053-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p053-crop.png",
+    "bbox": [
+      51.608038330078124,
+      113.72579956054688,
+      378.4589477539063,
+      537.0384979248047
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 297,
+    "score": 55,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p297-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p297-crop.png",
+    "bbox": [
+      51.20159912109375,
+      114.72642333984375,
+      375.4783935546875,
+      541.7636657714844
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 281,
+    "score": 55,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p281-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p281-crop.png",
+    "bbox": [
+      49.715998535156245,
+      114.98184448242188,
+      364.5839892578125,
+      542.9698211669922
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 268,
+    "score": 55,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p268-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p268-crop.png",
+    "bbox": [
+      51.55079956054687,
+      115.07940307617187,
+      378.03919677734376,
+      543.4305145263672
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 95,
+    "score": 55,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p095-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p095-crop.png",
+    "bbox": [
+      51.17519897460937,
+      113.085,
+      375.28479248046875,
+      534.0125
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 51,
+    "score": 55,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p051-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p051-crop.png",
+    "bbox": [
+      51.839999999999996,
+      113.95260131835937,
+      380.16,
+      538.109506225586
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 269,
+    "score": 54,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p269-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p269-crop.png",
+    "bbox": [
+      51.146400146484375,
+      113.51879516601562,
+      375.07360107421874,
+      536.0609771728516
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 35,
+    "score": 54,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p035-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p035-crop.png",
+    "bbox": [
+      51.3756005859375,
+      114.03,
+      376.754404296875,
+      538.475
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 316,
+    "score": 53,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p316-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p316-crop.png",
+    "bbox": [
+      51.20400146484375,
+      114.7329052734375,
+      375.4960107421875,
+      541.7942749023438
+    ],
+    "area_ratio": 0.6
+  },
+  {
+    "page": 258,
+    "score": 53,
+    "drawings": 0,
+    "full": "public\\assets\\lehmann\\lehmann-p258-full.png",
+    "crop": "public\\assets\\lehmann\\lehmann-p258-crop.png",
+    "bbox": [
+      51.868798828125,
+      113.51879516601562,
+      380.37119140625,
+      536.0609771728516
+    ],
+    "area_ratio": 0.6
+  }
+]

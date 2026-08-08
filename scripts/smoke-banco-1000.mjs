@@ -46,7 +46,8 @@ for (const s of subjects){
     else if(seenIds.has(q.id)) fails.push('duplicate id '+q.id);
     else seenIds.add(q.id);
     if(q.s!==s) fails.push(label+' s mismatch '+q.s);
-    if(q.d!=='intermedio') fails.push(label+' d debe ser intermedio, es '+q.d);
+    const allowedD = (s==='mat' ? ['intermedio','dificil','experto'] : ['intermedio']);
+    if(!allowedD.includes(q.d)) fails.push(label+' d inválido '+q.d+' (permitidos: '+allowedD.join('/')+')');
     if(!Array.isArray(q.topics)||q.topics.length<1) fails.push(label+' topics vacío');
     if(!q.ch || !validCh.has(q.ch)) fails.push(label+' ch inválido '+q.ch);
     if(!q.t || q.t.length<3) fails.push(label+' t vacío');
@@ -87,14 +88,30 @@ if(total===0){
   process.exit(0);
 }
 
-console.log(`Total banco: ${total}/1000`);
+const expectedTotal = 1500;
+const expectedBySubject = {mat:750, fis:250, qui:250, len:250};
+console.log(`Total banco: ${total}/${expectedTotal}`);
 if(fails.length){
   console.error('\nFAILURES ('+fails.length+'):');
   fails.slice(0,40).forEach(f=>console.error('  FAIL:',f));
   if(fails.length>40) console.error(`  ... y ${fails.length-40} más`);
   process.exit(1);
 }
-if(total!==1000){
-  console.warn(`WARN: banco incompleto ${total}/1000 — aún en construcción, pasa parcial`);
+for(const subj of subjects){
+  const exp = expectedBySubject[subj];
+  if(BANK[subj].length !== exp){
+    console.error(`FAIL: ${subj} tiene ${BANK[subj].length}, se esperaba ${exp}`);
+    process.exit(1);
+  }
 }
-console.log('SUCCESS: banco-1000 validado ('+total+' preguntas checked)');
+if(META && META.totals){
+  const byLevel = META.totals.byLevelMat || {};
+  if(byLevel.intermedio!==250 || byLevel.dificil!==250 || byLevel.experto!==250){
+    console.error('FAIL: META byLevelMat debe ser 250/250/250, es', JSON.stringify(byLevel));
+    process.exit(1);
+  }
+}
+if(total!==expectedTotal){
+  console.warn(`WARN: banco incompleto ${total}/${expectedTotal} — aún en construcción, pasa parcial`);
+}
+console.log('SUCCESS: banco-1000 validado ('+total+' preguntas checked, mat 250×3 intermedio/dificil/experto)');

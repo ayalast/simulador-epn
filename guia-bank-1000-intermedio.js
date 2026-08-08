@@ -1,8 +1,4 @@
-/**
- * guia-bank-1000-intermedio.js — Banco 1000 preguntas originales nivel intermedio (250×4)
- * Generado por scripts/gen-banco-1000.mjs + enrich-exps.mjs — NO editar a mano (re-generable).
- * Schema: { id, s, n, d, topics:[], ch, t, prompt, opts:[4], ans, exp, maths:[], imgs:[svg] }
- */
+/* guia-bank */
 window.GUIA_BANK_1000 = {
   "mat": [
     {
@@ -5679,7 +5675,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(13+8)(13-8) mas $x^{2}+y^{2}$ no es $(13+8)^{2}$. Si $(13+8)^{2}=441, cuanto vale $(13+8)(13-8)? - var.1",
+      "prompt": "Use distributiva: $(13+8)(13-8)$ mas $x^{2}+y^{2}$ no es $(13+8)^{2}$. Si $(13+8)^{2}=441$, cuanto vale $(13+8)(13-8)$? - var.1",
       "opts": [
         "$105$",
         "$233$",
@@ -5687,7 +5683,7 @@ window.GUIA_BANK_1000 = {
         "$104$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=105 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=13$, $b=8$, luego $a^{2}-b^{2}=169-64=105$. Paso 3: verifica que $(13+8)^{2}=441 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": []
     },
@@ -5701,7 +5697,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(14+9)(14-9) mas $x^{2}+y^{2}$ no es $(14+9)^{2}$. Si $(14+9)^{2}=529, cuanto vale $(14+9)(14-9)? - var.2",
+      "prompt": "Use distributiva: $(14+9)(14-9)$ mas $x^{2}+y^{2}$ no es $(14+9)^{2}$. Si $(14+9)^{2}=529$, cuanto vale $(14+9)(14-9)$? - var.2",
       "opts": [
         "$115$",
         "$277$",
@@ -5709,7 +5705,7 @@ window.GUIA_BANK_1000 = {
         "$126$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=115 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=14$, $b=9$, luego $a^{2}-b^{2}=196-81=115$. Paso 3: verifica que $(14+9)^{2}=529 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": []
     },
@@ -5723,7 +5719,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(15+10)(15-10) mas $x^{2}+y^{2}$ no es $(15+10)^{2}$. Si $(15+10)^{2}=625, cuanto vale $(15+10)(15-10)? - var.3",
+      "prompt": "Use distributiva: $(15+10)(15-10)$ mas $x^{2}+y^{2}$ no es $(15+10)^{2}$. Si $(15+10)^{2}=625$, cuanto vale $(15+10)(15-10)$? - var.3",
       "opts": [
         "$125$",
         "$325$",
@@ -5731,7 +5727,7 @@ window.GUIA_BANK_1000 = {
         "$150$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=125 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=15$, $b=10$, luego $a^{2}-b^{2}=225-100=125$. Paso 3: verifica que $(15+10)^{2}=625 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -5747,7 +5743,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(16+11)(16-11) mas $x^{2}+y^{2}$ no es $(16+11)^{2}$. Si $(16+11)^{2}=729, cuanto vale $(16+11)(16-11)? - var.4",
+      "prompt": "Use distributiva: $(16+11)(16-11)$ mas $x^{2}+y^{2}$ no es $(16+11)^{2}$. Si $(16+11)^{2}=729$, cuanto vale $(16+11)(16-11)$? - var.4",
       "opts": [
         "$135$",
         "$377$",
@@ -5755,7 +5751,7 @@ window.GUIA_BANK_1000 = {
         "$176$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=135 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=16$, $b=11$, luego $a^{2}-b^{2}=256-121=135$. Paso 3: verifica que $(16+11)^{2}=729 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": []
     },
@@ -5769,7 +5765,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(17+12)(17-12) mas $x^{2}+y^{2}$ no es $(17+12)^{2}$. Si $(17+12)^{2}=841, cuanto vale $(17+12)(17-12)? - var.5",
+      "prompt": "Use distributiva: $(17+12)(17-12)$ mas $x^{2}+y^{2}$ no es $(17+12)^{2}$. Si $(17+12)^{2}=841$, cuanto vale $(17+12)(17-12)$? - var.5",
       "opts": [
         "$145$",
         "$433$",
@@ -5777,7 +5773,7 @@ window.GUIA_BANK_1000 = {
         "$204$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=145 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=17$, $b=12$, luego $a^{2}-b^{2}=289-144=145$. Paso 3: verifica que $(17+12)^{2}=841 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -5793,7 +5789,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(18+13)(18-13) mas $x^{2}+y^{2}$ no es $(18+13)^{2}$. Si $(18+13)^{2}=961, cuanto vale $(18+13)(18-13)? - var.6",
+      "prompt": "Use distributiva: $(18+13)(18-13)$ mas $x^{2}+y^{2}$ no es $(18+13)^{2}$. Si $(18+13)^{2}=961$, cuanto vale $(18+13)(18-13)$? - var.6",
       "opts": [
         "$155$",
         "$493$",
@@ -5801,7 +5797,7 @@ window.GUIA_BANK_1000 = {
         "$234$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=155 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=18$, $b=13$, luego $a^{2}-b^{2}=324-169=155$. Paso 3: verifica que $(18+13)^{2}=961 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": []
     },
@@ -5815,7 +5811,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(19+7)(19-7) mas $x^{2}+y^{2}$ no es $(19+7)^{2}$. Si $(19+7)^{2}=676, cuanto vale $(19+7)(19-7)? - var.7",
+      "prompt": "Use distributiva: $(19+7)(19-7)$ mas $x^{2}+y^{2}$ no es $(19+7)^{2}$. Si $(19+7)^{2}=676$, cuanto vale $(19+7)(19-7)$? - var.7",
       "opts": [
         "$312$",
         "$410$",
@@ -5823,7 +5819,7 @@ window.GUIA_BANK_1000 = {
         "$133$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=312 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=19$, $b=7$, luego $a^{2}-b^{2}=361-49=312$. Paso 3: verifica que $(19+7)^{2}=676 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": []
     },
@@ -5837,7 +5833,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(20+8)(20-8) mas $x^{2}+y^{2}$ no es $(20+8)^{2}$. Si $(20+8)^{2}=784, cuanto vale $(20+8)(20-8)? - var.8",
+      "prompt": "Use distributiva: $(20+8)(20-8)$ mas $x^{2}+y^{2}$ no es $(20+8)^{2}$. Si $(20+8)^{2}=784$, cuanto vale $(20+8)(20-8)$? - var.8",
       "opts": [
         "$336$",
         "$464$",
@@ -5845,7 +5841,7 @@ window.GUIA_BANK_1000 = {
         "$160$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=336 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=20$, $b=8$, luego $a^{2}-b^{2}=400-64=336$. Paso 3: verifica que $(20+8)^{2}=784 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -5861,7 +5857,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(12+9)(12-9) mas $x^{2}+y^{2}$ no es $(12+9)^{2}$. Si $(12+9)^{2}=441, cuanto vale $(12+9)(12-9)? - var.9",
+      "prompt": "Use distributiva: $(12+9)(12-9)$ mas $x^{2}+y^{2}$ no es $(12+9)^{2}$. Si $(12+9)^{2}=441$, cuanto vale $(12+9)(12-9)$? - var.9",
       "opts": [
         "$63$",
         "$225$",
@@ -5869,7 +5865,7 @@ window.GUIA_BANK_1000 = {
         "$108$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=63 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=12$, $b=9$, luego $a^{2}-b^{2}=144-81=63$. Paso 3: verifica que $(12+9)^{2}=441 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": []
     },
@@ -5883,7 +5879,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(13+10)(13-10) mas $x^{2}+y^{2}$ no es $(13+10)^{2}$. Si $(13+10)^{2}=529, cuanto vale $(13+10)(13-10)? - var.10",
+      "prompt": "Use distributiva: $(13+10)(13-10)$ mas $x^{2}+y^{2}$ no es $(13+10)^{2}$. Si $(13+10)^{2}=529$, cuanto vale $(13+10)(13-10)$? - var.10",
       "opts": [
         "$69$",
         "$269$",
@@ -5891,7 +5887,7 @@ window.GUIA_BANK_1000 = {
         "$130$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=69 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=13$, $b=10$, luego $a^{2}-b^{2}=169-100=69$. Paso 3: verifica que $(13+10)^{2}=529 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p317-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -5907,7 +5903,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(14+11)(14-11) mas $x^{2}+y^{2}$ no es $(14+11)^{2}$. Si $(14+11)^{2}=625, cuanto vale $(14+11)(14-11)? - var.11",
+      "prompt": "Use distributiva: $(14+11)(14-11)$ mas $x^{2}+y^{2}$ no es $(14+11)^{2}$. Si $(14+11)^{2}=625$, cuanto vale $(14+11)(14-11)$? - var.11",
       "opts": [
         "$75$",
         "$317$",
@@ -5915,7 +5911,7 @@ window.GUIA_BANK_1000 = {
         "$154$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=75 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=14$, $b=11$, luego $a^{2}-b^{2}=196-121=75$. Paso 3: verifica que $(14+11)^{2}=625 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": []
     },
@@ -5929,7 +5925,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(15+12)(15-12) mas $x^{2}+y^{2}$ no es $(15+12)^{2}$. Si $(15+12)^{2}=729, cuanto vale $(15+12)(15-12)? - var.12",
+      "prompt": "Use distributiva: $(15+12)(15-12)$ mas $x^{2}+y^{2}$ no es $(15+12)^{2}$. Si $(15+12)^{2}=729$, cuanto vale $(15+12)(15-12)$? - var.12",
       "opts": [
         "$81$",
         "$369$",
@@ -5937,7 +5933,7 @@ window.GUIA_BANK_1000 = {
         "$180$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=81 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=15$, $b=12$, luego $a^{2}-b^{2}=225-144=81$. Paso 3: verifica que $(15+12)^{2}=729 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": []
     },
@@ -5951,7 +5947,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(16+13)(16-13) mas $x^{2}+y^{2}$ no es $(16+13)^{2}$. Si $(16+13)^{2}=841, cuanto vale $(16+13)(16-13)? - var.13",
+      "prompt": "Use distributiva: $(16+13)(16-13)$ mas $x^{2}+y^{2}$ no es $(16+13)^{2}$. Si $(16+13)^{2}=841$, cuanto vale $(16+13)(16-13)$? - var.13",
       "opts": [
         "$87$",
         "$425$",
@@ -5959,7 +5955,7 @@ window.GUIA_BANK_1000 = {
         "$208$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=87 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=16$, $b=13$, luego $a^{2}-b^{2}=256-169=87$. Paso 3: verifica que $(16+13)^{2}=841 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -5975,7 +5971,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(17+7)(17-7) mas $x^{2}+y^{2}$ no es $(17+7)^{2}$. Si $(17+7)^{2}=576, cuanto vale $(17+7)(17-7)? - var.14",
+      "prompt": "Use distributiva: $(17+7)(17-7)$ mas $x^{2}+y^{2}$ no es $(17+7)^{2}$. Si $(17+7)^{2}=576$, cuanto vale $(17+7)(17-7)$? - var.14",
       "opts": [
         "$240$",
         "$338$",
@@ -5983,7 +5979,7 @@ window.GUIA_BANK_1000 = {
         "$119$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=240 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=17$, $b=7$, luego $a^{2}-b^{2}=289-49=240$. Paso 3: verifica que $(17+7)^{2}=576 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": []
     },
@@ -5997,7 +5993,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(18+8)(18-8) mas $x^{2}+y^{2}$ no es $(18+8)^{2}$. Si $(18+8)^{2}=676, cuanto vale $(18+8)(18-8)? - var.15",
+      "prompt": "Use distributiva: $(18+8)(18-8)$ mas $x^{2}+y^{2}$ no es $(18+8)^{2}$. Si $(18+8)^{2}=676$, cuanto vale $(18+8)(18-8)$? - var.15",
       "opts": [
         "$260$",
         "$388$",
@@ -6005,7 +6001,7 @@ window.GUIA_BANK_1000 = {
         "$144$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=260 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=18$, $b=8$, luego $a^{2}-b^{2}=324-64=260$. Paso 3: verifica que $(18+8)^{2}=676 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6021,7 +6017,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(19+9)(19-9) mas $x^{2}+y^{2}$ no es $(19+9)^{2}$. Si $(19+9)^{2}=784, cuanto vale $(19+9)(19-9)? - var.16",
+      "prompt": "Use distributiva: $(19+9)(19-9)$ mas $x^{2}+y^{2}$ no es $(19+9)^{2}$. Si $(19+9)^{2}=784$, cuanto vale $(19+9)(19-9)$? - var.16",
       "opts": [
         "$280$",
         "$442$",
@@ -6029,7 +6025,7 @@ window.GUIA_BANK_1000 = {
         "$171$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=280 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=19$, $b=9$, luego $a^{2}-b^{2}=361-81=280$. Paso 3: verifica que $(19+9)^{2}=784 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": []
     },
@@ -6043,7 +6039,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(20+10)(20-10) mas $x^{2}+y^{2}$ no es $(20+10)^{2}$. Si $(20+10)^{2}=900, cuanto vale $(20+10)(20-10)? - var.17",
+      "prompt": "Use distributiva: $(20+10)(20-10)$ mas $x^{2}+y^{2}$ no es $(20+10)^{2}$. Si $(20+10)^{2}=900$, cuanto vale $(20+10)(20-10)$? - var.17",
       "opts": [
         "$300$",
         "$500$",
@@ -6051,7 +6047,7 @@ window.GUIA_BANK_1000 = {
         "$200$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=300 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=20$, $b=10$, luego $a^{2}-b^{2}=400-100=300$. Paso 3: verifica que $(20+10)^{2}=900 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": []
     },
@@ -6065,7 +6061,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(12+11)(12-11) mas $x^{2}+y^{2}$ no es $(12+11)^{2}$. Si $(12+11)^{2}=529, cuanto vale $(12+11)(12-11)? - var.18",
+      "prompt": "Use distributiva: $(12+11)(12-11)$ mas $x^{2}+y^{2}$ no es $(12+11)^{2}$. Si $(12+11)^{2}=529$, cuanto vale $(12+11)(12-11)$? - var.18",
       "opts": [
         "$23$",
         "$265$",
@@ -6073,7 +6069,7 @@ window.GUIA_BANK_1000 = {
         "$132$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)(a-b)=a^2-b^2=23 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=12$, $b=11$, luego $a^{2}-b^{2}=144-121=23$. Paso 3: verifica que $(12+11)^{2}=529 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6097,7 +6093,7 @@ window.GUIA_BANK_1000 = {
         "$13$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reciproco invierte Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: reciproco invierte fraccion sin cambiar signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6115,11 +6111,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$\\dfrac{8}{21}$",
         "$\\dfrac{4}{7}$",
-        "$\\dfrac{8.5}{21}$ *",
+        "$\\dfrac{10}{21}$",
         "$\\dfrac{5}{21}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Comun 21 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: comun $7\\cdot3=21$ resta y simplifica a $8/21$. Distractores olvidan simplificar. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6138,12 +6134,12 @@ window.GUIA_BANK_1000 = {
       "prompt": "Exprese $\\dfrac{9}{5}$ decimal - var.21",
       "opts": [
         "$1.80$",
-        "$1.8$",
-        "$2.3$ *",
+        "$2.21$",
+        "$1.42$",
         "$0.56$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Division Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: divide con resto; $p2/q\\approx1.80$. Distractores truncan o invierten. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6165,7 +6161,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: MCD Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: Euclides $MCD(13,18)=1$. Distractores ponen producto o minimo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6187,7 +6183,7 @@ window.GUIA_BANK_1000 = {
         "$14$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reciproco invierte Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: reciproco invierte fraccion sin cambiar signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6207,11 +6203,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$\\dfrac{20}{21}$",
         "$\\dfrac{8}{7}$",
-        "$\\dfrac{20.5}{21}$ *",
+        "$\\dfrac{22}{21}$",
         "$\\dfrac{9}{21}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Comun 21 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: comun $7\\cdot3=21$ resta y simplifica a $20/21$. Distractores olvidan simplificar. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6228,12 +6224,12 @@ window.GUIA_BANK_1000 = {
       "prompt": "Exprese $\\dfrac{8}{4}$ decimal - var.25",
       "opts": [
         "$2.00$",
-        "$2.0$",
-        "$2$",
+        "$2.41$",
+        "$1.62$",
         "$0.50$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Division Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: divide con resto; $p2/q\\approx2.00$. Distractores truncan o invierten. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6257,7 +6253,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: MCD Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: Euclides $MCD(17,18)=1$. Distractores ponen producto o minimo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6279,7 +6275,7 @@ window.GUIA_BANK_1000 = {
         "$16$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reciproco invierte Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: reciproco invierte fraccion sin cambiar signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6297,11 +6293,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$\\dfrac{17}{21}$",
         "$\\dfrac{7}{7}$",
-        "$\\dfrac{17.5}{21}$ *",
+        "$\\dfrac{19}{21}$",
         "$\\dfrac{8}{21}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Comun 21 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: comun $7\\cdot3=21$ resta y simplifica a $17/21$. Distractores olvidan simplificar. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6320,12 +6316,12 @@ window.GUIA_BANK_1000 = {
       "prompt": "Exprese $\\dfrac{12}{8}$ decimal - var.29",
       "opts": [
         "$1.50$",
-        "$1.5$",
-        "$2$ *",
+        "$1.91$",
+        "$1.12$",
         "$0.67$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Division Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: divide con resto; $p2/q\\approx1.50$. Distractores truncan o invierten. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6347,7 +6343,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: MCD Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: Euclides $MCD(14,18)=2$. Distractores ponen producto o minimo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6371,7 +6367,7 @@ window.GUIA_BANK_1000 = {
         "$11$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reciproco invierte Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: reciproco invierte fraccion sin cambiar signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6393,7 +6389,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{7}{21}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Comun 21 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: comun $7\\cdot3=21$ resta y simplifica a $2/3$. Distractores olvidan simplificar. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6410,12 +6406,12 @@ window.GUIA_BANK_1000 = {
       "prompt": "Exprese $\\dfrac{10}{7}$ decimal - var.33",
       "opts": [
         "$1.43$",
-        "$1.4$",
-        "$1.4285714285714286$",
+        "$1.84$",
+        "$1.05$",
         "$0.70$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Division Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: divide con resto; $p2/q\\approx1.43$. Distractores truncan o invierten. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6435,11 +6431,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$18$",
         "$324$",
-        "$18.5$ *",
-        "$19$"
+        "$19$",
+        "$20$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: MCD Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: Euclides $MCD(18,18)=18$. Distractores ponen producto o minimo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6461,7 +6457,7 @@ window.GUIA_BANK_1000 = {
         "$12$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reciproco invierte Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: reciproco invierte fraccion sin cambiar signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6481,11 +6477,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$\\dfrac{11}{21}$",
         "$\\dfrac{5}{7}$",
-        "$\\dfrac{11.5}{21}$ *",
+        "$\\dfrac{13}{21}$",
         "$\\dfrac{6}{21}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Comun 21 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: comun $7\\cdot3=21$ resta y simplifica a $11/21$. Distractores olvidan simplificar. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6507,7 +6503,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{12}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Aproxime Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6529,7 +6525,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{13}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Aproxime Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6553,7 +6549,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{14}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Aproxime Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6575,7 +6571,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{15}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Aproxime Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6599,7 +6595,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{16}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Aproxime Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6621,7 +6617,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{11}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Aproxime Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6643,7 +6639,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{12}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Aproxime Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6667,7 +6663,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{13}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Aproxime Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6689,7 +6685,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{14}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Aproxime Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6713,7 +6709,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{15}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Aproxime Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6735,7 +6731,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{16}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Aproxime Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6757,7 +6753,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{11}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Aproxime Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6781,7 +6777,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{12}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Aproxime Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6803,7 +6799,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{13}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Aproxime Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6827,7 +6823,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{14}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Aproxime Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6849,7 +6845,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{15}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Aproxime Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6871,7 +6867,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{16}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Aproxime Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6895,7 +6891,7 @@ window.GUIA_BANK_1000 = {
         "$x(x+12)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Factoriza Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $x^{2}+12x+32=(x+8)(x+4)$ factores que suman y multiplican. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6917,7 +6913,7 @@ window.GUIA_BANK_1000 = {
         "$x$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x-3)(x+3)/(x+3) Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $x^{2}-9=(x-3)(x+3)$ cancela $x+3$ queda $x-3$, $x\\neq-3$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6941,7 +6937,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Resto 6 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: resto $P(3)=6$ por teorema resto. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6963,7 +6959,7 @@ window.GUIA_BANK_1000 = {
         "$x^{3}+4x+4$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)^3 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$ con $a=x,b=4$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6985,7 +6981,7 @@ window.GUIA_BANK_1000 = {
         "$x(x+13)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Factoriza Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $x^{2}+13x+40=(x+5)(x+8)$ factores que suman y multiplican. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7009,7 +7005,7 @@ window.GUIA_BANK_1000 = {
         "$x$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x-3)(x+3)/(x+3) Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $x^{2}-9=(x-3)(x+3)$ cancela $x+3$ queda $x-3$, $x\\neq-3$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -7031,7 +7027,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Resto -2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: resto $P(2)=-2$ por teorema resto. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7055,7 +7051,7 @@ window.GUIA_BANK_1000 = {
         "$x^{3}+4x+4$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)^3 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$ con $a=x,b=4$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -7077,7 +7073,7 @@ window.GUIA_BANK_1000 = {
         "$x(x+15)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Factoriza Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $x^{2}+15x+54=(x+9)(x+6)$ factores que suman y multiplican. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -7099,7 +7095,7 @@ window.GUIA_BANK_1000 = {
         "$x$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x-3)(x+3)/(x+3) Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $x^{2}-9=(x-3)(x+3)$ cancela $x+3$ queda $x-3$, $x\\neq-3$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7123,7 +7119,7 @@ window.GUIA_BANK_1000 = {
         "$6$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Resto 138 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: resto $P(6)=138$ por teorema resto. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -7145,7 +7141,7 @@ window.GUIA_BANK_1000 = {
         "$x^{3}+4x+4$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)^3 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$ con $a=x,b=4$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7169,7 +7165,7 @@ window.GUIA_BANK_1000 = {
         "$x(x+10)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Factoriza Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $x^{2}+10x+24=(x+6)(x+4)$ factores que suman y multiplican. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -7191,7 +7187,7 @@ window.GUIA_BANK_1000 = {
         "$x$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x-3)(x+3)/(x+3) Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $x^{2}-9=(x-3)(x+3)$ cancela $x+3$ queda $x-3$, $x\\neq-3$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -7213,7 +7209,7 @@ window.GUIA_BANK_1000 = {
         "$5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Resto 70 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: resto $P(5)=70$ por teorema resto. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7237,7 +7233,7 @@ window.GUIA_BANK_1000 = {
         "$x^{3}+4x+4$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (a+b)^3 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$ con $a=x,b=4$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -7259,7 +7255,7 @@ window.GUIA_BANK_1000 = {
         "$x(x+11)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Factoriza Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $x^{2}+11x+24=(x+3)(x+8)$ factores que suman y multiplican. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7283,7 +7279,7 @@ window.GUIA_BANK_1000 = {
         "$x$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x-3)(x+3)/(x+3) Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $x^{2}-9=(x-3)(x+3)$ cancela $x+3$ queda $x-3$, $x\\neq-3$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -7305,7 +7301,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=7 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 9 despeja $x=7$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7327,7 +7323,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=8 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 10 despeja $x=8$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7351,7 +7347,7 @@ window.GUIA_BANK_1000 = {
         "$5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=9 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 11 despeja $x=9$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7370,10 +7366,10 @@ window.GUIA_BANK_1000 = {
         "$10$",
         "$11$",
         "$-10$",
-        "$11.5$ *"
+        "$13$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=10 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 7 despeja $x=10$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7394,10 +7390,10 @@ window.GUIA_BANK_1000 = {
         "$11$",
         "$12$",
         "$-11$",
-        "$12.5$ *"
+        "$14$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=11 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 8 despeja $x=11$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7419,7 +7415,7 @@ window.GUIA_BANK_1000 = {
         "$1$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=5 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 9 despeja $x=5$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7441,7 +7437,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=6 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 10 despeja $x=6$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7465,7 +7461,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=7 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 11 despeja $x=7$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7487,7 +7483,7 @@ window.GUIA_BANK_1000 = {
         "$6$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=8 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 7 despeja $x=8$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7511,7 +7507,7 @@ window.GUIA_BANK_1000 = {
         "$7$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=9 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 8 despeja $x=9$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7533,7 +7529,7 @@ window.GUIA_BANK_1000 = {
         "$8$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=10 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 9 despeja $x=10$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7555,7 +7551,7 @@ window.GUIA_BANK_1000 = {
         "$9$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=11 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 10 despeja $x=11$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7579,7 +7575,7 @@ window.GUIA_BANK_1000 = {
         "$1$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=5 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 11 despeja $x=5$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7601,7 +7597,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=6 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 7 despeja $x=6$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7625,7 +7621,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=7 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 8 despeja $x=7$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7647,7 +7643,7 @@ window.GUIA_BANK_1000 = {
         "$5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=8 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 9 despeja $x=8$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7669,7 +7665,7 @@ window.GUIA_BANK_1000 = {
         "$6$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=9 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 10 despeja $x=9$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7693,7 +7689,7 @@ window.GUIA_BANK_1000 = {
         "$7$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x=10 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 11 despeja $x=10$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7715,7 +7711,7 @@ window.GUIA_BANK_1000 = {
         "$12$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=5$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7739,7 +7735,7 @@ window.GUIA_BANK_1000 = {
         "$17$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=7$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -7761,7 +7757,7 @@ window.GUIA_BANK_1000 = {
         "$22$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=9$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -7783,7 +7779,7 @@ window.GUIA_BANK_1000 = {
         "$27$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=11$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7807,7 +7803,7 @@ window.GUIA_BANK_1000 = {
         "$32$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=13$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -7829,7 +7825,7 @@ window.GUIA_BANK_1000 = {
         "$22$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=10$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7849,11 +7845,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$6$",
         "$3$",
-        "$3.5$ *",
+        "$4$",
         "$15$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=6$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -7871,11 +7867,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$8$",
         "$4$",
-        "$4.5$ *",
+        "$5$",
         "$20$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=8$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -7893,11 +7889,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$10$",
         "$5$",
-        "$5.5$ *",
+        "$6$",
         "$25$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=10$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7917,11 +7913,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$12$",
         "$6$",
-        "$6.5$ *",
+        "$7$",
         "$30$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=12$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -7943,7 +7939,7 @@ window.GUIA_BANK_1000 = {
         "$20$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=9$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -7967,7 +7963,7 @@ window.GUIA_BANK_1000 = {
         "$25$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=11$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -7989,7 +7985,7 @@ window.GUIA_BANK_1000 = {
         "$18$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=7$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8011,7 +8007,7 @@ window.GUIA_BANK_1000 = {
         "$23$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=9$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8035,7 +8031,7 @@ window.GUIA_BANK_1000 = {
         "$28$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=11$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8057,7 +8053,7 @@ window.GUIA_BANK_1000 = {
         "$18$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=8$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8081,7 +8077,7 @@ window.GUIA_BANK_1000 = {
         "$23$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=10$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8103,7 +8099,7 @@ window.GUIA_BANK_1000 = {
         "$28$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x+y Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=12$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8125,7 +8121,7 @@ window.GUIA_BANK_1000 = {
         "$11$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=11^{2}-2*30=61$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8149,7 +8145,7 @@ window.GUIA_BANK_1000 = {
         "$14$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=14^{2}-2*48=100$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8171,7 +8167,7 @@ window.GUIA_BANK_1000 = {
         "$7$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=7^{2}-2*10=29$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8195,7 +8191,7 @@ window.GUIA_BANK_1000 = {
         "$7$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=7^{2}-2*12=25$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8217,7 +8213,7 @@ window.GUIA_BANK_1000 = {
         "$10$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=10^{2}-2*24=52$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8239,7 +8235,7 @@ window.GUIA_BANK_1000 = {
         "$13$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=13^{2}-2*40=89$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8263,7 +8259,7 @@ window.GUIA_BANK_1000 = {
         "$13$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=13^{2}-2*42=85$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8285,7 +8281,7 @@ window.GUIA_BANK_1000 = {
         "$6$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=6^{2}-2*8=20$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8309,7 +8305,7 @@ window.GUIA_BANK_1000 = {
         "$9$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=9^{2}-2*18=45$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8331,7 +8327,7 @@ window.GUIA_BANK_1000 = {
         "$9$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=9^{2}-2*20=41$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8353,7 +8349,7 @@ window.GUIA_BANK_1000 = {
         "$12$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=12^{2}-2*35=74$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8377,7 +8373,7 @@ window.GUIA_BANK_1000 = {
         "$15$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=15^{2}-2*54=117$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8399,7 +8395,7 @@ window.GUIA_BANK_1000 = {
         "$5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=5^{2}-2*6=13$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8423,7 +8419,7 @@ window.GUIA_BANK_1000 = {
         "$8$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=8^{2}-2*15=34$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8445,7 +8441,7 @@ window.GUIA_BANK_1000 = {
         "$11$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=11^{2}-2*28=65$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8467,7 +8463,7 @@ window.GUIA_BANK_1000 = {
         "$11$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=11^{2}-2*30=61$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8491,7 +8487,7 @@ window.GUIA_BANK_1000 = {
         "$14$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=14^{2}-2*48=100$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8513,7 +8509,7 @@ window.GUIA_BANK_1000 = {
         "$7$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sumsq Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=7^{2}-2*10=29$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8537,7 +8533,7 @@ window.GUIA_BANK_1000 = {
         "$[-1, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-1,4]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8559,7 +8555,7 @@ window.GUIA_BANK_1000 = {
         "$[0, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [0,5]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8581,7 +8577,7 @@ window.GUIA_BANK_1000 = {
         "$[-3, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-3,2]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8605,7 +8601,7 @@ window.GUIA_BANK_1000 = {
         "$[-2, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-2,3]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8627,7 +8623,7 @@ window.GUIA_BANK_1000 = {
         "$[-1, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-1,4]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8651,7 +8647,7 @@ window.GUIA_BANK_1000 = {
         "$[0, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [0,5]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8673,7 +8669,7 @@ window.GUIA_BANK_1000 = {
         "$[-3, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-3,2]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8695,7 +8691,7 @@ window.GUIA_BANK_1000 = {
         "$[-2, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-2,3]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8719,7 +8715,7 @@ window.GUIA_BANK_1000 = {
         "$[-1, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-1,4]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8741,7 +8737,7 @@ window.GUIA_BANK_1000 = {
         "$[0, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [0,5]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8765,7 +8761,7 @@ window.GUIA_BANK_1000 = {
         "$[-3, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-3,2]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8787,7 +8783,7 @@ window.GUIA_BANK_1000 = {
         "$[-2, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-2,3]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8809,7 +8805,7 @@ window.GUIA_BANK_1000 = {
         "$[-1, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-1,4]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8833,7 +8829,7 @@ window.GUIA_BANK_1000 = {
         "$[0, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [0,5]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8855,7 +8851,7 @@ window.GUIA_BANK_1000 = {
         "$[-3, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-3,2]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8879,7 +8875,7 @@ window.GUIA_BANK_1000 = {
         "$[-2, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-2,3]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8901,7 +8897,7 @@ window.GUIA_BANK_1000 = {
         "$[-1, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-1,4]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8923,7 +8919,7 @@ window.GUIA_BANK_1000 = {
         "$[0, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: entre raices Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [0,5]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8947,7 +8943,7 @@ window.GUIA_BANK_1000 = {
         "$[-7, 7]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-7|\\le4$ intervalo [3,11]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8969,7 +8965,7 @@ window.GUIA_BANK_1000 = {
         "$[-3, 3]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-8|\\le5$ intervalo [3,13]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -8993,7 +8989,7 @@ window.GUIA_BANK_1000 = {
         "$[-4, 4]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-9|\\le6$ intervalo [3,15]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -9015,7 +9011,7 @@ window.GUIA_BANK_1000 = {
         "$[-5, 5]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-3|\\le7$ intervalo [-4,10]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -9037,7 +9033,7 @@ window.GUIA_BANK_1000 = {
         "$[-6, 6]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-4|\\le8$ intervalo [-4,12]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -9061,7 +9057,7 @@ window.GUIA_BANK_1000 = {
         "$[-7, 7]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-5|\\le9$ intervalo [-4,14]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -9083,7 +9079,7 @@ window.GUIA_BANK_1000 = {
         "$[-3, 3]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-6|\\le4$ intervalo [2,10]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -9107,7 +9103,7 @@ window.GUIA_BANK_1000 = {
         "$[-4, 4]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-7|\\le5$ intervalo [2,12]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -9129,7 +9125,7 @@ window.GUIA_BANK_1000 = {
         "$[-5, 5]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-8|\\le6$ intervalo [2,14]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -9151,7 +9147,7 @@ window.GUIA_BANK_1000 = {
         "$[-6, 6]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-9|\\le7$ intervalo [2,16]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -9175,7 +9171,7 @@ window.GUIA_BANK_1000 = {
         "$[-7, 7]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-3|\\le8$ intervalo [-5,11]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -9197,7 +9193,7 @@ window.GUIA_BANK_1000 = {
         "$[-3, 3]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-4|\\le9$ intervalo [-5,13]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -9221,7 +9217,7 @@ window.GUIA_BANK_1000 = {
         "$[-4, 4]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-5|\\le4$ intervalo [1,9]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -9243,7 +9239,7 @@ window.GUIA_BANK_1000 = {
         "$[-5, 5]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-6|\\le5$ intervalo [1,11]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -9265,7 +9261,7 @@ window.GUIA_BANK_1000 = {
         "$[-6, 6]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-7|\\le6$ intervalo [1,13]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -9289,7 +9285,7 @@ window.GUIA_BANK_1000 = {
         "$[-7, 7]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-8|\\le7$ intervalo [1,15]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -9311,7 +9307,7 @@ window.GUIA_BANK_1000 = {
         "$[-3, 3]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-9|\\le8$ intervalo [1,17]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -9335,7 +9331,7 @@ window.GUIA_BANK_1000 = {
         "$[-4, 4]$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: intervalo Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $|x-3|\\le9$ intervalo [-6,12]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -9357,7 +9353,7 @@ window.GUIA_BANK_1000 = {
         "$44 y 136$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 45°</text>\n    <!-- 8 ángulos numerados — relativos a ix1/ix2 para escuadra perfecta -->\n    <text x=\"147.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠1</text>\n    <text x=\"179.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠2</text>\n    <text x=\"147.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠3</text>\n    <text x=\"179.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠4</text>\n    <text x=\"214.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠5</text>\n    <text x=\"246.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠6</text>\n    <text x=\"214.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠7</text>\n    <text x=\"246.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠8</text>\n  </svg>"
@@ -9381,7 +9377,7 @@ window.GUIA_BANK_1000 = {
         "$45 y 135$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -9405,7 +9401,7 @@ window.GUIA_BANK_1000 = {
         "$46 y 134$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 171,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"169\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n  </svg>"
@@ -9429,7 +9425,7 @@ window.GUIA_BANK_1000 = {
         "$47 y 133$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -9453,7 +9449,7 @@ window.GUIA_BANK_1000 = {
         "$48 y 132$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=60°</text>\n  </svg>"
@@ -9477,7 +9473,7 @@ window.GUIA_BANK_1000 = {
         "$49 y 131$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 167,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n  </svg>"
@@ -9501,7 +9497,7 @@ window.GUIA_BANK_1000 = {
         "$50 y 130$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -9525,7 +9521,7 @@ window.GUIA_BANK_1000 = {
         "$51 y 129$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=50°</text>\n  </svg>"
@@ -9549,7 +9545,7 @@ window.GUIA_BANK_1000 = {
         "$42 y 138$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -9573,7 +9569,7 @@ window.GUIA_BANK_1000 = {
         "$43 y 137$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 51°</text>\n    <!-- 8 ángulos numerados — relativos a ix1/ix2 para escuadra perfecta -->\n    <text x=\"147.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠1</text>\n    <text x=\"179.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠2</text>\n    <text x=\"147.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠3</text>\n    <text x=\"179.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠4</text>\n    <text x=\"214.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠5</text>\n    <text x=\"246.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠6</text>\n    <text x=\"214.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠7</text>\n    <text x=\"246.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠8</text>\n  </svg>"
@@ -9597,7 +9593,7 @@ window.GUIA_BANK_1000 = {
         "$44 y 136$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=56°</text>\n  </svg>"
@@ -9621,7 +9617,7 @@ window.GUIA_BANK_1000 = {
         "$45 y 135$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -9645,7 +9641,7 @@ window.GUIA_BANK_1000 = {
         "$46 y 134$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 60°</text>\n    <!-- 8 ángulos numerados — relativos a ix1/ix2 para escuadra perfecta -->\n    <text x=\"147.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠1</text>\n    <text x=\"179.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠2</text>\n    <text x=\"147.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠3</text>\n    <text x=\"179.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠4</text>\n    <text x=\"214.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠5</text>\n    <text x=\"246.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠6</text>\n    <text x=\"214.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠7</text>\n    <text x=\"246.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠8</text>\n  </svg>"
@@ -9669,7 +9665,7 @@ window.GUIA_BANK_1000 = {
         "$47 y 133$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -9693,7 +9689,7 @@ window.GUIA_BANK_1000 = {
         "$48 y 132$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 169,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"167\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n  </svg>"
@@ -9717,7 +9713,7 @@ window.GUIA_BANK_1000 = {
         "$49 y 131$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 48°</text>\n    <!-- 8 ángulos numerados — relativos a ix1/ix2 para escuadra perfecta -->\n    <text x=\"147.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠1</text>\n    <text x=\"179.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠2</text>\n    <text x=\"147.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠3</text>\n    <text x=\"179.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠4</text>\n    <text x=\"214.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠5</text>\n    <text x=\"246.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠6</text>\n    <text x=\"214.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠7</text>\n    <text x=\"246.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠8</text>\n  </svg>"
@@ -9741,7 +9737,7 @@ window.GUIA_BANK_1000 = {
         "$50 y 130$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -9765,7 +9761,7 @@ window.GUIA_BANK_1000 = {
         "$51 y 129$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Correspondiente igual Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"120,220 280,220 172,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <text x=\"115\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"285\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n  </svg>"
@@ -9789,7 +9785,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{12}{5}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=12/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=5</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=12</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -9813,7 +9809,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{12}{6}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=12/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=6</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=12</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -9837,7 +9833,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{11}{7}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=11/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=7</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=11</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -9861,7 +9857,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{12}{5}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=12/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=5</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=12</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -9885,7 +9881,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{12}{6}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=12/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=6</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=12</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -9909,7 +9905,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{11}{7}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=11/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=7</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=11</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -9933,7 +9929,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{12}{5}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=12/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=5</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=12</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -9957,7 +9953,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{12}{6}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=12/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=6</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=12</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -9981,7 +9977,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{11}{7}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=11/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=7</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=11</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -10005,7 +10001,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{12}{5}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=12/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=5</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=12</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -10029,7 +10025,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{12}{6}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=12/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=6</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=12</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -10053,7 +10049,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{11}{7}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=11/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=7</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=11</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -10077,7 +10073,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{12}{5}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=12/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=5</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=12</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -10101,7 +10097,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{12}{6}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=12/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=6</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=12</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -10125,7 +10121,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{11}{7}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=11/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=7</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=11</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -10149,7 +10145,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{12}{5}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=12/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=5</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=12</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -10173,7 +10169,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{12}{6}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=12/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=6</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=12</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -10197,7 +10193,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{11}{7}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sin Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $\\sin=opuesto/hyp=11/13. Cateto sobre hyp, no hip sobre cateto. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=7</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=11</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
@@ -10633,7 +10629,7 @@ window.GUIA_BANK_1000 = {
         "$57$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=57$ luego $BC=\\sqrt{57}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=6</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
@@ -10657,7 +10653,7 @@ window.GUIA_BANK_1000 = {
         "$64$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=64$ luego $BC=\\sqrt{64}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 147.6,116.6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 119.6,193.7\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=70°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"147.6\" y=\"106.6\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=7</text>\n    <text x=\"138.2\" y=\"171.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-70.0 138.2 171.7)\">AC=8</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
@@ -10681,7 +10677,7 @@ window.GUIA_BANK_1000 = {
         "$73$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=73$ luego $BC=\\sqrt{73}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -10705,7 +10701,7 @@ window.GUIA_BANK_1000 = {
         "$84$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=84$ luego $BC=\\sqrt{84}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 147.6,116.6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 119.6,193.7\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=70°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"147.6\" y=\"106.6\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=9</text>\n    <text x=\"138.2\" y=\"171.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-70.0 138.2 171.7)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
@@ -10729,7 +10725,7 @@ window.GUIA_BANK_1000 = {
         "$57$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=57$ luego $BC=\\sqrt{57}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -10753,7 +10749,7 @@ window.GUIA_BANK_1000 = {
         "$64$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=64$ luego $BC=\\sqrt{64}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 147.6,116.6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 119.6,193.7\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=70°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"147.6\" y=\"106.6\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=7</text>\n    <text x=\"138.2\" y=\"171.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-70.0 138.2 171.7)\">AC=9</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
@@ -10777,7 +10773,7 @@ window.GUIA_BANK_1000 = {
         "$73$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=73$ luego $BC=\\sqrt{73}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=8</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
@@ -10801,7 +10797,7 @@ window.GUIA_BANK_1000 = {
         "$84$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=84$ luego $BC=\\sqrt{84}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -10825,7 +10821,7 @@ window.GUIA_BANK_1000 = {
         "$57$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=57$ luego $BC=\\sqrt{57}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=6</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=9</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
@@ -10849,7 +10845,7 @@ window.GUIA_BANK_1000 = {
         "$64$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=64$ luego $BC=\\sqrt{64}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -10873,7 +10869,7 @@ window.GUIA_BANK_1000 = {
         "$73$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=73$ luego $BC=\\sqrt{73}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=8</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=8</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
@@ -10897,7 +10893,7 @@ window.GUIA_BANK_1000 = {
         "$84$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=84$ luego $BC=\\sqrt{84}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 147.6,116.6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 119.6,193.7\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=70°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"147.6\" y=\"106.6\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=9</text>\n    <text x=\"138.2\" y=\"171.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-70.0 138.2 171.7)\">AC=9</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
@@ -10921,7 +10917,7 @@ window.GUIA_BANK_1000 = {
         "$57$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=57$ luego $BC=\\sqrt{57}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -10945,7 +10941,7 @@ window.GUIA_BANK_1000 = {
         "$64$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=64$ luego $BC=\\sqrt{64}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 147.6,116.6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 119.6,193.7\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=70°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"147.6\" y=\"106.6\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=7</text>\n    <text x=\"138.2\" y=\"171.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-70.0 138.2 171.7)\">AC=8</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
@@ -10969,7 +10965,7 @@ window.GUIA_BANK_1000 = {
         "$73$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=73$ luego $BC=\\sqrt{73}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -10993,7 +10989,7 @@ window.GUIA_BANK_1000 = {
         "$84$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=84$ luego $BC=\\sqrt{84}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 147.6,116.6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 119.6,193.7\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=70°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"147.6\" y=\"106.6\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=9</text>\n    <text x=\"138.2\" y=\"171.7\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-70.0 138.2 171.7)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
@@ -11017,7 +11013,7 @@ window.GUIA_BANK_1000 = {
         "$57$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=57$ luego $BC=\\sqrt{57}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=6</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=8</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
@@ -11041,7 +11037,7 @@ window.GUIA_BANK_1000 = {
         "$64$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: BC sqrt Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=64$ luego $BC=\\sqrt{64}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -11065,7 +11061,7 @@ window.GUIA_BANK_1000 = {
         "$0.5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -1/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"240\" x2=\"380\" y2=\"240\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <polygon points=\"380,240 372,236 372,244\" fill=\"#334155\"/>\n    <polygon points=\"70,30 66,38 74,38\" fill=\"#334155\"/>\n    <text x=\"384\" y=\"244\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">x</text>\n    <text x=\"60\" y=\"26\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">y</text>\n    <!-- prolongación entrecortada colineal con AB (sutil, por debajo del sólido) -->\n    <line x1=\"50\" y1=\"222.7\" x2=\"194.5\" y2=\"30.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"6 4\" opacity=\"0.35\"/>\n    <!-- segmento sólido A–B por encima -->\n    <line x1=\"136\" y1=\"108\" x2=\"202\" y2=\"20\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linecap=\"round\"/>\n    <circle cx=\"136\" cy=\"108\" r=\"5\" fill=\"#b3261e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <circle cx=\"202\" cy=\"20\" r=\"5\" fill=\"#0f766e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <text x=\"126\" y=\"124\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">A(3,6)</text>\n    <text x=\"210\" y=\"12\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">B(6,10)</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">m = Δy/Δx</text>\n  </svg>"
@@ -11089,7 +11085,7 @@ window.GUIA_BANK_1000 = {
         "$0.5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -1/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -11113,7 +11109,7 @@ window.GUIA_BANK_1000 = {
         "$0.5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -1/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"240\" x2=\"380\" y2=\"240\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <polygon points=\"380,240 372,236 372,244\" fill=\"#334155\"/>\n    <polygon points=\"70,30 66,38 74,38\" fill=\"#334155\"/>\n    <text x=\"384\" y=\"244\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">x</text>\n    <text x=\"60\" y=\"26\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">y</text>\n    <!-- prolongación entrecortada colineal con AB (sutil, por debajo del sólido) -->\n    <line x1=\"50\" y1=\"190.8\" x2=\"380\" y2=\"58.8\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"6 4\" opacity=\"0.35\"/>\n    <!-- segmento sólido A–B por encima -->\n    <line x1=\"92\" y1=\"174\" x2=\"202\" y2=\"130\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linecap=\"round\"/>\n    <circle cx=\"92\" cy=\"174\" r=\"5\" fill=\"#b3261e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <circle cx=\"202\" cy=\"130\" r=\"5\" fill=\"#0f766e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <text x=\"82\" y=\"190\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">A(1,3)</text>\n    <text x=\"210\" y=\"122\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">B(6,5)</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">m = Δy/Δx</text>\n  </svg>"
@@ -11137,7 +11133,7 @@ window.GUIA_BANK_1000 = {
         "$0.5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -1/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"240\" x2=\"380\" y2=\"240\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <polygon points=\"380,240 372,236 372,244\" fill=\"#334155\"/>\n    <polygon points=\"70,30 66,38 74,38\" fill=\"#334155\"/>\n    <text x=\"384\" y=\"244\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">x</text>\n    <text x=\"60\" y=\"26\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">y</text>\n    <!-- prolongación entrecortada colineal con AB (sutil, por debajo del sólido) -->\n    <line x1=\"50\" y1=\"216.0\" x2=\"236\" y2=\"30.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"6 4\" opacity=\"0.35\"/>\n    <!-- segmento sólido A–B por encima -->\n    <line x1=\"114\" y1=\"152\" x2=\"180\" y2=\"86\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linecap=\"round\"/>\n    <circle cx=\"114\" cy=\"152\" r=\"5\" fill=\"#b3261e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <circle cx=\"180\" cy=\"86\" r=\"5\" fill=\"#0f766e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <text x=\"104\" y=\"168\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">A(2,4)</text>\n    <text x=\"188\" y=\"78\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">B(5,7)</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">m = Δy/Δx</text>\n  </svg>"
@@ -11161,7 +11157,7 @@ window.GUIA_BANK_1000 = {
         "$0.5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -1/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -11185,7 +11181,7 @@ window.GUIA_BANK_1000 = {
         "$0.5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -1/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"240\" x2=\"380\" y2=\"240\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <polygon points=\"380,240 372,236 372,244\" fill=\"#334155\"/>\n    <polygon points=\"70,30 66,38 74,38\" fill=\"#334155\"/>\n    <text x=\"384\" y=\"244\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">x</text>\n    <text x=\"60\" y=\"26\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">y</text>\n    <!-- prolongación entrecortada colineal con AB (sutil, por debajo del sólido) -->\n    <line x1=\"50\" y1=\"216.0\" x2=\"236\" y2=\"30.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"6 4\" opacity=\"0.35\"/>\n    <!-- segmento sólido A–B por encima -->\n    <line x1=\"158\" y1=\"108\" x2=\"268\" y2=\"-2\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linecap=\"round\"/>\n    <circle cx=\"158\" cy=\"108\" r=\"5\" fill=\"#b3261e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <circle cx=\"268\" cy=\"-2\" r=\"5\" fill=\"#0f766e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <text x=\"148\" y=\"124\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">A(4,6)</text>\n    <text x=\"276\" y=\"-10\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">B(9,11)</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">m = Δy/Δx</text>\n  </svg>"
@@ -11209,7 +11205,7 @@ window.GUIA_BANK_1000 = {
         "$0.5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -1/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -11233,7 +11229,7 @@ window.GUIA_BANK_1000 = {
         "$0.5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -1/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"240\" x2=\"380\" y2=\"240\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <polygon points=\"380,240 372,236 372,244\" fill=\"#334155\"/>\n    <polygon points=\"70,30 66,38 74,38\" fill=\"#334155\"/>\n    <text x=\"384\" y=\"244\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">x</text>\n    <text x=\"60\" y=\"26\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">y</text>\n    <!-- prolongación entrecortada colineal con AB (sutil, por debajo del sólido) -->\n    <line x1=\"50\" y1=\"222.0\" x2=\"306\" y2=\"30.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"6 4\" opacity=\"0.35\"/>\n    <!-- segmento sólido A–B por encima -->\n    <line x1=\"114\" y1=\"174\" x2=\"202\" y2=\"108\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linecap=\"round\"/>\n    <circle cx=\"114\" cy=\"174\" r=\"5\" fill=\"#b3261e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <circle cx=\"202\" cy=\"108\" r=\"5\" fill=\"#0f766e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <text x=\"104\" y=\"190\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">A(2,3)</text>\n    <text x=\"210\" y=\"100\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">B(6,6)</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">m = Δy/Δx</text>\n  </svg>"
@@ -11257,7 +11253,7 @@ window.GUIA_BANK_1000 = {
         "$0.5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -1/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"240\" x2=\"380\" y2=\"240\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <polygon points=\"380,240 372,236 372,244\" fill=\"#334155\"/>\n    <polygon points=\"70,30 66,38 74,38\" fill=\"#334155\"/>\n    <text x=\"384\" y=\"244\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">x</text>\n    <text x=\"60\" y=\"26\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">y</text>\n    <!-- prolongación entrecortada colineal con AB (sutil, por debajo del sólido) -->\n    <line x1=\"50\" y1=\"220.8\" x2=\"288.5\" y2=\"30.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"6 4\" opacity=\"0.35\"/>\n    <!-- segmento sólido A–B por encima -->\n    <line x1=\"136\" y1=\"152\" x2=\"246\" y2=\"64\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linecap=\"round\"/>\n    <circle cx=\"136\" cy=\"152\" r=\"5\" fill=\"#b3261e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <circle cx=\"246\" cy=\"64\" r=\"5\" fill=\"#0f766e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <text x=\"126\" y=\"168\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">A(3,4)</text>\n    <text x=\"254\" y=\"56\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">B(8,8)</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">m = Δy/Δx</text>\n  </svg>"
@@ -11281,7 +11277,7 @@ window.GUIA_BANK_1000 = {
         "$0.5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -1/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -11305,7 +11301,7 @@ window.GUIA_BANK_1000 = {
         "$0.5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -1/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"240\" x2=\"380\" y2=\"240\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <polygon points=\"380,240 372,236 372,244\" fill=\"#334155\"/>\n    <polygon points=\"70,30 66,38 74,38\" fill=\"#334155\"/>\n    <text x=\"384\" y=\"244\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">x</text>\n    <text x=\"60\" y=\"26\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">y</text>\n    <!-- prolongación entrecortada colineal con AB (sutil, por debajo del sólido) -->\n    <line x1=\"50\" y1=\"129.0\" x2=\"248\" y2=\"30.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"6 4\" opacity=\"0.35\"/>\n    <!-- segmento sólido A–B por encima -->\n    <line x1=\"92\" y1=\"108\" x2=\"180\" y2=\"64\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linecap=\"round\"/>\n    <circle cx=\"92\" cy=\"108\" r=\"5\" fill=\"#b3261e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <circle cx=\"180\" cy=\"64\" r=\"5\" fill=\"#0f766e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <text x=\"82\" y=\"124\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">A(1,6)</text>\n    <text x=\"188\" y=\"56\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">B(5,8)</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">m = Δy/Δx</text>\n  </svg>"
@@ -11329,7 +11325,7 @@ window.GUIA_BANK_1000 = {
         "$0.5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -1/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -11353,7 +11349,7 @@ window.GUIA_BANK_1000 = {
         "$0.5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -1/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"240\" x2=\"380\" y2=\"240\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <polygon points=\"380,240 372,236 372,244\" fill=\"#334155\"/>\n    <polygon points=\"70,30 66,38 74,38\" fill=\"#334155\"/>\n    <text x=\"384\" y=\"244\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">x</text>\n    <text x=\"60\" y=\"26\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">y</text>\n    <!-- prolongación entrecortada colineal con AB (sutil, por debajo del sólido) -->\n    <line x1=\"244\" y1=\"30.0\" x2=\"63.999999999999986\" y2=\"270.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"6 4\" opacity=\"0.35\"/>\n    <!-- segmento sólido A–B por encima -->\n    <line x1=\"136\" y1=\"174\" x2=\"202\" y2=\"86\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linecap=\"round\"/>\n    <circle cx=\"136\" cy=\"174\" r=\"5\" fill=\"#b3261e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <circle cx=\"202\" cy=\"86\" r=\"5\" fill=\"#0f766e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <text x=\"126\" y=\"190\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">A(3,3)</text>\n    <text x=\"210\" y=\"78\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">B(6,7)</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">m = Δy/Δx</text>\n  </svg>"
@@ -11377,7 +11373,7 @@ window.GUIA_BANK_1000 = {
         "$0.5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -1/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"240\" x2=\"380\" y2=\"240\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <polygon points=\"380,240 372,236 372,244\" fill=\"#334155\"/>\n    <polygon points=\"70,30 66,38 74,38\" fill=\"#334155\"/>\n    <text x=\"384\" y=\"244\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">x</text>\n    <text x=\"60\" y=\"26\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">y</text>\n    <!-- prolongación entrecortada colineal con AB (sutil, por debajo del sólido) -->\n    <line x1=\"255.6\" y1=\"30.0\" x2=\"63.6\" y2=\"270.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"6 4\" opacity=\"0.35\"/>\n    <!-- segmento sólido A–B por encima -->\n    <line x1=\"158\" y1=\"152\" x2=\"246\" y2=\"42\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linecap=\"round\"/>\n    <circle cx=\"158\" cy=\"152\" r=\"5\" fill=\"#b3261e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <circle cx=\"246\" cy=\"42\" r=\"5\" fill=\"#0f766e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <text x=\"148\" y=\"168\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">A(4,4)</text>\n    <text x=\"254\" y=\"34\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">B(8,9)</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">m = Δy/Δx</text>\n  </svg>"
@@ -11401,7 +11397,7 @@ window.GUIA_BANK_1000 = {
         "$0.5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -1/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -11425,7 +11421,7 @@ window.GUIA_BANK_1000 = {
         "$0.5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -1/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"240\" x2=\"380\" y2=\"240\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <line x1=\"70\" y1=\"30\" x2=\"70\" y2=\"270\" stroke=\"#334155\" stroke-width=\"1.6\"/>\n    <polygon points=\"380,240 372,236 372,244\" fill=\"#334155\"/>\n    <polygon points=\"70,30 66,38 74,38\" fill=\"#334155\"/>\n    <text x=\"384\" y=\"244\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">x</text>\n    <text x=\"60\" y=\"26\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#334155\">y</text>\n    <!-- prolongación entrecortada colineal con AB (sutil, por debajo del sólido) -->\n    <line x1=\"50\" y1=\"172.0\" x2=\"192\" y2=\"30.0\" stroke=\"#64748b\" stroke-width=\"1.4\" stroke-dasharray=\"6 4\" opacity=\"0.35\"/>\n    <!-- segmento sólido A–B por encima -->\n    <line x1=\"114\" y1=\"108\" x2=\"180\" y2=\"42\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linecap=\"round\"/>\n    <circle cx=\"114\" cy=\"108\" r=\"5\" fill=\"#b3261e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <circle cx=\"180\" cy=\"42\" r=\"5\" fill=\"#0f766e\" stroke=\"#fff\" stroke-width=\"2\"/>\n    <text x=\"104\" y=\"124\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">A(2,6)</text>\n    <text x=\"188\" y=\"34\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0f766e\">B(5,9)</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">m = Δy/Δx</text>\n  </svg>"
@@ -11449,7 +11445,7 @@ window.GUIA_BANK_1000 = {
         "$0.5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -1/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -11473,7 +11469,7 @@ window.GUIA_BANK_1000 = {
         "$-90$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 90/2=45 pares luego $S=-45$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11495,7 +11491,7 @@ window.GUIA_BANK_1000 = {
         "$-100$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 100/2=50 pares luego $S=-50$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11517,7 +11513,7 @@ window.GUIA_BANK_1000 = {
         "$-110$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 110/2=55 pares luego $S=-55$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11539,7 +11535,7 @@ window.GUIA_BANK_1000 = {
         "$-120$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 120/2=60 pares luego $S=-60$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11561,7 +11557,7 @@ window.GUIA_BANK_1000 = {
         "$-80$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 80/2=40 pares luego $S=-40$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11583,7 +11579,7 @@ window.GUIA_BANK_1000 = {
         "$-90$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 90/2=45 pares luego $S=-45$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11605,7 +11601,7 @@ window.GUIA_BANK_1000 = {
         "$-100$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 100/2=50 pares luego $S=-50$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11627,7 +11623,7 @@ window.GUIA_BANK_1000 = {
         "$-110$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 110/2=55 pares luego $S=-55$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11649,7 +11645,7 @@ window.GUIA_BANK_1000 = {
         "$-120$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 120/2=60 pares luego $S=-60$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11671,7 +11667,7 @@ window.GUIA_BANK_1000 = {
         "$-80$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 80/2=40 pares luego $S=-40$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11693,7 +11689,7 @@ window.GUIA_BANK_1000 = {
         "$-90$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 90/2=45 pares luego $S=-45$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11715,7 +11711,7 @@ window.GUIA_BANK_1000 = {
         "$-100$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 100/2=50 pares luego $S=-50$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11737,7 +11733,7 @@ window.GUIA_BANK_1000 = {
         "$-110$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 110/2=55 pares luego $S=-55$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11759,7 +11755,7 @@ window.GUIA_BANK_1000 = {
         "$-120$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 120/2=60 pares luego $S=-60$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11781,7 +11777,7 @@ window.GUIA_BANK_1000 = {
         "$-80$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 80/2=40 pares luego $S=-40$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11803,7 +11799,7 @@ window.GUIA_BANK_1000 = {
         "$-90$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 90/2=45 pares luego $S=-45$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11825,7 +11821,7 @@ window.GUIA_BANK_1000 = {
         "$-100$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 100/2=50 pares luego $S=-50$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11847,7 +11843,7 @@ window.GUIA_BANK_1000 = {
         "$-110$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: -lim/2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: agrupa pares $(1-2)=-1$, cada par -1, hay 110/2=55 pares luego $S=-55$. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -11861,7 +11857,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=11 irreducible - var.19",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=11$ irreducible - var.19",
       "opts": [
         "$\\dfrac{122}{11}$",
         "$\\dfrac{11}{12}$",
@@ -11869,7 +11865,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{22}{11}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=11$, numerador 122, denominador 11, queda $\\dfrac{122}{11}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -11883,7 +11879,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=7 irreducible - var.20",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=7$ irreducible - var.20",
       "opts": [
         "$\\dfrac{50}{7}$",
         "$\\dfrac{7}{8}$",
@@ -11891,7 +11887,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{14}{7}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=7$, numerador 50, denominador 7, queda $\\dfrac{50}{7}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -11905,7 +11901,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=8 irreducible - var.21",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=8$ irreducible - var.21",
       "opts": [
         "$\\dfrac{65}{8}$",
         "$\\dfrac{8}{9}$",
@@ -11913,7 +11909,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{16}{8}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=8$, numerador 65, denominador 8, queda $\\dfrac{65}{8}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -11927,7 +11923,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=9 irreducible - var.22",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=9$ irreducible - var.22",
       "opts": [
         "$\\dfrac{82}{9}$",
         "$\\dfrac{9}{10}$",
@@ -11935,7 +11931,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{18}{9}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=9$, numerador 82, denominador 9, queda $\\dfrac{82}{9}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -11949,7 +11945,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=10 irreducible - var.23",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=10$ irreducible - var.23",
       "opts": [
         "$\\dfrac{101}{10}$",
         "$\\dfrac{10}{11}$",
@@ -11957,7 +11953,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{20}{10}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=10$, numerador 101, denominador 10, queda $\\dfrac{101}{10}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -11971,7 +11967,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=11 irreducible - var.24",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=11$ irreducible - var.24",
       "opts": [
         "$\\dfrac{122}{11}$",
         "$\\dfrac{11}{12}$",
@@ -11979,7 +11975,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{22}{11}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=11$, numerador 122, denominador 11, queda $\\dfrac{122}{11}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -11993,7 +11989,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=7 irreducible - var.25",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=7$ irreducible - var.25",
       "opts": [
         "$\\dfrac{50}{7}$",
         "$\\dfrac{7}{8}$",
@@ -12001,7 +11997,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{14}{7}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=7$, numerador 50, denominador 7, queda $\\dfrac{50}{7}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -12015,7 +12011,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=8 irreducible - var.26",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=8$ irreducible - var.26",
       "opts": [
         "$\\dfrac{65}{8}$",
         "$\\dfrac{8}{9}$",
@@ -12023,7 +12019,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{16}{8}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=8$, numerador 65, denominador 8, queda $\\dfrac{65}{8}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -12037,7 +12033,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=9 irreducible - var.27",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=9$ irreducible - var.27",
       "opts": [
         "$\\dfrac{82}{9}$",
         "$\\dfrac{9}{10}$",
@@ -12045,7 +12041,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{18}{9}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=9$, numerador 82, denominador 9, queda $\\dfrac{82}{9}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -12059,7 +12055,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=10 irreducible - var.28",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=10$ irreducible - var.28",
       "opts": [
         "$\\dfrac{101}{10}$",
         "$\\dfrac{10}{11}$",
@@ -12067,7 +12063,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{20}{10}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=10$, numerador 101, denominador 10, queda $\\dfrac{101}{10}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -12081,7 +12077,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=11 irreducible - var.29",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=11$ irreducible - var.29",
       "opts": [
         "$\\dfrac{122}{11}$",
         "$\\dfrac{11}{12}$",
@@ -12089,7 +12085,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{22}{11}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=11$, numerador 122, denominador 11, queda $\\dfrac{122}{11}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -12103,7 +12099,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=7 irreducible - var.30",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=7$ irreducible - var.30",
       "opts": [
         "$\\dfrac{50}{7}$",
         "$\\dfrac{7}{8}$",
@@ -12111,7 +12107,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{14}{7}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=7$, numerador 50, denominador 7, queda $\\dfrac{50}{7}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -12125,7 +12121,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=8 irreducible - var.31",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=8$ irreducible - var.31",
       "opts": [
         "$\\dfrac{65}{8}$",
         "$\\dfrac{8}{9}$",
@@ -12133,7 +12129,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{16}{8}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=8$, numerador 65, denominador 8, queda $\\dfrac{65}{8}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -12147,7 +12143,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=9 irreducible - var.32",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=9$ irreducible - var.32",
       "opts": [
         "$\\dfrac{82}{9}$",
         "$\\dfrac{9}{10}$",
@@ -12155,7 +12151,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{18}{9}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=9$, numerador 82, denominador 9, queda $\\dfrac{82}{9}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -12169,7 +12165,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=10 irreducible - var.33",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=10$ irreducible - var.33",
       "opts": [
         "$\\dfrac{101}{10}$",
         "$\\dfrac{10}{11}$",
@@ -12177,7 +12173,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{20}{10}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=10$, numerador 101, denominador 10, queda $\\dfrac{101}{10}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -12191,7 +12187,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=11 irreducible - var.34",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=11$ irreducible - var.34",
       "opts": [
         "$\\dfrac{122}{11}$",
         "$\\dfrac{11}{12}$",
@@ -12199,7 +12195,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{22}{11}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=11$, numerador 122, denominador 11, queda $\\dfrac{122}{11}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -12213,7 +12209,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=7 irreducible - var.35",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=7$ irreducible - var.35",
       "opts": [
         "$\\dfrac{50}{7}$",
         "$\\dfrac{7}{8}$",
@@ -12221,7 +12217,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{14}{7}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=7$, numerador 50, denominador 7, queda $\\dfrac{50}{7}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -12235,7 +12231,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Racionales",
-      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=8 irreducible - var.36",
+      "prompt": "Halle $x+\\dfrac{1}{x}$ para $x=8$ irreducible - var.36",
       "opts": [
         "$\\dfrac{65}{8}$",
         "$\\dfrac{8}{9}$",
@@ -12243,7 +12239,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{16}{8}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: (x^2+1)/x Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=8$, numerador 65, denominador 8, queda $\\dfrac{65}{8}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
       "maths": [],
       "imgs": []
     },
@@ -12265,7 +12261,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: k sqrt2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: factoriza el radicando: 18=9\\cdot2. Paso 2: $\\sqrt{9\\cdot2}=\\sqrt{9}\\cdot\\sqrt{2}=3\\sqrt{2}$. Distractores olvidan extraer la raiz cuadrada perfecta.",
       "maths": [],
       "imgs": []
     },
@@ -12287,7 +12283,7 @@ window.GUIA_BANK_1000 = {
         "Natural"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: irracional Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: 37 no es cuadrado perfecto (entre 36 y 49). Paso 2: su raiz no es fraccion exacta, es irracional (decimal no periodico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12309,7 +12305,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{8}-\\sqrt{2}=0$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: 3sqrt2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $\\sqrt{8}=\\sqrt{4\\cdot2}=2\\sqrt{2}$. Paso 2: suma $\\sqrt{2}+2\\sqrt{2}=3\\sqrt{2}$ (no $\\sqrt{10}$: raices no se suman como radicandos). Paso 3: el producto si da 4.",
       "maths": [],
       "imgs": []
     },
@@ -12331,7 +12327,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: k sqrt2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: factoriza el radicando: 8=4\\cdot2. Paso 2: $\\sqrt{4\\cdot2}=\\sqrt{4}\\cdot\\sqrt{2}=2\\sqrt{2}$. Distractores olvidan extraer la raiz cuadrada perfecta.",
       "maths": [],
       "imgs": []
     },
@@ -12353,7 +12349,7 @@ window.GUIA_BANK_1000 = {
         "Natural"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: irracional Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: 82 no es cuadrado perfecto (entre 81 y 100). Paso 2: su raiz no es fraccion exacta, es irracional (decimal no periodico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12375,7 +12371,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{8}-\\sqrt{2}=0$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: 3sqrt2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $\\sqrt{8}=\\sqrt{4\\cdot2}=2\\sqrt{2}$. Paso 2: suma $\\sqrt{2}+2\\sqrt{2}=3\\sqrt{2}$ (no $\\sqrt{10}$: raices no se suman como radicandos). Paso 3: el producto si da 4.",
       "maths": [],
       "imgs": []
     },
@@ -12397,7 +12393,7 @@ window.GUIA_BANK_1000 = {
         "$5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: k sqrt2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: factoriza el radicando: 50=25\\cdot2. Paso 2: $\\sqrt{25\\cdot2}=\\sqrt{25}\\cdot\\sqrt{2}=5\\sqrt{2}$. Distractores olvidan extraer la raiz cuadrada perfecta.",
       "maths": [],
       "imgs": []
     },
@@ -12419,7 +12415,7 @@ window.GUIA_BANK_1000 = {
         "Natural"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: irracional Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: 26 no es cuadrado perfecto (entre 25 y 36). Paso 2: su raiz no es fraccion exacta, es irracional (decimal no periodico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12441,7 +12437,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{8}-\\sqrt{2}=0$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: 3sqrt2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $\\sqrt{8}=\\sqrt{4\\cdot2}=2\\sqrt{2}$. Paso 2: suma $\\sqrt{2}+2\\sqrt{2}=3\\sqrt{2}$ (no $\\sqrt{10}$: raices no se suman como radicandos). Paso 3: el producto si da 4.",
       "maths": [],
       "imgs": []
     },
@@ -12463,7 +12459,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: k sqrt2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: factoriza el radicando: 32=16\\cdot2. Paso 2: $\\sqrt{16\\cdot2}=\\sqrt{16}\\cdot\\sqrt{2}=4\\sqrt{2}$. Distractores olvidan extraer la raiz cuadrada perfecta.",
       "maths": [],
       "imgs": []
     },
@@ -12485,7 +12481,7 @@ window.GUIA_BANK_1000 = {
         "Natural"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: irracional Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: 65 no es cuadrado perfecto (entre 64 y 81). Paso 2: su raiz no es fraccion exacta, es irracional (decimal no periodico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12507,7 +12503,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{8}-\\sqrt{2}=0$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: 3sqrt2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $\\sqrt{8}=\\sqrt{4\\cdot2}=2\\sqrt{2}$. Paso 2: suma $\\sqrt{2}+2\\sqrt{2}=3\\sqrt{2}$ (no $\\sqrt{10}$: raices no se suman como radicandos). Paso 3: el producto si da 4.",
       "maths": [],
       "imgs": []
     },
@@ -12529,7 +12525,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: k sqrt2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: factoriza el radicando: 18=9\\cdot2. Paso 2: $\\sqrt{9\\cdot2}=\\sqrt{9}\\cdot\\sqrt{2}=3\\sqrt{2}$. Distractores olvidan extraer la raiz cuadrada perfecta.",
       "maths": [],
       "imgs": []
     },
@@ -12551,7 +12547,7 @@ window.GUIA_BANK_1000 = {
         "Natural"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: irracional Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: 17 no es cuadrado perfecto (entre 16 y 25). Paso 2: su raiz no es fraccion exacta, es irracional (decimal no periodico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12573,7 +12569,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{8}-\\sqrt{2}=0$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: 3sqrt2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $\\sqrt{8}=\\sqrt{4\\cdot2}=2\\sqrt{2}$. Paso 2: suma $\\sqrt{2}+2\\sqrt{2}=3\\sqrt{2}$ (no $\\sqrt{10}$: raices no se suman como radicandos). Paso 3: el producto si da 4.",
       "maths": [],
       "imgs": []
     },
@@ -12595,7 +12591,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: k sqrt2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: factoriza el radicando: 8=4\\cdot2. Paso 2: $\\sqrt{4\\cdot2}=\\sqrt{4}\\cdot\\sqrt{2}=2\\sqrt{2}$. Distractores olvidan extraer la raiz cuadrada perfecta.",
       "maths": [],
       "imgs": []
     },
@@ -12617,7 +12613,7 @@ window.GUIA_BANK_1000 = {
         "Natural"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: irracional Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: 50 no es cuadrado perfecto (entre 49 y 64). Paso 2: su raiz no es fraccion exacta, es irracional (decimal no periodico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12639,7 +12635,7 @@ window.GUIA_BANK_1000 = {
         "$(x^{2}-4)^{2}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: factor Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadraticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12661,7 +12657,7 @@ window.GUIA_BANK_1000 = {
         "$99$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: v2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $(x+1/x)^{2}=x^{2}+2+1/x^{2}$ luego $x^{2}+1/x^{2}=10^{2}-2=98$. Distractores olvidan restar 2. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12683,7 +12679,7 @@ window.GUIA_BANK_1000 = {
         "$x^{2}+3x-6$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: desarrolla Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $(x+3)(x-6)=x^{2}+(3-6)x-18=x^{2}+-3x-18$. Distractores olvidan lineal. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12705,7 +12701,7 @@ window.GUIA_BANK_1000 = {
         "$(x^{2}-4)^{2}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: factor Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadraticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12727,7 +12723,7 @@ window.GUIA_BANK_1000 = {
         "$35$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: v2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $(x+1/x)^{2}=x^{2}+2+1/x^{2}$ luego $x^{2}+1/x^{2}=6^{2}-2=34$. Distractores olvidan restar 2. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12749,7 +12745,7 @@ window.GUIA_BANK_1000 = {
         "$x^{2}+6x-9$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: desarrolla Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $(x+6)(x-9)=x^{2}+(6-9)x-54=x^{2}+-3x-54$. Distractores olvidan lineal. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12771,7 +12767,7 @@ window.GUIA_BANK_1000 = {
         "$(x^{2}-4)^{2}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: factor Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadraticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12793,7 +12789,7 @@ window.GUIA_BANK_1000 = {
         "$80$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: v2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $(x+1/x)^{2}=x^{2}+2+1/x^{2}$ luego $x^{2}+1/x^{2}=9^{2}-2=79$. Distractores olvidan restar 2. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12815,7 +12811,7 @@ window.GUIA_BANK_1000 = {
         "$x^{2}+9x-6$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: desarrolla Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $(x+9)(x-6)=x^{2}+(9-6)x-54=x^{2}+3x-54$. Distractores olvidan lineal. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12837,7 +12833,7 @@ window.GUIA_BANK_1000 = {
         "$(x^{2}-4)^{2}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: factor Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadraticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12859,7 +12855,7 @@ window.GUIA_BANK_1000 = {
         "$24$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: v2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $(x+1/x)^{2}=x^{2}+2+1/x^{2}$ luego $x^{2}+1/x^{2}=5^{2}-2=23$. Distractores olvidan restar 2. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12881,7 +12877,7 @@ window.GUIA_BANK_1000 = {
         "$x^{2}+5x-9$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: desarrolla Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $(x+5)(x-9)=x^{2}+(5-9)x-45=x^{2}+-4x-45$. Distractores olvidan lineal. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12903,7 +12899,7 @@ window.GUIA_BANK_1000 = {
         "$(x^{2}-4)^{2}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: factor Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadraticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12925,7 +12921,7 @@ window.GUIA_BANK_1000 = {
         "$63$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: v2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $(x+1/x)^{2}=x^{2}+2+1/x^{2}$ luego $x^{2}+1/x^{2}=8^{2}-2=62$. Distractores olvidan restar 2. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12947,7 +12943,7 @@ window.GUIA_BANK_1000 = {
         "$x^{2}+8x-6$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: desarrolla Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $(x+8)(x-6)=x^{2}+(8-6)x-48=x^{2}+2x-48$. Distractores olvidan lineal. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12969,7 +12965,7 @@ window.GUIA_BANK_1000 = {
         "$(x^{2}-4)^{2}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: factor Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadraticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12991,7 +12987,7 @@ window.GUIA_BANK_1000 = {
         "$15$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: v2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $(x+1/x)^{2}=x^{2}+2+1/x^{2}$ luego $x^{2}+1/x^{2}=4^{2}-2=14$. Distractores olvidan restar 2. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13013,7 +13009,7 @@ window.GUIA_BANK_1000 = {
         "$x^{2}+4x-9$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: desarrolla Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $(x+4)(x-9)=x^{2}+(4-9)x-36=x^{2}+-5x-36$. Distractores olvidan lineal. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13079,7 +13075,7 @@ window.GUIA_BANK_1000 = {
         "$9$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sol Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: $x+x/2=10$ => $3x/2=10$ => $x=7$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13141,11 +13137,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$3$",
         "$4$",
-        "$4.5$ *",
-        "$3.5$ *"
+        "$6$",
+        "$5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sol Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: $x+x/2=4$ => $3x/2=4$ => $x=3$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13211,7 +13207,7 @@ window.GUIA_BANK_1000 = {
         "$8$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sol Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: $x+x/2=9$ => $3x/2=9$ => $x=6$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13277,7 +13273,7 @@ window.GUIA_BANK_1000 = {
         "$12$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sol Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: $x+x/2=13$ => $3x/2=13$ => $x=9$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13340,10 +13336,10 @@ window.GUIA_BANK_1000 = {
         "$5$",
         "$7$",
         "$6$",
-        "$6.5$ *"
+        "$8$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sol Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: $x+x/2=7$ => $3x/2=7$ => $x=5$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13409,7 +13405,7 @@ window.GUIA_BANK_1000 = {
         "$11$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: sol Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: $x+x/2=12$ => $3x/2=12$ => $x=8$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13431,7 +13427,7 @@ window.GUIA_BANK_1000 = {
         "$x+y=5$, $2x+2y=10$ unica"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: unica Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: segunda es $2\times$ primera (dependiente) no aporta; unica surge de $x+y=5$ con $x-y=1$ => $(3,2)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13445,7 +13441,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Halle $x-y$ sin hallar $x,y$: $x+y=9$ $2x+y=12 - var.91",
+      "prompt": "Halle $x-y$ sin hallar $x,y$: $x+y=9$ $2x+y=12$ - var.91",
       "opts": [
         "$3$",
         "$6$",
@@ -13453,7 +13449,7 @@ window.GUIA_BANK_1000 = {
         "$12$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x0 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: resta $(2x+y)-(x+y)=x$, da el valor buscado. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13497,7 +13493,7 @@ window.GUIA_BANK_1000 = {
         "$x+y=5$, $2x+2y=10$ unica"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: unica Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: segunda es $2\times$ primera (dependiente) no aporta; unica surge de $x+y=5$ con $x-y=1$ => $(3,2)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13511,7 +13507,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Halle $x-y$ sin hallar $x,y$: $x+y=11$ $2x+y=17 - var.94",
+      "prompt": "Halle $x-y$ sin hallar $x,y$: $x+y=11$ $2x+y=17$ - var.94",
       "opts": [
         "$6$",
         "$5$",
@@ -13519,7 +13515,7 @@ window.GUIA_BANK_1000 = {
         "$17$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x0 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: resta $(2x+y)-(x+y)=x$, da el valor buscado. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13563,7 +13559,7 @@ window.GUIA_BANK_1000 = {
         "$x+y=5$, $2x+2y=10$ unica"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: unica Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: segunda es $2\times$ primera (dependiente) no aporta; unica surge de $x+y=5$ con $x-y=1$ => $(3,2)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13577,15 +13573,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Halle $x-y$ sin hallar $x,y$: $x+y=8$ $2x+y=12 - var.97",
+      "prompt": "Halle $x-y$ sin hallar $x,y$: $x+y=8$ $2x+y=12$ - var.97",
       "opts": [
         "$4$",
-        "$4.5$ *",
+        "$5$",
         "$8$",
         "$12$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x0 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: resta $(2x+y)-(x+y)=x$, da el valor buscado. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13629,7 +13625,7 @@ window.GUIA_BANK_1000 = {
         "$x+y=5$, $2x+2y=10$ unica"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: unica Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: segunda es $2\times$ primera (dependiente) no aporta; unica surge de $x+y=5$ con $x-y=1$ => $(3,2)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13643,7 +13639,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Halle $x-y$ sin hallar $x,y$: $x+y=5$ $2x+y=7 - var.100",
+      "prompt": "Halle $x-y$ sin hallar $x,y$: $x+y=5$ $2x+y=7$ - var.100",
       "opts": [
         "$2$",
         "$3$",
@@ -13651,7 +13647,7 @@ window.GUIA_BANK_1000 = {
         "$7$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x0 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: resta $(2x+y)-(x+y)=x$, da el valor buscado. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13695,7 +13691,7 @@ window.GUIA_BANK_1000 = {
         "$x+y=5$, $2x+2y=10$ unica"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: unica Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: segunda es $2\times$ primera (dependiente) no aporta; unica surge de $x+y=5$ con $x-y=1$ => $(3,2)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13709,7 +13705,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Halle $x-y$ sin hallar $x,y$: $x+y=11$ $2x+y=16 - var.103",
+      "prompt": "Halle $x-y$ sin hallar $x,y$: $x+y=11$ $2x+y=16$ - var.103",
       "opts": [
         "$5$",
         "$6$",
@@ -13717,7 +13713,7 @@ window.GUIA_BANK_1000 = {
         "$16$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x0 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: resta $(2x+y)-(x+y)=x$, da el valor buscado. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13761,7 +13757,7 @@ window.GUIA_BANK_1000 = {
         "$x+y=5$, $2x+2y=10$ unica"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: unica Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: segunda es $2\times$ primera (dependiente) no aporta; unica surge de $x+y=5$ con $x-y=1$ => $(3,2)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13775,7 +13771,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Halle $x-y$ sin hallar $x,y$: $x+y=8$ $2x+y=11 - var.106",
+      "prompt": "Halle $x-y$ sin hallar $x,y$: $x+y=8$ $2x+y=11$ - var.106",
       "opts": [
         "$3$",
         "$5$",
@@ -13783,7 +13779,7 @@ window.GUIA_BANK_1000 = {
         "$11$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: x0 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: resta $(2x+y)-(x+y)=x$, da el valor buscado. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13871,7 +13867,7 @@ window.GUIA_BANK_1000 = {
         "$(0,0)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: vertice Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: completa cuadrado $(x+-2)^{2}$, vertice $(--2,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13937,7 +13933,7 @@ window.GUIA_BANK_1000 = {
         "$(0,0)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: vertice Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: completa cuadrado $(x+1)^{2}$, vertice $(-1,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14003,7 +13999,7 @@ window.GUIA_BANK_1000 = {
         "$(0,0)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: vertice Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: completa cuadrado $(x+-1)^{2}$, vertice $(--1,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14069,7 +14065,7 @@ window.GUIA_BANK_1000 = {
         "$(0,0)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: vertice Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: completa cuadrado $(x+2)^{2}$, vertice $(-2,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14131,11 +14127,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$(-0,0)$",
         "$(0,0)$",
-        "$(0.5,0)$ *",
-        "$(0,0)$ [mue]"
+        "$(0,1)$",
+        "$(0,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: vertice Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: completa cuadrado $(x+0)^{2}$, vertice $(-0,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14201,7 +14197,7 @@ window.GUIA_BANK_1000 = {
         "$(0,0)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: vertice Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: completa cuadrado $(x+-2)^{2}$, vertice $(--2,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14641,7 +14637,7 @@ window.GUIA_BANK_1000 = {
         "$40$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: prod Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: raices 13 y 3 producto 39. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14703,11 +14699,11 @@ window.GUIA_BANK_1000 = {
       "opts": [
         "$-48$",
         "$8$",
-        "$8.5$ *",
+        "$13$",
         "$32$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: prod Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: raices 12 y -4 producto -48. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14773,7 +14769,7 @@ window.GUIA_BANK_1000 = {
         "$35$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: prod Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: raices 12 y 2 producto 24. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14839,7 +14835,7 @@ window.GUIA_BANK_1000 = {
         "$24$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: prod Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: raices 11 y -5 producto -55. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14905,7 +14901,7 @@ window.GUIA_BANK_1000 = {
         "$30$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: prod Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: raices 11 y 1 producto 11. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14971,7 +14967,7 @@ window.GUIA_BANK_1000 = {
         "$72$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: prod Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: raices 17 y 1 producto 17. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -15012,10 +15008,10 @@ window.GUIA_BANK_1000 = {
         "$45 deg$",
         "$45$",
         "$90$",
-        "$90.5$ *"
+        "$90_1$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: mitad Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $A=180-2B$, altura biseca => $A/2$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=45°</text>\n  </svg>"
@@ -15087,7 +15083,7 @@ window.GUIA_BANK_1000 = {
         "$90$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: mitad Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $A=180-2B$, altura biseca => $A/2$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=40°</text>\n  </svg>"
@@ -15159,7 +15155,7 @@ window.GUIA_BANK_1000 = {
         "$90$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: mitad Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $A=180-2B$, altura biseca => $A/2$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=35°</text>\n  </svg>"
@@ -15231,7 +15227,7 @@ window.GUIA_BANK_1000 = {
         "$90$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: mitad Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $A=180-2B$, altura biseca => $A/2$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=50°</text>\n  </svg>"
@@ -15300,10 +15296,10 @@ window.GUIA_BANK_1000 = {
         "$45 deg$",
         "$45$",
         "$90$",
-        "$90.5$ *"
+        "$90_1$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: mitad Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $A=180-2B$, altura biseca => $A/2$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=45°</text>\n  </svg>"
@@ -15375,7 +15371,7 @@ window.GUIA_BANK_1000 = {
         "$90$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: mitad Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $A=180-2B$, altura biseca => $A/2$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=40°</text>\n  </svg>"
@@ -15915,7 +15911,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Identidades trigonométricas",
-      "prompt": "Si $1+\\tan^{2}x=50 halle $|\\sec x|$ - var.200",
+      "prompt": "Si $1+\\tan^{2}x=50$ halle $|\\sec x|$ - var.200",
       "opts": [
         "$7.07$",
         "$7$",
@@ -15981,7 +15977,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Identidades trigonométricas",
-      "prompt": "Si $1+\\tan^{2}x=10 halle $|\\sec x|$ - var.203",
+      "prompt": "Si $1+\\tan^{2}x=10$ halle $|\\sec x|$ - var.203",
       "opts": [
         "$3.16$",
         "$3$",
@@ -16047,7 +16043,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Identidades trigonométricas",
-      "prompt": "Si $1+\\tan^{2}x=37 halle $|\\sec x|$ - var.206",
+      "prompt": "Si $1+\\tan^{2}x=37$ halle $|\\sec x|$ - var.206",
       "opts": [
         "$6.08$",
         "$6$",
@@ -16113,7 +16109,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Identidades trigonométricas",
-      "prompt": "Si $1+\\tan^{2}x=82 halle $|\\sec x|$ - var.209",
+      "prompt": "Si $1+\\tan^{2}x=82$ halle $|\\sec x|$ - var.209",
       "opts": [
         "$9.06$",
         "$9$",
@@ -16179,7 +16175,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Identidades trigonométricas",
-      "prompt": "Si $1+\\tan^{2}x=26 halle $|\\sec x|$ - var.212",
+      "prompt": "Si $1+\\tan^{2}x=26$ halle $|\\sec x|$ - var.212",
       "opts": [
         "$5.10$",
         "$5$",
@@ -16245,7 +16241,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Identidades trigonométricas",
-      "prompt": "Si $1+\\tan^{2}x=65 halle $|\\sec x|$ - var.215",
+      "prompt": "Si $1+\\tan^{2}x=65$ halle $|\\sec x|$ - var.215",
       "opts": [
         "$8.06$",
         "$8$",
@@ -16291,7 +16287,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Ley senos y cosenos",
-      "prompt": "En $\\triangle ABC$, $AB=7$, $AC=7$, $\\angle A=60$. $BC$? - var.217",
+      "prompt": "En $\\triangle ABC$, $AB=7$, $AC=7$, $\\angle A=60^{\\circ}$. $BC$? - var.217",
       "opts": [
         "$\\sqrt{49}$",
         "$14$",
@@ -16315,7 +16311,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Ley senos y cosenos",
-      "prompt": "Ley senos: $a=9 $A=30$ $B=45$ halle $b$ - var.218",
+      "prompt": "Ley senos: $a=9$ $A=30^{\\circ}$ $B=45^{\\circ}$ halle $b$ - var.218",
       "opts": [
         "$12.73$",
         "$9$",
@@ -16363,7 +16359,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Ley senos y cosenos",
-      "prompt": "En $\\triangle ABC$, $AB=6$, $AC=7$, $\\angle A=60$. $BC$? - var.220",
+      "prompt": "En $\\triangle ABC$, $AB=6$, $AC=7$, $\\angle A=60^{\\circ}$. $BC$? - var.220",
       "opts": [
         "$\\sqrt{43}$",
         "$13$",
@@ -16387,7 +16383,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Ley senos y cosenos",
-      "prompt": "Ley senos: $a=12 $A=30$ $B=45$ halle $b$ - var.221",
+      "prompt": "Ley senos: $a=12$ $A=30^{\\circ}$ $B=45^{\\circ}$ halle $b$ - var.221",
       "opts": [
         "$16.97$",
         "$12$",
@@ -16435,7 +16431,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Ley senos y cosenos",
-      "prompt": "En $\\triangle ABC$, $AB=9$, $AC=7$, $\\angle A=60$. $BC$? - var.223",
+      "prompt": "En $\\triangle ABC$, $AB=9$, $AC=7$, $\\angle A=60^{\\circ}$. $BC$? - var.223",
       "opts": [
         "$\\sqrt{67}$",
         "$16$",
@@ -16459,7 +16455,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Ley senos y cosenos",
-      "prompt": "Ley senos: $a=8 $A=30$ $B=45$ halle $b$ - var.224",
+      "prompt": "Ley senos: $a=8$ $A=30^{\\circ}$ $B=45^{\\circ}$ halle $b$ - var.224",
       "opts": [
         "$11.31$",
         "$8$",
@@ -16507,7 +16503,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Ley senos y cosenos",
-      "prompt": "En $\\triangle ABC$, $AB=8$, $AC=7$, $\\angle A=60$. $BC$? - var.226",
+      "prompt": "En $\\triangle ABC$, $AB=8$, $AC=7$, $\\angle A=60^{\\circ}$. $BC$? - var.226",
       "opts": [
         "$\\sqrt{57}$",
         "$15$",
@@ -16531,7 +16527,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Ley senos y cosenos",
-      "prompt": "Ley senos: $a=11 $A=30$ $B=45$ halle $b$ - var.227",
+      "prompt": "Ley senos: $a=11$ $A=30^{\\circ}$ $B=45^{\\circ}$ halle $b$ - var.227",
       "opts": [
         "$15.56$",
         "$11$",
@@ -16579,7 +16575,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Ley senos y cosenos",
-      "prompt": "En $\\triangle ABC$, $AB=7$, $AC=7$, $\\angle A=60$. $BC$? - var.229",
+      "prompt": "En $\\triangle ABC$, $AB=7$, $AC=7$, $\\angle A=60^{\\circ}$. $BC$? - var.229",
       "opts": [
         "$\\sqrt{49}$",
         "$14$",
@@ -16603,7 +16599,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Ley senos y cosenos",
-      "prompt": "Ley senos: $a=14 $A=30$ $B=45$ halle $b$ - var.230",
+      "prompt": "Ley senos: $a=14$ $A=30^{\\circ}$ $B=45^{\\circ}$ halle $b$ - var.230",
       "opts": [
         "$19.80$",
         "$14$",
@@ -16651,7 +16647,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Ley senos y cosenos",
-      "prompt": "En $\\triangle ABC$, $AB=6$, $AC=7$, $\\angle A=60$. $BC$? - var.232",
+      "prompt": "En $\\triangle ABC$, $AB=6$, $AC=7$, $\\angle A=60^{\\circ}$. $BC$? - var.232",
       "opts": [
         "$\\sqrt{43}$",
         "$13$",
@@ -16675,7 +16671,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Ley senos y cosenos",
-      "prompt": "Ley senos: $a=10 $A=30$ $B=45$ halle $b$ - var.233",
+      "prompt": "Ley senos: $a=10$ $A=30^{\\circ}$ $B=45^{\\circ}$ halle $b$ - var.233",
       "opts": [
         "$14.14$",
         "$10$",
@@ -23337,7 +23333,7 @@ window.GUIA_BANK_1000 = {
         "Mezcla homogénea"
       ],
       "ans": 0,
-      "exp": "Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición.",
+      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
       "maths": [],
       "imgs": []
     },
@@ -23403,7 +23399,7 @@ window.GUIA_BANK_1000 = {
         "Mezcla homogénea"
       ],
       "ans": 0,
-      "exp": "Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición.",
+      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
       "maths": [],
       "imgs": []
     },
@@ -23469,7 +23465,7 @@ window.GUIA_BANK_1000 = {
         "Mezcla homogénea"
       ],
       "ans": 0,
-      "exp": "Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición.",
+      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
       "maths": [],
       "imgs": []
     },
@@ -23535,7 +23531,7 @@ window.GUIA_BANK_1000 = {
         "Mezcla homogénea"
       ],
       "ans": 0,
-      "exp": "Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición.",
+      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
       "maths": [],
       "imgs": []
     },
@@ -23601,7 +23597,7 @@ window.GUIA_BANK_1000 = {
         "Mezcla homogénea"
       ],
       "ans": 0,
-      "exp": "Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición.",
+      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
       "maths": [],
       "imgs": []
     },
@@ -23667,7 +23663,7 @@ window.GUIA_BANK_1000 = {
         "Mezcla homogénea"
       ],
       "ans": 0,
-      "exp": "Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición.",
+      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
       "maths": [],
       "imgs": []
     },

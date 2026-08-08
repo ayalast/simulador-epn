@@ -11,7 +11,7 @@ const SECURITY_PIN = '235677';
 const KV_KEY = 'epn_unified_progress';
 
 function emptyState() {
-  return { updatedAt: 0, data: { hist: [], seen: {}, cfg: {} } };
+  return { updatedAt: 0, data: { hist: [], seen: {}, seen1000: {}, cfg: {}, active: null } };
 }
 
 function json(body, status) {
@@ -60,12 +60,18 @@ export async function onRequestPost(context) {
   }
 
   var incoming = (body && body.data) || {};
+  var seen1000In = incoming.seen1000 && typeof incoming.seen1000 === 'object' ? incoming.seen1000 : {};
+  var activeIn = incoming.active && typeof incoming.active === 'object' ? incoming.active : null;
+  // sanea active mínimo: requiere active.qs y timestamps numéricos
+  if(activeIn && (!Array.isArray(activeIn.qs) || typeof activeIn.startMs !== 'number' || typeof activeIn.limitMs !== 'number')) activeIn = null;
   var merged = {
     updatedAt: Date.now(),
     data: {
       hist: Array.isArray(incoming.hist) ? incoming.hist : [],
       seen: incoming.seen && typeof incoming.seen === 'object' ? incoming.seen : {},
+      seen1000: seen1000In,
       cfg: incoming.cfg && typeof incoming.cfg === 'object' ? incoming.cfg : {},
+      active: activeIn,
     },
   };
 

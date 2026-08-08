@@ -721,11 +721,16 @@ var SEEN = load(SEEN_KEY, {mat:[],fis:[],qui:[],len:[]});
 var SEEN1000_KEY='epn_seen1000_v1';
 var SEEN1000 = load(SEEN1000_KEY, {mat:[],fis:[],qui:[],len:[]});
 var UI = load(UI_KEY, {drawer:true});
+var ACTIVE_KEY='epn_active_v1';
 function saveCfg(){ save(CFG_KEY, cfg); }
 function saveHist(){ save(HIST_KEY, HIST); }
 function saveSeen(){ save(SEEN_KEY, SEEN); }
 function saveSeen1000(){ save(SEEN1000_KEY, SEEN1000); }
 function saveUI(){ save(UI_KEY, UI); }
+// Perdurabilidad del intento: se guarda en LS y en la nube; sobrevive F5 y cambio de dispositivo
+function saveActive(){ try{ if(S.attempt && !S.attempt.finished && !S.attempt.historic) localStorage.setItem(ACTIVE_KEY, JSON.stringify(serializeAttempt(S.attempt))); }catch(e){} }
+function clearActive(){ try{ localStorage.removeItem(ACTIVE_KEY); }catch(e){} }
+function loadActiveRaw(){ try{ var v=localStorage.getItem(ACTIVE_KEY); return v? JSON.parse(v):null; }catch(e){ return null; } }
 var SEENSET = {};
 ['mat','trig','ineq','fis','qui','len'].forEach(function(k){ SEEN[k] = SEEN[k]||[]; SEENSET[k] = {}; SEEN[k].forEach(function(i){ SEENSET[k][i]=1; }); });
 var SEEN1000SET = {};
@@ -2735,12 +2740,42 @@ function cloudSync() {
           });
         }
 
+        // Continuidad cross-device: si no hay intento local y la nube trae uno vigente, restaurarlo
+        if(!S.attempt && cloud.active && typeof cloud.active.startMs==='number'){
+          var cloudDes = deserializeAttempt(cloud.active);
+          if(cloudDes){
+            try{ localStorage.setItem(ACTIVE_KEY, JSON.stringify(cloud.active)); }catch(e){}
+            S.attempt = cloudDes;
+            if(cloudDes.area) S.area = cloudDes.area;
+            S.course = cloudDes.course;
+            if(cloudDes.finished){ finishAttempt(true); return; }
+            S.view='attempt'; S.onePage=null;
+            // render diferido: después del then, forzará vista attempt
+            changed = true;
+          } else {
+            // nube expirada
+            try{ localStorage.removeItem(ACTIVE_KEY); }catch(e){}
+          }
+        } else if(S.attempt && cloud.active && S.attempt.start && cloud.active.startMs){
+          // conflicto: gana el más reciente
+          if(cloud.active.startMs > S.attempt.start.getTime()){
+            var newer = deserializeAttempt(cloud.active);
+            if(newer && !newer.finished){
+              try{ localStorage.setItem(ACTIVE_KEY, JSON.stringify(cloud.active)); }catch(e){}
+              S.attempt = newer; if(newer.area) S.area=newer.area; S.course=newer.course; S.view='attempt'; S.onePage=null; changed=true;
+            }
+          }
+        }
         if(changed) {
           saveHist();
           saveSeen();
           saveSeen1000();
-          if(typeof rerenderKeepScroll === 'function') rerenderKeepScroll();
+          if(typeof rerenderKeepScroll === 'function') rerenderKeepScroll(); else render();
+          if(S.attempt && S.attempt.restored && !S.attempt.finished) startTimer();
+        } else if(S.attempt && S.attempt.restored){
+          render(); if(typeof startTimer==='function') startTimer();
         }
+        // evita pisar nube con payload obsoleto recién restaurado: push incluye active actual
         pushCloudState();
       } else {
         pushCloudState();
@@ -2753,11 +2788,20 @@ function cloudSync() {
 
 function pushCloudState() {
   if (!isPinAuthenticated()) return;
+  var activePayload = null;
+  try{
+    if(S.attempt && !S.attempt.finished && !S.attempt.historic) activePayload = serializeAttempt(S.attempt);
+    else {
+      var rawAct = loadActiveRaw();
+      if(rawAct && typeof rawAct.startMs==='number') activePayload = rawAct;
+    }
+  }catch(e){}
   var payload = {
     hist: HIST,
     seen: SEEN,
     seen1000: SEEN1000,
-    cfg: cfg
+    cfg: cfg,
+    active: activePayload
   };
   fetch('/api/sync?pin=' + SECURITY_PIN, {
     method: 'POST',
@@ -2984,8 +3028,50 @@ function startTimer(){
   }, 1000);
 }
 function stopTimer(){ if(S.tick){ clearInterval(S.tick); S.tick = null; } }
+// Serializa el intento actual para durabilidad (LS + nube). Incluye snapshot de src para que
+// la revisión tras F5 no dependa de haber vuelto a cargar el banco correcto.
+function serializeAttempt(a){
+  var qsSer = a.qs.map(function(q){
+    var s=q.src;
+    return { subj:q.subj, order:q.order.slice(), src:{ t:s.t, q:s.q, o:s.o.slice(), a:s.a, e:s.e, ch:s.ch, maths:(s.maths||[]).slice(), imgs:(s.imgs||[]).slice(), __s:s.__s, n:s.n, d:s.d, topics:(s.topics||[]).slice(), id:s.id, __i:s.__i } };
+  });
+  return { course:a.course, level:a.level, area:(a.area||S.area), qs:qsSer, ans:a.ans.slice(), flags:a.flags.slice(), cur:a.cur, startMs:a.start.getTime(), limitMs:a.limitMs, isGuia1000:!!a.isGuia1000, isGuia69:!!a.isGuia69, noSave:!!a.noSave };
+}
+function deserializeAttempt(raw){
+  // valida y vence si ya expiró (evita revivir un intento fantasma de ayer)
+  if(!raw || !Array.isArray(raw.qs) || typeof raw.startMs!=='number' || typeof raw.limitMs!=='number') return null;
+  var left = (raw.startMs + raw.limitMs) - Date.now();
+  if(left <= -60000) return null; // vencido hace >1 min → se consolidará como entregado al restaurar
+  var expired = left <= 0;
+  var qs = raw.qs.map(function(x){
+    return { subj:x.subj, order:x.order.slice(), src:{ t:x.src.t, q:x.src.q, o:x.src.o.slice(), a:x.src.a, e:x.src.e, ch:x.src.ch, maths:(x.src.maths||[]).slice(), imgs:(x.src.imgs||[]).slice(), __s:x.src.__s, n:x.src.n, d:x.src.d, topics:(x.src.topics||[]).slice(), id:x.src.id, __i:x.src.__i } };
+  });
+  var a={ course:raw.course, level:raw.level, area:raw.area, qs:qs, ans:raw.ans.slice(), flags:raw.flags.slice(), cur:raw.cur, start:new Date(raw.startMs), end: expired? new Date(raw.startMs+raw.limitMs) : null, finished: expired, limitMs: raw.limitMs, historic:false, isGuia1000:!!raw.isGuia1000, isGuia69:!!raw.isGuia69, noSave:!!raw.noSave, restored:true };
+  return a;
+}
+function restoreActiveAttempt(){
+  var raw = loadActiveRaw();
+  if(!raw) return false;
+  var a = deserializeAttempt(raw);
+  if(!a){ clearActive(); return false; }
+  S.attempt = a;
+  if(a.area) S.area = a.area;
+  S.course = a.course;
+  if(a.finished){
+    // tiempo vencido mientras estuvo cerrado → consolida como entregado (una sola vez)
+    finishAttempt(true);
+    return true;
+  }
+  S.view='attempt'; S.onePage=null; S.modal=null; S.toast='↻ Intento restaurado — continúa donde lo dejaste. El tiempo siguió corriendo.';
+  return true;
+}
+function persistActiveThrottled(){
+  // throttle 900ms para no saturar LS/nube a cada clic
+  if(persistActiveThrottled._t) clearTimeout(persistActiveThrottled._t);
+  persistActiveThrottled._t=setTimeout(function(){ saveActive(); if(isPinAuthenticated()) pushCloudState(); }, 900);
+}
 function recordAttempt(a){
-  if(a.noSave) return null;
+  if(a.noSave){ clearActive(); return null; }
   var score = a.qs.reduce(function(s,_,ix){ return s+(isCorrect(ix)?1:0); },0);
   // Para guia1000, guarda id + sel + subj para reconstrucción; para legacy guarda k/i
   var qsRec = a.qs.map(function(q,ix){
@@ -3013,7 +3099,9 @@ function finishAttempt(auto){
   a.finished = true;
   a.end = new Date(Math.min(Date.now(), a.start.getTime()+a.limitMs));
   stopTimer();
-    if(!a.historic && !a.noSave) recordAttempt(a);
+  clearActive();
+  if(!a.historic && !a.noSave) recordAttempt(a);
+  else if(a.noSave){ clearActive(); if(isPinAuthenticated()) pushCloudState(); }
   S.modal = null; S.onePage = null; S.view = 'review';
   if(a.noSave){
     S.toast = '⚙ Modo de prueba activo: Este intento no fue guardado en tu historial ni alteró las preguntas vistas.';
@@ -3066,11 +3154,13 @@ function startGuia69Exam(){
   S.toast = null;
   S.area = 'guia';
   S.attempt = buildGuia69Attempt();
+  S.attempt.area='guia';
   S.view = 'attempt';
   S.onePage = null;
   S.modal = null;
   render();
   startTimer();
+  saveActive(); if(isPinAuthenticated()) pushCloudState();
 }
 
 function startAttempt(k){
@@ -3079,9 +3169,11 @@ function startAttempt(k){
   var chkEl = el('chkNoSave');
   if(chkEl) S.noSave = chkEl.checked;
   S.attempt = buildAttempt(S.course);
+  S.attempt.area=S.area;
   if(S.noSave) S.attempt.noSave = true;
   S.view = 'attempt'; S.onePage = null; S.modal = null;
   render(); startTimer();
+  saveActive(); if(isPinAuthenticated()) pushCloudState();
 }
 function rerenderKeepScroll(){ var y = window.scrollY; S.scrollTop = false; render(); S.scrollTop = true; window.scrollTo(0,y); }
 function inProgress(){ return !!(S.attempt && !S.attempt.finished && !S.attempt.historic); }
@@ -3091,7 +3183,7 @@ function go(view){ S.modal = null; S.toast = null; S.view = view; render(); }
 /* ---------- EVENTOS ---------- */
 document.addEventListener('change', function(e){
   var t = e.target.closest && e.target.closest('[data-act="answer"]');
-  if(t){ S.attempt.ans[+t.dataset.i] = +t.dataset.p; rerenderKeepScroll(); }
+  if(t){ S.attempt.ans[+t.dataset.i] = +t.dataset.p; saveActive(); persistActiveThrottled(); rerenderKeepScroll(); }
   if(e.target && e.target.id==='impfile' && e.target.files && e.target.files[0]){
     var fr = new FileReader();
     fr.onload = function(ev){ importProgress(String(ev.target.result)); };
@@ -3114,23 +3206,23 @@ case 'start-guia-69':
       break;
     case 'start-guia-mat30':
       if(blocked()) break;
-      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_mat30'); S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer();
+      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_mat30'); S.attempt.area='guia'; S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer(); saveActive(); if(isPinAuthenticated()) pushCloudState();
       break;
     case 'start-guia-fql120':
       if(blocked()) break;
-      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_fql120'); S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer();
+      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_fql120'); S.attempt.area='guia'; S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer(); saveActive(); if(isPinAuthenticated()) pushCloudState();
       break;
     case 'start-guia-fis':
       if(blocked()) break;
-      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_fis'); S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer();
+      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_fis'); S.attempt.area='guia'; S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer(); saveActive(); if(isPinAuthenticated()) pushCloudState();
       break;
     case 'start-guia-qui':
       if(blocked()) break;
-      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_qui'); S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer();
+      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_qui'); S.attempt.area='guia'; S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer(); saveActive(); if(isPinAuthenticated()) pushCloudState();
       break;
     case 'start-guia-len':
       if(blocked()) break;
-      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_len'); S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer();
+      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_len'); S.attempt.area='guia'; S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer(); saveActive(); if(isPinAuthenticated()) pushCloudState();
       break;
     case 'go-theory-chapter':
       if(blocked()) break;
@@ -3252,6 +3344,7 @@ case 'start-guia-69':
       HIST.forEach(function(r){ if(r.course==='mat' || r.course==='guia_mat30') r.deleted=true; }); saveHist();
       // opcional: también limpia SEEN legacy mat para espejo limpio
       SEEN.mat=[]; SEENSET.mat={}; saveSeen();
+      clearActive();
       // nube
       try{ pushCloudState(); }catch(e){}
       S.toast='Guía MAT reiniciada: ya estás en primer intento. ¡Listo para empezar de cero!';
@@ -3273,26 +3366,53 @@ case 'start-guia-69':
       break;
     case 'start': if(blocked()) break; startAttempt(S.course); break;
     case 'quickstart': if(blocked()) break; startAttempt(t.dataset.c); break;
-    case 'next': S.attempt.cur = Math.min(S.attempt.qs.length-1, S.attempt.cur+1); render(); break;
-    case 'prev': S.attempt.cur = Math.max(0, S.attempt.cur-1); render(); break;
+    case 'next': S.attempt.cur = Math.min(S.attempt.qs.length-1, S.attempt.cur+1); saveActive(); persistActiveThrottled(); render(); break;
+    case 'prev': S.attempt.cur = Math.max(0, S.attempt.cur-1); saveActive(); persistActiveThrottled(); render(); break;
     case 'goto':
       var i = +t.dataset.i;
       if(S.view==='review'){ if(S.onePage!=null){ S.onePage = i; render(); } else { var nodes = document.querySelectorAll('.main .que'); if(nodes[i]) nodes[i].scrollIntoView({behavior:'smooth',block:'center'}); } }
-      else { S.attempt.cur = i; S.view = 'attempt'; render(); }
+      else { S.attempt.cur = i; S.view = 'attempt'; saveActive(); persistActiveThrottled(); render(); }
       break;
-    case 'flag': S.attempt.flags[+t.dataset.i] = !S.attempt.flags[+t.dataset.i]; rerenderKeepScroll(); break;
+    case 'flag': S.attempt.flags[+t.dataset.i] = !S.attempt.flags[+t.dataset.i]; saveActive(); persistActiveThrottled(); rerenderKeepScroll(); break;
     case 'summary': S.view = 'summary'; render(); break;
     case 'back': S.view = 'attempt'; render(); break;
     case 'confirmsubmit': S.modal = 'confirm'; render(); break;
     case 'submit': finishAttempt(false); break;
-    case 'showall': S.onePage = (S.onePage==null? 0 : null); render(); break;
-    case 'rnext': S.onePage = Math.min(S.attempt.qs.length-1, S.onePage+1); render(); break;
-    case 'rprev': S.onePage = Math.max(0, S.onePage-1); render(); break;
+    case 'showall': S.onePage = (S.onePage==null? 0 : null); saveActive(); persistActiveThrottled(); render(); break;
+    case 'rnext': S.onePage = Math.min(S.attempt.qs.length-1, S.onePage+1); saveActive(); persistActiveThrottled(); render(); break;
+    case 'rprev': S.onePage = Math.max(0, S.onePage-1); saveActive(); persistActiveThrottled(); render(); break;
     case 'finishreview': S.onePage = null; go(S.attempt && S.attempt.historic? 'history' : 'course'); break;
     case 'openrecdel': break;
   }
 });
-window.addEventListener('beforeunload', function(e){ if(inProgress()){ e.preventDefault(); e.returnValue=''; } });
+window.addEventListener('beforeunload', function(e){ if(inProgress()){ try{ saveActive(); if(isPinAuthenticated()){ navigator.sendBeacon && navigator.sendBeacon('/api/sync?pin='+SECURITY_PIN, JSON.stringify({data:{hist:HIST, seen:SEEN, seen1000:SEEN1000, cfg:cfg, active:serializeAttempt(S.attempt)}})); } }catch(err){} e.preventDefault(); e.returnValue=''; } });
+window.addEventListener('visibilitychange', function(){ if(document.visibilityState==='hidden' && S.attempt && !S.attempt.finished && !S.attempt.historic){ saveActive(); if(isPinAuthenticated()) pushCloudState(); } });
+// Hook global: cada interacción relevante persiste el intento (F5-safe, sin coste perceptible)
+document.addEventListener('click', function(e){
+  var t=e.target.closest && e.target.closest('[data-act]');
+  if(!t || !S.attempt || S.attempt.finished || S.attempt.historic) return;
+  var a=t.dataset.act;
+  if(a==='answer' || a==='flag' || a==='goto' || a==='next' || a==='prev' || a==='rnext' || a==='rprev' || a==='showall'){ saveActive(); persistActiveThrottled(); }
+}, true);
 window.addEventListener('hashchange', function(){ applyHashRoute(); render(); });
+// Restauración al cargar: intenta LS primero, luego la nube (cloudSync hará merge cross-device)
+(function(){
+  try{
+    if(restoreActiveAttempt()){
+      // ya restaurado desde LS
+      startTimer();
+    } else if(isPinAuthenticated()){
+      // sin LS pero con PIN, intenta nube (asíncrono)
+      cloudSync();
+      // si hay active en LS expirado, cloudSync ya lo vence y lo consolida
+    }
+  }catch(e){}
+})();
 applyHashRoute();
+// Si cloudSync restauró cross-device, el timer ya arrancó; si no, asegura vista coherente
+if(S.attempt && S.attempt.restored && !S.attempt.finished){
+  // evita que applyHashRoute pise view=attempt recién restaurado
+  S.view='attempt';
+  startTimer();
+}
 render();

@@ -113,10 +113,38 @@ export function figTrianguloLeyCosenos({ ab=5, ac=7, angleA=60, labels={A:'A',B:
   return svgWrap(inner);
 }
 export function figPlanoRecta({ ax=2, ay=2, bx=6, by=8, labels={A:'A',B:'B'} }={}){
-  // Plano cartesiano con puntos A(ax,ay) B(bx,by) y recta
+  // Plano cartesiano con puntos A(ax,ay) B(bx,by) y recta + prolongación entrecortada COLINEAL (libro)
+  // Recorta la prolongación al rectángulo visible 50..380 x 30..270 para que siempre quede a escuadra
   const W=400,H=300, ox=70,oy=240, scale=22;
   const Xax=ax*scale+ox, Yay=oy-ay*scale, Xbx=bx*scale+ox, Yby=oy-by*scale;
-  // ejes
+  const dx=bx-ax, dy=by-ay;
+  let XL, YL, XR, YR;
+  if(Math.abs(dx) < 1e-9){
+    XL=Xax; XR=Xax; YL=30; YR=270;
+  } else {
+    const m=dy/dx, b=ay - m*ax;
+    const C = oy - b*scale + m*ox; // Y = C - m*X  (pantalla)
+    const candidates=[];
+    const add=(X,Y)=>{ if(X>=50-1e-6 && X<=380+1e-6 && Y>=30-1e-6 && Y<=270+1e-6) candidates.push([X,Y]); };
+    // intersección con bordes verticales X=50 y X=380
+    add(50, C - m*50);
+    add(380, C - m*380);
+    // intersección con bordes horizontales Y=30 y Y=270  → X = (C - Y)/m
+    if(Math.abs(m) > 1e-9){
+      add((C - 30)/m, 30);
+      add((C - 270)/m, 270);
+    }
+    // elige los dos puntos más alejados dentro del rectángulo
+    let best=[50, C - m*50, 380, C - m*380];
+    if(candidates.length>=2){
+      let maxD=-1;
+      for(let i=0;i<candidates.length;i++) for(let j=i+1;j<candidates.length;j++){
+        const d=(candidates[i][0]-candidates[j][0])**2 + (candidates[i][1]-candidates[j][1])**2;
+        if(d>maxD){ maxD=d; best=[candidates[i][0],candidates[i][1],candidates[j][0],candidates[j][1]]; }
+      }
+    }
+    [XL,YL,XR,YR]=best;
+  }
   const inner = `
     <rect x="0" y="0" width="400" height="300" rx="10" fill="#fff" stroke="#e3e8ee"/>
     <line x1="50" y1="${oy}" x2="380" y2="${oy}" stroke="#334155" stroke-width="1.6"/>
@@ -125,9 +153,10 @@ export function figPlanoRecta({ ax=2, ay=2, bx=6, by=8, labels={A:'A',B:'B'} }={
     <polygon points="${ox},30 ${ox-4},38 ${ox+4},38" fill="#334155"/>
     <text x="384" y="${oy+4}" font-size="10" font-family="sans-serif" fill="#334155">x</text>
     <text x="${ox-10}" y="26" font-size="10" font-family="sans-serif" fill="#334155">y</text>
-    <!-- recta -->
-    <line x1="${Xax}" y1="${Yay}" x2="${Xbx}" y2="${Yby}" stroke="#0e2a47" stroke-width="2.2"/>
-    <line x1="60" y1="${(oy - ((-3)*scale + oy - Yay)/1 )}" x2="380" y2="${(oy - (12*scale))}" stroke="#0e2a47" stroke-width="1.4" stroke-dasharray="6 4" opacity="0.35"/>
+    <!-- prolongación entrecortada colineal con AB (sutil, por debajo del sólido) -->
+    <line x1="${XL}" y1="${YL.toFixed(1)}" x2="${XR}" y2="${YR.toFixed(1)}" stroke="#64748b" stroke-width="1.4" stroke-dasharray="6 4" opacity="0.35"/>
+    <!-- segmento sólido A–B por encima -->
+    <line x1="${Xax}" y1="${Yay}" x2="${Xbx}" y2="${Yby}" stroke="#0e2a47" stroke-width="2.2" stroke-linecap="round"/>
     <circle cx="${Xax}" cy="${Yay}" r="5" fill="#b3261e" stroke="#fff" stroke-width="2"/>
     <circle cx="${Xbx}" cy="${Yby}" r="5" fill="#0f766e" stroke="#fff" stroke-width="2"/>
     <text x="${Xax-10}" y="${Yay+16}" font-size="11" font-family="sans-serif" fill="#b3261e">${esc(labels.A||'A')}(${ax},${ay})</text>

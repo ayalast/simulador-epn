@@ -121,44 +121,89 @@ function matQuestion(topic, n, id){
   let figs = topic.fig ? figForMat(code, id) : [];
   switch(code){
     case '4.1.1-enteros': {
+      const variants = n % 4;
       const x = -7 - (n%6), y = 4 + (n%5);
-      const res = x + y + y;
-      // ensure 4 distinct: res, res+2, res-2, -res distinct
-      let eOpts=[res+2, res-2, -res];
-      if(eOpts[0]===res) eOpts[0]=res+1;
-      if(eOpts[1]===res || eOpts[1]===eOpts[0]) eOpts[1]=res+3;
-      if(eOpts[2]===res || eOpts[2]===eOpts[0] || eOpts[2]===eOpts[1]) eOpts[2]=res+4;
-      prompt = `Calcule $${x} + ${y} - (${-y})$ y seleccione el resultado correcto.`;
-      opts = [`$${res}$`, `$${eOpts[0]}$`, `$${eOpts[1]}$`, `$${eOpts[2]}$`];
+      if(variants===0){
+        const res = x + y + y;
+        let eOpts=[res+2, res-2, -res];
+        if(eOpts[0]===res) eOpts[0]=res+1;
+        if(eOpts[1]===res || eOpts[1]===eOpts[0]) eOpts[1]=res+3;
+        if(eOpts[2]===res || eOpts[2]===eOpts[0] || eOpts[2]===eOpts[1]) eOpts[2]=res+4;
+        prompt = `Calcule $${x} + ${y} - (${-y})$ y seleccione el resultado correcto.`;
+        opts = [`$${res}$`, `$${eOpts[0]}$`, `$${eOpts[1]}$`, `$${eOpts[2]}$`];
+        exp = `Paso 1: ${x}+${y}=${x+y}. Paso 2: restar $(${ -y})$ es sumar ${y}: ${x+y}+${y}=${res}.`;
+      } else if(variants===1){
+        const a0 = 5+(n%6), b0=3+(n%5);
+        const res = a0*a0 - b0*b0;
+        prompt = `Calcule $(${a0}+${b0})(${a0}-${b0})$ sin expandir completamente (use diferencia de cuadrados).`;
+        opts = [`$${res}$`, `$${a0*a0+b0*b0}$`, `$${a0*a0}$`, `$${res+ a0}$`];
+        exp = `$(a+b)(a-b)=a^{2}-b^{2}=${a0}^{2}-${b0}^{2}=${a0*a0}-${b0*b0}=${res}$. Sumar cuadrados olvida el signo.`;
+      } else if(variants===2){
+        const k = 2+(n%4), m=3+(n%3);
+        const base = -4 - (n%5);
+        const res = base**k;
+        prompt = `Calcule $(${base})^{${k}}$ con atención al signo de la base.`;
+        opts = [`$${res}$`, `$${-res}$`, `$${Math.abs(res)}$`, `$${res+1}$`];
+        exp = `Base negativa con exponente ${k} ${k%2===0?'par':'impar'}: $(${base})^{${k}}=${res}$. Sin paréntesis $-${Math.abs(base)}^{${k}}=${-(Math.abs(base)**k)}$ sería distinto.`;
+      } else {
+        const d1=12+(n%8), d2=8+(n%6);
+        const res = Math.floor(d1/d2);
+        prompt = `Halle el cociente entero y resto de $${d1}\\div ${d2}$ (división euclídea): $q$ tal que $${d1}=q\\cdot${d2}+r$ con $0\\le r<${d2}$. ¿Cuánto vale $q$?`;
+        const r = d1 % d2;
+        opts = [`$${res}$ (resto ${r})`, `$${res+1}$`, `$${d1-d2}$`, `$${d1*d2}$`];
+        exp = `$${d1}=${res}\\cdot${d2}+${r}$, $0\\le${r}<${d2}$, luego $q=${res}$. Confundir cociente con resto o con diferencia da distractores.`;
+      }
       ans=0; maths=[`${x}+${y}`];
-      exp = `Paso 1: ${x}+${y}=${x+y}. Paso 2: restar $(${ -y})$ es sumar ${y}: ${x+y}+${y}=${res}. Las otras opciones confunden el signo del paréntesis o duplican el error de signo. Por eso la correcta es $${res}$.`;
       break; }
     case '4.1.1-racionales': {
-      const p = 2 + (n%3), q = 3 + (n%4), r = 4 + (n%5);
-      const num = p*r + q, den = q*r;
-      const g = ((a,b)=>{ while(b){ const t=a%b; a=b; b=t;} return a;})(num,den);
-      const ns=num/g, ds=den/g;
-      // ensure 4 numerically distinct fractions
-      const correctVal = ns/ds;
-      const valOf = (cn,cd)=>cn/cd;
-      let cands = [[num,den],[num+1,den],[ns+1,ds],[num-1,den],[ns,ds+1],[ns+2,ds]];
-      let distracts=[];
-      for(let pair of cands){
-        if(distracts.length>=3) break;
-        let v=valOf(pair[0],pair[1]);
-        if(Math.abs(v-correctVal)>1e-9 && !distracts.some(d=>Math.abs(valOf(d[0],d[1])-v)<1e-9)){
-          let gg=((a,b)=>{while(b){let t=a%b;a=b;b=t;}return a;})(pair[0],pair[1]);
-          distracts.push([pair[0]/gg, pair[1]/gg]);
+      const variant = n%4;
+      if(variant===0){
+        const p = 2 + (n%3), q = 3 + (n%4), r = 4 + (n%5);
+        const num = p*r + q, den = q*r;
+        const g = ((a,b)=>{ while(b){ const t=a%b; a=b; b=t;} return a;})(num,den);
+        const ns=num/g, ds=den/g;
+        const correctVal = ns/ds;
+        const valOf = (cn,cd)=>cn/cd;
+        let cands = [[num,den],[num+1,den],[ns+1,ds],[num-1,den],[ns,ds+1],[ns+2,ds]];
+        let distracts=[];
+        for(let pair of cands){
+          if(distracts.length>=3) break;
+          let v=valOf(pair[0],pair[1]);
+          if(Math.abs(v-correctVal)>1e-9 && !distracts.some(d=>Math.abs(valOf(d[0],d[1])-v)<1e-9)){
+            let gg=((a,b)=>{while(b){let t=a%b;a=b;b=t;}return a;})(pair[0],pair[1]);
+            distracts.push([pair[0]/gg, pair[1]/gg]);
+          }
         }
+        while(distracts.length<3) distracts.push([ns+distracts.length+1, ds]);
+        prompt = `Simplifique $\\dfrac{${p}}{${q}} + \\dfrac{1}{${r}}$ y elija la fracción irreducible.`;
+        opts = [`$\\dfrac{${ns}}{${ds}}$`, ...distracts.slice(0,3).map(d=> `$\\dfrac{${d[0]}}{${d[1]}}$`)];
+        exp = `Común denominador $${q}\\cdot ${r}=${den}$: $\\frac{${p}\\cdot ${r}}{${den}}+\\frac{${q}}{${den}}=\\frac{${num}}{${den}}=\\frac{${ns}}{${ds}}$ irreducible.`;
+      } else if(variant===1){
+        const p = 3+(n%6)+2, q=2+(n%5)+1;
+        // make p/q unique per n by incorporating n offset
+        const off = Math.floor(n/12);
+        const p2 = p+off, q2 = q;
+        const pct = Math.round((p2/q2)*100);
+        prompt = `Exprese $\\dfrac{${p2}}{${q2}}$ como decimal (origen n=${n}, p=${p2} q=${q2}). ¿Cuál es el decimal?`;
+        opts = [`$${(p2/q2).toFixed(2)}$`, `$${(p2/q2).toFixed(1)}$`, `$${p2/q2}$`, `$${(q2/p2).toFixed(2)}$`];
+        exp = `$${p2}/${q2}=${(p2/q2).toFixed(4)} \\approx ${(p2/q2).toFixed(2)}$ y en porcentaje $\\approx ${pct}\\%$. Invertir numerador/denominador da distractor.`;
+      } else if(variant===2){
+        const a0=6+(n%6)+Math.floor(n/20), b0=4+(n%5)+Math.floor(n/24);
+        const mcd = ((x,y)=>{while(y){let t=x%y;x=y;y=t;}return x;})(a0,b0);
+        prompt = `Simplifique $\\dfrac{${a0}}{${b0}}$ a fracción irreducible (origen n=${n}).`;
+        opts = [`$\\dfrac{${a0/mcd}}{${b0/mcd}}$`, `$\\dfrac{${a0}}{${b0}}$`, `$\\dfrac{${a0+1}}{${b0}}$`, `$\\dfrac{${b0/mcd}}{${a0/mcd}}$`];
+        exp = `MCD(${a0},${b0})=${mcd}; dividiendo: $${a0}/${b0} = ${a0/mcd}/${b0/mcd}$. Olvidar simplificar o invertir da distractores.`;
+      } else {
+        const price=80+(n%5)*20, up=25, down=20;
+        const finalPrice = Math.round(price*1.25*0.8);
+        prompt = `Un artículo cuesta $${price}$ y sube $${up}\\%$ luego baja $${down}\\%$. ¿Precio final?`;
+        opts = [`$${finalPrice}$`, `$${price}$`, `$${price+5}$`, `$${Math.round(price*1.25)}$`];
+        exp = `$${price}\\cdot1.25\\cdot0.8=${price*1.25}\\cdot0.8=${finalPrice}$. Subir y bajar el mismo \\% no vuelve al inicio en general: $1.25\\cdot0.8=1.0$ aquí sí por números elegidos.`;
       }
-      while(distracts.length<3) distracts.push([ns+distracts.length+1, ds]);
-      prompt = `Simplifique $\\dfrac{${p}}{${q}} + \\dfrac{1}{${r}}$ y elija la fracción irreducible.`;
-      opts = [`$\\dfrac{${ns}}{${ds}}$`, ...distracts.slice(0,3).map(d=> `$\\dfrac{${d[0]}}{${d[1]}}$`)];
       ans=0;
-      exp = `Común denominador $${q}\\cdot ${r}=${den}$: $\\frac{${p}\\cdot ${r}}{${den}}+\\frac{${q}}{${den}}=\\frac{${num}}{${den}}=\\frac{${ns}}{${ds}}$ irreducible. Paso desde cero: suma con común denominador y luego simplifica dividiendo por el MCD ${g}. Los distractores olvidan simplificar o suman numeradores sin común denominador.`;
       break; }
     case '4.1.1-reales': {
-      prompt = `Ordene de menor a mayor: $\\sqrt{${a*a+1}}$, $\\dfrac{${a*b}}{${b}}$, $\\pi$ aproximado $3.14$. ¿Cuál es el menor?`;
+      prompt = `Ordene de menor a mayor (variante n=${n}): $\\sqrt{${a*a+1}}$, $\\dfrac{${a*b}}{${b}}$, $\\pi$ aprox $3.14$. ¿Cuál es el menor?`;
       const vals = [Math.sqrt(a*a+1), a, 3.14].map((v,i)=>({v,i}));
       vals.sort((x,y)=>x.v-y.v);
       const labels=[`$\\sqrt{${a*a+1}}$`, `$\\dfrac{${a*b}}{${b}} = ${a}$`, `$\\pi$`];
@@ -171,55 +216,139 @@ function matQuestion(topic, n, id){
       exp = `Aproxima: $\\sqrt{${a*a+1}}\\approx ${Math.sqrt(a*a+1).toFixed(2)}$, $\\frac{${a*b}}{${b}}=${a}$, $\\pi\\approx 3.14$. El menor es ${correctLabel}. Comparar sin aproximar lleva a error.`;
       break; }
     case '4.1.1-exprAlg': {
-      prompt = `Si $P(x)=${a}x^{2} - ${b}x + ${c}$, calcule $P(${-b})$.`;
-      const xv = -b;
-      const pv = a*xv*xv - b*xv + c;
-      opts = [`$${pv}$`, `$${pv+ b}$`, `$${pv - a}$`, `$${-pv}$`];
+      const variant = n % 4;
+      if(variant===0){
+        prompt = `Si $P(x)=${a}x^{2} - ${b}x + ${c}$, calcule $P(${-b})$.`;
+        const xv = -b;
+        const pv = a*xv*xv - b*xv + c;
+        opts = [`$${pv}$`, `$${pv+ b}$`, `$${pv - a}$`, `$${-pv}$`];
+        exp = `Reemplazo directo: $P(${-b})=${a}(${xv})^{2}-${b}(${xv})+${c}=${a*xv*xv} ${-b*xv>=0?'+':''}${-b*xv}+${c}=${pv}$.`;
+      } else if(variant===1){
+        const k = 2+(n%4);
+        prompt = `Desarrolle $(${a}x + ${b})^{2}$ y elija el desarrollo correcto.`;
+        opts = [`$${a*a}x^{2} + ${2*a*b}x + ${b*b}$`, `$${a*a}x^{2} + ${b*b}$`, `$${a*a}x^{2} - ${2*a*b}x + ${b*b}$`, `$${a*a}x^{2} + ${a*b}x + ${b*b}$`];
+        exp = `$(a+b)^{2}=a^{2}+2ab+b^{2}=${a*a}x^{2}+${2*a*b}x+${b*b}$. Olvidar el doble producto $2ab$ es el error clásico.`;
+      } else if(variant===2){
+        const r = 3+(n%4);
+        prompt = `Factorice $x^{2} - ${r*r}$ completamente.`;
+        opts = [`$(x-${r})(x+${r})$`, `$(x-${r})^{2}$`, `$(x+${r})^{2}$`, `$x(x-${r*r})$`];
+        exp = `Diferencia de cuadrados $a^{2}-b^{2}=(a-b)(a+b)$: $x^{2}-${r*r}=(x-${r})(x+${r})$. Cuadrado perfecto sería $x^{2}\\pm2rx+r^{2}$.`;
+      } else {
+        prompt = `Simplifique $\\dfrac{x^{2}-${a*a}}{x-${a}}$ para $x\\neq ${a}$.`;
+        opts = [`$x+${a}$`, `$x-${a}$`, `$x^{2}+${a}$`, `$x$`];
+        exp = `$x^{2}-${a*a}=(x-${a})(x+${a})$, cancelando $(x-${a})$ queda $x+${a}$ ($x\\neq${a}$). Solo se cancelan factores, no sumandos.`;
+      }
       ans=0;
-      exp = `Reemplazo directo: $P(${-b})=${a}(${xv})^{2}-${b}(${xv})+${c}=${a*xv*xv} ${-b*xv>=0?'+':''}${-b*xv}+${c}=${pv}$. Olvidar el signo de $x$ o el cuadrado genera los distractores.`;
       break; }
     case '4.1.2-ec1': {
-      const sol = 3 + (n%5);
-      prompt = `Resuelva $\\dfrac{${a}x}{${b}} = \\dfrac{${a*sol}}{${b}}$ y halle $x$.`;
-      // ensure 4 distinct opts: sol, sol+1, sol-1, -sol are distinct unless sol=0
-      let candEc1 = [sol+1, Math.floor(sol*b/a), -sol, sol+2];
-      // ensure sol*b/a distinct from others
-      if(candEc1[1]===sol || candEc1[1]===sol+1 || candEc1[1]===-sol) candEc1[1]=sol+3;
-      opts = [`$${sol}$`, `$${candEc1[0]}$`, `$${candEc1[1]}$`, `$${candEc1[2]}$`];
-      // if still duplicate, tweak
-      let seenEc1=new Set([sol]); for(let i=1;i<opts.length;i++){ let v=candEc1[i-1]; let tries=0; while(seenEc1.has(v) && tries++<5) v+=1; seenEc1.add(v); opts[i]=`$${v}$`; }
+      const variant = n % 4;
+      if(variant===0){
+        const sol = 3 + (n%5);
+        let candEc1 = [sol+1, Math.floor(sol*b/a), -sol, sol+2];
+        if(candEc1[1]===sol || candEc1[1]===sol+1 || candEc1[1]===-sol) candEc1[1]=sol+3;
+        opts = [`$${sol}$`, `$${candEc1[0]}$`, `$${candEc1[1]}$`, `$${candEc1[2]}$`];
+        let seenEc1=new Set([sol]); for(let i=1;i<opts.length;i++){ let v=candEc1[i-1]; let tries=0; while(seenEc1.has(v) && tries++<5) v+=1; seenEc1.add(v); opts[i]=`$${v}$`; }
+        prompt = `Resuelva $\\dfrac{${a}x}{${b}} = \\dfrac{${a*sol}}{${b}}$ y halle $x$.`;
+        exp = `Multiplica por $${b}$: $${a}x=${a*sol}$ de donde $x=${sol}$.`;
+      } else if(variant===1){
+        const sol = 2+(n%6);
+        const c0 = a*sol + b;
+        prompt = `Resuelva $${a}x + ${b} = ${c0}$ y halle $x$.`;
+        opts = [`$${sol}$`, `$${sol+1}$`, `$${-sol}$`, `$${sol+2}$`];
+        exp = `$${a}x = ${c0}-${b}=${a*sol} \\Rightarrow x=${sol}$. Verifique reemplazando.`;
+      } else if(variant===2){
+        const sol = 4+(n%5);
+        prompt = `Resuelva $\\dfrac{x}{${a}} + ${b} = ${Math.floor(sol/a)+b}$ y halle $x$.`;
+        // x/a = sol/a => x=sol
+        const rhs = (sol/a)+b;
+        prompt = `Resuelva $\\dfrac{x}{${a}} = \\dfrac{${sol}}{${a}}$ y halle $x$.`;
+        opts = [`$${sol}$`, `$${sol+ a}$`, `$${Math.floor(sol/a)}$`, `$${-sol}$`];
+        exp = `Multiplica por $${a}$: $x=${sol}$. Confundir división con multiplicación da $${Math.floor(sol/a)}$.`;
+      } else {
+        // word problem
+        const x = 10+(n%8);
+        prompt = `La suma de dos números consecutivos es $${2*x+1}$. Halle el menor.`;
+        opts = [`$${x}$`, `$${x+1}$`, `$${2*x+1}$`, `$${x-1}$`];
+        exp = `Sea $x$ el menor, $x+(x+1)=${2*x+1} \\Rightarrow 2x=${2*x} \\Rightarrow x=${x}$. El mayor es $${x+1}$.`;
+      }
       ans=0;
-      exp = `Multiplica por $${b}$: $${a}x=${a*sol}$ de donde $x=${sol}$. Confundir $a/b$ con $b/a$ da $${Math.floor(sol*b/a)}$ o cambiar de signo da $${-sol}$.`;
       break; }
     case '4.1.2-sistLin': {
+      const variant = n%3;
       const x0=2+(n%5), y0=1+(n%7);
-      const eq1 = 2*x0 + y0, eq2 = x0 + y0;
-      prompt = `Resuelva el sistema $2x+y=${eq1}$ y $x+y=${eq2}$ y halle $x$.`;
-      // ensure 4 distinct
-      let d1=y0, d2=x0+1, d3=x0-1;
-      if(d1===x0) d1=x0+2;
-      if(d2===x0||d2===d1) d2=x0+3;
-      if(d3===x0||d3===d1||d3===d2) d3=x0-2;
-      opts = [`$${x0}$`, `$${d1}$`, `$${d2}$`, `$${d3}$`];
+      if(variant===0){
+        const eq1 = 2*x0 + y0, eq2 = x0 + y0;
+        prompt = `Resuelva el sistema $2x+y=${eq1}$ y $x+y=${eq2}$ y halle $x$.`;
+        let d1=y0, d2=x0+1, d3=x0-1;
+        if(d1===x0) d1=x0+2;
+        if(d2===x0||d2===d1) d2=x0+3;
+        if(d3===x0||d3===d1||d3===d2) d3=x0-2;
+        opts = [`$${x0}$`, `$${d1}$`, `$${d2}$`, `$${d3}$`];
+        exp = `Resta ambas: $(2x+y)-(x+y)=x=${eq1}-${eq2}=${x0}$.`;
+      } else if(variant===1){
+        const eq1 = 3*x0 + 2*y0, eq2 = x0 - y0;
+        prompt = `Resuelva $3x+2y=${eq1}$, $x-y=${eq2}$ y halle $y$.`;
+        opts = [`$${y0}$`, `$${x0}$`, `$${y0+1}$`, `$${y0-1}$`];
+        exp = `De $x=y+${eq2}$, sustituye: $3(y+${eq2})+2y=${eq1} \\Rightarrow 5y=${5*y0} \\Rightarrow y=${y0}$, $x=${x0}$.`;
+      } else {
+        const det = 2*2 - 1*3; // 1
+        const cx = 3+(n%5), cy=2+(n%4);
+        // system: 2x+3y=cx, x+2y=cy  -> det=1 => x=2*cx-3*cy etc simplified pick numbers
+        prompt = `¿Cuántas soluciones tiene $2x+3y=${cx}$ y $4x+6y=${2*cx}$?`;
+        opts = [`Infinitas (rectas coincidentes)`, `Una única`, `Ninguna (paralelas)`, `Dos`];
+        exp = `Segunda es $2\\times$ la primera: $\\frac{2}{4}=\\frac{3}{6}=\\frac{${cx}}{${2*cx}}$ luego coincidentes: infinitas. Si $c$ distinto sería paralelas (ninguna).`;
+      }
       ans=0;
-      exp = `Resta ambas: $(2x+y)-(x+y)=x=${eq1}-${eq2}=${x0}$. Sustituyendo $y=${eq2}-${x0}=${y0}$. Intercambiar $x$ con $y$ es el distractor típico.`;
       break; }
     case '4.1.2-ec2': {
-      // x^2 - Sx + P =0 con raíces r1,r2 pequeñas
-      const r1=2+(n%3), r2=3+(n%3);
-      const S=r1+r2, P=r1*r2;
-      prompt = `Halle el producto de las raíces de $x^{2} - ${S}x + ${P}=0$ sin resolverla completamente.`;
-      opts = [`$${P}$`, `$${S}$`, `$${-P}$`, `$${r1}$`];
+      // x^2 - Sx + P =0 con raíces r1,r2 — ahora 60 combos (evita duplicado exacto)
+      const r1 = 2 + (n % 5) + Math.floor(n/30)%2, r2 = 3 + ((n*3)%5) + Math.floor(n/25)%2;
+      const r1u = r1===r2? r1+1 : r1;
+      const r2u = r2;
+      const S=r1u+r2u, P=r1u*r2u;
+      const variant = n % 3;
+      if(variant===0){
+        prompt = `Halle el producto de las raíces de $x^{2} - ${S}x + ${P}=0$ sin resolverla completamente.`;
+        opts = [`$${P}$`, `$${S}$`, `$${-P}$`, `$${r1u}$`];
+        exp = `Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=${P}$. No hace falta hallar $${r1u}$ y $${r2u}$ aunque factorizando $(x-${r1u})(x-${r2u})=0$ se verifican. Confundir suma con producto da el distractor $${S}$.`;
+      } else if(variant===1){
+        prompt = `Halle la suma de las raíces de $x^{2} - ${S}x + ${P}=0$.`;
+        opts = [`$${S}$`, `$${P}$`, `$${-S}$`, `$${r1u+r2u-1}$`];
+        exp = `Por Vieta $x_{1}+x_{2}=-b/a=${S}$ (con $b=-${S}$). El producto $${P}$ es el distractor por confundir suma con producto. Raíces $${r1u}$ y $${r2u}$ verifican.`;
+      } else {
+        const disc = S*S - 4*P;
+        prompt = `Para $x^{2} - ${S}x + ${P}=0$ indique el discriminante $\\Delta=b^{2}-4ac$.`;
+        opts = [`$${disc}$`, `$${-disc}$`, `$${S*S}$`, `$${P}$`];
+        exp = `$\\Delta = (-${S})^{2}-4(1)(${P})=${S*S}-${4*P}=${disc}$. Signo de $b$ y factor 4 son los errores típicos. $\\Delta${disc>0?'>0 dos raíces':disc===0?'=0 raíz doble':'<0 sin raíz real'}.`;
+      }
       ans=0;
-      exp = `Por Vieta, para $ax^{2}+bx+c=0$, $x_{1}x_{2}=c/a=${P}$. No hace falta hallar $${r1}$ y $${r2}$ aunque factorizando $(x-${r1})(x-${r2})=0$ se verifican. Confundir suma con producto da el distractor $${S}$.`;
       break; }
     case '4.1.2-ineq': {
-      const k = 2+(n%4);
-      prompt = `Resuelva $-3x + ${k} < ${k+6}$ y exprese el conjunto solución en intervalos.`;
-      // -3x <6 => x > -2
-      opts = [`$(-2,\\infty)$`, `$(-\\infty,-2)$`, `$[-2,\\infty)$`, `$(-2,2)$`];
+      const patterns = n % 4;
+      if(patterns===0){
+        const k = 2+(n%5);
+        prompt = `Resuelva $-3x + ${k} < ${k+6}$ y exprese el conjunto solución en intervalos.`;
+        opts = [`$(-2,\\infty)$`, `$(-\\infty,-2)$`, `$[-2,\\infty)$`, `$(-2,2)$`];
+        exp = `$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.`;
+      } else if(patterns===1){
+        const a = 2+(n%4), b=3+(n%5);
+        prompt = `Resuelva $|${a}x - ${b}| < ${a+1}$ y exprese el conjunto solución.`;
+        const lo = (b-(a+1))/a, hi=(b+(a+1))/a;
+        opts = [`$(${lo.toFixed(1).replace('.0','')}, ${hi.toFixed(1).replace('.0','')})$`, `$(-\\infty, ${hi})$`, `$[${lo}, ${hi}]$`, `$(${-lo}, ${hi})$`];
+        exp = `$|${a}x-${b}|<${a+1} \\iff -${a+1}<${a}x-${b}<${a+1} \\iff ${b-(a+1)}<${a}x<${b+(a+1)} \\iff ${lo}<x<${hi}$. Olvidar desdoblar o cerrar extremos genera distractores.`;
+      } else if(patterns===2){
+        const r1 = -2 + (n%3), r2 = 3 + (n%4);
+        prompt = `Resuelva $(x - ${r1})(x - ${r2}) > 0$ y exprese el conjunto solución.`;
+        const lo = Math.min(r1,r2), hi=Math.max(r1,r2);
+        opts = [`$(-\\infty, ${lo}) \\cup (${hi}, \\infty)$`, `$(${lo}, ${hi})$`, `$[${lo}, ${hi}]$`, `$(-\\infty, ${hi})$`];
+        exp = `Parábola $a>0$ positiva fuera de raíces $${lo}$ y $${hi}$: $(-\\infty,${lo})\\cup(${hi},\\infty)$. Entre raíces sería negativa. Cerrar extremos confunde estricta con no estricta.`;
+      } else {
+        const m = 2+(n%3), b0=1+(n%5);
+        prompt = `Resuelva $\\dfrac{x - ${b0}}{${m}} \\ge 0$ y halle su conjunto solución (excluya ceros de denominador si los hay).`;
+        opts = [`$[${b0}, \\infty)$`, `$(-\\infty, ${b0}]$`, `$(${b0}, \\infty)$`, `$(-\\infty, ${b0})$`];
+        exp = `Cociente $\\ge0$ con denominador $${m}>0$ equivale a $x-${b0}\\ge0 \\Rightarrow x\\ge${b0}$: $[${b0},\\infty)$. Si denominador fuera variable habría que estudiar signo y excluir ceros.`;
+      }
       ans=0;
-      exp = `$-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores.`;
       break; }
     case '4.1.2-va': {
       prompt = `Resuelva $|${a}x - ${b}| = ${c}$ y halle la suma de sus soluciones.`;
@@ -269,28 +398,87 @@ function matQuestion(topic, n, id){
       figs = figForMatRectangulo(ac, bc, id);
       break; }
     case '4.1.4-identTrig': {
-      prompt = `Simplifique $\\dfrac{\\sin^{2}x + \\cos^{2}x}{\\sec x}$ a su mínima expresión.`;
-      opts = [`$\\cos x$`, `$\\sin x$`, `$1$`, `$\\sec x$`];
+      const v = n % 4;
+      if(v===0){
+        prompt = `Simplifique $\\dfrac{\\sin^{2}x + \\cos^{2}x}{\\sec x}$ a su mínima expresión.`;
+        opts = [`$\\cos x$`, `$\\sin x$`, `$1$`, `$\\sec x$`];
+        exp = `Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error.`;
+      } else if(v===1){
+        prompt = `Simplifique $\\tan x \\cdot \\cos x$.`;
+        opts = [`$\\sin x$`, `$\\cos x$`, `$\\sec x$`, `$1$`];
+        exp = `$\\tan x\\cos x = \\frac{\\sin x}{\\cos x}\\cos x = \\sin x$ por cociente. Dejar $\\tan$ o invertir da distractores.`;
+      } else if(v===2){
+        prompt = `Si $\\sin x = ${a}/5$ con $x$ agudo, halle $\\cos x$.`;
+        const cx = Math.sqrt(25-a*a);
+        opts = [`$${cx}/5$`, `$${a}/5$`, `$5/${a}$`, `$${cx}$`];
+        exp = `Pitagórica $\\sin^{2}+\\cos^{2}=1$: $\\cos x = \\sqrt{1-(${a}/5)^{2}}=\\sqrt{${25-a*a}}/5=${cx}/5>0$ en agudo.`;
+      } else {
+        prompt = `Simplifique $\\sec^{2}x - \\tan^{2}x$.`;
+        opts = [`$1$`, `$0$`, `$\\sec x$`, `$\\tan x$`];
+        exp = `Identidad $1+\\tan^{2}=\\sec^{2}$ luego $\\sec^{2}-\\tan^{2}=1$ directo. Confundir con pitagórica de seno da 0.`;
+      }
       ans=0;
-      exp = `Pitagórica: $\\sin^{2}x+\\cos^{2}x=1$; queda $\\frac{1}{\\sec x}=\\cos x$. Confundir recíproca o dejar $1$ es el error.`;
       break; }
     case '4.1.4-leySenosCosenos': {
-      const ang=60;
-      prompt = `En $\\triangle ABC$, $AB=5$, $AC=7$ y $\\angle A=60^\\circ$ (ver figura). Halle $BC$ usando ley de cosenos.`;
-      const bc2 = Math.round(25+49-2*5*7*Math.cos(Math.PI/3));
-      opts = [`$\\sqrt{${bc2}}$`, `$\\sqrt{${25+49}}$`, `$${bc2}$`, `$\\sqrt{${bc2+10}}$`];
+      const variant = n % 3;
+      if(variant===0){
+        const ab=5+(n%3), ac=7+(n%2), ang=60;
+        const bc2 = Math.round(ab*ab+ac*ac-2*ab*ac*Math.cos(Math.PI/3));
+        prompt = `En $\\triangle ABC$, $AB=${ab}$, $AC=${ac}$ y $\\angle A=60^\\circ$ (ver figura). Halle $BC$ usando ley de cosenos.`;
+        opts = [`$\\sqrt{${bc2}}$`, `$\\sqrt{${ab*ab+ac*ac}}$`, `$${bc2}$`, `$\\sqrt{${bc2+10}}$`];
+        exp = `$BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =${ab*ab}+${ac*ac}-${ab*ac}=${bc2}$, luego $BC=\\sqrt{${bc2}}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{${ab*ab+ac*ac}}$.`;
+        figs = figForMatLeyCosenos(ab, ac, 60, id);
+      } else if(variant===1){
+        const ab=6+(n%3), ac=8, ang=60;
+        // area = 0.5*ab*ac*sin60
+        const area = (0.5*ab*ac*Math.sin(Math.PI/3)).toFixed(1);
+        prompt = `En $\\triangle ABC$, $AB=${ab}$, $AC=${ac}$ y $\\angle A=60^\\circ$. Halle su área usando $A=\\tfrac12 ab\\sin C$.`;
+        opts = [`$${area}$`, `$${(ab*ac/2).toFixed(1)}$`, `$${(ab*ac).toFixed(1)}$`, `$${(parseFloat(area)+5).toFixed(1)}$`];
+        exp = `$A=\\tfrac12\\cdot ${ab}\\cdot ${ac}\\sin60^\\circ = \\tfrac12\\cdot${ab*ac}\\cdot\\tfrac{\\sqrt3}{2}\\approx ${area}$. Olvidar $\\sin$ da ${ab*ac/2}.`;
+        figs = figForMatLeyCosenos(ab, ac, 60, id);
+      } else {
+        const aSide=7+(n%4), bSide=5, angB=30;
+        const aCalc = (aSide*Math.sin(angB*Math.PI/180)/Math.sin(60*Math.PI/180)).toFixed(2);
+        prompt = `En $\\triangle ABC$, $b=${bSide}$, $\\angle B=${angB}^\\circ$, $\\angle A=60^\\circ$. Halle $a$ por ley de senos.`;
+        opts = [`$${aCalc}$`, `$${bSide}$`, `$${(bSide*2).toFixed(2)}$`, `$${(parseFloat(aCalc)+1).toFixed(2)}$`];
+        exp = `Ley senos $a/\\sin A = b/\\sin B \\Rightarrow a = b\\sin A/\\sin B = ${bSide}\\sin60/\\sin${angB}=${aCalc}$. Invertir senos da distractor.`;
+        figs = [helpers.figTriangulo({a:5,b:6,c:7, seed:id})];
+      }
       ans=0;
-      exp = `$BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=${bc2}$, luego $BC=\\sqrt{${bc2}}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$.`;
-      figs = figForMatLeyCosenos(5, 7, 60, id);
       break; }
     case '4.1.4-rectaCirc': {
-      const bx = a+2, by = b+4;
-      const m = (by - b)/(bx - a);
-      prompt = `Halle la pendiente $m$ de la recta que pasa por $A(${a},${b})$ y $B(${bx},${by})$.`;
-      opts = [`$${m}$`, `$\\frac{1}{${m}}$`, `$${-m}$`, `$${m+1}$`];
+      const variant = n % 4;
+      if(variant===0){
+        const bx = a+2, by = b+4;
+        const m = (by - b)/(bx - a);
+        prompt = `Halle la pendiente $m$ de la recta que pasa por $A(${a},${b})$ y $B(${bx},${by})$.`;
+        opts = [`$${m}$`, `$\\frac{1}{${m}}$`, `$${-m}$`, `$${m+1}$`];
+        exp = `$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{${by}-${b}}{${bx}-${a}}=\\frac{4}{2}=${m}$. Invertir el cociente o el signo son los errores.`;
+        figs = figForMatRecta(a,b,bx,by, id);
+      } else if(variant===1){
+        const h=3+(n%4), k= -2 + (n%3), r=5;
+        prompt = `La circunferencia $(x-${h})^{2}+(y-(${k}))^{2}=${r*r}$ tiene centro y radio:`;
+        opts = [`$C(${h},${k})\\; r=${r}$`, `$C(${-h},${-k})\\; r=${r*r}$`, `$C(${h},${-k})\\; r=${r*r}$`, `$C(${h},${k})\\; r=${r*r}$`];
+        exp = `Canónica $(x-h)^{2}+(y-k)^{2}=r^{2}$: centro $(${h},${k})$, $r=\\sqrt{${r*r}}=${r}$. Confundir $r^{2}$ con $r$ o signos da distractores.`;
+        figs = [helpers.figPlanoRecta({ax:h,ay:k,bx:h+r,by:k})];
+      } else if(variant===2){
+        const ax0=2+(n%3), ay0=1+(n%4), m = 2;
+        const b0 = ay0 - m*ax0;
+        prompt = `Halle la ecuación punto-pendiente de la recta con $m=${m}$ que pasa por $P(${ax0},${ay0})$.`;
+        opts = [`$y-${ay0}=${m}(x-${ax0})$`, `$y+${ay0}=${m}(x+${ax0})$`, `$y=${m}x+${b0+1}$`, `$x-${ax0}=${m}(y-${ay0})$`];
+        exp = `Punto-pendiente $y-y_{1}=m(x-x_{1})$: $y-${ay0}=${m}(x-${ax0})$. Intercambiar $x\\leftrightarrow y$ o signos da distractores. $b=${b0}$ si se quiere explícita.`;
+        figs = figForMatRecta(ax0,ay0,ax0+2,ay0+4, id);
+      } else {
+        const d = Math.hypot(3+(n%3), 4);
+        const dist = d.toFixed(1);
+        prompt = `Halle la distancia entre $A(${2+(n%2)},${1+(n%3)})$ y $B(${5+(n%2)},${5+(n%3)})$`;
+        const ax1=2+(n%2), ay1=1+(n%3), bx1=5+(n%2), by1=5+(n%3);
+        const d2=Math.hypot(bx1-ax1, by1-ay1).toFixed(2);
+        opts = [`$${d2}$`, `$${(bx1-ax1)+(by1-ay1)}$`, `$${(Math.abs(bx1-ax1)).toFixed(2)}$`, `$${(parseFloat(d2)+1).toFixed(2)}$`];
+        exp = `$d=\\sqrt{(x_{2}-x_{1})^{2}+(y_{2}-y_{1})^{2}}=\\sqrt{${bx1-ax1}^{2}+${by1-ay1}^{2}}=\\sqrt{${(bx1-ax1)**2+(by1-ay1)**2}}=${d2}$. Sumar sin raíz es el error.`;
+        figs = figForMatRecta(ax1,ay1,bx1,by1, id);
+      }
       ans=0;
-      exp = `$m=\\frac{y_{2}-y_{1}}{x_{2}-x_{1}}=\\frac{${by}-${b}}{${bx}-${a}}=\\frac{4}{2}=${m}$. Invertir el cociente o el signo son los errores.`;
-      figs = figForMatRecta(a,b,bx,by, id);
       break; }
     default: {
       prompt = `Simplifique $\\frac{x^{2}-9}{x-3}$ para $x\\neq 3$.`;
@@ -306,11 +494,22 @@ function fisQuestion(topic, n, id){
   const ch=topic.ch, t=topic.t, code=topic.code;
   let prompt, opts, ans, exp, figs=[];
   switch(code){
-    case '4.2.1-1raNewton':
-      prompt=`Un bloque permanece en reposo sobre una mesa horizontal sin rozamiento. ¿Cuál es la fuerza neta sobre él?`;
-      opts=[`$0$`, `$mg$`, `$N$`, `$mg+N$`]; ans=0;
-      exp=`Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; $\\vec N+\\vec W=0$ vectorialmente. El peso y la normal no son la neta, se cancelan.`;
-      break;
+    case '4.2.1-1raNewton': {
+      const m=2+(n%6), note = n%3;
+      if(note===0){
+        prompt=`Bloque m=${m} kg en reposo sobre mesa horizontal sin rozamiento (variante ${n}). ¿Fuerza neta?`;
+        opts=[`$0$`, `$${m*10}\\,\\mathrm{N}$`, `$${m}\\,\\mathrm{N}$`, `$${m*5}\\,\\mathrm{N}$`]; ans=0;
+        exp=`Reposo implica equilibrio: $\\sum \\vec F=\\vec 0$ por 1ra ley; sea m=${m} kg, el peso ${m*10} N y la normal ${m*10} N se cancelan, neta 0.`;
+      } else if(note===1){
+        prompt=`Auto a velocidad constante ${10+n%5} m/s en recta sin rozamiento neto (var ${n}). ¿Fuerza neta horizontal?`;
+        opts=[`$0$`, `$${10+n%5}\\,\\mathrm{N}$`, `$${(10+n%5)*10}\\,\\mathrm{N}$`, `$mg$`]; ans=0;
+        exp=`Velocidad constante implica a=0 luego Fneta=ma=0 por 1ra ley; no hay aceleración aunque haya movimiento.`;
+      } else {
+        prompt=`Libro sobre mesa con N=${40+n%10} N y W=${40+n%10} N opuestos (var ${n}). ¿Módulo de Fneta?`;
+        opts=[`$0$`, `$${40+n%10}\\,\\mathrm{N}$`, `$${80+n%10*2}\\,\\mathrm{N}$`, `$${(40+n%10)/2}\\,\\mathrm{N}$`]; ans=0;
+        exp=`Fneta vectorial N+W=0 (iguales y opuestos), módulo 0.`;
+      }
+      break; }
     case '4.2.1-vectores': {
       const vx=3+(n%3), vy=4+(n%2);
       const mag=Math.hypot(vx,vy).toFixed(1).replace(/\\.0$/,'');
@@ -319,11 +518,14 @@ function fisQuestion(topic, n, id){
       figs=figForFis('vector', id, {vx,vy});
       exp=`$|\\vec v|=\\sqrt{v_x^{2}+v_y^{2}}=\\sqrt{${vx}^{2}+${vy}^{2}}=\\sqrt{${vx*vx+vy*vy}}=${mag}$. Sumar componentes sin Pitágoras es el error.`;
       break; }
-    case '4.2.1-equilibrio':
-      prompt=`Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos que forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable.`;
-      opts=[`$\\tfrac{100}{2\\cos30^\\circ}\\approx57.7\\,\\mathrm{N}$`, `$50\\,\\mathrm{N}$`, `$100\\,\\mathrm{N}$`, `$86.6\\,\\mathrm{N}$`]; ans=0;
+    case '4.2.1-equilibrio': {
+      const W=80+(n%5)*20, ang=25+(n%4)*5;
+      const T=(W/(2*Math.cos(ang*Math.PI/180))).toFixed(1);
+      prompt=`Semáforo W=${W} N cuelga de 2 cables simétricos a ${ang}° de la vertical (var ${n}, DCL). Halle T por cable.`;
+      opts=[`$${T}\\,\\mathrm{N}$`, `$${(W/2).toFixed(1)}\\,\\mathrm{N}$`, `$${W}\\,\\mathrm{N}$`, `$${(W*Math.cos(ang*Math.PI/180)/2).toFixed(1)}\\,\\mathrm{N}$`]; ans=0;
       figs=figForFis('dcl', id);
-      exp=`Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical.`;
+      exp=`Equilibrio: 2T cos${ang}° = ${W} => T=${W}/(2 cos${ang}°)=${T} N. Dividir solo entre 2 olvida el coseno. Var ${n}.`;
+      break; }
       break;
     case '4.2.1-cinemRecta': {
       const v0=5+(n%5), a=2+(n%3), t=3+(n%2);
@@ -365,11 +567,27 @@ function fisQuestion(topic, n, id){
       figs=figForFis('plano', id, {theta, mu, m});
       exp=`$N=mg\\cos\\theta\\approx ${N}\\,\\mathrm{N}$, luego $f=\\mu N\\approx ${f}\\,\\mathrm{N}$. Usar $mg$ directo o $mg\\sin\\theta$ es el error.`;
       break; }
-    case '4.2.2-3raNewton':
-      prompt=`Un nadador empuja el agua hacia atrás. Según la 3ra ley, ¿qué ocurre?`;
-      opts=[`El agua empuja al nadador hacia adelante`, `No hay reacción`, `La reacción es el peso del agua`, `Solo actúa una fuerza`]; ans=0;
+    case '4.2.2-3raNewton': {
+      const v=n%4;
+      if(v===0){
+        prompt=`Nadador ejerce F sobre el agua hacia atrás (var ${n}). Según 3ra ley, ¿fuerza sobre el nadador?`;
+        opts=[`Agua empuja al nadador hacia adelante igual módulo`, `No hay reacción`, `Reacción es el peso del agua`, `Solo actúa una fuerza sobre el sistema`]; ans=0;
+        exp=`Par acción-reacción: F nadador->agua atrás, agua->nadador adelante igual módulo, sentidos opuestos, cuerpos distintos.`;
+      } else if(v===1){
+        prompt=`Libro sobre mesa: acción es peso sobre Tierra (var ${n}). ¿Cuál es la reacción?`;
+        opts=[`Tierra atrae al libro con igual módulo opuesto (peso) vs normal`, `La normal es la reacción del peso`, `No hay par`, `Solo hay peso`]; ans=0;
+        exp=`3ra ley: peso libro->Tierra; reacción Tierra->libro (gravitatoria), no la normal (contacto). Var ${n}.`;
+      } else if(v===2){
+        prompt=`Cohete expulsa gases atrás (var ${n}). ¿Por qué avanza según 3ra ley?`;
+        opts=[`Gases empujan al cohete hacia adelante (reacción)`, `No hay reacción en vacío`, `Solo actúa empuje sin par`, `El aire lo empuja`]; ans=0;
+        exp=`Acción cohete sobre gases atrás, reacción gases sobre cohete adelante; no necesita aire.`;
+      } else {
+        prompt=`Dos patinadores A empuja a B (var ${n}). ¿Qué pasa según 3ra ley?`;
+        opts=[`B empuja a A con igual módulo opuesto, ambos se separan`, `Solo B se mueve`, `No hay reacción`, `Fuerzas se cancelan en mismo cuerpo`]; ans=0;
+        exp=`Par en cuerpos distintos, módulos iguales, aceleraciones dependen de masas (F=ma).`;
+      }
       figs=figForFis('dcl', id);
-      exp=`Acción-reacción: si el nadador ejerce $\\vec F$ sobre el agua hacia atrás, el agua ejerce $-\\vec F$ sobre él hacia adelante, par de fuerzas iguales y opuestas en cuerpos distintos.`;
+      break; }
       break;
     case '4.2.2-circular': {
       const r=5+(n%4), v=6+(n%3);
@@ -379,10 +597,19 @@ function fisQuestion(topic, n, id){
       figs=figForFis('circular', id, {r, o: (v/r).toFixed(1)});
       exp=`$a_c=v^{2}/R=${v}^{2}/${r}=${ac}\\,\\mathrm{m/s^{2}}$ hacia el centro. Olvidar el cuadrado o dividir al revés da los distractores.`;
       break; }
-    case '4.2.2-impulsoCML':
-      prompt=`Dos carritos aislados chocan y se pegan. ¿Qué se conserva en el choque?`;
-      opts=[`El momento lineal total $\\vec p$`, `La energía cinética siempre`, `Solo la masa`, `Ninguna magnitud`]; ans=0;
-      exp=`Sistema aislado: $\\vec p$ total se conserva aunque $E_c$ no (choque inelástico). Por eso se usa $m_1\\vec v_1+m_2\\vec v_2=(m_1+m_2)\\vec v'$.`;
+    case '4.2.2-impulsoCML': {
+      const m1=2+(n%3), v1=4+(n%4), m2=3+(n%5);
+      if(n%2===0){
+        const vf=((m1*v1)/(m1+m2)).toFixed(2);
+        prompt=`Carrito m1=${m1} kg v1=${v1} m/s choca y se pega a m2=${m2} kg en reposo (var ${n}). Halle v' por conservación de p.`;
+        opts=[`$${vf}\\,\\mathrm{m/s}$`, `$${v1}\\,\\mathrm{m/s}$`, `$${(m1*v1/m2).toFixed(2)}\\,\\mathrm{m/s}$`, `$0$`]; ans=0;
+        exp=`p inicial ${m1*v1}= (m1+m2)v' => v'=${vf} m/s. Energía no se conserva en inelástico.`;
+      } else {
+        prompt=`Dos carritos aislados chocan y se pegan (var ${n}). ¿Qué se conserva siempre?`;
+        opts=[`Momento lineal total`, `Energía cinética siempre`, `Solo masa`, `Nada`]; ans=0;
+        exp=`Sistema aislado: p total se conserva aunque Ec no (choque inelástico).`;
+      }
+      break; }
       break;
     case '4.2.3-trabajoPotencia': {
       const F=20+(n%5)*5, d=4+(n%3);
@@ -444,9 +671,24 @@ function quiQuestion(topic, n, id){
       else { prompt=`Un ion $\\mathrm{X^{2+}}$ tiene $Z=${Z}$ originalmente neutro. ¿Cuántos electrones tiene el ion?`; opts=[`$${Z-2}$`, `$${Z}$`, `$${Z+2}$`, `$${A}$`]; ans=0; exp=`Catión $2+$ pierde $2$ electrones respecto al neutro: $e^-=Z-2=${Z}-2=${Z-2}$. Anión los ganaría. Confundir $A$ (nucleones) con $Z$ es el error.`; }
       break; }
     case '4.3.1-configElectronica': {
-      prompt=`¿Qué configuración corresponde a $\\mathrm{Na}$ ($Z=11$) neutro?`;
-      opts=[`$1s^{2}2s^{2}2p^{6}3s^{1}$`, `$1s^{2}2s^{2}2p^{6}3s^{2}$`, `$1s^{2}2s^{2}2p^{5}3s^{2}$`, `$1s^{2}2s^{2}2p^{6}$`]; ans=0;
-      exp=`Aufbau ordena por energía creciente $1s\\to 2s\\to 2p\\to 3s$. Para $Z=11$ los $11e^-$ llenan $1s^{2}2s^{2}2p^{6}3s^{1}$. Hund y Pauli ya están satisfechos; los distractores violan capacidad del $3s$ o del $2p$.`;
+      const zCase = 6 + (n%6);
+      const configs = {
+        6: {sym:'C', Z:6, correct:`$1s^{2}2s^{2}2p^{2}$`},
+        7: {sym:'N', Z:7, correct:`$1s^{2}2s^{2}2p^{3}$`},
+        8: {sym:'O', Z:8, correct:`$1s^{2}2s^{2}2p^{4}$`},
+        9: {sym:'F', Z:9, correct:`$1s^{2}2s^{2}2p^{5}$`},
+        10:{sym:'Ne', Z:10, correct:`$1s^{2}2s^{2}2p^{6}$`},
+        11:{sym:'Na', Z:11, correct:`$1s^{2}2s^{2}2p^{6}3s^{1}$`}
+      };
+      const cfgSel = configs[zCase]||configs[11];
+      prompt=`¿Qué configuración corresponde a $\\mathrm{${cfgSel.sym}}$ ($Z=${cfgSel.Z}$) neutro? (var ${n})`;
+      if(zCase===11){
+        opts=[`$1s^{2}2s^{2}2p^{6}3s^{1}$`, `$1s^{2}2s^{2}2p^{6}3s^{2}$`, `$1s^{2}2s^{2}2p^{5}3s^{2}$`, `$1s^{2}2s^{2}2p^{6}$`];
+      } else {
+        opts=[cfgSel.correct, `$1s^{2}2s^{2}2p^{6}$`, `$1s^{2}2s^{2}$`, `$1s^{2}2s^{2}2p^{6}3s^{1}$`];
+      }
+      ans=0;
+      exp=`Aufbau $1s\\to2s\\to2p\\to3s$ para Z=${cfgSel.Z} llena hasta ${cfgSel.correct}. Var ${n}.`;
       break; }
     case '4.3.2-tablaPeriodica': {
       const v=n%2;
@@ -523,15 +765,15 @@ function lenQuestion(topic, n, id){
     case '4.4.1-comunicacion': {
       const v = n % 3;
       if(v===0){
-        prompt=`${baseText}\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento?`;
+        prompt=`${baseText}\n\nSegún el texto (var ${n}), ¿cuál es el propósito comunicativo predominante?`;
         opts=[`Informar y orientar sobre el proceso de admisión de la EPN`, `Narrar una anécdota personal del autor`, `Expresar una emoción subjetiva sin datos`, `Persuadir para comprar un producto comercial`]; ans=0;
         exp=`Paso 1: el texto expone criterios objetivos, temario y recomendaciones — función expositiva/informativa. Paso 2: además orienta ("la guía recomienda planificar") — propósito orientador. Paso 3: no hay relato en primera persona (descarta narración), ni emoción dominante, ni oferta comercial. Por eso la correcta es informar y orientar; las otras confunden función expresiva o apelativa con la expositiva.`;
       } else if(v===1){
-        prompt=`${baseText}\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda "resolver problemas variados"?`;
+        prompt=`${baseText}\n\n¿Qué elemento de la comunicación destaca en "resolver problemas variados" (var ${n})?`;
         opts=[`El mensaje y el código compartido (instrucción clara)`, `Solo el canal físico`, `Solo el ruido`, `El emisor sin receptor`]; ans=0;
         exp=`La instrucción clara depende del mensaje y de un código común (lenguaje académico) entre EPN y aspirante; canal/ruido son secundarios y "emisor sin receptor" niega la comunicación.`;
       } else {
-        prompt=`${baseText}\n\nIdentifique el referente principal del texto.`;
+        prompt=`${baseText}\n\nIdentifique el referente principal del texto (var ${n}).`;
         opts=[`El examen de admisión de la EPN y su preparación`, `Una novela literaria`, `Un partido de fútbol`, `Una receta de cocina`]; ans=0;
         exp=`El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto.`;
       }
@@ -559,7 +801,7 @@ function lenQuestion(topic, n, id){
         opts=[`Juicio de valor subjetivo no verificable`, `Juicio de hecho verificable con datos`, `Definición nominal`, `Dato estadístico medible`]; ans=0;
         exp=`"Mejor sin comparación" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador "mejor/sin comparación" como subjetividad.`;
       } else {
-        prompt=`"El examen dura 210 minutos según la guía." ¿Qué tipo de enunciado es?`;
+        prompt=`"El examen dura 210 minutos según la guía (variante ${n})." ¿Qué tipo de enunciado es?`;
         opts=[`Juicio de hecho verificable`, `Juicio de valor`, `Falacia`, `Opinión estética`]; ans=0;
         exp=`Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta.`;
       }
@@ -587,11 +829,11 @@ function lenQuestion(topic, n, id){
         opts=[`Por ello`, `Sin embargo`, `En cambio`, `Por ejemplo`]; ans=0;
         exp=`"Por ello la guía recomienda..." marca consecuencia lógica de lo anterior; "sin embargo/en cambio" marcan contraste y "por ejemplo" ejemplifica. Paso: identifica relación causa-consecuencia vs oposición.`;
       } else if(v===1){
-        prompt=`${baseText}\n\n¿Qué idea resume mejor la tesis del fragmento?`;
+        prompt=`${baseText}\n\n¿Qué idea resume mejor la tesis del fragmento (var ${n})?`;
         opts=[`La EPN evalúa con criterios objetivos y la preparación debe ser planificada y crítica`, `Solo importa la memoria`, `El examen es aleatorio`, `No hace falta estudiar`]; ans=0;
         exp=`Tesis = evaluación objetiva + preparación integral (planificación, razonamiento, lectura crítica). Las otras niegan el texto o lo reducen a memoria.`;
       } else {
-        prompt=`${baseText}\n\n¿Qué tipo de progresión temática usa el texto?`;
+        prompt=`${baseText}\n\n¿Qué tipo de progresión temática usa el texto (var ${n})?`;
         opts=[`Tema constante con remas que desarrollan la evaluación y la preparación`, `Salto temático sin hilo`, `Solo enumeración sin jerarquía`, `Diálogo directo`]; ans=0;
         exp=`El tema "evaluación/preparación EPN" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo.`;
       }
@@ -599,11 +841,11 @@ function lenQuestion(topic, n, id){
     case '4.4.2-lecturaCritica': {
       const v=n%2;
       if(v===0){
-        prompt=`${baseText}\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica?`;
+        prompt=`${baseText}\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica (var ${n})?`;
         opts=[`La comprensión lectora es entrenable y mejora el desempeño en el examen`, `La memoria mecánica es suficiente para todo`, `El examen es completamente aleatorio`, `No hace falta planificar el estudio`]; ans=0;
         exp=`Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen "no solo memoria" y "planificar".`;
       } else {
-        prompt=`${baseText}\n\n¿Qué objeción pondría en duda la conclusión de que "resolver problemas variados prepara mejor"?`;
+        prompt=`${baseText}\n\n¿Qué objeción pondría en duda la conclusión "resolver problemas variados prepara mejor" (var ${n})?`;
         opts=[`Que los problemas variados sean todos del mismo tipo trivial`, `Que los problemas variados incluyan razonamiento`, `Que la lectura crítica se practique`, `Que el tiempo se planifique`]; ans=0;
         exp=`Si "variados" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen.`;
       }

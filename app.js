@@ -930,11 +930,9 @@ function pickForGuia1000(subject, want, notes, forcedLevel){
   var bank1000 = window.GUIA_BANK_1000 || {mat:[],fis:[],qui:[],len:[]};
   var pool = bank1000[subject] || [];
   if(!pool.length) return [];
-  // Nivel: para MAT respeta cfg.level si existe difícil/experto, para resto intermedio
   var requestedLevel = forcedLevel || cfg.level || 'intermedio';
   var hasLevel = pool.some(function(q){ return q.d===requestedLevel; });
   var targetLevel = hasLevel ? requestedLevel : 'intermedio';
-  // 'todos' mezcla niveles (prioriza unseen del nivel pedido pero puede expandir)
   var levelPool1000;
   if(targetLevel==='todos'){
     levelPool1000 = pool.slice();
@@ -942,97 +940,88 @@ function pickForGuia1000(subject, want, notes, forcedLevel){
     levelPool1000 = pool.filter(function(q){ return q.d===targetLevel; });
     if(!levelPool1000.length) levelPool1000 = pool.filter(function(q){ return q.d==='intermedio'; });
   }
-  // Si por compatibilidad llegara un want mayor que pool, avisamos
   var byTopic = {};
   levelPool1000.forEach(function(q){ var top=(q.topics&&q.topics[0])||'misc'; (byTopic[top]=byTopic[top]||[]).push(q); });
   var topics = shuffle(Object.keys(byTopic));
-  // separa unseen/seen por SEEN1000SET (por id)
   var unseenByTopic={}, seenByTopic={};
   topics.forEach(function(t){
     var arr=byTopic[t]||[];
     unseenByTopic[t]=arr.filter(function(q){ return !SEEN1000SET[subject][q.id]; });
     seenByTopic[t]=arr.filter(function(q){ return SEEN1000SET[subject][q.id]; });
-    // shuffle dentro de cada topic
     unseenByTopic[t]=shuffle(unseenByTopic[t]); seenByTopic[t]=shuffle(seenByTopic[t]);
   });
-  // Evita repetir enunciado EXACTO dentro del mismo intento (banco puede traer colisiones exactas)
-  var promptSeenInResult = {};
-  function isDuplicatePrompt(q){ return !!promptSeenInResult[q.prompt]; }
-  function popUnique(arr){
-    if(!arr.length) return null;
-    // intenta hallar uno no duplicado dentro de este intento
-    for(var tries=0; tries<arr.length; tries++){
-      var idx=Math.floor(Math.random()*arr.length);
-      var cand=arr[idx];
-      if(!isDuplicatePrompt(cand)){
-        arr.splice(idx,1);
-        return cand;
-      }
+  // Hard guarantee: no duplicate id nor prompt within the returned result
+  var promptSeen={}, idSeen={};
+  function isDup(q){ return !!promptSeen[q.prompt] || !!idSeen[q.id]; }
+  function tryPopNonDup(arr){
+    if(!arr || !arr.length) return null;
+    for(var i=0;i<arr.length;i++){
+      if(!isDup(arr[i])) return arr.splice(i,1)[0];
     }
-    // si todos duplican, devuelve null para probar otro topic
     return null;
   }
-  function popRandom(arr){ if(!arr.length) return null; var idx=Math.floor(Math.random()*arr.length); return arr.splice(idx,1)[0]; }
   var result=[];
   var guard=0;
-  while(result.length < want && guard++ < 50){
-    var added=0;
+  while(result.length < want && guard++ < 120){
+    var addedThisRound=0;
     for(var ti=0; ti<topics.length && result.length<want; ti++){
       var t=topics[ti];
-      var pick = popUnique(unseenByTopic[t]) || popUnique(seenByTopic[t]);
-      // si no halló único pero hay remanente, intenta con popRandom permitiendo reintento tras robar de otro topic
-      if(!pick) pick = popRandom(unseenByTopic[t]) || popRandom(seenByTopic[t]);
-      if(pick && isDuplicatePrompt(pick)){
-        // descarta este pick para no repetir enunciado exacto; guárdalo temporalmente y busca otro
-        // si no hay alternativa en este topic, roba del topic con más remanente que no duplique
-        var best=null, bestLen=-1;
-        for(var k2=0;k2<topics.length;k2++){ var tt=topics[k2]; var len=(unseenByTopic[tt].length+seenByTopic[tt].length); if(tt!==t && len>bestLen){best=tt;bestLen=len;} }
-        var alt=null;
-        if(best && bestLen>0) alt = popUnique(unseenByTopic[best]) || popUnique(seenByTopic[best]) || popRandom(unseenByTopic[best]) || popRandom(seenByTopic[best]);
-        if(alt && !isDuplicatePrompt(alt)) pick = alt;
-        else if(alt && isDuplicatePrompt(alt)){
-          // tampoco sirve, descarta ambos y sigue
-          continue;
+      var pick = tryPopNonDup(unseenByTopic[t]) || tryPopNonDup(seenByTopic[t]);
+      if(!pick){
+        var best=null, bestAvail=-1;
+        for(var k=0;k<topics.length;k++){
+          var tt=topics[k]; if(tt===t) continue;
+          var avail=0;
+          for(var a=0;a<unseenByTopic[tt].length;a++) if(!isDup(unseenByTopic[tt][a])) avail++;
+          for(var b=0;b<seenByTopic[tt].length;b++) if(!isDup(seenByTopic[tt][b])) avail++;
+          if(avail>bestAvail){ best=tt; bestAvail=avail; }
         }
-        // si el pick original duplicaba y no hallamos alt, skip este slot
-        if(isDuplicatePrompt(pick)) continue;
+        if(best && bestAvail>0) pick = tryPopNonDup(unseenByTopic[best]) || tryPopNonDup(seenByTopic[best]);
       }
       if(!pick){
-        // roba del topic con más remanente (fallback global)
-        var best2=null, bestLen2=-1;
-        for(var k22=0;k22<topics.length;k22++){ var tt2=topics[k22]; var len2=(unseenByTopic[tt2].length+seenByTopic[tt2].length); if(len2>bestLen2){best2=tt2;bestLen2=len2;} }
-        if(best2 && bestLen2>0) pick = popUnique(unseenByTopic[best2]) || popUnique(seenByTopic[best2]) || popRandom(unseenByTopic[best2]) || popRandom(seenByTopic[best2]);
-        if(pick && isDuplicatePrompt(pick)) continue;
+        var restCollect=[];
+        topics.forEach(function(tt){ restCollect=restCollect.concat(unseenByTopic[tt], seenByTopic[tt]); });
+        var candidates=[];
+        for(var r=0;r<restCollect.length;r++) if(!isDup(restCollect[r])) candidates.push(restCollect[r]);
+        if(candidates.length){
+          var idx=Math.floor(Math.random()*candidates.length);
+          pick=candidates[idx];
+          var removed=false;
+          for(var tt2=0;tt2<topics.length && !removed;tt2++){
+            var bucket=unseenByTopic[topics[tt2]];
+            for(var p=0;p<bucket.length;p++) if(bucket[p]===pick){ bucket.splice(p,1); removed=true; break; }
+            if(removed) break;
+            bucket=seenByTopic[topics[tt2]];
+            for(var p2=0;p2<bucket.length;p2++) if(bucket[p2]===pick){ bucket.splice(p2,1); removed=true; break; }
+          }
+          if(!removed) pick=null;
+        }
       }
-      if(pick){ result.push(pick); promptSeenInResult[pick.prompt]=1; added++; }
+      if(pick && !isDup(pick)){
+        result.push(pick);
+        promptSeen[pick.prompt]=1;
+        idSeen[pick.id]=1;
+        addedThisRound++;
+      }
     }
-    if(added===0) break;
+    if(addedThisRound===0){
+      var anyLeft=0;
+      topics.forEach(function(tt){ for(var i=0;i<unseenByTopic[tt].length;i++) if(!isDup(unseenByTopic[tt][i])) anyLeft++; for(var j=0;j<seenByTopic[tt].length;j++) if(!isDup(seenByTopic[tt][j])) anyLeft++; });
+      if(anyLeft===0) break;
+    }
   }
-  // si faltó por pool pequeño, completa con lo que quede sin respetar cobertura (avisa) — respeta no repetir enunciado exacto
   if(result.length < want){
-    var rest=[];
-    topics.forEach(function(t){ rest=rest.concat(unseenByTopic[t], seenByTopic[t]); });
-    rest=shuffle(rest);
-    // primero intenta rellenar sin duplicar prompt
-    var restUniq = rest.filter(function(q){ return !promptSeenInResult[q.prompt]; });
-    while(result.length<want && restUniq.length) { var q2=restUniq.shift(); result.push(q2); promptSeenInResult[q2.prompt]=1; }
-    // si aún falta y no quedan únicos, avisa (no fuerza duplicado exacto dentro del mismo intento)
-    if(result.length<want){
-      var remaining = want - result.length;
-      notes.push('Banco '+targetLevel+' de '+subject.toUpperCase()+' con '+levelPool1000.length+' preguntas: faltan '+remaining+' únicas tras evitar duplicados exactos en este intento (se entregan '+result.length+'/'+want+').');
-    }
+    var remaining = want - result.length;
+    notes.push('Banco '+targetLevel+' de '+subject.toUpperCase()+' con '+levelPool1000.length+' preguntas: faltan '+remaining+' únicas tras evitar duplicados exactos en este intento (se entregan '+result.length+'/'+want+').');
   }
-  // marca SEEN1000
   result.forEach(function(q){ if(!SEEN1000SET[subject][q.id]){ SEEN1000SET[subject][q.id]=1; SEEN1000[subject].push(q.id); } });
   saveSeen1000();
-  // verifica cobertura
   var distinctTopics = {};
   result.forEach(function(q){ distinctTopics[(q.topics&&q.topics[0])||'misc']=1; });
   var distinctCount=Object.keys(distinctTopics).length;
   var T=topics.length;
   if(want<=T && distinctCount < want) notes.push('Cobertura: se esperaban '+want+' temas distintos y se obtuvieron '+distinctCount+'.');
   result = shuffle(result).slice(0,want);
-  // anti-contigüidad: evita que dos preguntas seguidas sean del mismo topic/template (evita 3 isósceles seguidos)
   function normTpl(q){ return (q.topics&&q.topics[0]||'misc')+'|'+String(q.prompt).replace(/\d+(\.\d+)?/g,'#').replace(/\$[^$]*\$/g,'#').slice(0,60); }
   for(var ac=0; ac<result.length-1; ac++){
     var curNorm = normTpl(result[ac]), nxtNorm = normTpl(result[ac+1]);
@@ -1055,47 +1044,76 @@ function pickForGuia1000(subject, want, notes, forcedLevel){
 function pickForSubject(k, want, notes){
   var subjBank = BANK[k] || [];
   if(!subjBank.length) return [];
-
-  // Primary pool by difficulty
   var primaryPool = cfg.level === 'todos' ? subjBank.slice() : subjBank.filter(function(q){ return q.d === cfg.level; });
-  
-  // 1. Unseen questions from primary level
   var fresh = primaryPool.filter(function(q){ return !SEENSET[k][q.__i]; });
-  
-  if(fresh.length >= want){
-    return pickSpread(fresh, want);
+  var picked=[];
+  var promptSeen={}, idSeen={};
+  function isDupQ(q){ var key = q.q||q.prompt; return !!promptSeen[key] || !!idSeen[q.__s+':'+q.__i]; }
+  function dedupPush(arr){
+    for(var i=0;i<arr.length;i++){
+      var q=arr[i];
+      var key=q.q||q.prompt;
+      var id=q.__s+':'+q.__i;
+      if(!promptSeen[key] && !idSeen[id]){
+        promptSeen[key]=1; idSeen[id]=1;
+        picked.push(q);
+      }
+    }
   }
-
-  // 2. If fresh in primary level is insufficient, expand to unseen questions in adjacent levels (Anti-Overfitting)
-  var picked = pickSpread(fresh, fresh.length);
+  if(fresh.length >= want){
+    var spread = pickSpread(fresh, want);
+    dedupPush(spread);
+    if(picked.length < want){
+      var remaining = want - picked.length;
+      var restPool = fresh.filter(function(q){ return !isDupQ(q); });
+      dedupPush(pickSpread(restPool, remaining));
+    }
+    if(picked.length < want){
+      // try to fill from unseen secondary before returning short
+      var need = want - picked.length;
+      var otherLevels = ['medio', 'facil', 'dificil', 'experto'].filter(function(l){ return l !== cfg.level; });
+      var secondaryPool = [];
+      otherLevels.forEach(function(lvl){
+        subjBank.filter(function(q){ return q.d === lvl && !SEENSET[k][q.__i] && !isDupQ(q); }).forEach(function(q){ secondaryPool.push(q); });
+      });
+      if(secondaryPool.length) dedupPush(pickSpread(secondaryPool, need));
+    }
+    return picked.slice(0, want);
+  }
+  dedupPush(pickSpread(fresh, fresh.length));
   var needed = want - picked.length;
-  
   var otherLevels = ['medio', 'facil', 'dificil', 'experto'].filter(function(l){ return l !== cfg.level; });
   var secondaryPool = [];
   otherLevels.forEach(function(lvl){
-    subjBank.filter(function(q){ return q.d === lvl && !SEENSET[k][q.__i]; }).forEach(function(q){
-      secondaryPool.push(q);
-    });
+    subjBank.filter(function(q){ return q.d === lvl && !SEENSET[k][q.__i]; }).forEach(function(q){ secondaryPool.push(q); });
   });
-
   if(secondaryPool.length > 0 && needed > 0){
-    var secondaryPicked = pickSpread(secondaryPool, needed);
-    picked = picked.concat(secondaryPicked);
-    notes.push('Para evitar la memorización repetitiva (overfitting), se combinaron preguntas no vistas del nivel ' + levelName(cfg.level) + ' con niveles complementarios.');
+    var filteredSec = secondaryPool.filter(function(q){ return !isDupQ(q); });
+    var secondaryPicked = pickSpread(filteredSec.length?filteredSec:secondaryPool, needed);
+    var beforeLen=picked.length;
+    dedupPush(secondaryPicked);
+    needed = want - picked.length;
+    if(picked.length > beforeLen) notes.push('Para evitar la memorizacion repetitiva (overfitting), se combinaron preguntas no vistas del nivel ' + levelName(cfg.level) + ' con niveles complementarios.');
+    // if still need and filtered insufficient, allow any
+    if(needed>0 && secondaryPicked.length < needed){
+      var anySec = secondaryPool.filter(function(q){ return !isDupQ(q); });
+      if(anySec.length) dedupPush(pickSpread(anySec, needed));
+    }
   }
-
-  // 3. If total unseen questions in subject is still less than want, reset subject seen history
   if(picked.length < want){
     subjBank.forEach(function(q){ delete SEENSET[k][q.__i]; });
     SEEN[k] = [];
     saveSeen();
-    notes.push('¡Has completado el banco entero de ' + COURSES[k].short + '! Se reinició el ciclo de preguntas vistas con nuevo orden aleatorio.');
-    
+    notes.push('Has completado el banco entero de ' + COURSES[k].short + '! Se reinicio el ciclo de preguntas vistas con nuevo orden aleatorio.');
     var remainingNeeded = want - picked.length;
-    var recycled = pickSpread(primaryPool.length ? primaryPool : subjBank, remainingNeeded);
-    picked = picked.concat(recycled);
+    var recPool = (primaryPool.length ? primaryPool : subjBank).filter(function(q){ return !isDupQ(q); });
+    if(!recPool.length) recPool = (primaryPool.length ? primaryPool : subjBank).slice();
+    dedupPush(pickSpread(recPool, remainingNeeded));
+    // final fallback: if still short due to dedup, report but do not duplicate
+    if(picked.length < want){
+      notes.push('Banco '+k.toUpperCase()+' con '+subjBank.length+' preguntas: faltan '+(want-picked.length)+' unicas tras evitar duplicados exactos en este intento (se entregan '+picked.length+'/'+want+').');
+    }
   }
-
   return picked.slice(0, want);
 }
 /* ---------- plan del próximo intento ---------- */
@@ -1157,6 +1175,41 @@ function buildAttempt(courseKey){
   } else {
     picked = pickForSubject(courseKey, n, notes);
   }
+
+  // Hard guarantee intra-intento: remove duplicate prompts/ids before mapping to attempt (Aula)
+  (function(){
+    var seenP={}, seenI={}, uniq=[];
+    for(var i=0;i<picked.length;i++){
+      var q=picked[i];
+      var key=(q.q||q.prompt);
+      var id=(q.__s!=null? q.__s+':'+q.__i : q.id||key);
+      if(!seenP[key] && !seenI[id]){ seenP[key]=1; seenI[id]=1; uniq.push(q); }
+    }
+    if(uniq.length < picked.length){
+      var need = n - uniq.length;
+      // collect remaining from bank to fill without duplicates
+      var pool = (BANK[S.course]||BANK['mat']||[]).concat([]);
+      // also consider plan? already handled
+      var candPool = pool.filter(function(q){ var k=(q.q||q.prompt); var id=(q.__s+':'+q.__i); return !seenP[k] && !seenI[id]; });
+      if(candPool.length){
+        var extra = pickSpread(candPool, need);
+        for(var e=0;e<extra.length;e++){
+          var q2=extra[e];
+          var k2=(q2.q||q2.prompt); var id2=(q2.__s+':'+q2.__i);
+          if(!seenP[k2] && !seenI[id2]){ seenP[k2]=1; seenI[id2]=1; uniq.push(q2); }
+        }
+      }
+      picked = uniq;
+      if(picked.length < n){
+        // keep short but do not duplicate
+        S.toast = (S.toast? S.toast+' ' : '') + 'Banco '+S.course.toUpperCase()+' con pocos prompts unicos: se entregan '+picked.length+'/'+n+' sin repetir enunciado exacto.';
+      } else {
+        picked = uniq;
+      }
+    } else {
+      picked = uniq;
+    }
+  })();
   picked = (cfg.shuffleQuestions? shuffle(picked) : picked).slice(0,n);
   var qs = picked.map(function(q){
     var order = q.o.map(function(_,ix){return ix;});
@@ -1233,6 +1286,21 @@ function buildGuia1000Attempt(courseKey){
       }
     })();
   }
+
+  // Final intra-intento guard for Guia1000: ensure qs have unique prompt/id (no duplicate exact statement)
+  (function(){
+    var seenP={}, seenI={}, uniq=[];
+    for(var i=0;i<qs.length;i++){
+      var q=qs[i];
+      var key=q.src.q;
+      var id=q.src.id;
+      if(!seenP[key] && !seenI[id]){ seenP[key]=1; seenI[id]=1; uniq.push(q); }
+    }
+    if(uniq.length < qs.length){
+      S.toast = (S.toast? S.toast+' ' : '') + 'Intento Guia sin duplicados: se entregan '+uniq.length+'/'+qs.length+' preguntas unicas.';
+      qs = uniq;
+    }
+  })();
   return { course: courseKey, level: 'intermedio', qs: qs, ans: qs.map(function(){return null;}), flags: qs.map(function(){return false;}), cur:0, start:new Date(), end:null, finished:false, limitMs: minutesFor(courseKey)*60000, historic:false, isGuia1000:true };
 }
 function attemptFromRecord(r){

@@ -36,46 +36,68 @@ export function figTriangulo({ a=5, b=4, c=6, labels={A:'A',B:'B',C:'C'}, seed='
 export function figTrianguloRectangulo({ ac=3, bc=4, labels={A:'A',B:'B',C:'C'}, seed='' }={}){
   // Rectángulo en C: AC ⟂ BC, C arriba, A abajo-izq, B derecha
   // AC vertical-ish, BC horizontal-ish para que el ángulo recto se vea claro
-  const pC='170,80', pA='110,220', pB='290,120';
-  const midAC=`${(110+170)/2 -6},${(220+80)/2 +4}`;
-  const midBC=`${(290+170)/2 +4},${(120+80)/2 -6}`;
+  const Ax=110,Ay=220, Cx=170,Cy=80, Bx=290,By=120;
+  const midACx=(Ax+Cx)/2, midACy=(Ay+Cy)/2;
+  const midBCx=(Bx+Cx)/2, midBCy=(By+Cy)/2;
+  // ángulo real de AC para rotar etiqueta paralela al lado (SVG y hacia abajo, atan2(dy,dx))
+  const angAC = Math.atan2(Cy-Ay, Cx-Ax)*180/Math.PI;
+  // offset perpendicular para que texto no pise el trazo
+  const lenAC=Math.hypot(Cx-Ax,Cy-Ay), nxAC= lenAC? -(Cy-Ay)/lenAC : 0, nyAC= lenAC? (Cx-Ax)/lenAC : 0;
+  const offAC=10;
+  const txACx=midACx + nxAC*offAC, txACy=midACy + nyAC*offAC;
+  const lenBC=Math.hypot(Cx-Bx,Cy-By), nxBC= lenBC? -(Cy-By)/lenBC : 0, nyBC= lenBC? (Cx-Bx)/lenBC : 0;
+  const txBCx=midBCx + nxBC*8, txBCy=midBCy + nyBC*8;
   const inner = `
     <rect x="0" y="0" width="400" height="300" rx="10" fill="#fff" stroke="#e3e8ee"/>
-    <polygon points="${pA} ${pB} ${pC}" fill="#eaf2fb" stroke="#0e2a47" stroke-width="2.2" stroke-linejoin="round"/>
-    <!-- marca ángulo recto en C -->
-    <path d="M 170 100 L 190 100 L 190 80" fill="none" stroke="#b3261e" stroke-width="2.2"/>
-    <text x="196" y="96" font-size="10" font-family="sans-serif" fill="#b3261e">∟</text>
+    <polygon points="${Ax},${Ay} ${Bx},${By} ${Cx},${Cy}" fill="#eaf2fb" stroke="#0e2a47" stroke-width="2.2" stroke-linejoin="round"/>
+    <!-- marca ángulo recto en C (única, sin texto duplicado) -->
+    <path d="M ${Cx} ${(Cy+20).toFixed(1)} L ${(Cx+20).toFixed(1)} ${(Cy+20).toFixed(1)} L ${(Cx+20).toFixed(1)} ${Cy}" fill="none" stroke="#b3261e" stroke-width="2.2" stroke-linecap="square" stroke-linejoin="miter"/>
     <text x="102" y="238" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.A||'A')}</text>
     <text x="298" y="136" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.B||'B')}</text>
-    <text x="170" y="68" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.C||'C')}</text>
-    <text x="${midAC.split(',')[0]}" y="${midAC.split(',')[1]}" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#0e2a47" transform="rotate(-68 ${midAC})">AC=${ac}</text>
-    <text x="${midBC.split(',')[0]}" y="${midBC.split(',')[1]}" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#0e2a47">BC=${bc}</text>
+    <text x="${Cx}" y="${Cy-12}" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.C||'C')}</text>
+    <text x="${txACx.toFixed(1)}" y="${txACy.toFixed(1)}" text-anchor="middle" dominant-baseline="middle" font-size="11" font-family="sans-serif" fill="#0e2a47" transform="rotate(${angAC.toFixed(1)} ${txACx.toFixed(1)} ${txACy.toFixed(1)})">AC=${ac}</text>
+    <text x="${txBCx.toFixed(1)}" y="${txBCy.toFixed(1)}" text-anchor="middle" dominant-baseline="middle" font-size="11" font-family="sans-serif" fill="#0e2a47">BC=${bc}</text>
     <text x="200" y="288" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#64748b">recto en C</text>
   `;
   return svgWrap(inner);
 }
 export function figTrianguloIsosceles({ ab_ac='AB=AC', angleB=50, labels={A:'A',B:'B',C:'C'} }={}){
-  const pA='110,220', pB='290,220', pC='200,70';
+  // Isósceles en A: AB=AC, A es vértice superior, BC base -> figura simétrica a calidad libro
+  const Ax=200,Ay=70, Bx=110,By=220, Cx=290,Cy=220;
+  // helpers para marca simétrica perpendicular al lado
+  function tick(x1,y1,x2,y2){
+    const mx=(x1+x2)/2, my=(y1+y2)/2;
+    const dx=x2-x1, dy=y2-y1, len=Math.hypot(dx,dy)||1;
+    const nx=-dy/len, ny=dx/len;
+    const h=7; // semi-longitud del trazo
+    const xA=mx+nx*h, yA=my+ny*h, xB=mx-nx*h, yB=my-ny*h;
+    return `<line x1="${xA.toFixed(1)}" y1="${yA.toFixed(1)}" x2="${xB.toFixed(1)}" y2="${yB.toFixed(1)}" stroke="#b3261e" stroke-width="2" stroke-linecap="round"/>`;
+  }
   const inner = `
     <rect x="0" y="0" width="400" height="300" rx="10" fill="#fff" stroke="#e3e8ee"/>
-    <polygon points="${pA} ${pB} ${pC}" fill="#eaf2fb" stroke="#0e2a47" stroke-width="2.2" stroke-linejoin="round"/>
-    <!-- marcas de igualdad AB = AC -->
-    <line x1="150" y1="150" x2="160" y2="142" stroke="#b3261e" stroke-width="2"/>
-    <line x1="240" y1="150" x2="250" y2="142" stroke="#b3261e" stroke-width="2"/>
-    <text x="102" y="238" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.A||'A')}</text>
-    <text x="298" y="238" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.B||'B')}</text>
-    <text x="200" y="58" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.C||'C')}</text>
+    <polygon points="${Ax},${Ay} ${Bx},${By} ${Cx},${Cy}" fill="#eaf2fb" stroke="#0e2a47" stroke-width="2.2" stroke-linejoin="round"/>
+    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->
+    ${tick(Ax,Ay,Bx,By)}
+    ${tick(Ax,Ay,Cx,Cy)}
+    <text x="${Ax}" y="${Ay-12}" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.A||'A')}</text>
+    <text x="${Bx-8}" y="${By+14}" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.B||'B')}</text>
+    <text x="${Cx+8}" y="${Cy+14}" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.C||'C')}</text>
     <text x="200" y="248" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#5b6b7a">${esc(ab_ac)}</text>
-    <text x="132" y="214" font-size="10" font-family="sans-serif" fill="#b3261e">∠B=${angleB}°</text>
+    <text x="${Bx+16}" y="${By-10}" font-size="10" font-family="sans-serif" fill="#b3261e">∠B=${angleB}°</text>
   `;
   return svgWrap(inner);
 }
 export function figTrianguloLeyCosenos({ ab=5, ac=7, angleA=60, labels={A:'A',B:'B',C:'C'} }={}){
-  // A en origen con ángulo 60° entre AB (horizontal) y AC (60°)
+  // A en origen con ángulo angleA entre AB (horizontal) y AC
   const Ax=110,Ay=220, Bx=280,By=220;
   const rad=angleA*Math.PI/180;
   const lenAC=110; // visual
   const Cx=Ax+lenAC*Math.cos(rad), Cy=Ay-lenAC*Math.sin(rad);
+  // ángulo real geométrico de AC (SVG y hacia abajo) para rotar etiqueta paralela sin regresión
+  const angAC = Math.atan2(Cy-Ay, Cx-Ax)*180/Math.PI;
+  const midACx=(Ax+Cx)/2, midACy=(Ay+Cy)/2;
+  const lenACg=Math.hypot(Cx-Ax,Cy-Ay)||1, nxAC=-(Cy-Ay)/lenACg, nyAC=(Cx-Ax)/lenACg;
+  const txACx=midACx + nxAC*10, txACy=midACy + nyAC*10;
   const inner = `
     <rect x="0" y="0" width="400" height="300" rx="10" fill="#fff" stroke="#e3e8ee"/>
     <polygon points="${Ax},${Ay} ${Bx},${By} ${Cx.toFixed(1)},${Cy.toFixed(1)}" fill="#eaf2fb" stroke="#0e2a47" stroke-width="2.2" stroke-linejoin="round"/>
@@ -85,7 +107,7 @@ export function figTrianguloLeyCosenos({ ab=5, ac=7, angleA=60, labels={A:'A',B:
     <text x="${Bx+8}" y="${By+6}" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.B||'B')}</text>
     <text x="${Cx.toFixed(1)}" y="${(Cy-10).toFixed(1)}" text-anchor="middle" font-size="13" font-family="sans-serif" fill="#0e2a47">${esc(labels.C||'C')}</text>
     <text x="${(Ax+Bx)/2}" y="${Ay+16}" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#0e2a47">AB=${ab}</text>
-    <text x="${(Ax+Cx)/2 -8}" y="${(Ay+Cy)/2}" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#0e2a47" transform="rotate(-30 ${(Ax+Cx)/2} ${(Ay+Cy)/2})">AC=${ac}</text>
+    <text x="${txACx.toFixed(1)}" y="${txACy.toFixed(1)}" text-anchor="middle" dominant-baseline="middle" font-size="11" font-family="sans-serif" fill="#0e2a47" transform="rotate(${angAC.toFixed(1)} ${txACx.toFixed(1)} ${txACy.toFixed(1)})">AC=${ac}</text>
     <text x="200" y="288" text-anchor="middle" font-size="11" font-family="sans-serif" fill="#64748b">BC = ? (ley de cosenos)</text>
   `;
   return svgWrap(inner);
@@ -116,24 +138,30 @@ export function figPlanoRecta({ ax=2, ay=2, bx=6, by=8, labels={A:'A',B:'B'} }={
 }
 export function figParalelas({ angulo=42, labels={} }={}){
   const a = angulo;
-  // dos horizontales y una transversal
+  // dos horizontales y una transversal — anclado a intersecciones exactas para ∠1..∠8 a escuadra
+  const y1=110, y2=210, x1=40, x2=360;
+  const tx1=110, ty1=30, tx2=270, ty2=270;
+  // intersecciones matemáticas t ∩ l1 y t ∩ l2
+  const ix1 = tx1 + (y1 - ty1)*(tx2 - tx1)/(ty2 - ty1);
+  const ix2 = tx1 + (y2 - ty1)*(tx2 - tx1)/(ty2 - ty1);
+  const dx = 16, dy = 11; // offsets desde intersección para cada cuadrante
   const inner = `
     <rect x="0" y="0" width="400" height="300" rx="10" fill="#fff" stroke="#e3e8ee"/>
-    <line x1="40" y1="110" x2="360" y2="110" stroke="#0e2a47" stroke-width="2.2"/>
-    <line x1="40" y1="210" x2="360" y2="210" stroke="#0e2a47" stroke-width="2.2"/>
-    <line x1="110" y1="30" x2="270" y2="270" stroke="#c45c26" stroke-width="2.2"/>
-    <text x="30" y="114" font-size="11" font-family="sans-serif" fill="#5b6b7a">l₁</text>
-    <text x="30" y="214" font-size="11" font-family="sans-serif" fill="#5b6b7a">l₂</text>
-    <text x="275" y="265" font-size="11" font-family="sans-serif" fill="#c45c26">t · ${a}°</text>
-    <!-- 8 ángulos numerados -->
-    <text x="150" y="105" font-size="10" font-family="sans-serif" fill="#0e2a47">∠1</text>
-    <text x="175" y="105" font-size="10" font-family="sans-serif" fill="#0e2a47">∠2</text>
-    <text x="150" y="130" font-size="10" font-family="sans-serif" fill="#0e2a47">∠3</text>
-    <text x="175" y="130" font-size="10" font-family="sans-serif" fill="#0e2a47">∠4</text>
-    <text x="190" y="205" font-size="10" font-family="sans-serif" fill="#0e2a47">∠5</text>
-    <text x="215" y="205" font-size="10" font-family="sans-serif" fill="#0e2a47">∠6</text>
-    <text x="190" y="230" font-size="10" font-family="sans-serif" fill="#0e2a47">∠7</text>
-    <text x="215" y="230" font-size="10" font-family="sans-serif" fill="#0e2a47">∠8</text>
+    <line x1="${x1}" y1="${y1}" x2="${x2}" y2="${y1}" stroke="#0e2a47" stroke-width="2.2"/>
+    <line x1="${x1}" y1="${y2}" x2="${x2}" y2="${y2}" stroke="#0e2a47" stroke-width="2.2"/>
+    <line x1="${tx1}" y1="${ty1}" x2="${tx2}" y2="${ty2}" stroke="#c45c26" stroke-width="2.2"/>
+    <text x="30" y="${y1+4}" font-size="11" font-family="sans-serif" fill="#5b6b7a">l₁</text>
+    <text x="30" y="${y2+4}" font-size="11" font-family="sans-serif" fill="#5b6b7a">l₂</text>
+    <text x="${tx2+5}" y="${ty2-5}" font-size="11" font-family="sans-serif" fill="#c45c26">t · ${a}°</text>
+    <!-- 8 ángulos numerados — relativos a ix1/ix2 para escuadra perfecta -->
+    <text x="${(ix1 - dx).toFixed(1)}" y="${(y1 - dy).toFixed(1)}" font-size="10" font-family="sans-serif" fill="#0e2a47" text-anchor="middle" dominant-baseline="middle">∠1</text>
+    <text x="${(ix1 + dx).toFixed(1)}" y="${(y1 - dy).toFixed(1)}" font-size="10" font-family="sans-serif" fill="#0e2a47" text-anchor="middle" dominant-baseline="middle">∠2</text>
+    <text x="${(ix1 - dx).toFixed(1)}" y="${(y1 + dy).toFixed(1)}" font-size="10" font-family="sans-serif" fill="#0e2a47" text-anchor="middle" dominant-baseline="middle">∠3</text>
+    <text x="${(ix1 + dx).toFixed(1)}" y="${(y1 + dy).toFixed(1)}" font-size="10" font-family="sans-serif" fill="#0e2a47" text-anchor="middle" dominant-baseline="middle">∠4</text>
+    <text x="${(ix2 - dx).toFixed(1)}" y="${(y2 - dy).toFixed(1)}" font-size="10" font-family="sans-serif" fill="#0e2a47" text-anchor="middle" dominant-baseline="middle">∠5</text>
+    <text x="${(ix2 + dx).toFixed(1)}" y="${(y2 - dy).toFixed(1)}" font-size="10" font-family="sans-serif" fill="#0e2a47" text-anchor="middle" dominant-baseline="middle">∠6</text>
+    <text x="${(ix2 - dx).toFixed(1)}" y="${(y2 + dy).toFixed(1)}" font-size="10" font-family="sans-serif" fill="#0e2a47" text-anchor="middle" dominant-baseline="middle">∠7</text>
+    <text x="${(ix2 + dx).toFixed(1)}" y="${(y2 + dy).toFixed(1)}" font-size="10" font-family="sans-serif" fill="#0e2a47" text-anchor="middle" dominant-baseline="middle">∠8</text>
   `;
   return svgWrap(inner);
 }

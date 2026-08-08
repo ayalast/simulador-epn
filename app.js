@@ -879,7 +879,25 @@ function pickForGuia1000(subject, want, notes){
   var distinctCount=Object.keys(distinctTopics).length;
   var T=topics.length;
   if(want<=T && distinctCount < want) notes.push('Cobertura: se esperaban '+want+' temas distintos y se obtuvieron '+distinctCount+'.');
-  return shuffle(result).slice(0,want);
+  result = shuffle(result).slice(0,want);
+  // anti-contigüidad: evita que dos preguntas seguidas sean del mismo topic/template (evita 3 isósceles seguidos)
+  function normTpl(q){ return (q.topics&&q.topics[0]||'misc')+'|'+String(q.prompt).replace(/\d+(\.\d+)?/g,'#').replace(/\$[^$]*\$/g,'#').slice(0,60); }
+  for(var ac=0; ac<result.length-1; ac++){
+    var curNorm = normTpl(result[ac]), nxtNorm = normTpl(result[ac+1]);
+    var curTop = result[ac].topics&&result[ac].topics[0], nxtTop = result[ac+1].topics&&result[ac+1].topics[0];
+    if(curNorm===nxtNorm || curTop===nxtTop){
+      var swap=-1;
+      for(var j=ac+2;j<result.length;j++){
+        var jNorm=normTpl(result[j]), jTop=result[j].topics&&result[j].topics[0];
+        if(jNorm!==curNorm && jTop!==curTop){ swap=j; break; }
+      }
+      if(swap===-1){
+        for(var j2=ac+2;j2<result.length;j2++){ if(normTpl(result[j2])!==curNorm){ swap=j2; break; } }
+      }
+      if(swap!==-1){ var tmp=result[ac+1]; result[ac+1]=result[swap]; result[swap]=tmp; }
+    }
+  }
+  return result;
 }
 
 function pickForSubject(k, want, notes){
@@ -1046,7 +1064,23 @@ function buildGuia1000Attempt(courseKey){
       subj: q.s
     };
   });
-  if(cfg.shuffleQuestions) qs = shuffle(qs);
+  if(cfg.shuffleQuestions){
+    qs = shuffle(qs);
+    // anti-contigüidad final (clave para MAT y FQL intercalado): evita mismo topic/template contiguo tras shuffle
+    (function(){
+      function nT(q){ return (q.src.topics&&q.src.topics[0]||'misc')+'|'+String(q.src.q).replace(/\d+(\.\d+)?/g,'#').slice(0,64); }
+      for(var k=0;k<qs.length-1;k++){
+        var aT=qs[k].src.topics&&qs[k].src.topics[0], bT=qs[k+1].src.topics&&qs[k+1].src.topics[0];
+        var aN=nT(qs[k]), bN=nT(qs[k+1]);
+        if(aT===bT || aN===bN){
+          var sw=-1;
+          for(var j=k+2;j<qs.length;j++){ var jT=qs[j].src.topics&&qs[j].src.topics[0]; var jN=nT(qs[j]); if(jT!==aT && jN!==aN){ sw=j; break; } }
+          if(sw===-1) for(var j2=k+2;j2<qs.length;j2++) if(nT(qs[j2])!==aN){ sw=j2; break; }
+          if(sw!==-1){ var tmp=qs[k+1]; qs[k+1]=qs[sw]; qs[sw]=tmp; }
+        }
+      }
+    })();
+  }
   return { course: courseKey, level: 'intermedio', qs: qs, ans: qs.map(function(){return null;}), flags: qs.map(function(){return false;}), cur:0, start:new Date(), end:null, finished:false, limitMs: minutesFor(courseKey)*60000, historic:false, isGuia1000:true };
 }
 function attemptFromRecord(r){
@@ -1122,6 +1156,10 @@ function drawer(active){
       '</ul>'+
       '<h6>\u25be Simuladores (1000 banco)</h6><ul>'+guiaSimLinks+'</ul>'+
       '<div style="padding:8px 16px; font-size:11px; color:#6b7783;">Vistas: '+seenTot+'/1000 \u00b7 Nivel intermedio</div>'+
+      '<h6>\u25be Progreso</h6><ul>'+
+      '<li><a class="'+(active==='stats'?'active':'')+'" data-act="stats">Estadísticas</a></li>'+
+      '<li><a class="'+(active==='history'?'active':'')+'" data-act="history">Historial de intentos</a></li>'+
+      '</ul>'+
       '<h6>\u25be Navegaci\u00f3n</h6><ul>'+
       '<li><a data-act="exitguia">\u2190 Volver al aula Barreno</a></li>'+
       '</ul></div>';
@@ -2231,11 +2269,11 @@ function viewGuiaHome(){
       var seenTot = SEEN1000.mat.length + SEEN1000.fis.length + SEEN1000.qui.length + SEEN1000.len.length;
       var pct1000 = tot1000 ? Math.round(seenTot/tot1000*100) : 0;
       var sims = [
-        {act:'start-guia-mat30', title:'Matemáticas — Día 1', sub:'30 preg · 90 min · 14 temas 4.1 · Filtro real', color:'#d62828', icon:'🧮'},
-        {act:'start-guia-fql120', title:'Combinado F-Q-L — Día 2', sub:'60 preg (20+20+20) · 120 min · Intercalado', color:'#0e2a47', icon:'🧪'},
-        {act:'start-guia-fis', title:'Física individual', sub:'20 preg · 40 min · 15 temas 4.2', color:'#2a9d8f', icon:'⚙️'},
-        {act:'start-guia-qui', title:'Química individual', sub:'20 preg · 40 min · 16 temas 4.3', color:'#6a994e', icon:'⚗️'},
-        {act:'start-guia-len', title:'Lenguaje individual', sub:'20 preg · 40 min · 9 temas 4.4', color:'#e9c46a', icon:'📝'}
+        {course:'guia_mat30', title:'Matemáticas — Día 1', sub:'30 preg · 90 min · 14 temas 4.1 · Filtro real', color:'#d62828', icon:'🧮'},
+        {course:'guia_fql120', title:'Combinado F-Q-L — Día 2', sub:'60 preg (20+20+20) · 120 min · Intercalado', color:'#0e2a47', icon:'🧪'},
+        {course:'guia_fis', title:'Física individual', sub:'20 preg · 40 min · 15 temas 4.2', color:'#2a9d8f', icon:'⚙️'},
+        {course:'guia_qui', title:'Química individual', sub:'20 preg · 40 min · 16 temas 4.3', color:'#6a994e', icon:'⚗️'},
+        {course:'guia_len', title:'Lenguaje individual', sub:'20 preg · 40 min · 9 temas 4.4', color:'#e9c46a', icon:'📝'}
       ];
       var avail = tot1000>=1000;
       var banner1000 = '<div style="background:#fff; border:1.5px solid #0e2a47; border-radius:12px; padding:18px 22px; margin:0 0 26px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">'
@@ -2253,7 +2291,7 @@ function viewGuiaHome(){
         return '<div class="card" style="border-top:4px solid '+s.color+'">'
           +'<div class="cimg" style="background:'+s.color+'">'+s.icon+'</div>'
           +'<div class="cbody"><h3>'+s.title+'</h3><p>'+s.sub+'</p>'
-          +'<div class="cbtns"><button class="btn" data-act="'+s.act+'" style="background:'+s.color+'; border-color:'+s.color+';">▶ Iniciar</button></div></div></div>';
+          +'<div class="cbtns"><button class="btn" data-act="course" data-c="'+s.course+'" style="background:'+s.color+'; border-color:'+s.color+';">▶ Ver simulador</button> <button class="btn sec" data-act="course" data-c="'+s.course+'">Configurar</button></div></div></div>';
       }).join('');
       return banner1000 + '<div class="cards" style="margin-bottom:26px">'+cards+'</div>';
     })()+
@@ -2535,15 +2573,20 @@ function viewCourse(){
     (k==='mix'? '<div class="infobox">El examen real dura 210 minutos: 90 de Matemática (componente filtro) y 120 para Física, Química y Lenguaje. Puedes reproducir esos tiempos desde la configuración.</div>':'')+
     (isG1000? '<div class="infobox" style="border-left:4px solid #0e2a47;"><b>Cobertura garantizada:</b> cada intento cubre el máximo de temas distintos antes de repetir tema. Si pides menos preguntas que temas, todas serán de temas distintos; si pides más, se hace una ronda completa por todos los temas antes de repetir. Ajusta N y minutos en <b>Configuración → Simuladores Guía EPN</b>.</div>':'')+
     (isG1000? '<div style="margin:10px 0; display:flex; gap:8px; flex-wrap:wrap;"><button class="btn sec" data-act="cfg">⚙ Ajustar N y tiempo de este simulador</button><span style="font-size:12px; color:#64748b; align-self:center;">Cada simulador recuerda su propio N/minutos.</span></div>':'')+
-    planBox(k)+
+    ((GUIA_COURSES.indexOf(k)>=0) ? (function(){
+      var total = 1000, seenTot = SEEN1000.mat.length+SEEN1000.fis.length+SEEN1000.qui.length+SEEN1000.len.length;
+      var preview = (function(){ var arr=[]; var bank1000=window.GUIA_BANK_1000||{mat:[],fis:[],qui:[],len:[]}; if(k==='guia_mat30') arr=bank1000.mat||[]; else if(k==='guia_fql120') arr=(bank1000.fis||[]).concat(bank1000.qui||[]).concat(bank1000.len||[]); else { var s=({guia_fis:'fis',guia_qui:'qui',guia_len:'len'})[k]; arr=s? (bank1000[s]||[]):[]; } var n=Math.min(3,arr.length); var out=[]; for(var i=0;i<n;i++) out.push('<li style="font-size:12px;color:#334155;">'+escH(String(arr[i].prompt).slice(0,110))+'… <span class="chip light">'+escH(arr[i].t)+'</span></li>'); return out.length? '<ul style="margin:6px 0 0;padding-left:18px;">'+out.join('')+'</ul><div class="hint">+ '+(arr.length-n)+' preguntas más en el banco · vista previa solo lectura (editor igual que aula: inspeccionar/cambiar/quitar antes de iniciar)</div>' : '<div class="hint">Banco listo — '+arr.length+' preguntas.</div>'; })();
+      return '<div class="planbox" style="border-left:4px solid #0e2a47;"><b>Vista previa (solo lectura)</b> — '+preview+'<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;"><button class="btn sec mini" data-act="openadmin" style="border-color:#7b2cbf;color:#7b2cbf;">🔑 Editor (inspeccionar / cambiar / quitar)</button><span class="hint" style="align-self:center;">Corrección previa idéntica a la versión normal.</span></div></div>';
+    })() : planBox(k))+
     '<label class="switch" style="margin:14px 0 10px;display:flex;align-items:center;gap:10px;cursor:pointer;background:rgba(217,130,43,0.08);padding:10px 14px;border-radius:8px;border:1px solid rgba(217,130,43,0.25)">'+
     '<input type="checkbox" id="chkNoSave" style="width:18px;height:18px;cursor:pointer" '+(S.noSave?'checked':'')+'>'+
     '<span style="font-weight:600;color:#d9822b">⚙ Modo de prueba: No guardar este intento en el historial</span></label>'+
     '<div class="hint" style="margin:-4px 0 14px">Ideal para testeo o prácticas rápidas. Si está activado, la nota no afectará tus estadísticas ni el banco de preguntas vistas.</div>'+
     '<div style="margin:18px 0 10px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn" data-act="start">Intentar resolver el cuestionario ahora</button>'+
     '<button class="btn sec" data-act="cfg">⚙ Configuración</button>'+
-    '<button class="btn sec" data-act="openadmin" style="border-color:#7b2cbf;color:#7b2cbf;font-weight:600">🔑 Editor de preguntas (Admin)</button>'+
+    (GUIA_COURSES.indexOf(k)>=0? '<button class="btn sec" data-act="openadmin" style="border-color:#7b2cbf;color:#7b2cbf;font-weight:600">🔑 Editor (solo lectura) — Inspeccionar</button>' : '<button class="btn sec" data-act="openadmin" style="border-color:#7b2cbf;color:#7b2cbf;font-weight:600">🔑 Editor de preguntas (Admin)</button>')+
     (hs.length? '<button class="btn sec" data-act="histtabgo" data-t="'+k+'">Historial de esta materia</button>':'')+'</div>'+
+    (GUIA_COURSES.indexOf(k)>=0? '<div class="hint" style="margin-top:8px;"><button class="btn ghost" data-act="reset-guia-mat" style="color:#b3261e;border-color:#b3261e;">↺ Reiniciar intentos de Matemática (primer intento)</button> <span style="font-size:12px;color:#64748b;">Solo Guía MAT · pide confirmación · no toca el aula.</span></div>' : '')+'</div>'+
     '</div>'+actnav()+'</div></div>'+drawerBtn()+sitefooter();
 }
 
@@ -3200,7 +3243,18 @@ case 'start-guia-69':
       render(); break;
     case 'resetseen':
       SUBJ.forEach(function(k){ SEEN[k]=[]; SEENSET[k]={}; }); saveSeen();
-      S.modal = null; S.toast = 'Se reinici\u00f3 el registro de preguntas vistas: todo el banco vuelve a estar disponible.';
+      S.modal = null; S.toast = 'Se reinició el registro de preguntas vistas: todo el banco vuelve a estar disponible.';
+      render(); break;
+    case 'reset-guia-mat':
+      if(!confirm('¿Reiniciar Guía MAT a primer intento?\n\nSe borrarán:\n• Vistas de MAT (SEEN1000.mat)\n• Intentos guardados de Matemáticas/GUIA_MAT30\nNo se toca el aula Barreno ni FIS/QUI/LEN de Guía.')) break;
+      SEEN1000.mat=[]; SEEN1000SET.mat={}; saveSeen1000();
+      // purga HIST solo MAT/guía_mat30 (marca deleted)
+      HIST.forEach(function(r){ if(r.course==='mat' || r.course==='guia_mat30') r.deleted=true; }); saveHist();
+      // opcional: también limpia SEEN legacy mat para espejo limpio
+      SEEN.mat=[]; SEENSET.mat={}; saveSeen();
+      // nube
+      try{ pushCloudState(); }catch(e){}
+      S.toast='Guía MAT reiniciada: ya estás en primer intento. ¡Listo para empezar de cero!';
       render(); break;
     case 'clearhist':
       HIST.forEach(function(r){ r.deleted = true; }); saveHist(); S.modal = null;

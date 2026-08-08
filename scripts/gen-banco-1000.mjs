@@ -171,12 +171,12 @@ function matQuestion(topic, n, id){
       exp = `Aproxima: $\\sqrt{${a*a+1}}\\approx ${Math.sqrt(a*a+1).toFixed(2)}$, $\\frac{${a*b}}{${b}}=${a}$, $\\pi\\approx 3.14$. El menor es ${correctLabel}. Comparar sin aproximar lleva a error.`;
       break; }
     case '4.1.1-exprAlg': {
-      prompt = `Si $P(x)=${a}x^{2} - ${b}x + ${c}$, calcule $P(${-b}$)$.`;
+      prompt = `Si $P(x)=${a}x^{2} - ${b}x + ${c}$, calcule $P(${-b})$.`;
       const xv = -b;
       const pv = a*xv*xv - b*xv + c;
       opts = [`$${pv}$`, `$${pv+ b}$`, `$${pv - a}$`, `$${-pv}$`];
       ans=0;
-      exp = `Reemplazo directo: $P(${-b}$)=${a}(${xv})^{2}-${b}(${xv})+${c}=${a*xv*xv} ${-b*xv>=0?'+':''}${-b*xv}+${c}=${pv}$. Olvidar el signo de $x$ o el cuadrado genera los distractores.`;
+      exp = `Reemplazo directo: $P(${-b})=${a}(${xv})^{2}-${b}(${xv})+${c}=${a*xv*xv} ${-b*xv>=0?'+':''}${-b*xv}+${c}=${pv}$. Olvidar el signo de $x$ o el cuadrado genera los distractores.`;
       break; }
     case '4.1.2-ec1': {
       const sol = 3 + (n%5);
@@ -194,7 +194,7 @@ function matQuestion(topic, n, id){
     case '4.1.2-sistLin': {
       const x0=2+(n%5), y0=1+(n%7);
       const eq1 = 2*x0 + y0, eq2 = x0 + y0;
-      prompt = `Resuelva $\\begin{cases} 2x+y=${eq1} \\\\ x+y=${eq2} \\end{cases}$ y halle $x$.`;
+      prompt = `Resuelva el sistema $2x+y=${eq1}$ y $x+y=${eq2}$ y halle $x$.`;
       // ensure 4 distinct
       let d1=y0, d2=x0+1, d3=x0-1;
       if(d1===x0) d1=x0+2;

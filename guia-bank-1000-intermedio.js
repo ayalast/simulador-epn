@@ -1241,7 +1241,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=2x^{2} - 6x + 6$, calcule $P(-6$)$.",
+      "prompt": "Si $P(x)=2x^{2} - 6x + 6$, calcule $P(-6)$.",
       "opts": [
         "$114$",
         "$120$",
@@ -1249,7 +1249,7 @@ window.GUIA_BANK_1000 = {
         "$-114$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-6$)=2(-6)^{2}-6(-6)+6=72 +36+6=114$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-6)=2(-6)^{2}-6(-6)+6=72 +36+6=114$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1263,7 +1263,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=3x^{2} - 3x + 7$, calcule $P(-3$)$.",
+      "prompt": "Si $P(x)=3x^{2} - 3x + 7$, calcule $P(-3)$.",
       "opts": [
         "$43$",
         "$46$",
@@ -1271,7 +1271,7 @@ window.GUIA_BANK_1000 = {
         "$-43$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-3$)=3(-3)^{2}-3(-3)+7=27 +9+7=43$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-3)=3(-3)^{2}-3(-3)+7=27 +9+7=43$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1285,7 +1285,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=4x^{2} - 4x + 5$, calcule $P(-4$)$.",
+      "prompt": "Si $P(x)=4x^{2} - 4x + 5$, calcule $P(-4)$.",
       "opts": [
         "$85$",
         "$89$",
@@ -1293,7 +1293,7 @@ window.GUIA_BANK_1000 = {
         "$-85$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-4$)=4(-4)^{2}-4(-4)+5=64 +16+5=85$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-4)=4(-4)^{2}-4(-4)+5=64 +16+5=85$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1307,7 +1307,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=5x^{2} - 5x + 6$, calcule $P(-5$)$.",
+      "prompt": "Si $P(x)=5x^{2} - 5x + 6$, calcule $P(-5)$.",
       "opts": [
         "$156$",
         "$161$",
@@ -1315,7 +1315,7 @@ window.GUIA_BANK_1000 = {
         "$-156$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-5$)=5(-5)^{2}-5(-5)+6=125 +25+6=156$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-5)=5(-5)^{2}-5(-5)+6=125 +25+6=156$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1329,7 +1329,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=6x^{2} - 6x + 7$, calcule $P(-6$)$.",
+      "prompt": "Si $P(x)=6x^{2} - 6x + 7$, calcule $P(-6)$.",
       "opts": [
         "$259$",
         "$265$",
@@ -1337,7 +1337,7 @@ window.GUIA_BANK_1000 = {
         "$-259$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-6$)=6(-6)^{2}-6(-6)+7=216 +36+7=259$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-6)=6(-6)^{2}-6(-6)+7=216 +36+7=259$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1351,7 +1351,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=2x^{2} - 3x + 5$, calcule $P(-3$)$.",
+      "prompt": "Si $P(x)=2x^{2} - 3x + 5$, calcule $P(-3)$.",
       "opts": [
         "$32$",
         "$35$",
@@ -1359,7 +1359,7 @@ window.GUIA_BANK_1000 = {
         "$-32$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-3$)=2(-3)^{2}-3(-3)+5=18 +9+5=32$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-3)=2(-3)^{2}-3(-3)+5=18 +9+5=32$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1373,7 +1373,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=3x^{2} - 4x + 6$, calcule $P(-4$)$.",
+      "prompt": "Si $P(x)=3x^{2} - 4x + 6$, calcule $P(-4)$.",
       "opts": [
         "$70$",
         "$74$",
@@ -1381,7 +1381,7 @@ window.GUIA_BANK_1000 = {
         "$-70$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-4$)=3(-4)^{2}-4(-4)+6=48 +16+6=70$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-4)=3(-4)^{2}-4(-4)+6=48 +16+6=70$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1395,7 +1395,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=4x^{2} - 5x + 7$, calcule $P(-5$)$.",
+      "prompt": "Si $P(x)=4x^{2} - 5x + 7$, calcule $P(-5)$.",
       "opts": [
         "$132$",
         "$137$",
@@ -1403,7 +1403,7 @@ window.GUIA_BANK_1000 = {
         "$-132$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-5$)=4(-5)^{2}-5(-5)+7=100 +25+7=132$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-5)=4(-5)^{2}-5(-5)+7=100 +25+7=132$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1417,7 +1417,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=5x^{2} - 6x + 5$, calcule $P(-6$)$.",
+      "prompt": "Si $P(x)=5x^{2} - 6x + 5$, calcule $P(-6)$.",
       "opts": [
         "$221$",
         "$227$",
@@ -1425,7 +1425,7 @@ window.GUIA_BANK_1000 = {
         "$-221$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-6$)=5(-6)^{2}-6(-6)+5=180 +36+5=221$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-6)=5(-6)^{2}-6(-6)+5=180 +36+5=221$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1439,7 +1439,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=6x^{2} - 3x + 6$, calcule $P(-3$)$.",
+      "prompt": "Si $P(x)=6x^{2} - 3x + 6$, calcule $P(-3)$.",
       "opts": [
         "$69$",
         "$72$",
@@ -1447,7 +1447,7 @@ window.GUIA_BANK_1000 = {
         "$-69$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-3$)=6(-3)^{2}-3(-3)+6=54 +9+6=69$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-3)=6(-3)^{2}-3(-3)+6=54 +9+6=69$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1461,7 +1461,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=2x^{2} - 4x + 7$, calcule $P(-4$)$.",
+      "prompt": "Si $P(x)=2x^{2} - 4x + 7$, calcule $P(-4)$.",
       "opts": [
         "$55$",
         "$59$",
@@ -1469,7 +1469,7 @@ window.GUIA_BANK_1000 = {
         "$-55$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-4$)=2(-4)^{2}-4(-4)+7=32 +16+7=55$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-4)=2(-4)^{2}-4(-4)+7=32 +16+7=55$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1483,7 +1483,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=3x^{2} - 5x + 5$, calcule $P(-5$)$.",
+      "prompt": "Si $P(x)=3x^{2} - 5x + 5$, calcule $P(-5)$.",
       "opts": [
         "$105$",
         "$110$",
@@ -1491,7 +1491,7 @@ window.GUIA_BANK_1000 = {
         "$-105$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-5$)=3(-5)^{2}-5(-5)+5=75 +25+5=105$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-5)=3(-5)^{2}-5(-5)+5=75 +25+5=105$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1505,7 +1505,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=4x^{2} - 6x + 6$, calcule $P(-6$)$.",
+      "prompt": "Si $P(x)=4x^{2} - 6x + 6$, calcule $P(-6)$.",
       "opts": [
         "$186$",
         "$192$",
@@ -1513,7 +1513,7 @@ window.GUIA_BANK_1000 = {
         "$-186$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-6$)=4(-6)^{2}-6(-6)+6=144 +36+6=186$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-6)=4(-6)^{2}-6(-6)+6=144 +36+6=186$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1527,7 +1527,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=5x^{2} - 3x + 7$, calcule $P(-3$)$.",
+      "prompt": "Si $P(x)=5x^{2} - 3x + 7$, calcule $P(-3)$.",
       "opts": [
         "$61$",
         "$64$",
@@ -1535,7 +1535,7 @@ window.GUIA_BANK_1000 = {
         "$-61$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-3$)=5(-3)^{2}-3(-3)+7=45 +9+7=61$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-3)=5(-3)^{2}-3(-3)+7=45 +9+7=61$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1549,7 +1549,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=6x^{2} - 4x + 5$, calcule $P(-4$)$.",
+      "prompt": "Si $P(x)=6x^{2} - 4x + 5$, calcule $P(-4)$.",
       "opts": [
         "$117$",
         "$121$",
@@ -1557,7 +1557,7 @@ window.GUIA_BANK_1000 = {
         "$-117$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-4$)=6(-4)^{2}-4(-4)+5=96 +16+5=117$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-4)=6(-4)^{2}-4(-4)+5=96 +16+5=117$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1571,7 +1571,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=2x^{2} - 5x + 6$, calcule $P(-5$)$.",
+      "prompt": "Si $P(x)=2x^{2} - 5x + 6$, calcule $P(-5)$.",
       "opts": [
         "$81$",
         "$86$",
@@ -1579,7 +1579,7 @@ window.GUIA_BANK_1000 = {
         "$-81$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-5$)=2(-5)^{2}-5(-5)+6=50 +25+6=81$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-5)=2(-5)^{2}-5(-5)+6=50 +25+6=81$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1593,7 +1593,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=3x^{2} - 6x + 7$, calcule $P(-6$)$.",
+      "prompt": "Si $P(x)=3x^{2} - 6x + 7$, calcule $P(-6)$.",
       "opts": [
         "$151$",
         "$157$",
@@ -1601,7 +1601,7 @@ window.GUIA_BANK_1000 = {
         "$-151$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-6$)=3(-6)^{2}-6(-6)+7=108 +36+7=151$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-6)=3(-6)^{2}-6(-6)+7=108 +36+7=151$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1615,7 +1615,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=4x^{2} - 3x + 5$, calcule $P(-3$)$.",
+      "prompt": "Si $P(x)=4x^{2} - 3x + 5$, calcule $P(-3)$.",
       "opts": [
         "$50$",
         "$53$",
@@ -1623,7 +1623,7 @@ window.GUIA_BANK_1000 = {
         "$-50$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-3$)=4(-3)^{2}-3(-3)+5=36 +9+5=50$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-3)=4(-3)^{2}-3(-3)+5=36 +9+5=50$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1637,7 +1637,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=5x^{2} - 4x + 6$, calcule $P(-4$)$.",
+      "prompt": "Si $P(x)=5x^{2} - 4x + 6$, calcule $P(-4)$.",
       "opts": [
         "$102$",
         "$106$",
@@ -1645,7 +1645,7 @@ window.GUIA_BANK_1000 = {
         "$-102$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-4$)=5(-4)^{2}-4(-4)+6=80 +16+6=102$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-4)=5(-4)^{2}-4(-4)+6=80 +16+6=102$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1659,7 +1659,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=6x^{2} - 5x + 7$, calcule $P(-5$)$.",
+      "prompt": "Si $P(x)=6x^{2} - 5x + 7$, calcule $P(-5)$.",
       "opts": [
         "$182$",
         "$187$",
@@ -1667,7 +1667,7 @@ window.GUIA_BANK_1000 = {
         "$-182$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-5$)=6(-5)^{2}-5(-5)+7=150 +25+7=182$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-5)=6(-5)^{2}-5(-5)+7=150 +25+7=182$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1681,7 +1681,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=2x^{2} - 6x + 5$, calcule $P(-6$)$.",
+      "prompt": "Si $P(x)=2x^{2} - 6x + 5$, calcule $P(-6)$.",
       "opts": [
         "$113$",
         "$119$",
@@ -1689,7 +1689,7 @@ window.GUIA_BANK_1000 = {
         "$-113$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-6$)=2(-6)^{2}-6(-6)+5=72 +36+5=113$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-6)=2(-6)^{2}-6(-6)+5=72 +36+5=113$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1703,7 +1703,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=3x^{2} - 3x + 6$, calcule $P(-3$)$.",
+      "prompt": "Si $P(x)=3x^{2} - 3x + 6$, calcule $P(-3)$.",
       "opts": [
         "$42$",
         "$45$",
@@ -1711,7 +1711,7 @@ window.GUIA_BANK_1000 = {
         "$-42$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-3$)=3(-3)^{2}-3(-3)+6=27 +9+6=42$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-3)=3(-3)^{2}-3(-3)+6=27 +9+6=42$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1725,7 +1725,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=4x^{2} - 4x + 7$, calcule $P(-4$)$.",
+      "prompt": "Si $P(x)=4x^{2} - 4x + 7$, calcule $P(-4)$.",
       "opts": [
         "$87$",
         "$91$",
@@ -1733,7 +1733,7 @@ window.GUIA_BANK_1000 = {
         "$-87$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-4$)=4(-4)^{2}-4(-4)+7=64 +16+7=87$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-4)=4(-4)^{2}-4(-4)+7=64 +16+7=87$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1747,7 +1747,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=5x^{2} - 5x + 5$, calcule $P(-5$)$.",
+      "prompt": "Si $P(x)=5x^{2} - 5x + 5$, calcule $P(-5)$.",
       "opts": [
         "$155$",
         "$160$",
@@ -1755,7 +1755,7 @@ window.GUIA_BANK_1000 = {
         "$-155$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-5$)=5(-5)^{2}-5(-5)+5=125 +25+5=155$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-5)=5(-5)^{2}-5(-5)+5=125 +25+5=155$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -1769,7 +1769,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Expresiones algebraicas",
-      "prompt": "Si $P(x)=6x^{2} - 6x + 6$, calcule $P(-6$)$.",
+      "prompt": "Si $P(x)=6x^{2} - 6x + 6$, calcule $P(-6)$.",
       "opts": [
         "$258$",
         "$264$",
@@ -1777,7 +1777,7 @@ window.GUIA_BANK_1000 = {
         "$-258$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Reemplazo directo: $P(-6$)=6(-6)^{2}-6(-6)+6=216 +36+6=258$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Reemplazo directo: $P(-6)=6(-6)^{2}-6(-6)+6=216 +36+6=258$. Olvidar el signo de $x$ o el cuadrado genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -2209,7 +2209,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=14 \\\\ x+y=8 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=14$ y $x+y=8$ y halle $x$.",
       "opts": [
         "$6$",
         "$2$",
@@ -2231,7 +2231,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=7 \\\\ x+y=5 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=7$ y $x+y=5$ y halle $x$.",
       "opts": [
         "$2$",
         "$3$",
@@ -2253,7 +2253,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=10 \\\\ x+y=7 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=10$ y $x+y=7$ y halle $x$.",
       "opts": [
         "$3$",
         "$4$",
@@ -2275,7 +2275,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=13 \\\\ x+y=9 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=13$ y $x+y=9$ y halle $x$.",
       "opts": [
         "$4$",
         "$5$",
@@ -2297,7 +2297,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=16 \\\\ x+y=11 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=16$ y $x+y=11$ y halle $x$.",
       "opts": [
         "$5$",
         "$6$",
@@ -2319,7 +2319,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=19 \\\\ x+y=13 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=19$ y $x+y=13$ y halle $x$.",
       "opts": [
         "$6$",
         "$7$",
@@ -2341,7 +2341,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=5 \\\\ x+y=3 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=5$ y $x+y=3$ y halle $x$.",
       "opts": [
         "$2$",
         "$1$",
@@ -2363,7 +2363,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=8 \\\\ x+y=5 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=8$ y $x+y=5$ y halle $x$.",
       "opts": [
         "$3$",
         "$2$",
@@ -2385,7 +2385,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=11 \\\\ x+y=7 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=11$ y $x+y=7$ y halle $x$.",
       "opts": [
         "$4$",
         "$3$",
@@ -2407,7 +2407,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=14 \\\\ x+y=9 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=14$ y $x+y=9$ y halle $x$.",
       "opts": [
         "$5$",
         "$4$",
@@ -2429,7 +2429,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=17 \\\\ x+y=11 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=17$ y $x+y=11$ y halle $x$.",
       "opts": [
         "$6$",
         "$5$",
@@ -2451,7 +2451,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=10 \\\\ x+y=8 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=10$ y $x+y=8$ y halle $x$.",
       "opts": [
         "$2$",
         "$6$",
@@ -2473,7 +2473,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=13 \\\\ x+y=10 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=13$ y $x+y=10$ y halle $x$.",
       "opts": [
         "$3$",
         "$7$",
@@ -2495,7 +2495,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=9 \\\\ x+y=5 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=9$ y $x+y=5$ y halle $x$.",
       "opts": [
         "$4$",
         "$1$",
@@ -2517,7 +2517,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=12 \\\\ x+y=7 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=12$ y $x+y=7$ y halle $x$.",
       "opts": [
         "$5$",
         "$2$",
@@ -2539,7 +2539,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=15 \\\\ x+y=9 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=15$ y $x+y=9$ y halle $x$.",
       "opts": [
         "$6$",
         "$3$",
@@ -2561,7 +2561,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=8 \\\\ x+y=6 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=8$ y $x+y=6$ y halle $x$.",
       "opts": [
         "$2$",
         "$4$",
@@ -2583,7 +2583,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=11 \\\\ x+y=8 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=11$ y $x+y=8$ y halle $x$.",
       "opts": [
         "$3$",
         "$5$",
@@ -2605,7 +2605,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Resuelva $\\begin{cases} 2x+y=14 \\\\ x+y=10 \\end{cases}$ y halle $x$.",
+      "prompt": "Resuelva el sistema $2x+y=14$ y $x+y=10$ y halle $x$.",
       "opts": [
         "$4$",
         "$6$",
@@ -3892,7 +3892,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=55^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 55^\\circ=70^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,220 200,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC -->\n    <line x1=\"150\" y1=\"150\" x2=\"160\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <line x1=\"240\" y1=\"150\" x2=\"250\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"132\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=55°</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=55°</text>\n  </svg>"
       ]
     },
     {
@@ -3916,7 +3916,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $46^\\circ$. El suplemento $134^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 46°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 46°</text>\n    <!-- 8 ángulos numerados — relativos a ix1/ix2 para escuadra perfecta -->\n    <text x=\"147.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠1</text>\n    <text x=\"179.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠2</text>\n    <text x=\"147.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠3</text>\n    <text x=\"179.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠4</text>\n    <text x=\"214.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠5</text>\n    <text x=\"246.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠6</text>\n    <text x=\"214.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠7</text>\n    <text x=\"246.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠8</text>\n  </svg>"
       ]
     },
     {
@@ -3940,7 +3940,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $47^\\circ$. El suplemento $133^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 47°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 47°</text>\n    <!-- 8 ángulos numerados — relativos a ix1/ix2 para escuadra perfecta -->\n    <text x=\"147.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠1</text>\n    <text x=\"179.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠2</text>\n    <text x=\"147.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠3</text>\n    <text x=\"179.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠4</text>\n    <text x=\"214.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠5</text>\n    <text x=\"246.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠6</text>\n    <text x=\"214.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠7</text>\n    <text x=\"246.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠8</text>\n  </svg>"
       ]
     },
     {
@@ -3964,7 +3964,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=58^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 58^\\circ=64^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,220 200,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC -->\n    <line x1=\"150\" y1=\"150\" x2=\"160\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <line x1=\"240\" y1=\"150\" x2=\"250\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"132\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=58°</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=58°</text>\n  </svg>"
       ]
     },
     {
@@ -3988,7 +3988,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=59^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 59^\\circ=62^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,220 200,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC -->\n    <line x1=\"150\" y1=\"150\" x2=\"160\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <line x1=\"240\" y1=\"150\" x2=\"250\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"132\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=59°</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=59°</text>\n  </svg>"
       ]
     },
     {
@@ -4012,7 +4012,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $38^\\circ$. El suplemento $142^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 38°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 38°</text>\n    <!-- 8 ángulos numerados — relativos a ix1/ix2 para escuadra perfecta -->\n    <text x=\"147.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠1</text>\n    <text x=\"179.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠2</text>\n    <text x=\"147.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠3</text>\n    <text x=\"179.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠4</text>\n    <text x=\"214.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠5</text>\n    <text x=\"246.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠6</text>\n    <text x=\"214.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠7</text>\n    <text x=\"246.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠8</text>\n  </svg>"
       ]
     },
     {
@@ -4036,7 +4036,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $39^\\circ$. El suplemento $141^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 39°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 39°</text>\n    <!-- 8 ángulos numerados — relativos a ix1/ix2 para escuadra perfecta -->\n    <text x=\"147.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠1</text>\n    <text x=\"179.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠2</text>\n    <text x=\"147.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠3</text>\n    <text x=\"179.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠4</text>\n    <text x=\"214.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠5</text>\n    <text x=\"246.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠6</text>\n    <text x=\"214.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠7</text>\n    <text x=\"246.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠8</text>\n  </svg>"
       ]
     },
     {
@@ -4060,7 +4060,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=52^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 52^\\circ=76^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,220 200,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC -->\n    <line x1=\"150\" y1=\"150\" x2=\"160\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <line x1=\"240\" y1=\"150\" x2=\"250\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"132\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=52°</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=52°</text>\n  </svg>"
       ]
     },
     {
@@ -4084,7 +4084,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=53^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 53^\\circ=74^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,220 200,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC -->\n    <line x1=\"150\" y1=\"150\" x2=\"160\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <line x1=\"240\" y1=\"150\" x2=\"250\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"132\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=53°</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=53°</text>\n  </svg>"
       ]
     },
     {
@@ -4108,7 +4108,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $42^\\circ$. El suplemento $138^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 42°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 42°</text>\n    <!-- 8 ángulos numerados — relativos a ix1/ix2 para escuadra perfecta -->\n    <text x=\"147.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠1</text>\n    <text x=\"179.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠2</text>\n    <text x=\"147.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠3</text>\n    <text x=\"179.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠4</text>\n    <text x=\"214.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠5</text>\n    <text x=\"246.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠6</text>\n    <text x=\"214.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠7</text>\n    <text x=\"246.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠8</text>\n  </svg>"
       ]
     },
     {
@@ -4132,7 +4132,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $43^\\circ$. El suplemento $137^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 43°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 43°</text>\n    <!-- 8 ángulos numerados — relativos a ix1/ix2 para escuadra perfecta -->\n    <text x=\"147.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠1</text>\n    <text x=\"179.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠2</text>\n    <text x=\"147.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠3</text>\n    <text x=\"179.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠4</text>\n    <text x=\"214.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠5</text>\n    <text x=\"246.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠6</text>\n    <text x=\"214.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠7</text>\n    <text x=\"246.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠8</text>\n  </svg>"
       ]
     },
     {
@@ -4156,7 +4156,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=56^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 56^\\circ=68^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,220 200,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC -->\n    <line x1=\"150\" y1=\"150\" x2=\"160\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <line x1=\"240\" y1=\"150\" x2=\"250\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"132\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=56°</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=56°</text>\n  </svg>"
       ]
     },
     {
@@ -4180,7 +4180,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=57^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 57^\\circ=66^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,220 200,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC -->\n    <line x1=\"150\" y1=\"150\" x2=\"160\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <line x1=\"240\" y1=\"150\" x2=\"250\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"132\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=57°</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=57°</text>\n  </svg>"
       ]
     },
     {
@@ -4204,7 +4204,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $46^\\circ$. El suplemento $134^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 46°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 46°</text>\n    <!-- 8 ángulos numerados — relativos a ix1/ix2 para escuadra perfecta -->\n    <text x=\"147.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠1</text>\n    <text x=\"179.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠2</text>\n    <text x=\"147.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠3</text>\n    <text x=\"179.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠4</text>\n    <text x=\"214.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠5</text>\n    <text x=\"246.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠6</text>\n    <text x=\"214.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠7</text>\n    <text x=\"246.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠8</text>\n  </svg>"
       ]
     },
     {
@@ -4228,7 +4228,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $47^\\circ$. El suplemento $133^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 47°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 47°</text>\n    <!-- 8 ángulos numerados — relativos a ix1/ix2 para escuadra perfecta -->\n    <text x=\"147.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠1</text>\n    <text x=\"179.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠2</text>\n    <text x=\"147.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠3</text>\n    <text x=\"179.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠4</text>\n    <text x=\"214.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠5</text>\n    <text x=\"246.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠6</text>\n    <text x=\"214.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠7</text>\n    <text x=\"246.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠8</text>\n  </svg>"
       ]
     },
     {
@@ -4252,7 +4252,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=50^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 50^\\circ=80^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,220 200,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC -->\n    <line x1=\"150\" y1=\"150\" x2=\"160\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <line x1=\"240\" y1=\"150\" x2=\"250\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"132\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=50°</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=50°</text>\n  </svg>"
       ]
     },
     {
@@ -4276,7 +4276,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=51^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 51^\\circ=78^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,220 200,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC -->\n    <line x1=\"150\" y1=\"150\" x2=\"160\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <line x1=\"240\" y1=\"150\" x2=\"250\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"132\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=51°</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=51°</text>\n  </svg>"
       ]
     },
     {
@@ -4300,7 +4300,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $38^\\circ$. El suplemento $142^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 38°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 38°</text>\n    <!-- 8 ángulos numerados — relativos a ix1/ix2 para escuadra perfecta -->\n    <text x=\"147.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠1</text>\n    <text x=\"179.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠2</text>\n    <text x=\"147.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠3</text>\n    <text x=\"179.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠4</text>\n    <text x=\"214.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠5</text>\n    <text x=\"246.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠6</text>\n    <text x=\"214.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠7</text>\n    <text x=\"246.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠8</text>\n  </svg>"
       ]
     },
     {
@@ -4324,7 +4324,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $39^\\circ$. El suplemento $141^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 39°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 39°</text>\n    <!-- 8 ángulos numerados — relativos a ix1/ix2 para escuadra perfecta -->\n    <text x=\"147.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠1</text>\n    <text x=\"179.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠2</text>\n    <text x=\"147.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠3</text>\n    <text x=\"179.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠4</text>\n    <text x=\"214.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠5</text>\n    <text x=\"246.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠6</text>\n    <text x=\"214.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠7</text>\n    <text x=\"246.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠8</text>\n  </svg>"
       ]
     },
     {
@@ -4348,7 +4348,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=54^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 54^\\circ=72^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,220 200,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC -->\n    <line x1=\"150\" y1=\"150\" x2=\"160\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <line x1=\"240\" y1=\"150\" x2=\"250\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"132\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=54°</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=54°</text>\n  </svg>"
       ]
     },
     {
@@ -4372,7 +4372,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=55^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 55^\\circ=70^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,220 200,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC -->\n    <line x1=\"150\" y1=\"150\" x2=\"160\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <line x1=\"240\" y1=\"150\" x2=\"250\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"132\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=55°</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=55°</text>\n  </svg>"
       ]
     },
     {
@@ -4396,7 +4396,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $42^\\circ$. El suplemento $138^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 42°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 42°</text>\n    <!-- 8 ángulos numerados — relativos a ix1/ix2 para escuadra perfecta -->\n    <text x=\"147.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠1</text>\n    <text x=\"179.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠2</text>\n    <text x=\"147.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠3</text>\n    <text x=\"179.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠4</text>\n    <text x=\"214.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠5</text>\n    <text x=\"246.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠6</text>\n    <text x=\"214.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠7</text>\n    <text x=\"246.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠8</text>\n  </svg>"
       ]
     },
     {
@@ -4420,7 +4420,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Ángulos correspondientes entre paralelas son congruentes: miden lo mismo, $43^\\circ$. El suplemento $137^\\circ$ corresponde a ángulos conjugados, no correspondientes.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 43°</text>\n    <!-- 8 ángulos numerados -->\n    <text x=\"150\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠1</text>\n    <text x=\"175\" y=\"105\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠2</text>\n    <text x=\"150\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠3</text>\n    <text x=\"175\" y=\"130\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠4</text>\n    <text x=\"190\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠5</text>\n    <text x=\"215\" y=\"205\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠6</text>\n    <text x=\"190\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠7</text>\n    <text x=\"215\" y=\"230\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\">∠8</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"110\" x2=\"360\" y2=\"110\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"40\" y1=\"210\" x2=\"360\" y2=\"210\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"110\" y1=\"30\" x2=\"270\" y2=\"270\" stroke=\"#c45c26\" stroke-width=\"2.2\"/>\n    <text x=\"30\" y=\"114\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₁</text>\n    <text x=\"30\" y=\"214\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">l₂</text>\n    <text x=\"275\" y=\"265\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">t · 43°</text>\n    <!-- 8 ángulos numerados — relativos a ix1/ix2 para escuadra perfecta -->\n    <text x=\"147.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠1</text>\n    <text x=\"179.3\" y=\"99.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠2</text>\n    <text x=\"147.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠3</text>\n    <text x=\"179.3\" y=\"121.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠4</text>\n    <text x=\"214.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠5</text>\n    <text x=\"246.0\" y=\"199.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠6</text>\n    <text x=\"214.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠7</text>\n    <text x=\"246.0\" y=\"221.0\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#0e2a47\" text-anchor=\"middle\" dominant-baseline=\"middle\">∠8</text>\n  </svg>"
       ]
     },
     {
@@ -4444,7 +4444,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=58^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 58^\\circ=64^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,220 200,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC -->\n    <line x1=\"150\" y1=\"150\" x2=\"160\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <line x1=\"240\" y1=\"150\" x2=\"250\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"132\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=58°</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=58°</text>\n  </svg>"
       ]
     },
     {
@@ -4468,7 +4468,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: En isósceles base $BC$, $\\angle B=\\angle C=59^\\circ$; suma interior $180^\\circ$ da $\\angle A=180^\\circ-2\\cdot 59^\\circ=62^\\circ$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,220 200,70\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC -->\n    <line x1=\"150\" y1=\"150\" x2=\"160\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <line x1=\"240\" y1=\"150\" x2=\"250\" y2=\"142\" stroke=\"#b3261e\" stroke-width=\"2\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"132\" y=\"214\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=59°</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"200,70 110,220 290,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marcas de igualdad AB = AC (proyectadas simétricas sobre cada lado) -->\n    <line x1=\"149.0\" y1=\"141.4\" x2=\"161.0\" y2=\"148.6\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <line x1=\"239.0\" y1=\"148.6\" x2=\"251.0\" y2=\"141.4\" stroke=\"#b3261e\" stroke-width=\"2\" stroke-linecap=\"round\"/>\n    <text x=\"200\" y=\"58\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"298\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"200\" y=\"248\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#5b6b7a\">AB=AC</text>\n    <text x=\"126\" y=\"210\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∠B=59°</text>\n  </svg>"
       ]
     },
     {
@@ -4492,7 +4492,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C -->\n    <path d=\"M 170 100 L 190 100 L 190 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\"/>\n    <text x=\"196\" y=\"96\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∟</text>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"134\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-68 134,154)\">AC=5</text>\n    <text x=\"234\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=4</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=5</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=4</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
       ]
     },
     {
@@ -4516,7 +4516,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C -->\n    <path d=\"M 170 100 L 190 100 L 190 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\"/>\n    <text x=\"196\" y=\"96\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∟</text>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"134\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-68 134,154)\">AC=3</text>\n    <text x=\"234\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=5</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=3</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=5</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
       ]
     },
     {
@@ -4540,7 +4540,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C -->\n    <path d=\"M 170 100 L 190 100 L 190 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\"/>\n    <text x=\"196\" y=\"96\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∟</text>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"134\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-68 134,154)\">AC=4</text>\n    <text x=\"234\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=4</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=4</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=4</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
       ]
     },
     {
@@ -4564,7 +4564,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{7}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C -->\n    <path d=\"M 170 100 L 190 100 L 190 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\"/>\n    <text x=\"196\" y=\"96\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∟</text>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"134\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-68 134,154)\">AC=5</text>\n    <text x=\"234\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=5</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=5</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=5</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
       ]
     },
     {
@@ -4588,7 +4588,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{5}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C -->\n    <path d=\"M 170 100 L 190 100 L 190 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\"/>\n    <text x=\"196\" y=\"96\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∟</text>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"134\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-68 134,154)\">AC=3</text>\n    <text x=\"234\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=4</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=3</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=4</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
       ]
     },
     {
@@ -4612,7 +4612,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C -->\n    <path d=\"M 170 100 L 190 100 L 190 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\"/>\n    <text x=\"196\" y=\"96\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∟</text>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"134\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-68 134,154)\">AC=4</text>\n    <text x=\"234\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=5</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=4</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=5</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
       ]
     },
     {
@@ -4636,7 +4636,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C -->\n    <path d=\"M 170 100 L 190 100 L 190 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\"/>\n    <text x=\"196\" y=\"96\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∟</text>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"134\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-68 134,154)\">AC=5</text>\n    <text x=\"234\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=4</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=5</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=4</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
       ]
     },
     {
@@ -4660,7 +4660,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C -->\n    <path d=\"M 170 100 L 190 100 L 190 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\"/>\n    <text x=\"196\" y=\"96\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∟</text>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"134\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-68 134,154)\">AC=3</text>\n    <text x=\"234\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=5</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=3</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=5</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
       ]
     },
     {
@@ -4684,7 +4684,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C -->\n    <path d=\"M 170 100 L 190 100 L 190 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\"/>\n    <text x=\"196\" y=\"96\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∟</text>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"134\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-68 134,154)\">AC=4</text>\n    <text x=\"234\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=4</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=4</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=4</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
       ]
     },
     {
@@ -4708,7 +4708,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{7}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C -->\n    <path d=\"M 170 100 L 190 100 L 190 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\"/>\n    <text x=\"196\" y=\"96\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∟</text>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"134\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-68 134,154)\">AC=5</text>\n    <text x=\"234\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=5</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=5</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=5</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
       ]
     },
     {
@@ -4732,7 +4732,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{5}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C -->\n    <path d=\"M 170 100 L 190 100 L 190 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\"/>\n    <text x=\"196\" y=\"96\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∟</text>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"134\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-68 134,154)\">AC=3</text>\n    <text x=\"234\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=4</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=3</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=4</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
       ]
     },
     {
@@ -4756,7 +4756,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{5}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C -->\n    <path d=\"M 170 100 L 190 100 L 190 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\"/>\n    <text x=\"196\" y=\"96\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∟</text>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"134\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-68 134,154)\">AC=4</text>\n    <text x=\"234\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=5</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=4</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=5</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
       ]
     },
     {
@@ -4780,7 +4780,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $\\sin(A)=\\frac{\\text{opuesto a }A}{\\text{hipotenusa}}=\\frac{BC}{AB}=\\frac{4}{6}$. Intercambiar catetos o invertir la fracción da los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C -->\n    <path d=\"M 170 100 L 190 100 L 190 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\"/>\n    <text x=\"196\" y=\"96\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#b3261e\">∟</text>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"134\" y=\"154\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-68 134,154)\">AC=5</text>\n    <text x=\"234\" y=\"94\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=4</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 290,120 170,80\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <!-- marca ángulo recto en C (única, sin texto duplicado) -->\n    <path d=\"M 170 100.0 L 190.0 100.0 L 190.0 80\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"2.2\" stroke-linecap=\"square\" stroke-linejoin=\"miter\"/>\n    <text x=\"102\" y=\"238\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"298\" y=\"136\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"170\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"149.2\" y=\"153.9\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-66.8 149.2 153.9)\">AC=5</text>\n    <text x=\"232.5\" y=\"92.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">BC=4</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">recto en C</text>\n  </svg>"
       ]
     },
     {
@@ -5090,7 +5090,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=39$, luego $BC=\\sqrt{39}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"129.5\" y=\"172.3686027918559\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-30 137.5 172.3686027918559)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
       ]
     },
     {
@@ -5114,7 +5114,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=39$, luego $BC=\\sqrt{39}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"129.5\" y=\"172.3686027918559\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-30 137.5 172.3686027918559)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
       ]
     },
     {
@@ -5138,7 +5138,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=39$, luego $BC=\\sqrt{39}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"129.5\" y=\"172.3686027918559\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-30 137.5 172.3686027918559)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
       ]
     },
     {
@@ -5162,7 +5162,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=39$, luego $BC=\\sqrt{39}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"129.5\" y=\"172.3686027918559\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-30 137.5 172.3686027918559)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
       ]
     },
     {
@@ -5186,7 +5186,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=39$, luego $BC=\\sqrt{39}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"129.5\" y=\"172.3686027918559\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-30 137.5 172.3686027918559)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
       ]
     },
     {
@@ -5210,7 +5210,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=39$, luego $BC=\\sqrt{39}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"129.5\" y=\"172.3686027918559\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-30 137.5 172.3686027918559)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
       ]
     },
     {
@@ -5234,7 +5234,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=39$, luego $BC=\\sqrt{39}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"129.5\" y=\"172.3686027918559\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-30 137.5 172.3686027918559)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
       ]
     },
     {
@@ -5258,7 +5258,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=39$, luego $BC=\\sqrt{39}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"129.5\" y=\"172.3686027918559\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-30 137.5 172.3686027918559)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
       ]
     },
     {
@@ -5282,7 +5282,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=39$, luego $BC=\\sqrt{39}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"129.5\" y=\"172.3686027918559\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-30 137.5 172.3686027918559)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
       ]
     },
     {
@@ -5306,7 +5306,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=39$, luego $BC=\\sqrt{39}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"129.5\" y=\"172.3686027918559\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-30 137.5 172.3686027918559)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
       ]
     },
     {
@@ -5330,7 +5330,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=39$, luego $BC=\\sqrt{39}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"129.5\" y=\"172.3686027918559\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-30 137.5 172.3686027918559)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
       ]
     },
     {
@@ -5354,7 +5354,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=39$, luego $BC=\\sqrt{39}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"129.5\" y=\"172.3686027918559\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-30 137.5 172.3686027918559)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
       ]
     },
     {
@@ -5378,7 +5378,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: $BC^{2}=AB^{2}+AC^{2}-2\\cdot AB\\cdot AC\\cos A =25+49-35=39$, luego $BC=\\sqrt{39}$. Olvidar el término $-2ab\\cos$ da $\\sqrt{74}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"129.5\" y=\"172.3686027918559\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-30 137.5 172.3686027918559)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <polygon points=\"110,220 280,220 165.0,124.7\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"2.2\" stroke-linejoin=\"round\"/>\n    <path d=\"M 138,220 A 28 28 0 0 0 124.0,195.8\" fill=\"none\" stroke=\"#b3261e\" stroke-width=\"1.8\"/>\n    <text x=\"146\" y=\"210\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#b3261e\">∠A=60°</text>\n    <text x=\"102\" y=\"234\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">A</text>\n    <text x=\"288\" y=\"226\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">B</text>\n    <text x=\"165.0\" y=\"114.7\" text-anchor=\"middle\" font-size=\"13\" font-family=\"sans-serif\" fill=\"#0e2a47\">C</text>\n    <text x=\"195\" y=\"236\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">AB=5</text>\n    <text x=\"146.2\" y=\"177.4\" text-anchor=\"middle\" dominant-baseline=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\" transform=\"rotate(-60.0 146.2 177.4)\">AC=7</text>\n    <text x=\"200\" y=\"288\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">BC = ? (ley de cosenos)</text>\n  </svg>"
       ]
     },
     {

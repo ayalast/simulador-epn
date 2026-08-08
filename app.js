@@ -926,16 +926,27 @@ function pickSpread(pool, n){
 function levelPool(k){ return cfg.level==='todos'? BANK[k].slice() : BANK[k].filter(function(q){return q.d===cfg.level;}); }
 
 /* ---------- Banco 1000 intermedio: pick por topics con cobertura máxima ---------- */
-function pickForGuia1000(subject, want, notes){
+function pickForGuia1000(subject, want, notes, forcedLevel){
   var bank1000 = window.GUIA_BANK_1000 || {mat:[],fis:[],qui:[],len:[]};
   var pool = bank1000[subject] || [];
   if(!pool.length) return [];
-  // filtra nivel intermedio (futuro: cfg.level para difícil/experta)
-  var levelPool1000 = pool.filter(function(q){ return q.d==='intermedio'; });
+  // Nivel: para MAT respeta cfg.level si existe difícil/experto, para resto intermedio
+  var requestedLevel = forcedLevel || cfg.level || 'intermedio';
+  var hasLevel = pool.some(function(q){ return q.d===requestedLevel; });
+  var targetLevel = hasLevel ? requestedLevel : 'intermedio';
+  // 'todos' mezcla niveles (prioriza unseen del nivel pedido pero puede expandir)
+  var levelPool1000;
+  if(targetLevel==='todos'){
+    levelPool1000 = pool.slice();
+  } else {
+    levelPool1000 = pool.filter(function(q){ return q.d===targetLevel; });
+    if(!levelPool1000.length) levelPool1000 = pool.filter(function(q){ return q.d==='intermedio'; });
+  }
+  // Si por compatibilidad llegara un want mayor que pool, avisamos
   var byTopic = {};
   levelPool1000.forEach(function(q){ var top=(q.topics&&q.topics[0])||'misc'; (byTopic[top]=byTopic[top]||[]).push(q); });
   var topics = shuffle(Object.keys(byTopic));
-  // separa unseen/seen por SEEN1000SET
+  // separa unseen/seen por SEEN1000SET (por id)
   var unseenByTopic={}, seenByTopic={};
   topics.forEach(function(t){
     var arr=byTopic[t]||[];
@@ -944,31 +955,72 @@ function pickForGuia1000(subject, want, notes){
     // shuffle dentro de cada topic
     unseenByTopic[t]=shuffle(unseenByTopic[t]); seenByTopic[t]=shuffle(seenByTopic[t]);
   });
+  // Evita repetir enunciado EXACTO dentro del mismo intento (banco puede traer colisiones exactas)
+  var promptSeenInResult = {};
+  function isDuplicatePrompt(q){ return !!promptSeenInResult[q.prompt]; }
+  function popUnique(arr){
+    if(!arr.length) return null;
+    // intenta hallar uno no duplicado dentro de este intento
+    for(var tries=0; tries<arr.length; tries++){
+      var idx=Math.floor(Math.random()*arr.length);
+      var cand=arr[idx];
+      if(!isDuplicatePrompt(cand)){
+        arr.splice(idx,1);
+        return cand;
+      }
+    }
+    // si todos duplican, devuelve null para probar otro topic
+    return null;
+  }
   function popRandom(arr){ if(!arr.length) return null; var idx=Math.floor(Math.random()*arr.length); return arr.splice(idx,1)[0]; }
   var result=[];
   var guard=0;
-  while(result.length < want && guard++ < 40){
+  while(result.length < want && guard++ < 50){
     var added=0;
     for(var ti=0; ti<topics.length && result.length<want; ti++){
       var t=topics[ti];
-      var pick = popRandom(unseenByTopic[t]) || popRandom(seenByTopic[t]);
-      if(!pick){
-        // roba del topic con más remanente
+      var pick = popUnique(unseenByTopic[t]) || popUnique(seenByTopic[t]);
+      // si no halló único pero hay remanente, intenta con popRandom permitiendo reintento tras robar de otro topic
+      if(!pick) pick = popRandom(unseenByTopic[t]) || popRandom(seenByTopic[t]);
+      if(pick && isDuplicatePrompt(pick)){
+        // descarta este pick para no repetir enunciado exacto; guárdalo temporalmente y busca otro
+        // si no hay alternativa en este topic, roba del topic con más remanente que no duplique
         var best=null, bestLen=-1;
-        for(var k2=0;k2<topics.length;k2++){ var tt=topics[k2]; var len=(unseenByTopic[tt].length+seenByTopic[tt].length); if(len>bestLen){best=tt;bestLen=len;} }
-        if(best && bestLen>0) pick = popRandom(unseenByTopic[best]) || popRandom(seenByTopic[best]);
+        for(var k2=0;k2<topics.length;k2++){ var tt=topics[k2]; var len=(unseenByTopic[tt].length+seenByTopic[tt].length); if(tt!==t && len>bestLen){best=tt;bestLen=len;} }
+        var alt=null;
+        if(best && bestLen>0) alt = popUnique(unseenByTopic[best]) || popUnique(seenByTopic[best]) || popRandom(unseenByTopic[best]) || popRandom(seenByTopic[best]);
+        if(alt && !isDuplicatePrompt(alt)) pick = alt;
+        else if(alt && isDuplicatePrompt(alt)){
+          // tampoco sirve, descarta ambos y sigue
+          continue;
+        }
+        // si el pick original duplicaba y no hallamos alt, skip este slot
+        if(isDuplicatePrompt(pick)) continue;
       }
-      if(pick){ result.push(pick); added++; }
+      if(!pick){
+        // roba del topic con más remanente (fallback global)
+        var best2=null, bestLen2=-1;
+        for(var k22=0;k22<topics.length;k22++){ var tt2=topics[k22]; var len2=(unseenByTopic[tt2].length+seenByTopic[tt2].length); if(len2>bestLen2){best2=tt2;bestLen2=len2;} }
+        if(best2 && bestLen2>0) pick = popUnique(unseenByTopic[best2]) || popUnique(seenByTopic[best2]) || popRandom(unseenByTopic[best2]) || popRandom(seenByTopic[best2]);
+        if(pick && isDuplicatePrompt(pick)) continue;
+      }
+      if(pick){ result.push(pick); promptSeenInResult[pick.prompt]=1; added++; }
     }
     if(added===0) break;
   }
-  // si faltó por pool pequeño, completa con lo que quede sin respetar cobertura (avisa)
+  // si faltó por pool pequeño, completa con lo que quede sin respetar cobertura (avisa) — respeta no repetir enunciado exacto
   if(result.length < want){
     var rest=[];
     topics.forEach(function(t){ rest=rest.concat(unseenByTopic[t], seenByTopic[t]); });
     rest=shuffle(rest);
-    while(result.length<want && rest.length) result.push(rest.shift());
-    if(result.length<want) notes.push('Banco intermedio de '+subject.toUpperCase()+' con '+pool.length+' preguntas: se completó con repetición porque el banco es menor que lo pedido.');
+    // primero intenta rellenar sin duplicar prompt
+    var restUniq = rest.filter(function(q){ return !promptSeenInResult[q.prompt]; });
+    while(result.length<want && restUniq.length) { var q2=restUniq.shift(); result.push(q2); promptSeenInResult[q2.prompt]=1; }
+    // si aún falta y no quedan únicos, avisa (no fuerza duplicado exacto dentro del mismo intento)
+    if(result.length<want){
+      var remaining = want - result.length;
+      notes.push('Banco '+targetLevel+' de '+subject.toUpperCase()+' con '+levelPool1000.length+' preguntas: faltan '+remaining+' únicas tras evitar duplicados exactos en este intento (se entregan '+result.length+'/'+want+').');
+    }
   }
   // marca SEEN1000
   result.forEach(function(q){ if(!SEEN1000SET[subject][q.id]){ SEEN1000SET[subject][q.id]=1; SEEN1000[subject].push(q.id); } });

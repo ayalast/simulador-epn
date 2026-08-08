@@ -540,32 +540,51 @@ var IS_POPSTATE = false;
 
 function syncHash(){
   try{
-    var h = '';
+    var desired = null;
     if(isGuia()){
-      h = '#guia';
-      if(S.view === 'learn') h = '#guia/aprender';
-      else if(S.view === 'chapter' && S.chapter) h = '#guia/aprender/'+S.chapter;
-      else if(S.view === 'guiawork') h = '#guia/talleres';
-      else if(S.view === 'stats') h = '#guia/estadisticas';
-      else if(S.view === 'history') h = '#guia/historial';
+      if(S.view === 'learn') desired = '#guia/aprender';
+      else if(S.view === 'chapter' && S.chapter) desired = '#guia/aprender/'+S.chapter;
+      else if(S.view === 'guiawork') desired = '#guia/talleres';
+      else if(S.view === 'stats') desired = '#guia/estadisticas';
+      else if(S.view === 'history') desired = '#guia/historial';
       else if(S.view === 'attempt'){
-        if(S.attempt && GUIA_COURSES.indexOf(S.attempt.course)>=0) h = '#guia/simulador/'+S.attempt.course;
-        else h = '#guia/examen69';
+        if(S.attempt && GUIA_COURSES.indexOf(S.attempt.course)>=0) desired = '#guia/simulador/'+S.attempt.course+'/intento';
+        else if(S.attempt && S.attempt.course==='guia69') desired = '#guia/examen69/intento';
+        else if(S.attempt && S.attempt.isGuia69) desired = '#guia/examen69/intento';
+        else desired = '#guia/examen69';
       }
-      else if(S.view === 'course' && S.course && GUIA_COURSES.indexOf(S.course)>=0) h = '#guia/simulador/'+S.course;
-      else if(S.view === 'home') h = '#guia';
+      else if(S.view === 'summary'){
+        if(S.attempt && GUIA_COURSES.indexOf(S.attempt.course)>=0) desired = '#guia/simulador/'+S.attempt.course+'/resumen';
+        else if(S.attempt) desired = '#guia/examen69/resumen';
+        else desired = '#guia';
+      }
+      else if(S.view === 'review'){
+        if(S.attempt && GUIA_COURSES.indexOf(S.attempt.course)>=0) desired = '#guia/simulador/'+S.attempt.course+'/revision';
+        else if(S.attempt) desired = '#guia/examen69/revision';
+        else desired = '#guia';
+      }
+      else if(S.view === 'course' && S.course && GUIA_COURSES.indexOf(S.course)>=0) desired = '#guia/simulador/'+S.course;
+      else if(S.view === 'course' && S.course==='guia69') desired = '#guia/examen69';
+      else if(S.view === 'home') desired = '#guia';
     } else {
-      if(S.view === 'course' && S.course) h = '#' + S.course;
-      else if(S.view === 'chapter' && S.chapter) h = '#aprender/' + S.chapter;
-      else if(S.view === 'learn') h = '#aprender';
-      else if(S.view === 'history') h = '#historial';
-      else if(S.view === 'stats') h = '#estadisticas';
+      if(S.view === 'attempt' && S.attempt) desired = '#'+S.attempt.course+'/intento';
+      else if(S.view === 'summary' && S.attempt) desired = '#'+S.attempt.course+'/resumen';
+      else if(S.view === 'review' && S.attempt) desired = '#'+S.attempt.course+'/revision';
+      else if(S.view === 'course' && S.course) desired = '#'+S.course;
+      else if(S.view === 'chapter' && S.chapter) desired = '#aprender/'+S.chapter;
+      else if(S.view === 'learn') desired = '#aprender';
+      else if(S.view === 'history') desired = '#historial';
+      else if(S.view === 'stats') desired = '#estadisticas';
+      else if(S.view === 'home') desired = '';
     }
-    if(h && location.hash !== h){
+    if(desired===null) return;
+    // location.hash is '' when no hash, otherwise '#xxx'
+    if(location.hash !== desired){
+      var url = desired || (location.pathname + location.search);
       if(!IS_POPSTATE){
-        history.pushState({ area: S.area, view: S.view, chapter: S.chapter, course: S.course }, '', h);
+        history.pushState({ area: S.area, view: S.view, chapter: S.chapter, course: S.course }, '', url);
       } else {
-        history.replaceState({ area: S.area, view: S.view, chapter: S.chapter, course: S.course }, '', h);
+        history.replaceState({ area: S.area, view: S.view, chapter: S.chapter, course: S.course }, '', url);
       }
     }
   }catch(e){}
@@ -625,23 +644,83 @@ function exitGuia(){
   render();
 }
 function applyHashRoute(){
-  var h = String(location.hash||'').replace(/^#/, '');
-  if(!h) return;
-  if(h.indexOf('guia')===0){
-    S.area = 'guia';
-    var parts = h.split('/');
-    if(parts[1]==='aprender' && parts[2]){ S.chapter = parts[2]; S.view = 'chapter'; }
-    else if(parts[1]==='aprender'){ S.view = 'learn'; }
-    else if(parts[1]==='talleres'){ S.view = 'guiawork'; }
-    else if(parts[1]==='estadisticas'){ S.view = 'stats'; }
-    else if(parts[1]==='historial'){ S.view = 'history'; }
-    else if(parts[1]==='simulador' && parts[2]){
-      var gc = parts[2];
-      if(GUIA_COURSES.indexOf(gc)>=0){ S.course = gc; S.view = 'course'; }
-      else { S.view = 'home'; }
-    }
-    else { S.view = 'home'; }
+  var raw = String(location.hash||'');
+  var h = raw.replace(/^#/, '');
+  // no hash -> aula home, unless an active attempt is being restored (stay in attempt/summary/review)
+  if(!h){
+    if(S.attempt && !S.attempt.finished && S.attempt.restored) return;
+    if(S.view==='attempt' || S.view==='summary' || S.view==='review') return;
+    S.area = 'aula';
+    S.view = 'home';
+    return;
   }
+  var parts = h.split('/');
+  if(parts[0]==='guia'){
+    S.area = 'guia';
+    if(parts.length===1){
+      S.view = 'home';
+    } else if(parts[1]==='aprender'){
+      if(parts[2]){ S.chapter = parts[2]; S.view = 'chapter'; }
+      else S.view = 'learn';
+    } else if(parts[1]==='talleres'){
+      S.view = 'guiawork';
+    } else if(parts[1]==='estadisticas'){
+      S.view = 'stats';
+    } else if(parts[1]==='historial'){
+      S.view = 'history';
+    } else if(parts[1]==='simulador' && parts[2]){
+      var gc = parts[2];
+      if(GUIA_COURSES.indexOf(gc)>=0){
+        S.course = gc;
+        if(parts[3]==='intento') S.view = 'attempt';
+        else if(parts[3]==='resumen') S.view = 'summary';
+        else if(parts[3]==='revision') S.view = 'review';
+        else S.view = 'course';
+      } else { S.view = 'home'; }
+    } else if(parts[1]==='examen69'){
+      S.course = 'guia69';
+      if(parts[2]==='intento') S.view = 'attempt';
+      else if(parts[2]==='resumen') S.view = 'summary';
+      else if(parts[2]==='revision') S.view = 'review';
+      else S.view = 'home';
+    } else {
+      S.view = 'home';
+    }
+    return;
+  }
+  // aula routes
+  S.area = 'aula';
+  var first = parts[0];
+  // direct guia course hash without prefix (robust)
+  if(GUIA_COURSES.indexOf(first)>=0){
+    S.area = 'guia';
+    S.course = first;
+    if(parts[1]==='intento') S.view = 'attempt';
+    else if(parts[1]==='resumen') S.view = 'summary';
+    else if(parts[1]==='revision') S.view = 'review';
+    else S.view = 'course';
+    return;
+  }
+  var aulaCourses = ['mat','trig','ineq','fis','qui','len','mix','guia69'];
+  if(aulaCourses.indexOf(first)>=0){
+    S.course = first;
+    if(parts[1]==='intento') S.view = 'attempt';
+    else if(parts[1]==='resumen') S.view = 'summary';
+    else if(parts[1]==='revision') S.view = 'review';
+    else if(parts.length===1) S.view = 'course';
+    else S.view = 'home';
+    return;
+  }
+  if(first==='aprender'){
+    if(parts[1]){ S.chapter = parts[1]; S.view = 'chapter'; }
+    else S.view = 'learn';
+    return;
+  }
+  if(first==='historial'){ S.view = 'history'; return; }
+  if(first==='estadisticas'){ S.view = 'stats'; return; }
+  if(first==='talleres'){ S.view = 'guiawork'; S.area='guia'; return; }
+  // fallback
+  S.view = 'home';
 }
 
 /* ---------- markdown → HTML (mejorado; math solo en delimitadores) ---------- */
@@ -728,7 +807,23 @@ function saveSeen(){ save(SEEN_KEY, SEEN); }
 function saveSeen1000(){ save(SEEN1000_KEY, SEEN1000); }
 function saveUI(){ save(UI_KEY, UI); }
 // Perdurabilidad del intento: se guarda en LS y en la nube; sobrevive F5 y cambio de dispositivo
-function saveActive(){ try{ if(S.attempt && !S.attempt.finished && !S.attempt.historic) localStorage.setItem(ACTIVE_KEY, JSON.stringify(serializeAttempt(S.attempt))); }catch(e){} }
+function saveActive(){
+  try{
+    if(!S.attempt) return;
+    var isReview = (S.view==='review' || S.attempt.view==='review' || S.attempt.finished);
+    if(isReview && !S.attempt.noSave){
+      var snap = serializeAttempt(S.attempt);
+      snap.view='review';
+      snap.finished=true;
+      if(S.attempt.end) snap.endMs=S.attempt.end.getTime();
+      if(S.onePage!=null) snap.onePage=S.onePage;
+      if(typeof S.attempt.cur==='number') snap.cur=S.attempt.cur;
+      localStorage.setItem(ACTIVE_KEY, JSON.stringify(snap));
+      return;
+    }
+    if(!S.attempt.finished && !S.attempt.historic) localStorage.setItem(ACTIVE_KEY, JSON.stringify(serializeAttempt(S.attempt)));
+  }catch(e){}
+}
 function clearActive(){ try{ localStorage.removeItem(ACTIVE_KEY); }catch(e){} }
 function loadActiveRaw(){ try{ var v=localStorage.getItem(ACTIVE_KEY); return v? JSON.parse(v):null; }catch(e){ return null; } }
 var SEENSET = {};
@@ -2748,21 +2843,31 @@ function cloudSync() {
             S.attempt = cloudDes;
             if(cloudDes.area) S.area = cloudDes.area;
             S.course = cloudDes.course;
-            if(cloudDes.finished){ finishAttempt(true); return; }
-            S.view='attempt'; S.onePage=null;
-            // render diferido: después del then, forzará vista attempt
+            if(typeof cloudDes.cur==='number') S.attempt.cur = cloudDes.cur;
+            if(cloudDes.onePage!=null) S.onePage = cloudDes.onePage;
+            if(cloudDes.view==='review' || cloudDes.finished){ S.view='review'; }
+            else if(cloudDes.view==='summary'){ S.view='summary'; S.attempt.view='summary'; }
+            else { S.view='attempt'; }
+            if(cloudDes.finished && cloudDes.view==='attempt'){ finishAttempt(true); return; }
+            // render diferido: después del then, forzará vista correspondiente
             changed = true;
           } else {
             // nube expirada
             try{ localStorage.removeItem(ACTIVE_KEY); }catch(e){}
           }
-        } else if(S.attempt && cloud.active && S.attempt.start && cloud.active.startMs){
-          // conflicto: gana el más reciente
+        } else if(S.attempt && !S.attempt.historic && cloud.active && S.attempt.start && cloud.active.startMs){
+          // conflicto: gana el más reciente (solo para intentos activos, no revisiones históricas)
           if(cloud.active.startMs > S.attempt.start.getTime()){
             var newer = deserializeAttempt(cloud.active);
             if(newer && !newer.finished){
               try{ localStorage.setItem(ACTIVE_KEY, JSON.stringify(cloud.active)); }catch(e){}
-              S.attempt = newer; if(newer.area) S.area=newer.area; S.course=newer.course; S.view='attempt'; S.onePage=null; changed=true;
+              S.attempt = newer; if(newer.area) S.area=newer.area; S.course=newer.course;
+              if(typeof newer.cur==='number') S.attempt.cur = newer.cur;
+              if(newer.onePage!=null) S.onePage = newer.onePage; else S.onePage=null;
+              if(newer.view==='summary'){ S.view='summary'; S.attempt.view='summary'; }
+              else if(newer.view==='review'){ S.view='review'; }
+              else S.view='attempt';
+              changed=true;
             }
           }
         }
@@ -3030,23 +3135,47 @@ function startTimer(){
 function stopTimer(){ if(S.tick){ clearInterval(S.tick); S.tick = null; } }
 // Serializa el intento actual para durabilidad (LS + nube). Incluye snapshot de src para que
 // la revisión tras F5 no dependa de haber vuelto a cargar el banco correcto.
+// También persiste view/onePage/cur para F5 profesional en intento/resumen/revisión.
 function serializeAttempt(a){
   var qsSer = a.qs.map(function(q){
     var s=q.src;
     return { subj:q.subj, order:q.order.slice(), src:{ t:s.t, q:s.q, o:s.o.slice(), a:s.a, e:s.e, ch:s.ch, maths:(s.maths||[]).slice(), imgs:(s.imgs||[]).slice(), __s:s.__s, n:s.n, d:s.d, topics:(s.topics||[]).slice(), id:s.id, __i:s.__i } };
   });
-  return { course:a.course, level:a.level, area:(a.area||S.area), qs:qsSer, ans:a.ans.slice(), flags:a.flags.slice(), cur:a.cur, startMs:a.start.getTime(), limitMs:a.limitMs, isGuia1000:!!a.isGuia1000, isGuia69:!!a.isGuia69, noSave:!!a.noSave };
+  // view/onePage/cur se guardan para que F5 vuelva exactamente al mismo lugar (pregunta, paginación, resumen)
+  var v = (a.view || S.view || 'attempt');
+  var op = (a.onePage!=null ? a.onePage : (S.onePage!=null ? S.onePage : null));
+  var cur = (typeof a.cur==='number' ? a.cur : (typeof S.attempt!=='undefined' && S.attempt && typeof S.attempt.cur==='number' ? S.attempt.cur : 0));
+  // endMs para revisiones (finished review) — permite F5 en revisión sin perder el intento recién corregido
+  var endMs = (a.end ? a.end.getTime() : null);
+  return { course:a.course, level:a.level, area:(a.area||S.area), qs:qsSer, ans:a.ans.slice(), flags:a.flags.slice(), cur:cur, startMs:a.start.getTime(), endMs:endMs, limitMs:a.limitMs, isGuia1000:!!a.isGuia1000, isGuia69:!!a.isGuia69, noSave:!!a.noSave, view:v, onePage:op, finished:!!a.finished, historic:!!a.historic };
 }
 function deserializeAttempt(raw){
-  // valida y vence si ya expiró (evita revivir un intento fantasma de ayer)
   if(!raw || !Array.isArray(raw.qs) || typeof raw.startMs!=='number' || typeof raw.limitMs!=='number') return null;
-  var left = (raw.startMs + raw.limitMs) - Date.now();
-  if(left <= -60000) return null; // vencido hace >1 min → se consolidará como entregado al restaurar
-  var expired = left <= 0;
+  var isReview = (raw.view==='review') || (!!raw.finished && raw.view!=='attempt' && raw.view!=='summary');
+  // TTL: intento activo expira si venció hace >1 min; revisión guardada expira a los 30 min
+  if(isReview){
+    var ageReview = Date.now() - (raw.endMs || raw.startMs);
+    if(ageReview > 30*60*1000) return null;
+    if(!raw.qs.length) return null;
+  } else {
+    var left = (raw.startMs + raw.limitMs) - Date.now();
+    if(left <= -60000) return null; // vencido hace >1 min → se consolidará como entregado al restaurar
+    var expired = left <= 0;
+    if(expired){
+      // se vencerá al restaurar (auto-entrega), pero aún deserializable
+    }
+  }
+  var left2 = (raw.startMs + raw.limitMs) - Date.now();
+  var expired2 = left2 <= 0;
   var qs = raw.qs.map(function(x){
     return { subj:x.subj, order:x.order.slice(), src:{ t:x.src.t, q:x.src.q, o:x.src.o.slice(), a:x.src.a, e:x.src.e, ch:x.src.ch, maths:(x.src.maths||[]).slice(), imgs:(x.src.imgs||[]).slice(), __s:x.src.__s, n:x.src.n, d:x.src.d, topics:(x.src.topics||[]).slice(), id:x.src.id, __i:x.src.__i } };
   });
-  var a={ course:raw.course, level:raw.level, area:raw.area, qs:qs, ans:raw.ans.slice(), flags:raw.flags.slice(), cur:raw.cur, start:new Date(raw.startMs), end: expired? new Date(raw.startMs+raw.limitMs) : null, finished: expired, limitMs: raw.limitMs, historic:false, isGuia1000:!!raw.isGuia1000, isGuia69:!!raw.isGuia69, noSave:!!raw.noSave, restored:true };
+  var view = raw.view || 'attempt';
+  var onePage = (raw.onePage!=null ? raw.onePage : null);
+  var finished = !!raw.finished || (expired2 && !isReview);
+  var end = raw.endMs ? new Date(raw.endMs) : (finished ? new Date(Math.min(Date.now(), raw.startMs+raw.limitMs)) : null);
+  var a={ course:raw.course, level:raw.level, area:raw.area, qs:qs, ans:raw.ans.slice(), flags:raw.flags.slice(), cur:(typeof raw.cur==='number'?raw.cur:0), start:new Date(raw.startMs), end: end, finished: finished, limitMs: raw.limitMs, historic:!!raw.historic, isGuia1000:!!raw.isGuia1000, isGuia69:!!raw.isGuia69, noSave:!!raw.noSave, restored:true, view:view, onePage:onePage };
+  // si es revisión, marca historic false pero finished true para que renderice review sin bloquear
   return a;
 }
 function restoreActiveAttempt(){
@@ -3057,12 +3186,25 @@ function restoreActiveAttempt(){
   S.attempt = a;
   if(a.area) S.area = a.area;
   S.course = a.course;
+  if(a.onePage!=null) S.onePage = a.onePage; else if(S.onePage==null) S.onePage = null;
+  if(typeof a.cur==='number') S.attempt.cur = a.cur;
+  // revisión recién corregida: F5 debe quedarse en revisión (profesional), no mandar al inicio
+  if(a.view==='review' || (a.finished && a.view!=='attempt' && a.view!=='summary')){
+    S.view='review'; S.modal=null;
+    if(!S.toast) S.toast='↻ Revisión restaurada — sigues viendo la corrección.';
+    return true;
+  }
   if(a.finished){
     // tiempo vencido mientras estuvo cerrado → consolida como entregado (una sola vez)
     finishAttempt(true);
     return true;
   }
-  S.view='attempt'; S.onePage=null; S.modal=null; S.toast='↻ Intento restaurado — continúa donde lo dejaste. El tiempo siguió corriendo.';
+  // intento activo: respeta view guardada (attempt/summary)
+  var desiredView = a.view || 'attempt';
+  if(desiredView!=='attempt' && desiredView!=='summary') desiredView='attempt';
+  S.view=desiredView; S.modal=null;
+  if(S.view==='attempt' && typeof a.cur==='number') S.attempt.cur = a.cur;
+  if(!S.toast) S.toast='↻ Intento restaurado — continúa donde lo dejaste. El tiempo siguió corriendo.';
   return true;
 }
 function persistActiveThrottled(){
@@ -3099,10 +3241,24 @@ function finishAttempt(auto){
   a.finished = true;
   a.end = new Date(Math.min(Date.now(), a.start.getTime()+a.limitMs));
   stopTimer();
-  clearActive();
+  // deja de ser intento activo, pero guarda revisión para F5 profesional (30 min)
+  a.view='review'; S.view='review';
   if(!a.historic && !a.noSave) recordAttempt(a);
   else if(a.noSave){ clearActive(); if(isPinAuthenticated()) pushCloudState(); }
-  S.modal = null; S.onePage = null; S.view = 'review';
+  // persiste snapshot de revisión para que F5 en revisión no pierda la corrección
+  try{
+    var revKey='epn_active_v1';
+    if(!a.noSave){
+      // guarda revisión con endMs + view review + cur/onePage reales
+      var revRaw = serializeAttempt(a);
+      revRaw.view='review'; revRaw.finished=true; revRaw.endMs=a.end.getTime();
+      localStorage.setItem(revKey, JSON.stringify(revRaw));
+      if(isPinAuthenticated()) pushCloudState();
+    } else {
+      clearActive();
+    }
+  }catch(e){}
+  S.modal = null; // mantiene S.onePage tal cual para paginación en revisión
   if(a.noSave){
     S.toast = '⚙ Modo de prueba activo: Este intento no fue guardado en tu historial ni alteró las preguntas vistas.';
   } else {
@@ -3360,28 +3516,37 @@ case 'start-guia-69':
       S.toast = 'Intento restaurado: vuelve a contar en tus estad\u00edsticas.'; render(); break;
     case 'openrec':
       var rec = HIST.filter(function(r){ return r.id === t.dataset.id; })[0];
-      if(rec){ if(blocked()) break; S.attempt = attemptFromRecord(rec); S.course = rec.course; S.onePage = null;
+      if(rec){
+        if(blocked()) break;
+        var aHist = attemptFromRecord(rec);
+        S.attempt = aHist; S.course = rec.course; S.onePage = null; S.view = 'review';
+        // persiste revisión histórica para F5 profesional (no cuenta como intento activo)
+        try{
+          var qsSerHist = aHist.qs.map(function(q){ var s=q.src; return { subj:q.subj, order:q.order.slice(), src:{ t:s.t, q:s.q, o:s.o.slice(), a:s.a, e:s.e, ch:s.ch, maths:(s.maths||[]).slice(), imgs:(s.imgs||[]).slice(), __s:s.__s, n:s.n, d:s.d, topics:(s.topics||[]).slice(), id:s.id, __i:s.__i } }; });
+          localStorage.setItem(ACTIVE_KEY, JSON.stringify({ course:aHist.course, level:aHist.level, area:(aHist.area||S.area), qs:qsSerHist, ans:aHist.ans.slice(), flags:aHist.flags.slice(), cur:aHist.cur, startMs:aHist.start.getTime(), endMs:(aHist.end?aHist.end.getTime():null), limitMs:aHist.limitMs, isGuia1000:!!aHist.isGuia1000, isGuia69:!!aHist.isGuia69, view:'review', onePage:null, finished:true, historic:true }));
+        }catch(e){}
         S.toast = rec.deleted? 'Est\u00e1s viendo un intento eliminado: se conserva para consulta pero no cuenta en las estad\u00edsticas.' : null;
-        S.view = 'review'; render(); }
+        render();
+      }
       break;
     case 'start': if(blocked()) break; startAttempt(S.course); break;
     case 'quickstart': if(blocked()) break; startAttempt(t.dataset.c); break;
-    case 'next': S.attempt.cur = Math.min(S.attempt.qs.length-1, S.attempt.cur+1); saveActive(); persistActiveThrottled(); render(); break;
-    case 'prev': S.attempt.cur = Math.max(0, S.attempt.cur-1); saveActive(); persistActiveThrottled(); render(); break;
+    case 'next': S.attempt.cur = Math.min(S.attempt.qs.length-1, S.attempt.cur+1); if(S.attempt) S.attempt.cur=S.attempt.cur; if(S.attempt) S.attempt.view='attempt'; saveActive(); persistActiveThrottled(); render(); break;
+    case 'prev': S.attempt.cur = Math.max(0, S.attempt.cur-1); if(S.attempt) S.attempt.view='attempt'; saveActive(); persistActiveThrottled(); render(); break;
     case 'goto':
       var i = +t.dataset.i;
-      if(S.view==='review'){ if(S.onePage!=null){ S.onePage = i; render(); } else { var nodes = document.querySelectorAll('.main .que'); if(nodes[i]) nodes[i].scrollIntoView({behavior:'smooth',block:'center'}); } }
-      else { S.attempt.cur = i; S.view = 'attempt'; saveActive(); persistActiveThrottled(); render(); }
+      if(S.view==='review'){ if(S.onePage!=null){ S.onePage = i; S.attempt.view='review'; S.attempt.cur=i; saveActive(); render(); } else { var nodes = document.querySelectorAll('.main .que'); if(nodes[i]) nodes[i].scrollIntoView({behavior:'smooth',block:'center'}); } }
+      else { S.attempt.cur = i; S.attempt.view='attempt'; S.view = 'attempt'; saveActive(); persistActiveThrottled(); render(); }
       break;
     case 'flag': S.attempt.flags[+t.dataset.i] = !S.attempt.flags[+t.dataset.i]; saveActive(); persistActiveThrottled(); rerenderKeepScroll(); break;
-    case 'summary': S.view = 'summary'; render(); break;
-    case 'back': S.view = 'attempt'; render(); break;
+    case 'summary': S.view = 'summary'; if(S.attempt) S.attempt.view='summary'; saveActive(); persistActiveThrottled(); render(); break;
+    case 'back': S.view = 'attempt'; if(S.attempt) S.attempt.view='attempt'; saveActive(); persistActiveThrottled(); render(); break;
     case 'confirmsubmit': S.modal = 'confirm'; render(); break;
     case 'submit': finishAttempt(false); break;
-    case 'showall': S.onePage = (S.onePage==null? 0 : null); saveActive(); persistActiveThrottled(); render(); break;
-    case 'rnext': S.onePage = Math.min(S.attempt.qs.length-1, S.onePage+1); saveActive(); persistActiveThrottled(); render(); break;
-    case 'rprev': S.onePage = Math.max(0, S.onePage-1); saveActive(); persistActiveThrottled(); render(); break;
-    case 'finishreview': S.onePage = null; go(S.attempt && S.attempt.historic? 'history' : 'course'); break;
+    case 'showall': S.onePage = (S.onePage==null? 0 : null); if(S.attempt) S.attempt.onePage=S.onePage; saveActive(); persistActiveThrottled(); render(); break;
+    case 'rnext': S.onePage = Math.min(S.attempt.qs.length-1, S.onePage+1); if(S.attempt) S.attempt.onePage=S.onePage; saveActive(); persistActiveThrottled(); render(); break;
+    case 'rprev': S.onePage = Math.max(0, S.onePage-1); if(S.attempt) S.attempt.onePage=S.onePage; saveActive(); persistActiveThrottled(); render(); break;
+    case 'finishreview': try{ localStorage.removeItem(ACTIVE_KEY); }catch(e){} if(isPinAuthenticated()){ try{ pushCloudState(); }catch(e2){} } S.onePage = null; if(S.attempt) S.attempt.view=null; go(S.attempt && S.attempt.historic? 'history' : 'course'); break;
     case 'openrecdel': break;
   }
 });
@@ -3394,25 +3559,50 @@ document.addEventListener('click', function(e){
   var a=t.dataset.act;
   if(a==='answer' || a==='flag' || a==='goto' || a==='next' || a==='prev' || a==='rnext' || a==='rprev' || a==='showall'){ saveActive(); persistActiveThrottled(); }
 }, true);
-window.addEventListener('hashchange', function(){ applyHashRoute(); render(); });
-// Restauración al cargar: intenta LS primero, luego la nube (cloudSync hará merge cross-device)
-(function(){
+window.addEventListener('hashchange', function(){
+  // si hay intento activo/restaurado, no dejes que un hash vacío te mande a home (F5 vacío profesional)
+  var h = String(location.hash||'');
+  if(!h && S.attempt && !S.attempt.historic){
+    // revisa si es revisión o activo: quédate donde estás
+    syncHash(); return;
+  }
+  applyHashRoute(); render();
+});
+// Restauración al cargar: orden profesional — 1) si hay hash explícito, respétalo; 2) intenta LS; 3) nube
+// Boot una sola vez: previene doble render y que applyHashRoute pise intento restaurado
+(function bootOnce(){
+  var hadHash = !!String(location.hash||'');
   try{
-    if(restoreActiveAttempt()){
-      // ya restaurado desde LS
-      startTimer();
-    } else if(isPinAuthenticated()){
-      // sin LS pero con PIN, intenta nube (asíncrono)
-      cloudSync();
-      // si hay active en LS expirado, cloudSync ya lo vence y lo consolida
+    // intenta restaurar intento/revisión desde LS primero (F5 profesional)
+    var restored = false;
+    try{ restored = restoreActiveAttempt(); }catch(e){}
+    if(restored){
+      if(!S.attempt.finished) startTimer();
+      // si había hash explícito (p.ej. deep link), el hash gana solo si no es intento activo sin hash
+      if(hadHash){
+        var hashViewBefore = S.view;
+        applyHashRoute();
+        // si applyHashRoute quiso mandar a home sin motivo, preserva intento restaurado
+        if(S.attempt && !S.attempt.historic && (S.view==='home')){
+          S.view = hashViewBefore;
+        }
+      }
+      // asegura hash coherente con estado restaurado (intento/resumen/revisión)
+      syncHash();
+      if(S.attempt && !S.attempt.finished && S.view==='attempt') startTimer();
+      return;
     }
-  }catch(e){}
+    // sin LS: respeta hash normal
+    applyHashRoute();
+    // sin LS pero con PIN, intenta nube cross-device (asíncrono)
+    if(!hadHash && isPinAuthenticated()){
+      // no pisa vista ya establecida por hash
+      cloudSync();
+    } else if(hadHash && isPinAuthenticated() && !S.attempt){
+      cloudSync();
+    }
+  }catch(e){
+    try{ applyHashRoute(); }catch(e2){}
+  }
 })();
-applyHashRoute();
-// Si cloudSync restauró cross-device, el timer ya arrancó; si no, asegura vista coherente
-if(S.attempt && S.attempt.restored && !S.attempt.finished){
-  // evita que applyHashRoute pise view=attempt recién restaurado
-  S.view='attempt';
-  startTimer();
-}
 render();

@@ -4,7 +4,7 @@
    PIPELINE SEGURO (anti-colisión ES ↔ trig/macros):
    - Solo se tipografía math DENTRO de delimitadores $...$ / $$...$$.
    - El texto plano NUNCA se reescribe: «sin», «tanto», «cosas», «coseno»,
-     «como», «para», «log», etc. permanecen prosa española.
+     «cómo», «para», «log», etc. permanecen prosa española.
    - Las funciones trig/macros SOLO se reconocen con barra: \sin \cos \tan
      \sec \csc \cot \log \ln \lim \max \min (nunca tokens desnudos).
    - NO hay preprocess tipo replace(/sin|tan|cos/g) ni auto-\ delante de
@@ -24,14 +24,15 @@
     'exists':'\u2203','emptyset':'\u2205','cup':'\u222A','cap':'\u2229','subset':'\u2282',
     'ldots':'\u2026','dots':'\u2026','cdots':'\u22EF','triangle':'\u25B3','perp':'\u22A5','parallel':'\u2225',
     'wedge':'\u2227','vee':'\u2228','neg':'\u00AC','lnot':'\u00AC','therefore':'\u2234',
+    'square':'\u25A1','Box':'\u25A1','checkmark':'\u2713','sum':'\u2211','prod':'\u220F',
+    'setminus':'\u2216','land':'\u2227','lor':'\u2228',
     'Re':'\u211D','left':'','right':'','!':'','quad':'\u2003','qquad':'\u2003\u2003',
     ',':'\u2009',';':'\u2005',' ':' '
   };
   /* Solo con \nombre — nunca auto-detectar "sin"/"tan" desnudos en prosa o math. */
   var FUNCS = ['sin','cos','tan','cot','sec','csc','log','ln','lim','max','min','arcsin','arccos','arctan','mod'];
-  var REL = ['=','<','>','+','\u2212','\u00B1','\u2260','\u2264','\u2265','\u2248','\u2245','\u21D2','\u2192','\u00D7','\u22C5','\u2227','\u2228'];
+  var REL = ['=','<','>','+','\u2212','\u00B1','\u2260','\u2264','\u2265','\u2248','\u2245','\u21D2','\u2192','\u00D7','\u22C5','\u2227','\u2228','\u2261'];
 
-  /* Tokens que colisionan con prosa ES si un preprocess mete `\` o $...$ a ciegas. */
   var SPANISH_MATH_FALSE_FRIENDS = [
     'sin','sen','tanto','tantos','cosas','coseno','tangente','secante','como','para',
     'log','maximo','minimo','limite','cotangente'
@@ -57,7 +58,43 @@
         var m=/^\\([a-zA-Z]+)/.exec(s.slice(i));
         if(m){
           var name=m[1]; i+=m[0].length;
-          if(name==='frac'||name==='dfrac'||name==='tfrac'){
+          if(name==='begin'){
+            var envGroup=readGroup(s,i); var envName=envGroup.body.trim(); i=envGroup.next;
+            var endPattern='\\end{'+envName+'}';
+            var endIdx=s.indexOf(endPattern,i);
+            var envContent='';
+            if(endIdx>=0){ envContent=s.slice(i,endIdx); i=endIdx+endPattern.length; }
+            else { envContent=s.slice(i); i=s.length; }
+            
+            if(envName==='cases'){
+              var rows=envContent.split(/\\\\|\\cr|\n/).filter(function(r){ return r.trim().length>0; });
+              var rowHtmls=rows.map(function(r){
+                var cols=r.split('&').map(function(col){ return parse(col.trim()); });
+                return '<div class="mjx-case-row">'+cols.map(function(cell){ return '<span class="mjx-case-cell">'+cell+'</span>'; }).join('<span class="mjx-case-sep">&nbsp;&nbsp;</span>')+'</div>';
+              });
+              out+='<span class="mjx-cases"><span class="mjx-cases-brace">{</span><span class="mjx-cases-body">'+rowHtmls.join('')+'</span></span>';
+            } else if(envName==='matrix'||envName==='pmatrix'||envName==='bmatrix'){
+              var isP=(envName==='pmatrix'), isB=(envName==='bmatrix');
+              var rows=envContent.split('\\\\').map(function(r){
+                var cols=r.split('&').map(function(col){ return '<td class="mjx-mat-cell">'+parse(col.trim())+'</td>'; });
+                return '<tr>'+cols.join('')+'</tr>';
+              });
+              var openBr=isP?'(': (isB?'[':'');
+              var closeBr=isP?')': (isB?']':'');
+              out+='<span class="mjx-matrix">'+(openBr?'<span class="mjx-mat-brace">'+openBr+'</span>':'')+'<table class="mjx-mat-table"><tbody>'+rows.join('')+'</tbody></table>'+(closeBr?'<span class="mjx-mat-brace">'+closeBr+'</span>':'')+'</span>';
+            } else {
+              out+=parse(envContent);
+            }
+            continue;
+          } else if(name==='end'){
+            var gEnd=readGroup(s,i); i=gEnd.next;
+            continue;
+          } else if(name==='pmod'){
+            while(s[i]===' '){ i++; }
+            var gPmod=readGroup(s,i); i=gPmod.next;
+            out+='<span class="mtext">&nbsp;(mod&nbsp;'+parse(gPmod.body)+')</span>';
+            continue;
+          } else if(name==='frac'||name==='dfrac'||name==='tfrac'){
             var a=readGroup(s,i); var b=readGroup(s,a.next); i=b.next;
             out+='<span class="mfrac"><span class="num">'+parse(a.body)+'</span><span class="den">'+parse(b.body)+'</span></span>';
           } else if(name==='sqrt'){
@@ -65,15 +102,27 @@
             if(s[i]==='['){var k=s.indexOf(']',i); idx=s.slice(i+1,k); i=k+1;}
             var g=readGroup(s,i); i=g.next;
             out+='<span class="msqrt">'+(idx?'<sup class="msup" style="vertical-align:.9em">'+parse(idx)+'</sup>':'')+'<span class="rad"><svg viewBox="0 0 10 20" preserveAspectRatio="none" aria-hidden="true"><path d="M0.4 12.4 L2.9 12.4 L5.5 19.3 L8.8 0.55 L10 0.55" fill="none" stroke="currentColor" stroke-width="1.15" stroke-linejoin="miter" stroke-linecap="square" vector-effect="non-scaling-stroke"/></svg></span><span class="sqbody">'+parse(g.body)+'</span></span>';
+          } else if(name==='widehat'||name==='hat'){
+            var gHat=readGroup(s,i); i=gHat.next;
+            out+='<span class="mo">\u2220</span>'+parse(gHat.body);
+          } else if(name==='angle'||name==='measuredangle'){
+            out+='<span class="mo">\u2220</span>';
+          } else if(name==='circ'){
+            out+='<span class="mo">\u00B0</span>';
           } else if(name==='overline'||name==='bar'){
             var g2=readGroup(s,i); i=g2.next;
             out+='<span class="mover">'+parse(g2.body)+'</span>';
+          } else if(name==='square'||name==='Box'){
+            out+='<span class="recuadro-vacio" style="display:inline-block;width:12px;height:12px;border:1.5px solid #0284c7;border-radius:2px;vertical-align:middle;margin:0 2px;background:#f0f9ff;"></span>';
           } else if(name==='text'||name==='mathrm'||name==='operatorname'||name==='mathbf'){
             var g3=readGroup(s,i); i=g3.next;
             out+='<span class="mtext">'+parse(g3.body)+'</span>';
           } else if(name==='mathbb'){
             var g4=readGroup(s,i); i=g4.next;
             out+='<span class="mtext" style="font-weight:600">'+esc(g4.body)+'</span>';
+          } else if(name==='left'||name==='right'){
+            // ignore left/right wrapper, process next delimiter character
+            continue;
           } else if(FUNCS.indexOf(name)>=0){
             out+='<span class="mtext">'+name+'</span>\u2009';
           } else if(SYM.hasOwnProperty(name)){
@@ -85,6 +134,9 @@
         var ch=s[i+1]||''; i+=2;
         if(SYM.hasOwnProperty(ch)) out+=SYM[ch]; else out+=esc(ch);
         continue;
+      }
+      if(s.slice(i,i+3)==='{,}'){
+        out+=','; i+=3; continue;
       }
       if(c==='^'||c==='_'){
         var g5=readGroup(s,i+1); i=g5.next;
@@ -102,10 +154,6 @@
     return out;
   }
 
-  /**
-   * splitMath(src) — separa prosa y math por delimitadores $ / $$.
-   * Inline exige contenido no vacío para no tragarse un `$$` de display.
-   */
   var MATH_SPLIT_RE = /(\$\$[^$]*\$\$|\$[^$]+\$)/g;
 
   function renderMathPart(p){
@@ -118,12 +166,16 @@
 
   /**
    * tex(src) — único renderizador público.
-   * Prosa fuera de $...$ se escapa tal cual (sin→sin, tanto→tanto).
-   * Solo \sin/\cos/\tan/... DENTRO de delimitadores se ven como función.
+   * Prosa fuera de $...$ se escapa tal cuál (sin→sin, tanto→tanto).
+   * Solo \sin/\cos/\tan/... DENTRO de delimitadores se ven cómo función.
    */
   function tex(src){
     if(src==null) return '';
-    return String(src).split(MATH_SPLIT_RE).map(function(p){
+    var str = String(src);
+    if(!str.includes('$') && (str.includes('^\\circ') || str.includes('\\circ') || str.includes('\\widehat') || str.includes('\\dfrac') || str.includes('\\sqrt') || str.includes('\\pm'))){
+      return renderMathPart('$' + str + '$');
+    }
+    return str.split(MATH_SPLIT_RE).map(function(p){
       if(!p) return '';
       if(p.charAt(0)==='$') return renderMathPart(p);
       return esc(p).replace(/&lt;br\s*\/?&gt;/g,'<br>').replace(/&lt;b&gt;/g,'<b>').replace(/&lt;\/b&gt;/g,'</b>');
@@ -134,6 +186,7 @@
   window.MATH_SPLIT_RE = MATH_SPLIT_RE;
   window.SPANISH_MATH_FALSE_FRIENDS = SPANISH_MATH_FALSE_FRIENDS;
 })();
+var tex = window.tex;
 
 
 /* ---------- Auto-Recuperación y Migración del Progreso v3 ---------- */
@@ -168,7 +221,7 @@ function plain(s){ // convierte etiquetas LaTeX simples a texto plano para SVG
   return escH(String(s==null?'':s)
     .replace(/\\d?frac\{([^{}]*)\}\{([^{}]*)\}/g,'$1/$2')
     .replace(/\\sqrt\{([^{}]*)\}/g,'\u221A($1)')
-    .replace(/\\circ/g,'\u00B0').replace(/\\alpha/g,'\u03B1').replace(/\\theta/g,'\u03B8')
+    .replace(/\\circ/g,'\u00B0').replace(/\\alpha/g,'\u03B1').replace(/\\beta/g,'\u03B2').replace(/\\theta/g,'\u03B8').replace(/\\gamma/g,'\u03B3').replace(/\\delta/g,'\u03B4').replace(/\\pi/g,'\u03C0')
     .replace(/[\$\\{}^]/g,''));
 }
 var SVGNS='xmlns="http://www.w3.org/2000/svg"';
@@ -646,11 +699,10 @@ function exitGuia(){
 function applyHashRoute(){
   var raw = String(location.hash||'');
   var h = raw.replace(/^#/, '');
-  // no hash -> aula home, unless an active attempt is being restored (stay in attempt/summary/review)
   if(!h){
     if(S.attempt && !S.attempt.finished && S.attempt.restored) return;
     if(S.view==='attempt' || S.view==='summary' || S.view==='review') return;
-    S.area = 'aula';
+    S.area = 'guia';
     S.view = 'home';
     return;
   }
@@ -749,6 +801,22 @@ function md(src){
   while(i < lines.length){
     var L = lines[i];
     if(/^\s*$/.test(L)){ flush(); i++; continue; }
+    var miniM = /^\[\[MINISIM:(.*?)\]\]$/.exec(L.trim());
+    if(miniM){
+      flush();
+      var minId = miniM[1];
+      out += '<div class="minisim-box" style="margin:24px 0; padding:20px 24px; background:#f0f9ff; border:2px solid #0284c7; border-radius:12px; box-shadow:0 4px 14px rgba(2,132,199,.1);">'
+        + '<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">'
+        + '<div><span class="chip" style="background:#0284c7; color:#fff; font-weight:700; font-size:11px; text-transform:uppercase;">⚡ Taller Práctico Integrado</span>'
+        + '<h3 style="margin:6px 0 2px; color:#0369a1; font-size:18px;">Mini-Simulador de esta Lección (50 preguntas)</h3>'
+        + '<p style="margin:0; font-size:13px; color:#475569;">Preguntas exclusivas parametrizadas para afianzar los conceptos estudiados.</p></div>'
+        + '<div style="display:flex; gap:8px;">'
+        + '<button class="btn primary" data-act="start-minisim" data-lid="' + minId + '" data-n="5" style="background:#0284c7; border-color:#0284c7; font-size:13px; font-weight:700;">▶️ Practicar 5 preguntas</button>'
+        + '<button class="btn sec" data-act="start-minisim" data-lid="' + minId + '" data-n="10" style="font-size:13px; font-weight:700;">▶️ Reto 10 preguntas</button>'
+        + '</div></div></div>';
+      i++;
+      continue;
+    }
     var h = /^(#{2,4})\s+(.*)$/.exec(L);
     if(h){ flush(); var lvl = h[1].length, txt = h[2];
       out += '<h'+lvl+(lvl<=3?' id="'+slugId(txt)+'"':'')+'>'+inlineMd(txt)+'</h'+lvl+'>'; i++; continue; }
@@ -835,7 +903,7 @@ var LEVELS = [{k:'facil',n:'F\u00e1cil',c:'f1'},{k:'medio',n:'Intermedio',c:'f2'
 var GUIA_COURSES = ['guia_mat30','guia_fql120','guia_fis','guia_qui','guia_len'];
 function levelName(k){ for(var i=0;i<LEVELS.length;i++) if(LEVELS[i].k===k) return LEVELS[i].n; return k; }
 
-var S = { view:'home', area:'aula', course:'mat', attempt:null, modal:null, tick:null, onePage:null, chapter:null, scrollTop:true, histTab:'all', toast:null, viewingRecord:null };
+var S = { view:'home', area:'guia', course:'mat', attempt:null, modal:null, tick:null, onePage:null, chapter:null, scrollTop:true, histTab:'all', toast:null, viewingRecord:null };
 
 var COURSES = {
   guia69:{key:'guia69',name:'Simulador Completo Guía 2026-B (69P)',short:'Guía Completo 69P',full:'Guía Oficial EPN 2026-B — Examen Completo 69 Preguntas',desc:'Examen simulador completo de 69 preguntas oficiales (Matemáticas, Lenguaje, Física y Química) con soluciones paso a paso desde cero.'},
@@ -1145,7 +1213,7 @@ function planBox(k){
   
   if(!qs){
     return '<div class="planbox"><b>Preguntas del próximo intento</b>'+
-      '<div class="hint">Se eligen automáticamente al empezar, repartidas entre todos los temas y sin repetir ninguna que ya hayas visto. Puedes barajarlas o inspeccionarlas antes de empezar.</div>'+
+      '<div class="hint">Se eligen automáticamente al empezar, repartidas entre todos los temas y sin repetir ninguna qué ya hayas visto. Puedes barajarlas o inspeccionarlas antes de empezar.</div>'+
       '<div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn sec mini" data-act="reshuffle" data-c="'+k+'">↻ Barajar preguntas del próximo simulador</button>'+adminBtnHtml+'</div></div>';
   }
   var by = {};
@@ -1153,7 +1221,7 @@ function planBox(k){
   var chips = Object.keys(by).sort().map(function(t){ return '<span class="chip light">'+escH(t)+': <b>'+by[t]+'</b></span>'; }).join('');
   var nuevas = qs.filter(function(q){ return !SEENSET[q.__s][q.__i]; }).length;
   return '<div class="planbox"><b>Preguntas del próximo intento (ya barajadas)</b>'+
-    '<div class="hint">'+qs.length+' preguntas · '+nuevas+' que nunca te han salido · nivel '+levelName(cfg.level)+'</div>'+
+    '<div class="hint">'+qs.length+' preguntas · '+nuevas+' qué nunca te han salido · nivel '+levelName(cfg.level)+'</div>'+
     '<div class="chips">'+chips+'</div>'+
     '<div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap"><button class="btn sec mini" data-act="reshuffle" data-c="'+k+'">↻ Volver a barajar</button>'+
     '<button class="btn ghost mini" data-act="clearplan" data-c="'+k+'">Quitar selección</button>'+adminBtnHtml+'</div></div>';
@@ -1168,7 +1236,7 @@ function buildAttempt(courseKey){
   if(planned && planned.length){
     picked = planned.slice(0,n);
     clearPlan(courseKey);
-    notes.push('Se usaron las preguntas que barajaste previamente.');
+    notes.push('Se usaron las preguntas qué barajaste previamente.');
   } else if(courseKey==='mix'){
     var per = Math.floor(n/4), extra = n - per*4;
     EXAM.forEach(function(k,ix){ picked = picked.concat(pickForSubject(k, per + (ix<extra?1:0), notes)); });
@@ -1252,7 +1320,7 @@ function buildGuia1000Attempt(courseKey){
     }
   }
   if(picked.length===0){
-    S.toast='Banco 1000 aún no cargado. Verifica que guia-bank-1000-intermedio.js esté incluido.';
+    S.toast='Banco 1000 aún no cargado. Verifica qué guia-bank-1000-intermedio.js esté incluido.';
     picked=[];
   } else if(notes.length){
     S.toast = notes.join(' ');
@@ -1328,10 +1396,10 @@ function attemptFromRecord(r){
 /* ---------- CHROME ---------- */
 function areaToggleHtml(){
   var guia = isGuia();
-  return '<button class="area-toggle'+(guia?' is-guia':'')+'" data-act="togglearea" role="switch" aria-checked="'+(guia?'true':'false')+'" title="'+(guia?'Cambiar a Aula Barreno':'Cambiar a Gu\u00eda Oficial EPN')+'">'
-    +'<span class="area-lab '+(guia?'':'on')+'">AULA</span>'
-    +'<span class="area-track" aria-hidden="true"><span class="area-thumb"></span></span>'
-    +'<span class="area-lab guia '+(guia?'on':'')+'">GU\u00cdA EPN</span>'
+  return '<button class="área-toggle'+(guia?' is-guia':'')+'" data-act="togglearea" role="switch" aria-checked="'+(guia?'true':'false')+'" title="'+(guia?'Cambiar a Aula Barreno':'Cambiar a Gu\u00eda Oficial EPN')+'">'
+    +'<span class="área-lab '+(guia?'':'on')+'">AULA</span>'
+    +'<span class="área-track" aria-hidden="true"><span class="área-thumb"></span></span>'
+    +'<span class="área-lab guia '+(guia?'on':'')+'">GU\u00cdA EPN</span>'
   +'</button>';
 }
 function navbar(active){
@@ -1402,7 +1470,7 @@ function sitefooter(){
   return '<div class="sitefooter">'+
     '<div><b>Cont\u00e1ctanos</b><div>\u260E \u2709</div></div>'+
     '<div class="mid"><span class="contactbtn">\u2295 Contactar con el soporte del sitio</span>'+
-    '<div>Usted se ha identificado como '+escH(cfg.student)+' (<a>Cerrar sesi\u00f3n</a>)</div></div>'+
+    '<div>Usted se ha identificado cómo '+escH(cfg.student)+' (<a>Cerrar sesi\u00f3n</a>)</div></div>'+
     '<div style="width:120px"></div></div>';
 }
 function pagehead(title, crumbs, ck){
@@ -1427,12 +1495,17 @@ function isCorrect(ix){
   return a.ans[ix]!==null && q.order[a.ans[ix]] === q.src.a;
 }
 function navButtons(mode){
-  var a = S.attempt, c = COURSES[a.course];
+  var a = S.attempt, c = getCourseInfo(a.course);
+  var isSeq = (a && a.sequential && mode==='attempt');
   var btns = a.qs.map(function(q,ix){
     var cls = 'qnbutton';
     if(mode==='review'){ cls += isCorrect(ix)?' correct':(a.ans[ix]!==null?' incorrect':''); }
     else { if(a.ans[ix]!==null) cls += ' answered'; if(ix===a.cur && S.view==='attempt') cls += ' current'; }
     if(a.flags[ix]) cls += ' flagged';
+    if(isSeq && ix!==a.cur){
+      cls += ' disabled';
+      return '<button class="'+cls+'" data-act="none" style="cursor:not-allowed;opacity:.65;" title="Navegación secuencial estricta: avanza con Siguiente página"><span class="num">'+(ix+1)+'</span><span class="bar"></span></button>';
+    }
     return '<button class="'+cls+'" data-act="goto" data-i="'+ix+'"><span class="num">'+(ix+1)+'</span><span class="bar"></span></button>';
   }).join('');
   return '<div class="block">'+
@@ -1490,42 +1563,42 @@ function importProgress(text){
 var METHODS = [
  /* ---- MATEMATICA ---- */
  {k:'mat', re:/valor de la expresión/i, h:'Jerarquía',
-  st:['**Reconoce la operacion:** es una evaluacion numerica, asi que solo se aplica la jerarquia de operaciones.',
-      '**Resuelve primero los parentesis** (de adentro hacia afuera) y las barras de valor absoluto.',
-      '**Luego las potencias y raices**, recordando que $(-a)^{2}$ es positivo pero $-a^{2}$ es negativo.',
-      '**Despues multiplicaciones y divisiones** de izquierda a derecha.',
+  st:['**Reconoce la operación:** es una evaluación numerica, asi qué solo se aplica la jerarquía de operaciones.',
+      '**Resuelve primero los paréntesis** (de adentro hacia afuera) y las barras de valor absoluto.',
+      '**Luego las potencias y raíces**, recordando qué $(-a)^{2}$ es positivo pero $-a^{2}$ es negativo.',
+      '**Después multiplicaciones y divisiones** de izquierda a derecha.',
       '**Al final sumas y restas**, cuidando la regla de signos: dos signos iguales suman, dos distintos restan.']},
  {k:'mat', re:/Al efectuar .*frac|\bfrac\{/i, t:'Fundamentos', h:'Fracciones',
-  st:['**Identifica que es una operacion con fracciones** (racionales).',
-      '**Si hay suma o resta:** saca el minimo comun denominador (mcm de los denominadores) y convierte cada fraccion.',
+  st:['**Identifica qué es una operación con fracciones** (racionales).',
+      '**Si hay suma o resta:** saca el mínimo común denominador (mcm de los denominadores) y convierte cada fracción.',
       '**Si hay multiplicacion:** multiplica numerador por numerador y denominador por denominador; **si hay division:** multiplica por el reciproco.',
-      '**En fracciones compuestas** (fraccion sobre fraccion) resuelve arriba y abajo por separado y luego divide.',
-      '**Simplifica** dividiendo numerador y denominador por su MCD hasta dejar la fraccion irreducible.']},
+      '**En fracciones compuestas** (fracción sobre fracción) resuelve arriba y abajo por separado y luego divide.',
+      '**Simplifica** dividiendo numerador y denominador por su MCD hasta dejar la fracción irreducible.']},
  {k:'mat', re:/notación científica/i, h:'Reales',
   st:['**Multiplica (o divide) por separado** los coeficientes y las potencias de $10$.',
       '**Suma los exponentes** al multiplicar y restalos al dividir: $10^{a}\\cdot10^{b}=10^{a+b}$.',
       '**Normaliza el resultado**: el coeficiente debe quedar entre $1$ y $10$; si te pasas, corre la coma y ajusta el exponente.']},
  {k:'mat', re:/es igual a:|simplificada/i, t:'Fundamentos', h:'exponentes',
-  st:['**Detecta las leyes de exponentes** que intervienen.',
+  st:['**Detecta las leyes de exponentes** qué intervienen.',
       '**Misma base:** al multiplicar se suman exponentes ($a^{m}a^{n}=a^{m+n}$) y al dividir se restan ($a^{m}/a^{n}=a^{m-n}$).',
       '**Potencia de potencia:** se multiplican los exponentes, $(a^{m})^{n}=a^{mn}$.',
-      '**Exponente negativo** significa reciproco: $a^{-n}=1/a^{n}$; y todo numero (no nulo) elevado a $0$ vale $1$.',
-      '**Si hay sumas de potencias**, factoriza la potencia mas pequena en lugar de intentar sumar exponentes.']},
+      '**Exponente negativo** significa reciproco: $a^{-n}=1/a^{n}$; y todo número (no nulo) elevado a $0$ vale $1$.',
+      '**Si hay sumas de potencias**, factoriza la potencia mas pequeña en lugar de intentar sumar exponentes.']},
  {k:'mat', re:/racionalizar/i, h:'Radicales',
-  st:['**Identifica el radical del denominador**: hay que eliminarlo sin cambiar el valor de la expresion.',
+  st:['**Identifica el radical del denominador**: hay qué eliminarlo sin cambiar el valor de la expresion.',
       '**Si el denominador es $\\sqrt{a}$**, multiplica numerador y denominador por $\\sqrt{a}$.',
       '**Si es un binomio $a+\\sqrt{b}$**, multiplica por su **conjugado** $a-\\sqrt{b}$ para usar $(x+y)(x-y)=x^{2}-y^{2}$.',
-      '**Opera y simplifica** el resultado; el denominador queda sin raices.']},
+      '**Opera y simplifica** el resultado; el denominador queda sin raíces.']},
  {k:'mat', re:/El desarrollo de/i, h:'Productos notables',
-  st:['**Reconoce el producto notable** antes de multiplicar termino a termino.',
+  st:['**Reconoce el producto notable** antes de multiplicar término a término.',
       '**Binomio al cuadrado:** $(a\\pm b)^{2}=a^{2}\\pm 2ab+b^{2}$. El error tipico es olvidar el doble producto $2ab$.',
       '**Suma por diferencia:** $(a+b)(a-b)=a^{2}-b^{2}$.',
-      '**Binomios con termino comun:** $(x+a)(x+b)=x^{2}+(a+b)x+ab$.',
-      '**Verifica** el signo y el grado de cada termino del resultado.']},
+      '**Binomios con término común:** $(x+a)(x+b)=x^{2}+(a+b)x+ab$.',
+      '**Verifica** el signo y el grado de cada término del resultado.']},
  {k:'mat', re:/factorización/i, h:'Factorizaci',
-  st:['**Recorre el menu de factorizacion en orden:** factor comun, diferencia de cuadrados, trinomio cuadrado perfecto, trinomio general, agrupacion.',
+  st:['**Recorre el menu de factorización en orden:** factor común, diferencia de cuadrados, trinomio cuadrado perfecto, trinomio general, agrupacion.',
       '**Diferencia de cuadrados:** $a^{2}-b^{2}=(a+b)(a-b)$.',
-      '**Trinomio $x^{2}+bx+c$:** busca dos numeros que **multiplicados den $c$ y sumados den $b$**.',
+      '**Trinomio $x^{2}+bx+c$:** busca dos números qué **multiplicados den $c$ y sumados den $b$**.',
       '**Trinomio $ax^{2}+bx+c$:** usa el método del aspa o multiplica y divide por $a$.',
       '**Comprueba** multiplicando los factores: debes recuperar la expresion original.']},
  {k:'mat', re:/residuo de dividir/i, h:'residuo',
@@ -1536,13 +1609,13 @@ var METHODS = [
  {k:'mat', re:/la expresión .*\{x/i, t:'Fundamentos', h:'Expresiones algebraicas',
   st:['**Factoriza numerador y denominador** por separado.',
       '**Cancela los factores comunes** (solo factores, nunca sumandos sueltos).',
-      '**Indica las restricciones**: los valores que anulan el denominador original quedan excluidos.']},
+      '**Indica las restricciones**: los valores qué anulan el denominador original quedan excluidos.']},
  {k:'mat', re:/solución de la ecuación/i, t:'Ecuaciones', h:'primer grado',
-  st:['**Quita denominadores** multiplicando toda la ecuacion por el mcm.',
-      '**Elimina parentesis** aplicando la propiedad distributiva.',
-      '**Agrupa:** las $x$ a un lado y los numeros al otro, cambiando de signo al pasar.',
-      '**Reduce terminos semejantes** y **despeja** dividiendo por el coeficiente de $x$.',
-      '**Verifica** sustituyendo el valor obtenido en la ecuacion original.']},
+  st:['**Quita denominadores** multiplicando toda la ecuación por el mcm.',
+      '**Elimina paréntesis** aplicando la propiedad distributiva.',
+      '**Agrupa:** las $x$ a un lado y los números al otro, cambiando de signo al pasar.',
+      '**Reduce términos semejantes** y **despeja** dividiendo por el coeficiente de $x$.',
+      '**Verifica** sustituyendo el valor obtenido en la ecuación original.']},
  {k:'mat', re:/En el sistema|cuestan \$/i, h:'Sistemas',
   st:['**Traduce el enunciado a dos ecuaciones** definiendo claramente las incognitas (por ejemplo $x$ = precio de un esfero).',
       '**Elige método:** sustitucion si una variable esta despejada, **eliminacion** si los coeficientes se pueden igualar, o igualacion.',
@@ -1554,14 +1627,14 @@ var METHODS = [
       '**Aplica $\\Delta=b^{2}-4ac$**, cuidando que $b^{2}$ siempre es positivo.',
       '**Interpreta:** $\\Delta>0$ dos raices reales distintas, $\\Delta=0$ una raiz doble, $\\Delta<0$ sin solución real.']},
  {k:'mat', re:/raíces de|soluciones de la ecuación \$x\^/i, h:'segundo grado',
-  st:['**Ordena la ecuacion** como $ax^{2}+bx+c=0$.',
-      '**Intenta factorizar primero** (dos numeros que sumen $b$ y multipliquen $c$ si $a=1$): es mas rapido que la formula.',
+  st:['**Ordena la ecuación** cómo $ax^{2}+bx+c=0$.',
+      '**Intenta factorizar primero** (dos números qué sumen $b$ y multipliquen $c$ si $a=1$): es mas rapido qué la formula.',
       '**Si no factoriza, usa la formula** $x=\\dfrac{-b\\pm\\sqrt{b^{2}-4ac}}{2a}$.',
       '**Recuerda Vieta** para verificar o para preguntas de suma y producto: $x_{1}+x_{2}=-b/a$ y $x_{1}x_{2}=c/a$.',
-      '**Verifica** sustituyendo al menos una raiz.']},
+      '**Verifica** sustituyendo al menos una raíz.']},
  {k:'mat', re:/conjunto solución de la inecuación \$\|x|conjunto solución de la ecuación \$\|x/i, h:'Valor absoluto',
   st:['**Recuerda el significado:** $|x-a|$ es la distancia entre $x$ y $a$.',
-      '**Ecuacion $|u|=k$ (con $k\\ge0$):** se abre en dos casos, $u=k$ y $u=-k$.',
+      '**Ecuación $|u|=k$ (con $k\\ge0$):** se abre en dos casos, $u=k$ y $u=-k$.',
       '**Desigualdad $|u|<k$:** equivale a la doble desigualdad $-k<u<k$ (un solo intervalo).',
       '**Desigualdad $|u|>k$:** equivale a $u<-k$ **o** $u>k$ (dos rayos separados).',
       '**Despeja $x$** en cada caso y escribe la solución en notacion de intervalos.']},
@@ -1730,7 +1803,7 @@ var METHODS = [
       '**Cambio fisico:** cambia la forma o el estado, no la identidad. **Cambio quimico:** se forman sustancias nuevas (gas, precipitado, cambio de color, calor).',
       '**Aplica el criterio** al caso del enunciado.']},
  {k:'qui', re:/número de protones|isotop|especie \$\^/i, h:'Partículas',
-  st:['**Lee la notacion $^{A}_{Z}X$:** $Z$ es el numero atomico (protones) y $A$ el numero de masa.',
+  st:['**Lee la notacion $^{A}_{Z}X$:** $Z$ es el número atomico (protones) y $A$ el número de masa.',
       '**Neutrones $=A-Z$.**',
       '**Electrones:** en un atomo neutro son iguales a $Z$; en un ion, resta la carga positiva o suma la negativa.',
       '**Verifica:** los isotopos tienen igual $Z$ y distinto $A$.']},
@@ -1738,13 +1811,13 @@ var METHODS = [
   st:['**Cuenta los electrones** (iguales a $Z$ si el atomo es neutro).',
       '**Sigue el orden de llenado (Aufbau):** $1s\\,2s\\,2p\\,3s\\,3p\\,4s\\,3d\\,4p\dots$',
       '**Respeta la capacidad:** $s$ hasta 2, $p$ hasta 6, $d$ hasta 10, $f$ hasta 14.',
-      '**Los electrones de valencia** son los del ultimo nivel $n$ (grupo A = numero de valencia).',
-      '**Comprueba** que la suma de superindices sea el total de electrones.']},
+      '**Los electrones de valencia** son los del ultimo nivel $n$ (grupo A = número de valencia).',
+      '**Comprueba** qué la suma de superindices sea el total de electrones.']},
  {k:'qui', re:/se ubica|periodo|grupo/i, h:'tabla',
   st:['**El periodo es el ultimo nivel $n$** de la configuración.',
       '**El grupo A** se obtiene de los electrones de valencia ($ns^{x}np^{y}$).',
       '**El bloque** lo da el ultimo subnivel ocupado ($s$, $p$, $d$ o $f$).',
-      '**Escribe la configuración** y leela como si fuera un mapa de la tabla.']},
+      '**Escribe la configuración** y leela cómo si fuera un mapa de la tabla.']},
  {k:'qui', re:/radio|energía de ionización|electronegatividad.*periodo|afinidad/i, h:'periódicas',
   st:['**Memoriza las flechas:** el **radio atomico** crece hacia la izquierda y hacia abajo.',
       '**Energia de ionizacion, afinidad electronica y electronegatividad** crecen hacia la derecha y hacia arriba (al reves del radio).',
@@ -1752,19 +1825,19 @@ var METHODS = [
       '**Aplica la tendencia** a los elementos del enunciado.']},
  {k:'qui', re:/fórmula del|nombre del compuesto/i, h:'Nomenclatura',
   st:['**Identifica el tipo de compuesto:** oxido, hidroxido, acido, hidruro o sal.',
-      '**Asigna los numeros de oxidacion** de cada elemento.',
-      '**Cruza las valencias** (el numero de oxidacion de uno pasa como subindice del otro) y simplifica.',
-      '**Nombra segun el sistema:** prefijos griegos (mono-, di-, tri-) o terminaciones -oso/-ico.',
-      '**Verifica que la carga total sea cero.**']},
+      '**Asigna los números de oxidacion** de cada elemento.',
+      '**Cruza las valencias** (el número de oxidacion de uno pasa cómo subindice del otro) y simplifica.',
+      '**Nombra según el sistema:** prefijos griegos (mono-, di-, tri-) o terminaciones -oso/-ico.',
+      '**Verifica qué la carga total sea cero.**']},
  {k:'qui', re:/diferencia de electronegatividad|enlace/i, h:'electronegatividad',
   st:['**Calcula $\\Delta$EN** restando las electronegatividades (mayor menos menor).',
       '**Clasifica:** $\\Delta<0{,}4$ covalente no polar; entre $0{,}4$ y $1{,}7$ covalente polar; $\\Delta>1{,}7$ ionico.',
       '**Comprueba con el tipo de elementos:** metal + no metal suele ser ionico; no metal + no metal, covalente.']},
  {k:'qui', re:/repulsión de pares|geometría/i, h:'TRPEV',
   st:['**Dibuja la estructura de Lewis** y cuenta los pares alrededor del atomo central.',
-      '**Cuenta dominios:** enlaces (simples, dobles o triples cuentan como uno) mas pares libres.',
+      '**Cuenta dominios:** enlaces (simples, dobles o triples cuentan cómo uno) mas pares libres.',
       '**Asigna la geometria:** 2 dominios lineal, 3 trigonal plana, 4 tetraedrica; con pares libres pasa a angular o piramidal.',
-      '**Recuerda:** los pares libres empujan mas y cierran el angulo.']},
+      '**Recuerda:** los pares libres empujan mas y cierran el ángulo.']},
  {k:'qui', re:/dipolo|puentes de hidrógeno|fuerzas intermoleculares/i, h:'intermoleculares',
   st:['**Ordena de mas debil a mas fuerte:** dispersion de London < dipolo-dipolo < puente de hidrogeno < ion-dipolo.',
       '**Hay puente de hidrogeno** solo si el H esta unido a **F, O o N**.',
@@ -1773,7 +1846,7 @@ var METHODS = [
   st:['**Escribe la formula** y cuenta los atomos de cada elemento.',
       '**Multiplica cada masa atomica por su subindice** y suma todo.',
       '**El resultado se expresa en $\\mathrm{g/mol}$.**',
-      '**Verifica** que no hayas olvidado subindices dentro de parentesis.']},
+      '**Verifica** qué no hayas olvidado subindices dentro de paréntesis.']},
  {k:'qui', re:/La masa de \$/i, h:'mol',
   st:['**Relacion clave:** $n=\\dfrac{m}{M}$, es decir $m=n\\cdot M$.',
       '**Multiplica los moles por la masa molar** para obtener gramos.',
@@ -2056,11 +2129,30 @@ function explainHtml(ix){
   var a = S.attempt, Q = a.qs[ix], src = Q.src, subj = Q.subj || (a.course==='mix'? Q.subj : a.course);
   if(subj==='mix') subj = 'mat';
   
+  var cognitiveErrHtml = '';
+  if(a.ans[ix] !== null && !isCorrect(ix) && Array.isArray(src.distractores) && src.distractores.length){
+    var chosenOrigIx = Q.order[a.ans[ix]];
+    var chosenText = src.o[chosenOrigIx];
+    var matchDist = src.distractores.find(function(d){
+      if(!d || !d.opt) return false;
+      var cleanD = d.opt.replace(/^\$+|\$+$/g, '').trim();
+      var cleanC = String(chosenText).replace(/^\$+|\$+$/g, '').trim();
+      return cleanD === cleanC || d.opt === chosenText;
+    });
+    if(matchDist && matchDist.error){
+      cognitiveErrHtml = '<div class="cognitive-err-box" style="margin:12px 0 10px; padding:12px 16px; background:#fff3cd; border-left:4px solid #d9822b; border-radius:6px; font-size:14px; color:#664d03;">'
+        + '<div style="font-weight:700; display:flex; align-items:center; gap:6px;"><span>⚠️</span> Diagnóstico de tu error conceptual:</div>'
+        + '<div style="margin-top:5px;">Tu respuesta seleccionada (' + tex(chosenText) + ') corresponde al error típico: <b>' + escH(matchDist.error) + '</b>.</div>'
+        + '</div>';
+    }
+  }
+
   if(src.e){
     var expBody = inlineMd(src.e);
     var chLabel = src.ch ? (function(){ var b=(window.GUIA_THEORY||[]).find(function(c){return c.id===src.ch;}); return b? b.t : src.ch; })() : '';
-    var linkBtn = src.ch ? '<div class="solvelink" style="margin-top:14px;"><button class="btn primary" data-act="go-theory-chapter" data-ch="'+src.ch+'">📖 Estudiar teoría: '+(chLabel? escH(chLabel): src.ch)+'</button> <span style="font-size:12px; color:#5b6b7a; margin-left:6px;">Teoría autosuficiente — sin conocimientos previos</span></div>' : '';
-    return '<div class="solvebox" style="border-left:4px solid #0078d4; background:#f4f8fc;"><div class="solvehead" style="color:#004578; font-weight:700; font-size:15px;">💡 Explicación pedagógica paso a paso (desde cero)</div><div class="solvebody" style="font-size:14px; line-height:1.6; color:#242424; margin-top:8px;">'+expBody+'</div>'+linkBtn+'</div>';
+    var theoryDeepLink = (src.theory && src.theory.concept_title) ? ('<div style="margin-top:10px;"><button class="btn ghost mini" data-act="go-theory-deep" data-ch="' + (src.theory.lesson_id || src.ch || 'mat-L01') + '" data-anchor="' + (src.theory.anchor || '') + '" data-qix="' + ix + '" style="border-color:#0f6cbf;color:#0f6cbf;font-weight:700;">📖 Estudiar concepto en la teoría: ' + escH(src.theory.concept_title) + '</button></div>') : '';
+    var linkBtn = src.ch ? '<div class="solvelink" style="margin-top:14px;"><button class="btn primary" data-act="go-theory-deep" data-ch="'+src.ch+'" data-qix="'+ix+'">📖 Estudiar lección completa: '+(chLabel? escH(chLabel): src.ch)+'</button> <span style="font-size:12px; color:#5b6b7a; margin-left:6px;">Teoría autosuficiente — sin conocimientos previos</span></div>' : '';
+    return '<div class="solvebox" style="border-left:4px solid #0078d4; background:#f4f8fc;"><div class="solvehead" style="color:#004578; font-weight:700; font-size:15px;">💡 Explicación pedagógica paso a paso (desde cero)</div>' + cognitiveErrHtml + '<div class="solvebody" style="font-size:14px; line-height:1.6; color:#242424; margin-top:8px;">'+expBody+'</div>' + theoryDeepLink + linkBtn + '</div>';
   }
   var m = methodFor(src, subj);
   var steps = (m? m.st.slice() : []);
@@ -2091,7 +2183,7 @@ function questionHtml(ix, mode){
   var info = '<div class="info">'+
     '<h3>Pregunta <span>'+(ix+1)+'</span></h3>'+
     '<div class="state">'+(review? (a.ans[ix]===null?'Sin responder':(correct?'Correcta':'Incorrecta')) : 'Sin responder a\u00fan')+'</div>'+
-    '<div class="grade">'+(review?('Se punt\u00faa '+fmtNum(correct?1:0)+' sobre '+fmtNum(1)) : 'Se punt\u00faa como '+fmtNum(1))+'</div>'+
+    '<div class="grade">'+(review?('Se punt\u00faa '+fmtNum(correct?1:0)+' sobre '+fmtNum(1)) : 'Se punt\u00faa cómo '+fmtNum(1))+'</div>'+
     '<div class="topic">'+escH(topic)+'<br>'+levelName(src.d)+'</div>'+
     (review? '' : '<button class="flag'+(a.flags[ix]?' on':'')+'" data-act="flag" data-i="'+ix+'">\u2691 <u>'+(a.flags[ix]?'Quitar marca':'Marcar pregunta')+'</u></button>')+
     '</div>';
@@ -2114,7 +2206,7 @@ function questionHtml(ix, mode){
       (a.ans[ix]===null? '<div class="wrong">No respondi\u00f3 esta pregunta.</div>' : (correct?'<div class="right">Respuesta correcta</div>':'<div class="wrong">Respuesta incorrecta</div>'))+
       '</div>'+explainHtml(ix);
   }
-  return '<div class="que">'+info+'<div class="content">'+body+'</div></div>';
+  return '<div class="que" id="q-'+ix+'">'+info+'<div class="content">'+body+'</div></div>';
 }
 
 /* ---------- estadísticas ---------- */
@@ -2230,7 +2322,7 @@ function topicStats(){
 }
 function normWords(s){
   return String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')
-    .split(/[^a-z0-9]+/).filter(function(w){ return w.length>3 && ['para','como','entre','sobre','desde','cada','todo','todos'].indexOf(w)<0; });
+    .split(/[^a-z0-9]+/).filter(function(w){ return w.length>3 && ['para','cómo','entre','sobre','desde','cada','todo','todos'].indexOf(w)<0; });
 }
 function chapterFor(k, topic){
   var book = theoryBook();
@@ -2299,7 +2391,7 @@ function streakDays(){
 function recoCard(e, rank){
   var ch = chapterFor(e.k, e.t);
   var motivo = e.n===0
-    ? 'Todavia no practicas este tema y representa el '+Math.round(e.weight*1000)/10+'% del banco: son puntos que hoy dejas al azar.'
+    ? 'Todavia no practicas este tema y representa el '+Math.round(e.weight*1000)/10+'% del banco: son puntos qué hoy dejas al azar.'
     : 'Aciertas el '+Math.round(e.acc*100)+'% ('+e.ok+' de '+e.n+') y el tema pesa el '+Math.round(e.weight*1000)/10+'% del banco. Llevarlo al 85% suma cerca de '+(Math.round(Math.max(0,(0.85-e.acc))*e.weight*1000)/10)+' puntos porcentuales a tu nota global.';
   return '<div class="reco">'+
     '<div class="rank">'+rank+'</div>'+
@@ -2319,7 +2411,7 @@ function viewStats(){
   var body = '';
 
   if(!live.length){
-    body += '<div class="emptybox">Todavia no hay intentos validos.<br>Rinde tu primer simulador y aqui apareceran tu promedio, tus temas debiles y que estudiar despues.<br><br><button class="btn" data-act="quickstart" data-c="mat">Empezar Matemática</button></div>';
+    body += '<div class="emptybox">Todavia no hay intentos validos.<br>Rinde tu primer simulador y aqui apareceran tu promedio, tus temas debiles y qué estudiar después.<br><br><button class="btn" data-act="quickstart" data-c="mat">Empezar Matemática</button></div>';
   } else {
     body += '<div class="herostats">'+
       '<div class="bigdonut">'+donut(globalAcc,'precision global')+'</div>'+
@@ -2334,8 +2426,8 @@ function viewStats(){
   }
 
   var top = pri.slice(0,3);
-  body += '<h3 class="sechead">Que estudiar ahora (maxima mejora en menos tiempo)</h3>'+
-    '<p class="th-sub">Prioridad = cuanto fallas en el tema x cuanto pesa ese tema en el examen. Siguiendo este orden tu nota sube lo mas rapido posible; al terminar la lista habras cubierto todos los temas de la guia.</p>'+
+  body += '<h3 class="sechead">Qué estudiar ahora (maxima mejora en menos tiempo)</h3>'+
+    '<p class="th-sub">Prioridad = cuánto fallas en el tema x cuánto pesa ese tema en el examen. Siguiendo este orden tu nota sube lo mas rapido posible; al terminar la lista habras cubierto todos los temas de la guia.</p>'+
     top.map(function(e,i){ return recoCard(e,i+1); }).join('');
 
   body += '<details class="planbox"><summary>Plan completo hasta dominar los '+pri.length+' temas de la guia</summary>'+
@@ -2515,7 +2607,8 @@ function viewGuiaHome(){
       }).join('');
       return banner1000 + '<div class="cards" style="margin-bottom:26px">'+cards+'</div>';
     })()+
-'<div class="guia-banner"><b>Modo gu\u00eda activo.</b> Aqu\u00ed estudias el temario 1:1 de la gu\u00eda PDF. Usa <b>Aprender</b> para la teoría y los simuladores de arriba para practicar con cobertura máxima.</div>'+
+    renderSimuladores30Catalog()+
+    '<div class="guia-banner"><b>Modo gu\u00eda activo.</b> Aqu\u00ed estudias el temario 1:1 de la gu\u00eda PDF. Usa <b>Aprender</b> para la teoría y los simuladores de arriba para practicar con cobertura máxima.</div>'+
     '<div style="margin:18px 0 10px;display:flex;gap:10px;flex-wrap:wrap">'+
     '<button class="btn" data-act="learn">Abrir Aprender ('+book.length+' cap\u00edtulos)</button>'+
     '<button class="btn sec" data-act="guiawork">Ver talleres (pr\u00f3ximamente)</button>'+
@@ -2549,12 +2642,272 @@ function viewGuiaWorkshops(){
     '<button class="btn ghost" data-act="home">Inicio gu\u00eda</button></div>'+
     '</div></div>'+drawerBtn()+sitefooter();
 }
+
+/* ---------- NUEVO BANCO POLITÉCNICO 1500 Y 30 SIMULADORES PROGRAMADOS ---------- */
+S.simTab = S.simTab || 'intermedio';
+S.bankMode = S.bankMode || 'nuevo_1500';
+
+
+function getCourseInfo(k){
+  if(COURSES[k]) return COURSES[k];
+  if(window.SIMULADORES_PROGRAMADOS && Array.isArray(window.SIMULADORES_PROGRAMADOS.simuladores)){
+    var sim = window.SIMULADORES_PROGRAMADOS.simuladores.find(function(s){ return s.sim_id === k; });
+    if(sim){
+      var lvlColor = sim.nivel === 'experto' ? '#b3261e' : (sim.nivel === 'dificil' ? '#d9822b' : '#1f7a3f');
+      return {
+        key: sim.sim_id,
+        name: sim.nombre,
+        short: 'Simulacro ' + (sim.simulador < 10 ? '0' + sim.simulador : sim.simulador),
+        full: 'Simulacro ' + (sim.simulador < 10 ? '0' + sim.simulador : sim.simulador) + ': ' + sim.nombre,
+        desc: sim.descripcion || 'Simulador programado de 30 preguntas.',
+        color: lvlColor,
+        icon: '🧮'
+      };
+    }
+  }
+  return { key: k, name: k, short: k, full: k, desc: '', color: '#0e2a47', icon: '🧮' };
+}
+
+function registerProgrammedSimsInCourses(){
+  if(window.SIMULADORES_PROGRAMADOS && Array.isArray(window.SIMULADORES_PROGRAMADOS.simuladores)){
+    window.SIMULADORES_PROGRAMADOS.simuladores.forEach(function(sim){
+      var lvlColor = sim.nivel === 'experto' ? '#b3261e' : (sim.nivel === 'dificil' ? '#d9822b' : '#1f7a3f');
+      COURSES[sim.sim_id] = {
+        key: sim.sim_id,
+        name: sim.nombre,
+        short: 'Simulacro ' + (sim.simulador < 10 ? '0' + sim.simulador : sim.simulador),
+        full: 'Simulacro ' + (sim.simulador < 10 ? '0' + sim.simulador : sim.simulador) + ': ' + sim.nombre + ' (' + levelName(sim.nivel) + ')',
+        desc: sim.descripcion || sim.objetivo || 'Simulador oficial programado de 30 preguntas.',
+        color: lvlColor,
+        icon: '🧮',
+        isProgrammedSim: true
+      };
+    });
+  }
+}
+
+function getSimuladoresList(){
+  registerProgrammedSimsInCourses();
+  if(window.SIMULADORES_PROGRAMADOS && Array.isArray(window.SIMULADORES_PROGRAMADOS.simuladores)){
+    return window.SIMULADORES_PROGRAMADOS.simuladores;
+  }
+  return [];
+}
+
+function buildProgrammedSimAttempt(simId, isSequential){
+  if(typeof isSequential === 'undefined') isSequential = true;
+  var sims = getSimuladoresList();
+  var sim = sims.find(function(s){ return s.sim_id === simId; });
+  if(!sim){
+    sim = { sim_id: simId, simulador: 1, nivel: 'intermedio', nombre: 'Simulador Matemáticas 30', duracion_min: 45, question_ids: [] };
+  }
+  var mat1500 = (window.GUIA_BANK_MAT_1500 && window.GUIA_BANK_MAT_1500.mat) ? window.GUIA_BANK_MAT_1500.mat : [];
+  var mapById = {};
+  mat1500.forEach(function(q){ mapById[q.id] = q; });
+  
+  var selected = [];
+  (sim.question_ids || []).forEach(function(qid){
+    if(mapById[qid]) selected.push(mapById[qid]);
+  });
+  if(selected.length < 5){
+    selected = mat1500.filter(function(q){ return q.d === sim.nivel; }).slice(0, 30);
+  }
+  
+  var qs = selected.map(function(q, idx){
+    var raw = {
+      q: q.prompt,
+      o: q.opts ? q.opts.slice() : [],
+      a: q.ans,
+      e: q.exp,
+      d: q.d,
+      t: q.t,
+      topics: q.topics ? q.topics.slice() : [],
+      ch: q.ch,
+      id: q.id,
+      imgs: q.imgs ? q.imgs.slice() : [],
+      maths: q.maths ? q.maths.slice() : [],
+      distractores: q.distractores ? q.distractores.slice() : [],
+      theory: q.theory,
+      __s: 'mat',
+      __i: idx
+    };
+    var order = [0,1,2,3];
+    if(cfg.shuffleOptions) order = shuffle(order);
+    return { subj:'mat', order:order, src:raw };
+  });
+  
+  var limitMs = (sim.duracion_min || 45) * 60 * 1000;
+  return {
+    course: sim.sim_id,
+    simId: sim.sim_id,
+    simTitle: sim.nombre,
+    simLevel: sim.nivel,
+    simObj: sim,
+    level: sim.nivel,
+    area: 'guia',
+    qs: qs,
+    ans: qs.map(function(){ return null; }),
+    flags: qs.map(function(){ return false; }),
+    cur: 0,
+    start: new Date(),
+    finished: false,
+    limitMs: limitMs,
+    isGuia1000: true,
+    isProgrammedSim: true,
+    sequential: !!isSequential
+  };
+}
+
+function renderSimuladores30Catalog(){
+  var sims = getSimuladoresList();
+  var curTab = S.simTab || 'intermedio';
+  var filtered = sims.filter(function(s){ return s.nivel === curTab; });
+  
+  var tabBtns = [
+    { key: 'intermedio', label: '🟢 Nivel Intermedio (10 Simulacros)', desc: 'Mismo nivel exigido en la prueba oficial EPN' },
+    { key: 'dificil', label: '🟡 Nivel Difícil (10 Simulacros)', desc: 'Razonamiento conceptual y problemas combinados' },
+    { key: 'experto', label: '🔴 Nivel Experto (10 Simulacros)', desc: 'Alta exigencia analítica · Politécnica Pura' }
+  ].map(function(tb){
+    var active = (tb.key === curTab);
+    return '<button class="sim-tab-btn ' + (active ? 'active' : '') + '" data-act="setsimtab" data-tab="' + tb.key + '">'
+      + '<b>' + tb.label + '</b><span class="sim-tab-sub">' + tb.desc + '</span></button>';
+  }).join('');
+  
+  var cards = filtered.map(function(sim){
+    var hs = liveHist().filter(function(r){ return r.course === sim.sim_id; });
+    var last = hs.length ? hs.sort(function(a,b){ return b.ts - a.ts; })[0] : null;
+    var best = hs.length ? Math.max.apply(null, hs.map(recPct)) : null;
+    
+    var colorBadge = sim.nivel === 'experto' ? '#b3261e' : (sim.nivel === 'dificil' ? '#d9822b' : '#1f7a3f');
+    var bgBadge = sim.nivel === 'experto' ? '#fdf2f2' : (sim.nivel === 'dificil' ? '#fffbeb' : '#f0fdf4');
+    
+    var statusHtml = hs.length 
+      ? '<div class="sim-status-row"><span class="sim-pill ok">🏆 Mejor: ' + best + '%</span> <span class="sim-pill light">Rendido: ' + hs.length + ' vez' + (hs.length > 1 ? 'es' : '') + '</span></div>'
+      : '<div class="sim-status-row"><span class="sim-pill light">⚪ Aún no rendido</span></div>';
+      
+    return '<div class="sim-card-box" style="border-top: 4px solid ' + colorBadge + ';">'
+      + '<div class="sim-card-head">'
+      + '<span class="sim-num-badge" style="background:' + bgBadge + '; color:' + colorBadge + ';">Simulacro ' + (sim.simulador < 10 ? '0' + sim.simulador : sim.simulador) + '</span>'
+      + '<span class="sim-time-tag">⏱️ ' + sim.duracion_min + ' min · 30 preg</span>'
+      + '</div>'
+      + '<h3 class="sim-card-title">' + escH(sim.nombre) + '</h3>'
+      + '<p class="sim-card-desc">' + escH(sim.descripcion || sim.objetivo || '') + '</p>'
+      + statusHtml
+      + '<div class="sim-card-actions">'
+      + '<button class="btn primary" data-act="preview-prog-sim" data-sim="' + sim.sim_id + '" style="background:' + colorBadge + '; border-color:' + colorBadge + ';">📋 Ver Ficha y Rendir</button>'
+      + '</div>'
+      + '</div>';
+  }).join('');
+  
+  return '<div class="sim30-container">'
+    + '<div class="sim30-header">'
+    + '<div class="sim30-badge">🌟 NUEVO BANCO POLITÉCNICO 2026-B (1,500 PREGUNTAS)</div>'
+    + '<h2>30 Simuladores Secuenciales de Matemáticas</h2>'
+    + '<p>Entrenamiento estructurado con progresión pedagógica calculada. Elige tu ruta de dificultad para dominar el 100% de la prueba.</p>'
+    + '</div>'
+    + '<div class="sim-tabs-row">' + tabBtns + '</div>'
+    + '<div class="sim-cards-grid">' + cards + '</div>'
+    + '</div>';
+}
+
+
+function viewProgrammedSimPreview(simId){
+  var sims = getSimuladoresList();
+  var sim = sims.find(function(s){ return s.sim_id === simId; }) || sims[0];
+  if(!sim) return viewHome();
+  
+  var mat1500 = (window.GUIA_BANK_MAT_1500 && window.GUIA_BANK_MAT_1500.mat) ? window.GUIA_BANK_MAT_1500.mat : [];
+  var mapById = {};
+  mat1500.forEach(function(q){ mapById[q.id] = q; });
+  
+  var simQuestions = (sim.question_ids || []).map(function(id){ return mapById[id]; }).filter(Boolean);
+  if(!simQuestions.length){
+    simQuestions = mat1500.filter(function(q){ return q.d === sim.nivel; }).slice(0, 30);
+  }
+  
+  // Topic distribution
+  var topicDist = {};
+  var relatedLessons = {};
+  simQuestions.forEach(function(q){
+    var tName = q.t || 'General';
+    topicDist[tName] = (topicDist[tName] || 0) + 1;
+    if(q.ch) relatedLessons[q.ch] = true;
+    if(q.theory && q.theory.lesson_id) relatedLessons[q.theory.lesson_id] = true;
+  });
+  
+  var distChips = Object.keys(topicDist).map(function(tName){
+    return '<span class="chip light" style="margin:2px 4px 2px 0; font-size:12px;"><b>' + escH(tName) + ':</b> ' + topicDist[tName] + ' preg</span>';
+  }).join('');
+  
+  // Related theory links
+  var thBook = (window.GUIA_THEORY_MAT || []);
+  var thLinks = Object.keys(relatedLessons).map(function(lid){
+    var les = thBook.find(function(l){ return l.id === lid; });
+    var title = les ? (les.ic + ' ' + les.t) : lid;
+    return '<button class="btn ghost mini" data-act="chapter" data-id="' + lid + '" style="margin:3px 4px 3px 0; font-size:12px; border-color:#0284c7; color:#0369a1;">📖 ' + escH(title) + '</button>';
+  }).join('');
+  
+  var hs = liveHist().filter(function(r){ return r.course === sim.sim_id; });
+  var last = hs.length ? hs.sort(function(a,b){ return b.ts - a.ts; })[0] : null;
+  var best = hs.length ? Math.max.apply(null, hs.map(recPct)) : null;
+  
+  var colorBadge = sim.nivel === 'experto' ? '#b3261e' : (sim.nivel === 'dificil' ? '#d9822b' : '#1f7a3f');
+  var bgBadge = sim.nivel === 'experto' ? '#fdf2f2' : (sim.nivel === 'dificil' ? '#fffbeb' : '#f0fdf4');
+  var lvlTitle = sim.nivel === 'experto' ? 'Nivel Experto · Politécnica Pura' : (sim.nivel === 'dificil' ? 'Nivel Difícil · Razonamiento Avanzado' : 'Nivel Intermedio · Tipo Examen Oficial EPN');
+  
+  var historyHtml = hs.length
+    ? '<div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px 16px; margin-bottom:16px;">'
+      + '<div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">'
+      + '<div><span style="font-size:11.5px; color:#64748b; text-transform:uppercase; font-weight:700;">Mejor Marca:</span> <b style="font-size:18px; color:#1f7a3f;">' + best + '%</b></div>'
+      + '<div><span style="font-size:11.5px; color:#64748b; text-transform:uppercase; font-weight:700;">Intentos Previos:</span> <b style="font-size:16px; color:#1e293b;">' + hs.length + '</b></div>'
+      + '<div><span style="font-size:11.5px; color:#64748b; text-transform:uppercase; font-weight:700;">Último Intento:</span> <span style="font-size:13px; color:#475569;">' + (last ? fmtDate(last.ts) + ' (' + recPct(last) + '%)' : 'N/A') + '</span></div>'
+      + '</div></div>'
+    : '<div style="background:#f8fafc; border:1px dashed #cbd5e1; border-radius:8px; padding:12px 16px; margin-bottom:16px; color:#64748b; font-size:13px;">'
+      + '⚪ Aún no has rendido este simulador. ¡Comienza tu primer intento para medir tu nivel!'
+      + '</div>';
+      
+  return navbar('home') + '<div class="wrap">' + drawer('home') + '<div class="main reading">'
+    + pagehead('Simulacro ' + (sim.simulador < 10 ? '0' + sim.simulador : sim.simulador) + ': ' + escH(sim.nombre), 'Guía Oficial EPN › 30 Simuladores Secuenciales › ' + levelName(sim.nivel), 'mat')
+    + toastHtml()
+    + '<div style="background:#fff; border:1.5px solid ' + colorBadge + '; border-radius:14px; padding:24px; margin-bottom:24px; box-shadow:0 6px 20px rgba(0,0,0,.06);">'
+    + '<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px;">'
+    + '<span class="chip" style="background:' + colorBadge + '; color:#fff; font-weight:800; font-size:12px; padding:4px 12px; border-radius:20px;">' + lvlTitle + '</span>'
+    + '<span style="font-size:13px; color:#64748b; font-weight:600;">⏱️ Tiempo límite: ' + sim.duracion_min + ' minutos · 30 preguntas de selección múltiple</span>'
+    + '</div>'
+    + '<h2 style="font-size:22px; color:#0e2a47; margin:0 0 8px;">' + escH(sim.nombre) + '</h2>'
+    + '<p style="font-size:14.5px; color:#334155; line-height:1.5; margin:0 0 16px;">' + escH(sim.descripcion || sim.objetivo || 'Simulador oficial programado de 30 preguntas de alta fidelidad.') + '</p>'
+    + historyHtml
+    + '<div style="margin-bottom:16px;">'
+    + '<h4 style="margin:0 0 6px; font-size:13px; text-transform:uppercase; color:#475569; letter-spacing:.5px;">Distribución de Contenidos del Examen:</h4>'
+    + '<div style="display:flex; flex-wrap:wrap; gap:4px;">' + distChips + '</div>'
+    + '</div>'
+    + (thLinks ? ('<div style="margin-bottom:18px;"><h4 style="margin:0 0 6px; font-size:13px; text-transform:uppercase; color:#475569; letter-spacing:.5px;">Teoría Recomendada para este Simulador:</h4><div style="display:flex; flex-wrap:wrap; gap:4px;">' + thLinks + '</div></div>') : '')
+    + '<div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:10px; padding:14px 18px; margin-bottom:20px;">'
+    + '<div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom:10px; padding-bottom:10px; border-bottom:1px solid #e2e8f0;">'
+    + '<div style="display:flex; align-items:center; gap:10px;">'
+    + '<input type="checkbox" id="chkSequential" checked style="width:18px; height:18px; cursor:pointer; accent-color:#0284c7;" />'
+    + '<label for="chkSequential" style="font-size:13.5px; color:#0e2a47; cursor:pointer; font-weight:700;">🔒 Navegación Secuencial Estricta (Modo Oficial EPN)</label>'
+    + '</div>'
+    + '<span style="font-size:12px; color:#64748b;">(Avanza pregunta por pregunta como en la prueba real)</span>'
+    + '</div>'
+    + '<div style="display:flex; align-items:center; gap:10px;">'
+    + '<input type="checkbox" id="chkNoSavePreview" ' + (S.noSave ? 'checked' : '') + ' style="width:18px; height:18px; cursor:pointer;" />'
+    + '<label for="chkNoSavePreview" style="font-size:13px; color:#475569; cursor:pointer; font-weight:500;">Modo de prueba (no alterar historial ni registrar preguntas vistas)</label>'
+    + '</div></div>'
+    + '<div style="display:flex; gap:12px; flex-wrap:wrap;">'
+    + '<button class="btn primary" data-act="start-prog-sim" data-sim="' + sim.sim_id + '" style="background:' + colorBadge + '; border-color:' + colorBadge + '; padding:12px 24px; font-size:15px; font-weight:800;">▶️ Iniciar Simulacro Ahora (30 Preguntas)</button>'
+    + '<button class="btn sec" data-act="enterguia" style="padding:12px 18px; font-size:14px;">‹ Volver al Catálogo de Simuladores</button>'
+    + '</div>'
+    + '</div>'
+    + '</div></div>' + drawerBtn() + sitefooter();
+}
+
 function viewHome(){
   if(isGuia()) return viewGuiaHome();
   var total = SUBJ.reduce(function(s,k){ return s+BANK[k].length; },0);
   var st = statsFor('all');
   var cards = CKEYS.map(function(k){
-    var c = COURSES[k], n = bankOf(k).length;
+    var c = getCourseInfo(k), n = bankOf(k).length;
     var hs = liveHist().filter(function(r){ return r.course===k; });
     var last = hs.length? hs.sort(function(a,b){return b.ts-a.ts;})[0] : null;
     return '<div class="card">'+
@@ -2627,21 +2980,21 @@ var GUIDE = {
       i1:{ code:'I.1', items:['Relaciones de orden e intervalos','Inecuaciones lineales y cadenas (invertir con negativo)','Inecuaciones polinómicas por signos','Valor absoluto: |x|<a, |x|>a, casos extremos y propiedades'] }
     } },
   mat:{ code:'4.1', name:'Matemática', color:'#f7a1c4',
-    purpose:'Evaluar la capacidad de razonamiento algebraico, geometrico y trigonometrico.',
-    time:'90 minutos (examen filtro: si no lo apruebas no rindes las demas areas)',
-    bib:['Stewart, Redlin y Watson (2012). Precalculo. Matemáticas para el calculo, 6a ed. Cengage.','Moise, E. y Downs, F. (1970). Geometria Moderna. Addison Wesley.','Lehmann, C. H. (1984). Geometria Analitica. Limusa.'],
+    purpose:'Evaluar la capacidad de razonamiento algebraico, geométrico y trigonométrico.',
+    time:'90 minutos (examen filtro: si no lo apruebas no rindes las demas áreas)',
+    bib:['Stewart, Redlin y Watson (2012). Precalculo. Matemáticas para el cálculo, 6a ed. Cengage.','Moise, E. y Downs, F. (1970). Geometria Moderna. Addison Wesley.','Lehmann, C. H. (1984). Geometria Analítica. Limusa.'],
     secs:{
-      m1:{ code:'4.1.1', items:['Operaciones con numeros enteros','Operaciones con numeros racionales','Operaciones con numeros reales','Expresiones algebraicas'] },
+      m1:{ code:'4.1.1', items:['Operaciones con números enteros','Operaciones con números racionales','Operaciones con números reales','Expresiones algebraicas'] },
       m2:{ code:'4.1.2', items:['Ecuaciones de primer grado','Sistemas de ecuaciones lineales','Ecuaciones de segundo grado con una incognita','Inecuaciones y valor absoluto'] },
-      m3:{ code:'4.1.3', items:['Axiomas de punto, recta y distancia','Paralelismo y angulos','Medida angular, congruencia de angulos y angulos entre paralelas y una transversal','Congruencia de triangulos','Semejanza de triangulos'] },
-      m4:{ code:'4.1.4', items:['Razones trigonometricas','Identidades trigonometricas','Ley de senos y ley de cosenos','Rectas y circunferencias en el plano'] }
+      m3:{ code:'4.1.3', items:['Axiomas de punto, recta y distancia','Paralelismo y ángulos','Medida angular, congruencia de ángulos y ángulos entre paralelas y una transversal','Congruencia de triángulos','Semejanza de triángulos'] },
+      m4:{ code:'4.1.4', items:['Razones trigonométricas','Identidades trigonométricas','Ley de senos y ley de cosenos','Rectas y circunferencias en el plano'] }
     } },
   fis:{ code:'4.2', name:'Física', color:'#8fc7e8',
     purpose:'Evaluar la comprension de los principios fundamentales de la mecanica.',
     time:'Parte de los 120 minutos del segundo bloque',
     bib:['Hewitt, P. G. (2016). Física conceptual, 12a ed. Pearson.','Serway, R. A. y Vuille, C. (2018). Fundamentos de física, 10a ed. Cengage.'],
     secs:{
-      f1:{ code:'4.2.1', items:['Primera ley de Newton','Fuerza neta, vectores y suma vectorial','Equilibrio estatico y dinamico','Movimiento rectilineo: posicion, distancia, desplazamiento, rapidez, velocidad y aceleracion','Caida de los cuerpos','Movimiento de proyectiles y satelites'] },
+      f1:{ code:'4.2.1', items:['Primera ley de Newton','Fuerza neta, vectores y suma vectorial','Equilibrio estatico y dinamico','Movimiento rectilineo: posición, distancia, desplazamiento, rapidez, velocidad y aceleracion','Caida de los cuerpos','Movimiento de proyectiles y satelites'] },
       f2:{ code:'4.2.2', items:['Segunda ley de Newton','Fuerza gravitacional','Fuerzas de rozamiento y de resistencia; caida libre con resistencia del aire','Tercera ley de Newton','Cinematica y dinamica del movimiento circular uniforme','Momento lineal e impulso; conservacion del momento'] },
       f3:{ code:'4.2.3', items:['Trabajo y potencia','Trabajo neto y energia cinetica','Fuerzas conservativas y energia potencial','Energia mecanica y su conservacion','Fuentes de energia'] }
     } },
@@ -2650,10 +3003,10 @@ var GUIDE = {
     time:'Parte de los 120 minutos del segundo bloque',
     bib:['Chang, R. y Goldsby, K. (2016). Química, 12a ed. McGraw-Hill.','Hein, M., Willard, C. y Arena, S. (2018). Fundamentos de Química. Cengage.'],
     secs:{
-      q1:{ code:'4.3.1', items:['Transformacion de unidades','Clasificacion de la materia; procesos fisicos y quimicos','Particulas fundamentales','Estructura electronica de atomos e iones'] },
-      q2:{ code:'4.3.2', items:['Estructura de la tabla periodica','Propiedades periodicas de los elementos','Nomenclatura inorganica de compuestos binarios, ternarios y cuaternarios'] },
+      q1:{ code:'4.3.1', items:['Transformacion de unidades','Clasificación de la materia; procesos fisicos y quimicos','Particulas fundamentales','Estructura electronica de atomos e iones'] },
+      q2:{ code:'4.3.2', items:['Estructura de la tabla periódica','Propiedades periódicas de los elementos','Nomenclatura inorganica de compuestos binarios, ternarios y cuaternarios'] },
       q3:{ code:'4.3.3', items:['Enlace ionico','Enlace covalente','Estructuras de Lewis','Geometria molecular','Fuerzas intermoleculares'] },
-      q4:{ code:'4.3.4', items:['Concepto de mol','Formulas empiricas y moleculares','Reacciones quimicas','Calculos estequiometricos y reactivo limitante'] }
+      q4:{ code:'4.3.4', items:['Concepto de mol','Formulas empiricas y moleculares','Reacciones quimicas','Cálculos estequiometricos y reactivo limitante'] }
     } },
   len:{ code:'4.4', name:'Lenguaje', color:'#f3c778',
     purpose:'Evaluar comprension lectora, pensamiento critico y capacidad de argumentacion.',
@@ -2665,10 +3018,10 @@ var GUIDE = {
       l3:{ code:'4.4.3', items:['Construccion del parrafo','Argumentacion logica: construccion de argumentos e identificacion de falacias','Uso de signos de puntuacion y concordancia gramatical'] }
     } },
   gen:{ code:'\u2605', name:'Estrategia de examen', color:'#b9c6d4',
-    purpose:'Como esta armada la prueba real y como administrar los 210 minutos.',
+    purpose:'Cómo esta armada la prueba real y cómo administrar los 210 minutos.',
     time:'210 minutos en total',
     bib:['Guia de estudio EPN 2026-B, Direccion de Admision y Registro.'],
-    secs:{ g1:{ code:'1-3', items:['Caracteristicas de la evaluacion','Recomendaciones generales de estudio','Indicaciones generales para el dia del examen'] } } }
+    secs:{ g1:{ code:'1-3', items:['Caracteristicas de la evaluación','Recomendaciones generales de estudio','Indicaciones generales para el dia del examen'] } } }
 };
 function chapterProgress(id){
   var ui = load(UI_KEY, {}) || {};
@@ -2712,8 +3065,8 @@ function viewLearn(){
     : 'Aprende \u2014 teor\u00eda completa de la guia 2026-B';
   var headCrumb = isGuia() ? 'Gu\u00eda oficial \u203a Aprender' : '01-SEA-EPN_2026-2 \u203a Aprende';
   var intro = isGuia()
-    ? '<p class="th-sub">Temario <b>exacto</b> de la gu\u00eda PDF (secciones 4.1\u20134.4): Mate, F\u00edsica, Qu\u00edmica y Lenguaje. Contenido sintetizado de clases Barreno donde aplica, y huecos completados en el mismo estilo pedag\u00f3gico.</p>'
-    : '<p class="th-sub">Aqui esta desarrollado <b>todo el temario oficial</b> del examen de admision (areas 4.1 a 4.4 de la guia): conceptos desde cero, formulas, analogias, ejemplos resueltos, errores frecuentes y trucos de examen. Cada tarjeta corresponde a una seccion exacta de la guia.</p>';
+    ? '<p class="th-sub">Temario <b>exacto</b> de la gu\u00eda PDF (secciones 4.1\u20134.4): Mate, F\u00edsica, Qu\u00edmica y Lenguaje. Contenido sintetizado de clases Barreno dónde aplica, y huecos completados en el mismo estilo pedag\u00f3gico.</p>'
+    : '<p class="th-sub">Aqui esta desarrollado <b>todo el temario oficial</b> del examen de admision (áreas 4.1 a 4.4 de la guia): conceptos desde cero, formulas, analogias, ejemplos resueltos, errores frecuentes y trucos de examen. Cada tarjeta corresponde a una seccion exacta de la guia.</p>';
   return navbar('learn')+'<div class="wrap">'+drawer('learn')+'<div class="main reading">'+
     pagehead(headTitle, headCrumb,'mix')+toastHtml()+
     intro+
@@ -2727,8 +3080,22 @@ function viewChapter(){
   var prev = book[ix-1], next = book[ix+1];
   var words = ch.body.split(/\s+/).length;
   var crumbBase = isGuia()? 'Gu\u00eda oficial \u203a Aprender' : '01-SEA-EPN_2026-2 \u203a Aprende';
+  
+  var returnReviewBanner = '';
+  if(S.reviewReturn){
+    var retQ = S.reviewReturn.qIndex + 1;
+    returnReviewBanner = '<div class="return-review-bar" style="background:#0e2a47; color:#fff; padding:14px 20px; border-radius:10px; margin-bottom:18px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; box-shadow:0 4px 14px rgba(14,42,71,.25); border-left:5px solid #0284c7;">'
+      + '<div>'
+      + '<div style="font-weight:800; font-size:15px; display:flex; align-items:center; gap:6px;"><span>🔙</span> Modo Estudio de Revisión</div>'
+      + '<div style="font-size:13px; color:#cbd5e1; margin-top:2px;">Estás repasando el concepto vinculado a la <b>Pregunta ' + retQ + '</b> de tu simulador.</div>'
+      + '</div>'
+      + '<button class="btn primary" data-act="return-to-review" style="background:#0284c7; border-color:#0284c7; font-weight:800; font-size:13.5px; padding:8px 18px; border-radius:6px; cursor:pointer;">↩️ Volver a la Revisión (Pregunta ' + retQ + ')</button>'
+      + '</div>';
+  }
+
   return navbar('learn')+'<div class="wrap">'+drawer('learn')+'<div class="main reading">'+
     pagehead(ch.ic+' '+escH(ch.t), crumbBase+' \u203a '+escH(ch.t),'mix')+
+    returnReviewBanner+
     '<div class="readbar"><span>Cap\u00edtulo '+(ix+1)+' de '+book.length+'</span><span>\u00b7</span><span>\u2248'+Math.max(2,Math.round(words/180))+' min de lectura</span>'+
     '<span>\u00b7</span><a data-act="learn">\u2039 Volver al \u00edndice</a></div>'+
     chapterToc(ch.body)+
@@ -2737,6 +3104,7 @@ function viewChapter(){
       (prev? '<button class="btn ghost" data-act="chapter" data-id="'+prev.id+'">\u2039 '+escH(prev.t)+'</button>':'<span></span>')+
       (next? '<button class="btn" data-act="chapter" data-id="'+next.id+'">'+escH(next.t)+' \u203a</button>':'<span></span>')+
     '</div>'+
+    (S.reviewReturn ? '<div style="margin:18px 0 12px; padding:14px 18px; background:#f0f9ff; border:2px solid #0284c7; border-radius:8px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;"><div><b style="color:#0369a1; font-size:14px;">¿Terminaste de estudiar este concepto?</b><div style="font-size:12.5px; color:#475569;">Regresa directamente a la pregunta donde estabas revisando.</div></div><button class="btn primary" data-act="return-to-review" style="background:#0284c7; border-color:#0284c7; font-weight:800; font-size:13.5px; padding:8px 16px;">↩️ Volver a la Revisión (Pregunta ' + (S.reviewReturn.qIndex + 1) + ')</button></div>' : '')+
     '<div style="margin:8px 0 16px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn sec" data-act="learn">Volver a Aprende</button>'+
     (!isGuia() && ch.s!=='gen'? '<button class="btn" data-act="quickstart" data-c="'+ch.s+'">Practicar '+COURSES[ch.s].short+' ahora</button>':'')+
     (isGuia()? '<button class="btn ghost" data-act="home">Inicio gu\u00eda</button>':'')+'</div>'+
@@ -2744,7 +3112,7 @@ function viewChapter(){
 }
 
 function viewCourse(){
-  var c = COURSES[S.course], k = S.course;
+  var c = getCourseInfo(S.course), k = S.course;
   var isG1000 = GUIA_COURSES.indexOf(k)>=0;
   var bank1000 = window.GUIA_BANK_1000 || {mat:[],fis:[],qui:[],len:[]};
   var subjForG = ({guia_mat30:'mat', guia_fis:'fis', guia_qui:'qui', guia_len:'len'})[k];
@@ -2791,11 +3159,11 @@ function viewCourse(){
     '<tr><th>Intentos rendidos</th><td>'+hs.length+(hs.length?' · último '+fmtCorta(hs[0].ts)+' ('+recPct(hs[0])+'%)':'')+'</td></tr>'+
     '</tbody></table>'+
     (k==='mix'? '<div class="infobox">El examen real dura 210 minutos: 90 de Matemática (componente filtro) y 120 para Física, Química y Lenguaje. Puedes reproducir esos tiempos desde la configuración.</div>':'')+
-    (isG1000? '<div class="infobox" style="border-left:4px solid #0e2a47;"><b>Cobertura garantizada:</b> cada intento cubre el máximo de temas distintos antes de repetir tema. Si pides menos preguntas que temas, todas serán de temas distintos; si pides más, se hace una ronda completa por todos los temas antes de repetir. Ajusta N y minutos en <b>Configuración → Simuladores Guía EPN</b>.</div>':'')+
+    (isG1000? '<div class="infobox" style="border-left:4px solid #0e2a47;"><b>Cobertura garantizada:</b> cada intento cubre el máximo de temas distintos antes de repetir tema. Si pides menos preguntas qué temas, todas serán de temas distintos; si pides más, se hace una ronda completa por todos los temas antes de repetir. Ajusta N y minutos en <b>Configuración → Simuladores Guía EPN</b>.</div>':'')+
     (isG1000? '<div style="margin:10px 0; display:flex; gap:8px; flex-wrap:wrap;"><button class="btn sec" data-act="cfg">⚙ Ajustar N y tiempo de este simulador</button><span style="font-size:12px; color:#64748b; align-self:center;">Cada simulador recuerda su propio N/minutos.</span></div>':'')+
     ((GUIA_COURSES.indexOf(k)>=0) ? (function(){
       var total = 1000, seenTot = SEEN1000.mat.length+SEEN1000.fis.length+SEEN1000.qui.length+SEEN1000.len.length;
-      var preview = (function(){ var arr=[]; var bank1000=window.GUIA_BANK_1000||{mat:[],fis:[],qui:[],len:[]}; if(k==='guia_mat30') arr=bank1000.mat||[]; else if(k==='guia_fql120') arr=(bank1000.fis||[]).concat(bank1000.qui||[]).concat(bank1000.len||[]); else { var s=({guia_fis:'fis',guia_qui:'qui',guia_len:'len'})[k]; arr=s? (bank1000[s]||[]):[]; } var n=Math.min(3,arr.length); var out=[]; for(var i=0;i<n;i++) out.push('<li style="font-size:12px;color:#334155;">'+escH(String(arr[i].prompt).slice(0,110))+'… <span class="chip light">'+escH(arr[i].t)+'</span></li>'); return out.length? '<ul style="margin:6px 0 0;padding-left:18px;">'+out.join('')+'</ul><div class="hint">+ '+(arr.length-n)+' preguntas más en el banco · vista previa solo lectura (editor igual que aula: inspeccionar/cambiar/quitar antes de iniciar)</div>' : '<div class="hint">Banco listo — '+arr.length+' preguntas.</div>'; })();
+      var preview = (function(){ var arr=[]; var bank1000=window.GUIA_BANK_1000||{mat:[],fis:[],qui:[],len:[]}; if(k==='guia_mat30') arr=bank1000.mat||[]; else if(k==='guia_fql120') arr=(bank1000.fis||[]).concat(bank1000.qui||[]).concat(bank1000.len||[]); else { var s=({guia_fis:'fis',guia_qui:'qui',guia_len:'len'})[k]; arr=s? (bank1000[s]||[]):[]; } var n=Math.min(3,arr.length); var out=[]; for(var i=0;i<n;i++) out.push('<li style="font-size:12px;color:#334155;">'+escH(String(arr[i].prompt).slice(0,110))+'… <span class="chip light">'+escH(arr[i].t)+'</span></li>'); return out.length? '<ul style="margin:6px 0 0;padding-left:18px;">'+out.join('')+'</ul><div class="hint">+ '+(arr.length-n)+' preguntas más en el banco · vista previa solo lectura (editor igual qué aula: inspeccionar/cambiar/quitar antes de iniciar)</div>' : '<div class="hint">Banco listo — '+arr.length+' preguntas.</div>'; })();
       return '<div class="planbox" style="border-left:4px solid #0e2a47;"><b>Vista previa (solo lectura)</b> — '+preview+'<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;"><button class="btn sec mini" data-act="openadmin" style="border-color:#7b2cbf;color:#7b2cbf;">🔑 Editor (inspeccionar / cambiar / quitar)</button><span class="hint" style="align-self:center;">Corrección previa idéntica a la versión normal.</span></div></div>';
     })() : planBox(k))+
     '<label class="switch" style="margin:14px 0 10px;display:flex;align-items:center;gap:10px;cursor:pointer;background:rgba(217,130,43,0.08);padding:10px 14px;border-radius:8px;border:1px solid rgba(217,130,43,0.25)">'+
@@ -2811,11 +3179,12 @@ function viewCourse(){
 }
 
 function viewAttempt(){
-  var a = S.attempt, c = COURSES[a.course];
+  var a = S.attempt, c = getCourseInfo(a.course);
   var left = a.limitMs - (Date.now()-a.start.getTime());
   var timerCls = left < 60000 ? 'crit' : (left < 300000 ? 'warn' : '');
+  var isSeq = !!a.sequential;
   var nav = '<div class="navbtns">'+
-    (a.cur>0? '<button class="btn ghost" data-act="prev">P\u00e1gina anterior</button>':'<span></span>')+
+    ((!isSeq && a.cur>0)? '<button class="btn ghost" data-act="prev">P\u00e1gina anterior</button>':'<span></span>')+
     (a.cur<a.qs.length-1? '<button class="btn" data-act="next">Siguiente p\u00e1gina</button>'
                         : '<button class="btn" data-act="summary">Terminar intento...</button>')+
     '</div>';
@@ -2827,7 +3196,7 @@ function viewAttempt(){
 }
 
 function viewSummary(){
-  var a = S.attempt, c = COURSES[a.course];
+  var a = S.attempt, c = getCourseInfo(a.course);
   var left = a.limitMs - (Date.now()-a.start.getTime());
   var rows = a.qs.map(function(q,ix){
     return '<tr><td>'+(ix+1)+'</td><td><a data-act="goto" data-i="'+ix+'">'+(a.ans[ix]===null?'Sin responder a\u00fan':'Respuesta guardada')+'</a>'+(a.flags[ix]?' \u2691':'')+'</td></tr>';
@@ -2859,7 +3228,7 @@ function breakdown(){
 }
 
 function viewReview(){
-  var a = S.attempt, c = COURSES[a.course];
+  var a = S.attempt, c = getCourseInfo(a.course);
   var score = a.qs.reduce(function(s,_,ix){ return s+(isCorrect(ix)?1:0); },0);
   var max = a.qs.length, grade = score/max*10;
   var head = '<table class="quizreviewsummary"><tbody>'+
@@ -2897,7 +3266,7 @@ var PIN_KEY = "epn_pin_v1";
 
 function isPinAuthenticated() {
   var saved = load(PIN_KEY, null);
-  return saved === SECURITY_PIN;
+  return String(saved) === SECURITY_PIN;
 }
 
 function verifyPin(inputPin) {
@@ -3105,7 +3474,7 @@ function modalCfg(){
     guiaCfgHtml+
     '<div class="field"><label>L\u00edmite de tiempo por materia (minutos) — Aula</label><input id="cfgmin" type="number" min="1" max="300" value="'+cfg.minutes+'"></div>'+
     '<div class="field"><label>Preguntas por intento (una materia) — Aula</label><input id="cfgcount" type="number" min="1" max="100" value="'+cfg.count+'"></div>'+
-    '<label class="switch" style="margin-top:6px;display:flex;align-items:center;gap:8px;cursor:pointer"><input id="cfgsetdefault" type="checkbox"><span style="font-size:13px;color:#1f7a3f;font-weight:600">Establecer este número de preguntas como predeterminado para todos los simuladores</span></label>'+
+    '<label class="switch" style="margin-top:6px;display:flex;align-items:center;gap:8px;cursor:pointer"><input id="cfgsetdefault" type="checkbox"><span style="font-size:13px;color:#1f7a3f;font-weight:600">Establecer este número de preguntas cómo predeterminado para todos los simuladores</span></label>'+
     '<div class="field"><label>Simulacro completo: minutos — Aula</label><input id="cfgmixmin" type="number" min="1" max="300" value="'+cfg.mixMinutes+'"><div class="hint">El examen real dura 210 minutos en total.</div></div>'+
     '<div class="field"><label>Simulacro completo: preguntas — Aula</label><input id="cfgmixcount" type="number" min="4" max="120" value="'+cfg.mixCount+'"></div>'+
     '<div class="field"><label>Nombre del estudiante</label><input id="cfgname" type="text" value="'+escH(cfg.student)+'"></div>'+
@@ -3131,8 +3500,8 @@ function modalExit(){
   var a = S.attempt, un = a.ans.filter(function(x){ return x===null; }).length;
   return '<div class="modalbg" data-act="stayin"><div class="modal" data-stop="1">'+
     '<header>Tienes un intento en curso<button data-act="stayin">\u2715</button></header>'+
-    '<div class="body"><div class="alertbox">No puedes salir del cuestionario sin cerrarlo. Como en el examen real, debes <b>terminar el intento en el estado actual</b>.</div>'+
-    '<p>Si terminas ahora, el intento se enviar\u00e1 tal como est\u00e1'+(un>0? ' con <b>'+un+'</b> pregunta'+(un===1?'':'s')+' sin responder':'')+' y quedar\u00e1 guardado en tu historial con la nota obtenida.</p>'+
+    '<div class="body"><div class="alertbox">No puedes salir del cuestionario sin cerrarlo. Cómo en el examen real, debes <b>terminar el intento en el estado actual</b>.</div>'+
+    '<p>Si terminas ahora, el intento se enviar\u00e1 tal cómo est\u00e1'+(un>0? ' con <b>'+un+'</b> pregunta'+(un===1?'':'s')+' sin responder':'')+' y quedar\u00e1 guardado en tu historial con la nota obtenida.</p>'+
     '</div>'+
     '<div class="foot"><button class="btn sec" data-act="stayin">Volver al intento</button>'+
     '<button class="btn" data-act="forcefinish">Terminar intento ahora</button></div>'+
@@ -3142,7 +3511,7 @@ function modalConfirm(){
   var a = S.attempt, un = a.ans.filter(function(x){ return x===null; }).length;
   return '<div class="modalbg" data-act="closemodal"><div class="modal" data-stop="1">'+
     '<header>Confirmaci\u00f3n<button data-act="closemodal">\u2715</button></header>'+
-    '<div class="body"><p>Una vez que env\u00ede el intento, no podr\u00e1 cambiar sus respuestas.</p>'+
+    '<div class="body"><p>Una vez qué env\u00ede el intento, no podr\u00e1 cambiar sus respuestas.</p>'+
     (un>0?'<div class="alertbox">Tiene '+un+' pregunta'+(un===1?'':'s')+' sin responder.</div>':'')+
     '</div>'+
     '<div class="foot"><button class="btn ghost" data-act="closemodal">Cancelar</button><button class="btn" data-act="submit">Enviar todo y terminar</button></div>'+
@@ -3190,7 +3559,7 @@ function renderAdminModal(){
     '<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">'+
     '<h2 style="margin:0">🔑 Editor del Próximo Intento ('+(COURSES[k]||{}).short+')</h2>'+
     '<button class="closex" data-act="closemodal">✕</button></div>'+
-    '<p class="th-sub">Inspecciona y edita manualmente las <b>'+planQs.length+' preguntas</b> que saldrán en el próximo simulador. Puedes quitar o cambiar cualquier pregunta antes de empezar.</p>'+
+    '<p class="th-sub">Inspecciona y edita manualmente las <b>'+planQs.length+' preguntas</b> qué saldrán en el próximo simulador. Puedes quitar o cambiar cualquier pregunta antes de empezar.</p>'+
     '<div style="margin-bottom:16px">'+(qListHtml||'<div class="emptybox">No hay preguntas preparadas en este intento.</div>')+'</div>'+
     '<div style="display:flex;gap:10px;flex-wrap:wrap;justify-content:space-between">'+
     '<button class="btn sec" data-act="reshuffle" data-c="'+k+'">↻ Re-barajar todo el intento</button>'+
@@ -3212,6 +3581,7 @@ function renderPinModal(){
 function render(){
   var html = '';
   if(S.view==='home') html = viewHome();
+  else if(S.view==='sim_preview') html = viewProgrammedSimPreview(S.selectedSimId);
   else if(S.view==='learn') html = viewLearn();
   else if(S.view==='chapter') html = viewChapter();
   else if(S.view==='guiawork') html = viewGuiaWorkshops();
@@ -3253,7 +3623,7 @@ function startTimer(){
   }, 1000);
 }
 function stopTimer(){ if(S.tick){ clearInterval(S.tick); S.tick = null; } }
-// Serializa el intento actual para durabilidad (LS + nube). Incluye snapshot de src para que
+// Serializa el intento actual para durabilidad (LS + nube). Incluye snapshot de src para qué
 // la revisión tras F5 no dependa de haber vuelto a cargar el banco correcto.
 // También persiste view/onePage/cur para F5 profesional en intento/resumen/revisión.
 function serializeAttempt(a){
@@ -3261,7 +3631,7 @@ function serializeAttempt(a){
     var s=q.src;
     return { subj:q.subj, order:q.order.slice(), src:{ t:s.t, q:s.q, o:s.o.slice(), a:s.a, e:s.e, ch:s.ch, maths:(s.maths||[]).slice(), imgs:(s.imgs||[]).slice(), __s:s.__s, n:s.n, d:s.d, topics:(s.topics||[]).slice(), id:s.id, __i:s.__i } };
   });
-  // view/onePage/cur se guardan para que F5 vuelva exactamente al mismo lugar (pregunta, paginación, resumen)
+  // view/onePage/cur se guardan para qué F5 vuelva exactamente al mismo lugar (pregunta, paginación, resumen)
   var v = (a.view || S.view || 'attempt');
   var op = (a.onePage!=null ? a.onePage : (S.onePage!=null ? S.onePage : null));
   var cur = (typeof a.cur==='number' ? a.cur : (typeof S.attempt!=='undefined' && S.attempt && typeof S.attempt.cur==='number' ? S.attempt.cur : 0));
@@ -3279,7 +3649,7 @@ function deserializeAttempt(raw){
     if(!raw.qs.length) return null;
   } else {
     var left = (raw.startMs + raw.limitMs) - Date.now();
-    if(left <= -60000) return null; // vencido hace >1 min → se consolidará como entregado al restaurar
+    if(left <= -60000) return null; // vencido hace >1 min → se consolidará cómo entregado al restaurar
     var expired = left <= 0;
     if(expired){
       // se vencerá al restaurar (auto-entrega), pero aún deserializable
@@ -3294,8 +3664,8 @@ function deserializeAttempt(raw){
   var onePage = (raw.onePage!=null ? raw.onePage : null);
   var finished = !!raw.finished || (expired2 && !isReview);
   var end = raw.endMs ? new Date(raw.endMs) : (finished ? new Date(Math.min(Date.now(), raw.startMs+raw.limitMs)) : null);
-  var a={ course:raw.course, level:raw.level, area:raw.area, qs:qs, ans:raw.ans.slice(), flags:raw.flags.slice(), cur:(typeof raw.cur==='number'?raw.cur:0), start:new Date(raw.startMs), end: end, finished: finished, limitMs: raw.limitMs, historic:!!raw.historic, isGuia1000:!!raw.isGuia1000, isGuia69:!!raw.isGuia69, noSave:!!raw.noSave, restored:true, view:view, onePage:onePage };
-  // si es revisión, marca historic false pero finished true para que renderice review sin bloquear
+  var a={ course:raw.course, level:raw.level, area:raw.área, qs:qs, ans:raw.ans.slice(), flags:raw.flags.slice(), cur:(typeof raw.cur==='number'?raw.cur:0), start:new Date(raw.startMs), end: end, finished: finished, limitMs: raw.limitMs, historic:!!raw.historic, isGuia1000:!!raw.isGuia1000, isGuia69:!!raw.isGuia69, noSave:!!raw.noSave, restored:true, view:view, onePage:onePage };
+  // si es revisión, marca historic false pero finished true para qué renderice review sin bloquear
   return a;
 }
 function restoreActiveAttempt(){
@@ -3315,7 +3685,7 @@ function restoreActiveAttempt(){
     return true;
   }
   if(a.finished){
-    // tiempo vencido mientras estuvo cerrado → consolida como entregado (una sola vez)
+    // tiempo vencido mientras estuvo cerrado → consolida cómo entregado (una sola vez)
     finishAttempt(true);
     return true;
   }
@@ -3324,7 +3694,7 @@ function restoreActiveAttempt(){
   if(desiredView!=='attempt' && desiredView!=='summary') desiredView='attempt';
   S.view=desiredView; S.modal=null;
   if(S.view==='attempt' && typeof a.cur==='number') S.attempt.cur = a.cur;
-  if(!S.toast) S.toast='↻ Intento restaurado — continúa donde lo dejaste. El tiempo siguió corriendo.';
+  if(!S.toast) S.toast='↻ Intento restaurado — continúa dónde lo dejaste. El tiempo siguió corriendo.';
   return true;
 }
 function persistActiveThrottled(){
@@ -3365,7 +3735,7 @@ function finishAttempt(auto){
   a.view='review'; S.view='review';
   if(!a.historic && !a.noSave) recordAttempt(a);
   else if(a.noSave){ clearActive(); if(isPinAuthenticated()) pushCloudState(); }
-  // persiste snapshot de revisión para que F5 en revisión no pierda la corrección
+  // persiste snapshot de revisión para qué F5 en revisión no pierda la corrección
   try{
     var revKey='epn_active_v1';
     if(!a.noSave){
@@ -3378,7 +3748,7 @@ function finishAttempt(auto){
       clearActive();
     }
   }catch(e){}
-  S.modal = null; // mantiene S.onePage tal cual para paginación en revisión
+  S.modal = null; // mantiene S.onePage tal cuál para paginación en revisión
   if(a.noSave){
     S.toast = '⚙ Modo de prueba activo: Este intento no fue guardado en tu historial ni alteró las preguntas vistas.';
   } else {
@@ -3430,7 +3800,7 @@ function startGuia69Exam(){
   S.toast = null;
   S.area = 'guia';
   S.attempt = buildGuia69Attempt();
-  S.attempt.area='guia';
+  S.attempt.área='guia';
   S.view = 'attempt';
   S.onePage = null;
   S.modal = null;
@@ -3442,10 +3812,10 @@ function startGuia69Exam(){
 function startAttempt(k){
   S.toast = null;
   S.course = k || S.course || 'mat';
-  var chkEl = el('chkNoSave');
+  var chkEl = el('chkNoSave') || el('chkNoSavePreview');
   if(chkEl) S.noSave = chkEl.checked;
   S.attempt = buildAttempt(S.course);
-  S.attempt.area=S.area;
+  S.attempt.área=S.area;
   if(S.noSave) S.attempt.noSave = true;
   S.view = 'attempt'; S.onePage = null; S.modal = null;
   render(); startTimer();
@@ -3476,29 +3846,153 @@ document.addEventListener('click', function(e){
     case 'learn': if(blocked()) break; go('learn'); break;
     case 'guiawork': if(blocked()) break; go('guiawork'); break;
     case 'enterguia': enterGuia('home'); break;
-case 'start-guia-69':
+case 'preview-prog-sim':
+      if(blocked()) break;
+      S.selectedSimId = t.dataset.sim;
+      S.area = 'guia';
+      go('sim_preview');
+      break;
+    case 'go-theory-deep':
+      if(blocked()) break;
+      var chId = t.dataset.ch || 'mat-L01';
+      var anchor = t.dataset.anchor || '';
+      var qix = parseInt(t.dataset.qix || '0', 10);
+      if(S.attempt && S.view === 'review'){
+        S.reviewReturn = { course: S.attempt.course, qIndex: qix, onePage: S.onePage };
+      }
+      S.area = 'guia';
+      S.chapter = chId;
+      S.view = 'chapter';
+      render();
+      if(anchor){
+        setTimeout(function(){
+          var targetEl = document.getElementById(anchor);
+          if(targetEl) targetEl.scrollIntoView({behavior:'smooth', block:'start'});
+        }, 120);
+      }
+      break;
+    case 'return-to-review':
+      if(blocked()) break;
+      if(S.reviewReturn){
+        var targetQix = S.reviewReturn.qIndex;
+        S.view = 'review';
+        if(S.reviewReturn.onePage != null){
+          S.onePage = targetQix;
+        }
+        S.reviewReturn = null;
+        render();
+        setTimeout(function(){
+          var qEl = document.querySelector('.que') || document.getElementById('timerbox');
+          if(qEl) qEl.scrollIntoView({behavior:'smooth', block:'start'});
+        }, 100);
+      } else {
+        S.view = 'review';
+        render();
+      }
+      break;
+    case 'setsimtab':
+      S.simTab = t.dataset.tab || 'intermedio';
+      render();
+      break;
+    case 'start-minisim':
+      if(blocked()) break;
+      var lid = t.dataset.lid;
+      var countN = parseInt(t.dataset.n || '5', 10);
+      var sampler = window.EPN_MAT_MINISIM || window.EPN_MAT_THEORY_MINISIM;
+      var sampledQs = sampler ? sampler.sample(lid, countN) : [];
+      if(!sampledQs.length){
+        var mb = (window.EPN_MAT_MINIBANK && window.EPN_MAT_MINIBANK[lid]) ? window.EPN_MAT_MINIBANK[lid] : [];
+        sampledQs = shuffle(mb.slice()).slice(0, countN);
+      }
+      var qs = sampledQs.map(function(q, idx){
+        var raw = {
+          q: q.prompt,
+          o: q.opts ? q.opts.slice() : [],
+          a: q.ans,
+          e: q.exp,
+          d: q.d,
+          t: q.t,
+          topics: q.topics ? q.topics.slice() : [],
+          ch: q.ch || lid,
+          id: q.id,
+          imgs: q.imgs ? q.imgs.slice() : [],
+          maths: q.maths ? q.maths.slice() : [],
+          distractores: q.distractores ? q.distractores.slice() : [],
+          theory: q.theory,
+          __s: 'mat',
+          __i: idx
+        };
+        var order = [0,1,2,3];
+        if(cfg.shuffleOptions) order = shuffle(order);
+        return { subj:'mat', order:order, src:raw };
+      });
+      S.area = 'guia';
+      S.attempt = {
+        course: lid,
+        simId: lid,
+        simTitle: 'Taller ' + lid + ' (' + countN + ' preg)',
+        simLevel: 'mezclado',
+        level: 'mezclado',
+        area: 'guia',
+        qs: qs,
+        ans: qs.map(function(){ return null; }),
+        flags: qs.map(function(){ return false; }),
+        cur: 0,
+        start: new Date(),
+        finished: false,
+        limitMs: countN * 2 * 60 * 1000,
+        isGuia1000: true,
+        isMiniSim: true
+      };
+      S.view = 'attempt';
+      S.onePage = null;
+      S.modal = null;
+      render();
+      startTimer();
+      saveActive();
+      if(isPinAuthenticated()) pushCloudState();
+      break;
+    case 'start-prog-sim':
+      if(blocked()) break;
+      var simId = t.dataset.sim;
+      var chkEl = el('chkNoSave') || el('chkNoSavePreview');
+      if(chkEl) S.noSave = chkEl.checked;
+      var chkSeqEl = el('chkSequential');
+      var isSequential = chkSeqEl ? chkSeqEl.checked : true;
+      S.area = 'guia';
+      S.attempt = buildProgrammedSimAttempt(simId, isSequential);
+      if(S.noSave) S.attempt.noSave = true;
+      S.view = 'attempt';
+      S.onePage = null;
+      S.modal = null;
+      render();
+      startTimer();
+      saveActive();
+      if(isPinAuthenticated()) pushCloudState();
+      break;
+    case 'start-guia-69':
       if(blocked()) break;
       startGuia69Exam();
       break;
     case 'start-guia-mat30':
       if(blocked()) break;
-      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_mat30'); S.attempt.area='guia'; S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer(); saveActive(); if(isPinAuthenticated()) pushCloudState();
+      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_mat30'); S.attempt.área='guia'; S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer(); saveActive(); if(isPinAuthenticated()) pushCloudState();
       break;
     case 'start-guia-fql120':
       if(blocked()) break;
-      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_fql120'); S.attempt.area='guia'; S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer(); saveActive(); if(isPinAuthenticated()) pushCloudState();
+      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_fql120'); S.attempt.área='guia'; S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer(); saveActive(); if(isPinAuthenticated()) pushCloudState();
       break;
     case 'start-guia-fis':
       if(blocked()) break;
-      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_fis'); S.attempt.area='guia'; S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer(); saveActive(); if(isPinAuthenticated()) pushCloudState();
+      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_fis'); S.attempt.área='guia'; S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer(); saveActive(); if(isPinAuthenticated()) pushCloudState();
       break;
     case 'start-guia-qui':
       if(blocked()) break;
-      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_qui'); S.attempt.area='guia'; S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer(); saveActive(); if(isPinAuthenticated()) pushCloudState();
+      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_qui'); S.attempt.área='guia'; S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer(); saveActive(); if(isPinAuthenticated()) pushCloudState();
       break;
     case 'start-guia-len':
       if(blocked()) break;
-      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_len'); S.attempt.area='guia'; S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer(); saveActive(); if(isPinAuthenticated()) pushCloudState();
+      S.area='guia'; S.attempt=buildGuia1000Attempt('guia_len'); S.attempt.área='guia'; S.view='attempt'; S.onePage=null; S.modal=null; render(); startTimer(); saveActive(); if(isPinAuthenticated()) pushCloudState();
       break;
     case 'go-theory-chapter':
       if(blocked()) break;
@@ -3627,10 +4121,10 @@ case 'start-guia-69':
       render(); break;
     case 'clearhist':
       HIST.forEach(function(r){ r.deleted = true; }); saveHist(); S.modal = null;
-      S.toast = 'Todos los intentos quedaron marcados como eliminados: ya no cuentan en las estad\u00edsticas, pero puedes seguir consult\u00e1ndolos.'; render(); break;
+      S.toast = 'Todos los intentos quedaron marcados cómo eliminados: ya no cuentan en las estad\u00edsticas, pero puedes seguir consult\u00e1ndolos.'; render(); break;
     case 'delrec':
       HIST.forEach(function(r){ if(r.id===t.dataset.id) r.deleted = true; }); saveHist();
-      S.toast = 'Intento eliminado: queda marcado como eliminado y deja de contar en las estad\u00edsticas.'; render(); break;
+      S.toast = 'Intento eliminado: queda marcado cómo eliminado y deja de contar en las estad\u00edsticas.'; render(); break;
     case 'restrec':
       HIST.forEach(function(r){ if(r.id===t.dataset.id) delete r.deleted; }); saveHist();
       S.toast = 'Intento restaurado: vuelve a contar en tus estad\u00edsticas.'; render(); break;
@@ -3640,7 +4134,7 @@ case 'start-guia-69':
         if(blocked()) break;
         var aHist = attemptFromRecord(rec);
         S.attempt = aHist; S.course = rec.course; S.onePage = null; S.view = 'review';
-        // persiste revisión histórica para F5 profesional (no cuenta como intento activo)
+        // persiste revisión histórica para F5 profesional (no cuenta cómo intento activo)
         try{
           var qsSerHist = aHist.qs.map(function(q){ var s=q.src; return { subj:q.subj, order:q.order.slice(), src:{ t:s.t, q:s.q, o:s.o.slice(), a:s.a, e:s.e, ch:s.ch, maths:(s.maths||[]).slice(), imgs:(s.imgs||[]).slice(), __s:s.__s, n:s.n, d:s.d, topics:(s.topics||[]).slice(), id:s.id, __i:s.__i } }; });
           localStorage.setItem(ACTIVE_KEY, JSON.stringify({ course:aHist.course, level:aHist.level, area:(aHist.area||S.area), qs:qsSerHist, ans:aHist.ans.slice(), flags:aHist.flags.slice(), cur:aHist.cur, startMs:aHist.start.getTime(), endMs:(aHist.end?aHist.end.getTime():null), limitMs:aHist.limitMs, isGuia1000:!!aHist.isGuia1000, isGuia69:!!aHist.isGuia69, view:'review', onePage:null, finished:true, historic:true }));
@@ -3655,7 +4149,7 @@ case 'start-guia-69':
     case 'prev': S.attempt.cur = Math.max(0, S.attempt.cur-1); if(S.attempt) S.attempt.view='attempt'; saveActive(); persistActiveThrottled(); render(); break;
     case 'goto':
       var i = +t.dataset.i;
-      if(S.view==='review'){ if(S.onePage!=null){ S.onePage = i; S.attempt.view='review'; S.attempt.cur=i; saveActive(); render(); } else { var nodes = document.querySelectorAll('.main .que'); if(nodes[i]) nodes[i].scrollIntoView({behavior:'smooth',block:'center'}); } }
+      if(S.view==='review'){ if(S.onePage!=null){ S.onePage = i; S.attempt.view='review'; S.attempt.cur=i; saveActive(); render(); } else { var nodes = document.querySelectorAll('.main .qué'); if(nodes[i]) nodes[i].scrollIntoView({behavior:'smooth',block:'center'}); } }
       else { S.attempt.cur = i; S.attempt.view='attempt'; S.view = 'attempt'; saveActive(); persistActiveThrottled(); render(); }
       break;
     case 'flag': S.attempt.flags[+t.dataset.i] = !S.attempt.flags[+t.dataset.i]; saveActive(); persistActiveThrottled(); rerenderKeepScroll(); break;
@@ -3680,17 +4174,18 @@ document.addEventListener('click', function(e){
   if(a==='answer' || a==='flag' || a==='goto' || a==='next' || a==='prev' || a==='rnext' || a==='rprev' || a==='showall'){ saveActive(); persistActiveThrottled(); }
 }, true);
 window.addEventListener('hashchange', function(){
-  // si hay intento activo/restaurado, no dejes que un hash vacío te mande a home (F5 vacío profesional)
+  // si hay intento activo/restaurado, no dejes qué un hash vacío te mande a home (F5 vacío profesional)
   var h = String(location.hash||'');
   if(!h && S.attempt && !S.attempt.historic){
-    // revisa si es revisión o activo: quédate donde estás
+    // revisa si es revisión o activo: quédate dónde estás
     syncHash(); return;
   }
   applyHashRoute(); render();
 });
 // Restauración al cargar: orden profesional — 1) si hay hash explícito, respétalo; 2) intenta LS; 3) nube
-// Boot una sola vez: previene doble render y que applyHashRoute pise intento restaurado
+// Boot una sola vez: previene doble render y qué applyHashRoute pise intento restaurado
 (function bootOnce(){
+  registerProgrammedSimsInCourses();
   var hadHash = !!String(location.hash||'');
   try{
     // intenta restaurar intento/revisión desde LS primero (F5 profesional)

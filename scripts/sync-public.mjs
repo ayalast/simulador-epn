@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const out = join(root, 'public');
-const files = ['index.html', 'styles.css', 'app.js', 'bank.js', 'theory.js', 'guia-theory.js', 'guia-bank-1000-intermedio.js'];
+const files = ['index.html', 'styles.css', 'app.js', 'bank.js', 'theory.js', 'guia-theory.js', 'guia-theory-mat.js', 'guia-bank-69.js', 'guia-bank-1000-intermedio.js', 'guia-bank-mat-1500.js', 'simuladores-programados.js', 'simuladores_programados.json', 'mini_banco_teoria_700.json'];
 
 if (existsSync(out)) rmSync(out, { recursive: true, force: true });
 mkdirSync(out, { recursive: true });

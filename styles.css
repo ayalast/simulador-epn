@@ -356,3 +356,44 @@ sup.msup{font-size:.72em;vertical-align:.6em;line-height:0}
 sub.msub{font-size:.72em;vertical-align:-.28em;line-height:0}
 .mtext{font-style:normal}
 .mtext .mi{font-style:normal}
+
+/* ---------- 30 SIMULADORES Y BANCO 1500 ---------- */
+.sim30-container{background:#fff;border:1.5px solid #0e2a47;border-radius:14px;padding:24px;margin:24px 0 28px;box-shadow:0 6px 20px rgba(14,42,71,.08)}
+.sim30-header{margin-bottom:20px}
+.sim30-badge{display:inline-block;background:#0e2a47;color:#fff;font-weight:800;padding:4px 12px;border-radius:20px;font-size:11px;letter-spacing:.5px;text-transform:uppercase;margin-bottom:8px}
+.sim30-header h2{font-size:22px;color:#0e2a47;margin:0 0 6px}
+.sim30-header p{font-size:14px;color:#475569;margin:0;max-width:720px}
+.sim-tabs-row{display:flex;gap:12px;margin:18px 0 22px;flex-wrap:wrap}
+.sim-tab-btn{flex:1;min-width:220px;padding:12px 16px;background:#f8fafc;border:1.5px solid #cbd5e1;border-radius:10px;text-align:left;cursor:pointer;transition:all .15s ease}
+.sim-tab-btn b{display:block;font-size:14px;color:#1e293b;margin-bottom:2px}
+.sim-tab-sub{display:block;font-size:11.5px;color:#64748b}
+.sim-tab-btn.active{background:#0e2a47;border-color:#0e2a47;color:#fff;box-shadow:0 4px 12px rgba(14,42,71,.2)}
+.sim-tab-btn.active b{color:#fff}
+.sim-tab-btn.active .sim-tab-sub{color:#94a3b8}
+.sim-cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.sim-card-box{background:#fff;border:1px solid #e2e8f0;border-radius:10px;padding:16px 18px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 2px 8px rgba(0,0,0,.04);transition:transform .12s ease,box-shadow .12s ease}
+.sim-card-box:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,.08)}
+.sim-card-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.sim-num-badge{font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px;text-transform:uppercase}
+.sim-time-tag{font-size:11.5px;color:#64748b;font-weight:600}
+.sim-card-title{font-size:15px;color:#0f172a;margin:0 0 6px;font-weight:700;line-height:1.3}
+.sim-card-desc{font-size:12.5px;color:#475569;margin:0 0 12px;line-height:1.4;flex:1}
+.sim-status-row{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
+.sim-pill{font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px}
+.sim-pill.ok{background:#dcfce7;color:#14532d}
+.sim-pill.light{background:#f1f5f9;color:#475569}
+.sim-card-actions{display:flex;gap:8px}
+.sim-card-actions .btn{width:100%;font-size:13px;padding:8px 12px;font-weight:700;border-radius:6px}
+.cognitive-err-box{animation:fadeIn .2s ease-in-out}
+@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+
+/* ---------- CASOS Y MATRICES EN LATEX ---------- */
+.mjx-cases{display:inline-flex;align-items:center;vertical-align:middle;margin:0 4px}
+.mjx-cases-brace{font-size:2.2em;font-weight:300;line-height:1;margin-right:4px;color:#0e2a47;font-family:serif}
+.mjx-cases-body{display:inline-flex;flex-direction:column;gap:3px;text-align:left}
+.mjx-case-row{display:flex;align-items:center;line-height:1.25}
+.mjx-case-cell{display:inline-block}
+.mjx-matrix{display:inline-flex;align-items:center;vertical-align:middle;margin:0 4px}
+.mjx-mat-brace{font-size:1.8em;line-height:1;color:#0e2a47;font-family:serif}
+.mjx-mat-table{border-collapse:collapse;margin:0 2px}
+.mjx-mat-cell{padding:2px 6px;text-align:center}

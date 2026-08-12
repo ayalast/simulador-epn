@@ -3845,9 +3845,7 @@ document.addEventListener('click', function(e){
     case 'home': if(blocked()) break; stopTimer(); go('home'); break;
     case 'learn': if(blocked()) break; go('learn'); break;
     case 'guiawork': if(blocked()) break; go('guiawork'); break;
-    case 'enterguia': enterGuia('home'); break;
-case 'preview-prog-sim':
-      if(blocked()) break;
+    case 'preview-prog-sim':
       S.selectedSimId = t.dataset.sim;
       S.area = 'guia';
       go('sim_preview');
@@ -3953,7 +3951,8 @@ case 'preview-prog-sim':
       if(isPinAuthenticated()) pushCloudState();
       break;
     case 'start-prog-sim':
-      if(blocked()) break;
+      stopTimer();
+      clearActive();
       var simId = t.dataset.sim;
       var chkEl = el('chkNoSave') || el('chkNoSavePreview');
       if(chkEl) S.noSave = chkEl.checked;

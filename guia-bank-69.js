@@ -70,7 +70,7 @@ window.GUIA_BANK_69 = [
     ],
     "ans": 0,
     "ans_label": "B",
-    "exp": "Por congruencia LAL, $\\Delta ABE \\cong \\Delta ACD$, por lo que $\\angle ACD = \\angle ABE = 84^\\circ$. Como $A, C, E$ están alineados, $\\angle DCE = 180^\\circ - 84^\\circ = 96^\\circ$.",
+    "exp": "Por congruencia LAL, $\\Delta ABE \\cong \\Delta ACD$, por lo qué $\\angle ACD = \\angle ABE = 84^\\circ$. Cómo $A, C, E$ están alineados, $\\angle DCE = 180^\\circ - 84^\\circ = 96^\\circ$.",
     "ch": "m4"
   },
   {
@@ -81,14 +81,14 @@ window.GUIA_BANK_69 = [
     "maths": [],
     "imgs": [],
     "opts": [
-      "−2 como única solución",
-      "-1/2 como solución, pero tiene otras soluciones",
-      "2 como solución, pero tiene otras soluciones",
-      "-1/2 como única solución"
+      "−2 cómo única solución",
+      "-1/2 cómo solución, pero tiene otras soluciones",
+      "2 cómo solución, pero tiene otras soluciones",
+      "-1/2 cómo única solución"
     ],
     "ans": 0,
     "ans_label": "D",
-    "exp": "Despejando: $\\frac{1}{x} + 2 = 0 \\implies \\frac{1}{x} = -2 \\implies x = -\\frac{1}{2}$. Como es de primer grado en $\\frac{1}{x}$, tiene $-1/2$ como única solución.",
+    "exp": "Despejando: $\\frac{1}{x} + 2 = 0 \\implies \\frac{1}{x} = -2 \\implies x = -\\frac{1}{2}$. Cómo es de primer grado en $\\frac{1}{x}$, tiene $-1/2$ cómo única solución.",
     "ch": "m2"
   },
   {
@@ -178,7 +178,7 @@ window.GUIA_BANK_69 = [
     ],
     "ans": 0,
     "ans_label": "B",
-    "exp": "Dado que el numerador $2$ es positivo, para que el cociente $2/x$ sea negativo ($< 0$), el denominador $x$ debe ser negativo ($x < 0$).",
+    "exp": "Dado qué el numerador $2$ es positivo, para qué el cociente $2/x$ sea negativo ($< 0$), el denominador $x$ debe ser negativo ($x < 0$).",
     "ch": "m2"
   },
   {
@@ -198,27 +198,27 @@ window.GUIA_BANK_69 = [
     ],
     "ans": 3,
     "ans_label": "D",
-    "exp": "En un triángulo isósceles con $AB=BC$, la altura desde el vértice $B$ parte a la base $AC$ en dos segmentos iguales $\\overline{AH} \\cong \\overline{CH}$. Por tanto, afirmar que NO son congruentes es FALSO.",
+    "exp": "En un triángulo isósceles con $AB=BC$, la altura desde el vértice $B$ parte a la base $AC$ en dos segmentos iguales $\\overline{AH} \\cong \\overline{CH}$. Por tanto, afirmar qué NO son congruentes es FALSO.",
     "ch": "m3"
   },
   {
     "n": 11,
     "s": "math",
-    "t": "La ecuacion",
-    "prompt": "La ecuacion Single choice. (1 Point)",
+    "t": "La ecuación",
+    "prompt": "La ecuación Single choice. (1 Point)",
     "maths": [
       "3(x+1)+2=2x+3−(1−x)"
     ],
     "imgs": [],
     "opts": [
       "No tiene solución",
-      "Tiene como una de sus soluciónes a 0",
-      "Tiene como solución cualquier real",
+      "Tiene cómo una de sus soluciones a 0",
+      "Tiene cómo solución cualquier real",
       "Tiene al menos dos soluciones"
     ],
     "ans": 1,
     "ans_label": "A",
-    "exp": "Desarrollando: $3x + 5 = 3x + 2 \\implies 5 = 2$, lo cual es una contradicción. La ecuación es inconsistente y no tiene solución.",
+    "exp": "Desarrollando: $3x + 5 = 3x + 2 \\implies 5 = 2$, lo cuál es una contradicción. La ecuación es inconsistente y no tiene solución.",
     "ch": "m2"
   },
   {
@@ -272,8 +272,8 @@ window.GUIA_BANK_69 = [
   {
     "n": 14,
     "s": "math",
-    "t": "Si x es la medida de un ángulo en el segundo cuadrante tal que",
-    "prompt": "Si x es la medida de un ángulo en el segundo cuadrante tal que Single choice. (1 Point)",
+    "t": "Si x es la medida de un ángulo en el segundo cuadrante tal qué",
+    "prompt": "Si x es la medida de un ángulo en el segundo cuadrante tal qué Single choice. (1 Point)",
     "maths": [
       "\\cos x=\\frac{−1}{3},\\ el\\ valor\\ de\\ \\tan x\\ es:",
       "3",
@@ -412,8 +412,8 @@ window.GUIA_BANK_69 = [
   {
     "n": 20,
     "s": "lang",
-    "t": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, como los castores, los topos ",
-    "prompt": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, como los castores, los topos o los hámsters. Con algo menos de 2.500 especies, suponen el 40% de los mamíferos. (2) Los hay en todos los continentes, salvo la Antártida. (3) Se han adaptado a todos los entornos, terrestres como las capibaras, acuáticos como la rata almizclera, arborícolas como las ardillas o subterráneos, como el ratopín. (4) Los científicos siembre han señalado a sus poderosos dientes incisivos, que nunca dejan de crecer, como claves de su éxito: les permitieron ocupar un nicho alimenticio que el resto de mamíferos no podía comer. (5) ________ algo faltaba en esa explicación y han resultado ser las uñas. (1) Un grupo de biólogos tenía la hipótesis que, junto a los incisivos, la uña del pulgar les habría permitido manipular estos duros y pequeños alimentos y tenían que comprobarla . (2) _________, se han paseado por algunos de los principales museos de ciencias naturales, como los de historia natural de Londres, Nueva York o Chicago buscando roedores en sus cajones. (3) Encontraron representantes de 433 géneros de los 522 que hay entre los Rodentia. (4) El género es una categoría superior a la de especie. (5) Al analizar las patas, comprobaron que el 86% de los roedores tiene uñas, pero con una particularidad, solo en el pulgar. Identifique los conectores que completan los espacios en blanco. Single choice. (1 Point)",
+    "t": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, cómo los castores, los topos ",
+    "prompt": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, cómo los castores, los topos o los hámsters. Con algo menos de 2.500 especies, suponen el 40% de los mamíferos. (2) Los hay en todos los continentes, salvo la Antártida. (3) Se han adaptado a todos los entornos, terrestres cómo las capibaras, acuáticos cómo la rata almizclera, arborícolas cómo las ardillas o subterráneos, cómo el ratopín. (4) Los científicos siembre han señalado a sus poderosos dientes incisivos, qué nunca dejan de crecer, cómo claves de su éxito: les permitieron ocupar un nicho alimenticio qué el resto de mamíferos no podía comer. (5) ________ algo faltaba en esa explicación y han resultado ser las uñas. (1) Un grupo de biólogos tenía la hipótesis qué, junto a los incisivos, la uña del pulgar les habría permitido manipular estos duros y pequeños alimentos y tenían qué comprobarla . (2) _________, se han paseado por algunos de los principales museos de ciencias naturales, cómo los de historia natural de Londres, Nueva York o Chicago buscando roedores en sus cajones. (3) Encontraron representantes de 433 géneros de los 522 qué hay entre los Rodentia. (4) El género es una categoría superior a la de especie. (5) Al analizar las patas, comprobaron qué el 86% de los roedores tiene uñas, pero con una particularidad, solo en el pulgar. Identifique los conectores qué completan los espacios en blanco. Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
@@ -430,8 +430,8 @@ window.GUIA_BANK_69 = [
   {
     "n": 21,
     "s": "lang",
-    "t": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, como los castores, los topos ",
-    "prompt": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, como los castores, los topos o los hámsters. Con algo menos de 2.500 especies, suponen el 40% de los mamíferos. (2) Los hay en todos los continentes, salvo la Antártida. (3) Se han adaptado a todos los entornos, terrestres como las capibaras, acuáticos como la rata almizclera, arborícolas como las ardillas o subterráneos, como el ratopín. (4) Los científicos siembre han señalado a sus poderosos dientes incisivos, que nunca dejan de crecer, como claves de su éxito: les permitieron ocupar un nicho alimenticio que el resto de mamíferos no podía comer. (5) ________ algo faltaba en esa explicación y han resultado ser las uñas. (1) Un grupo de biólogos tenía la hipótesis que, junto a los incisivos, la uña del pulgar les habría permitido manipular estos duros y pequeños alimentos y tenían que comprobarla . (2) _________, se han paseado por algunos de los principales museos de ciencias naturales, como los de historia natural de Londres, Nueva York o Chicago buscando roedores en sus cajones. (3) Encontraron representantes de 433 géneros de los 522 que hay entre los Rodentia. (4) El género es una categoría superior a la de especie. (5) Al analizar las patas, comprobaron que el 86% de los roedores tiene uñas, pero con una particularidad, solo en el pulgar. Identifique la oración que se puede eliminar del párrafo 2 sin que se pierda la coherencia. Single choice. (1 Point)",
+    "t": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, cómo los castores, los topos ",
+    "prompt": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, cómo los castores, los topos o los hámsters. Con algo menos de 2.500 especies, suponen el 40% de los mamíferos. (2) Los hay en todos los continentes, salvo la Antártida. (3) Se han adaptado a todos los entornos, terrestres cómo las capibaras, acuáticos cómo la rata almizclera, arborícolas cómo las ardillas o subterráneos, cómo el ratopín. (4) Los científicos siembre han señalado a sus poderosos dientes incisivos, qué nunca dejan de crecer, cómo claves de su éxito: les permitieron ocupar un nicho alimenticio qué el resto de mamíferos no podía comer. (5) ________ algo faltaba en esa explicación y han resultado ser las uñas. (1) Un grupo de biólogos tenía la hipótesis qué, junto a los incisivos, la uña del pulgar les habría permitido manipular estos duros y pequeños alimentos y tenían qué comprobarla . (2) _________, se han paseado por algunos de los principales museos de ciencias naturales, cómo los de historia natural de Londres, Nueva York o Chicago buscando roedores en sus cajones. (3) Encontraron representantes de 433 géneros de los 522 qué hay entre los Rodentia. (4) El género es una categoría superior a la de especie. (5) Al analizar las patas, comprobaron qué el 86% de los roedores tiene uñas, pero con una particularidad, solo en el pulgar. Identifique la oración qué se puede eliminar del párrafo 2 sin qué se pierda la coherencia. Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
@@ -442,14 +442,14 @@ window.GUIA_BANK_69 = [
     ],
     "ans": 0,
     "ans_label": "B",
-    "exp": "La oración (4) define el concepto de género, lo cual es una digresión explicativa prescindible para el desarrollo de la investigación.",
+    "exp": "La oración (4) define el concepto de género, lo cuál es una digresión explicativa prescindible para el desarrollo de la investigación.",
     "ch": "l1"
   },
   {
     "n": 22,
     "s": "lang",
-    "t": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, como los castores, los topos ",
-    "prompt": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, como los castores, los topos o los hámsters. Con algo menos de 2.500 especies, suponen el 40% de los mamíferos. (2) Los hay en todos los continentes, salvo la Antártida. (3) Se han adaptado a todos los entornos, terrestres como las capibaras, acuáticos como la rata almizclera, arborícolas como las ardillas o subterráneos, como el ratopín. (4) Los científicos siembre han señalado a sus poderosos dientes incisivos, que nunca dejan de crecer, como claves de su éxito: les permitieron ocupar un nicho alimenticio que el resto de mamíferos no podía comer. (5) ________ algo faltaba en esa explicación y han resultado ser las uñas. (1) Un grupo de biólogos tenía la hipótesis que, junto a los incisivos, la uña del pulgar les habría permitido manipular estos duros y pequeños alimentos y tenían que comprobarla . (2) _________, se han paseado por algunos de los principales museos de ciencias naturales, como los de historia natural de Londres, Nueva York o Chicago buscando roedores en sus cajones. (3) Encontraron representantes de 433 géneros de los 522 que hay entre los Rodentia. (4) El género es una categoría superior a la de especie. (5) Al analizar las patas, comprobaron que el 86% de los roedores tiene uñas, pero con una particularidad, solo en el pulgar. Identifique la idea principal del párrafo 1: Single choice. (1 Point)",
+    "t": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, cómo los castores, los topos ",
+    "prompt": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, cómo los castores, los topos o los hámsters. Con algo menos de 2.500 especies, suponen el 40% de los mamíferos. (2) Los hay en todos los continentes, salvo la Antártida. (3) Se han adaptado a todos los entornos, terrestres cómo las capibaras, acuáticos cómo la rata almizclera, arborícolas cómo las ardillas o subterráneos, cómo el ratopín. (4) Los científicos siembre han señalado a sus poderosos dientes incisivos, qué nunca dejan de crecer, cómo claves de su éxito: les permitieron ocupar un nicho alimenticio qué el resto de mamíferos no podía comer. (5) ________ algo faltaba en esa explicación y han resultado ser las uñas. (1) Un grupo de biólogos tenía la hipótesis qué, junto a los incisivos, la uña del pulgar les habría permitido manipular estos duros y pequeños alimentos y tenían qué comprobarla . (2) _________, se han paseado por algunos de los principales museos de ciencias naturales, cómo los de historia natural de Londres, Nueva York o Chicago buscando roedores en sus cajones. (3) Encontraron representantes de 433 géneros de los 522 qué hay entre los Rodentia. (4) El género es una categoría superior a la de especie. (5) Al analizar las patas, comprobaron qué el 86% de los roedores tiene uñas, pero con una particularidad, solo en el pulgar. Identifique la idea principal del párrafo 1: Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
@@ -466,26 +466,26 @@ window.GUIA_BANK_69 = [
   {
     "n": 23,
     "s": "lang",
-    "t": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, como los castores, los topos ",
-    "prompt": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, como los castores, los topos o los hámsters. Con algo menos de 2.500 especies, suponen el 40% de los mamíferos. (2) Los hay en todos los continentes, salvo la Antártida. (3) Se han adaptado a todos los entornos, terrestres como las capibaras, acuáticos como la rata almizclera, arborícolas como las ardillas o subterráneos, como el ratopín. (4) Los científicos siembre han señalado a sus poderosos dientes incisivos, que nunca dejan de crecer, como claves de su éxito: les permitieron ocupar un nicho alimenticio que el resto de mamíferos no podía comer. (5) ________ algo faltaba en esa explicación y han resultado ser las uñas. (1) Un grupo de biólogos tenía la hipótesis que, junto a los incisivos, la uña del pulgar les habría permitido manipular estos duros y pequeños alimentos y tenían que comprobarla . (2) _________, se han paseado por algunos de los principales museos de ciencias naturales, como los de historia natural de Londres, Nueva York o Chicago buscando roedores en sus cajones. (3) Encontraron representantes de 433 géneros de los 522 que hay entre los Rodentia. (4) El género es una categoría superior a la de especie. (5) Al analizar las patas, comprobaron que el 86% de los roedores tiene uñas, pero con una particularidad, solo en el pulgar. Identifique el propósito: Single choice. (1 Point)",
+    "t": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, cómo los castores, los topos ",
+    "prompt": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, cómo los castores, los topos o los hámsters. Con algo menos de 2.500 especies, suponen el 40% de los mamíferos. (2) Los hay en todos los continentes, salvo la Antártida. (3) Se han adaptado a todos los entornos, terrestres cómo las capibaras, acuáticos cómo la rata almizclera, arborícolas cómo las ardillas o subterráneos, cómo el ratopín. (4) Los científicos siembre han señalado a sus poderosos dientes incisivos, qué nunca dejan de crecer, cómo claves de su éxito: les permitieron ocupar un nicho alimenticio qué el resto de mamíferos no podía comer. (5) ________ algo faltaba en esa explicación y han resultado ser las uñas. (1) Un grupo de biólogos tenía la hipótesis qué, junto a los incisivos, la uña del pulgar les habría permitido manipular estos duros y pequeños alimentos y tenían qué comprobarla . (2) _________, se han paseado por algunos de los principales museos de ciencias naturales, cómo los de historia natural de Londres, Nueva York o Chicago buscando roedores en sus cajones. (3) Encontraron representantes de 433 géneros de los 522 qué hay entre los Rodentia. (4) El género es una categoría superior a la de especie. (5) Al analizar las patas, comprobaron qué el 86% de los roedores tiene uñas, pero con una particularidad, solo en el pulgar. Identifique el propósito: Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
-      "Describir los diversos cambios y adaptaciones que han tenido los ratones y ratas.",
+      "Describir los diversos cambios y adaptaciones qué han tenido los ratones y ratas.",
       "Defender la importancia de los dientes y uñas para la evolución de los roedores.",
       "Explicar la relación entre uñas y dientes (en particular los incisivos) con la adaptación y diversificación de los roedores.",
-      "Presentar las diversas especies de ratones y ratas que existen y sus características."
+      "Presentar las diversas especies de ratones y ratas qué existen y sus características."
     ],
     "ans": 0,
     "ans_label": "C",
-    "exp": "El texto articula el hallazgo reciente de las uñas junto a los incisivos como explicación integral de la diversificación adaptativa.",
+    "exp": "El texto articula el hallazgo reciente de las uñas junto a los incisivos cómo explicación integral de la diversificación adaptativa.",
     "ch": "l1"
   },
   {
     "n": 24,
     "s": "lang",
-    "t": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, como los castores, los topos ",
-    "prompt": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, como los castores, los topos o los hámsters. Con algo menos de 2.500 especies, suponen el 40% de los mamíferos. (2) Los hay en todos los continentes, salvo la Antártida. (3) Se han adaptado a todos los entornos, terrestres como las capibaras, acuáticos como la rata almizclera, arborícolas como las ardillas o subterráneos, como el ratopín. (4) Los científicos siembre han señalado a sus poderosos dientes incisivos, que nunca dejan de crecer, como claves de su éxito: les permitieron ocupar un nicho alimenticio que el resto de mamíferos no podía comer. (5) ________ algo faltaba en esa explicación y han resultado ser las uñas. (1) Un grupo de biólogos tenía la hipótesis que, junto a los incisivos, la uña del pulgar les habría permitido manipular estos duros y pequeños alimentos y tenían que comprobarla . (2) _________, se han paseado por algunos de los principales museos de ciencias naturales, como los de historia natural de Londres, Nueva York o Chicago buscando roedores en sus cajones. (3) Encontraron representantes de 433 géneros de los 522 que hay entre los Rodentia. (4) El género es una categoría superior a la de especie. (5) Al analizar las patas, comprobaron que el 86% de los roedores tiene uñas, pero con una particularidad, solo en el pulgar. Identifique la información que se obtiene de una lectura literal. Single choice. (1 Point)",
+    "t": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, cómo los castores, los topos ",
+    "prompt": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, cómo los castores, los topos o los hámsters. Con algo menos de 2.500 especies, suponen el 40% de los mamíferos. (2) Los hay en todos los continentes, salvo la Antártida. (3) Se han adaptado a todos los entornos, terrestres cómo las capibaras, acuáticos cómo la rata almizclera, arborícolas cómo las ardillas o subterráneos, cómo el ratopín. (4) Los científicos siembre han señalado a sus poderosos dientes incisivos, qué nunca dejan de crecer, cómo claves de su éxito: les permitieron ocupar un nicho alimenticio qué el resto de mamíferos no podía comer. (5) ________ algo faltaba en esa explicación y han resultado ser las uñas. (1) Un grupo de biólogos tenía la hipótesis qué, junto a los incisivos, la uña del pulgar les habría permitido manipular estos duros y pequeños alimentos y tenían qué comprobarla . (2) _________, se han paseado por algunos de los principales museos de ciencias naturales, cómo los de historia natural de Londres, Nueva York o Chicago buscando roedores en sus cajones. (3) Encontraron representantes de 433 géneros de los 522 qué hay entre los Rodentia. (4) El género es una categoría superior a la de especie. (5) Al analizar las patas, comprobaron qué el 86% de los roedores tiene uñas, pero con una particularidad, solo en el pulgar. Identifique la información qué se obtiene de una lectura literal. Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
@@ -502,8 +502,8 @@ window.GUIA_BANK_69 = [
   {
     "n": 25,
     "s": "lang",
-    "t": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, como los castores, los topos ",
-    "prompt": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, como los castores, los topos o los hámsters. Con algo menos de 2.500 especies, suponen el 40% de los mamíferos. (2) Los hay en todos los continentes, salvo la Antártida. (3) Se han adaptado a todos los entornos, terrestres como las capibaras, acuáticos como la rata almizclera, arborícolas como las ardillas o subterráneos, como el ratopín. (4) Los científicos siembre han señalado a sus poderosos dientes incisivos, que nunca dejan de crecer, como claves de su éxito: les permitieron ocupar un nicho alimenticio que el resto de mamíferos no podía comer. (5) ________ algo faltaba en esa explicación y han resultado ser las uñas. (1) Un grupo de biólogos tenía la hipótesis que, junto a los incisivos, la uña del pulgar les habría permitido manipular estos duros y pequeños alimentos y tenían que comprobarla . (2) _________, se han paseado por algunos de los principales museos de ciencias naturales, como los de historia natural de Londres, Nueva York o Chicago buscando roedores en sus cajones. (3) Encontraron representantes de 433 géneros de los 522 que hay entre los Rodentia. (4) El género es una categoría superior a la de especie. (5) Al analizar las patas, comprobaron que el 86% de los roedores tiene uñas, pero con una particularidad, solo en el pulgar. I dentifique el enunciado que constituye una síntesis de la totalidad de la información. Single choice. (1 Point)",
+    "t": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, cómo los castores, los topos ",
+    "prompt": "(1) Los ratones y ratas pertenecen al orden de los Rodentia, cómo los castores, los topos o los hámsters. Con algo menos de 2.500 especies, suponen el 40% de los mamíferos. (2) Los hay en todos los continentes, salvo la Antártida. (3) Se han adaptado a todos los entornos, terrestres cómo las capibaras, acuáticos cómo la rata almizclera, arborícolas cómo las ardillas o subterráneos, cómo el ratopín. (4) Los científicos siembre han señalado a sus poderosos dientes incisivos, qué nunca dejan de crecer, cómo claves de su éxito: les permitieron ocupar un nicho alimenticio qué el resto de mamíferos no podía comer. (5) ________ algo faltaba en esa explicación y han resultado ser las uñas. (1) Un grupo de biólogos tenía la hipótesis qué, junto a los incisivos, la uña del pulgar les habría permitido manipular estos duros y pequeños alimentos y tenían qué comprobarla . (2) _________, se han paseado por algunos de los principales museos de ciencias naturales, cómo los de historia natural de Londres, Nueva York o Chicago buscando roedores en sus cajones. (3) Encontraron representantes de 433 géneros de los 522 qué hay entre los Rodentia. (4) El género es una categoría superior a la de especie. (5) Al analizar las patas, comprobaron qué el 86% de los roedores tiene uñas, pero con una particularidad, solo en el pulgar. I dentifique el enunciado qué constituye una síntesis de la totalidad de la información. Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
@@ -520,15 +520,15 @@ window.GUIA_BANK_69 = [
   {
     "n": 26,
     "s": "lang",
-    "t": "(1) En un árbol, el primer síntoma de que algo va mal por la sequía o las altas temperatur",
-    "prompt": "(1) En un árbol, el primer síntoma de que algo va mal por la sequía o las altas temperaturas es el cambio de color, ocurre porque cierra sus estomas (los poros de las hojas) para evitar perder agua y esto reduce la fotosíntesis. (2) _____ llega la pérdida de hojas, la defoliación, y si se agrava la situación, puede producirse la muerte. (3) Este es un fenómeno difícil de medir en las masas forestales del país, pues algunas veces, con la llegada de las lluvias los ejemplares se recuperan, y otras quedan moribundos, sentenciados, pero tardan años en sucumbir. (4) _____, los episodios recientes de muerte masiva de ejemplares en Cataluña, Comunidad Valenciana o Murcia han mostrado la magnitud de un proceso que se espera vaya amplificándose con la crisis climática y que tiene importantes implicaciones tanto para el paisaje como, en los casos más extremos, para el futuro de los bosques y los numerosos servicios ambientales que proporcionan (en forma de biodiversidad, madera, alimentos, absorción de CO₂, regulación de cursos del agua, protección del suelo...). Identifique el tipo de párrafo al que corresponde. Single choice. (1 Point)",
+    "t": "(1) En un árbol, el primer síntoma de qué algo va mal por la sequía o las altas temperatur",
+    "prompt": "(1) En un árbol, el primer síntoma de qué algo va mal por la sequía o las altas temperaturas es el cambio de color, ocurre porque cierra sus estomas (los poros de las hojas) para evitar perder agua y esto reduce la fotosíntesis. (2) _____ llega la pérdida de hojas, la defoliación, y si se agrava la situación, puede producirse la muerte. (3) Este es un fenómeno difícil de medir en las masas forestales del país, pues algunas veces, con la llegada de las lluvias los ejemplares se recuperan, y otras quedan moribundos, sentenciados, pero tardan años en sucumbir. (4) _____, los episodios recientes de muerte masiva de ejemplares en Cataluña, Comunidad Valenciana o Murcia han mostrado la magnitud de un proceso qué se espera vaya amplificándose con la crisis climática y qué tiene importantes implicaciones tanto para el paisaje cómo, en los casos más extremos, para el futuro de los bosques y los numerosos servicios ambientales qué proporcionan (en forma de biodiversidad, madera, alimentos, absorción de CO₂, regulación de cursos del agua, protección del suelo...). Identifique el tipo de párrafo al qué corresponde. Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
       "Expositivo: presenta información objetiva sobre un fenómeno natural sin emitir juicios de valor.",
       "Argumentativo: emite un juicio sobre las incidencias del cambio climático en el medio ambiente.",
-      "Expositivo: detalla como la falta de fotosíntesis causa daños en la biodiversidad.",
-      "Argumentativo: estima que hay comunidades con implicaciones en su paisaje debido a la perdida de bosques."
+      "Expositivo: detalla cómo la falta de fotosíntesis causa daños en la biodiversidad.",
+      "Argumentativo: estima qué hay comunidades con implicaciones en su paisaje debido a la perdida de bosques."
     ],
     "ans": 0,
     "ans_label": "A",
@@ -538,15 +538,15 @@ window.GUIA_BANK_69 = [
   {
     "n": 27,
     "s": "lang",
-    "t": "(1) En un árbol, el primer síntoma de que algo va mal por la sequía o las altas temperatur",
-    "prompt": "(1) En un árbol, el primer síntoma de que algo va mal por la sequía o las altas temperaturas es el cambio de color, ocurre porque cierra sus estomas (los poros de las hojas) para evitar perder agua y esto reduce la fotosíntesis. (2) _____ llega la pérdida de hojas, la defoliación, y si se agrava la situación, puede producirse la muerte. (3) Este es un fenómeno difícil de medir en las masas forestales del país, pues algunas veces, con la llegada de las lluvias los ejemplares se recuperan, y otras quedan moribundos, sentenciados, pero tardan años en sucumbir. (4) _____, los episodios recientes de muerte masiva de ejemplares en Cataluña, Comunidad Valenciana o Murcia han mostrado la magnitud de un proceso que se espera vaya amplificándose con la crisis climática y que tiene importantes implicaciones tanto para el paisaje como, en los casos más extremos, para el futuro de los bosques y los numerosos servicios ambientales que proporcionan (en forma de biodiversidad, madera, alimentos, absorción de CO₂, regulación de cursos del agua, protección del suelo...). Selecciona el enunciado que contiene la inferencia de la oración 3. Single choice. (1 Point)",
+    "t": "(1) En un árbol, el primer síntoma de qué algo va mal por la sequía o las altas temperatur",
+    "prompt": "(1) En un árbol, el primer síntoma de qué algo va mal por la sequía o las altas temperaturas es el cambio de color, ocurre porque cierra sus estomas (los poros de las hojas) para evitar perder agua y esto reduce la fotosíntesis. (2) _____ llega la pérdida de hojas, la defoliación, y si se agrava la situación, puede producirse la muerte. (3) Este es un fenómeno difícil de medir en las masas forestales del país, pues algunas veces, con la llegada de las lluvias los ejemplares se recuperan, y otras quedan moribundos, sentenciados, pero tardan años en sucumbir. (4) _____, los episodios recientes de muerte masiva de ejemplares en Cataluña, Comunidad Valenciana o Murcia han mostrado la magnitud de un proceso qué se espera vaya amplificándose con la crisis climática y qué tiene importantes implicaciones tanto para el paisaje cómo, en los casos más extremos, para el futuro de los bosques y los numerosos servicios ambientales qué proporcionan (en forma de biodiversidad, madera, alimentos, absorción de CO₂, regulación de cursos del agua, protección del suelo...). Selecciona el enunciado qué contiene la inferencia de la oración 3. Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
-      "El agua de las lluvias también es otro factor que causa la muerte de los árboles debido a mucha humedad en los suelos.",
+      "El agua de las lluvias también es otro factor qué causa la muerte de los árboles debido a mucha humedad en los suelos.",
       "Mientras más lluvia cae, mayor humedad para los suelos y vida de los árboles y plantas.",
       "Evaluar los síntomas de muerte en los árboles a tiempo permitirá correlacionar la calidad del suelo.",
-      "La presencia de lluvias puede generar falsos positivos puesto que, a pesar de ser un árbol moribundo, puede ser considerado sano."
+      "La presencia de lluvias puede generar falsos positivos puesto qué, a pesar de ser un árbol moribundo, puede ser considerado sano."
     ],
     "ans": 0,
     "ans_label": "D",
@@ -556,8 +556,8 @@ window.GUIA_BANK_69 = [
   {
     "n": 28,
     "s": "lang",
-    "t": "(1) En un árbol, el primer síntoma de que algo va mal por la sequía o las altas temperatur",
-    "prompt": "(1) En un árbol, el primer síntoma de que algo va mal por la sequía o las altas temperaturas es el cambio de color, ocurre porque cierra sus estomas (los poros de las hojas) para evitar perder agua y esto reduce la fotosíntesis. (2) _____ llega la pérdida de hojas, la defoliación, y si se agrava la situación, puede producirse la muerte. (3) Este es un fenómeno difícil de medir en las masas forestales del país, pues algunas veces, con la llegada de las lluvias los ejemplares se recuperan, y otras quedan moribundos, sentenciados, pero tardan años en sucumbir. (4) _____, los episodios recientes de muerte masiva de ejemplares en Cataluña, Comunidad Valenciana o Murcia han mostrado la magnitud de un proceso que se espera vaya amplificándose con la crisis climática y que tiene importantes implicaciones tanto para el paisaje como, en los casos más extremos, para el futuro de los bosques y los numerosos servicios ambientales que proporcionan (en forma de biodiversidad, madera, alimentos, absorción de CO₂, regulación de cursos del agua, protección del suelo...). Con base en la oración 2, elija el literal de los conectores que dan coherencia al párrafo: Single choice. (1 Point)",
+    "t": "(1) En un árbol, el primer síntoma de qué algo va mal por la sequía o las altas temperatur",
+    "prompt": "(1) En un árbol, el primer síntoma de qué algo va mal por la sequía o las altas temperaturas es el cambio de color, ocurre porque cierra sus estomas (los poros de las hojas) para evitar perder agua y esto reduce la fotosíntesis. (2) _____ llega la pérdida de hojas, la defoliación, y si se agrava la situación, puede producirse la muerte. (3) Este es un fenómeno difícil de medir en las masas forestales del país, pues algunas veces, con la llegada de las lluvias los ejemplares se recuperan, y otras quedan moribundos, sentenciados, pero tardan años en sucumbir. (4) _____, los episodios recientes de muerte masiva de ejemplares en Cataluña, Comunidad Valenciana o Murcia han mostrado la magnitud de un proceso qué se espera vaya amplificándose con la crisis climática y qué tiene importantes implicaciones tanto para el paisaje cómo, en los casos más extremos, para el futuro de los bosques y los numerosos servicios ambientales qué proporcionan (en forma de biodiversidad, madera, alimentos, absorción de CO₂, regulación de cursos del agua, protección del suelo...). Con base en la oración 2, elija el literal de los conectores qué dan coherencia al párrafo: Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
@@ -574,14 +574,14 @@ window.GUIA_BANK_69 = [
   {
     "n": 29,
     "s": "lang",
-    "t": "El estrés digital no es exclusivo del entorno laboral, sino que se extiende a la vida pers",
-    "prompt": "El estrés digital no es exclusivo del entorno laboral, sino que se extiende a la vida personal y social, afecta a personas de todas las edades, aunque su impacto es especialmente alto en adolescentes, adultos jóvenes y profesionales en contextos de alta demanda digital (Steel et al., 2019; Hall et al., 2021). Factores como la conectividad permanente y el multitasking digital incrementan la carga cognitiva, reducen la capacidad de concentración, provocan interrupciones frecuentes y fomentan una sensación de urgencia y saturación. Estos factores se traducen en agotamiento emocional, ansiedad, alteraciones en el sueño y, en casos más graves, en trastornos clínicos de salud mental. El director de Talento Humano decide emitir un comunicado interno, debido a que un alto porcentaje del personal tiene estrés laboral. ¿Cuál de los enunciados corresponde al proceso integrador de evaluación? Single choice. (1 Point)",
+    "t": "El estrés digital no es exclusivo del entorno laboral, sino qué se extiende a la vida pers",
+    "prompt": "El estrés digital no es exclusivo del entorno laboral, sino qué se extiende a la vida personal y social, afecta a personas de todas las edades, aunque su impacto es especialmente alto en adolescentes, adultos jóvenes y profesionales en contextos de alta demanda digital (Steel et al., 2019; Hall et al., 2021). Factores cómo la conectividad permanente y el multitasking digital incrementan la carga cognitiva, reducen la capacidad de concentración, provocan interrupciones frecuentes y fomentan una sensación de urgencia y saturación. Estos factores se traducen en agotamiento emocional, ansiedad, alteraciones en el sueño y, en casos más graves, en trastornos clínicos de salud mental. El director de Talento Humano decide emitir un comunicado interno, debido a qué un alto porcentaje del personal tiene estrés laboral. ¿Cuál de los enunciados corresponde al proceso integrador de evaluación? Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
-      "Informa al personal que los elementos que inciden en el estrés digital son la conectividad permanente y el multitasking, por lo tanto sugiere eliminar el uso del celular.",
-      "Exige a los jefes evitar la contratación de adolescentes, segmento de la población que es altamente impactado por el estrés digital.",
-      "Opina que la empresa vulnera los derechos de los trabajadores por tal motivo decide realizar un análisis mental para conocer causas, consecuencias y soluciones al estrés digital.",
+      "Informa al personal qué los elementos qué inciden en el estrés digital son la conectividad permanente y el multitasking, por lo tanto sugiere eliminar el uso del celular.",
+      "Exige a los jefes evitar la contratación de adolescentes, segmento de la población qué es altamente impactado por el estrés digital.",
+      "Opina qué la empresa vulnera los derechos de los trabajadores por tal motivo decide realizar un análisis mental para conocer causas, consecuencias y soluciones al estrés digital.",
       "Con el fin de combatir el agotamiento emocional y futuros trastornos clínicos propone la instalación de un centro médico."
     ],
     "ans": 0,
@@ -593,7 +593,7 @@ window.GUIA_BANK_69 = [
     "n": 30,
     "s": "lang",
     "t": "La Guerra Fría impulsó la erradicación de la viruela. En₁₉₅₈ la Unión Soviética tuvo un pa",
-    "prompt": "La Guerra Fría impulsó la erradicación de la viruela.  En 1958 la Unión Soviética tuvo un papel central en la erradicación mundial de la viruela, lo propuso inicialmente en la Organización Mundial de la Salud (OMS) en ese año, y fue aprobado por la Asamblea Mundial de la Salud en 1959. Todo esto en medio del interés geopolítico de Estados Unidos y la Unión Soviética por influir en el resto del mundo, las dos naciones querían demostrar su desarrollo científico y médico, así como suavizar su imagen mediante la cooperación internacional. Ese mismo año la URSS proporcionó a todos los países la vacuna liofilizada, que fue la herramienta ideal para la para la eliminación de la enfermedad en Asia, Europa Oriental e India logrando, para el bien mayor de la humanidad, la erradicación total de la enfermedad en 1980. Estados Unidos no tuvo otra opción que apoyar la iniciativa y competir para lograr una mayor tasa de vacunación que su rival. Al final, la iniciativa representó un triunfo de la cooperación internacional y un modelo para la salud pública. Que literal representa una inferencia/deducción? Single choice. (1 Point)",
+    "prompt": "La Guerra Fría impulsó la erradicación de la viruela.  En 1958 la Unión Soviética tuvo un papel central en la erradicación mundial de la viruela, lo propuso inicialmente en la Organización Mundial de la Salud (OMS) en ese año, y fue aprobado por la Asamblea Mundial de la Salud en 1959. Todo esto en medio del interés geopolítico de Estados Unidos y la Unión Soviética por influir en el resto del mundo, las dos naciones querían demostrar su desarrollo científico y médico, así cómo suavizar su imagen mediante la cooperación internacional. Ese mismo año la URSS proporcionó a todos los países la vacuna liofilizada, qué fue la herramienta ideal para la para la eliminación de la enfermedad en Asia, Europa Oriental e India logrando, para el bien mayor de la humanidad, la erradicación total de la enfermedad en 1980. Estados Unidos no tuvo otra opción qué apoyar la iniciativa y competir para lograr una mayor tasa de vacunación qué su rival. Al final, la iniciativa representó un triunfo de la cooperación internacional y un modelo para la salud pública. Qué literal representa una inferencia/deducción? Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
@@ -611,7 +611,7 @@ window.GUIA_BANK_69 = [
     "n": 31,
     "s": "lang",
     "t": "(1) En un entorno empresarial altamente competitivo, la reducción de costos se ha vuelto c",
-    "prompt": "(1) En un entorno empresarial altamente competitivo, la reducción de costos se ha vuelto crucial para la sostenibilidad económica y financiera de cualquier compañía como en el caso de Apple. (2) Esto se traduce en la producción de sus dispositivos principalmente en China e India, a pesar de que en la parte posterior de los iPhone se puede leer “Designed by Apple in California”. (3) Las grandes fábricas de producción están distribuidas globalmente, pero se concentran en China debido a la mano de obra económica y abundante. (4) Los salarios en el país asiático son significativamente más bajos que en Estados Unidos. (5) Además, las políticas fiscales y de licencias en China son mucho más favorables en comparación con las de Europa o Estados Unidos, lo que facilita aún más la producción. (6) Sin embargo, Apple no quiere depender únicamente de China. (7) Por eso, India se ha convertido en su segunda mayor base de producción por ser como Estados Unidos. (8) Curiosamente, el único producto que Apple continúa fabricando en Estados Unidos es el Mac Pro, que se considera uno de los ordenadores personales más potentes del mundo. Elija la oración que no constituye un argumento de la tesis del párrafo: Single choice. (1 Point)",
+    "prompt": "(1) En un entorno empresarial altamente competitivo, la reducción de costos se ha vuelto crucial para la sostenibilidad económica y financiera de cualquier compañía cómo en el caso de Apple. (2) Esto se traduce en la producción de sus dispositivos principalmente en China e India, a pesar de qué en la parte posterior de los iPhone se puede leer “Designed by Apple in California”. (3) Las grandes fábricas de producción están distribuidas globalmente, pero se concentran en China debido a la mano de obra económica y abundante. (4) Los salarios en el país asiático son significativamente más bajos qué en Estados Unidos. (5) Además, las políticas fiscales y de licencias en China son mucho más favorables en comparación con las de Europa o Estados Unidos, lo qué facilita aún más la producción. (6) Sin embargo, Apple no quiere depender únicamente de China. (7) Por eso, India se ha convertido en su segunda mayor base de producción por ser cómo Estados Unidos. (8) Curiosamente, el único producto qué Apple continúa fabricando en Estados Unidos es el Mac Pro, qué se considera uno de los ordenadores personales más potentes del mundo. Elija la oración qué no constituye un argumento de la tesis del párrafo: Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
@@ -622,21 +622,21 @@ window.GUIA_BANK_69 = [
     ],
     "ans": 0,
     "ans_label": "C",
-    "exp": "La oración (7) o (8) menciona datos accesorios/curiosos que se apartan del argumento central de reducción de costos de producción.",
+    "exp": "La oración (7) o (8) menciona datos accesorios/curiosos qué se apartan del argumento central de reducción de costos de producción.",
     "ch": "l2"
   },
   {
     "n": 32,
     "s": "lang",
     "t": "(1) En un entorno empresarial altamente competitivo, la reducción de costos se ha vuelto c",
-    "prompt": "(1) En un entorno empresarial altamente competitivo, la reducción de costos se ha vuelto crucial para la sostenibilidad económica y financiera de cualquier compañía como en el caso de Apple. (2) Esto se traduce en la producción de sus dispositivos principalmente en China e India, a pesar de que en la parte posterior de los iPhone se puede leer “Designed by Apple in California”. (3) Las grandes fábricas de producción están distribuidas globalmente, pero se concentran en China debido a la mano de obra económica y abundante. (4) Los salarios en el país asiático son significativamente más bajos que en Estados Unidos. (5) Además, las políticas fiscales y de licencias en China son mucho más favorables en comparación con las de Europa o Estados Unidos, lo que facilita aún más la producción. (6) Sin embargo, Apple no quiere depender únicamente de China. (7) Por eso, India se ha convertido en su segunda mayor base de producción por ser como Estados Unidos. (8) Curiosamente, el único producto que Apple continúa fabricando en Estados Unidos es el Mac Pro, que se considera uno de los ordenadores personales más potentes del mundo. Identifique el propósito de la escritura del texto Single choice. (1 Point)",
+    "prompt": "(1) En un entorno empresarial altamente competitivo, la reducción de costos se ha vuelto crucial para la sostenibilidad económica y financiera de cualquier compañía cómo en el caso de Apple. (2) Esto se traduce en la producción de sus dispositivos principalmente en China e India, a pesar de qué en la parte posterior de los iPhone se puede leer “Designed by Apple in California”. (3) Las grandes fábricas de producción están distribuidas globalmente, pero se concentran en China debido a la mano de obra económica y abundante. (4) Los salarios en el país asiático son significativamente más bajos qué en Estados Unidos. (5) Además, las políticas fiscales y de licencias en China son mucho más favorables en comparación con las de Europa o Estados Unidos, lo qué facilita aún más la producción. (6) Sin embargo, Apple no quiere depender únicamente de China. (7) Por eso, India se ha convertido en su segunda mayor base de producción por ser cómo Estados Unidos. (8) Curiosamente, el único producto qué Apple continúa fabricando en Estados Unidos es el Mac Pro, qué se considera uno de los ordenadores personales más potentes del mundo. Identifique el propósito de la escritura del texto Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
-      "Explicar las razones por que Apple produce sus dispositivos en países con condiciones económicas y fiscales favorables",
-      "Determinar que las estrategias de reducción de costos favorecen a las empresas que desean sostenibilidad económica.",
-      "Mostrar que la posición geográfica es favorable para la producción porque el entorno influye en la fuerza laboral",
-      "Mencionar por que las empresas deberían llevar su producción a países más baratos en mano de obra y políticas flexibles"
+      "Explicar las razones por qué Apple produce sus dispositivos en países con condiciones económicas y fiscales favorables",
+      "Determinar qué las estrategias de reducción de costos favorecen a las empresas qué desean sostenibilidad económica.",
+      "Mostrar qué la posición geográfica es favorable para la producción porque el entorno influye en la fuerza laboral",
+      "Mencionar por qué las empresas deberían llevar su producción a países más baratos en mano de obra y políticas flexibles"
     ],
     "ans": 0,
     "ans_label": "A",
@@ -646,8 +646,8 @@ window.GUIA_BANK_69 = [
   {
     "n": 33,
     "s": "physics",
-    "t": "Una bola de boliche cae accidentalmente de un avión que vuela en dirección horizontal. La ",
-    "prompt": "Una bola de boliche cae accidentalmente de un avión que vuela en dirección horizontal. La resistencia del aire es despreciable. ¿Qué trayectoria seguiría la bola según un observador en tierra? Single choice. (1 Point)",
+    "t": "Una bola de boliche cae accidentalmente de un avión qué vuela en dirección horizontal. La ",
+    "prompt": "Una bola de boliche cae accidentalmente de un avión qué vuela en dirección horizontal. La resistencia del aire es despreciable. ¿Qué trayectoria seguiría la bola según un observador en tierra? Single choice. (1 Point)",
     "maths": [],
     "imgs": [
       "preguntas_assets/9662c318-afb6-4ddc-ac05-0ded9423bc4b.png"
@@ -743,7 +743,7 @@ window.GUIA_BANK_69 = [
     "opts": [
       "Aplicar una fuerza proporcional a su rapidez",
       "Patear el disco y dejarlo deslizarse sin fuerzas adicionales",
-      "Aplicar una fuerza constante menor que la suma de F y F'",
+      "Aplicar una fuerza constante menor qué la suma de F y F'",
       "Aplicar una fuerza constante igual a la suma de F y F'.",
       "Aplicar una fuerza constante igual a la diferencia entre F y F'"
     ],
@@ -768,7 +768,7 @@ window.GUIA_BANK_69 = [
     ],
     "ans": 0,
     "ans_label": "A",
-    "exp": "Las unidades de volumen en el Sistema Internacional son m³, por lo que la fórmula requiere la dimensión del radio al cubo ($r^3$).",
+    "exp": "Las unidades de volumen en el Sistema Internacional son m³, por lo qué la fórmula requiere la dimensión del radio al cubo ($r^3$).",
     "ch": "f1"
   },
   {
@@ -816,7 +816,7 @@ window.GUIA_BANK_69 = [
     ],
     "ans": 0,
     "ans_label": "A",
-    "exp": "En tiro vertical (despreciando el aire), la única fuerza que actúa es la fuerza de gravedad (peso) dirigida hacia abajo con magnitud constante.",
+    "exp": "En tiro vertical (despreciando el aire), la única fuerza qué actúa es la fuerza de gravedad (peso) dirigida hacia abajo con magnitud constante.",
     "ch": "f1"
   },
   {
@@ -830,9 +830,9 @@ window.GUIA_BANK_69 = [
     ],
     "opts": [
       "Su rapidez permanece cero durante un intervalo corto, y su aceleración se mantiene constante",
-      "Tanto su rapidez como su aceleración permanecen cero durante un intervalo corto",
+      "Tanto su rapidez cómo su aceleración permanecen cero durante un intervalo corto",
       "Su rapidez se vuelve cero por un instante, y su aceleración permanece constante",
-      "Tanto su rapidez como su aceleración se vuelven cero por un instante",
+      "Tanto su rapidez cómo su aceleración se vuelven cero por un instante",
       "Su rapidez permanece cero durante un intervalo corto, y su aceleración se vuelve cero solo en un instante"
     ],
     "ans": 0,
@@ -851,31 +851,31 @@ window.GUIA_BANK_69 = [
     ],
     "opts": [
       "Igual a su rapidez en Q",
-      "Menor que su rapidez en Q, pero no la mitad",
+      "Menor qué su rapidez en Q, pero no la mitad",
       "El doble de su rapidez en Q",
       "La mitad de su rapidez en Q",
-      "Mayor que su rapidez en Q, pero no el doble"
+      "Mayor qué su rapidez en Q, pero no el doble"
     ],
     "ans": 2,
     "ans_label": "B",
-    "exp": "Como la rapidez disminuye con la altura según $v^2 = v_Q^2 - 2gh$, al estar a mayor altura la rapidez es menor que en Q.",
+    "exp": "Cómo la rapidez disminuye con la altura según $v^2 = v_Q^2 - 2gh$, al estar a mayor altura la rapidez es menor qué en Q.",
     "ch": "f1"
   },
   {
     "n": 43,
     "s": "physics",
     "t": "La figura muestra una piedra lanzada verticalmente hacia arriba desde el punto P. La piedr",
-    "prompt": "L a figura muestra una piedra lanzada verticalmente hacia arriba desde el punto P. La piedra pasa por dos puntos Q y R antes de alcanzar T, el punto más alto de su trayectoria. El punto Q está justo a la mitad entre los puntos P y R (PQ = QR). La resistencia del aire es despreciable. Justo después de alcanzar el punto más alto T, la piedra cae verticalmente hacia abajo. En comparación con la rapidez que tuvo en el punto Q durante el ascenso, su rapidez en el mismo punto Q durante el descenso es: Single choice. (1 Point)",
+    "prompt": "L a figura muestra una piedra lanzada verticalmente hacia arriba desde el punto P. La piedra pasa por dos puntos Q y R antes de alcanzar T, el punto más alto de su trayectoria. El punto Q está justo a la mitad entre los puntos P y R (PQ = QR). La resistencia del aire es despreciable. Justo después de alcanzar el punto más alto T, la piedra cae verticalmente hacia abajo. En comparación con la rapidez qué tuvo en el punto Q durante el ascenso, su rapidez en el mismo punto Q durante el descenso es: Single choice. (1 Point)",
     "maths": [],
     "imgs": [
       "preguntas_assets/84afaf95-dd87-40e8-9c79-9aaf88871ec4.png"
     ],
     "opts": [
-      "Menor que la rapidez que tuvo en Q durante el ascenso",
-      "Igual a la rapidez que tuvo en Q durante el ascenso",
-      "El doble de la rapidez que tuvo en Q durante el ascenso",
-      "Mayor que la rapidez que tuvo en Q durante el ascenso, pero no el doble",
-      "De una magnitud que depende de qué tan alto esté T sobre R"
+      "Menor qué la rapidez qué tuvo en Q durante el ascenso",
+      "Igual a la rapidez qué tuvo en Q durante el ascenso",
+      "El doble de la rapidez qué tuvo en Q durante el ascenso",
+      "Mayor qué la rapidez qué tuvo en Q durante el ascenso, pero no el doble",
+      "De una magnitud qué depende de qué tan alto esté T sobre R"
     ],
     "ans": 2,
     "ans_label": "B",
@@ -886,14 +886,14 @@ window.GUIA_BANK_69 = [
     "n": 44,
     "s": "physics",
     "t": "Empujas una caja con una fuerza horizontal constante F. La caja se mueve por un piso horiz",
-    "prompt": "Empujas una caja con una fuerza horizontal constante F. La caja se mueve por un piso horizontal con rapidez constante v 0 . Considera las siguientes fuerzas: F1: El peso de la caja. F2 : Una fuerza horizontal neta que resiste el movimiento. La magnitud de la fuerza F que se ejerce es: Single choice. (1 Point)",
+    "prompt": "Empujas una caja con una fuerza horizontal constante F. La caja se mueve por un piso horizontal con rapidez constante v 0 . Considera las siguientes fuerzas: F1: El peso de la caja. F2 : Una fuerza horizontal neta qué resiste el movimiento. La magnitud de la fuerza F qué se ejerce es: Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
-      "Mayor que la magnitud de F1",
-      "Mayor que la magnitud de F2",
+      "Mayor qué la magnitud de F1",
+      "Mayor qué la magnitud de F2",
       "Igual a la magnitud de F1",
-      "Mayor que la magnitud de F1 o F2",
+      "Mayor qué la magnitud de F1 o F2",
       "Igual a la magnitud de F2"
     ],
     "ans": 0,
@@ -905,26 +905,26 @@ window.GUIA_BANK_69 = [
     "n": 45,
     "s": "physics",
     "t": "Empujas una caja con una fuerza horizontal constante F. La caja se mueve por un piso horiz",
-    "prompt": "Empujas una caja con una fuerza horizontal constante F. La caja se mueve por un piso horizontal con rapidez constante v 0 . Considera las siguientes fuerzas: F1: El peso de la caja. F2 : Una fuerza horizontal neta que resiste el movimiento. Si ahora empujas la caja con una fuerza horizontal constante que es el doble de F, la caja se mueve: Single choice. (1 Point)",
+    "prompt": "Empujas una caja con una fuerza horizontal constante F. La caja se mueve por un piso horizontal con rapidez constante v 0 . Considera las siguientes fuerzas: F1: El peso de la caja. F2 : Una fuerza horizontal neta qué resiste el movimiento. Si ahora empujas la caja con una fuerza horizontal constante qué es el doble de F, la caja se mueve: Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
       "Con rapidez constante 2v0",
       "Con rapidez creciente un tiempo, y luego constante",
       "Con rapidez continuamente creciente",
-      "Con rapidez constante mayor que v0 , pero no el doble",
-      "Con rapidez constante mayor que v0 un tiempo, y luego con rapidez creciente."
+      "Con rapidez constante mayor qué v0 , pero no el doble",
+      "Con rapidez constante mayor qué v0 un tiempo, y luego con rapidez creciente."
     ],
     "ans": 0,
     "ans_label": "C",
-    "exp": "Al duplicar la fuerza a $2F_1$, la fuerza neta $F_{neta} = F_1 > 0$, lo que genera una aceleración constante y rapidez continuamente creciente.",
+    "exp": "Al duplicar la fuerza a $2F_1$, la fuerza neta $F_{neta} = F_1 > 0$, lo qué genera una aceleración constante y rapidez continuamente creciente.",
     "ch": "f2"
   },
   {
     "n": 46,
     "s": "physics",
     "t": "Empujas una caja con una fuerza horizontal constante F. La caja se mueve por un piso horiz",
-    "prompt": "Empujas una caja con una fuerza horizontal constante F. La caja se mueve por un piso horizontal con rapidez constante v 0 . Considera las siguientes fuerzas: F1: El peso de la caja. F2 : Una fuerza horizontal neta que resiste el movimiento. Si dejas de empujar la caja, ésta: Single choice. (1 Point)",
+    "prompt": "Empujas una caja con una fuerza horizontal constante F. La caja se mueve por un piso horizontal con rapidez constante v 0 . Considera las siguientes fuerzas: F1: El peso de la caja. F2 : Una fuerza horizontal neta qué resiste el movimiento. Si dejas de empujar la caja, ésta: Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
@@ -936,14 +936,14 @@ window.GUIA_BANK_69 = [
     ],
     "ans": 0,
     "ans_label": "E",
-    "exp": "Al retirar la fuerza de empuje, la única fuerza horizontal es el rozamiento que actúa en sentido opuesto, desacelerando la caja hasta detenerla.",
+    "exp": "Al retirar la fuerza de empuje, la única fuerza horizontal es el rozamiento qué actúa en sentido opuesto, desacelerando la caja hasta detenerla.",
     "ch": "f2"
   },
   {
     "n": 47,
     "s": "physics",
     "t": "Un automóvil se avería en una carretera horizontal. Un camión lo empuja hacia la ciudad, c",
-    "prompt": "Un automóvil se avería en una carretera horizontal. Un camión lo empuja hacia la ciudad, como se muestra en la figura: Cuando el camión toca el auto y comienza a empujarlo: Single choice. (1 Point)",
+    "prompt": "Un automóvil se avería en una carretera horizontal. Un camión lo empuja hacia la ciudad, cómo se muestra en la figura: Cuando el camión toca el auto y comienza a empujarlo: Single choice. (1 Point)",
     "maths": [],
     "imgs": [
       "preguntas_assets/0b08487a-16f1-4f8c-b6c9-6ed7fd8d6365.png"
@@ -964,7 +964,7 @@ window.GUIA_BANK_69 = [
     "n": 48,
     "s": "physics",
     "t": "Un automóvil se avería en una carretera horizontal. Un camión lo empuja hacia la ciudad, c",
-    "prompt": "Un automóvil se avería en una carretera horizontal. Un camión lo empuja hacia la ciudad, como se muestra en la figura: Cuando el camión alcanza una rapidez constante y empuja al auto : Single choice. (1 Point)",
+    "prompt": "Un automóvil se avería en una carretera horizontal. Un camión lo empuja hacia la ciudad, cómo se muestra en la figura: Cuando el camión alcanza una rapidez constante y empuja al auto : Single choice. (1 Point)",
     "maths": [],
     "imgs": [
       "preguntas_assets/4eb5413d-8983-4079-bc3e-699b1c04c861.png"
@@ -1168,8 +1168,8 @@ window.GUIA_BANK_69 = [
   {
     "n": 59,
     "s": "chemistry",
-    "t": "Para los siguientes compuestos dados, seleccione aquellos que poseen enlace covalente: CaC",
-    "prompt": "Para los siguientes compuestos dados, seleccione aquellos que poseen enlace covalente: CaCl 2 , H 2 O, CH 4 , HCl, AgNO 3 , MgO Single choice. (1 Point)",
+    "t": "Para los siguientes compuestos dados, seleccione aquellos qué poseen enlace covalente: CaC",
+    "prompt": "Para los siguientes compuestos dados, seleccione aquellos qué poseen enlace covalente: CaCl 2 , H 2 O, CH 4 , HCl, AgNO 3 , MgO Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
@@ -1186,8 +1186,8 @@ window.GUIA_BANK_69 = [
   {
     "n": 60,
     "s": "chemistry",
-    "t": "Para la siguiente reacción REDOX, seleccione el enunciado que es verdadero: Zn + 2 HCl → Z",
-    "prompt": "Para la siguiente reacción REDOX, seleccione el enunciado que es verdadero: Zn + 2 HCl → ZnCl 2 + H 2 Single choice. (1 Point)",
+    "t": "Para la siguiente reacción REDOX, seleccione el enunciado qué es verdadero: Zn + 2 HCl → Z",
+    "prompt": "Para la siguiente reacción REDOX, seleccione el enunciado qué es verdadero: Zn + 2 HCl → ZnCl 2 + H 2 Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
@@ -1198,7 +1198,7 @@ window.GUIA_BANK_69 = [
     ],
     "ans": 0,
     "ans_label": "A",
-    "exp": "El $Zn$ neutro pasa de estado de oxidación 0 a +2 (se oxida / pierde electrones), actuando como el agente reductor.",
+    "exp": "El $Zn$ neutro pasa de estado de oxidación 0 a +2 (se oxida / pierde electrones), actuando cómo el agente reductor.",
     "ch": "q4"
   },
   {
@@ -1216,14 +1216,14 @@ window.GUIA_BANK_69 = [
     ],
     "ans": 0,
     "ans_label": "B",
-    "exp": "El $H_2$ elemental tiene estado de oxidación 0 y en el $H_2O$ pasa a +1 (aumenta su número de oxidación, por lo que se oxida).",
+    "exp": "El $H_2$ elemental tiene estado de oxidación 0 y en el $H_2O$ pasa a +1 (aumenta su número de oxidación, por lo qué se oxida).",
     "ch": "q4"
   },
   {
     "n": 62,
     "s": "chemistry",
-    "t": "Determine el volumen de amoníaco (NH₃ ), en condiciones normales, que se necesita para pro",
-    "prompt": "Determine el volumen de amoníaco (NH 3 ), en condiciones normales, que se necesita para producir 1 kg de úrea (CO(NH 2 ) 2 ): 2 NH3 + CO2 → CO(NH2)2 + H2O Pesos moleculares: CO(NH2)2= 60 g/mol; NH3 = 17 g/mol Single choice. (1 Point)",
+    "t": "Determine el volumen de amoníaco (NH₃ ), en condiciones normales, qué se necesita para pro",
+    "prompt": "Determine el volumen de amoníaco (NH 3 ), en condiciones normales, qué se necesita para producir 1 kg de úrea (CO(NH 2 ) 2 ): 2 NH3 + CO2 → CO(NH2)2 + H2O Pesos moleculares: CO(NH2)2= 60 g/mol; NH3 = 17 g/mol Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
@@ -1240,8 +1240,8 @@ window.GUIA_BANK_69 = [
   {
     "n": 63,
     "s": "chemistry",
-    "t": "¿Cuál de los siguientes enunciados es una característica de las sustancias que presentan e",
-    "prompt": "¿Cuál de los siguientes enunciados es una característica de las sustancias que presentan enlace iónico? Single choice. (1 Point)",
+    "t": "¿Cuál de los siguientes enunciados es una característica de las sustancias qué presentan e",
+    "prompt": "¿Cuál de los siguientes enunciados es una característica de las sustancias qué presentan enlace iónico? Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
@@ -1252,7 +1252,7 @@ window.GUIA_BANK_69 = [
     ],
     "ans": 0,
     "ans_label": "C",
-    "exp": "Los compuestos iónicos al disolverse en agua se disocian en cationes y aniones móviles que conducen la corriente eléctrica.",
+    "exp": "Los compuestos iónicos al disolverse en agua se disocian en cationes y aniones móviles qué conducen la corriente eléctrica.",
     "ch": "q2"
   },
   {
@@ -1276,8 +1276,8 @@ window.GUIA_BANK_69 = [
   {
     "n": 65,
     "s": "chemistry",
-    "t": "Seleccione el compuesto que presenta enlace iónico:",
-    "prompt": "Seleccione el compuesto que presenta enlace iónico: Single choice. (1 Point)",
+    "t": "Seleccione el compuesto qué presenta enlace iónico:",
+    "prompt": "Seleccione el compuesto qué presenta enlace iónico: Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [
@@ -1306,7 +1306,7 @@ window.GUIA_BANK_69 = [
     ],
     "ans": 0,
     "ans_label": "A",
-    "exp": "El nitrógeno del $HNO_3$ se encuentra en estado de oxidación +5 y se reduce a estados menores, por lo que actúa como agente oxidante.",
+    "exp": "El nitrógeno del $HNO_3$ se encuentra en estado de oxidación +5 y se reduce a estados menores, por lo qué actúa cómo agente oxidante.",
     "ch": "q4"
   },
   {
@@ -1330,8 +1330,8 @@ window.GUIA_BANK_69 = [
   {
     "n": 68,
     "s": "chemistry",
-    "t": "El peróxido de sodio se utiliza como blanqueador en la industria textil. ¿Cuál es su fórmu",
-    "prompt": "El peróxido de sodio se utiliza como blanqueador en la industria textil. ¿Cuál es su fórmula química? Single choice. (1 Point)",
+    "t": "El peróxido de sodio se utiliza cómo blanqueador en la industria textil. ¿Cuál es su fórmu",
+    "prompt": "El peróxido de sodio se utiliza cómo blanqueador en la industria textil. ¿Cuál es su fórmula química? Single choice. (1 Point)",
     "maths": [],
     "imgs": [],
     "opts": [

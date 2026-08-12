@@ -1795,7 +1795,7 @@ window.GUIA_BANK_1000 = {
         "$-3$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $3$: $2x=6$ de donde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $4$ o cambiar de signo da $-3$.",
+      "exp": "Multiplica por $3$: $2x=6$ de dónde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $4$ o cambiar de signo da $-3$.",
       "maths": [],
       "imgs": []
     },
@@ -1817,7 +1817,7 @@ window.GUIA_BANK_1000 = {
         "$-4$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $4$: $3x=12$ de donde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $5$ o cambiar de signo da $-4$.",
+      "exp": "Multiplica por $4$: $3x=12$ de dónde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $5$ o cambiar de signo da $-4$.",
       "maths": [],
       "imgs": []
     },
@@ -1839,7 +1839,7 @@ window.GUIA_BANK_1000 = {
         "$-5$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $5$: $4x=20$ de donde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $6$ o cambiar de signo da $-5$.",
+      "exp": "Multiplica por $5$: $4x=20$ de dónde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $6$ o cambiar de signo da $-5$.",
       "maths": [],
       "imgs": []
     },
@@ -1861,7 +1861,7 @@ window.GUIA_BANK_1000 = {
         "$-6$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $6$: $5x=30$ de donde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $7$ o cambiar de signo da $-6$.",
+      "exp": "Multiplica por $6$: $5x=30$ de dónde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $7$ o cambiar de signo da $-6$.",
       "maths": [],
       "imgs": []
     },
@@ -1883,7 +1883,7 @@ window.GUIA_BANK_1000 = {
         "$-7$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $3$: $6x=42$ de donde $x=7$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $3$ o cambiar de signo da $-7$.",
+      "exp": "Multiplica por $3$: $6x=42$ de dónde $x=7$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $3$ o cambiar de signo da $-7$.",
       "maths": [],
       "imgs": []
     },
@@ -1905,7 +1905,7 @@ window.GUIA_BANK_1000 = {
         "$-3$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $4$: $2x=6$ de donde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $6$ o cambiar de signo da $-3$.",
+      "exp": "Multiplica por $4$: $2x=6$ de dónde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $6$ o cambiar de signo da $-3$.",
       "maths": [],
       "imgs": []
     },
@@ -1927,7 +1927,7 @@ window.GUIA_BANK_1000 = {
         "$-4$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $5$: $3x=12$ de donde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $6$ o cambiar de signo da $-4$.",
+      "exp": "Multiplica por $5$: $3x=12$ de dónde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $6$ o cambiar de signo da $-4$.",
       "maths": [],
       "imgs": []
     },
@@ -1949,7 +1949,7 @@ window.GUIA_BANK_1000 = {
         "$-5$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $6$: $4x=20$ de donde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $7$ o cambiar de signo da $-5$.",
+      "exp": "Multiplica por $6$: $4x=20$ de dónde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $7$ o cambiar de signo da $-5$.",
       "maths": [],
       "imgs": []
     },
@@ -1971,7 +1971,7 @@ window.GUIA_BANK_1000 = {
         "$-6$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $3$: $5x=30$ de donde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $3$ o cambiar de signo da $-6$.",
+      "exp": "Multiplica por $3$: $5x=30$ de dónde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $3$ o cambiar de signo da $-6$.",
       "maths": [],
       "imgs": []
     },
@@ -1993,7 +1993,7 @@ window.GUIA_BANK_1000 = {
         "$-7$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $4$: $6x=42$ de donde $x=7$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $4$ o cambiar de signo da $-7$.",
+      "exp": "Multiplica por $4$: $6x=42$ de dónde $x=7$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $4$ o cambiar de signo da $-7$.",
       "maths": [],
       "imgs": []
     },
@@ -2015,7 +2015,7 @@ window.GUIA_BANK_1000 = {
         "$-3$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $5$: $2x=6$ de donde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $7$ o cambiar de signo da $-3$.",
+      "exp": "Multiplica por $5$: $2x=6$ de dónde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $7$ o cambiar de signo da $-3$.",
       "maths": [],
       "imgs": []
     },
@@ -2037,7 +2037,7 @@ window.GUIA_BANK_1000 = {
         "$-4$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $6$: $3x=12$ de donde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $8$ o cambiar de signo da $-4$.",
+      "exp": "Multiplica por $6$: $3x=12$ de dónde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $8$ o cambiar de signo da $-4$.",
       "maths": [],
       "imgs": []
     },
@@ -2059,7 +2059,7 @@ window.GUIA_BANK_1000 = {
         "$-5$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $3$: $4x=20$ de donde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $3$ o cambiar de signo da $-5$.",
+      "exp": "Multiplica por $3$: $4x=20$ de dónde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $3$ o cambiar de signo da $-5$.",
       "maths": [],
       "imgs": []
     },
@@ -2081,7 +2081,7 @@ window.GUIA_BANK_1000 = {
         "$-6$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $4$: $5x=30$ de donde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $4$ o cambiar de signo da $-6$.",
+      "exp": "Multiplica por $4$: $5x=30$ de dónde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $4$ o cambiar de signo da $-6$.",
       "maths": [],
       "imgs": []
     },
@@ -2103,7 +2103,7 @@ window.GUIA_BANK_1000 = {
         "$-7$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $5$: $6x=42$ de donde $x=7$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $5$ o cambiar de signo da $-7$.",
+      "exp": "Multiplica por $5$: $6x=42$ de dónde $x=7$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $5$ o cambiar de signo da $-7$.",
       "maths": [],
       "imgs": []
     },
@@ -2125,7 +2125,7 @@ window.GUIA_BANK_1000 = {
         "$-3$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $6$: $2x=6$ de donde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $9$ o cambiar de signo da $-3$.",
+      "exp": "Multiplica por $6$: $2x=6$ de dónde $x=3$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $9$ o cambiar de signo da $-3$.",
       "maths": [],
       "imgs": []
     },
@@ -2147,7 +2147,7 @@ window.GUIA_BANK_1000 = {
         "$-4$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $3$: $3x=12$ de donde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $4$ o cambiar de signo da $-4$.",
+      "exp": "Multiplica por $3$: $3x=12$ de dónde $x=4$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $4$ o cambiar de signo da $-4$.",
       "maths": [],
       "imgs": []
     },
@@ -2169,7 +2169,7 @@ window.GUIA_BANK_1000 = {
         "$-5$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $4$: $4x=20$ de donde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $5$ o cambiar de signo da $-5$.",
+      "exp": "Multiplica por $4$: $4x=20$ de dónde $x=5$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $5$ o cambiar de signo da $-5$.",
       "maths": [],
       "imgs": []
     },
@@ -2191,7 +2191,7 @@ window.GUIA_BANK_1000 = {
         "$-6$"
       ],
       "ans": 0,
-      "exp": "Multiplica por $5$: $5x=30$ de donde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $6$ o cambiar de signo da $-6$.",
+      "exp": "Multiplica por $5$: $5x=30$ de dónde $x=6$. Paso desde cero: aísla el término con $x$ sumando/restando constantes a ambos lados, luego multiplica/divide para despejar $x$ y verifica reemplazando en la ecuación original. Confundir $a/b$ con $b/a$ da $6$ o cambiar de signo da $-6$.",
       "maths": [],
       "imgs": []
     },
@@ -3115,7 +3115,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3137,7 +3137,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3159,7 +3159,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3181,7 +3181,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3203,7 +3203,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3225,7 +3225,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3247,7 +3247,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3269,7 +3269,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3291,7 +3291,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3313,7 +3313,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3335,7 +3335,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3357,7 +3357,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3379,7 +3379,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3401,7 +3401,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3423,7 +3423,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3445,7 +3445,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3467,7 +3467,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3489,7 +3489,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3511,7 +3511,7 @@ window.GUIA_BANK_1000 = {
         "$(-2,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ que es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $-3x < 6$ dividiendo entre $-3$ se invierte: $x > -2$ qué es $(-2,\\infty)$. Olvidar invertir el signo o cerrar el extremo genera los distractores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -3901,7 +3901,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ como en la figura. Si uno de los ángulos agudos mide $46^\\circ$, ¿cuánto mide su correspondiente en la otra paralela?",
+      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ cómo en la figura. Si uno de los ángulos agudos mide $46^\\circ$, ¿cuánto mide su correspondiente en la otra paralela?",
       "opts": [
         "$46^\\circ$",
         "$134^\\circ$",
@@ -3925,7 +3925,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ como en la figura. Si uno de los ángulos agudos mide $47^\\circ$, ¿cuánto mide su correspondiente en la otra paralela?",
+      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ cómo en la figura. Si uno de los ángulos agudos mide $47^\\circ$, ¿cuánto mide su correspondiente en la otra paralela?",
       "opts": [
         "$47^\\circ$",
         "$133^\\circ$",
@@ -3997,7 +3997,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ como en la figura. Si uno de los ángulos agudos mide $38^\\circ$, ¿cuánto mide su correspondiente en la otra paralela?",
+      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ cómo en la figura. Si uno de los ángulos agudos mide $38^\\circ$, ¿cuánto mide su correspondiente en la otra paralela?",
       "opts": [
         "$38^\\circ$",
         "$142^\\circ$",
@@ -4021,7 +4021,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ como en la figura. Si uno de los ángulos agudos mide $39^\\circ$, ¿cuánto mide su correspondiente en la otra paralela?",
+      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ cómo en la figura. Si uno de los ángulos agudos mide $39^\\circ$, ¿cuánto mide su correspondiente en la otra paralela?",
       "opts": [
         "$39^\\circ$",
         "$141^\\circ$",
@@ -4093,7 +4093,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ como en la figura. Si uno de los ángulos agudos mide $42^\\circ$, ¿cuánto mide su correspondiente en la otra paralela?",
+      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ cómo en la figura. Si uno de los ángulos agudos mide $42^\\circ$, ¿cuánto mide su correspondiente en la otra paralela?",
       "opts": [
         "$42^\\circ$",
         "$138^\\circ$",
@@ -4117,7 +4117,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ como en la figura. Si uno de los ángulos agudos mide $43^\\circ$, ¿cuánto mide su correspondiente en la otra paralela?",
+      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ cómo en la figura. Si uno de los ángulos agudos mide $43^\\circ$, ¿cuánto mide su correspondiente en la otra paralela?",
       "opts": [
         "$43^\\circ$",
         "$137^\\circ$",
@@ -4189,7 +4189,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ como en la figura. Si uno de los ángulos agudos mide $46^\\circ$, ¿cuánto mide su correspondiente en la otra paralela? - var.188-mat-188",
+      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ cómo en la figura. Si uno de los ángulos agudos mide $46^\\circ$, ¿cuánto mide su correspondiente en la otra paralela? - var.188-mat-188",
       "opts": [
         "$46^\\circ$",
         "$134^\\circ$",
@@ -4213,7 +4213,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ como en la figura. Si uno de los ángulos agudos mide $47^\\circ$, ¿cuánto mide su correspondiente en la otra paralela? - var.189-mat-189",
+      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ cómo en la figura. Si uno de los ángulos agudos mide $47^\\circ$, ¿cuánto mide su correspondiente en la otra paralela? - var.189-mat-189",
       "opts": [
         "$47^\\circ$",
         "$133^\\circ$",
@@ -4285,7 +4285,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ como en la figura. Si uno de los ángulos agudos mide $38^\\circ$, ¿cuánto mide su correspondiente en la otra paralela? - var.192-mat-192",
+      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ cómo en la figura. Si uno de los ángulos agudos mide $38^\\circ$, ¿cuánto mide su correspondiente en la otra paralela? - var.192-mat-192",
       "opts": [
         "$38^\\circ$",
         "$142^\\circ$",
@@ -4309,7 +4309,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ como en la figura. Si uno de los ángulos agudos mide $39^\\circ$, ¿cuánto mide su correspondiente en la otra paralela? - var.193-mat-193",
+      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ cómo en la figura. Si uno de los ángulos agudos mide $39^\\circ$, ¿cuánto mide su correspondiente en la otra paralela? - var.193-mat-193",
       "opts": [
         "$39^\\circ$",
         "$141^\\circ$",
@@ -4381,7 +4381,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ como en la figura. Si uno de los ángulos agudos mide $42^\\circ$, ¿cuánto mide su correspondiente en la otra paralela? - var.196-mat-196",
+      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ cómo en la figura. Si uno de los ángulos agudos mide $42^\\circ$, ¿cuánto mide su correspondiente en la otra paralela? - var.196-mat-196",
       "opts": [
         "$42^\\circ$",
         "$138^\\circ$",
@@ -4405,7 +4405,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ como en la figura. Si uno de los ángulos agudos mide $43^\\circ$, ¿cuánto mide su correspondiente en la otra paralela? - var.197-mat-197",
+      "prompt": "Dos rectas paralelas $l_{1}\\parallel l_{2}$ son cortadas por una transversal $t$ cómo en la figura. Si uno de los ángulos agudos mide $43^\\circ$, ¿cuánto mide su correspondiente en la otra paralela? - var.197-mat-197",
       "opts": [
         "$43^\\circ$",
         "$137^\\circ$",
@@ -5387,7 +5387,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Rectas y circunferencias",
-      "prompt": "Halle la pendiente $m$ de la recta que pasa por $A(6,6)$ y $B(8,10)$.",
+      "prompt": "Halle la pendiente $m$ de la recta qué pasa por $A(6,6)$ y $B(8,10)$.",
       "opts": [
         "$2$",
         "$\\frac{1}{2}$",
@@ -5411,7 +5411,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Rectas y circunferencias",
-      "prompt": "Halle la pendiente $m$ de la recta que pasa por $A(2,3)$ y $B(4,7)$.",
+      "prompt": "Halle la pendiente $m$ de la recta qué pasa por $A(2,3)$ y $B(4,7)$.",
       "opts": [
         "$2$",
         "$\\frac{1}{2}$",
@@ -5435,7 +5435,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Rectas y circunferencias",
-      "prompt": "Halle la pendiente $m$ de la recta que pasa por $A(3,4)$ y $B(5,8)$.",
+      "prompt": "Halle la pendiente $m$ de la recta qué pasa por $A(3,4)$ y $B(5,8)$.",
       "opts": [
         "$2$",
         "$\\frac{1}{2}$",
@@ -5459,7 +5459,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Rectas y circunferencias",
-      "prompt": "Halle la pendiente $m$ de la recta que pasa por $A(4,5)$ y $B(6,9)$.",
+      "prompt": "Halle la pendiente $m$ de la recta qué pasa por $A(4,5)$ y $B(6,9)$.",
       "opts": [
         "$2$",
         "$\\frac{1}{2}$",
@@ -5483,7 +5483,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Rectas y circunferencias",
-      "prompt": "Halle la pendiente $m$ de la recta que pasa por $A(5,6)$ y $B(7,10)$.",
+      "prompt": "Halle la pendiente $m$ de la recta qué pasa por $A(5,6)$ y $B(7,10)$.",
       "opts": [
         "$2$",
         "$\\frac{1}{2}$",
@@ -5507,7 +5507,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Rectas y circunferencias",
-      "prompt": "Halle la pendiente $m$ de la recta que pasa por $A(6,3)$ y $B(8,7)$.",
+      "prompt": "Halle la pendiente $m$ de la recta qué pasa por $A(6,3)$ y $B(8,7)$.",
       "opts": [
         "$2$",
         "$\\frac{1}{2}$",
@@ -5531,7 +5531,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Rectas y circunferencias",
-      "prompt": "Halle la pendiente $m$ de la recta que pasa por $A(2,4)$ y $B(4,8)$.",
+      "prompt": "Halle la pendiente $m$ de la recta qué pasa por $A(2,4)$ y $B(4,8)$.",
       "opts": [
         "$2$",
         "$\\frac{1}{2}$",
@@ -5555,7 +5555,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Rectas y circunferencias",
-      "prompt": "Halle la pendiente $m$ de la recta que pasa por $A(3,5)$ y $B(5,9)$.",
+      "prompt": "Halle la pendiente $m$ de la recta qué pasa por $A(3,5)$ y $B(5,9)$.",
       "opts": [
         "$2$",
         "$\\frac{1}{2}$",
@@ -5579,7 +5579,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Rectas y circunferencias",
-      "prompt": "Halle la pendiente $m$ de la recta que pasa por $A(4,6)$ y $B(6,10)$.",
+      "prompt": "Halle la pendiente $m$ de la recta qué pasa por $A(4,6)$ y $B(6,10)$.",
       "opts": [
         "$2$",
         "$\\frac{1}{2}$",
@@ -5603,7 +5603,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Rectas y circunferencias",
-      "prompt": "Halle la pendiente $m$ de la recta que pasa por $A(5,3)$ y $B(7,7)$.",
+      "prompt": "Halle la pendiente $m$ de la recta qué pasa por $A(5,3)$ y $B(7,7)$.",
       "opts": [
         "$2$",
         "$\\frac{1}{2}$",
@@ -5627,7 +5627,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Rectas y circunferencias",
-      "prompt": "Halle la pendiente $m$ de la recta que pasa por $A(6,4)$ y $B(8,8)$.",
+      "prompt": "Halle la pendiente $m$ de la recta qué pasa por $A(6,4)$ y $B(8,8)$.",
       "opts": [
         "$2$",
         "$\\frac{1}{2}$",
@@ -5651,7 +5651,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m4",
       "t": "Rectas y circunferencias",
-      "prompt": "Halle la pendiente $m$ de la recta que pasa por $A(2,5)$ y $B(4,9)$.",
+      "prompt": "Halle la pendiente $m$ de la recta qué pasa por $A(2,5)$ y $B(4,9)$.",
       "opts": [
         "$2$",
         "$\\frac{1}{2}$",
@@ -5675,7 +5675,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(13+8)(13-8)$ mas $x^{2}+y^{2}$ no es $(13+8)^{2}$. Si $(13+8)^{2}=441$, cuanto vale $(13+8)(13-8)$? - var.1",
+      "prompt": "Use distributiva: $(13+8)(13-8)$ mas $x^{2}+y^{2}$ no es $(13+8)^{2}$. Si $(13+8)^{2}=441$, cuánto vale $(13+8)(13-8)$? - var.1",
       "opts": [
         "$105$",
         "$233$",
@@ -5683,7 +5683,7 @@ window.GUIA_BANK_1000 = {
         "$104$"
       ],
       "ans": 0,
-      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=13$, $b=8$, luego $a^{2}-b^{2}=169-64=105$. Paso 3: verifica que $(13+8)^{2}=441 incluye $2ab$ extra, por eso no es la respuesta.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=13$, $b=8$, luego $a^{2}-b^{2}=169-64=105$. Paso 3: verifica qué $(13+8)^{2}=441 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": []
     },
@@ -5719,7 +5719,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(15+10)(15-10)$ mas $x^{2}+y^{2}$ no es $(15+10)^{2}$. Si $(15+10)^{2}=625$, cuanto vale $(15+10)(15-10)$? - var.3",
+      "prompt": "Use distributiva: $(15+10)(15-10)$ mas $x^{2}+y^{2}$ no es $(15+10)^{2}$. Si $(15+10)^{2}=625$, cuánto vale $(15+10)(15-10)$? - var.3",
       "opts": [
         "$125$",
         "$325$",
@@ -5727,7 +5727,7 @@ window.GUIA_BANK_1000 = {
         "$150$"
       ],
       "ans": 0,
-      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=15$, $b=10$, luego $a^{2}-b^{2}=225-100=125$. Paso 3: verifica que $(15+10)^{2}=625 incluye $2ab$ extra, por eso no es la respuesta.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=15$, $b=10$, luego $a^{2}-b^{2}=225-100=125$. Paso 3: verifica qué $(15+10)^{2}=625 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -5765,7 +5765,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(17+12)(17-12)$ mas $x^{2}+y^{2}$ no es $(17+12)^{2}$. Si $(17+12)^{2}=841$, cuanto vale $(17+12)(17-12)$? - var.5",
+      "prompt": "Use distributiva: $(17+12)(17-12)$ mas $x^{2}+y^{2}$ no es $(17+12)^{2}$. Si $(17+12)^{2}=841$, cuánto vale $(17+12)(17-12)$? - var.5",
       "opts": [
         "$145$",
         "$433$",
@@ -5773,7 +5773,7 @@ window.GUIA_BANK_1000 = {
         "$204$"
       ],
       "ans": 0,
-      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=17$, $b=12$, luego $a^{2}-b^{2}=289-144=145$. Paso 3: verifica que $(17+12)^{2}=841 incluye $2ab$ extra, por eso no es la respuesta.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=17$, $b=12$, luego $a^{2}-b^{2}=289-144=145$. Paso 3: verifica qué $(17+12)^{2}=841 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -5811,7 +5811,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(19+7)(19-7)$ mas $x^{2}+y^{2}$ no es $(19+7)^{2}$. Si $(19+7)^{2}=676$, cuanto vale $(19+7)(19-7)$? - var.7",
+      "prompt": "Use distributiva: $(19+7)(19-7)$ mas $x^{2}+y^{2}$ no es $(19+7)^{2}$. Si $(19+7)^{2}=676$, cuánto vale $(19+7)(19-7)$? - var.7",
       "opts": [
         "$312$",
         "$410$",
@@ -5819,7 +5819,7 @@ window.GUIA_BANK_1000 = {
         "$133$"
       ],
       "ans": 0,
-      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=19$, $b=7$, luego $a^{2}-b^{2}=361-49=312$. Paso 3: verifica que $(19+7)^{2}=676 incluye $2ab$ extra, por eso no es la respuesta.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=19$, $b=7$, luego $a^{2}-b^{2}=361-49=312$. Paso 3: verifica qué $(19+7)^{2}=676 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": []
     },
@@ -5844,7 +5844,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=20$, $b=8$, luego $a^{2}-b^{2}=400-64=336$. Paso 3: verifica que $(20+8)^{2}=784 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -5857,7 +5857,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(12+9)(12-9)$ mas $x^{2}+y^{2}$ no es $(12+9)^{2}$. Si $(12+9)^{2}=441$, cuanto vale $(12+9)(12-9)$? - var.9",
+      "prompt": "Use distributiva: $(12+9)(12-9)$ mas $x^{2}+y^{2}$ no es $(12+9)^{2}$. Si $(12+9)^{2}=441$, cuánto vale $(12+9)(12-9)$? - var.9",
       "opts": [
         "$63$",
         "$225$",
@@ -5865,7 +5865,7 @@ window.GUIA_BANK_1000 = {
         "$108$"
       ],
       "ans": 0,
-      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=12$, $b=9$, luego $a^{2}-b^{2}=144-81=63$. Paso 3: verifica que $(12+9)^{2}=441 incluye $2ab$ extra, por eso no es la respuesta.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=12$, $b=9$, luego $a^{2}-b^{2}=144-81=63$. Paso 3: verifica qué $(12+9)^{2}=441 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": []
     },
@@ -5890,7 +5890,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=13$, $b=10$, luego $a^{2}-b^{2}=169-100=69$. Paso 3: verifica que $(13+10)^{2}=529 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p317-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p317-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -5903,7 +5903,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(14+11)(14-11)$ mas $x^{2}+y^{2}$ no es $(14+11)^{2}$. Si $(14+11)^{2}=625$, cuanto vale $(14+11)(14-11)$? - var.11",
+      "prompt": "Use distributiva: $(14+11)(14-11)$ mas $x^{2}+y^{2}$ no es $(14+11)^{2}$. Si $(14+11)^{2}=625$, cuánto vale $(14+11)(14-11)$? - var.11",
       "opts": [
         "$75$",
         "$317$",
@@ -5911,7 +5911,7 @@ window.GUIA_BANK_1000 = {
         "$154$"
       ],
       "ans": 0,
-      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=14$, $b=11$, luego $a^{2}-b^{2}=196-121=75$. Paso 3: verifica que $(14+11)^{2}=625 incluye $2ab$ extra, por eso no es la respuesta.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=14$, $b=11$, luego $a^{2}-b^{2}=196-121=75$. Paso 3: verifica qué $(14+11)^{2}=625 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": []
     },
@@ -5947,7 +5947,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(16+13)(16-13)$ mas $x^{2}+y^{2}$ no es $(16+13)^{2}$. Si $(16+13)^{2}=841$, cuanto vale $(16+13)(16-13)$? - var.13",
+      "prompt": "Use distributiva: $(16+13)(16-13)$ mas $x^{2}+y^{2}$ no es $(16+13)^{2}$. Si $(16+13)^{2}=841$, cuánto vale $(16+13)(16-13)$? - var.13",
       "opts": [
         "$87$",
         "$425$",
@@ -5955,7 +5955,7 @@ window.GUIA_BANK_1000 = {
         "$208$"
       ],
       "ans": 0,
-      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=16$, $b=13$, luego $a^{2}-b^{2}=256-169=87$. Paso 3: verifica que $(16+13)^{2}=841 incluye $2ab$ extra, por eso no es la respuesta.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=16$, $b=13$, luego $a^{2}-b^{2}=256-169=87$. Paso 3: verifica qué $(16+13)^{2}=841 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -5993,7 +5993,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(18+8)(18-8)$ mas $x^{2}+y^{2}$ no es $(18+8)^{2}$. Si $(18+8)^{2}=676$, cuanto vale $(18+8)(18-8)$? - var.15",
+      "prompt": "Use distributiva: $(18+8)(18-8)$ mas $x^{2}+y^{2}$ no es $(18+8)^{2}$. Si $(18+8)^{2}=676$, cuánto vale $(18+8)(18-8)$? - var.15",
       "opts": [
         "$260$",
         "$388$",
@@ -6001,7 +6001,7 @@ window.GUIA_BANK_1000 = {
         "$144$"
       ],
       "ans": 0,
-      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=18$, $b=8$, luego $a^{2}-b^{2}=324-64=260$. Paso 3: verifica que $(18+8)^{2}=676 incluye $2ab$ extra, por eso no es la respuesta.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=18$, $b=8$, luego $a^{2}-b^{2}=324-64=260$. Paso 3: verifica qué $(18+8)^{2}=676 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
@@ -6039,7 +6039,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Use distributiva: $(20+10)(20-10)$ mas $x^{2}+y^{2}$ no es $(20+10)^{2}$. Si $(20+10)^{2}=900$, cuanto vale $(20+10)(20-10)$? - var.17",
+      "prompt": "Use distributiva: $(20+10)(20-10)$ mas $x^{2}+y^{2}$ no es $(20+10)^{2}$. Si $(20+10)^{2}=900$, cuánto vale $(20+10)(20-10)$? - var.17",
       "opts": [
         "$300$",
         "$500$",
@@ -6047,7 +6047,7 @@ window.GUIA_BANK_1000 = {
         "$200$"
       ],
       "ans": 0,
-      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=20$, $b=10$, luego $a^{2}-b^{2}=400-100=300$. Paso 3: verifica que $(20+10)^{2}=900 incluye $2ab$ extra, por eso no es la respuesta.",
+      "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=20$, $b=10$, luego $a^{2}-b^{2}=400-100=300$. Paso 3: verifica qué $(20+10)^{2}=900 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": []
     },
@@ -6072,7 +6072,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso 1: reconoce $(a+b)(a-b)=a^{2}-b^{2}$ (diferencia de cuadrados), no $a^{2}+b^{2}$. Paso 2: aqui $a=12$, $b=11$, luego $a^{2}-b^{2}=144-121=23$. Paso 3: verifica que $(12+11)^{2}=529 incluye $2ab$ extra, por eso no es la respuesta.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -6093,7 +6093,7 @@ window.GUIA_BANK_1000 = {
         "$13$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: reciproco invierte fraccion sin cambiar signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: reciproco invierte fracción sin cambiar signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6115,10 +6115,10 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{5}{21}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: comun $7\\cdot3=21$ resta y simplifica a $8/21$. Distractores olvidan simplificar. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: común $7\\cdot3=21$ resta y simplifica a $8/21$. Distractores olvidan simplificar. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -6161,7 +6161,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Paso 1: Euclides $MCD(13,18)=1$. Distractores ponen producto o minimo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: Euclides $MCD(13,18)=1$. Distractores ponen producto o mínimo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6183,10 +6183,10 @@ window.GUIA_BANK_1000 = {
         "$14$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: reciproco invierte fraccion sin cambiar signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: reciproco invierte fracción sin cambiar signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -6207,7 +6207,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{9}{21}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: comun $7\\cdot3=21$ resta y simplifica a $20/21$. Distractores olvidan simplificar. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: común $7\\cdot3=21$ resta y simplifica a $20/21$. Distractores olvidan simplificar. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6232,7 +6232,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso 1: divide con resto; $p2/q\\approx2.00$. Distractores truncan o invierten. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -6253,7 +6253,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Paso 1: Euclides $MCD(17,18)=1$. Distractores ponen producto o minimo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: Euclides $MCD(17,18)=1$. Distractores ponen producto o mínimo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6275,7 +6275,7 @@ window.GUIA_BANK_1000 = {
         "$16$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: reciproco invierte fraccion sin cambiar signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: reciproco invierte fracción sin cambiar signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6297,10 +6297,10 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{8}{21}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: comun $7\\cdot3=21$ resta y simplifica a $17/21$. Distractores olvidan simplificar. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: común $7\\cdot3=21$ resta y simplifica a $17/21$. Distractores olvidan simplificar. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -6343,10 +6343,10 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Paso 1: Euclides $MCD(14,18)=2$. Distractores ponen producto o minimo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: Euclides $MCD(14,18)=2$. Distractores ponen producto o mínimo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -6367,7 +6367,7 @@ window.GUIA_BANK_1000 = {
         "$11$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: reciproco invierte fraccion sin cambiar signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: reciproco invierte fracción sin cambiar signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6389,7 +6389,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{7}{21}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: comun $7\\cdot3=21$ resta y simplifica a $2/3$. Distractores olvidan simplificar. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: común $7\\cdot3=21$ resta y simplifica a $2/3$. Distractores olvidan simplificar. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6414,7 +6414,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso 1: divide con resto; $p2/q\\approx1.43$. Distractores truncan o invierten. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -6435,7 +6435,7 @@ window.GUIA_BANK_1000 = {
         "$20$"
       ],
       "ans": 0,
-      "exp": "Paso 1: Euclides $MCD(18,18)=18$. Distractores ponen producto o minimo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: Euclides $MCD(18,18)=18$. Distractores ponen producto o mínimo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6457,10 +6457,10 @@ window.GUIA_BANK_1000 = {
         "$12$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: reciproco invierte fraccion sin cambiar signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: reciproco invierte fracción sin cambiar signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p051-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -6481,7 +6481,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{6}{21}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: comun $7\\cdot3=21$ resta y simplifica a $11/21$. Distractores olvidan simplificar. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: común $7\\cdot3=21$ resta y simplifica a $11/21$. Distractores olvidan simplificar. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6503,7 +6503,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{12}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raíz y fracción, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6525,10 +6525,10 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{13}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raíz y fracción, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -6549,7 +6549,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{14}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raíz y fracción, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6571,10 +6571,10 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{15}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raíz y fracción, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -6595,7 +6595,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{16}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raíz y fracción, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6617,7 +6617,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{11}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raíz y fracción, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6639,10 +6639,10 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{12}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raíz y fracción, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -6663,7 +6663,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{13}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raíz y fracción, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6685,10 +6685,10 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{14}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raíz y fracción, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -6709,7 +6709,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{15}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raíz y fracción, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6731,7 +6731,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{16}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raíz y fracción, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6753,10 +6753,10 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{11}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raíz y fracción, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -6777,7 +6777,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{12}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raíz y fracción, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6799,10 +6799,10 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{13}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raíz y fracción, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -6823,7 +6823,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{14}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raíz y fracción, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6845,7 +6845,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{15}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raíz y fracción, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6867,10 +6867,10 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{16}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: aproxima raiz y fraccion, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: aproxima raíz y fracción, ordena menor a mayor, elige segundo menor. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p035-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -6891,7 +6891,7 @@ window.GUIA_BANK_1000 = {
         "$x(x+12)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: $x^{2}+12x+32=(x+8)(x+4)$ factores que suman y multiplican. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $x^{2}+12x+32=(x+8)(x+4)$ factores qué suman y multiplican. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -6916,7 +6916,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $x^{2}-9=(x-3)(x+3)$ cancela $x+3$ queda $x-3$, $x\\neq-3$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -6981,10 +6981,10 @@ window.GUIA_BANK_1000 = {
         "$x(x+13)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: $x^{2}+13x+40=(x+5)(x+8)$ factores que suman y multiplican. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $x^{2}+13x+40=(x+5)(x+8)$ factores qué suman y multiplican. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -7030,7 +7030,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: resto $P(2)=-2$ por teorema resto. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -7073,7 +7073,7 @@ window.GUIA_BANK_1000 = {
         "$x(x+15)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: $x^{2}+15x+54=(x+9)(x+6)$ factores que suman y multiplican. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $x^{2}+15x+54=(x+9)(x+6)$ factores qué suman y multiplican. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -7098,7 +7098,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $x^{2}-9=(x-3)(x+3)$ cancela $x+3$ queda $x-3$, $x\\neq-3$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -7144,7 +7144,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $(a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}$ con $a=x,b=4$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -7165,7 +7165,7 @@ window.GUIA_BANK_1000 = {
         "$x(x+10)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: $x^{2}+10x+24=(x+6)(x+4)$ factores que suman y multiplican. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $x^{2}+10x+24=(x+6)(x+4)$ factores qué suman y multiplican. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -7212,7 +7212,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: resto $P(5)=70$ por teorema resto. Distractores olvidan signo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -7255,10 +7255,10 @@ window.GUIA_BANK_1000 = {
         "$x(x+11)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: $x^{2}+11x+24=(x+3)(x+8)$ factores que suman y multiplican. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: $x^{2}+11x+24=(x+3)(x+8)$ factores qué suman y multiplican. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p095-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -7301,7 +7301,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 9 despeja $x=7$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 9 despeja $x=7$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7323,10 +7323,10 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 10 despeja $x=8$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 10 despeja $x=8$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -7347,7 +7347,7 @@ window.GUIA_BANK_1000 = {
         "$5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 11 despeja $x=9$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 11 despeja $x=9$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7369,10 +7369,10 @@ window.GUIA_BANK_1000 = {
         "$13$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 7 despeja $x=10$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 7 despeja $x=10$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -7393,7 +7393,7 @@ window.GUIA_BANK_1000 = {
         "$14$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 8 despeja $x=11$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 8 despeja $x=11$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7415,7 +7415,7 @@ window.GUIA_BANK_1000 = {
         "$1$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 9 despeja $x=5$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 9 despeja $x=5$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7437,10 +7437,10 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 10 despeja $x=6$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 10 despeja $x=6$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -7461,7 +7461,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 11 despeja $x=7$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 11 despeja $x=7$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7483,10 +7483,10 @@ window.GUIA_BANK_1000 = {
         "$6$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 7 despeja $x=8$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 7 despeja $x=8$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -7507,7 +7507,7 @@ window.GUIA_BANK_1000 = {
         "$7$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 8 despeja $x=9$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 8 despeja $x=9$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7529,7 +7529,7 @@ window.GUIA_BANK_1000 = {
         "$8$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 9 despeja $x=10$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 9 despeja $x=10$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7551,10 +7551,10 @@ window.GUIA_BANK_1000 = {
         "$9$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 10 despeja $x=11$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 10 despeja $x=11$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -7575,7 +7575,7 @@ window.GUIA_BANK_1000 = {
         "$1$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 11 despeja $x=5$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 11 despeja $x=5$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7597,10 +7597,10 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 7 despeja $x=6$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 7 despeja $x=6$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -7621,7 +7621,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 8 despeja $x=7$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 8 despeja $x=7$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7643,7 +7643,7 @@ window.GUIA_BANK_1000 = {
         "$5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 9 despeja $x=8$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 9 despeja $x=8$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7665,10 +7665,10 @@ window.GUIA_BANK_1000 = {
         "$6$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 10 despeja $x=9$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 10 despeja $x=9$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p183-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -7689,7 +7689,7 @@ window.GUIA_BANK_1000 = {
         "$7$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: multiplica por 11 despeja $x=10$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: multiplica por 11 despeja $x=10$. Distractor olvida dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -7714,7 +7714,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=5$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -7782,7 +7782,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=11$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -7828,7 +7828,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=10$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -7896,7 +7896,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=10$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -7942,7 +7942,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=9$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8010,7 +8010,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=9$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8056,7 +8056,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: combina ecuaciones y suma $x+y=8$. Distractor confunde con x o y solo. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p258-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8113,7 +8113,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-11x+30=0$ raices 5,6. $r1^2+r2^2$? - var.108",
+      "prompt": "Ecuación $x^{2}-11x+30=0$ raíces 5,6. $r1^2+r2^2$? - var.108",
       "opts": [
         "$61$",
         "$121$",
@@ -8124,7 +8124,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=11^{2}-2*30=61$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8137,7 +8137,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-14x+48=0$ raices 6,8. $r1^2+r2^2$? - var.109",
+      "prompt": "Ecuación $x^{2}-14x+48=0$ raíces 6,8. $r1^2+r2^2$? - var.109",
       "opts": [
         "$100$",
         "$196$",
@@ -8159,7 +8159,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-7x+10=0$ raices 2,5. $r1^2+r2^2$? - var.110",
+      "prompt": "Ecuación $x^{2}-7x+10=0$ raíces 2,5. $r1^2+r2^2$? - var.110",
       "opts": [
         "$29$",
         "$49$",
@@ -8170,7 +8170,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=7^{2}-2*10=29$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8183,7 +8183,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-7x+12=0$ raices 3,4. $r1^2+r2^2$? - var.111",
+      "prompt": "Ecuación $x^{2}-7x+12=0$ raíces 3,4. $r1^2+r2^2$? - var.111",
       "opts": [
         "$25$",
         "$49$",
@@ -8205,7 +8205,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-10x+24=0$ raices 4,6. $r1^2+r2^2$? - var.112",
+      "prompt": "Ecuación $x^{2}-10x+24=0$ raíces 4,6. $r1^2+r2^2$? - var.112",
       "opts": [
         "$52$",
         "$100$",
@@ -8227,7 +8227,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-13x+40=0$ raices 5,8. $r1^2+r2^2$? - var.113",
+      "prompt": "Ecuación $x^{2}-13x+40=0$ raíces 5,8. $r1^2+r2^2$? - var.113",
       "opts": [
         "$89$",
         "$169$",
@@ -8238,7 +8238,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=13^{2}-2*40=89$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8251,7 +8251,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-13x+42=0$ raices 6,7. $r1^2+r2^2$? - var.114",
+      "prompt": "Ecuación $x^{2}-13x+42=0$ raíces 6,7. $r1^2+r2^2$? - var.114",
       "opts": [
         "$85$",
         "$169$",
@@ -8273,7 +8273,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-6x+8=0$ raices 2,4. $r1^2+r2^2$? - var.115",
+      "prompt": "Ecuación $x^{2}-6x+8=0$ raíces 2,4. $r1^2+r2^2$? - var.115",
       "opts": [
         "$20$",
         "$36$",
@@ -8284,7 +8284,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=6^{2}-2*8=20$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8297,7 +8297,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-9x+18=0$ raices 3,6. $r1^2+r2^2$? - var.116",
+      "prompt": "Ecuación $x^{2}-9x+18=0$ raíces 3,6. $r1^2+r2^2$? - var.116",
       "opts": [
         "$45$",
         "$81$",
@@ -8319,7 +8319,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-9x+20=0$ raices 4,5. $r1^2+r2^2$? - var.117",
+      "prompt": "Ecuación $x^{2}-9x+20=0$ raíces 4,5. $r1^2+r2^2$? - var.117",
       "opts": [
         "$41$",
         "$81$",
@@ -8341,7 +8341,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-12x+35=0$ raices 5,7. $r1^2+r2^2$? - var.118",
+      "prompt": "Ecuación $x^{2}-12x+35=0$ raíces 5,7. $r1^2+r2^2$? - var.118",
       "opts": [
         "$74$",
         "$144$",
@@ -8352,7 +8352,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=12^{2}-2*35=74$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8365,7 +8365,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-15x+54=0$ raices 6,9. $r1^2+r2^2$? - var.119",
+      "prompt": "Ecuación $x^{2}-15x+54=0$ raíces 6,9. $r1^2+r2^2$? - var.119",
       "opts": [
         "$117$",
         "$225$",
@@ -8387,7 +8387,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-5x+6=0$ raices 2,3. $r1^2+r2^2$? - var.120",
+      "prompt": "Ecuación $x^{2}-5x+6=0$ raíces 2,3. $r1^2+r2^2$? - var.120",
       "opts": [
         "$13$",
         "$25$",
@@ -8398,7 +8398,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=5^{2}-2*6=13$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8411,7 +8411,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-8x+15=0$ raices 3,5. $r1^2+r2^2$? - var.121",
+      "prompt": "Ecuación $x^{2}-8x+15=0$ raíces 3,5. $r1^2+r2^2$? - var.121",
       "opts": [
         "$34$",
         "$64$",
@@ -8433,7 +8433,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-11x+28=0$ raices 4,7. $r1^2+r2^2$? - var.122",
+      "prompt": "Ecuación $x^{2}-11x+28=0$ raíces 4,7. $r1^2+r2^2$? - var.122",
       "opts": [
         "$65$",
         "$121$",
@@ -8455,7 +8455,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-11x+30=0$ raices 5,6. $r1^2+r2^2$? - var.123",
+      "prompt": "Ecuación $x^{2}-11x+30=0$ raíces 5,6. $r1^2+r2^2$? - var.123",
       "opts": [
         "$61$",
         "$121$",
@@ -8466,7 +8466,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=11^{2}-2*30=61$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8479,7 +8479,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-14x+48=0$ raices 6,8. $r1^2+r2^2$? - var.124",
+      "prompt": "Ecuación $x^{2}-14x+48=0$ raíces 6,8. $r1^2+r2^2$? - var.124",
       "opts": [
         "$100$",
         "$196$",
@@ -8501,7 +8501,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Ecuacion $x^{2}-7x+10=0$ raices 2,5. $r1^2+r2^2$? - var.125",
+      "prompt": "Ecuación $x^{2}-7x+10=0$ raíces 2,5. $r1^2+r2^2$? - var.125",
       "opts": [
         "$29$",
         "$49$",
@@ -8512,7 +8512,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $r1^{2}+r2^{2}=(r1+r2)^{2}-2r1r2=7^{2}-2*10=29$. Pitagorica evita resolver. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p268-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8533,7 +8533,7 @@ window.GUIA_BANK_1000 = {
         "$[-1, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-1,4]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [-1,4]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8555,7 +8555,7 @@ window.GUIA_BANK_1000 = {
         "$[0, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [0,5]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [0,5]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8577,10 +8577,10 @@ window.GUIA_BANK_1000 = {
         "$[-3, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-3,2]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [-3,2]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8601,7 +8601,7 @@ window.GUIA_BANK_1000 = {
         "$[-2, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-2,3]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [-2,3]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8623,10 +8623,10 @@ window.GUIA_BANK_1000 = {
         "$[-1, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-1,4]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [-1,4]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8647,7 +8647,7 @@ window.GUIA_BANK_1000 = {
         "$[0, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [0,5]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [0,5]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8669,7 +8669,7 @@ window.GUIA_BANK_1000 = {
         "$[-3, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-3,2]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [-3,2]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8691,10 +8691,10 @@ window.GUIA_BANK_1000 = {
         "$[-2, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-2,3]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [-2,3]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8715,7 +8715,7 @@ window.GUIA_BANK_1000 = {
         "$[-1, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-1,4]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [-1,4]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8737,10 +8737,10 @@ window.GUIA_BANK_1000 = {
         "$[0, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [0,5]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [0,5]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8761,7 +8761,7 @@ window.GUIA_BANK_1000 = {
         "$[-3, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-3,2]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [-3,2]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8783,7 +8783,7 @@ window.GUIA_BANK_1000 = {
         "$[-2, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-2,3]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [-2,3]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8805,10 +8805,10 @@ window.GUIA_BANK_1000 = {
         "$[-1, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-1,4]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [-1,4]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8829,7 +8829,7 @@ window.GUIA_BANK_1000 = {
         "$[0, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [0,5]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [0,5]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8851,10 +8851,10 @@ window.GUIA_BANK_1000 = {
         "$[-3, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-3,2]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [-3,2]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8875,7 +8875,7 @@ window.GUIA_BANK_1000 = {
         "$[-2, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-2,3]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [-2,3]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8897,7 +8897,7 @@ window.GUIA_BANK_1000 = {
         "$[-1, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [-1,4]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [-1,4]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -8919,10 +8919,10 @@ window.GUIA_BANK_1000 = {
         "$[0, \\infty)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raices [0,5]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: parabolas $\\le0$ entre raíces [0,5]. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p281-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -8968,7 +8968,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $|x-8|\\le5$ intervalo [3,13]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -9036,7 +9036,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $|x-4|\\le8$ intervalo [-4,12]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -9082,7 +9082,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $|x-6|\\le4$ intervalo [2,10]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -9150,7 +9150,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $|x-9|\\le7$ intervalo [2,16]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -9196,7 +9196,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $|x-4|\\le9$ intervalo [-5,13]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -9264,7 +9264,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $|x-7|\\le6$ intervalo [1,13]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -9310,7 +9310,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $|x-9|\\le8$ intervalo [1,17]. Rayos es para >. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p297-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -9380,7 +9380,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -9428,7 +9428,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -9500,7 +9500,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -9548,7 +9548,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -9620,7 +9620,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -9668,7 +9668,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -9740,7 +9740,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: correspondiente igual al agudo, conjugado suplementario. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p316-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -9777,7 +9777,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Razones trigonométricas",
-      "prompt": "Triangulo rect hip 13 cateto 5 recto C. $\\sin(A)$ ? - var.180",
+      "prompt": "Triángulo rect hip 13 cateto 5 recto C. $\\sin(A)$ ? - var.180",
       "opts": [
         "$\\dfrac{12}{13}$",
         "$\\dfrac{5}{13}$",
@@ -9825,7 +9825,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Razones trigonométricas",
-      "prompt": "Triangulo rect hip 13 cateto 7 recto C. $\\sin(A)$ ? - var.182",
+      "prompt": "Triángulo rect hip 13 cateto 7 recto C. $\\sin(A)$ ? - var.182",
       "opts": [
         "$\\dfrac{11}{13}$",
         "$\\dfrac{7}{13}$",
@@ -9873,7 +9873,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Razones trigonométricas",
-      "prompt": "Triangulo rect hip 13 cateto 6 recto C. $\\sin(A)$ ? - var.184",
+      "prompt": "Triángulo rect hip 13 cateto 6 recto C. $\\sin(A)$ ? - var.184",
       "opts": [
         "$\\dfrac{12}{13}$",
         "$\\dfrac{6}{13}$",
@@ -9921,7 +9921,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Razones trigonométricas",
-      "prompt": "Triangulo rect hip 13 cateto 5 recto C. $\\sin(A)$ ? - var.186",
+      "prompt": "Triángulo rect hip 13 cateto 5 recto C. $\\sin(A)$ ? - var.186",
       "opts": [
         "$\\dfrac{12}{13}$",
         "$\\dfrac{5}{13}$",
@@ -9969,7 +9969,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Razones trigonométricas",
-      "prompt": "Triangulo rect hip 13 cateto 7 recto C. $\\sin(A)$ ? - var.188",
+      "prompt": "Triángulo rect hip 13 cateto 7 recto C. $\\sin(A)$ ? - var.188",
       "opts": [
         "$\\dfrac{11}{13}$",
         "$\\dfrac{7}{13}$",
@@ -10017,7 +10017,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Razones trigonométricas",
-      "prompt": "Triangulo rect hip 13 cateto 6 recto C. $\\sin(A)$ ? - var.190",
+      "prompt": "Triángulo rect hip 13 cateto 6 recto C. $\\sin(A)$ ? - var.190",
       "opts": [
         "$\\dfrac{12}{13}$",
         "$\\dfrac{6}{13}$",
@@ -10065,7 +10065,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Razones trigonométricas",
-      "prompt": "Triangulo rect hip 13 cateto 5 recto C. $\\sin(A)$ ? - var.192",
+      "prompt": "Triángulo rect hip 13 cateto 5 recto C. $\\sin(A)$ ? - var.192",
       "opts": [
         "$\\dfrac{12}{13}$",
         "$\\dfrac{5}{13}$",
@@ -10113,7 +10113,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Razones trigonométricas",
-      "prompt": "Triangulo rect hip 13 cateto 7 recto C. $\\sin(A)$ ? - var.194",
+      "prompt": "Triángulo rect hip 13 cateto 7 recto C. $\\sin(A)$ ? - var.194",
       "opts": [
         "$\\dfrac{11}{13}$",
         "$\\dfrac{7}{13}$",
@@ -10161,7 +10161,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Razones trigonométricas",
-      "prompt": "Triangulo rect hip 13 cateto 6 recto C. $\\sin(A)$ ? - var.196",
+      "prompt": "Triángulo rect hip 13 cateto 6 recto C. $\\sin(A)$ ? - var.196",
       "opts": [
         "$\\dfrac{12}{13}$",
         "$\\dfrac{6}{13}$",
@@ -10220,7 +10220,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: 1 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p318-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p318-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -10266,7 +10266,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: 1 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p318-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p318-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -10334,7 +10334,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: 1 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p318-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p318-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -10380,7 +10380,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: 2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p318-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p318-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -10448,7 +10448,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: 2 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p318-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p318-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -10494,7 +10494,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: 1 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p318-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p318-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -10562,7 +10562,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: 1 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p318-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p318-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -10608,7 +10608,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: 1 Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p318-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p318-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -10680,7 +10680,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=73$ luego $BC=\\sqrt{73}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -10728,7 +10728,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=57$ luego $BC=\\sqrt{57}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -10800,7 +10800,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=84$ luego $BC=\\sqrt{84}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -10848,7 +10848,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=64$ luego $BC=\\sqrt{64}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -10920,7 +10920,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=57$ luego $BC=\\sqrt{57}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -10968,7 +10968,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=73$ luego $BC=\\sqrt{73}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -11040,7 +11040,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: $BC^{2}=AB^{2}+AC^{2}-2AB.AC\\cos60=64$ luego $BC=\\sqrt{64}$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p323-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -11088,7 +11088,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -11160,7 +11160,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -11208,7 +11208,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -11280,7 +11280,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -11328,7 +11328,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -11400,7 +11400,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -11448,7 +11448,7 @@ window.GUIA_BANK_1000 = {
       "exp": "Paso desde cero: Paso: pendiente original 2 perp es $-1/2$ por $m1*m2=-1$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
-        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analitica</text></svg>"
+        "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\"><rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/><image href=\"assets/lehmann/lehmann-p338-crop.png\" x=\"12\" y=\"12\" width=\"376\" height=\"252\" preserveAspectRatio=\"xMidYMid meet\" /><text x=\"200\" y=\"286\" text-anchor=\"middle\" font-size=\"9\" font-family=\"sans-serif\" fill=\"#94a3b8\">Fuente: Lehmann - Geometria Analítica</text></svg>"
       ]
     },
     {
@@ -11461,7 +11461,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+89-90$ (90 terminos). $S$? - var.1",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+89-90$ (90 términos). $S$? - var.1",
       "opts": [
         "$-45$",
         "$45$",
@@ -11483,7 +11483,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+99-100$ (100 terminos). $S$? - var.2",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+99-100$ (100 términos). $S$? - var.2",
       "opts": [
         "$-50$",
         "$50$",
@@ -11505,7 +11505,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+109-110$ (110 terminos). $S$? - var.3",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+109-110$ (110 términos). $S$? - var.3",
       "opts": [
         "$-55$",
         "$55$",
@@ -11527,7 +11527,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+119-120$ (120 terminos). $S$? - var.4",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+119-120$ (120 términos). $S$? - var.4",
       "opts": [
         "$-60$",
         "$60$",
@@ -11549,7 +11549,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+79-80$ (80 terminos). $S$? - var.5",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+79-80$ (80 términos). $S$? - var.5",
       "opts": [
         "$-40$",
         "$40$",
@@ -11571,7 +11571,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+89-90$ (90 terminos). $S$? - var.6",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+89-90$ (90 términos). $S$? - var.6",
       "opts": [
         "$-45$",
         "$45$",
@@ -11593,7 +11593,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+99-100$ (100 terminos). $S$? - var.7",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+99-100$ (100 términos). $S$? - var.7",
       "opts": [
         "$-50$",
         "$50$",
@@ -11615,7 +11615,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+109-110$ (110 terminos). $S$? - var.8",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+109-110$ (110 términos). $S$? - var.8",
       "opts": [
         "$-55$",
         "$55$",
@@ -11637,7 +11637,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+119-120$ (120 terminos). $S$? - var.9",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+119-120$ (120 términos). $S$? - var.9",
       "opts": [
         "$-60$",
         "$60$",
@@ -11659,7 +11659,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+79-80$ (80 terminos). $S$? - var.10",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+79-80$ (80 términos). $S$? - var.10",
       "opts": [
         "$-40$",
         "$40$",
@@ -11681,7 +11681,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+89-90$ (90 terminos). $S$? - var.11",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+89-90$ (90 términos). $S$? - var.11",
       "opts": [
         "$-45$",
         "$45$",
@@ -11703,7 +11703,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+99-100$ (100 terminos). $S$? - var.12",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+99-100$ (100 términos). $S$? - var.12",
       "opts": [
         "$-50$",
         "$50$",
@@ -11725,7 +11725,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+109-110$ (110 terminos). $S$? - var.13",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+109-110$ (110 términos). $S$? - var.13",
       "opts": [
         "$-55$",
         "$55$",
@@ -11747,7 +11747,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+119-120$ (120 terminos). $S$? - var.14",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+119-120$ (120 términos). $S$? - var.14",
       "opts": [
         "$-60$",
         "$60$",
@@ -11769,7 +11769,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+79-80$ (80 terminos). $S$? - var.15",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+79-80$ (80 términos). $S$? - var.15",
       "opts": [
         "$-40$",
         "$40$",
@@ -11791,7 +11791,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+89-90$ (90 terminos). $S$? - var.16",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+89-90$ (90 términos). $S$? - var.16",
       "opts": [
         "$-45$",
         "$45$",
@@ -11813,7 +11813,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+99-100$ (100 terminos). $S$? - var.17",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+99-100$ (100 términos). $S$? - var.17",
       "opts": [
         "$-50$",
         "$50$",
@@ -11835,7 +11835,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m1",
       "t": "Enteros",
-      "prompt": "Sea $S=1-2+3-4+\\cdots+109-110$ (110 terminos). $S$? - var.18",
+      "prompt": "Sea $S=1-2+3-4+\\cdots+109-110$ (110 términos). $S$? - var.18",
       "opts": [
         "$-55$",
         "$55$",
@@ -11865,7 +11865,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{22}{11}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=11$, numerador 122, denominador 11, queda $\\dfrac{122}{11}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=11$, numerador 122, denominador 11, queda $\\dfrac{122}{11}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -11887,7 +11887,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{14}{7}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=7$, numerador 50, denominador 7, queda $\\dfrac{50}{7}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=7$, numerador 50, denominador 7, queda $\\dfrac{50}{7}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -11909,7 +11909,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{16}{8}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=8$, numerador 65, denominador 8, queda $\\dfrac{65}{8}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=8$, numerador 65, denominador 8, queda $\\dfrac{65}{8}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -11931,7 +11931,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{18}{9}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=9$, numerador 82, denominador 9, queda $\\dfrac{82}{9}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=9$, numerador 82, denominador 9, queda $\\dfrac{82}{9}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -11953,7 +11953,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{20}{10}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=10$, numerador 101, denominador 10, queda $\\dfrac{101}{10}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=10$, numerador 101, denominador 10, queda $\\dfrac{101}{10}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -11975,7 +11975,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{22}{11}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=11$, numerador 122, denominador 11, queda $\\dfrac{122}{11}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=11$, numerador 122, denominador 11, queda $\\dfrac{122}{11}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -11997,7 +11997,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{14}{7}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=7$, numerador 50, denominador 7, queda $\\dfrac{50}{7}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=7$, numerador 50, denominador 7, queda $\\dfrac{50}{7}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -12019,7 +12019,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{16}{8}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=8$, numerador 65, denominador 8, queda $\\dfrac{65}{8}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=8$, numerador 65, denominador 8, queda $\\dfrac{65}{8}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -12041,7 +12041,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{18}{9}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=9$, numerador 82, denominador 9, queda $\\dfrac{82}{9}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=9$, numerador 82, denominador 9, queda $\\dfrac{82}{9}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -12063,7 +12063,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{20}{10}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=10$, numerador 101, denominador 10, queda $\\dfrac{101}{10}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=10$, numerador 101, denominador 10, queda $\\dfrac{101}{10}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -12085,7 +12085,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{22}{11}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=11$, numerador 122, denominador 11, queda $\\dfrac{122}{11}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=11$, numerador 122, denominador 11, queda $\\dfrac{122}{11}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -12107,7 +12107,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{14}{7}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=7$, numerador 50, denominador 7, queda $\\dfrac{50}{7}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=7$, numerador 50, denominador 7, queda $\\dfrac{50}{7}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -12129,7 +12129,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{16}{8}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=8$, numerador 65, denominador 8, queda $\\dfrac{65}{8}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=8$, numerador 65, denominador 8, queda $\\dfrac{65}{8}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -12151,7 +12151,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{18}{9}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=9$, numerador 82, denominador 9, queda $\\dfrac{82}{9}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=9$, numerador 82, denominador 9, queda $\\dfrac{82}{9}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -12173,7 +12173,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{20}{10}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=10$, numerador 101, denominador 10, queda $\\dfrac{101}{10}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=10$, numerador 101, denominador 10, queda $\\dfrac{101}{10}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -12195,7 +12195,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{22}{11}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=11$, numerador 122, denominador 11, queda $\\dfrac{122}{11}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=11$, numerador 122, denominador 11, queda $\\dfrac{122}{11}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -12217,7 +12217,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{14}{7}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=7$, numerador 50, denominador 7, queda $\\dfrac{50}{7}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=7$, numerador 50, denominador 7, queda $\\dfrac{50}{7}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -12239,7 +12239,7 @@ window.GUIA_BANK_1000 = {
         "$\\dfrac{16}{8}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con comun $x$. Paso 2: con $x=8$, numerador 65, denominador 8, queda $\\dfrac{65}{8}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fraccion.",
+      "exp": "Paso 1: $x+1/x=(x^{2}+1)/x$ con común $x$. Paso 2: con $x=8$, numerador 65, denominador 8, queda $\\dfrac{65}{8}$ ya irreducible. Las otras opciones confunden suma de fracciones con suma de numeradores o invertir la fracción.",
       "maths": [],
       "imgs": []
     },
@@ -12261,7 +12261,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Paso 1: factoriza el radicando: 18=9\\cdot2. Paso 2: $\\sqrt{9\\cdot2}=\\sqrt{9}\\cdot\\sqrt{2}=3\\sqrt{2}$. Distractores olvidan extraer la raiz cuadrada perfecta.",
+      "exp": "Paso 1: factoriza el radicando: 18=9\\cdot2. Paso 2: $\\sqrt{9\\cdot2}=\\sqrt{9}\\cdot\\sqrt{2}=3\\sqrt{2}$. Distractores olvidan extraer la raíz cuadrada perfecta.",
       "maths": [],
       "imgs": []
     },
@@ -12283,7 +12283,7 @@ window.GUIA_BANK_1000 = {
         "Natural"
       ],
       "ans": 0,
-      "exp": "Paso 1: 37 no es cuadrado perfecto (entre 36 y 49). Paso 2: su raiz no es fraccion exacta, es irracional (decimal no periodico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: 37 no es cuadrado perfecto (entre 36 y 49). Paso 2: su raíz no es fracción exacta, es irracional (decimal no periódico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12305,7 +12305,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{8}-\\sqrt{2}=0$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $\\sqrt{8}=\\sqrt{4\\cdot2}=2\\sqrt{2}$. Paso 2: suma $\\sqrt{2}+2\\sqrt{2}=3\\sqrt{2}$ (no $\\sqrt{10}$: raices no se suman como radicandos). Paso 3: el producto si da 4.",
+      "exp": "Paso 1: $\\sqrt{8}=\\sqrt{4\\cdot2}=2\\sqrt{2}$. Paso 2: suma $\\sqrt{2}+2\\sqrt{2}=3\\sqrt{2}$ (no $\\sqrt{10}$: raíces no se suman cómo radicandos). Paso 3: el producto si da 4.",
       "maths": [],
       "imgs": []
     },
@@ -12327,7 +12327,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Paso 1: factoriza el radicando: 8=4\\cdot2. Paso 2: $\\sqrt{4\\cdot2}=\\sqrt{4}\\cdot\\sqrt{2}=2\\sqrt{2}$. Distractores olvidan extraer la raiz cuadrada perfecta.",
+      "exp": "Paso 1: factoriza el radicando: 8=4\\cdot2. Paso 2: $\\sqrt{4\\cdot2}=\\sqrt{4}\\cdot\\sqrt{2}=2\\sqrt{2}$. Distractores olvidan extraer la raíz cuadrada perfecta.",
       "maths": [],
       "imgs": []
     },
@@ -12349,7 +12349,7 @@ window.GUIA_BANK_1000 = {
         "Natural"
       ],
       "ans": 0,
-      "exp": "Paso 1: 82 no es cuadrado perfecto (entre 81 y 100). Paso 2: su raiz no es fraccion exacta, es irracional (decimal no periodico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: 82 no es cuadrado perfecto (entre 81 y 100). Paso 2: su raíz no es fracción exacta, es irracional (decimal no periódico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12371,7 +12371,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{8}-\\sqrt{2}=0$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $\\sqrt{8}=\\sqrt{4\\cdot2}=2\\sqrt{2}$. Paso 2: suma $\\sqrt{2}+2\\sqrt{2}=3\\sqrt{2}$ (no $\\sqrt{10}$: raices no se suman como radicandos). Paso 3: el producto si da 4.",
+      "exp": "Paso 1: $\\sqrt{8}=\\sqrt{4\\cdot2}=2\\sqrt{2}$. Paso 2: suma $\\sqrt{2}+2\\sqrt{2}=3\\sqrt{2}$ (no $\\sqrt{10}$: raíces no se suman cómo radicandos). Paso 3: el producto si da 4.",
       "maths": [],
       "imgs": []
     },
@@ -12393,7 +12393,7 @@ window.GUIA_BANK_1000 = {
         "$5$"
       ],
       "ans": 0,
-      "exp": "Paso 1: factoriza el radicando: 50=25\\cdot2. Paso 2: $\\sqrt{25\\cdot2}=\\sqrt{25}\\cdot\\sqrt{2}=5\\sqrt{2}$. Distractores olvidan extraer la raiz cuadrada perfecta.",
+      "exp": "Paso 1: factoriza el radicando: 50=25\\cdot2. Paso 2: $\\sqrt{25\\cdot2}=\\sqrt{25}\\cdot\\sqrt{2}=5\\sqrt{2}$. Distractores olvidan extraer la raíz cuadrada perfecta.",
       "maths": [],
       "imgs": []
     },
@@ -12415,7 +12415,7 @@ window.GUIA_BANK_1000 = {
         "Natural"
       ],
       "ans": 0,
-      "exp": "Paso 1: 26 no es cuadrado perfecto (entre 25 y 36). Paso 2: su raiz no es fraccion exacta, es irracional (decimal no periodico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: 26 no es cuadrado perfecto (entre 25 y 36). Paso 2: su raíz no es fracción exacta, es irracional (decimal no periódico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12437,7 +12437,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{8}-\\sqrt{2}=0$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $\\sqrt{8}=\\sqrt{4\\cdot2}=2\\sqrt{2}$. Paso 2: suma $\\sqrt{2}+2\\sqrt{2}=3\\sqrt{2}$ (no $\\sqrt{10}$: raices no se suman como radicandos). Paso 3: el producto si da 4.",
+      "exp": "Paso 1: $\\sqrt{8}=\\sqrt{4\\cdot2}=2\\sqrt{2}$. Paso 2: suma $\\sqrt{2}+2\\sqrt{2}=3\\sqrt{2}$ (no $\\sqrt{10}$: raíces no se suman cómo radicandos). Paso 3: el producto si da 4.",
       "maths": [],
       "imgs": []
     },
@@ -12459,7 +12459,7 @@ window.GUIA_BANK_1000 = {
         "$4$"
       ],
       "ans": 0,
-      "exp": "Paso 1: factoriza el radicando: 32=16\\cdot2. Paso 2: $\\sqrt{16\\cdot2}=\\sqrt{16}\\cdot\\sqrt{2}=4\\sqrt{2}$. Distractores olvidan extraer la raiz cuadrada perfecta.",
+      "exp": "Paso 1: factoriza el radicando: 32=16\\cdot2. Paso 2: $\\sqrt{16\\cdot2}=\\sqrt{16}\\cdot\\sqrt{2}=4\\sqrt{2}$. Distractores olvidan extraer la raíz cuadrada perfecta.",
       "maths": [],
       "imgs": []
     },
@@ -12481,7 +12481,7 @@ window.GUIA_BANK_1000 = {
         "Natural"
       ],
       "ans": 0,
-      "exp": "Paso 1: 65 no es cuadrado perfecto (entre 64 y 81). Paso 2: su raiz no es fraccion exacta, es irracional (decimal no periodico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: 65 no es cuadrado perfecto (entre 64 y 81). Paso 2: su raíz no es fracción exacta, es irracional (decimal no periódico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12503,7 +12503,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{8}-\\sqrt{2}=0$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $\\sqrt{8}=\\sqrt{4\\cdot2}=2\\sqrt{2}$. Paso 2: suma $\\sqrt{2}+2\\sqrt{2}=3\\sqrt{2}$ (no $\\sqrt{10}$: raices no se suman como radicandos). Paso 3: el producto si da 4.",
+      "exp": "Paso 1: $\\sqrt{8}=\\sqrt{4\\cdot2}=2\\sqrt{2}$. Paso 2: suma $\\sqrt{2}+2\\sqrt{2}=3\\sqrt{2}$ (no $\\sqrt{10}$: raíces no se suman cómo radicandos). Paso 3: el producto si da 4.",
       "maths": [],
       "imgs": []
     },
@@ -12525,7 +12525,7 @@ window.GUIA_BANK_1000 = {
         "$3$"
       ],
       "ans": 0,
-      "exp": "Paso 1: factoriza el radicando: 18=9\\cdot2. Paso 2: $\\sqrt{9\\cdot2}=\\sqrt{9}\\cdot\\sqrt{2}=3\\sqrt{2}$. Distractores olvidan extraer la raiz cuadrada perfecta.",
+      "exp": "Paso 1: factoriza el radicando: 18=9\\cdot2. Paso 2: $\\sqrt{9\\cdot2}=\\sqrt{9}\\cdot\\sqrt{2}=3\\sqrt{2}$. Distractores olvidan extraer la raíz cuadrada perfecta.",
       "maths": [],
       "imgs": []
     },
@@ -12547,7 +12547,7 @@ window.GUIA_BANK_1000 = {
         "Natural"
       ],
       "ans": 0,
-      "exp": "Paso 1: 17 no es cuadrado perfecto (entre 16 y 25). Paso 2: su raiz no es fraccion exacta, es irracional (decimal no periodico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: 17 no es cuadrado perfecto (entre 16 y 25). Paso 2: su raíz no es fracción exacta, es irracional (decimal no periódico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12569,7 +12569,7 @@ window.GUIA_BANK_1000 = {
         "$\\sqrt{8}-\\sqrt{2}=0$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $\\sqrt{8}=\\sqrt{4\\cdot2}=2\\sqrt{2}$. Paso 2: suma $\\sqrt{2}+2\\sqrt{2}=3\\sqrt{2}$ (no $\\sqrt{10}$: raices no se suman como radicandos). Paso 3: el producto si da 4.",
+      "exp": "Paso 1: $\\sqrt{8}=\\sqrt{4\\cdot2}=2\\sqrt{2}$. Paso 2: suma $\\sqrt{2}+2\\sqrt{2}=3\\sqrt{2}$ (no $\\sqrt{10}$: raíces no se suman cómo radicandos). Paso 3: el producto si da 4.",
       "maths": [],
       "imgs": []
     },
@@ -12591,7 +12591,7 @@ window.GUIA_BANK_1000 = {
         "$2$"
       ],
       "ans": 0,
-      "exp": "Paso 1: factoriza el radicando: 8=4\\cdot2. Paso 2: $\\sqrt{4\\cdot2}=\\sqrt{4}\\cdot\\sqrt{2}=2\\sqrt{2}$. Distractores olvidan extraer la raiz cuadrada perfecta.",
+      "exp": "Paso 1: factoriza el radicando: 8=4\\cdot2. Paso 2: $\\sqrt{4\\cdot2}=\\sqrt{4}\\cdot\\sqrt{2}=2\\sqrt{2}$. Distractores olvidan extraer la raíz cuadrada perfecta.",
       "maths": [],
       "imgs": []
     },
@@ -12613,7 +12613,7 @@ window.GUIA_BANK_1000 = {
         "Natural"
       ],
       "ans": 0,
-      "exp": "Paso 1: 50 no es cuadrado perfecto (entre 49 y 64). Paso 2: su raiz no es fraccion exacta, es irracional (decimal no periodico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: 50 no es cuadrado perfecto (entre 49 y 64). Paso 2: su raíz no es fracción exacta, es irracional (decimal no periódico infinito). Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12635,7 +12635,7 @@ window.GUIA_BANK_1000 = {
         "$(x^{2}-4)^{2}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadraticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadráticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12701,7 +12701,7 @@ window.GUIA_BANK_1000 = {
         "$(x^{2}-4)^{2}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadraticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadráticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12767,7 +12767,7 @@ window.GUIA_BANK_1000 = {
         "$(x^{2}-4)^{2}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadraticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadráticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12833,7 +12833,7 @@ window.GUIA_BANK_1000 = {
         "$(x^{2}-4)^{2}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadraticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadráticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12899,7 +12899,7 @@ window.GUIA_BANK_1000 = {
         "$(x^{2}-4)^{2}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadraticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadráticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -12965,7 +12965,7 @@ window.GUIA_BANK_1000 = {
         "$(x^{2}-4)^{2}$"
       ],
       "ans": 0,
-      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadraticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso 1: $y=x^{2}$ => $y^{2}-5y+4=(y-1)(y-4)$. Paso 2: vuelve a $x$: $(x^{2}-1)(x^{2}-4)=(x-1)(x+1)(x-2)(x+2)$. Falta factorizar deja cuadráticos. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13031,7 +13031,7 @@ window.GUIA_BANK_1000 = {
         "$\\{1,3\\}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13045,7 +13045,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 1er grado",
-      "prompt": "Ecuacion $\\dfrac{x}{6}+1=\\dfrac{9}{6}$ - var.73",
+      "prompt": "Ecuación $\\dfrac{x}{6}+1=\\dfrac{9}{6}$ - var.73",
       "opts": [
         "$3$",
         "$9$",
@@ -13053,7 +13053,7 @@ window.GUIA_BANK_1000 = {
         "$18$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13067,7 +13067,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 1er grado",
-      "prompt": "Numero mas su mitad es 10 - var.74",
+      "prompt": "Número mas su mitad es 10 - var.74",
       "opts": [
         "$7$",
         "$10$",
@@ -13075,7 +13075,7 @@ window.GUIA_BANK_1000 = {
         "$9$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: $x+x/2=10$ => $3x/2=10$ => $x=7$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: $x+x/2=10$ => $3x/2=10$ => $x=7$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13097,7 +13097,7 @@ window.GUIA_BANK_1000 = {
         "$\\{1,3\\}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13111,7 +13111,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 1er grado",
-      "prompt": "Ecuacion $\\dfrac{x}{9}+1=\\dfrac{12}{9}$ - var.76",
+      "prompt": "Ecuación $\\dfrac{x}{9}+1=\\dfrac{12}{9}$ - var.76",
       "opts": [
         "$3$",
         "$12$",
@@ -13119,7 +13119,7 @@ window.GUIA_BANK_1000 = {
         "$27$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13133,7 +13133,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 1er grado",
-      "prompt": "Numero mas su mitad es 4 - var.77",
+      "prompt": "Número mas su mitad es 4 - var.77",
       "opts": [
         "$3$",
         "$4$",
@@ -13141,7 +13141,7 @@ window.GUIA_BANK_1000 = {
         "$5$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: $x+x/2=4$ => $3x/2=4$ => $x=3$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: $x+x/2=4$ => $3x/2=4$ => $x=3$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13163,7 +13163,7 @@ window.GUIA_BANK_1000 = {
         "$\\{1,3\\}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13177,7 +13177,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 1er grado",
-      "prompt": "Ecuacion $\\dfrac{x}{5}+1=\\dfrac{8}{5}$ - var.79",
+      "prompt": "Ecuación $\\dfrac{x}{5}+1=\\dfrac{8}{5}$ - var.79",
       "opts": [
         "$3$",
         "$8$",
@@ -13185,7 +13185,7 @@ window.GUIA_BANK_1000 = {
         "$15$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13199,7 +13199,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 1er grado",
-      "prompt": "Numero mas su mitad es 9 - var.80",
+      "prompt": "Número mas su mitad es 9 - var.80",
       "opts": [
         "$6$",
         "$9$",
@@ -13207,7 +13207,7 @@ window.GUIA_BANK_1000 = {
         "$8$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: $x+x/2=9$ => $3x/2=9$ => $x=6$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: $x+x/2=9$ => $3x/2=9$ => $x=6$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13229,7 +13229,7 @@ window.GUIA_BANK_1000 = {
         "$\\{1,3\\}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13243,7 +13243,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 1er grado",
-      "prompt": "Ecuacion $\\dfrac{x}{8}+1=\\dfrac{11}{8}$ - var.82",
+      "prompt": "Ecuación $\\dfrac{x}{8}+1=\\dfrac{11}{8}$ - var.82",
       "opts": [
         "$3$",
         "$11$",
@@ -13251,7 +13251,7 @@ window.GUIA_BANK_1000 = {
         "$24$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13265,7 +13265,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 1er grado",
-      "prompt": "Numero mas su mitad es 13 - var.83",
+      "prompt": "Número mas su mitad es 13 - var.83",
       "opts": [
         "$9$",
         "$13$",
@@ -13273,7 +13273,7 @@ window.GUIA_BANK_1000 = {
         "$12$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: $x+x/2=13$ => $3x/2=13$ => $x=9$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: $x+x/2=13$ => $3x/2=13$ => $x=9$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13295,7 +13295,7 @@ window.GUIA_BANK_1000 = {
         "$\\{1,3\\}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13309,7 +13309,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 1er grado",
-      "prompt": "Ecuacion $\\dfrac{x}{4}+1=\\dfrac{7}{4}$ - var.85",
+      "prompt": "Ecuación $\\dfrac{x}{4}+1=\\dfrac{7}{4}$ - var.85",
       "opts": [
         "$3$",
         "$7$",
@@ -13317,7 +13317,7 @@ window.GUIA_BANK_1000 = {
         "$12$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13331,7 +13331,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 1er grado",
-      "prompt": "Numero mas su mitad es 7 - var.86",
+      "prompt": "Número mas su mitad es 7 - var.86",
       "opts": [
         "$5$",
         "$7$",
@@ -13339,7 +13339,7 @@ window.GUIA_BANK_1000 = {
         "$8$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: $x+x/2=7$ => $3x/2=7$ => $x=5$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: $x+x/2=7$ => $3x/2=7$ => $x=5$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13361,7 +13361,7 @@ window.GUIA_BANK_1000 = {
         "$\\{1,3\\}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13375,7 +13375,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 1er grado",
-      "prompt": "Ecuacion $\\dfrac{x}{7}+1=\\dfrac{10}{7}$ - var.88",
+      "prompt": "Ecuación $\\dfrac{x}{7}+1=\\dfrac{10}{7}$ - var.88",
       "opts": [
         "$3$",
         "$10$",
@@ -13383,7 +13383,7 @@ window.GUIA_BANK_1000 = {
         "$21$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: 3 Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13397,7 +13397,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 1er grado",
-      "prompt": "Numero mas su mitad es 12 - var.89",
+      "prompt": "Número mas su mitad es 12 - var.89",
       "opts": [
         "$8$",
         "$12$",
@@ -13405,7 +13405,7 @@ window.GUIA_BANK_1000 = {
         "$11$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: $x+x/2=12$ => $3x/2=12$ => $x=8$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso que te permite atacar este ejercicio sin conocimientos previos.",
+      "exp": "Paso desde cero: Paso: $x+x/2=12$ => $3x/2=12$ => $x=8$. Distractores olvidan dividir. Repasa el capítulo de teoría enlazado: allí está la definición, la fórmula y un ejemplo resuelto paso a paso qué te permite atacar este ejercicio sin conocimientos previos.",
       "maths": [],
       "imgs": []
     },
@@ -13463,7 +13463,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Para que $k$ sistema $x+ky=1$, $2x+4y=2$ infinitas? - var.92",
+      "prompt": "Para qué $k$ sistema $x+ky=1$, $2x+4y=2$ infinitas? - var.92",
       "opts": [
         "$k=2$",
         "$k=1$",
@@ -13529,7 +13529,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Para que $k$ sistema $x+ky=1$, $2x+4y=2$ infinitas? - var.95",
+      "prompt": "Para qué $k$ sistema $x+ky=1$, $2x+4y=2$ infinitas? - var.95",
       "opts": [
         "$k=2$",
         "$k=1$",
@@ -13595,7 +13595,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Para que $k$ sistema $x+ky=1$, $2x+4y=2$ infinitas? - var.98",
+      "prompt": "Para qué $k$ sistema $x+ky=1$, $2x+4y=2$ infinitas? - var.98",
       "opts": [
         "$k=2$",
         "$k=1$",
@@ -13661,7 +13661,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Para que $k$ sistema $x+ky=1$, $2x+4y=2$ infinitas? - var.101",
+      "prompt": "Para qué $k$ sistema $x+ky=1$, $2x+4y=2$ infinitas? - var.101",
       "opts": [
         "$k=2$",
         "$k=1$",
@@ -13727,7 +13727,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Para que $k$ sistema $x+ky=1$, $2x+4y=2$ infinitas? - var.104",
+      "prompt": "Para qué $k$ sistema $x+ky=1$, $2x+4y=2$ infinitas? - var.104",
       "opts": [
         "$k=2$",
         "$k=1$",
@@ -13793,7 +13793,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Sistemas lineales",
-      "prompt": "Para que $k$ sistema $x+ky=1$, $2x+4y=2$ infinitas? - var.107",
+      "prompt": "Para qué $k$ sistema $x+ky=1$, $2x+4y=2$ infinitas? - var.107",
       "opts": [
         "$k=2$",
         "$k=1$",
@@ -13815,7 +13815,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Halle $k$ para $x^{2}+5x+9=0$ raiz doble - var.108",
+      "prompt": "Halle $k$ para $x^{2}+5x+9=0$ raíz doble - var.108",
       "opts": [
         "$k=\\pm6$",
         "$k=6$",
@@ -13837,7 +13837,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Raices 3,4 $1/r1+1/r2$? - var.109",
+      "prompt": "Raíces 3,4 $1/r1+1/r2$? - var.109",
       "opts": [
         "$0.58$",
         "$12$",
@@ -13859,7 +13859,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Vertice $y=x^{2}+-4x+4$ - var.110",
+      "prompt": "Vértice $y=x^{2}+-4x+4$ - var.110",
       "opts": [
         "$(--2,0)$",
         "$(0,4)$",
@@ -13867,7 +13867,7 @@ window.GUIA_BANK_1000 = {
         "$(0,0)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: completa cuadrado $(x+-2)^{2}$, vertice $(--2,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: completa cuadrado $(x+-2)^{2}$, vértice $(--2,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13881,7 +13881,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Halle $k$ para $x^{2}+3x+9=0$ raiz doble - var.111",
+      "prompt": "Halle $k$ para $x^{2}+3x+9=0$ raíz doble - var.111",
       "opts": [
         "$k=\\pm6$",
         "$k=6$",
@@ -13903,7 +13903,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Raices 2,3 $1/r1+1/r2$? - var.112",
+      "prompt": "Raíces 2,3 $1/r1+1/r2$? - var.112",
       "opts": [
         "$0.83$",
         "$6$",
@@ -13925,7 +13925,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Vertice $y=x^{2}+2x+1$ - var.113",
+      "prompt": "Vértice $y=x^{2}+2x+1$ - var.113",
       "opts": [
         "$(-1,0)$",
         "$(0,1)$",
@@ -13933,7 +13933,7 @@ window.GUIA_BANK_1000 = {
         "$(0,0)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: completa cuadrado $(x+1)^{2}$, vertice $(-1,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: completa cuadrado $(x+1)^{2}$, vértice $(-1,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -13947,7 +13947,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Halle $k$ para $x^{2}+6x+9=0$ raiz doble - var.114",
+      "prompt": "Halle $k$ para $x^{2}+6x+9=0$ raíz doble - var.114",
       "opts": [
         "$k=\\pm6$",
         "$k=6$",
@@ -13969,7 +13969,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Raices 5,6 $1/r1+1/r2$? - var.115",
+      "prompt": "Raíces 5,6 $1/r1+1/r2$? - var.115",
       "opts": [
         "$0.37$",
         "$30$",
@@ -13991,7 +13991,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Vertice $y=x^{2}+-2x+1$ - var.116",
+      "prompt": "Vértice $y=x^{2}+-2x+1$ - var.116",
       "opts": [
         "$(--1,0)$",
         "$(0,1)$",
@@ -13999,7 +13999,7 @@ window.GUIA_BANK_1000 = {
         "$(0,0)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: completa cuadrado $(x+-1)^{2}$, vertice $(--1,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: completa cuadrado $(x+-1)^{2}$, vértice $(--1,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14013,7 +14013,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Halle $k$ para $x^{2}+4x+9=0$ raiz doble - var.117",
+      "prompt": "Halle $k$ para $x^{2}+4x+9=0$ raíz doble - var.117",
       "opts": [
         "$k=\\pm6$",
         "$k=6$",
@@ -14035,7 +14035,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Raices 4,5 $1/r1+1/r2$? - var.118",
+      "prompt": "Raíces 4,5 $1/r1+1/r2$? - var.118",
       "opts": [
         "$0.45$",
         "$20$",
@@ -14057,7 +14057,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Vertice $y=x^{2}+4x+4$ - var.119",
+      "prompt": "Vértice $y=x^{2}+4x+4$ - var.119",
       "opts": [
         "$(-2,0)$",
         "$(0,4)$",
@@ -14065,7 +14065,7 @@ window.GUIA_BANK_1000 = {
         "$(0,0)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: completa cuadrado $(x+2)^{2}$, vertice $(-2,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: completa cuadrado $(x+2)^{2}$, vértice $(-2,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14079,7 +14079,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Halle $k$ para $x^{2}+2x+9=0$ raiz doble - var.120",
+      "prompt": "Halle $k$ para $x^{2}+2x+9=0$ raíz doble - var.120",
       "opts": [
         "$k=\\pm6$",
         "$k=6$",
@@ -14101,7 +14101,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Raices 3,4 $1/r1+1/r2$? - var.121",
+      "prompt": "Raíces 3,4 $1/r1+1/r2$? - var.121",
       "opts": [
         "$0.58$",
         "$12$",
@@ -14123,7 +14123,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Vertice $y=x^{2}+0x+0$ - var.122",
+      "prompt": "Vértice $y=x^{2}+0x+0$ - var.122",
       "opts": [
         "$(-0,0)$",
         "$(0,0)$",
@@ -14131,7 +14131,7 @@ window.GUIA_BANK_1000 = {
         "$(0,2)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: completa cuadrado $(x+0)^{2}$, vertice $(-0,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: completa cuadrado $(x+0)^{2}$, vértice $(-0,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14145,7 +14145,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Halle $k$ para $x^{2}+5x+9=0$ raiz doble - var.123",
+      "prompt": "Halle $k$ para $x^{2}+5x+9=0$ raíz doble - var.123",
       "opts": [
         "$k=\\pm6$",
         "$k=6$",
@@ -14167,7 +14167,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Raices 2,3 $1/r1+1/r2$? - var.124",
+      "prompt": "Raíces 2,3 $1/r1+1/r2$? - var.124",
       "opts": [
         "$0.83$",
         "$6$",
@@ -14189,7 +14189,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Ecuaciones 2do grado",
-      "prompt": "Vertice $y=x^{2}+-4x+4$ - var.125",
+      "prompt": "Vértice $y=x^{2}+-4x+4$ - var.125",
       "opts": [
         "$(--2,0)$",
         "$(0,4)$",
@@ -14197,7 +14197,7 @@ window.GUIA_BANK_1000 = {
         "$(0,0)$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: completa cuadrado $(x+-2)^{2}$, vertice $(--2,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: completa cuadrado $(x+-2)^{2}$, vértice $(--2,0)$. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14255,7 +14255,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Inecuaciones",
-      "prompt": "Inecuacion $x^{2}-11x+30\\le0$ - var.128",
+      "prompt": "Inecuación $x^{2}-11x+30\\le0$ - var.128",
       "opts": [
         "$[5,6]$",
         "$(-\\infty,5]$",
@@ -14321,7 +14321,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Inecuaciones",
-      "prompt": "Inecuacion $x^{2}-17x+72\\le0$ - var.131",
+      "prompt": "Inecuación $x^{2}-17x+72\\le0$ - var.131",
       "opts": [
         "$[8,9]$",
         "$(-\\infty,8]$",
@@ -14387,7 +14387,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Inecuaciones",
-      "prompt": "Inecuacion $x^{2}-9x+20\\le0$ - var.134",
+      "prompt": "Inecuación $x^{2}-9x+20\\le0$ - var.134",
       "opts": [
         "$[4,5]$",
         "$(-\\infty,4]$",
@@ -14453,7 +14453,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Inecuaciones",
-      "prompt": "Inecuacion $x^{2}-15x+56\\le0$ - var.137",
+      "prompt": "Inecuación $x^{2}-15x+56\\le0$ - var.137",
       "opts": [
         "$[7,8]$",
         "$(-\\infty,7]$",
@@ -14519,7 +14519,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Inecuaciones",
-      "prompt": "Inecuacion $x^{2}-7x+12\\le0$ - var.140",
+      "prompt": "Inecuación $x^{2}-7x+12\\le0$ - var.140",
       "opts": [
         "$[3,4]$",
         "$(-\\infty,3]$",
@@ -14585,7 +14585,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m2",
       "t": "Inecuaciones",
-      "prompt": "Inecuacion $x^{2}-13x+42\\le0$ - var.143",
+      "prompt": "Inecuación $x^{2}-13x+42\\le0$ - var.143",
       "opts": [
         "$[6,7]$",
         "$(-\\infty,6]$",
@@ -14637,7 +14637,7 @@ window.GUIA_BANK_1000 = {
         "$40$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: raices 13 y 3 producto 39. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: raíces 13 y 3 producto 39. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14703,7 +14703,7 @@ window.GUIA_BANK_1000 = {
         "$32$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: raices 12 y -4 producto -48. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: raíces 12 y -4 producto -48. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14769,7 +14769,7 @@ window.GUIA_BANK_1000 = {
         "$35$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: raices 12 y 2 producto 24. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: raíces 12 y 2 producto 24. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14835,7 +14835,7 @@ window.GUIA_BANK_1000 = {
         "$24$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: raices 11 y -5 producto -55. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: raíces 11 y -5 producto -55. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14901,7 +14901,7 @@ window.GUIA_BANK_1000 = {
         "$30$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: raices 11 y 1 producto 11. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: raíces 11 y 1 producto 11. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -14967,7 +14967,7 @@ window.GUIA_BANK_1000 = {
         "$72$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Paso: raices 17 y 1 producto 17. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Paso: raíces 17 y 1 producto 17. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -15003,7 +15003,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Isosceles $AB=AC$ $\\angle B=45$ altura desde $A$ angulo con $AB$? - var.162",
+      "prompt": "Isosceles $AB=AC$ $\\angle B=45$ altura desde $A$ ángulo con $AB$? - var.162",
       "opts": [
         "$45 deg$",
         "$45$",
@@ -15075,7 +15075,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Isosceles $AB=AC$ $\\angle B=40$ altura desde $A$ angulo con $AB$? - var.165",
+      "prompt": "Isosceles $AB=AC$ $\\angle B=40$ altura desde $A$ ángulo con $AB$? - var.165",
       "opts": [
         "$50 deg$",
         "$40$",
@@ -15147,7 +15147,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Isosceles $AB=AC$ $\\angle B=35$ altura desde $A$ angulo con $AB$? - var.168",
+      "prompt": "Isosceles $AB=AC$ $\\angle B=35$ altura desde $A$ ángulo con $AB$? - var.168",
       "opts": [
         "$55 deg$",
         "$35$",
@@ -15219,7 +15219,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Isosceles $AB=AC$ $\\angle B=50$ altura desde $A$ angulo con $AB$? - var.171",
+      "prompt": "Isosceles $AB=AC$ $\\angle B=50$ altura desde $A$ ángulo con $AB$? - var.171",
       "opts": [
         "$40 deg$",
         "$50$",
@@ -15291,7 +15291,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Isosceles $AB=AC$ $\\angle B=45$ altura desde $A$ angulo con $AB$? - var.174",
+      "prompt": "Isosceles $AB=AC$ $\\angle B=45$ altura desde $A$ ángulo con $AB$? - var.174",
       "opts": [
         "$45 deg$",
         "$45$",
@@ -15363,7 +15363,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "m3",
       "t": "Geometría plana",
-      "prompt": "Isosceles $AB=AC$ $\\angle B=40$ altura desde $A$ angulo con $AB$? - var.177",
+      "prompt": "Isosceles $AB=AC$ $\\angle B=40$ altura desde $A$ ángulo con $AB$? - var.177",
       "opts": [
         "$50 deg$",
         "$40$",
@@ -17979,7 +17979,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "f1",
       "t": "Equilibrio",
-      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos que forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable.",
+      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos qué forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable.",
       "opts": [
         "$\\tfrac{100}{2\\cos30^\\circ}\\approx57.7\\,\\mathrm{N}$",
         "$50\\,\\mathrm{N}$",
@@ -17987,7 +17987,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de dónde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -18003,7 +18003,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "f1",
       "t": "Equilibrio",
-      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos que forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.40-fis-040",
+      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos qué forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.40-fis-040",
       "opts": [
         "$\\tfrac{100}{2\\cos30^\\circ}\\approx57.7\\,\\mathrm{N}$",
         "$50\\,\\mathrm{N}$",
@@ -18011,7 +18011,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de dónde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -18027,7 +18027,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "f1",
       "t": "Equilibrio",
-      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos que forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.41-fis-041",
+      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos qué forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.41-fis-041",
       "opts": [
         "$\\tfrac{100}{2\\cos30^\\circ}\\approx57.7\\,\\mathrm{N}$",
         "$50\\,\\mathrm{N}$",
@@ -18035,7 +18035,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de dónde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -18051,7 +18051,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "f1",
       "t": "Equilibrio",
-      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos que forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.42-fis-042",
+      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos qué forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.42-fis-042",
       "opts": [
         "$\\tfrac{100}{2\\cos30^\\circ}\\approx57.7\\,\\mathrm{N}$",
         "$50\\,\\mathrm{N}$",
@@ -18059,7 +18059,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de dónde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -18075,7 +18075,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "f1",
       "t": "Equilibrio",
-      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos que forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.43-fis-043",
+      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos qué forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.43-fis-043",
       "opts": [
         "$\\tfrac{100}{2\\cos30^\\circ}\\approx57.7\\,\\mathrm{N}$",
         "$50\\,\\mathrm{N}$",
@@ -18083,7 +18083,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de dónde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -18099,7 +18099,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "f1",
       "t": "Equilibrio",
-      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos que forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.44-fis-044",
+      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos qué forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.44-fis-044",
       "opts": [
         "$\\tfrac{100}{2\\cos30^\\circ}\\approx57.7\\,\\mathrm{N}$",
         "$50\\,\\mathrm{N}$",
@@ -18107,7 +18107,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de dónde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -18123,7 +18123,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "f1",
       "t": "Equilibrio",
-      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos que forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.45-fis-045",
+      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos qué forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.45-fis-045",
       "opts": [
         "$\\tfrac{100}{2\\cos30^\\circ}\\approx57.7\\,\\mathrm{N}$",
         "$50\\,\\mathrm{N}$",
@@ -18131,7 +18131,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de dónde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -18147,7 +18147,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "f1",
       "t": "Equilibrio",
-      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos que forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.46-fis-046",
+      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos qué forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.46-fis-046",
       "opts": [
         "$\\tfrac{100}{2\\cos30^\\circ}\\approx57.7\\,\\mathrm{N}$",
         "$50\\,\\mathrm{N}$",
@@ -18155,7 +18155,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de dónde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -18171,7 +18171,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "f1",
       "t": "Equilibrio",
-      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos que forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.47-fis-047",
+      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos qué forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.47-fis-047",
       "opts": [
         "$\\tfrac{100}{2\\cos30^\\circ}\\approx57.7\\,\\mathrm{N}$",
         "$50\\,\\mathrm{N}$",
@@ -18179,7 +18179,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de dónde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -18195,7 +18195,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "f1",
       "t": "Equilibrio",
-      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos que forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.48-fis-048",
+      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos qué forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.48-fis-048",
       "opts": [
         "$\\tfrac{100}{2\\cos30^\\circ}\\approx57.7\\,\\mathrm{N}$",
         "$50\\,\\mathrm{N}$",
@@ -18203,7 +18203,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de dónde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -18219,7 +18219,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "f1",
       "t": "Equilibrio",
-      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos que forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.49-fis-049",
+      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos qué forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.49-fis-049",
       "opts": [
         "$\\tfrac{100}{2\\cos30^\\circ}\\approx57.7\\,\\mathrm{N}$",
         "$50\\,\\mathrm{N}$",
@@ -18227,7 +18227,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de dónde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -18243,7 +18243,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "f1",
       "t": "Equilibrio",
-      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos que forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.50-fis-050",
+      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos qué forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.50-fis-050",
       "opts": [
         "$\\tfrac{100}{2\\cos30^\\circ}\\approx57.7\\,\\mathrm{N}$",
         "$50\\,\\mathrm{N}$",
@@ -18251,7 +18251,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de dónde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -18267,7 +18267,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "f1",
       "t": "Equilibrio",
-      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos que forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.51-fis-051",
+      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos qué forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.51-fis-051",
       "opts": [
         "$\\tfrac{100}{2\\cos30^\\circ}\\approx57.7\\,\\mathrm{N}$",
         "$50\\,\\mathrm{N}$",
@@ -18275,7 +18275,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de dónde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -18291,7 +18291,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "f1",
       "t": "Equilibrio",
-      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos que forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.52-fis-052",
+      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos qué forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.52-fis-052",
       "opts": [
         "$\\tfrac{100}{2\\cos30^\\circ}\\approx57.7\\,\\mathrm{N}$",
         "$50\\,\\mathrm{N}$",
@@ -18299,7 +18299,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de dónde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -18315,7 +18315,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "f1",
       "t": "Equilibrio",
-      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos que forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.53-fis-053",
+      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos qué forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.53-fis-053",
       "opts": [
         "$\\tfrac{100}{2\\cos30^\\circ}\\approx57.7\\,\\mathrm{N}$",
         "$50\\,\\mathrm{N}$",
@@ -18323,7 +18323,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de dónde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -18339,7 +18339,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "f1",
       "t": "Equilibrio",
-      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos que forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.54-fis-054",
+      "prompt": "Un semáforo de peso $W=100\\,\\mathrm{N}$ cuelga de dos cables simétricos qué forman $30^\\circ$ con la vertical (figura DCL). Halle la tensión $T$ en cada cable. - var.54-fis-054",
       "opts": [
         "$\\tfrac{100}{2\\cos30^\\circ}\\approx57.7\\,\\mathrm{N}$",
         "$50\\,\\mathrm{N}$",
@@ -18347,7 +18347,7 @@ window.GUIA_BANK_1000 = {
         "$86.6\\,\\mathrm{N}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de donde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: Equilibrio vertical: $2T\\cos30^\\circ=W$ de dónde $T=W/(2\\cos30^\\circ)\\approx57.7\\,\\mathrm{N}$. Dividir solo entre 2 olvida la componente vertical. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <rect x=\"172\" y=\"128\" width=\"56\" height=\"44\" rx=\"6\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.8\"/>\n    <text x=\"200\" y=\"156\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">DCL</text>\n    <line x1=\"200\" y1=\"150\" x2=\"233\" y2=\"141.2\" stroke=\"#0e2a47\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"233,141.2 221.79167470062552,137.97921686799583 224.88362650734953,149.57403614321078\" fill=\"#0e2a47\" stroke=\"#0e2a47\" stroke-linejoin=\"round\"/><text x=\"239\" y=\"133.2\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">F₁</text>\n    <line x1=\"200\" y1=\"150\" x2=\"186.8\" y2=\"132.4\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"186.8,132.4 188,144 197.60000000000002,136.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/><text x=\"168.8\" y=\"124.4\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">F₂</text>\n    <text x=\"200\" y=\"268\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">ΣF⃗ = m·a⃗</text>\n  </svg>"
@@ -18827,7 +18827,7 @@ window.GUIA_BANK_1000 = {
         "$8.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{80/10}=2.83\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de dónde $t=\\sqrt{2h/g}=\\sqrt{80/10}=2.83\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=40 m</text>\n  </svg>"
@@ -18851,7 +18851,7 @@ window.GUIA_BANK_1000 = {
         "$9.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{90/10}=3.00\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de dónde $t=\\sqrt{2h/g}=\\sqrt{90/10}=3.00\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=45 m</text>\n  </svg>"
@@ -18875,7 +18875,7 @@ window.GUIA_BANK_1000 = {
         "$10.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{100/10}=3.16\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de dónde $t=\\sqrt{2h/g}=\\sqrt{100/10}=3.16\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=50 m</text>\n  </svg>"
@@ -18899,7 +18899,7 @@ window.GUIA_BANK_1000 = {
         "$11.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{110/10}=3.32\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de dónde $t=\\sqrt{2h/g}=\\sqrt{110/10}=3.32\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=55 m</text>\n  </svg>"
@@ -18923,7 +18923,7 @@ window.GUIA_BANK_1000 = {
         "$12.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{120/10}=3.46\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de dónde $t=\\sqrt{2h/g}=\\sqrt{120/10}=3.46\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=60 m</text>\n  </svg>"
@@ -18947,7 +18947,7 @@ window.GUIA_BANK_1000 = {
         "$13.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{130/10}=3.61\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de dónde $t=\\sqrt{2h/g}=\\sqrt{130/10}=3.61\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=65 m</text>\n  </svg>"
@@ -18971,7 +18971,7 @@ window.GUIA_BANK_1000 = {
         "$4.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{40/10}=2.00\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de dónde $t=\\sqrt{2h/g}=\\sqrt{40/10}=2.00\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=20 m</text>\n  </svg>"
@@ -18995,7 +18995,7 @@ window.GUIA_BANK_1000 = {
         "$5.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{50/10}=2.24\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de dónde $t=\\sqrt{2h/g}=\\sqrt{50/10}=2.24\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=25 m</text>\n  </svg>"
@@ -19019,7 +19019,7 @@ window.GUIA_BANK_1000 = {
         "$6.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{60/10}=2.45\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de dónde $t=\\sqrt{2h/g}=\\sqrt{60/10}=2.45\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=30 m</text>\n  </svg>"
@@ -19043,7 +19043,7 @@ window.GUIA_BANK_1000 = {
         "$7.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{70/10}=2.65\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de dónde $t=\\sqrt{2h/g}=\\sqrt{70/10}=2.65\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=35 m</text>\n  </svg>"
@@ -19067,7 +19067,7 @@ window.GUIA_BANK_1000 = {
         "$8.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{80/10}=2.83\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de dónde $t=\\sqrt{2h/g}=\\sqrt{80/10}=2.83\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=40 m</text>\n  </svg>"
@@ -19091,7 +19091,7 @@ window.GUIA_BANK_1000 = {
         "$9.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{90/10}=3.00\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de dónde $t=\\sqrt{2h/g}=\\sqrt{90/10}=3.00\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=45 m</text>\n  </svg>"
@@ -19115,7 +19115,7 @@ window.GUIA_BANK_1000 = {
         "$10.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{100/10}=3.16\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de dónde $t=\\sqrt{2h/g}=\\sqrt{100/10}=3.16\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=50 m</text>\n  </svg>"
@@ -19139,7 +19139,7 @@ window.GUIA_BANK_1000 = {
         "$11.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{110/10}=3.32\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de dónde $t=\\sqrt{2h/g}=\\sqrt{110/10}=3.32\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=55 m</text>\n  </svg>"
@@ -19163,7 +19163,7 @@ window.GUIA_BANK_1000 = {
         "$12.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{120/10}=3.46\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de dónde $t=\\sqrt{2h/g}=\\sqrt{120/10}=3.46\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=60 m</text>\n  </svg>"
@@ -19187,7 +19187,7 @@ window.GUIA_BANK_1000 = {
         "$13.00\\,\\mathrm{s}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de donde $t=\\sqrt{2h/g}=\\sqrt{130/10}=3.61\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: $h=\\tfrac12 gt^{2}$ de dónde $t=\\sqrt{2h/g}=\\sqrt{130/10}=3.61\\,\\mathrm{s}$. Olvidar el factor 2 o no hacer raíz son los errores. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"380\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"40\" y1=\"220\" x2=\"40\" y2=\"40\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"375\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"30\" y=\"50\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">y</text>\n    <path d=\"M 50 220 Q 170 60 360 220\" fill=\"none\" stroke=\"#0e2a47\" stroke-width=\"2.2\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"90\" y2=\"190\" stroke=\"#c45c26\" stroke-width=\"2\" stroke-linecap=\"round\"/><polygon points=\"90,190 78.4,191.2 85.6,200.8\" fill=\"#c45c26\" stroke=\"#c45c26\" stroke-linejoin=\"round\"/>\n    <text x=\"92\" y=\"182\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#c45c26\">v₀=0 m/s · 90°</text>\n    <text x=\"180\" y=\"70\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">hₘₐₓ</text>\n    <circle cx=\"170\" cy=\"78\" r=\"3\" fill=\"#0e2a47\"/>\n    <text x=\"52\" y=\"238\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#64748b\">origen · h₀=65 m</text>\n  </svg>"
@@ -21627,7 +21627,7 @@ window.GUIA_BANK_1000 = {
         "$34\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=30\\cdot 4=120\\,\\mathrm{J}$ que geométricamente es el área bajo $F(x)$. Paso 1: verifica que $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
+      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=30\\cdot 4=120\\,\\mathrm{J}$ qué geométricamente es el área bajo $F(x)$. Paso 1: verifica qué $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -21651,7 +21651,7 @@ window.GUIA_BANK_1000 = {
         "$40\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=35\\cdot 5=175\\,\\mathrm{J}$ que geométricamente es el área bajo $F(x)$. Paso 1: verifica que $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
+      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=35\\cdot 5=175\\,\\mathrm{J}$ qué geométricamente es el área bajo $F(x)$. Paso 1: verifica qué $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -21675,7 +21675,7 @@ window.GUIA_BANK_1000 = {
         "$46\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=40\\cdot 6=240\\,\\mathrm{J}$ que geométricamente es el área bajo $F(x)$. Paso 1: verifica que $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
+      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=40\\cdot 6=240\\,\\mathrm{J}$ qué geométricamente es el área bajo $F(x)$. Paso 1: verifica qué $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -21699,7 +21699,7 @@ window.GUIA_BANK_1000 = {
         "$24\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=20\\cdot 4=80\\,\\mathrm{J}$ que geométricamente es el área bajo $F(x)$. Paso 1: verifica que $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
+      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=20\\cdot 4=80\\,\\mathrm{J}$ qué geométricamente es el área bajo $F(x)$. Paso 1: verifica qué $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -21723,7 +21723,7 @@ window.GUIA_BANK_1000 = {
         "$30\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=25\\cdot 5=125\\,\\mathrm{J}$ que geométricamente es el área bajo $F(x)$. Paso 1: verifica que $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
+      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=25\\cdot 5=125\\,\\mathrm{J}$ qué geométricamente es el área bajo $F(x)$. Paso 1: verifica qué $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -21747,7 +21747,7 @@ window.GUIA_BANK_1000 = {
         "$36\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=30\\cdot 6=180\\,\\mathrm{J}$ que geométricamente es el área bajo $F(x)$. Paso 1: verifica que $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
+      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=30\\cdot 6=180\\,\\mathrm{J}$ qué geométricamente es el área bajo $F(x)$. Paso 1: verifica qué $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -21771,7 +21771,7 @@ window.GUIA_BANK_1000 = {
         "$39\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=35\\cdot 4=140\\,\\mathrm{J}$ que geométricamente es el área bajo $F(x)$. Paso 1: verifica que $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
+      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=35\\cdot 4=140\\,\\mathrm{J}$ qué geométricamente es el área bajo $F(x)$. Paso 1: verifica qué $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -21795,7 +21795,7 @@ window.GUIA_BANK_1000 = {
         "$45\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=40\\cdot 5=200\\,\\mathrm{J}$ que geométricamente es el área bajo $F(x)$. Paso 1: verifica que $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
+      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=40\\cdot 5=200\\,\\mathrm{J}$ qué geométricamente es el área bajo $F(x)$. Paso 1: verifica qué $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -21819,7 +21819,7 @@ window.GUIA_BANK_1000 = {
         "$26\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=20\\cdot 6=120\\,\\mathrm{J}$ que geométricamente es el área bajo $F(x)$. Paso 1: verifica que $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
+      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=20\\cdot 6=120\\,\\mathrm{J}$ qué geométricamente es el área bajo $F(x)$. Paso 1: verifica qué $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -21843,7 +21843,7 @@ window.GUIA_BANK_1000 = {
         "$29\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=25\\cdot 4=100\\,\\mathrm{J}$ que geométricamente es el área bajo $F(x)$. Paso 1: verifica que $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
+      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=25\\cdot 4=100\\,\\mathrm{J}$ qué geométricamente es el área bajo $F(x)$. Paso 1: verifica qué $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -21867,7 +21867,7 @@ window.GUIA_BANK_1000 = {
         "$35\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=30\\cdot 5=150\\,\\mathrm{J}$ que geométricamente es el área bajo $F(x)$. Paso 1: verifica que $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
+      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=30\\cdot 5=150\\,\\mathrm{J}$ qué geométricamente es el área bajo $F(x)$. Paso 1: verifica qué $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -21891,7 +21891,7 @@ window.GUIA_BANK_1000 = {
         "$41\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=35\\cdot 6=210\\,\\mathrm{J}$ que geométricamente es el área bajo $F(x)$. Paso 1: verifica que $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
+      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=35\\cdot 6=210\\,\\mathrm{J}$ qué geométricamente es el área bajo $F(x)$. Paso 1: verifica qué $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -21915,7 +21915,7 @@ window.GUIA_BANK_1000 = {
         "$44\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=40\\cdot 4=160\\,\\mathrm{J}$ que geométricamente es el área bajo $F(x)$. Paso 1: verifica que $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
+      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=40\\cdot 4=160\\,\\mathrm{J}$ qué geométricamente es el área bajo $F(x)$. Paso 1: verifica qué $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -21939,7 +21939,7 @@ window.GUIA_BANK_1000 = {
         "$25\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=20\\cdot 5=100\\,\\mathrm{J}$ que geométricamente es el área bajo $F(x)$. Paso 1: verifica que $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
+      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=20\\cdot 5=100\\,\\mathrm{J}$ qué geométricamente es el área bajo $F(x)$. Paso 1: verifica qué $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -21963,7 +21963,7 @@ window.GUIA_BANK_1000 = {
         "$31\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=25\\cdot 6=150\\,\\mathrm{J}$ que geométricamente es el área bajo $F(x)$. Paso 1: verifica que $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
+      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=25\\cdot 6=150\\,\\mathrm{J}$ qué geométricamente es el área bajo $F(x)$. Paso 1: verifica qué $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -21987,7 +21987,7 @@ window.GUIA_BANK_1000 = {
         "$34\\,\\mathrm{J}$"
       ],
       "ans": 0,
-      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=30\\cdot 4=120\\,\\mathrm{J}$ que geométricamente es el área bajo $F(x)$. Paso 1: verifica que $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
+      "exp": "Trabajo de fuerza constante paralela: $W=\\vec F\\cdot\\Delta\\vec r =Fd\\cos0^\\circ=30\\cdot 4=120\\,\\mathrm{J}$ qué geométricamente es el área bajo $F(x)$. Paso 1: verifica qué $\\theta=0^\\circ$ (paralela). Paso 2: multiplica $F\\cdot d$. Confundir $F$ con $W$ o sumar es el error.",
       "maths": [],
       "imgs": [
         "<svg viewBox=\"0 0 400 300\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" style=\"max-width:480px;width:100%;height:auto;display:block;margin:10px auto\" aria-hidden=\"true\">\n    <rect x=\"0\" y=\"0\" width=\"400\" height=\"300\" rx=\"10\" fill=\"#fff\" stroke=\"#e3e8ee\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"350\" y2=\"220\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <line x1=\"50\" y1=\"220\" x2=\"50\" y2=\"50\" stroke=\"#94a3b8\" stroke-width=\"1.4\"/>\n    <text x=\"345\" y=\"232\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">x</text>\n    <text x=\"38\" y=\"60\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#64748b\">F</text>\n    <polygon points=\"60,220 60,120 150,120 150,220\" fill=\"#eaf2fb\" stroke=\"#0e2a47\" stroke-width=\"1.6\"/>\n    <text x=\"105\" y=\"175\" text-anchor=\"middle\" font-size=\"11\" font-family=\"sans-serif\" fill=\"#0e2a47\">W = F·d</text>\n    <text x=\"105\" y=\"135\" text-anchor=\"middle\" font-size=\"10\" font-family=\"sans-serif\" fill=\"#5b6b7a\">área bajo F(x)</text>\n  </svg>"
@@ -23333,7 +23333,7 @@ window.GUIA_BANK_1000 = {
         "Mezcla homogénea"
       ],
       "ans": 0,
-      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
+      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) qué no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
       "maths": [],
       "imgs": []
     },
@@ -23399,7 +23399,7 @@ window.GUIA_BANK_1000 = {
         "Mezcla homogénea"
       ],
       "ans": 0,
-      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
+      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) qué no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
       "maths": [],
       "imgs": []
     },
@@ -23465,7 +23465,7 @@ window.GUIA_BANK_1000 = {
         "Mezcla homogénea"
       ],
       "ans": 0,
-      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
+      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) qué no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
       "maths": [],
       "imgs": []
     },
@@ -23531,7 +23531,7 @@ window.GUIA_BANK_1000 = {
         "Mezcla homogénea"
       ],
       "ans": 0,
-      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
+      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) qué no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
       "maths": [],
       "imgs": []
     },
@@ -23597,7 +23597,7 @@ window.GUIA_BANK_1000 = {
         "Mezcla homogénea"
       ],
       "ans": 0,
-      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
+      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) qué no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
       "maths": [],
       "imgs": []
     },
@@ -23663,7 +23663,7 @@ window.GUIA_BANK_1000 = {
         "Mezcla homogénea"
       ],
       "ans": 0,
-      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) que no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
+      "exp": "Paso 1: Criterio operacional: aparecen sustancias con propiedades nuevas (color, olor, $pH$, densidad distinta) qué no estaban antes; los otros son físicos porque conservan composición. Paso 2: desde cero, revisa la definicion de cambio fisico vs quimico y aplica el criterio al enunciado.",
       "maths": [],
       "imgs": []
     },
@@ -25445,7 +25445,7 @@ window.GUIA_BANK_1000 = {
         "Moléculas discretas aisladas"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
+      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no cómo sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
       "maths": [],
       "imgs": []
     },
@@ -25489,7 +25489,7 @@ window.GUIA_BANK_1000 = {
         "Moléculas discretas aisladas"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
+      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no cómo sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
       "maths": [],
       "imgs": []
     },
@@ -25533,7 +25533,7 @@ window.GUIA_BANK_1000 = {
         "Moléculas discretas aisladas"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
+      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no cómo sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
       "maths": [],
       "imgs": []
     },
@@ -25577,7 +25577,7 @@ window.GUIA_BANK_1000 = {
         "Moléculas discretas aisladas"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
+      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no cómo sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
       "maths": [],
       "imgs": []
     },
@@ -25621,7 +25621,7 @@ window.GUIA_BANK_1000 = {
         "Moléculas discretas aisladas"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
+      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no cómo sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
       "maths": [],
       "imgs": []
     },
@@ -25665,7 +25665,7 @@ window.GUIA_BANK_1000 = {
         "Moléculas discretas aisladas"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
+      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no cómo sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
       "maths": [],
       "imgs": []
     },
@@ -25709,7 +25709,7 @@ window.GUIA_BANK_1000 = {
         "Moléculas discretas aisladas"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
+      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no cómo sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
       "maths": [],
       "imgs": []
     },
@@ -25753,7 +25753,7 @@ window.GUIA_BANK_1000 = {
         "Moléculas discretas aisladas"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no como sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
+      "exp": "Paso desde cero: Red iónica con alta energía reticular: alto $T_f$ y conduce cuando los iones se movilizan (fundido o disolución), no cómo sólido rígido. Los covalentes moleculares son los de bajo $T_f$ y moléculas discretas.",
       "maths": [],
       "imgs": []
     },
@@ -25797,7 +25797,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O_2}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
+      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría qué no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
       "maths": [],
       "imgs": []
     },
@@ -25841,7 +25841,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O_2}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
+      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría qué no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
       "maths": [],
       "imgs": []
     },
@@ -25885,7 +25885,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O_2}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
+      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría qué no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
       "maths": [],
       "imgs": []
     },
@@ -25929,7 +25929,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O_2}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
+      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría qué no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
       "maths": [],
       "imgs": []
     },
@@ -25973,7 +25973,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O_2}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
+      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría qué no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
       "maths": [],
       "imgs": []
     },
@@ -26017,7 +26017,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O_2}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
+      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría qué no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
       "maths": [],
       "imgs": []
     },
@@ -26061,7 +26061,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O_2}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
+      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría qué no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
       "maths": [],
       "imgs": []
     },
@@ -26105,7 +26105,7 @@ window.GUIA_BANK_1000 = {
         "$\\mathrm{O_2}$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría que no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
+      "exp": "Paso desde cero: Polaridad requiere $\\Delta EN\\neq0$ y geometría qué no cancele dipolos: $\\mathrm{H_2O}$ angular es polar; diatómicas homonucleares $\\Delta EN=0$ son no polares.",
       "maths": [],
       "imgs": []
     },
@@ -26149,7 +26149,7 @@ window.GUIA_BANK_1000 = {
         "$1$ triple"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
+      "exp": "Paso desde cero: Para qué C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
       "maths": [],
       "imgs": []
     },
@@ -26193,7 +26193,7 @@ window.GUIA_BANK_1000 = {
         "$1$ triple"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
+      "exp": "Paso desde cero: Para qué C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
       "maths": [],
       "imgs": []
     },
@@ -26237,7 +26237,7 @@ window.GUIA_BANK_1000 = {
         "$1$ triple"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
+      "exp": "Paso desde cero: Para qué C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
       "maths": [],
       "imgs": []
     },
@@ -26281,7 +26281,7 @@ window.GUIA_BANK_1000 = {
         "$1$ triple"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
+      "exp": "Paso desde cero: Para qué C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
       "maths": [],
       "imgs": []
     },
@@ -26325,7 +26325,7 @@ window.GUIA_BANK_1000 = {
         "$1$ triple"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
+      "exp": "Paso desde cero: Para qué C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
       "maths": [],
       "imgs": []
     },
@@ -26369,7 +26369,7 @@ window.GUIA_BANK_1000 = {
         "$1$ triple"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
+      "exp": "Paso desde cero: Para qué C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
       "maths": [],
       "imgs": []
     },
@@ -26413,7 +26413,7 @@ window.GUIA_BANK_1000 = {
         "$1$ triple"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
+      "exp": "Paso desde cero: Para qué C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
       "maths": [],
       "imgs": []
     },
@@ -26457,7 +26457,7 @@ window.GUIA_BANK_1000 = {
         "$1$ triple"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Para que C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
+      "exp": "Paso desde cero: Para qué C y cada O completen octeto, C comparte $4$ pares: $\\mathrm{O=C=O}$ son $2$ dobles. Un simple dejaría octetos incompletos y un triple excedería valencia.",
       "maths": [],
       "imgs": []
     },
@@ -26501,7 +26501,7 @@ window.GUIA_BANK_1000 = {
         "Plana trigonal $120^\\circ$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
+      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más qué enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
       "maths": [],
       "imgs": []
     },
@@ -26545,7 +26545,7 @@ window.GUIA_BANK_1000 = {
         "Plana trigonal $120^\\circ$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
+      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más qué enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
       "maths": [],
       "imgs": []
     },
@@ -26589,7 +26589,7 @@ window.GUIA_BANK_1000 = {
         "Plana trigonal $120^\\circ$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
+      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más qué enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
       "maths": [],
       "imgs": []
     },
@@ -26633,7 +26633,7 @@ window.GUIA_BANK_1000 = {
         "Plana trigonal $120^\\circ$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
+      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más qué enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
       "maths": [],
       "imgs": []
     },
@@ -26677,7 +26677,7 @@ window.GUIA_BANK_1000 = {
         "Plana trigonal $120^\\circ$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
+      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más qué enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
       "maths": [],
       "imgs": []
     },
@@ -26721,7 +26721,7 @@ window.GUIA_BANK_1000 = {
         "Plana trigonal $120^\\circ$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
+      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más qué enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
       "maths": [],
       "imgs": []
     },
@@ -26765,7 +26765,7 @@ window.GUIA_BANK_1000 = {
         "Plana trigonal $120^\\circ$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
+      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más qué enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
       "maths": [],
       "imgs": []
     },
@@ -26809,7 +26809,7 @@ window.GUIA_BANK_1000 = {
         "Plana trigonal $120^\\circ$"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más que enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
+      "exp": "Paso desde cero: VSEPR AX₂E₂: dos pares libres repelen más qué enlaces y comprimen el tetraedro $109.5^\\circ$ a $\\approx104.5^\\circ$; resulta forma angular, no lineal ni tetraédrica regular.",
       "maths": [],
       "imgs": []
     },
@@ -26875,7 +26875,7 @@ window.GUIA_BANK_1000 = {
         "Metálica"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
+      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes qué London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
       "maths": [],
       "imgs": []
     },
@@ -26919,7 +26919,7 @@ window.GUIA_BANK_1000 = {
         "Metálica"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
+      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes qué London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
       "maths": [],
       "imgs": []
     },
@@ -26963,7 +26963,7 @@ window.GUIA_BANK_1000 = {
         "Metálica"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
+      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes qué London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
       "maths": [],
       "imgs": []
     },
@@ -27007,7 +27007,7 @@ window.GUIA_BANK_1000 = {
         "Metálica"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
+      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes qué London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
       "maths": [],
       "imgs": []
     },
@@ -27051,7 +27051,7 @@ window.GUIA_BANK_1000 = {
         "Metálica"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
+      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes qué London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
       "maths": [],
       "imgs": []
     },
@@ -27095,7 +27095,7 @@ window.GUIA_BANK_1000 = {
         "Metálica"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
+      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes qué London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
       "maths": [],
       "imgs": []
     },
@@ -27139,7 +27139,7 @@ window.GUIA_BANK_1000 = {
         "Metálica"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
+      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes qué London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
       "maths": [],
       "imgs": []
     },
@@ -27183,7 +27183,7 @@ window.GUIA_BANK_1000 = {
         "Metálica"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes que London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
+      "exp": "Paso desde cero: $\\mathrm{H}$ unido a $\\mathrm{O}$ muy electronegativo forma puentes H direccionales, más fuertes qué London/dispersión. Iónica y metálica no aplican a moléculas neutras.",
       "maths": [],
       "imgs": []
     },
@@ -28283,7 +28283,7 @@ window.GUIA_BANK_1000 = {
         "Ambos"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ que se agota primero y limita $\\mathrm{NH_3}$.",
+      "exp": "Paso desde cero: Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ qué se agota primero y limita $\\mathrm{NH_3}$.",
       "maths": [],
       "imgs": []
     },
@@ -28327,7 +28327,7 @@ window.GUIA_BANK_1000 = {
         "Ambos"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ que se agota primero y limita $\\mathrm{NH_3}$.",
+      "exp": "Paso desde cero: Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ qué se agota primero y limita $\\mathrm{NH_3}$.",
       "maths": [],
       "imgs": []
     },
@@ -28371,7 +28371,7 @@ window.GUIA_BANK_1000 = {
         "Ambos"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ que se agota primero y limita $\\mathrm{NH_3}$.",
+      "exp": "Paso desde cero: Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ qué se agota primero y limita $\\mathrm{NH_3}$.",
       "maths": [],
       "imgs": []
     },
@@ -28415,7 +28415,7 @@ window.GUIA_BANK_1000 = {
         "Ambos"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ que se agota primero y limita $\\mathrm{NH_3}$.",
+      "exp": "Paso desde cero: Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ qué se agota primero y limita $\\mathrm{NH_3}$.",
       "maths": [],
       "imgs": []
     },
@@ -28459,7 +28459,7 @@ window.GUIA_BANK_1000 = {
         "Ambos"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ que se agota primero y limita $\\mathrm{NH_3}$.",
+      "exp": "Paso desde cero: Estequiometría exige $3\\,\\mathrm{mol}\\,\\mathrm{H_2}$ por cada $\\mathrm{N_2}$; solo hay $2$, falta $\\mathrm{H_2}$ qué se agota primero y limita $\\mathrm{NH_3}$.",
       "maths": [],
       "imgs": []
     }
@@ -28475,7 +28475,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"?",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"?",
       "opts": [
         "El mensaje y el código compartido (instrucción clara)",
         "Solo el canal físico",
@@ -28497,7 +28497,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto.",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto.",
       "opts": [
         "El examen de admisión de la EPN y su preparación",
         "Una novela literaria",
@@ -28505,7 +28505,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -28519,7 +28519,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento?",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento?",
       "opts": [
         "Informar y orientar sobre el proceso de admisión de la EPN",
         "Narrar una anécdota personal del autor",
@@ -28541,7 +28541,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.4-len-004",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.4-len-004",
       "opts": [
         "El mensaje y el código compartido (instrucción clara)",
         "Solo el canal físico",
@@ -28563,7 +28563,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto. - var.5-len-005",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto. - var.5-len-005",
       "opts": [
         "El examen de admisión de la EPN y su preparación",
         "Una novela literaria",
@@ -28571,7 +28571,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -28585,7 +28585,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento? - var.6-len-006",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento? - var.6-len-006",
       "opts": [
         "Informar y orientar sobre el proceso de admisión de la EPN",
         "Narrar una anécdota personal del autor",
@@ -28607,7 +28607,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.7-len-007",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.7-len-007",
       "opts": [
         "El mensaje y el código compartido (instrucción clara)",
         "Solo el canal físico",
@@ -28629,7 +28629,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto. - var.8-len-008",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto. - var.8-len-008",
       "opts": [
         "El examen de admisión de la EPN y su preparación",
         "Una novela literaria",
@@ -28637,7 +28637,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -28651,7 +28651,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento? - var.9-len-009",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento? - var.9-len-009",
       "opts": [
         "Informar y orientar sobre el proceso de admisión de la EPN",
         "Narrar una anécdota personal del autor",
@@ -28673,7 +28673,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.10-len-010",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.10-len-010",
       "opts": [
         "El mensaje y el código compartido (instrucción clara)",
         "Solo el canal físico",
@@ -28695,7 +28695,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto. - var.11-len-011",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto. - var.11-len-011",
       "opts": [
         "El examen de admisión de la EPN y su preparación",
         "Una novela literaria",
@@ -28703,7 +28703,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -28717,7 +28717,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento? - var.12-len-012",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento? - var.12-len-012",
       "opts": [
         "Informar y orientar sobre el proceso de admisión de la EPN",
         "Narrar una anécdota personal del autor",
@@ -28739,7 +28739,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.13-len-013",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.13-len-013",
       "opts": [
         "El mensaje y el código compartido (instrucción clara)",
         "Solo el canal físico",
@@ -28761,7 +28761,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto. - var.14-len-014",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto. - var.14-len-014",
       "opts": [
         "El examen de admisión de la EPN y su preparación",
         "Una novela literaria",
@@ -28769,7 +28769,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -28783,7 +28783,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento? - var.15-len-015",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento? - var.15-len-015",
       "opts": [
         "Informar y orientar sobre el proceso de admisión de la EPN",
         "Narrar una anécdota personal del autor",
@@ -28805,7 +28805,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.16-len-016",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.16-len-016",
       "opts": [
         "El mensaje y el código compartido (instrucción clara)",
         "Solo el canal físico",
@@ -28827,7 +28827,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto. - var.17-len-017",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto. - var.17-len-017",
       "opts": [
         "El examen de admisión de la EPN y su preparación",
         "Una novela literaria",
@@ -28835,7 +28835,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -28849,7 +28849,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento? - var.18-len-018",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento? - var.18-len-018",
       "opts": [
         "Informar y orientar sobre el proceso de admisión de la EPN",
         "Narrar una anécdota personal del autor",
@@ -28871,7 +28871,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.19-len-019",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.19-len-019",
       "opts": [
         "El mensaje y el código compartido (instrucción clara)",
         "Solo el canal físico",
@@ -28893,7 +28893,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto. - var.20-len-020",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto. - var.20-len-020",
       "opts": [
         "El examen de admisión de la EPN y su preparación",
         "Una novela literaria",
@@ -28901,7 +28901,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -28915,7 +28915,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento? - var.21-len-021",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento? - var.21-len-021",
       "opts": [
         "Informar y orientar sobre el proceso de admisión de la EPN",
         "Narrar una anécdota personal del autor",
@@ -28937,7 +28937,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.22-len-022",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.22-len-022",
       "opts": [
         "El mensaje y el código compartido (instrucción clara)",
         "Solo el canal físico",
@@ -28959,7 +28959,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto. - var.23-len-023",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto. - var.23-len-023",
       "opts": [
         "El examen de admisión de la EPN y su preparación",
         "Una novela literaria",
@@ -28967,7 +28967,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -28981,7 +28981,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento? - var.24-len-024",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento? - var.24-len-024",
       "opts": [
         "Informar y orientar sobre el proceso de admisión de la EPN",
         "Narrar una anécdota personal del autor",
@@ -29003,7 +29003,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.25-len-025",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.25-len-025",
       "opts": [
         "El mensaje y el código compartido (instrucción clara)",
         "Solo el canal físico",
@@ -29025,7 +29025,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto. - var.26-len-026",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nIdentifique el referente principal del texto. - var.26-len-026",
       "opts": [
         "El examen de admisión de la EPN y su preparación",
         "Una novela literaria",
@@ -29033,7 +29033,7 @@ window.GUIA_BANK_1000 = {
         "Una receta de cocina"
       ],
       "ans": 0,
-      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El referente es el examen y su preparación; los distractores son referentes ajenos al campo semántico del texto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29047,7 +29047,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento? - var.27-len-027",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\nSegún el texto, ¿cuál es el propósito comunicativo predominante del fragmento? - var.27-len-027",
       "opts": [
         "Informar y orientar sobre el proceso de admisión de la EPN",
         "Narrar una anécdota personal del autor",
@@ -29069,7 +29069,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.28-len-028",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.28-len-028",
       "opts": [
         "El mensaje y el código compartido (instrucción clara)",
         "Solo el canal físico",
@@ -29099,7 +29099,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29143,7 +29143,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29165,7 +29165,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29209,7 +29209,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29231,7 +29231,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29275,7 +29275,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29297,7 +29297,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29341,7 +29341,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29363,7 +29363,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29407,7 +29407,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29429,7 +29429,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29473,7 +29473,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29495,7 +29495,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29539,7 +29539,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29561,7 +29561,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29605,7 +29605,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29627,7 +29627,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29671,7 +29671,7 @@ window.GUIA_BANK_1000 = {
         "Todos los deshonestos son postulantes"
       ],
       "ans": 0,
-      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Celarent: ningún $D$ es $A$, algunos $P$ son $D$, luego algunos $P$ no son $A$. Las otras invierten cuantificadores o el sujeto. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29693,7 +29693,7 @@ window.GUIA_BANK_1000 = {
         "$q\\to p$ es verdadera"
       ],
       "ans": 0,
-      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Modus tollens: de $p\\to q$ y $\\neg q$ se infiere $\\neg p$; afirmar $p$ sería caer en la conversa. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29715,7 +29715,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29729,7 +29729,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Juicios de valor",
-      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte?",
+      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte?",
       "opts": [
         "Juicio de valor subjetivo no verificable",
         "Juicio de hecho verificable con datos",
@@ -29737,7 +29737,7 @@ window.GUIA_BANK_1000 = {
         "Dato estadístico medible"
       ],
       "ans": 0,
-      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" como subjetividad.",
+      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" cómo subjetividad.",
       "maths": [],
       "imgs": []
     },
@@ -29759,7 +29759,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29773,7 +29773,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Juicios de valor",
-      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.60-len-060",
+      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.60-len-060",
       "opts": [
         "Juicio de valor subjetivo no verificable",
         "Juicio de hecho verificable con datos",
@@ -29781,7 +29781,7 @@ window.GUIA_BANK_1000 = {
         "Dato estadístico medible"
       ],
       "ans": 0,
-      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" como subjetividad.",
+      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" cómo subjetividad.",
       "maths": [],
       "imgs": []
     },
@@ -29803,7 +29803,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29817,7 +29817,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Juicios de valor",
-      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.62-len-062",
+      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.62-len-062",
       "opts": [
         "Juicio de valor subjetivo no verificable",
         "Juicio de hecho verificable con datos",
@@ -29825,7 +29825,7 @@ window.GUIA_BANK_1000 = {
         "Dato estadístico medible"
       ],
       "ans": 0,
-      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" como subjetividad.",
+      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" cómo subjetividad.",
       "maths": [],
       "imgs": []
     },
@@ -29847,7 +29847,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29861,7 +29861,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Juicios de valor",
-      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.64-len-064",
+      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.64-len-064",
       "opts": [
         "Juicio de valor subjetivo no verificable",
         "Juicio de hecho verificable con datos",
@@ -29869,7 +29869,7 @@ window.GUIA_BANK_1000 = {
         "Dato estadístico medible"
       ],
       "ans": 0,
-      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" como subjetividad.",
+      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" cómo subjetividad.",
       "maths": [],
       "imgs": []
     },
@@ -29891,7 +29891,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29905,7 +29905,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Juicios de valor",
-      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.66-len-066",
+      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.66-len-066",
       "opts": [
         "Juicio de valor subjetivo no verificable",
         "Juicio de hecho verificable con datos",
@@ -29913,7 +29913,7 @@ window.GUIA_BANK_1000 = {
         "Dato estadístico medible"
       ],
       "ans": 0,
-      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" como subjetividad.",
+      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" cómo subjetividad.",
       "maths": [],
       "imgs": []
     },
@@ -29935,7 +29935,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29949,7 +29949,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Juicios de valor",
-      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.68-len-068",
+      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.68-len-068",
       "opts": [
         "Juicio de valor subjetivo no verificable",
         "Juicio de hecho verificable con datos",
@@ -29957,7 +29957,7 @@ window.GUIA_BANK_1000 = {
         "Dato estadístico medible"
       ],
       "ans": 0,
-      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" como subjetividad.",
+      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" cómo subjetividad.",
       "maths": [],
       "imgs": []
     },
@@ -29979,7 +29979,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -29993,7 +29993,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Juicios de valor",
-      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.70-len-070",
+      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.70-len-070",
       "opts": [
         "Juicio de valor subjetivo no verificable",
         "Juicio de hecho verificable con datos",
@@ -30001,7 +30001,7 @@ window.GUIA_BANK_1000 = {
         "Dato estadístico medible"
       ],
       "ans": 0,
-      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" como subjetividad.",
+      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" cómo subjetividad.",
       "maths": [],
       "imgs": []
     },
@@ -30023,7 +30023,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30037,7 +30037,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Juicios de valor",
-      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.72-len-072",
+      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.72-len-072",
       "opts": [
         "Juicio de valor subjetivo no verificable",
         "Juicio de hecho verificable con datos",
@@ -30045,7 +30045,7 @@ window.GUIA_BANK_1000 = {
         "Dato estadístico medible"
       ],
       "ans": 0,
-      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" como subjetividad.",
+      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" cómo subjetividad.",
       "maths": [],
       "imgs": []
     },
@@ -30067,7 +30067,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30081,7 +30081,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Juicios de valor",
-      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.74-len-074",
+      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.74-len-074",
       "opts": [
         "Juicio de valor subjetivo no verificable",
         "Juicio de hecho verificable con datos",
@@ -30089,7 +30089,7 @@ window.GUIA_BANK_1000 = {
         "Dato estadístico medible"
       ],
       "ans": 0,
-      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" como subjetividad.",
+      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" cómo subjetividad.",
       "maths": [],
       "imgs": []
     },
@@ -30111,7 +30111,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30125,7 +30125,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Juicios de valor",
-      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.76-len-076",
+      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.76-len-076",
       "opts": [
         "Juicio de valor subjetivo no verificable",
         "Juicio de hecho verificable con datos",
@@ -30133,7 +30133,7 @@ window.GUIA_BANK_1000 = {
         "Dato estadístico medible"
       ],
       "ans": 0,
-      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" como subjetividad.",
+      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" cómo subjetividad.",
       "maths": [],
       "imgs": []
     },
@@ -30155,7 +30155,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30169,7 +30169,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Juicios de valor",
-      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.78-len-078",
+      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.78-len-078",
       "opts": [
         "Juicio de valor subjetivo no verificable",
         "Juicio de hecho verificable con datos",
@@ -30177,7 +30177,7 @@ window.GUIA_BANK_1000 = {
         "Dato estadístico medible"
       ],
       "ans": 0,
-      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" como subjetividad.",
+      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" cómo subjetividad.",
       "maths": [],
       "imgs": []
     },
@@ -30199,7 +30199,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30213,7 +30213,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Juicios de valor",
-      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.80-len-080",
+      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.80-len-080",
       "opts": [
         "Juicio de valor subjetivo no verificable",
         "Juicio de hecho verificable con datos",
@@ -30221,7 +30221,7 @@ window.GUIA_BANK_1000 = {
         "Dato estadístico medible"
       ],
       "ans": 0,
-      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" como subjetividad.",
+      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" cómo subjetividad.",
       "maths": [],
       "imgs": []
     },
@@ -30243,7 +30243,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30257,7 +30257,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Juicios de valor",
-      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.82-len-082",
+      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.82-len-082",
       "opts": [
         "Juicio de valor subjetivo no verificable",
         "Juicio de hecho verificable con datos",
@@ -30265,7 +30265,7 @@ window.GUIA_BANK_1000 = {
         "Dato estadístico medible"
       ],
       "ans": 0,
-      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" como subjetividad.",
+      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" cómo subjetividad.",
       "maths": [],
       "imgs": []
     },
@@ -30287,7 +30287,7 @@ window.GUIA_BANK_1000 = {
         "Opinión estética"
       ],
       "ans": 0,
-      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Es un hecho contrastable contra la guía oficial (dato objetivo); no valora ni argumenta. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30301,7 +30301,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Juicios de valor",
-      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.84-len-084",
+      "prompt": "\"La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los as es el mejor sistema del mundo sin comparación.\" ¿Qué tipo de juicio expresa la segunda parte? - var.84-len-084",
       "opts": [
         "Juicio de valor subjetivo no verificable",
         "Juicio de hecho verificable con datos",
@@ -30309,7 +30309,7 @@ window.GUIA_BANK_1000 = {
         "Dato estadístico medible"
       ],
       "ans": 0,
-      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" como subjetividad.",
+      "exp": "\"Mejor sin comparación\" es una valoración superlativa sin criterio operacional ni datos falsables; no es hecho ni definición. Paso 1: distingue hecho (verificable) de valor (apreciación). Paso 2: detecta marcador \"mejor/sin comparación\" cómo subjetividad.",
       "maths": [],
       "imgs": []
     },
@@ -30331,7 +30331,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30353,7 +30353,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30397,7 +30397,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30419,7 +30419,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30463,7 +30463,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30485,7 +30485,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30529,7 +30529,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30551,7 +30551,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30595,7 +30595,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30617,7 +30617,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30661,7 +30661,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30683,7 +30683,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30727,7 +30727,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30749,7 +30749,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30793,7 +30793,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30815,7 +30815,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30859,7 +30859,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30881,7 +30881,7 @@ window.GUIA_BANK_1000 = {
         "Dilema constructivo"
       ],
       "ans": 0,
-      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "De $p\\to q$ y $\\neg p$ no se sigue $\\neg q$ (el consecuente puede ser verdadero por otra razón). Es la falacia de negar el antecedente. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30925,7 +30925,7 @@ window.GUIA_BANK_1000 = {
         "Ad hominem"
       ],
       "ans": 0,
-      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Estructura $p\\to q$, $q$, luego $p$ — inválida; el patio pudo mojarse por otra causa. Modus tollens negaría $q$ para concluir $\\neg p$. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30939,15 +30939,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto?",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto?",
       "opts": [
-        "Tema constante con remas que desarrollan la evaluación y la preparación",
+        "Tema constante con remas qué desarrollan la evaluación y la preparación",
         "Salto temático sin hilo",
         "Solo enumeración sin jerarquía",
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -30961,7 +30961,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos?",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos?",
       "opts": [
         "Por ello",
         "Sin embargo",
@@ -30983,7 +30983,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento?",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento?",
       "opts": [
         "La EPN evalúa con criterios objetivos y la preparación debe ser planificada y crítica",
         "Solo importa la memoria",
@@ -31005,15 +31005,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.116-len-116",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.116-len-116",
       "opts": [
-        "Tema constante con remas que desarrollan la evaluación y la preparación",
+        "Tema constante con remas qué desarrollan la evaluación y la preparación",
         "Salto temático sin hilo",
         "Solo enumeración sin jerarquía",
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31027,7 +31027,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos? - var.117-len-117",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos? - var.117-len-117",
       "opts": [
         "Por ello",
         "Sin embargo",
@@ -31049,7 +31049,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento? - var.118-len-118",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento? - var.118-len-118",
       "opts": [
         "La EPN evalúa con criterios objetivos y la preparación debe ser planificada y crítica",
         "Solo importa la memoria",
@@ -31071,15 +31071,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.119-len-119",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.119-len-119",
       "opts": [
-        "Tema constante con remas que desarrollan la evaluación y la preparación",
+        "Tema constante con remas qué desarrollan la evaluación y la preparación",
         "Salto temático sin hilo",
         "Solo enumeración sin jerarquía",
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31093,7 +31093,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos? - var.120-len-120",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos? - var.120-len-120",
       "opts": [
         "Por ello",
         "Sin embargo",
@@ -31115,7 +31115,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento? - var.121-len-121",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento? - var.121-len-121",
       "opts": [
         "La EPN evalúa con criterios objetivos y la preparación debe ser planificada y crítica",
         "Solo importa la memoria",
@@ -31137,15 +31137,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.122-len-122",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.122-len-122",
       "opts": [
-        "Tema constante con remas que desarrollan la evaluación y la preparación",
+        "Tema constante con remas qué desarrollan la evaluación y la preparación",
         "Salto temático sin hilo",
         "Solo enumeración sin jerarquía",
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31159,7 +31159,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos? - var.123-len-123",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos? - var.123-len-123",
       "opts": [
         "Por ello",
         "Sin embargo",
@@ -31181,7 +31181,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento? - var.124-len-124",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento? - var.124-len-124",
       "opts": [
         "La EPN evalúa con criterios objetivos y la preparación debe ser planificada y crítica",
         "Solo importa la memoria",
@@ -31203,15 +31203,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.125-len-125",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.125-len-125",
       "opts": [
-        "Tema constante con remas que desarrollan la evaluación y la preparación",
+        "Tema constante con remas qué desarrollan la evaluación y la preparación",
         "Salto temático sin hilo",
         "Solo enumeración sin jerarquía",
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31225,7 +31225,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos? - var.126-len-126",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos? - var.126-len-126",
       "opts": [
         "Por ello",
         "Sin embargo",
@@ -31247,7 +31247,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento? - var.127-len-127",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento? - var.127-len-127",
       "opts": [
         "La EPN evalúa con criterios objetivos y la preparación debe ser planificada y crítica",
         "Solo importa la memoria",
@@ -31269,15 +31269,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.128-len-128",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.128-len-128",
       "opts": [
-        "Tema constante con remas que desarrollan la evaluación y la preparación",
+        "Tema constante con remas qué desarrollan la evaluación y la preparación",
         "Salto temático sin hilo",
         "Solo enumeración sin jerarquía",
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31291,7 +31291,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos? - var.129-len-129",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos? - var.129-len-129",
       "opts": [
         "Por ello",
         "Sin embargo",
@@ -31313,7 +31313,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento? - var.130-len-130",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento? - var.130-len-130",
       "opts": [
         "La EPN evalúa con criterios objetivos y la preparación debe ser planificada y crítica",
         "Solo importa la memoria",
@@ -31335,15 +31335,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.131-len-131",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.131-len-131",
       "opts": [
-        "Tema constante con remas que desarrollan la evaluación y la preparación",
+        "Tema constante con remas qué desarrollan la evaluación y la preparación",
         "Salto temático sin hilo",
         "Solo enumeración sin jerarquía",
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31357,7 +31357,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos? - var.132-len-132",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos? - var.132-len-132",
       "opts": [
         "Por ello",
         "Sin embargo",
@@ -31379,7 +31379,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento? - var.133-len-133",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento? - var.133-len-133",
       "opts": [
         "La EPN evalúa con criterios objetivos y la preparación debe ser planificada y crítica",
         "Solo importa la memoria",
@@ -31401,15 +31401,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.134-len-134",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.134-len-134",
       "opts": [
-        "Tema constante con remas que desarrollan la evaluación y la preparación",
+        "Tema constante con remas qué desarrollan la evaluación y la preparación",
         "Salto temático sin hilo",
         "Solo enumeración sin jerarquía",
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31423,7 +31423,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos? - var.135-len-135",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos? - var.135-len-135",
       "opts": [
         "Por ello",
         "Sin embargo",
@@ -31445,7 +31445,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento? - var.136-len-136",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento? - var.136-len-136",
       "opts": [
         "La EPN evalúa con criterios objetivos y la preparación debe ser planificada y crítica",
         "Solo importa la memoria",
@@ -31467,15 +31467,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.137-len-137",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.137-len-137",
       "opts": [
-        "Tema constante con remas que desarrollan la evaluación y la preparación",
+        "Tema constante con remas qué desarrollan la evaluación y la preparación",
         "Salto temático sin hilo",
         "Solo enumeración sin jerarquía",
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31489,7 +31489,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos? - var.138-len-138",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Con qué conector se introduce la consecuencia de evaluar con criterios objetivos? - var.138-len-138",
       "opts": [
         "Por ello",
         "Sin embargo",
@@ -31511,7 +31511,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento? - var.139-len-139",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué idea resume mejor la tesis del fragmento? - var.139-len-139",
       "opts": [
         "La EPN evalúa con criterios objetivos y la preparación debe ser planificada y crítica",
         "Solo importa la memoria",
@@ -31533,15 +31533,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Análisis de textos",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.140-len-140",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué tipo de progresión temática usa el texto? - var.140-len-140",
       "opts": [
-        "Tema constante con remas que desarrollan la evaluación y la preparación",
+        "Tema constante con remas qué desarrollan la evaluación y la preparación",
         "Salto temático sin hilo",
         "Solo enumeración sin jerarquía",
         "Diálogo directo"
       ],
       "ans": 0,
-      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "El tema \"evaluación/preparación EPN\" se mantiene y cada rema lo desarrolla; no hay salto ni solo lista ni diálogo. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31555,15 +31555,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de que \"resolver problemas variados prepara mejor\"?",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de qué \"resolver problemas variados prepara mejor\"?",
       "opts": [
-        "Que los problemas variados sean todos del mismo tipo trivial",
-        "Que los problemas variados incluyan razonamiento",
-        "Que la lectura crítica se practique",
-        "Que el tiempo se planifique"
+        "Qué los problemas variados sean todos del mismo tipo trivial",
+        "Qué los problemas variados incluyan razonamiento",
+        "Qué la lectura crítica se practique",
+        "Qué el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31577,7 +31577,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica?",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica?",
       "opts": [
         "La comprensión lectora es entrenable y mejora el desempeño en el examen",
         "La memoria mecánica es suficiente para todo",
@@ -31585,7 +31585,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone qué la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -31599,15 +31599,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de que \"resolver problemas variados prepara mejor\"? - var.143-len-143",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de qué \"resolver problemas variados prepara mejor\"? - var.143-len-143",
       "opts": [
-        "Que los problemas variados sean todos del mismo tipo trivial",
-        "Que los problemas variados incluyan razonamiento",
-        "Que la lectura crítica se practique",
-        "Que el tiempo se planifique"
+        "Qué los problemas variados sean todos del mismo tipo trivial",
+        "Qué los problemas variados incluyan razonamiento",
+        "Qué la lectura crítica se practique",
+        "Qué el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31621,7 +31621,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.144-len-144",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.144-len-144",
       "opts": [
         "La comprensión lectora es entrenable y mejora el desempeño en el examen",
         "La memoria mecánica es suficiente para todo",
@@ -31629,7 +31629,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone qué la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -31643,15 +31643,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de que \"resolver problemas variados prepara mejor\"? - var.145-len-145",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de qué \"resolver problemas variados prepara mejor\"? - var.145-len-145",
       "opts": [
-        "Que los problemas variados sean todos del mismo tipo trivial",
-        "Que los problemas variados incluyan razonamiento",
-        "Que la lectura crítica se practique",
-        "Que el tiempo se planifique"
+        "Qué los problemas variados sean todos del mismo tipo trivial",
+        "Qué los problemas variados incluyan razonamiento",
+        "Qué la lectura crítica se practique",
+        "Qué el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31665,7 +31665,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.146-len-146",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.146-len-146",
       "opts": [
         "La comprensión lectora es entrenable y mejora el desempeño en el examen",
         "La memoria mecánica es suficiente para todo",
@@ -31673,7 +31673,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone qué la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -31687,15 +31687,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de que \"resolver problemas variados prepara mejor\"? - var.147-len-147",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de qué \"resolver problemas variados prepara mejor\"? - var.147-len-147",
       "opts": [
-        "Que los problemas variados sean todos del mismo tipo trivial",
-        "Que los problemas variados incluyan razonamiento",
-        "Que la lectura crítica se practique",
-        "Que el tiempo se planifique"
+        "Qué los problemas variados sean todos del mismo tipo trivial",
+        "Qué los problemas variados incluyan razonamiento",
+        "Qué la lectura crítica se practique",
+        "Qué el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31709,7 +31709,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.148-len-148",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.148-len-148",
       "opts": [
         "La comprensión lectora es entrenable y mejora el desempeño en el examen",
         "La memoria mecánica es suficiente para todo",
@@ -31717,7 +31717,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone qué la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -31731,15 +31731,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de que \"resolver problemas variados prepara mejor\"? - var.149-len-149",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de qué \"resolver problemas variados prepara mejor\"? - var.149-len-149",
       "opts": [
-        "Que los problemas variados sean todos del mismo tipo trivial",
-        "Que los problemas variados incluyan razonamiento",
-        "Que la lectura crítica se practique",
-        "Que el tiempo se planifique"
+        "Qué los problemas variados sean todos del mismo tipo trivial",
+        "Qué los problemas variados incluyan razonamiento",
+        "Qué la lectura crítica se practique",
+        "Qué el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31753,7 +31753,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.150-len-150",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.150-len-150",
       "opts": [
         "La comprensión lectora es entrenable y mejora el desempeño en el examen",
         "La memoria mecánica es suficiente para todo",
@@ -31761,7 +31761,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone qué la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -31775,15 +31775,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de que \"resolver problemas variados prepara mejor\"? - var.151-len-151",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de qué \"resolver problemas variados prepara mejor\"? - var.151-len-151",
       "opts": [
-        "Que los problemas variados sean todos del mismo tipo trivial",
-        "Que los problemas variados incluyan razonamiento",
-        "Que la lectura crítica se practique",
-        "Que el tiempo se planifique"
+        "Qué los problemas variados sean todos del mismo tipo trivial",
+        "Qué los problemas variados incluyan razonamiento",
+        "Qué la lectura crítica se practique",
+        "Qué el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31797,7 +31797,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.152-len-152",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.152-len-152",
       "opts": [
         "La comprensión lectora es entrenable y mejora el desempeño en el examen",
         "La memoria mecánica es suficiente para todo",
@@ -31805,7 +31805,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone qué la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -31819,15 +31819,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de que \"resolver problemas variados prepara mejor\"? - var.153-len-153",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de qué \"resolver problemas variados prepara mejor\"? - var.153-len-153",
       "opts": [
-        "Que los problemas variados sean todos del mismo tipo trivial",
-        "Que los problemas variados incluyan razonamiento",
-        "Que la lectura crítica se practique",
-        "Que el tiempo se planifique"
+        "Qué los problemas variados sean todos del mismo tipo trivial",
+        "Qué los problemas variados incluyan razonamiento",
+        "Qué la lectura crítica se practique",
+        "Qué el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31841,7 +31841,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.154-len-154",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.154-len-154",
       "opts": [
         "La comprensión lectora es entrenable y mejora el desempeño en el examen",
         "La memoria mecánica es suficiente para todo",
@@ -31849,7 +31849,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone qué la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -31863,15 +31863,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de que \"resolver problemas variados prepara mejor\"? - var.155-len-155",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de qué \"resolver problemas variados prepara mejor\"? - var.155-len-155",
       "opts": [
-        "Que los problemas variados sean todos del mismo tipo trivial",
-        "Que los problemas variados incluyan razonamiento",
-        "Que la lectura crítica se practique",
-        "Que el tiempo se planifique"
+        "Qué los problemas variados sean todos del mismo tipo trivial",
+        "Qué los problemas variados incluyan razonamiento",
+        "Qué la lectura crítica se practique",
+        "Qué el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31885,7 +31885,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.156-len-156",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.156-len-156",
       "opts": [
         "La comprensión lectora es entrenable y mejora el desempeño en el examen",
         "La memoria mecánica es suficiente para todo",
@@ -31893,7 +31893,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone qué la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -31907,15 +31907,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de que \"resolver problemas variados prepara mejor\"? - var.157-len-157",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de qué \"resolver problemas variados prepara mejor\"? - var.157-len-157",
       "opts": [
-        "Que los problemas variados sean todos del mismo tipo trivial",
-        "Que los problemas variados incluyan razonamiento",
-        "Que la lectura crítica se practique",
-        "Que el tiempo se planifique"
+        "Qué los problemas variados sean todos del mismo tipo trivial",
+        "Qué los problemas variados incluyan razonamiento",
+        "Qué la lectura crítica se practique",
+        "Qué el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31929,7 +31929,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.158-len-158",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.158-len-158",
       "opts": [
         "La comprensión lectora es entrenable y mejora el desempeño en el examen",
         "La memoria mecánica es suficiente para todo",
@@ -31937,7 +31937,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone qué la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -31951,15 +31951,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de que \"resolver problemas variados prepara mejor\"? - var.159-len-159",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de qué \"resolver problemas variados prepara mejor\"? - var.159-len-159",
       "opts": [
-        "Que los problemas variados sean todos del mismo tipo trivial",
-        "Que los problemas variados incluyan razonamiento",
-        "Que la lectura crítica se practique",
-        "Que el tiempo se planifique"
+        "Qué los problemas variados sean todos del mismo tipo trivial",
+        "Qué los problemas variados incluyan razonamiento",
+        "Qué la lectura crítica se practique",
+        "Qué el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -31973,7 +31973,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.160-len-160",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.160-len-160",
       "opts": [
         "La comprensión lectora es entrenable y mejora el desempeño en el examen",
         "La memoria mecánica es suficiente para todo",
@@ -31981,7 +31981,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone qué la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -31995,15 +31995,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de que \"resolver problemas variados prepara mejor\"? - var.161-len-161",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de qué \"resolver problemas variados prepara mejor\"? - var.161-len-161",
       "opts": [
-        "Que los problemas variados sean todos del mismo tipo trivial",
-        "Que los problemas variados incluyan razonamiento",
-        "Que la lectura crítica se practique",
-        "Que el tiempo se planifique"
+        "Qué los problemas variados sean todos del mismo tipo trivial",
+        "Qué los problemas variados incluyan razonamiento",
+        "Qué la lectura crítica se practique",
+        "Qué el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -32017,7 +32017,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.162-len-162",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.162-len-162",
       "opts": [
         "La comprensión lectora es entrenable y mejora el desempeño en el examen",
         "La memoria mecánica es suficiente para todo",
@@ -32025,7 +32025,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone qué la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -32039,15 +32039,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de que \"resolver problemas variados prepara mejor\"? - var.163-len-163",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de qué \"resolver problemas variados prepara mejor\"? - var.163-len-163",
       "opts": [
-        "Que los problemas variados sean todos del mismo tipo trivial",
-        "Que los problemas variados incluyan razonamiento",
-        "Que la lectura crítica se practique",
-        "Que el tiempo se planifique"
+        "Qué los problemas variados sean todos del mismo tipo trivial",
+        "Qué los problemas variados incluyan razonamiento",
+        "Qué la lectura crítica se practique",
+        "Qué el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -32061,7 +32061,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.164-len-164",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.164-len-164",
       "opts": [
         "La comprensión lectora es entrenable y mejora el desempeño en el examen",
         "La memoria mecánica es suficiente para todo",
@@ -32069,7 +32069,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone qué la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -32083,15 +32083,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de que \"resolver problemas variados prepara mejor\"? - var.165-len-165",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de qué \"resolver problemas variados prepara mejor\"? - var.165-len-165",
       "opts": [
-        "Que los problemas variados sean todos del mismo tipo trivial",
-        "Que los problemas variados incluyan razonamiento",
-        "Que la lectura crítica se practique",
-        "Que el tiempo se planifique"
+        "Qué los problemas variados sean todos del mismo tipo trivial",
+        "Qué los problemas variados incluyan razonamiento",
+        "Qué la lectura crítica se practique",
+        "Qué el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -32105,7 +32105,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.166-len-166",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.166-len-166",
       "opts": [
         "La comprensión lectora es entrenable y mejora el desempeño en el examen",
         "La memoria mecánica es suficiente para todo",
@@ -32113,7 +32113,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone qué la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -32127,15 +32127,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de que \"resolver problemas variados prepara mejor\"? - var.167-len-167",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué objeción pondría en duda la conclusión de qué \"resolver problemas variados prepara mejor\"? - var.167-len-167",
       "opts": [
-        "Que los problemas variados sean todos del mismo tipo trivial",
-        "Que los problemas variados incluyan razonamiento",
-        "Que la lectura crítica se practique",
-        "Que el tiempo se planifique"
+        "Qué los problemas variados sean todos del mismo tipo trivial",
+        "Qué los problemas variados incluyan razonamiento",
+        "Qué la lectura crítica se practique",
+        "Qué el tiempo se planifique"
       ],
       "ans": 0,
-      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Si \"variados\" no es variado (mismo tipo trivial), la premisa se vacía y la conclusión cae; las otras la fortalecen. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -32149,7 +32149,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l2",
       "t": "Lectura crítica",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.168-len-168",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué supuesto no dicho sostiene la recomendación de practicar lectura crítica? - var.168-len-168",
       "opts": [
         "La comprensión lectora es entrenable y mejora el desempeño en el examen",
         "La memoria mecánica es suficiente para todo",
@@ -32157,7 +32157,7 @@ window.GUIA_BANK_1000 = {
         "No hace falta planificar el estudio"
       ],
       "ans": 0,
-      "exp": "Paso desde cero: Recomendar práctica presupone que la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
+      "exp": "Paso desde cero: Recomendar práctica presupone qué la habilidad es mejorable y transferible al examen; las otras opciones contradicen \"no solo memoria\" y \"planificar\".",
       "maths": [],
       "imgs": []
     },
@@ -32179,7 +32179,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") qué presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -32223,7 +32223,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") qué presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -32267,7 +32267,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") qué presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -32311,7 +32311,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") qué presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -32355,7 +32355,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") qué presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -32399,7 +32399,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") qué presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -32443,7 +32443,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") qué presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -32487,7 +32487,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") qué presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -32531,7 +32531,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") qué presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -32575,7 +32575,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") qué presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -32619,7 +32619,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") qué presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -32663,7 +32663,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") qué presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -32707,7 +32707,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") qué presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -32751,7 +32751,7 @@ window.GUIA_BANK_1000 = {
         "Este criterio garantiza equidad."
       ],
       "ans": 0,
-      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") que presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
+      "exp": "Paso desde cero: La oración más general y tópica va primero; las otras son consecuencia, cierre o referencia anafórica (\"este criterio\") qué presupone antecedente. Las opciones incorrectas corresponden a errores frecuentes: signo, factor o unidad mal aplicados. Si dominas estos pasos, puedes resolver cualquier variante del mismo tema.",
       "maths": [],
       "imgs": []
     },
@@ -32787,7 +32787,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Falacias",
-      "prompt": "\"Todos los que conozco reprobaron, así que todos reprobarán.\" ¿Qué falacia es?",
+      "prompt": "\"Todos los qué conozco reprobaron, así qué todos reprobarán.\" ¿Qué falacia es?",
       "opts": [
         "Generalización apresurada",
         "Falso dilema",
@@ -32817,7 +32817,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -32839,7 +32839,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -32853,7 +32853,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Falacias",
-      "prompt": "\"Todos los que conozco reprobaron, así que todos reprobarán.\" ¿Qué falacia es? - var.200-len-200",
+      "prompt": "\"Todos los qué conozco reprobaron, así qué todos reprobarán.\" ¿Qué falacia es? - var.200-len-200",
       "opts": [
         "Generalización apresurada",
         "Falso dilema",
@@ -32883,7 +32883,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -32905,7 +32905,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -32919,7 +32919,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Falacias",
-      "prompt": "\"Todos los que conozco reprobaron, así que todos reprobarán.\" ¿Qué falacia es? - var.203-len-203",
+      "prompt": "\"Todos los qué conozco reprobaron, así qué todos reprobarán.\" ¿Qué falacia es? - var.203-len-203",
       "opts": [
         "Generalización apresurada",
         "Falso dilema",
@@ -32949,7 +32949,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -32971,7 +32971,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -32985,7 +32985,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Falacias",
-      "prompt": "\"Todos los que conozco reprobaron, así que todos reprobarán.\" ¿Qué falacia es? - var.206-len-206",
+      "prompt": "\"Todos los qué conozco reprobaron, así qué todos reprobarán.\" ¿Qué falacia es? - var.206-len-206",
       "opts": [
         "Generalización apresurada",
         "Falso dilema",
@@ -33015,7 +33015,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33037,7 +33037,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33051,7 +33051,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Falacias",
-      "prompt": "\"Todos los que conozco reprobaron, así que todos reprobarán.\" ¿Qué falacia es? - var.209-len-209",
+      "prompt": "\"Todos los qué conozco reprobaron, así qué todos reprobarán.\" ¿Qué falacia es? - var.209-len-209",
       "opts": [
         "Generalización apresurada",
         "Falso dilema",
@@ -33081,7 +33081,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33103,7 +33103,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33117,7 +33117,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Falacias",
-      "prompt": "\"Todos los que conozco reprobaron, así que todos reprobarán.\" ¿Qué falacia es? - var.212-len-212",
+      "prompt": "\"Todos los qué conozco reprobaron, así qué todos reprobarán.\" ¿Qué falacia es? - var.212-len-212",
       "opts": [
         "Generalización apresurada",
         "Falso dilema",
@@ -33147,7 +33147,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33169,7 +33169,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33183,7 +33183,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Falacias",
-      "prompt": "\"Todos los que conozco reprobaron, así que todos reprobarán.\" ¿Qué falacia es? - var.215-len-215",
+      "prompt": "\"Todos los qué conozco reprobaron, así qué todos reprobarán.\" ¿Qué falacia es? - var.215-len-215",
       "opts": [
         "Generalización apresurada",
         "Falso dilema",
@@ -33213,7 +33213,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33235,7 +33235,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33249,7 +33249,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Falacias",
-      "prompt": "\"Todos los que conozco reprobaron, así que todos reprobarán.\" ¿Qué falacia es? - var.218-len-218",
+      "prompt": "\"Todos los qué conozco reprobaron, así qué todos reprobarán.\" ¿Qué falacia es? - var.218-len-218",
       "opts": [
         "Generalización apresurada",
         "Falso dilema",
@@ -33279,7 +33279,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33301,7 +33301,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33315,7 +33315,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Falacias",
-      "prompt": "\"Todos los que conozco reprobaron, así que todos reprobarán.\" ¿Qué falacia es? - var.221-len-221",
+      "prompt": "\"Todos los qué conozco reprobaron, así qué todos reprobarán.\" ¿Qué falacia es? - var.221-len-221",
       "opts": [
         "Generalización apresurada",
         "Falso dilema",
@@ -33345,7 +33345,7 @@ window.GUIA_BANK_1000 = {
         "Generalización apresurada"
       ],
       "ans": 0,
-      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Se descalifica a la persona (vestimenta) en vez de refutar razones de la propuesta: ad hominem circunstancial. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33367,7 +33367,7 @@ window.GUIA_BANK_1000 = {
         "Equívoco"
       ],
       "ans": 0,
-      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "Inferir causa solo de sucesión temporal sin mecanismo ni control es post hoc ergo propter hoc. Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33381,7 +33381,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Falacias",
-      "prompt": "\"Todos los que conozco reprobaron, así que todos reprobarán.\" ¿Qué falacia es? - var.224-len-224",
+      "prompt": "\"Todos los qué conozco reprobaron, así qué todos reprobarán.\" ¿Qué falacia es? - var.224-len-224",
       "opts": [
         "Generalización apresurada",
         "Falso dilema",
@@ -33405,7 +33405,7 @@ window.GUIA_BANK_1000 = {
       "t": "Puntuación",
       "prompt": "Elija la oración correcta según concordancia y norma de \"haber\" impersonal:",
       "opts": [
-        "Hubo muchos aspirantes que llegaron a tiempo.",
+        "Hubo muchos aspirantes qué llegaron a tiempo.",
         "Hubieron muchos aspirantes",
         "Habían mucho aspirante",
         "Hubieron habido muchos"
@@ -33447,15 +33447,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Puntuación",
-      "prompt": "Elija la subordinada con \"que\" correcta (sin queísmo ni dequeísmo):",
+      "prompt": "Elija la subordinada con \"qué\" correcta (sin queísmo ni dequeísmo):",
       "opts": [
-        "Me alegro de que hayas venido.",
-        "Me alegro que hayas venido.",
-        "Pienso de que es tarde.",
-        "Estoy seguro de que que vienes."
+        "Me alegro de qué hayas venido.",
+        "Me alegro qué hayas venido.",
+        "Pienso de qué es tarde.",
+        "Estoy seguro de qué qué vienes."
       ],
       "ans": 0,
-      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "\"Alegrarse de qué\" exige preposición (queísmo si falta); \"pensar qué\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33471,7 +33471,7 @@ window.GUIA_BANK_1000 = {
       "t": "Puntuación",
       "prompt": "Elija la oración correcta según concordancia y norma de \"haber\" impersonal: - var.228-len-228",
       "opts": [
-        "Hubo muchos aspirantes que llegaron a tiempo.",
+        "Hubo muchos aspirantes qué llegaron a tiempo.",
         "Hubieron muchos aspirantes",
         "Habían mucho aspirante",
         "Hubieron habido muchos"
@@ -33513,15 +33513,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Puntuación",
-      "prompt": "Elija la subordinada con \"que\" correcta (sin queísmo ni dequeísmo): - var.230-len-230",
+      "prompt": "Elija la subordinada con \"qué\" correcta (sin queísmo ni dequeísmo): - var.230-len-230",
       "opts": [
-        "Me alegro de que hayas venido.",
-        "Me alegro que hayas venido.",
-        "Pienso de que es tarde.",
-        "Estoy seguro de que que vienes."
+        "Me alegro de qué hayas venido.",
+        "Me alegro qué hayas venido.",
+        "Pienso de qué es tarde.",
+        "Estoy seguro de qué qué vienes."
       ],
       "ans": 0,
-      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "\"Alegrarse de qué\" exige preposición (queísmo si falta); \"pensar qué\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33537,7 +33537,7 @@ window.GUIA_BANK_1000 = {
       "t": "Puntuación",
       "prompt": "Elija la oración correcta según concordancia y norma de \"haber\" impersonal: - var.231-len-231",
       "opts": [
-        "Hubo muchos aspirantes que llegaron a tiempo.",
+        "Hubo muchos aspirantes qué llegaron a tiempo.",
         "Hubieron muchos aspirantes",
         "Habían mucho aspirante",
         "Hubieron habido muchos"
@@ -33579,15 +33579,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Puntuación",
-      "prompt": "Elija la subordinada con \"que\" correcta (sin queísmo ni dequeísmo): - var.233-len-233",
+      "prompt": "Elija la subordinada con \"qué\" correcta (sin queísmo ni dequeísmo): - var.233-len-233",
       "opts": [
-        "Me alegro de que hayas venido.",
-        "Me alegro que hayas venido.",
-        "Pienso de que es tarde.",
-        "Estoy seguro de que que vienes."
+        "Me alegro de qué hayas venido.",
+        "Me alegro qué hayas venido.",
+        "Pienso de qué es tarde.",
+        "Estoy seguro de qué qué vienes."
       ],
       "ans": 0,
-      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "\"Alegrarse de qué\" exige preposición (queísmo si falta); \"pensar qué\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33603,7 +33603,7 @@ window.GUIA_BANK_1000 = {
       "t": "Puntuación",
       "prompt": "Elija la oración correcta según concordancia y norma de \"haber\" impersonal: - var.234-len-234",
       "opts": [
-        "Hubo muchos aspirantes que llegaron a tiempo.",
+        "Hubo muchos aspirantes qué llegaron a tiempo.",
         "Hubieron muchos aspirantes",
         "Habían mucho aspirante",
         "Hubieron habido muchos"
@@ -33645,15 +33645,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Puntuación",
-      "prompt": "Elija la subordinada con \"que\" correcta (sin queísmo ni dequeísmo): - var.236-len-236",
+      "prompt": "Elija la subordinada con \"qué\" correcta (sin queísmo ni dequeísmo): - var.236-len-236",
       "opts": [
-        "Me alegro de que hayas venido.",
-        "Me alegro que hayas venido.",
-        "Pienso de que es tarde.",
-        "Estoy seguro de que que vienes."
+        "Me alegro de qué hayas venido.",
+        "Me alegro qué hayas venido.",
+        "Pienso de qué es tarde.",
+        "Estoy seguro de qué qué vienes."
       ],
       "ans": 0,
-      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "\"Alegrarse de qué\" exige preposición (queísmo si falta); \"pensar qué\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33669,7 +33669,7 @@ window.GUIA_BANK_1000 = {
       "t": "Puntuación",
       "prompt": "Elija la oración correcta según concordancia y norma de \"haber\" impersonal: - var.237-len-237",
       "opts": [
-        "Hubo muchos aspirantes que llegaron a tiempo.",
+        "Hubo muchos aspirantes qué llegaron a tiempo.",
         "Hubieron muchos aspirantes",
         "Habían mucho aspirante",
         "Hubieron habido muchos"
@@ -33711,15 +33711,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Puntuación",
-      "prompt": "Elija la subordinada con \"que\" correcta (sin queísmo ni dequeísmo): - var.239-len-239",
+      "prompt": "Elija la subordinada con \"qué\" correcta (sin queísmo ni dequeísmo): - var.239-len-239",
       "opts": [
-        "Me alegro de que hayas venido.",
-        "Me alegro que hayas venido.",
-        "Pienso de que es tarde.",
-        "Estoy seguro de que que vienes."
+        "Me alegro de qué hayas venido.",
+        "Me alegro qué hayas venido.",
+        "Pienso de qué es tarde.",
+        "Estoy seguro de qué qué vienes."
       ],
       "ans": 0,
-      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "\"Alegrarse de qué\" exige preposición (queísmo si falta); \"pensar qué\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33735,7 +33735,7 @@ window.GUIA_BANK_1000 = {
       "t": "Puntuación",
       "prompt": "Elija la oración correcta según concordancia y norma de \"haber\" impersonal: - var.240-len-240",
       "opts": [
-        "Hubo muchos aspirantes que llegaron a tiempo.",
+        "Hubo muchos aspirantes qué llegaron a tiempo.",
         "Hubieron muchos aspirantes",
         "Habían mucho aspirante",
         "Hubieron habido muchos"
@@ -33777,15 +33777,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Puntuación",
-      "prompt": "Elija la subordinada con \"que\" correcta (sin queísmo ni dequeísmo): - var.242-len-242",
+      "prompt": "Elija la subordinada con \"qué\" correcta (sin queísmo ni dequeísmo): - var.242-len-242",
       "opts": [
-        "Me alegro de que hayas venido.",
-        "Me alegro que hayas venido.",
-        "Pienso de que es tarde.",
-        "Estoy seguro de que que vienes."
+        "Me alegro de qué hayas venido.",
+        "Me alegro qué hayas venido.",
+        "Pienso de qué es tarde.",
+        "Estoy seguro de qué qué vienes."
       ],
       "ans": 0,
-      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "\"Alegrarse de qué\" exige preposición (queísmo si falta); \"pensar qué\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33801,7 +33801,7 @@ window.GUIA_BANK_1000 = {
       "t": "Puntuación",
       "prompt": "Elija la oración correcta según concordancia y norma de \"haber\" impersonal: - var.243-len-243",
       "opts": [
-        "Hubo muchos aspirantes que llegaron a tiempo.",
+        "Hubo muchos aspirantes qué llegaron a tiempo.",
         "Hubieron muchos aspirantes",
         "Habían mucho aspirante",
         "Hubieron habido muchos"
@@ -33843,15 +33843,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Puntuación",
-      "prompt": "Elija la subordinada con \"que\" correcta (sin queísmo ni dequeísmo): - var.245-len-245",
+      "prompt": "Elija la subordinada con \"qué\" correcta (sin queísmo ni dequeísmo): - var.245-len-245",
       "opts": [
-        "Me alegro de que hayas venido.",
-        "Me alegro que hayas venido.",
-        "Pienso de que es tarde.",
-        "Estoy seguro de que que vienes."
+        "Me alegro de qué hayas venido.",
+        "Me alegro qué hayas venido.",
+        "Pienso de qué es tarde.",
+        "Estoy seguro de qué qué vienes."
       ],
       "ans": 0,
-      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "\"Alegrarse de qué\" exige preposición (queísmo si falta); \"pensar qué\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33867,7 +33867,7 @@ window.GUIA_BANK_1000 = {
       "t": "Puntuación",
       "prompt": "Elija la oración correcta según concordancia y norma de \"haber\" impersonal: - var.246-len-246",
       "opts": [
-        "Hubo muchos aspirantes que llegaron a tiempo.",
+        "Hubo muchos aspirantes qué llegaron a tiempo.",
         "Hubieron muchos aspirantes",
         "Habían mucho aspirante",
         "Hubieron habido muchos"
@@ -33909,15 +33909,15 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l3",
       "t": "Puntuación",
-      "prompt": "Elija la subordinada con \"que\" correcta (sin queísmo ni dequeísmo): - var.248-len-248",
+      "prompt": "Elija la subordinada con \"qué\" correcta (sin queísmo ni dequeísmo): - var.248-len-248",
       "opts": [
-        "Me alegro de que hayas venido.",
-        "Me alegro que hayas venido.",
-        "Pienso de que es tarde.",
-        "Estoy seguro de que que vienes."
+        "Me alegro de qué hayas venido.",
+        "Me alegro qué hayas venido.",
+        "Pienso de qué es tarde.",
+        "Estoy seguro de qué qué vienes."
       ],
       "ans": 0,
-      "exp": "\"Alegrarse de que\" exige preposición (queísmo si falta); \"pensar que\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones que el texto no sostiene o que confunden dos nociones cercanas.",
+      "exp": "\"Alegrarse de qué\" exige preposición (queísmo si falta); \"pensar qué\" la rechaza (dequeísmo si sobra). Desde cero: lee el texto completo, subraya la tesis y los conectores, distingue hecho de valor y tesis de argumento, y descarta opciones qué el texto no sostiene o qué confunden dos nociones cercanas.",
       "maths": [],
       "imgs": []
     },
@@ -33933,7 +33933,7 @@ window.GUIA_BANK_1000 = {
       "t": "Puntuación",
       "prompt": "Elija la oración correcta según concordancia y norma de \"haber\" impersonal: - var.249-len-249",
       "opts": [
-        "Hubo muchos aspirantes que llegaron a tiempo.",
+        "Hubo muchos aspirantes qué llegaron a tiempo.",
         "Hubieron muchos aspirantes",
         "Habían mucho aspirante",
         "Hubieron habido muchos"
@@ -33953,7 +33953,7 @@ window.GUIA_BANK_1000 = {
       ],
       "ch": "l1",
       "t": "Comunicación",
-      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar que los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.250-len-250",
+      "prompt": "La EPN evalúa la admisión con criterios objetivos y equitativos para garantizar qué los aspirantes posean las bases científicas necesarias. El examen mide razonamiento algebraico y comprensión lectora, no solo memoria. Por ello la guía recomienda planificar el estudio, resolver problemas variados y practicar lectura crítica con textos académicos.\n\n¿Qué elemento de la comunicación destaca cuando la guía recomienda \"resolver problemas variados\"? - var.250-len-250",
       "opts": [
         "El mensaje y el código compartido (instrucción clara)",
         "Solo el canal físico",

@@ -776,6 +776,7 @@ function inlineMd(s){
     .replace(/\*\*([^*]+)\*\*/g,'<b>$1</b>')
     .replace(/(^|[^*\w])\*([^*]+)\*/g,'$1<i>$2</i>')
     .replace(/`([^`]+)`/g,'<code>$1</code>')
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g,'<a href="$2" target="_blank" rel="noopener">$1</a>')
     .replace(/&lt;br\s*\/?&gt;/g,'<br>')
     .replace(/--&gt;|\u2013&gt;/g,'\u2192');
   return txt.replace(/\u0000(\d+)\u0000/g, function(_,i){ return tex(math[+i]); });
@@ -785,6 +786,14 @@ function quoteClass(t){
   var s = t.toLowerCase();
   if(s.indexOf('analog')>=0 || s.indexOf('truco')>=0 || s.indexOf('regla')>=0 || s.indexOf('idea clave')>=0) return ' class="tip"';
   if(s.indexOf('error')>=0 || s.indexOf('cuidado')>=0 || s.indexOf('ojo')>=0 || s.indexOf('trampa')>=0) return ' class="warn"';
+  return '';
+}
+function lookupFig(name){
+  var regs = [window.FIG_FILTRO, window.FIG_FIS, window.FIG_QUI, window.FIG_LEN];
+  for (var i = 0; i < regs.length; i++) {
+    var reg = regs[i];
+    if (reg && reg[name]) return reg[name]();
+  }
   return '';
 }
 function md(src){
@@ -797,7 +806,7 @@ function md(src){
     if(figM){
       flush();
       var figName = figM[1];
-      var figSvg = (window.FIG_FILTRO && window.FIG_FILTRO[figName]) ? window.FIG_FILTRO[figName]() : '';
+      var figSvg = lookupFig(figName);
       if(!figSvg && window.FIGR && window.FIGR[figName]) figSvg = window.FIGR[figName]({});
       if(figSvg) out += '<div class="figure filtro-fig">'+figSvg+'</div>';
       i++; continue;
@@ -3682,6 +3691,7 @@ function verifyPin(inputPin) {
 }
 
 function cloudSync() {
+  if (location && (location.hostname === '127.0.0.1' || location.hostname === 'localhost')) return;
   if (!isPinAuthenticated()) return;
   var pin = SECURITY_PIN;
   
@@ -3809,6 +3819,7 @@ function cloudSync() {
 }
 
 function pushCloudState() {
+  if (location && (location.hostname === '127.0.0.1' || location.hostname === 'localhost')) return;
   if (!isPinAuthenticated()) return;
   var activePayload = null;
   try{
@@ -4620,7 +4631,7 @@ document.addEventListener('click', function(e){
     case 'openrecdel': break;
   }
 });
-window.addEventListener('beforeunload', function(e){ if(inProgress()){ try{ saveActive(); if(isPinAuthenticated()){ navigator.sendBeacon && navigator.sendBeacon('/api/sync?pin='+SECURITY_PIN, JSON.stringify({data:{hist:HIST, seen:SEEN, seen1000:SEEN1000, cfg:cfg, active:serializeAttempt(S.attempt)}})); } }catch(err){} e.preventDefault(); e.returnValue=''; } });
+window.addEventListener('beforeunload', function(e){ if(inProgress() && location.hostname !== '127.0.0.1' && location.hostname !== 'localhost'){ try{ saveActive(); if(isPinAuthenticated()){ navigator.sendBeacon && navigator.sendBeacon('/api/sync?pin='+SECURITY_PIN, JSON.stringify({data:{hist:HIST, seen:SEEN, seen1000:SEEN1000, cfg:cfg, active:serializeAttempt(S.attempt)}})); } }catch(err){} e.preventDefault(); e.returnValue=''; } });
 window.addEventListener('visibilitychange', function(){ if(document.visibilityState==='hidden' && S.attempt && !S.attempt.finished && !S.attempt.historic){ saveActive(); if(isPinAuthenticated()) pushCloudState(); } });
 // Hook global: cada interacción relevante persiste el intento (F5-safe, sin coste perceptible)
 document.addEventListener('click', function(e){

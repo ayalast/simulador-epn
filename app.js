@@ -189,28 +189,7 @@
 var tex = window.tex;
 
 
-/* ---------- Auto-Recuperación y Migración del Progreso v3 ---------- */
-(function checkAndRestoreProgress(){
-  try {
-    var storedHist = JSON.parse(localStorage.getItem('epn_hist_v1') || '[]');
-    var fallbackAttempts = [{"id":"a1785636284779","ts":1785636284779,"course":"mat","level":"medio","min":30,"durMs":824463,"n":9,"score":6,"qs":[{"k":"mat","i":12,"sel":0},{"k":"mat","i":45,"sel":1},{"k":"mat","i":78,"sel":2},{"k":"mat","i":91,"sel":3},{"k":"mat","i":105,"sel":0},{"k":"mat","i":112,"sel":1},{"k":"mat","i":124,"sel":2},{"k":"mat","i":133,"sel":0},{"k":"mat","i":140,"sel":1}]},{"id":"a1785627344779","ts":1785627344779,"course":"mat","level":"medio","min":30,"durMs":672014,"n":9,"score":5,"qs":[{"k":"mat","i":107,"sel":2},{"k":"mat","i":69,"sel":3},{"k":"mat","i":80,"sel":1},{"k":"mat","i":83,"sel":0},{"k":"mat","i":96,"sel":0},{"k":"mat","i":71,"sel":0},{"k":"mat","i":11,"sel":2},{"k":"mat","i":98,"sel":0},{"k":"mat","i":59,"sel":2}]}];
-    var ids = {};
-    storedHist.forEach(function(r){ if(r && r.id) ids[r.id] = 1; });
-    var added = false;
-    fallbackAttempts.forEach(function(r){
-      if(!ids[r.id]){
-        storedHist.push(r);
-        ids[r.id] = 1;
-        added = true;
-      }
-    });
-    if(added){
-      storedHist.sort(function(a,b){ return a.ts - b.ts; });
-      localStorage.setItem('epn_hist_v1', JSON.stringify(storedHist));
-      console.log('EPN 2026-B: Progreso v3 migrado automáticamente.');
-    }
-  } catch(e) { console.error('Error al verificar migración:', e); }
-})();
+/* El historial real vive en localStorage + KV. No se inyectan intentos de ejemplo. */
 
 
 /* =====================================================================
@@ -564,7 +543,7 @@ function theoryBook(){
   return (S.area === 'guia' && GUIA_THEORY && GUIA_THEORY.length) ? GUIA_THEORY : THEORY;
 }
 function isGuia(){ return S.area === 'guia'; }
-function guiaLearnOrder(){ return ['mat','fis','qui','len','gen']; }
+function guiaLearnOrder(){ return ['filtro','mat','fis','qui','len','gen']; }
 var GUIA_WORKSHOPS = [
   {k:'mat', code:'4.1', title:'Talleres de Matemática', items:[
     {id:'gw-m1', code:'4.1.1', t:'Fundamentos de Álgebra'},
@@ -602,20 +581,22 @@ function syncHash(){
       else if(S.view === 'history') desired = '#guia/historial';
       else if(S.view === 'attempt'){
         if(S.attempt && GUIA_COURSES.indexOf(S.attempt.course)>=0) desired = '#guia/simulador/'+S.attempt.course+'/intento';
+        else if(S.attempt && isProgrammedSimId(S.attempt.course)) desired = '#guia/simulador/'+S.attempt.course+'/intento';
         else if(S.attempt && S.attempt.course==='guia69') desired = '#guia/examen69/intento';
         else if(S.attempt && S.attempt.isGuia69) desired = '#guia/examen69/intento';
         else desired = '#guia/examen69';
       }
       else if(S.view === 'summary'){
-        if(S.attempt && GUIA_COURSES.indexOf(S.attempt.course)>=0) desired = '#guia/simulador/'+S.attempt.course+'/resumen';
+        if(S.attempt && (GUIA_COURSES.indexOf(S.attempt.course)>=0 || isProgrammedSimId(S.attempt.course))) desired = '#guia/simulador/'+S.attempt.course+'/resumen';
         else if(S.attempt) desired = '#guia/examen69/resumen';
         else desired = '#guia';
       }
       else if(S.view === 'review'){
-        if(S.attempt && GUIA_COURSES.indexOf(S.attempt.course)>=0) desired = '#guia/simulador/'+S.attempt.course+'/revision';
+        if(S.attempt && (GUIA_COURSES.indexOf(S.attempt.course)>=0 || isProgrammedSimId(S.attempt.course))) desired = '#guia/simulador/'+S.attempt.course+'/revision';
         else if(S.attempt) desired = '#guia/examen69/revision';
         else desired = '#guia';
       }
+      else if(S.view === 'sim_preview' && S.selectedSimId) desired = '#guia/simulador/'+S.selectedSimId;
       else if(S.view === 'course' && S.course && GUIA_COURSES.indexOf(S.course)>=0) desired = '#guia/simulador/'+S.course;
       else if(S.view === 'course' && S.course==='guia69') desired = '#guia/examen69';
       else if(S.view === 'home') desired = '#guia';
@@ -682,6 +663,8 @@ function enterGuia(view){
   if(blocked()) return;
   stopTimer();
   S.area = 'guia';
+  UI.area = 'guia';
+  saveUI();
   S.toast = null;
   S.modal = null;
   S.view = view || 'home';
@@ -691,6 +674,8 @@ function exitGuia(){
   if(blocked()) return;
   stopTimer();
   S.area = 'aula';
+  UI.area = 'aula';
+  saveUI();
   S.toast = null;
   S.modal = null;
   S.view = 'home';
@@ -702,7 +687,7 @@ function applyHashRoute(){
   if(!h){
     if(S.attempt && !S.attempt.finished && S.attempt.restored) return;
     if(S.view==='attempt' || S.view==='summary' || S.view==='review') return;
-    S.area = 'guia';
+    S.area = (UI.area==='aula') ? 'aula' : 'guia';
     S.view = 'home';
     return;
   }
@@ -728,6 +713,13 @@ function applyHashRoute(){
         else if(parts[3]==='resumen') S.view = 'summary';
         else if(parts[3]==='revision') S.view = 'review';
         else S.view = 'course';
+      } else if(isProgrammedSimId(gc)){
+        S.course = gc;
+        S.selectedSimId = gc;
+        if(parts[3]==='intento') S.view = 'attempt';
+        else if(parts[3]==='resumen') S.view = 'summary';
+        else if(parts[3]==='revision') S.view = 'review';
+        else S.view = 'sim_preview';
       } else { S.view = 'home'; }
     } else if(parts[1]==='examen69'){
       S.course = 'guia69';
@@ -801,6 +793,15 @@ function md(src){
   while(i < lines.length){
     var L = lines[i];
     if(/^\s*$/.test(L)){ flush(); i++; continue; }
+    var figM = /^\[\[FIG:([a-z0-9_-]+)\]\]$/i.exec(L.trim());
+    if(figM){
+      flush();
+      var figName = figM[1];
+      var figSvg = (window.FIG_FILTRO && window.FIG_FILTRO[figName]) ? window.FIG_FILTRO[figName]() : '';
+      if(!figSvg && window.FIGR && window.FIGR[figName]) figSvg = window.FIGR[figName]({});
+      if(figSvg) out += '<div class="figure filtro-fig">'+figSvg+'</div>';
+      i++; continue;
+    }
     var miniM = /^\[\[MINISIM:(.*?)\]\]$/.exec(L.trim());
     if(miniM){
       flush();
@@ -867,13 +868,85 @@ var HIST = load(HIST_KEY, []);
 var SEEN = load(SEEN_KEY, {mat:[],fis:[],qui:[],len:[]});
 var SEEN1000_KEY='epn_seen1000_v1';
 var SEEN1000 = load(SEEN1000_KEY, {mat:[],fis:[],qui:[],len:[]});
-var UI = load(UI_KEY, {drawer:true});
+var UI = load(UI_KEY, {drawer:true, area:'guia'});
+if(UI.area!=='aula' && UI.area!=='guia') UI.area = 'guia';
 var ACTIVE_KEY='epn_active_v1';
 function saveCfg(){ save(CFG_KEY, cfg); }
 function saveHist(){ save(HIST_KEY, HIST); }
 function saveSeen(){ save(SEEN_KEY, SEEN); }
 function saveSeen1000(){ save(SEEN1000_KEY, SEEN1000); }
 function saveUI(){ save(UI_KEY, UI); }
+
+var REVIEW_RETURN_KEY = 'epn_review_return_v1';
+function saveReviewReturn(obj){
+  S.reviewReturn = obj || null;
+  try{
+    if(obj) sessionStorage.setItem(REVIEW_RETURN_KEY, JSON.stringify(obj));
+    else sessionStorage.removeItem(REVIEW_RETURN_KEY);
+  }catch(e){}
+}
+function loadReviewReturn(){
+  if(S.reviewReturn) return S.reviewReturn;
+  try{
+    var raw = sessionStorage.getItem(REVIEW_RETURN_KEY);
+    if(!raw) return null;
+    S.reviewReturn = JSON.parse(raw);
+    return S.reviewReturn;
+  }catch(e){ return null; }
+}
+function clearReviewReturn(){ saveReviewReturn(null); }
+function captureReviewReturn(qix){
+  if(!S.attempt || (S.view!=='review' && !(S.attempt.finished))) return;
+  var ix = (typeof qix==='number' && !isNaN(qix)) ? qix : (S.onePage!=null? S.onePage : (typeof S.attempt.cur==='number'? S.attempt.cur : 0));
+  saveReviewReturn({
+    course: S.attempt.course,
+    recId: S.attempt.recId || null,
+    qIndex: ix,
+    onePage: S.onePage,
+    isProgrammedSim: !!(S.attempt.isProgrammedSim || isProgrammedSimId(S.attempt.course))
+  });
+}
+function scrollToReviewQuestion(ix){
+  setTimeout(function(){
+    var node = document.getElementById('q-'+ix);
+    if(!node) node = document.querySelector('.que');
+    if(node){
+      node.classList.add('que-focus');
+      node.scrollIntoView({ behavior:'smooth', block:'start' });
+      setTimeout(function(){ node.classList.remove('que-focus'); }, 2800);
+    }
+    S.scrollTop = true;
+  }, 60);
+}
+function applyReturnToReview(){
+  var rr = loadReviewReturn();
+  if(!rr){
+    if(S.attempt){ S.view='review'; S.scrollTop=false; render(); }
+    return;
+  }
+  if(!S.attempt || S.attempt.course!==rr.course){
+    if(rr.recId){
+      var rec = HIST.filter(function(r){ return r.id===rr.recId; })[0];
+      var rebuilt = rec ? attemptFromRecord(rec) : null;
+      if(rebuilt && rebuilt.qs && rebuilt.qs.length) S.attempt = rebuilt;
+    }
+  }
+  if(!S.attempt){
+    S.toast = 'No se pudo volver a esa pregunta. Ábrela de nuevo desde Historial.';
+    render();
+    return;
+  }
+  S.view = 'review';
+  S.course = rr.course || S.attempt.course;
+  if(rr.isProgrammedSim || isProgrammedSimId(S.course)){
+    S.area = 'guia';
+    S.selectedSimId = S.course;
+  }
+  if(rr.onePage!=null) S.onePage = rr.qIndex;
+  S.scrollTop = false;
+  S.focusQuestion = rr.qIndex;
+  render();
+}
 // Perdurabilidad del intento: se guarda en LS y en la nube; sobrevive F5 y cambio de dispositivo
 function saveActive(){
   try{
@@ -897,13 +970,13 @@ function loadActiveRaw(){ try{ var v=localStorage.getItem(ACTIVE_KEY); return v?
 var SEENSET = {};
 ['mat','trig','ineq','fis','qui','len'].forEach(function(k){ SEEN[k] = SEEN[k]||[]; SEENSET[k] = {}; SEEN[k].forEach(function(i){ SEENSET[k][i]=1; }); });
 var SEEN1000SET = {};
-['mat','fis','qui','len'].forEach(function(k){ SEEN1000[k]=SEEN1000[k]||[]; SEEN1000SET[k]={}; SEEN1000[k].forEach(function(id){ SEEN1000SET[k][id]=1; }); });
+['mat','fis','qui','len','filtro'].forEach(function(k){ SEEN1000[k]=SEEN1000[k]||[]; SEEN1000SET[k]={}; SEEN1000[k].forEach(function(id){ SEEN1000SET[k][id]=1; }); });
 
 var LEVELS = [{k:'facil',n:'F\u00e1cil',c:'f1'},{k:'medio',n:'Intermedio',c:'f2'},{k:'dificil',n:'Dif\u00edcil',c:'f3'},{k:'experto',n:'Experto',c:'f4'},{k:'todos',n:'Mezclado',c:'f0'}];
 var GUIA_COURSES = ['guia_mat30','guia_fql120','guia_fis','guia_qui','guia_len'];
 function levelName(k){ for(var i=0;i<LEVELS.length;i++) if(LEVELS[i].k===k) return LEVELS[i].n; return k; }
 
-var S = { view:'home', area:'guia', course:'mat', attempt:null, modal:null, tick:null, onePage:null, chapter:null, scrollTop:true, histTab:'all', toast:null, viewingRecord:null };
+var S = { view:'home', area:(UI.area==='aula'?'aula':'guia'), course:'mat', attempt:null, modal:null, tick:null, onePage:null, chapter:null, scrollTop:true, histTab:'all', toast:null, viewingRecord:null };
 
 var COURSES = {
   guia69:{key:'guia69',name:'Simulador Completo Guía 2026-B (69P)',short:'Guía Completo 69P',full:'Guía Oficial EPN 2026-B — Examen Completo 69 Preguntas',desc:'Examen simulador completo de 69 preguntas oficiales (Matemáticas, Lenguaje, Física y Química) con soluciones paso a paso desde cero.'},
@@ -1372,23 +1445,48 @@ function buildGuia1000Attempt(courseKey){
   return { course: courseKey, level: 'intermedio', qs: qs, ans: qs.map(function(){return null;}), flags: qs.map(function(){return false;}), cur:0, start:new Date(), end:null, finished:false, limitMs: minutesFor(courseKey)*60000, historic:false, isGuia1000:true };
 }
 function attemptFromRecord(r){
-  // Guia 1000 records store id
+  registerProgrammedSimsInCourses();
+  if(r.isProgrammedSim || isProgrammedSimId(r.course)){
+    var qsP = [];
+    var ansP = [];
+    (r.qs||[]).forEach(function(x){
+      var q = findMat1500(x.id);
+      if(!q) return;
+      var src = srcFromMat1500(q);
+      qsP.push({src:src, order:src.o.map(function(_,ix){return ix;}), subj:'mat'});
+      ansP.push(x.sel==null? null : x.sel);
+    });
+    if(!qsP.length) return null;
+    return {
+      course:r.course, level:r.level||'intermedio', qs:qsP, ans:ansP,
+      flags:qsP.map(function(){return false;}), cur:0,
+      start:new Date(r.ts), end:new Date(r.ts + (r.durMs||0)),
+      finished:true, limitMs:(r.min||45)*60000, historic:true, recId:r.id,
+      isGuia1000:true, isProgrammedSim:true, simId:r.course, area:'guia'
+    };
+  }
   if(GUIA_COURSES.indexOf(r.course)>=0){
     var bank1000 = window.GUIA_BANK_1000||{mat:[],fis:[],qui:[],len:[]};
     var byId={}; ['mat','fis','qui','len'].forEach(function(sub){ (bank1000[sub]||[]).forEach(function(q){ byId[q.id]=q; }); });
-    var qs = r.qs.map(function(x){
+    var qsG = [];
+    var ansG = [];
+    (r.qs||[]).forEach(function(x){
       var q = byId[x.id] || byId[x.k+'-'+String(x.i).padStart(3,'0')] || null;
-      if(!q) return null;
+      if(!q) return;
       var src = { t:q.t, q:q.prompt, o:q.opts, a:q.ans, e:q.exp, ch:q.ch, maths:q.maths||[], imgs:q.imgs||[], __s:q.s, n:q.n, d:q.d, topics:q.topics, id:q.id };
-      return {src:src, order:src.o.map(function(_,ix){return ix;}), subj:q.s};
-    }).filter(Boolean);
-    return {course:r.course, level:r.level, qs:qs, ans:r.qs.map(function(x){ return x.sel==null? null : x.sel; }), flags:qs.map(function(){return false;}), cur:0, start:new Date(r.ts), end:new Date(r.ts + r.durMs), finished:true, limitMs:r.min*60000, historic:true, recId:r.id, isGuia1000:true};
+      qsG.push({src:src, order:src.o.map(function(_,ix){return ix;}), subj:q.s});
+      ansG.push(x.sel==null? null : x.sel);
+    });
+    if(!qsG.length) return null;
+    return {course:r.course, level:r.level, qs:qsG, ans:ansG, flags:qsG.map(function(){return false;}), cur:0, start:new Date(r.ts), end:new Date(r.ts + r.durMs), finished:true, limitMs:r.min*60000, historic:true, recId:r.id, isGuia1000:true};
   }
-  var qs = r.qs.map(function(x){
-    var src = BANK[x.k][x.i];
+  var qs = (r.qs||[]).map(function(x){
+    var src = BANK[x.k] && BANK[x.k][x.i];
+    if(!src) return null;
     return {src:src, order:src.o.map(function(_,ix){return ix;}), subj:x.k};
-  });
-  return {course:r.course, level:r.level, qs:qs, ans:r.qs.map(function(x){ return x.sel==null? null : x.sel; }),
+  }).filter(Boolean);
+  if(!qs.length) return null;
+  return {course:r.course, level:r.level, qs:qs, ans:r.qs.map(function(x){ return x.sel==null? null : x.sel; }).slice(0, qs.length),
           flags:qs.map(function(){return false;}), cur:0, start:new Date(r.ts), end:new Date(r.ts + r.durMs),
           finished:true, limitMs:r.min*60000, historic:true, recId:r.id};
 }
@@ -1396,10 +1494,10 @@ function attemptFromRecord(r){
 /* ---------- CHROME ---------- */
 function areaToggleHtml(){
   var guia = isGuia();
-  return '<button class="área-toggle'+(guia?' is-guia':'')+'" data-act="togglearea" role="switch" aria-checked="'+(guia?'true':'false')+'" title="'+(guia?'Cambiar a Aula Barreno':'Cambiar a Gu\u00eda Oficial EPN')+'">'
-    +'<span class="área-lab '+(guia?'':'on')+'">AULA</span>'
-    +'<span class="área-track" aria-hidden="true"><span class="área-thumb"></span></span>'
-    +'<span class="área-lab guia '+(guia?'on':'')+'">GU\u00cdA EPN</span>'
+  return '<button class="area-toggle'+(guia?' is-guia':'')+'" data-act="togglearea" role="switch" aria-checked="'+(guia?'true':'false')+'" title="'+(guia?'Cambiar a Aula Barreno':'Cambiar a Gu\u00eda Oficial EPN')+'">'
+    +'<span class="area-lab '+(guia?'':'on')+'">AULA</span>'
+    +'<span class="area-track" aria-hidden="true"><span class="area-thumb"></span></span>'
+    +'<span class="area-lab guia '+(guia?'on':'')+'">GU\u00cdA EPN</span>'
   +'</button>';
 }
 function navbar(active){
@@ -1412,7 +1510,7 @@ function navbar(active){
       +'<a data-act="learn" class="'+(active==='learn'||active==='chapter'?'active':'')+'">Aprender</a>'
       +'<a data-act="stats" class="'+(active==='stats'?'active':'')+'">Estadísticas</a>'
       +'<a data-act="history" class="'+(active==='history'?'active':'')+'">Historial</a>'
-      +'<a data-act="guiawork" class="'+(active==='guiawork'?'active':'')+'">Talleres</a>'
+      +'<a data-act="guiawork" class="'+(active==='guiawork'?'active':'')+'">Ruta</a>'
     : '<a data-act="home" class="'+(active==='home'?'active':'')+'">P\u00e1gina Principal</a>'
       +'<a data-act="learn" class="'+(active==='learn'?'active':'')+'">Aprende</a>'
       +'<a data-act="stats" class="'+(active==='stats'?'active':'')+'">Estad\u00edsticas</a>'
@@ -1430,39 +1528,74 @@ function navbar(active){
 }
 function drawer(active){
   if(!UI.drawer) return '';
-  if(isGuia()){
-    var guiaSimLinks = GUIA_COURSES.map(function(k){
-      var c=COURSES[k];
-      return '<li><a class="'+(active==='course'&&S.course===k?'active':'')+'" data-act="course" data-c="'+k+'">'+escH(c.short)+' \u00b7 '+escH(c.name.split('—')[0].trim())+'</a></li>';
-    }).join('');
-    var seenTot = SEEN1000.mat.length + SEEN1000.fis.length + SEEN1000.qui.length + SEEN1000.len.length;
-    return '<div class="drawer"><button class="closex" data-act="toggledrawer" title="Ocultar men\u00fa">\u2715</button>'+
-      '<h6>\u25be Gu\u00eda oficial 2026-B</h6><ul>'+
-      '<li><a class="'+(active==='home'?'active':'')+'" data-act="home">Inicio gu\u00eda</a></li>'+
-      '<li><a class="'+(active==='learn'?'active':'')+'" data-act="learn">Aprender (teor\u00eda 1:1)</a></li>'+
-      '<li><a class="'+(active==='guiawork'?'active':'')+'" data-act="guiawork">Talleres</a></li>'+
-      '</ul>'+
-      '<h6>\u25be Simuladores (1000 banco)</h6><ul>'+guiaSimLinks+'</ul>'+
-      '<div style="padding:8px 16px; font-size:11px; color:#6b7783;">Vistas: '+seenTot+'/1000 \u00b7 Nivel intermedio</div>'+
-      '<h6>\u25be Progreso</h6><ul>'+
-      '<li><a class="'+(active==='stats'?'active':'')+'" data-act="stats">Estadísticas</a></li>'+
-      '<li><a class="'+(active==='history'?'active':'')+'" data-act="history">Historial de intentos</a></li>'+
-      '</ul>'+
-      '<h6>\u25be Navegaci\u00f3n</h6><ul>'+
-      '<li><a data-act="exitguia">\u2190 Volver al aula Barreno</a></li>'+
-      '</ul></div>';
+  registerProgrammedSimsInCourses();
+  var tab = S.simTab || 'intermedio';
+  var sims = (typeof getSimuladoresList==='function' ? getSimuladoresList() : []).filter(function(s){ return s.nivel===tab; });
+  var doneIds = {};
+  var last30 = liveHist().filter(function(r){ return (r.isProgrammedSim || isProgrammedSimId(r.course)) && !isFiltroSimId(r.course); })
+    .slice().sort(function(a,b){ return b.ts-a.ts; });
+  last30.forEach(function(r){ doneIds[r.course]=1; });
+  var doneInTab = sims.filter(function(s){ return doneIds[s.sim_id]; }).length;
+  var nextSim = sims.filter(function(s){ return !doneIds[s.sim_id]; })[0] || null;
+  var lastRec = last30[0] || null;
+  var rr = loadReviewReturn();
+  var continueHtml = '';
+  if(S.attempt && !S.attempt.finished && !S.attempt.historic){
+    continueHtml = '<div class="drawer-card"><b>Intento en curso</b><div class="hint">'+escH(getCourseInfo(S.attempt.course).short)+'</div>'+
+      '<button class="btn mini" data-act="stayin">Seguir respondiendo</button></div>';
+  } else if(S.view==='review' && S.attempt){
+    continueHtml = '<div class="drawer-card"><b>Revisión abierta</b><div class="hint">Pregunta '+(((S.onePage!=null?S.onePage:S.attempt.cur)||0)+1)+'</div></div>';
+  } else if(rr){
+    continueHtml = '<div class="drawer-card"><b>Volver a la pregunta '+(rr.qIndex+1)+'</b>'+
+      '<button class="btn mini" data-act="return-to-review">Continuar revisión</button></div>';
   }
-  var aulaGuiaLink = '<li><a data-act="enterguia" style="font-weight:700; color:#0e2a47; background:#fff7ef; border-left:3px solid #c45c26;">\u2192 Gu\u00eda oficial EPN (1000 banco)</a></li>';
-  var items = CKEYS.filter(function(k){ return GUIA_COURSES.indexOf(k)<0; }).map(function(k){
-    return '<li><a class="'+(active==='quiz'&&S.course===k?'active':'')+'" data-act="course" data-c="'+k+'">'+COURSES[k].full+'</a></li>';
+  var recentHtml = last30.slice(0,3).map(function(r){
+    var info = getCourseInfo(r.course);
+    return '<li><a data-act="openrec" data-id="'+r.id+'">'+escH(info.short)+' · '+recPct(r)+'%</a></li>';
   }).join('');
-  return '<div class="drawer"><button class="closex" data-act="toggledrawer" title="Ocultar men\u00fa">\u2715</button>'+
-    '<h6>\u25be General</h6><ul>'+
-    '<li><a class="'+(active==='learn'?'active':'')+'" data-act="learn">Aprende (teor\u00eda)</a></li>'+
-    '<li><a class="'+(active==='stats'?'active':'')+'" data-act="stats">Estad\u00edsticas</a></li>'+
-    '<li><a class="'+(active==='history'?'active':'')+'" data-act="history">Historial de intentos</a></li>'+
-    aulaGuiaLink+
-    items+
+  if(isGuia()){
+    return '<div class="drawer"><button class="closex" data-act="toggledrawer" title="Ocultar menú">✕</button>'+
+      '<div class="drawer-who"><b>'+escH((cfg.student||'Estudiante').split(' ')[0])+'</b><span>Guía EPN · un historial</span></div>'+
+      continueHtml+
+      (function(){
+        var fSims = getFiltroDaySims();
+        var fDone = {};
+        liveHist().filter(function(r){ return isFiltroSimId(r.course); }).forEach(function(r){ fDone[r.course]=1; });
+        var fN = fSims.filter(function(s){ return fDone[s.sim_id]; }).length;
+        var fNext = fSims.filter(function(s){ return !fDone[s.sim_id]; })[0] || null;
+        return '<div class="drawer-card"><b>Intensivo de un día</b>'+
+          '<div class="drawer-meter"><span style="width:'+(fSims.length? Math.round(fN/fSims.length*100):0)+'%"></span></div>'+
+          '<div class="hint">'+fN+' de '+(fSims.length||4)+' bloques</div>'+
+          '<button class="btn mini" data-act="chapter" data-id="filtro-L00">Teoría del día</button>'+
+          (fNext? '<button class="btn mini" data-act="preview-prog-sim" data-sim="'+fNext.sim_id+'">Siguiente: '+escH(fNext.nombre)+'</button>':'<div class="hint">Ruta del día completa</div>')+
+          '</div>';
+      })()+
+      '<div class="drawer-card"><b>Ruta de 30 · '+levelName(tab)+'</b>'+
+      '<div class="drawer-meter"><span style="width:'+(sims.length? Math.round(doneInTab/sims.length*100):0)+'%"></span></div>'+
+      '<div class="hint">'+doneInTab+' de '+(sims.length||10)+' simulacros de este nivel</div>'+
+      (nextSim? '<button class="btn mini" data-act="preview-prog-sim" data-sim="'+nextSim.sim_id+'">Siguiente: '+escH(nextSim.nombre.replace(/^Simulador \d+\s*-?\s*/,''))+'</button>' : '<div class="hint">Nivel completo</div>')+
+      (lastRec? '<div class="hint">Último: '+escH(getCourseInfo(lastRec.course).short)+' · '+recPct(lastRec)+'%</div>':'')+
+      '</div>'+
+      '<h6>Ir a</h6><ul>'+
+      '<li><a class="'+(active==='home'?'active':'')+'" data-act="home">Inicio guía</a></li>'+
+      '<li><a class="'+(active==='learn'?'active':'')+'" data-act="learn">Aprender</a></li>'+
+      '<li><a class="'+(active==='history'?'active':'')+'" data-act="history">Historial</a></li>'+
+      '<li><a class="'+(active==='stats'?'active':'')+'" data-act="stats">Estadísticas</a></li>'+
+      '</ul>'+
+      (recentHtml? '<h6>Últimos intentos</h6><ul>'+recentHtml+'</ul>':'')+
+      '</div>';
+  }
+  var aulaLast = liveHist().slice().sort(function(a,b){ return b.ts-a.ts; })[0];
+  return '<div class="drawer"><button class="closex" data-act="toggledrawer" title="Ocultar menú">✕</button>'+
+    '<div class="drawer-who"><b>'+escH((cfg.student||'Estudiante').split(' ')[0])+'</b><span>Aula Barreno</span></div>'+
+    continueHtml+
+    (aulaLast? '<div class="drawer-card"><b>Último intento</b><div class="hint">'+escH(getCourseInfo(aulaLast.course).short)+' · '+recPct(aulaLast)+'%</div>'+
+      '<button class="btn mini" data-act="openrec" data-id="'+aulaLast.id+'">Revisar</button></div>':'')+
+    '<h6>Ir a</h6><ul>'+
+    '<li><a class="'+(active==='home'?'active':'')+'" data-act="home">Inicio</a></li>'+
+    '<li><a class="'+(active==='learn'?'active':'')+'" data-act="learn">Aprende</a></li>'+
+    '<li><a class="'+(active==='history'?'active':'')+'" data-act="history">Historial</a></li>'+
+    '<li><a data-act="enterguia">Guía EPN</a></li>'+
     '</ul></div>';
 }
 function drawerBtn(){ return UI.drawer? '' : '<button class="drawerbtn" data-act="toggledrawer">\u2630 Men\u00fa</button>'; }
@@ -1474,7 +1607,7 @@ function sitefooter(){
     '<div style="width:120px"></div></div>';
 }
 function pagehead(title, crumbs, ck){
-  var c = COURSES[ck||S.course];
+  var c = getCourseInfo(ck||S.course||'mat');
   return '<div class="pagehead">'+
     '<div class="actv-icon" style="background:'+c.color+'">'+c.icon+'</div>'+
     '<h1 class="title">'+title+'</h1>'+
@@ -1483,7 +1616,7 @@ function pagehead(title, crumbs, ck){
 }
 function toastHtml(){ return S.toast? '<div class="alertbox">'+escH(S.toast)+'</div>' : ''; }
 function actnav(){
-  var c = COURSES[S.course];
+  var c = getCourseInfo(S.course||'mat');
   return '<div class="actnav"><div class="side"><span class="lbl">\u2039 Actividad previa</span><br><a>'+(c.prev||'\u2014')+'</a></div>'+
     '<div><select><option>Ir a\u2026</option><option>Gu\u00eda de Estudio</option><option>Avisos</option></select></div>'+
     '<div class="side r"><span class="lbl">Siguiente actividad \u203a</span><br><a class="next">'+(c.next||'\u2014')+'</a></div></div>';
@@ -2142,7 +2275,7 @@ function explainHtml(ix){
     if(matchDist && matchDist.error){
       cognitiveErrHtml = '<div class="cognitive-err-box" style="margin:12px 0 10px; padding:12px 16px; background:#fff3cd; border-left:4px solid #d9822b; border-radius:6px; font-size:14px; color:#664d03;">'
         + '<div style="font-weight:700; display:flex; align-items:center; gap:6px;"><span>⚠️</span> Diagnóstico de tu error conceptual:</div>'
-        + '<div style="margin-top:5px;">Tu respuesta seleccionada (' + tex(chosenText) + ') corresponde al error típico: <b>' + escH(matchDist.error) + '</b>.</div>'
+        + '<div style="margin-top:5px;">Tu respuesta seleccionada (' + tex(chosenText) + ') corresponde al error típico: <b>' + inlineMd(matchDist.error) + '</b>.</div>'
         + '</div>';
     }
   }
@@ -2493,16 +2626,24 @@ function viewStats(){
 }
 
 /* ---------- historial ---------- */
+function histMatchesTab(r, tab){
+  if(tab==='all') return true;
+  if(tab==='sims30') return !!(r.isProgrammedSim || isProgrammedSimId(r.course)) && !isFiltroSimId(r.course);
+  if(tab==='filtro') return isFiltroSimId(r.course);
+  return r.course===tab;
+}
 function viewHistory(){
-  var tab = S.histTab, tabs = [['all','General']].concat(CKEYS.map(function(k){ return [k, COURSES[k].short]; }));
-  var base = HIST.filter(function(r){ return tab==='all' || r.course===tab; });
+  registerProgrammedSimsInCourses();
+  var tab = S.histTab, tabs = [['all','General'],['filtro','Intensivo'],['sims30','30 simuladores']].concat(CKEYS.map(function(k){ return [k, COURSES[k].short]; }));
+  var base = HIST.filter(function(r){ return histMatchesTab(r, tab); });
   var live = base.filter(function(r){ return !r.deleted; }).slice().sort(function(a,b){ return b.ts-a.ts; });
   var del  = base.filter(function(r){ return r.deleted; }).slice().sort(function(a,b){ return b.ts-a.ts; });
   function rowsOf(list, isDel){
     return list.map(function(r){
       var pct = recPct(r);
+      var info = getCourseInfo(r.course);
       return '<tr'+(isDel?' class="delrow"':'')+'><td>'+fmtCorta(r.ts)+(isDel?' <span class="delbadge">Eliminado</span>':'')+'</td>'+
-        '<td>'+COURSES[r.course].name+'</td><td>'+levelName(r.level)+'</td><td>'+fmtDur(r.durMs)+'</td>'+
+        '<td>'+escH(info.name)+'</td><td>'+levelName(r.level)+'</td><td>'+fmtDur(r.durMs)+'</td>'+
         '<td>'+r.score+'/'+r.n+' <span class="gradepill '+(isDel?'g-del':gradeCls(pct))+'">'+pct+'%</span></td>'+
         '<td><button class="btn sec" data-act="openrec" data-id="'+r.id+'">Revisar</button> '+
         (isDel? '<button class="btn ghost" data-act="restrec" data-id="'+r.id+'">Restaurar</button>'
@@ -2512,7 +2653,7 @@ function viewHistory(){
   }
   var thead = '<thead><tr><th>Fecha</th><th>Simulador</th><th>Dificultad</th><th>Tiempo</th><th>Resultado</th><th></th></tr></thead>';
   var table = live.length? '<table class="histtable">'+thead+'<tbody>'+rowsOf(live,false)+'</tbody></table>'
-    : '<div class="emptybox">A\u00fan no hay intentos'+(tab==='all'?'':' de '+COURSES[tab].name)+' activos en el historial.</div>';
+    : '<div class="emptybox">A\u00fan no hay intentos'+(tab==='all'?'':(tab==='filtro'?' del intensivo':(tab==='sims30'?' de los 30 simuladores':' de '+getCourseInfo(tab).name)))+' activos en el historial.</div>';
   var deleted = del.length? '<h3 style="font-size:17px;margin:22px 0 4px">Intentos eliminados</h3>'+
     '<p class="th-sub">No cuentan para las estad\u00edsticas, pero puedes seguir revis\u00e1ndolos o restaurarlos.</p>'+
     '<table class="histtable">'+thead+'<tbody>'+rowsOf(del,true)+'</tbody></table>' : '';
@@ -2539,6 +2680,7 @@ function viewGuiaHome(){
     var chs = book.filter(function(ch){ return ch.s===k; });
     if(!chs.length) return '';
     var g = GUIDE[k];
+    if(!g) return '';
     var inner = chs.map(function(ch){
       var st = chapterProgress(ch.id);
       return '<div class="th-card" data-act="chapter" data-id="'+ch.id+'"><div class="ic">'+ch.ic+'</div>'+
@@ -2548,98 +2690,81 @@ function viewGuiaHome(){
       '<b>'+g.code+' '+escH(g.name)+'</b><span class="thgn">'+chs.length+' cap\u00edtulo'+(chs.length>1?'s':'')+'</span>'+
       '</div><div class="th-list">'+inner+'</div></div>';
   }).join('');
-  var ws = GUIA_WORKSHOPS.map(function(block){
-    var g = GUIDE[block.k];
-    var cards = block.items.map(function(it){
-      return '<div class="gcard guia-soon" data-act="guiaplaceholder" data-id="'+it.id+'">'+
-        '<div class="gtop"><span class="gic">\u23F3</span><div><div class="gcode">'+it.code+'</div>'+
-        '<div class="gt">'+escH(it.t)+'</div></div></div>'+
-        '<p class="th-sub" style="margin:8px 0 0">Taller / simulador por tema \u2014 <b>pr\u00f3ximamente</b>. La teor\u00eda ya est\u00e1 en Aprender.</p>'+
-        '<div class="gmeta"><span class="soon-pill">Scaffold listo</span></div></div>';
-    }).join('');
-    return '<div class="subjhead"><span class="bar" style="background:'+g.color+'"></span><h2>'+block.code+'. '+escH(block.title)+'</h2>'+
-      '<span class="cnt">Estructura vac\u00eda lista para cablear bancos</span></div><div class="gcards">'+cards+'</div>';
+  var banco = (window.GUIA_BANK_1000 && window.GUIA_BANK_1000.mat) ? window.GUIA_BANK_1000 : null;
+  var tot1000 = banco ? (banco.mat.length + banco.fis.length + banco.qui.length + banco.len.length) : 0;
+  var seenTot = SEEN1000.mat.length + SEEN1000.fis.length + SEEN1000.qui.length + SEEN1000.len.length;
+  var otherSims = [
+    {course:'guia_mat30', title:'Matemáticas — Día 1', sub:'30 preguntas · 90 min · filtro real', color:'#d62828', icon:'🧮'},
+    {course:'guia_fql120', title:'Combinado F-Q-L — Día 2', sub:'60 preguntas · 120 min', color:'#0e2a47', icon:'🧪'},
+    {course:'guia_fis', title:'Física', sub:'20 preguntas · 40 min', color:'#2a9d8f', icon:'⚙️'},
+    {course:'guia_qui', title:'Química', sub:'20 preguntas · 40 min', color:'#6a994e', icon:'⚗️'},
+    {course:'guia_len', title:'Lenguaje', sub:'20 preguntas · 40 min', color:'#e9c46a', icon:'📝'}
+  ];
+  var otherCards = otherSims.map(function(s){
+    return '<div class="card" style="border-top:4px solid '+s.color+'">'+
+      '<div class="cimg" style="background:'+s.color+'">'+s.icon+'</div>'+
+      '<div class="cbody"><h3>'+s.title+'</h3><p>'+s.sub+'</p>'+
+      '<div class="cbtns"><button class="btn" data-act="course" data-c="'+s.course+'" style="background:'+s.color+';border-color:'+s.color+'">Abrir</button></div></div></div>';
   }).join('');
-  return navbar('home')+
-    '<div class="homehero guia-hero"><h2>Gu\u00eda oficial EPN 2026-B</h2>'+
-    '<p>Temario exacto del examen de admisi\u00f3n \u00b7 Matem\u00e1tica, F\u00edsica, Qu\u00edmica y Lenguaje \u00b7 \u00c1rea paralela (no altera el aula Barreno)</p>'+
-    '<div class="stats"><div><b>'+book.length+'</b><span>CAP\u00cdTULOS APRENDER</span></div>'+
-    '<div><b>4</b><span>\u00c1REAS OFICIALES</span></div>'+
-    '<div><b>'+GUIA_WORKSHOPS.reduce(function(s,b){return s+b.items.length;},0)+'</b><span>TALLERES (PLACEHOLDER)</span></div>'+
-    '<div><b>210</b><span>MINUTOS EXAMEN REAL</span></div></div></div>'+
-    '<div style="padding:0 26px 40px">'+toastHtml()+
-        '<div class="guia-sim-hero-card" style="background: linear-gradient(135deg, #0e2a47 0%, #005a9e 100%); color:#fff; padding:22px; border-radius:12px; margin:20px 0 26px; box-shadow:0 4px 14px rgba(0,0,0,0.12);">'+
-    '<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">'+
-    '<div><span style="background:#ffb900; color:#000; font-weight:800; padding:3px 10px; border-radius:20px; font-size:12px; text-transform:uppercase;">⚡ Examen Oficial Resuelto</span>'+
-    '<h3 style="font-size:22px; margin:8px 0 4px; color:#fff;">Simulador Completo EPN — 69 Preguntas Oficiales</h3>'+
-    '<p style="margin:0; opacity:0.9; font-size:14px; max-width:650px;">Matemáticas (Q02-Q19), Lenguaje (Q20-Q32), Física (Q33-Q50) y Química (Q51-Q70). Incluye explicaciones paso a paso desde cero e hipervínculos directos a la teoría del Aula Guía.</p></div>'+
-    '<button class="btn primary xl" data-act="start-guia-69" style="background:#ffb900; color:#000; font-weight:bold; font-size:16px; padding:12px 24px; border:none; border-radius:8px; cursor:pointer;">Iniciar Examen Completo (69P)</button>'+
-    '</div></div>'+
-    (function(){
-      var banco = (window.GUIA_BANK_1000 && window.GUIA_BANK_1000.mat) ? window.GUIA_BANK_1000 : null;
-      var tot1000 = banco ? (banco.mat.length + banco.fis.length + banco.qui.length + banco.len.length) : 0;
-      var seenTot = SEEN1000.mat.length + SEEN1000.fis.length + SEEN1000.qui.length + SEEN1000.len.length;
-      var pct1000 = tot1000 ? Math.round(seenTot/tot1000*100) : 0;
-      var sims = [
-        {course:'guia_mat30', title:'Matemáticas — Día 1', sub:'30 preg · 90 min · 14 temas 4.1 · Filtro real', color:'#d62828', icon:'🧮'},
-        {course:'guia_fql120', title:'Combinado F-Q-L — Día 2', sub:'60 preg (20+20+20) · 120 min · Intercalado', color:'#0e2a47', icon:'🧪'},
-        {course:'guia_fis', title:'Física individual', sub:'20 preg · 40 min · 15 temas 4.2', color:'#2a9d8f', icon:'⚙️'},
-        {course:'guia_qui', title:'Química individual', sub:'20 preg · 40 min · 16 temas 4.3', color:'#6a994e', icon:'⚗️'},
-        {course:'guia_len', title:'Lenguaje individual', sub:'20 preg · 40 min · 9 temas 4.4', color:'#e9c46a', icon:'📝'}
-      ];
-      var avail = tot1000>=1000;
-      var banner1000 = '<div style="background:#fff; border:1.5px solid #0e2a47; border-radius:12px; padding:18px 22px; margin:0 0 26px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px;">'
-        +'<div><span style="background:#0e2a47; color:#fff; font-weight:800; padding:3px 10px; border-radius:20px; font-size:11px; text-transform:uppercase;">🆕 Banco 1000 — Nivel intermedio</span>'
-        +'<h3 style="font-size:18px; margin:8px 0 4px; color:#0e2a47;">Simuladores por materia — Banco original 1000 (250×4)</h3>'
-        +'<p style="margin:0; color:#475569; font-size:13px; max-width:680px;">Preguntas originales inspiradas en las 69 oficiales, estrictamente alineadas al temario 4.1–4.4. Cada intento prioriza la <b>máxima cobertura temática</b> y evita repetir lo ya visto hasta agotar el banco. Nivel intermedio (mismo exigido por la EPN). Listo para escalar a difícil/experta.</p>'
-        +'<div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap; align-items:center;">'
-        +'<span class="chip" style="background:#e0f2fe; color:#0e2a47;">'+tot1000+'/1000 preguntas</span>'
-        +'<span class="chip" style="background:#dcfce7; color:#14532d;">Vistas: '+seenTot+' ('+pct1000+'%)</span>'
-        +'<span class="chip light">Figuras: 246 validadas</span>'
-        +'</div></div>'
-        +'<div style="font-size:11px; color:#64748b; text-align:right;">'+(avail?'✓ Banco completo':'Banco en construcción')+'</div>'
-        +'</div>';
-      var cards = sims.map(function(s){
-        return '<div class="card" style="border-top:4px solid '+s.color+'">'
-          +'<div class="cimg" style="background:'+s.color+'">'+s.icon+'</div>'
-          +'<div class="cbody"><h3>'+s.title+'</h3><p>'+s.sub+'</p>'
-          +'<div class="cbtns"><button class="btn" data-act="course" data-c="'+s.course+'" style="background:'+s.color+'; border-color:'+s.color+';">▶ Ver simulador</button> <button class="btn sec" data-act="course" data-c="'+s.course+'">Configurar</button></div></div></div>';
-      }).join('');
-      return banner1000 + '<div class="cards" style="margin-bottom:26px">'+cards+'</div>';
-    })()+
-    renderSimuladores30Catalog()+
-    '<div class="guia-banner"><b>Modo gu\u00eda activo.</b> Aqu\u00ed estudias el temario 1:1 de la gu\u00eda PDF. Usa <b>Aprender</b> para la teoría y los simuladores de arriba para practicar con cobertura máxima.</div>'+
-    '<div style="margin:18px 0 10px;display:flex;gap:10px;flex-wrap:wrap">'+
-    '<button class="btn" data-act="learn">Abrir Aprender ('+book.length+' cap\u00edtulos)</button>'+
-    '<button class="btn sec" data-act="guiawork">Ver talleres (pr\u00f3ximamente)</button>'+
-    '<button class="btn ghost" data-act="exitguia">Volver al aula</button></div>'+
-    '<h2 style="font-size:20px;margin:28px 0 0">Aprender \u2014 teor\u00eda 1:1 con la gu\u00eda</h2>'+
-    '<p class="th-sub">Cada tarjeta es una secci\u00f3n oficial (4.1.x \u2026 4.4.x), con la teor\u00eda justa y necesaria. Huecos de clases Barreno ya completados en el mismo estilo pedag\u00f3gico.</p>'+
-    '<div class="thgroups">'+thcards+'</div>'+
-    '<h2 style="font-size:20px;margin:34px 0 0">Talleres por tema (scaffold)</h2>'+
-    '<p class="th-sub">Placeholders listos para futuros bancos de preguntas. No implementados a\u00fan.</p>'+
-    ws+
-    '</div>'+sitefooter();
+  return navbar('home')+'<div class="wrap">'+drawer('home')+'<div class="main reading">'+
+    '<div class="homehero guia-hero homehero-compact">'+
+      '<h2>Guía oficial EPN 2026-B</h2>'+
+      '<p>Práctica alineada al temario de admisión. Empieza por los 30 simuladores de Matemática.</p>'+
+      '<div class="stats">'+
+        '<div><b>30</b><span>SIMULADORES DE MAT</span></div>'+
+        '<div><b>1 500</b><span>PREGUNTAS MAT</span></div>'+
+        '<div><b>'+book.length+'</b><span>CAPÍTULOS DE TEORÍA</span></div>'+
+        '<div><b>210</b><span>MINUTOS DEL EXAMEN</span></div>'+
+      '</div>'+
+    '</div>'+
+    toastHtml()+
+      renderFiltroCatalog()+
+      renderSimuladores30Catalog()+
+      '<section class="home-section">'+
+        '<div class="home-section-head">'+
+          '<div><h2>Examen oficial de 69 preguntas</h2>'+
+          '<p>Un simulacro completo de Matemática, Lenguaje, Física y Química, con explicación paso a paso.</p></div>'+
+          '<button class="btn" data-act="start-guia-69">Iniciar examen 69P</button>'+
+        '</div>'+
+      '</section>'+
+      '<section class="home-section">'+
+        '<div class="home-section-head">'+
+          '<div><h2>Simuladores por materia</h2>'+
+          '<p>Banco de 1000 preguntas a nivel intermedio. Vistas: '+seenTot+(tot1000? ' de '+tot1000 : '')+'.</p></div>'+
+        '</div>'+
+        '<div class="cards">'+otherCards+'</div>'+
+      '</section>'+
+      '<section class="home-section">'+
+        '<div class="home-section-head">'+
+          '<div><h2>Teoría de la guía</h2>'+
+          '<p>Primero el intensivo de un día. Después, los capítulos 4.1 a 4.4 completos.</p></div>'+
+          '<button class="btn sec" data-act="learn">Abrir Aprender</button>'+
+        '</div>'+
+        '<div class="thgroups">'+thcards+'</div>'+
+      '</section>'+
+    '</div></div>'+drawerBtn()+sitefooter();
 }
 function viewGuiaWorkshops(){
-  var ws = GUIA_WORKSHOPS.map(function(block){
-    var g = GUIDE[block.k];
-    var cards = block.items.map(function(it){
-      return '<div class="gcard guia-soon" data-act="guiaplaceholder" data-id="'+it.id+'">'+
-        '<div class="gtop"><span class="gic">\u23F3</span><div><div class="gcode">'+it.code+'</div>'+
-        '<div class="gt">'+escH(it.t)+'</div></div></div>'+
-        '<ul><li>Banco de preguntas: pendiente</li><li>Simulador cronometrado: pendiente</li><li>Teor\u00eda: disponible en Aprender</li></ul>'+
-        '<div class="gmeta"><span class="soon-pill">Pr\u00f3ximamente</span></div></div>';
-    }).join('');
-    return '<div class="subjhead"><span class="bar" style="background:'+g.color+'"></span><h2>'+escH(block.title)+'</h2></div>'+
-      '<div class="gcards">'+cards+'</div>';
+  var routes = [
+    {code:'4.1.1', t:'Enteros, racionales, reales y álgebra', sim:'mat-int-sim-02', tab:'intermedio'},
+    {code:'4.1.2', t:'Ecuaciones, sistemas e inecuaciones', sim:'mat-int-sim-04', tab:'intermedio'},
+    {code:'4.1.3', t:'Geometría plana y espacial', sim:'mat-int-sim-06', tab:'intermedio'},
+    {code:'4.1.4', t:'Trigonometría y geometría analítica', sim:'mat-int-sim-07', tab:'intermedio'}
+  ];
+  var cards = routes.map(function(it){
+    return '<div class="gcard" data-act="preview-prog-sim" data-sim="'+it.sim+'">'+
+      '<div class="gtop"><span class="gic">4.1</span><div><div class="gcode">'+it.code+'</div>'+
+      '<div class="gt">'+escH(it.t)+'</div></div></div>'+
+      '<p class="th-sub" style="margin:8px 0 0">Abre el simulador de esta unidad dentro de la ruta de 30.</p>'+
+      '<div class="gmeta"><span class="chip light">Listo</span></div></div>';
   }).join('');
   return navbar('guiawork')+'<div class="wrap">'+drawer('guiawork')+'<div class="main reading">'+
-    pagehead('Talleres de la gu\u00eda (scaffold)','Gu\u00eda oficial 2026-B \u203a Talleres','mix')+toastHtml()+
-    '<p class="th-sub">Estructura de cursos vac\u00edos alineada al temario oficial. Cuando Bryan lo pida, aqu\u00ed se cablear\u00e1n los bancos anti-overfitting por tema.</p>'+
-    ws+
+    pagehead('Ruta por temas','Guía oficial 2026-B · Matemática','mix')+toastHtml()+
+    '<p class="th-sub">Cada bloque del Área 4.1 entra a su simulador programado. Cambia de nivel en la página de inicio.</p>'+
+    '<div class="gcards">'+cards+'</div>'+
+    '<div style="margin:18px 0 8px">'+renderSimuladores30Catalog()+'</div>'+
     '<div style="margin:16px 0;display:flex;gap:10px;flex-wrap:wrap"><button class="btn" data-act="learn">Ir a Aprender</button>'+
-    '<button class="btn ghost" data-act="home">Inicio gu\u00eda</button></div>'+
+    '<button class="btn ghost" data-act="home">Inicio</button></div>'+
     '</div></div>'+drawerBtn()+sitefooter();
 }
 
@@ -2647,9 +2772,131 @@ function viewGuiaWorkshops(){
 S.simTab = S.simTab || 'intermedio';
 S.bankMode = S.bankMode || 'nuevo_1500';
 
+function isFiltroSimId(k){
+  return /^filtro-/.test(String(k||''));
+}
+function getFiltroSimList(){
+  registerFiltroSimsInCourses();
+  return (window.SIMULADORES_FILTRO && window.SIMULADORES_FILTRO.simuladores) || [];
+}
+function isProgrammedSimId(k){
+  if(!k) return false;
+  if(isFiltroSimId(k)) return true;
+  if(COURSES[k] && COURSES[k].isProgrammedSim) return true;
+  if(/^mat-(int|dif|exp)-sim-\d{2}$/.test(String(k))) return true;
+  var list = (window.SIMULADORES_PROGRAMADOS && window.SIMULADORES_PROGRAMADOS.simuladores) || [];
+  for(var i=0;i<list.length;i++){ if(list[i].sim_id===k) return true; }
+  var fl = (window.SIMULADORES_FILTRO && window.SIMULADORES_FILTRO.simuladores) || [];
+  for(var j=0;j<fl.length;j++){ if(fl[j].sim_id===k) return true; }
+  return false;
+}
+function getFiltroDaySims(){
+  return getFiltroSimList().filter(function(s){ return !s.extra; });
+}
+function ensureFiltroRotSeen(){
+  SEEN1000.filtro = SEEN1000.filtro || [];
+  if(!SEEN1000SET.filtro){
+    SEEN1000SET.filtro = {};
+    SEEN1000.filtro.forEach(function(id){ SEEN1000SET.filtro[id]=1; });
+  }
+}
+function pickRotatingFiltroBank(sim, markSeen){
+  ensureFiltroRotSeen();
+  var bank = (window.GUIA_BANK_FILTRO && window.GUIA_BANK_FILTRO.mat) || [];
+  var prefix = sim.poolPrefix || 'fp-';
+  var pool = bank.filter(function(q){ return String(q.id).indexOf(prefix)===0; });
+  var n = sim.n || 30;
+  var unseenAll = pool.filter(function(q){ return !SEEN1000SET.filtro[q.id]; });
+  if(unseenAll.length < n){
+    SEEN1000.filtro = [];
+    SEEN1000SET.filtro = {};
+    unseenAll = pool.slice();
+  }
+  var byFam = {};
+  pool.forEach(function(q){
+    var f = q.fam || 'mix';
+    (byFam[f] = byFam[f] || []).push(q);
+  });
+  function takeFrom(arr, k, used){
+    var fresh = shuffle(arr.filter(function(q){ return !SEEN1000SET.filtro[q.id] && !used[q.id]; }));
+    var out = [];
+    fresh.forEach(function(q){ if(out.length<k){ out.push(q); used[q.id]=1; } });
+    if(out.length < k){
+      shuffle(arr.filter(function(q){ return !used[q.id]; })).forEach(function(q){
+        if(out.length<k){ out.push(q); used[q.id]=1; }
+      });
+    }
+    return out;
+  }
+  var used = {};
+  var selected = [];
+  (sim.slots || [{fam:'mix', n:n}]).forEach(function(sl){
+    takeFrom(byFam[sl.fam] || [], sl.n, used).forEach(function(q){ selected.push(q); });
+  });
+  if(selected.length < n){
+    takeFrom(pool, n - selected.length, used).forEach(function(q){ selected.push(q); });
+  }
+  selected = shuffle(selected.slice(0, n));
+  if(markSeen){
+    selected.forEach(function(q){
+      if(!SEEN1000SET.filtro[q.id]){
+        SEEN1000SET.filtro[q.id]=1;
+        SEEN1000.filtro.push(q.id);
+      }
+    });
+    saveSeen1000();
+  }
+  return selected;
+}
+function findFiltroQ(id){
+  if(!id) return null;
+  var bank = (window.GUIA_BANK_FILTRO && window.GUIA_BANK_FILTRO.mat) || [];
+  for(var i=0;i<bank.length;i++){ if(bank[i].id===id) return bank[i]; }
+  return null;
+}
+function findMat1500(id){
+  if(!id) return null;
+  var fq = findFiltroQ(id);
+  if(fq) return fq;
+  var bank = (window.GUIA_BANK_MAT_1500 && window.GUIA_BANK_MAT_1500.mat) || [];
+  for(var i=0;i<bank.length;i++){ if(bank[i].id===id) return bank[i]; }
+  return null;
+}
+function srcFromMat1500(q, idx){
+  return {
+    t: q.t,
+    q: q.prompt,
+    o: q.opts ? q.opts.slice() : [],
+    a: q.ans,
+    e: q.exp,
+    d: q.d,
+    topics: q.topics ? q.topics.slice() : [],
+    ch: q.ch,
+    id: q.id,
+    imgs: q.imgs ? q.imgs.slice() : [],
+    maths: q.maths ? q.maths.slice() : [],
+    distractores: q.distractores ? q.distractores.slice() : [],
+    theory: q.theory,
+    fig: q.fig || null,
+    __s: 'mat',
+    __i: (typeof idx==='number' ? idx : 0)
+  };
+}
 
 function getCourseInfo(k){
   if(COURSES[k]) return COURSES[k];
+  var filtroSim = getFiltroSimList().filter(function(s){ return s.sim_id === k; })[0];
+  if(filtroSim){
+    return {
+      key: filtroSim.sim_id,
+      name: filtroSim.nombre,
+      short: 'Filtro ' + filtroSim.simulador,
+      full: 'Intensivo filtro · ' + filtroSim.nombre,
+      desc: filtroSim.descripcion || '',
+      color: filtroSim.color || '#d62828',
+      icon: filtroSim.icon || '⚡'
+    };
+  }
   if(window.SIMULADORES_PROGRAMADOS && Array.isArray(window.SIMULADORES_PROGRAMADOS.simuladores)){
     var sim = window.SIMULADORES_PROGRAMADOS.simuladores.find(function(s){ return s.sim_id === k; });
     if(sim){
@@ -2668,7 +2915,24 @@ function getCourseInfo(k){
   return { key: k, name: k, short: k, full: k, desc: '', color: '#0e2a47', icon: '🧮' };
 }
 
+function registerFiltroSimsInCourses(){
+  var list = (window.SIMULADORES_FILTRO && window.SIMULADORES_FILTRO.simuladores) || [];
+  list.forEach(function(sim){
+    COURSES[sim.sim_id] = {
+      key: sim.sim_id,
+      name: sim.nombre,
+      short: 'Filtro ' + sim.simulador,
+      full: 'Intensivo filtro · ' + sim.nombre,
+      desc: sim.descripcion || sim.objetivo || '',
+      color: sim.color || '#d62828',
+      icon: sim.icon || '⚡',
+      isProgrammedSim: true,
+      isFiltroSim: true
+    };
+  });
+}
 function registerProgrammedSimsInCourses(){
+  registerFiltroSimsInCourses();
   if(window.SIMULADORES_PROGRAMADOS && Array.isArray(window.SIMULADORES_PROGRAMADOS.simuladores)){
     window.SIMULADORES_PROGRAMADOS.simuladores.forEach(function(sim){
       var lvlColor = sim.nivel === 'experto' ? '#b3261e' : (sim.nivel === 'dificil' ? '#d9822b' : '#1f7a3f');
@@ -2694,44 +2958,41 @@ function getSimuladoresList(){
   return [];
 }
 
+function findAnyGuiaSim(simId){
+  var a = getFiltroSimList().filter(function(s){ return s.sim_id === simId; })[0];
+  if(a) return a;
+  var sims = getSimuladoresList();
+  return sims.filter(function(s){ return s.sim_id === simId; })[0] || null;
+}
 function buildProgrammedSimAttempt(simId, isSequential){
   if(typeof isSequential === 'undefined') isSequential = true;
-  var sims = getSimuladoresList();
-  var sim = sims.find(function(s){ return s.sim_id === simId; });
+  var sim = findAnyGuiaSim(simId);
   if(!sim){
     sim = { sim_id: simId, simulador: 1, nivel: 'intermedio', nombre: 'Simulador Matemáticas 30', duracion_min: 45, question_ids: [] };
   }
+  var filtroBank = (window.GUIA_BANK_FILTRO && window.GUIA_BANK_FILTRO.mat) || [];
   var mat1500 = (window.GUIA_BANK_MAT_1500 && window.GUIA_BANK_MAT_1500.mat) ? window.GUIA_BANK_MAT_1500.mat : [];
   var mapById = {};
-  mat1500.forEach(function(q){ mapById[q.id] = q; });
+  filtroBank.forEach(function(q){ mapById[q.id] = q; });
+  mat1500.forEach(function(q){ if(!mapById[q.id]) mapById[q.id] = q; });
   
   var selected = [];
-  (sim.question_ids || []).forEach(function(qid){
-    if(mapById[qid]) selected.push(mapById[qid]);
-  });
-  if(selected.length < 5){
-    selected = mat1500.filter(function(q){ return q.d === sim.nivel; }).slice(0, 30);
+  if(sim.rotatePool){
+    selected = pickRotatingFiltroBank(sim, !S.noSave);
+  } else {
+    (sim.question_ids || []).forEach(function(qid){
+      if(mapById[qid]) selected.push(mapById[qid]);
+    });
+    if(selected.length < 5){
+      if(isFiltroSimId(simId) && filtroBank.length) selected = filtroBank.slice(0, sim.n || 20);
+      else selected = mat1500.filter(function(q){ return q.d === sim.nivel; }).slice(0, 30);
+    }
+    if(sim.shuffleQuestions && cfg.shuffleQuestions !== false) selected = shuffle(selected.slice());
   }
   
   var qs = selected.map(function(q, idx){
-    var raw = {
-      q: q.prompt,
-      o: q.opts ? q.opts.slice() : [],
-      a: q.ans,
-      e: q.exp,
-      d: q.d,
-      t: q.t,
-      topics: q.topics ? q.topics.slice() : [],
-      ch: q.ch,
-      id: q.id,
-      imgs: q.imgs ? q.imgs.slice() : [],
-      maths: q.maths ? q.maths.slice() : [],
-      distractores: q.distractores ? q.distractores.slice() : [],
-      theory: q.theory,
-      __s: 'mat',
-      __i: idx
-    };
-    var order = [0,1,2,3];
+    var raw = srcFromMat1500(q, idx);
+    var order = raw.o.map(function(_,ix){ return ix; });
     if(cfg.shuffleOptions) order = shuffle(order);
     return { subj:'mat', order:order, src:raw };
   });
@@ -2754,10 +3015,98 @@ function buildProgrammedSimAttempt(simId, isSequential){
     limitMs: limitMs,
     isGuia1000: true,
     isProgrammedSim: true,
+    isFiltroSim: isFiltroSimId(sim.sim_id),
     sequential: !!isSequential
   };
 }
 
+function renderFiltroCatalog(){
+  registerFiltroSimsInCourses();
+  var all = getFiltroSimList();
+  if(!all.length) return '';
+  var sims = all.filter(function(s){ return !s.extra; });
+  var extras = all.filter(function(s){ return s.extra; });
+  var cards = sims.map(function(sim){
+    var hs = liveHist().filter(function(r){ return r.course === sim.sim_id; });
+    var lastRec = hs.length ? hs.sort(function(a,b){ return b.ts - a.ts; })[0] : null;
+    var best = hs.length ? Math.max.apply(null, hs.map(recPct)) : null;
+    var nQ = sim.n || (sim.question_ids ? sim.question_ids.length : 0);
+    var statusHtml = hs.length
+      ? '<div class="sim-status-row"><span class="sim-pill ok">Mejor: ' + best + '%</span> <span class="sim-pill light">' + hs.length + ' intento' + (hs.length > 1 ? 's' : '') + '</span></div>'
+      : '<div class="sim-status-row"><span class="sim-pill light">Sin intentos aún</span></div>';
+    return '<div class="sim-card-box" style="border-top:4px solid ' + (sim.color || '#d62828') + ';">'
+      + '<div class="sim-card-head">'
+      + '<span class="sim-num-badge" style="background:#fff5f5;color:' + (sim.color || '#d62828') + ';">Paso ' + sim.simulador + '</span>'
+      + '<span class="sim-time-tag">' + sim.duracion_min + ' min · ' + nQ + ' preg</span>'
+      + '</div>'
+      + '<h3 class="sim-card-title">' + (sim.icon || '') + ' ' + escH(sim.nombre) + '</h3>'
+      + '<p class="sim-card-desc">' + escH(sim.descripcion || '') + '</p>'
+      + statusHtml
+      + '<div class="sim-card-actions">'
+      + '<button class="btn primary" data-act="preview-prog-sim" data-sim="' + sim.sim_id + '" style="background:' + (sim.color || '#d62828') + ';border-color:' + (sim.color || '#d62828') + ';">Ver ficha y rendir</button>'
+      + (lastRec ? '<button class="btn sec" data-act="openrec" data-id="' + lastRec.id + '">Revisar último</button>' : '')
+      + '</div></div>';
+  }).join('');
+  return '<div class="sim30-container filtro-day" id="filtro-dia">'
+    + '<div class="sim30-header">'
+    + '<div class="sim30-badge" style="background:#d62828;">Intensivo de un día · Matemática filtro</div>'
+    + '<h2>Ruta de hoy (unas 5 horas)</h2>'
+    + '<p>Teoría propia (70 min) y luego estos cuatro bloques. No es la ruta de 30 simuladores: es el atajo del filtro, en el orden de Notion.</p>'
+    + '</div>'
+    + '<div class="filtro-dayplan">'
+    + '<div><b>70 min</b><span>Teoría ★</span></div>'
+    + '<div><b>25 min</b><span>Sprint</span></div>'
+    + '<div><b>30 min</b><span>Fourier</span></div>'
+    + '<div><b>25 min</b><span>Clones</span></div>'
+    + '<div><b>90 min</b><span>Simulacro</span></div>'
+    + '</div>'
+    + '<div style="margin:0 0 14px"><button class="btn sec" data-act="chapter" data-id="filtro-L00">Empezar por la ruta de un día</button> '
+    + '<button class="btn ghost" data-act="learn">Abrir toda la teoría del intensivo</button></div>'
+    + '<div class="sim-cards-grid">' + cards + '</div>'
+    + renderFiltroExtraBlock(extras)
+    + '</div>';
+}
+function filtroRotFreshCount(sim){
+  ensureFiltroRotSeen();
+  var bank = (window.GUIA_BANK_FILTRO && window.GUIA_BANK_FILTRO.mat) || [];
+  var prefix = (sim && sim.poolPrefix) || 'fp-';
+  var pool = bank.filter(function(q){ return String(q.id).indexOf(prefix)===0; });
+  var unseen = pool.filter(function(q){ return !SEEN1000SET.filtro[q.id]; }).length;
+  return { unseen: unseen, total: pool.length };
+}
+function renderFiltroExtraBlock(extras){
+  extras = extras || [];
+  var rot = extras[0] || null;
+  var cov = filtroRotFreshCount(rot);
+  var extraCards = extras.map(function(sim){
+    var hs = liveHist().filter(function(r){ return r.course === sim.sim_id; });
+    var lastRec = hs.length ? hs.sort(function(a,b){ return b.ts - a.ts; })[0] : null;
+    var best = hs.length ? Math.max.apply(null, hs.map(recPct)) : null;
+    var nQ = sim.n || 30;
+    var statusHtml = hs.length
+      ? '<div class="sim-status-row"><span class="sim-pill ok">Mejor: ' + best + '%</span> <span class="sim-pill light">' + hs.length + ' intento' + (hs.length > 1 ? 's' : '') + '</span></div>'
+      : '<div class="sim-status-row"><span class="sim-pill light">Sin intentos aún</span></div>';
+    return '<div class="sim-card-box" style="border-top:4px solid ' + (sim.color || '#0f4c81') + ';">'
+      + '<div class="sim-card-head">'
+      + '<span class="sim-num-badge" style="background:#eff6ff;color:' + (sim.color || '#0f4c81') + ';">Extra</span>'
+      + '<span class="sim-time-tag">' + sim.duracion_min + ' min · ' + nQ + ' preg · cambia cada vez</span>'
+      + '</div>'
+      + '<h3 class="sim-card-title">' + (sim.icon || '') + ' ' + escH(sim.nombre) + '</h3>'
+      + '<p class="sim-card-desc">' + escH(sim.descripcion || '') + '</p>'
+      + statusHtml
+      + '<div class="sim-status-row"><span class="sim-pill light">Banco: ' + cov.unseen + ' sin ver de ' + cov.total + '</span></div>'
+      + '<div class="sim-card-actions">'
+      + '<button class="btn primary" data-act="preview-prog-sim" data-sim="' + sim.sim_id + '" style="background:' + (sim.color || '#0f4c81') + ';border-color:' + (sim.color || '#0f4c81') + ';">Ver ficha y rendir</button>'
+      + (lastRec ? '<button class="btn sec" data-act="openrec" data-id="' + lastRec.id + '">Revisar último</button>' : '')
+      + '</div></div>';
+  }).join('');
+  return '<div class="filtro-extra-wrap">'
+    + '<div class="filtro-extra-head">'
+    + '<div><b>Después del día · más práctica</b><span>No entra en las 5 horas. Cada intento de 30 es distinto hasta agotar el banco (unas 10 rondas).</span></div>'
+    + '</div>'
+    + '<div class="sim-cards-grid">' + extraCards + '</div>'
+    + '</div>';
+}
 function renderSimuladores30Catalog(){
   var sims = getSimuladoresList();
   var curTab = S.simTab || 'intermedio';
@@ -2775,35 +3124,35 @@ function renderSimuladores30Catalog(){
   
   var cards = filtered.map(function(sim){
     var hs = liveHist().filter(function(r){ return r.course === sim.sim_id; });
-    var last = hs.length ? hs.sort(function(a,b){ return b.ts - a.ts; })[0] : null;
+    var lastRec = hs.length ? hs.sort(function(a,b){ return b.ts - a.ts; })[0] : null;
     var best = hs.length ? Math.max.apply(null, hs.map(recPct)) : null;
     
     var colorBadge = sim.nivel === 'experto' ? '#b3261e' : (sim.nivel === 'dificil' ? '#d9822b' : '#1f7a3f');
     var bgBadge = sim.nivel === 'experto' ? '#fdf2f2' : (sim.nivel === 'dificil' ? '#fffbeb' : '#f0fdf4');
-    
     var statusHtml = hs.length 
-      ? '<div class="sim-status-row"><span class="sim-pill ok">🏆 Mejor: ' + best + '%</span> <span class="sim-pill light">Rendido: ' + hs.length + ' vez' + (hs.length > 1 ? 'es' : '') + '</span></div>'
-      : '<div class="sim-status-row"><span class="sim-pill light">⚪ Aún no rendido</span></div>';
+      ? '<div class="sim-status-row"><span class="sim-pill ok">Mejor: ' + best + '%</span> <span class="sim-pill light">' + hs.length + ' intento' + (hs.length > 1 ? 's' : '') + '</span></div>'
+      : '<div class="sim-status-row"><span class="sim-pill light">Sin intentos aún</span></div>';
       
     return '<div class="sim-card-box" style="border-top: 4px solid ' + colorBadge + ';">'
       + '<div class="sim-card-head">'
       + '<span class="sim-num-badge" style="background:' + bgBadge + '; color:' + colorBadge + ';">Simulacro ' + (sim.simulador < 10 ? '0' + sim.simulador : sim.simulador) + '</span>'
-      + '<span class="sim-time-tag">⏱️ ' + sim.duracion_min + ' min · 30 preg</span>'
+      + '<span class="sim-time-tag">' + sim.duracion_min + ' min · 30 preg</span>'
       + '</div>'
       + '<h3 class="sim-card-title">' + escH(sim.nombre) + '</h3>'
       + '<p class="sim-card-desc">' + escH(sim.descripcion || sim.objetivo || '') + '</p>'
       + statusHtml
       + '<div class="sim-card-actions">'
-      + '<button class="btn primary" data-act="preview-prog-sim" data-sim="' + sim.sim_id + '" style="background:' + colorBadge + '; border-color:' + colorBadge + ';">📋 Ver Ficha y Rendir</button>'
+      + '<button class="btn primary" data-act="preview-prog-sim" data-sim="' + sim.sim_id + '" style="background:' + colorBadge + '; border-color:' + colorBadge + ';">Ver ficha y rendir</button>'
+      + (lastRec ? '<button class="btn sec" data-act="openrec" data-id="' + lastRec.id + '">Revisar último</button>' : '')
       + '</div>'
       + '</div>';
   }).join('');
   
-  return '<div class="sim30-container">'
+  return '<div class="sim30-container" id="sims30">'
     + '<div class="sim30-header">'
-    + '<div class="sim30-badge">🌟 NUEVO BANCO POLITÉCNICO 2026-B (1,500 PREGUNTAS)</div>'
-    + '<h2>30 Simuladores Secuenciales de Matemáticas</h2>'
-    + '<p>Entrenamiento estructurado con progresión pedagógica calculada. Elige tu ruta de dificultad para dominar el 100% de la prueba.</p>'
+    + '<div class="sim30-badge">Matemática · Área 4.1</div>'
+    + '<h2>30 simuladores de Matemáticas</h2>'
+    + '<p>Ruta principal de práctica: 10 simulacros por nivel, 30 preguntas cada uno, en el orden del temario oficial.</p>'
     + '</div>'
     + '<div class="sim-tabs-row">' + tabBtns + '</div>'
     + '<div class="sim-cards-grid">' + cards + '</div>'
@@ -2812,35 +3161,53 @@ function renderSimuladores30Catalog(){
 
 
 function viewProgrammedSimPreview(simId){
-  var sims = getSimuladoresList();
-  var sim = sims.find(function(s){ return s.sim_id === simId; }) || sims[0];
+  var sim = findAnyGuiaSim(simId);
   if(!sim) return viewHome();
+  var isFiltro = isFiltroSimId(sim.sim_id);
+  var nQ = sim.n || (sim.question_ids ? sim.question_ids.length : 30);
   
   var mat1500 = (window.GUIA_BANK_MAT_1500 && window.GUIA_BANK_MAT_1500.mat) ? window.GUIA_BANK_MAT_1500.mat : [];
+  var filtroBank = (window.GUIA_BANK_FILTRO && window.GUIA_BANK_FILTRO.mat) || [];
   var mapById = {};
-  mat1500.forEach(function(q){ mapById[q.id] = q; });
+  filtroBank.forEach(function(q){ mapById[q.id] = q; });
+  mat1500.forEach(function(q){ if(!mapById[q.id]) mapById[q.id] = q; });
   
-  var simQuestions = (sim.question_ids || []).map(function(id){ return mapById[id]; }).filter(Boolean);
-  if(!simQuestions.length){
-    simQuestions = mat1500.filter(function(q){ return q.d === sim.nivel; }).slice(0, 30);
-  }
-  
-  // Topic distribution
+  var simQuestions = [];
   var topicDist = {};
   var relatedLessons = {};
-  simQuestions.forEach(function(q){
-    var tName = q.t || 'General';
-    topicDist[tName] = (topicDist[tName] || 0) + 1;
-    if(q.ch) relatedLessons[q.ch] = true;
-    if(q.theory && q.theory.lesson_id) relatedLessons[q.theory.lesson_id] = true;
-  });
+  if(sim.rotatePool){
+    var famNames = {
+      powers:'Potencias y signos', 'prod-pow':'Misma base', 'frac-comb':'Fracciones',
+      radicals:'Radicales', 'vieta-sum':'Vieta (suma)', 'vieta-diff':'Vieta (diferencia)',
+      systems:'Sistemas', factor:'Factorización', ineq:'Inecuaciones y |x|',
+      domain:'Dominio', congruence:'Congruencia', similarity:'Semejanza',
+      parallels:'Paralelas y ángulos', thales:'Tales', cosines:'Ley de cosenos',
+      'sines-pit':'Pitágoras y senos', 'trig-id':'Identidades', soh:'SOH-CAH-TOA',
+      circle:'Circunferencia', slope:'Pendiente'
+    };
+    (sim.slots || []).forEach(function(sl){
+      topicDist[famNames[sl.fam] || sl.fam] = sl.n;
+    });
+    ['filtro-L01','filtro-L02','filtro-L03','filtro-L04','filtro-L05','filtro-L06','filtro-L07','filtro-L08','filtro-L09','filtro-L10'].forEach(function(id){ relatedLessons[id]=true; });
+  } else {
+    simQuestions = (sim.question_ids || []).map(function(id){ return mapById[id]; }).filter(Boolean);
+    if(!simQuestions.length){
+      simQuestions = mat1500.filter(function(q){ return q.d === sim.nivel; }).slice(0, 30);
+    }
+    simQuestions.forEach(function(q){
+      var tName = q.t || 'General';
+      topicDist[tName] = (topicDist[tName] || 0) + 1;
+      if(q.ch) relatedLessons[q.ch] = true;
+      if(q.theory && q.theory.lesson_id) relatedLessons[q.theory.lesson_id] = true;
+    });
+  }
   
   var distChips = Object.keys(topicDist).map(function(tName){
     return '<span class="chip light" style="margin:2px 4px 2px 0; font-size:12px;"><b>' + escH(tName) + ':</b> ' + topicDist[tName] + ' preg</span>';
   }).join('');
   
   // Related theory links
-  var thBook = (window.GUIA_THEORY_MAT || []);
+  var thBook = (window.GUIA_THEORY || window.GUIA_THEORY_MAT || []);
   var thLinks = Object.keys(relatedLessons).map(function(lid){
     var les = thBook.find(function(l){ return l.id === lid; });
     var title = les ? (les.ic + ' ' + les.t) : lid;
@@ -2855,27 +3222,44 @@ function viewProgrammedSimPreview(simId){
   var bgBadge = sim.nivel === 'experto' ? '#fdf2f2' : (sim.nivel === 'dificil' ? '#fffbeb' : '#f0fdf4');
   var lvlTitle = sim.nivel === 'experto' ? 'Nivel Experto · Politécnica Pura' : (sim.nivel === 'dificil' ? 'Nivel Difícil · Razonamiento Avanzado' : 'Nivel Intermedio · Tipo Examen Oficial EPN');
   
+  var histRows = hs.slice().sort(function(a,b){ return b.ts - a.ts; }).map(function(r){
+    var pct = recPct(r);
+    return '<tr><td>'+fmtCorta(r.ts)+'</td><td>'+levelName(r.level)+'</td><td>'+fmtDur(r.durMs)+'</td>'+
+      '<td>'+r.score+'/'+r.n+' <span class="gradepill '+gradeCls(pct)+'">'+pct+'%</span></td>'+
+      '<td><button class="btn sec mini" data-act="openrec" data-id="'+r.id+'">Revisar</button></td></tr>';
+  }).join('');
   var historyHtml = hs.length
-    ? '<div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:8px; padding:12px 16px; margin-bottom:16px;">'
-      + '<div style="display:flex; gap:16px; align-items:center; flex-wrap:wrap;">'
-      + '<div><span style="font-size:11.5px; color:#64748b; text-transform:uppercase; font-weight:700;">Mejor Marca:</span> <b style="font-size:18px; color:#1f7a3f;">' + best + '%</b></div>'
-      + '<div><span style="font-size:11.5px; color:#64748b; text-transform:uppercase; font-weight:700;">Intentos Previos:</span> <b style="font-size:16px; color:#1e293b;">' + hs.length + '</b></div>'
-      + '<div><span style="font-size:11.5px; color:#64748b; text-transform:uppercase; font-weight:700;">Último Intento:</span> <span style="font-size:13px; color:#475569;">' + (last ? fmtDate(last.ts) + ' (' + recPct(last) + '%)' : 'N/A') + '</span></div>'
-      + '</div></div>'
-    : '<div style="background:#f8fafc; border:1px dashed #cbd5e1; border-radius:8px; padding:12px 16px; margin-bottom:16px; color:#64748b; font-size:13px;">'
-      + '⚪ Aún no has rendido este simulador. ¡Comienza tu primer intento para medir tu nivel!'
-      + '</div>';
+    ? '<div class="sim-hist-box">'
+      + '<div class="sim-hist-summary">'
+      + '<div><span>Mejor marca</span><b>' + best + '%</b></div>'
+      + '<div><span>Intentos</span><b>' + hs.length + '</b></div>'
+      + '<div><span>Último</span><b>' + fmtCorta(last.ts) + ' · ' + recPct(last) + '%</b></div>'
+      + '</div>'
+      + '<table class="histtable"><thead><tr><th>Fecha</th><th>Nivel</th><th>Tiempo</th><th>Resultado</th><th></th></tr></thead><tbody>'
+      + histRows + '</tbody></table></div>'
+    : '<div class="sim-hist-empty">Todavía no hay intentos de este simulador. El primero quedará aquí para que puedas revisarlo.</div>';
       
+  if(isFiltro){
+    colorBadge = sim.color || '#d62828';
+    bgBadge = sim.extra ? '#eff6ff' : '#fff5f5';
+    lvlTitle = sim.extra ? 'Intensivo filtro · extra rotativo' : 'Intensivo filtro · un día';
+  }
+  var rotNote = '';
+  if(sim.rotatePool){
+    var cov = filtroRotFreshCount(sim);
+    rotNote = '<p style="font-size:14px;color:#0f4c81;background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:10px 12px;margin:0 0 14px;"><b>Este intento no repite las del anterior.</b> Banco de ' + cov.total + ' originales · quedan ' + cov.unseen + ' sin ver · al agotar se reinicia el ciclo. Más álgebra y 3 de circunferencia en cada tanda de 30.</p>';
+  }
   return navbar('home') + '<div class="wrap">' + drawer('home') + '<div class="main reading">'
-    + pagehead('Simulacro ' + (sim.simulador < 10 ? '0' + sim.simulador : sim.simulador) + ': ' + escH(sim.nombre), 'Guía Oficial EPN › 30 Simuladores Secuenciales › ' + levelName(sim.nivel), 'mat')
+    + pagehead((isFiltro ? 'Intensivo · ' : ('Simulacro ' + (sim.simulador < 10 ? '0' + sim.simulador : sim.simulador) + ': ')) + escH(sim.nombre), isFiltro ? 'Guía Oficial EPN › Intensivo filtro › ' + escH(sim.nombre) : ('Guía Oficial EPN › 30 Simuladores Secuenciales › ' + levelName(sim.nivel)), 'mat')
     + toastHtml()
     + '<div style="background:#fff; border:1.5px solid ' + colorBadge + '; border-radius:14px; padding:24px; margin-bottom:24px; box-shadow:0 6px 20px rgba(0,0,0,.06);">'
     + '<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px; margin-bottom:14px;">'
     + '<span class="chip" style="background:' + colorBadge + '; color:#fff; font-weight:800; font-size:12px; padding:4px 12px; border-radius:20px;">' + lvlTitle + '</span>'
-    + '<span style="font-size:13px; color:#64748b; font-weight:600;">⏱️ Tiempo límite: ' + sim.duracion_min + ' minutos · 30 preguntas de selección múltiple</span>'
+    + '<span style="font-size:13px; color:#64748b; font-weight:600;">⏱️ Tiempo límite: ' + sim.duracion_min + ' minutos · ' + nQ + ' preguntas de selección múltiple</span>'
     + '</div>'
     + '<h2 style="font-size:22px; color:#0e2a47; margin:0 0 8px;">' + escH(sim.nombre) + '</h2>'
     + '<p style="font-size:14.5px; color:#334155; line-height:1.5; margin:0 0 16px;">' + escH(sim.descripcion || sim.objetivo || 'Simulador oficial programado de 30 preguntas de alta fidelidad.') + '</p>'
+    + rotNote
     + historyHtml
     + '<div style="margin-bottom:16px;">'
     + '<h4 style="margin:0 0 6px; font-size:13px; text-transform:uppercase; color:#475569; letter-spacing:.5px;">Distribución de Contenidos del Examen:</h4>'
@@ -2895,8 +3279,8 @@ function viewProgrammedSimPreview(simId){
     + '<label for="chkNoSavePreview" style="font-size:13px; color:#475569; cursor:pointer; font-weight:500;">Modo de prueba (no alterar historial ni registrar preguntas vistas)</label>'
     + '</div></div>'
     + '<div style="display:flex; gap:12px; flex-wrap:wrap;">'
-    + '<button class="btn primary" data-act="start-prog-sim" data-sim="' + sim.sim_id + '" style="background:' + colorBadge + '; border-color:' + colorBadge + '; padding:12px 24px; font-size:15px; font-weight:800;">▶️ Iniciar Simulacro Ahora (30 Preguntas)</button>'
-    + '<button class="btn sec" data-act="enterguia" style="padding:12px 18px; font-size:14px;">‹ Volver al Catálogo de Simuladores</button>'
+    + '<button class="btn primary" data-act="start-prog-sim" data-sim="' + sim.sim_id + '" style="background:' + colorBadge + '; border-color:' + colorBadge + '; padding:12px 24px; font-size:15px; font-weight:800;">Iniciar (' + nQ + ' preguntas)</button>'
+    + '<button class="btn sec" data-act="home" style="padding:12px 18px; font-size:14px;">Volver al catálogo</button>'
     + '</div>'
     + '</div>'
     + '</div></div>' + drawerBtn() + sitefooter();
@@ -2948,9 +3332,9 @@ function viewHome(){
     '<div style="padding:0 26px 40px">'+toastHtml()+
     '<div class="guia-cta card" style="display:flex;gap:18px;align-items:flex-start;padding:18px 20px;margin-bottom:22px;border:2px solid #0e2a47">'+
       '<div class="cimg" style="background:#0e2a47;min-width:64px;height:64px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:28px;color:#fff">G</div>'+
-      '<div class="cbody" style="flex:1"><span class="badge ok">Nueva \u00e1rea</span>'+
+      '<div class="cbody" style="flex:1">'+
       '<h3 style="margin:6px 0">Gu\u00eda oficial EPN 2026-B</h3>'+
-      '<p>Espacio paralelo alineado al PDF de la gu\u00eda: teor\u00eda Aprender 1:1 por materia/tema, y scaffold de talleres futuros. <b>No modifica</b> los cuestionarios actuales (trig, ineq, mix, etc.).</p>'+
+      '<p>Temario oficial, 30 simuladores de Matemática y teoría por capítulo. También puedes cambiar con el interruptor GUÍA EPN de la barra superior.</p>'+
       '<div class="cbtns"><button class="btn" data-act="enterguia">Entrar a la gu\u00eda oficial</button>'+
       '<button class="btn sec" data-act="enterguialearn">Ir directo a Aprender</button></div></div></div>'+
     '<div class="cards">'+cards+'</div>'+
@@ -2965,6 +3349,23 @@ function viewHome(){
 }
 
 var GUIDE = {
+  filtro:{ code:'★', name:'Intensivo filtro · un día', color:'#d62828',
+    purpose:'La ruta de un día (unas 5 horas): analogía, regla, un ejemplo y la trampa de cada tipo que más se reportó.',
+    time:'70 min de lectura + 3 prácticas cortas + un simulacro de 90 min',
+    bib:['Taller Jean Fourier, 12 ago 2026 (práctica universitaria).','Testimonios de estudiantes del filtro EPN (tipos, no ítems vivos).','Maths Is Fun; Purplemath; RMIT Learning Lab; Stewart/Redlin/Watson — adaptados a una pasada rápida.'],
+    secs:{
+      'filtro-L00':{ code:'Día', items:['Reloj de 5 horas','Orden de Notion','Cómo volver a la pregunta'] },
+      'filtro-L01':{ code:'1', items:['Imán del exponente','Misma base','Fracción combinada'] },
+      'filtro-L02':{ code:'2', items:['Sacar cuadrados','El piso no puede ser 0','sen θ = 3/2 imposible'] },
+      'filtro-L03':{ code:'3', items:['Primero la caja','−x(x±1)²','Factor común'] },
+      'filtro-L04':{ code:'4', items:['Dos fotos (edades)','Vieta −b/a','Sistemas 2×2'] },
+      'filtro-L05':{ code:'5', items:['Voltear con el menos','Dos puertas del | |','Recta de signos'] },
+      'filtro-L06':{ code:'6', items:['180° adentro · exterior = los dos lejanos','Ángulo grande mira lado grande','Paralelas y Tales'] },
+      'filtro-L07':{ code:'7', items:['Lista de pasajeros + lo que mira a 17','Solo 3 atajos: LLL LAL ALA · trampa LLA','Cevianas, base media'] },
+      'filtro-L08':{ code:'8', items:['Plantillas 30-60-90 y 45-45-90','Senos: lado / seno de enfrente','SAS → cosenos'] },
+      'filtro-L09':{ code:'9', items:['SOH CAH TOA','tan·cos = sen','Tabla 0 30 45 60 90'] },
+      'filtro-L10':{ code:'10', items:['m = Δy/Δx','(x−h)²+(y−k)²=r²','Si falta tiempo, no robes L07/L09'] }
+    } },
   trig:{ code:'★', name:'Taller Especializado: Identidades Trigonométricas', color:'#7b2cbf',
     purpose:'Dominar identidades pitagóricas, recíprocas, de cociente y ángulo doble con trucos de examen.',
     time:'Taller intensivo de práctica y lectura',
@@ -3065,7 +3466,7 @@ function viewLearn(){
     : 'Aprende \u2014 teor\u00eda completa de la guia 2026-B';
   var headCrumb = isGuia() ? 'Gu\u00eda oficial \u203a Aprender' : '01-SEA-EPN_2026-2 \u203a Aprende';
   var intro = isGuia()
-    ? '<p class="th-sub">Temario <b>exacto</b> de la gu\u00eda PDF (secciones 4.1\u20134.4): Mate, F\u00edsica, Qu\u00edmica y Lenguaje. Contenido sintetizado de clases Barreno dónde aplica, y huecos completados en el mismo estilo pedag\u00f3gico.</p>'
+    ? '<p class="th-sub">Arriba está el <b>intensivo de un día</b> (sección propia, analogía + regla + ejemplo + trampa). Debajo, el temario <b>exacto</b> de la guía PDF (4.1–4.4). Si solo tienes hoy, quédate en el intensivo.</p>'
     : '<p class="th-sub">Aqui esta desarrollado <b>todo el temario oficial</b> del examen de admision (áreas 4.1 a 4.4 de la guia): conceptos desde cero, formulas, analogias, ejemplos resueltos, errores frecuentes y trucos de examen. Cada tarjeta corresponde a una seccion exacta de la guia.</p>';
   return navbar('learn')+'<div class="wrap">'+drawer('learn')+'<div class="main reading">'+
     pagehead(headTitle, headCrumb,'mix')+toastHtml()+
@@ -3136,7 +3537,7 @@ function viewCourse(){
   var guiaBadge = isG1000 ? '<span style="background:#0e2a47;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:middle;">Guía EPN · Día '+(k==='guia_mat30'?'1':'2')+'</span>' : '';
   var lv = LEVELS.map(function(l){
     var disabled = isG1000 && l.k!=='medio';
-    return '<button class="pill '+l.c+(cfg.level===l.k?' on':'')+(disabled?' disabled':'')+'" data-act="setlevel" data-l="'+l.k+'"'+(disabled?' disabled title="Solo nivel intermedio en banco 1000 (fácil/difícil próximamente)"':'')+'>'+l.n+(disabled?' 🔒':'')+'</button>';
+    return '<button class="pill '+l.c+(cfg.level===l.k?' on':'')+(disabled?' disabled':'')+'" data-act="setlevel" data-l="'+l.k+'"'+(disabled?' disabled title="Este banco trabaja en nivel intermedio"':'')+'>'+l.n+(disabled?' 🔒':'')+'</button>';
   }).join('');
   var hs = liveHist().filter(function(r){ return r.course===k; }).sort(function(a,b){return b.ts-a.ts;});
   var crumbBase = isG1000 ? 'Guía oficial EPN \u203a Simuladores' : '01-SEA-EPN_2026-2';
@@ -3149,7 +3550,7 @@ function viewCourse(){
     '<div style="max-width:840px">'+
     '<p>'+c.desc+' Cada intento toma <b>'+countFor(k)+' preguntas</b> distintas'+(k==='mix'?' repartidas entre las cuatro áreas': perInfo)+' de un banco de <b>'+totalBank+'</b>'+(isG1000?' (banco 1000 original)':'')+'.</p>'+
     '<div style="margin:14px 0 6px;font-weight:600;font-size:14px">Dificultad</div><div class="pills">'+lv+'</div>'+
-    (isG1000? '<div class="hint" style="margin-top:6px;">Banco 1000 solo en <b>nivel intermedio</b> (mismo exigido por la EPN). Fácil/difícil/experta se añadirán después.</div>' : '')+
+    (isG1000? '<div class="hint" style="margin-top:6px;">Este banco trabaja en <b>nivel intermedio</b>, el mismo exigido por la EPN.</div>' : '')+
     '<table class="quizsummary"><tbody>'+
     '<tr><th>Método de calificación</th><td>Calificación más alta</td></tr>'+
     '<tr><th>Límite de tiempo</th><td>'+minutesFor(k)+' minutos</td></tr>'+
@@ -3252,7 +3653,10 @@ function viewReview(){
     pagehead(c.full+(a.historic?' \u00b7 intento guardado':''),'01-SEA-EPN_2026-2 \u203a '+c.full)+toastHtml()+
     head+breakdown()+qs+onePageNav+
     '<div class="finishlink"><a data-act="finishreview">Finalizar revisi\u00f3n</a></div>'+
-    '<div style="margin-bottom:16px;display:flex;gap:10px;flex-wrap:wrap"><button class="btn" data-act="start">Realizar otro intento</button>'+
+    '<div style="margin-bottom:16px;display:flex;gap:10px;flex-wrap:wrap">'+
+    ((a.isProgrammedSim || isProgrammedSimId(a.course))
+      ? '<button class="btn" data-act="start-prog-sim" data-sim="'+escH(a.course)+'">Realizar otro intento</button>'
+      : '<button class="btn" data-act="start">Realizar otro intento</button>')+
     '<button class="btn sec" data-act="learn">Repasar la teor\u00eda</button>'+
     '<button class="btn sec" data-act="stats">Ver mi progreso</button>'+
     '<button class="btn ghost" data-act="history">Historial</button></div>'+
@@ -3286,9 +3690,32 @@ function cloudSync() {
     .then(function(res){
       if(res && res.ok && res.data && res.data.data) {
         var cloud = res.data.data;
-        var cloudHist = cloud.hist || [];
+        var merger = window.EPN_MERGE;
         var changed = false;
-        
+        if(merger && typeof merger.mergeState==='function'){
+          var merged = merger.mergeState(
+            { hist: HIST, seen: SEEN, seen1000: SEEN1000, cfg: cfg, active: null },
+            { hist: cloud.hist, seen: cloud.seen, seen1000: cloud.seen1000, cfg: cloud.cfg, active: cloud.active }
+          );
+          if(merged.hist && merged.hist.length !== HIST.length) changed = true;
+          HIST = merged.hist || HIST;
+          if(merged.seen){
+            Object.keys(merged.seen).forEach(function(k){
+              SEEN[k] = merged.seen[k] || SEEN[k] || [];
+              SEENSET[k] = {};
+              (SEEN[k]||[]).forEach(function(idx){ SEENSET[k][idx]=1; });
+            });
+          }
+          if(merged.seen1000){
+            Object.keys(merged.seen1000).forEach(function(k){
+              SEEN1000[k] = merged.seen1000[k] || SEEN1000[k] || [];
+              SEEN1000SET[k] = {};
+              (SEEN1000[k]||[]).forEach(function(id){ SEEN1000SET[k][id]=1; });
+            });
+          }
+          changed = true;
+        } else {
+        var cloudHist = cloud.hist || [];
         cloudHist.forEach(function(cRec){
           var exists = HIST.some(function(lRec){ return lRec.id === cRec.id || (lRec.ts === cRec.ts && lRec.score === cRec.score); });
           if(!exists) {
@@ -3322,6 +3749,7 @@ function cloudSync() {
               });
             }
           });
+        }
         }
 
         // Continuidad cross-device: si no hay intento local y la nube trae uno vigente, restaurarlo
@@ -3607,6 +4035,11 @@ function render(){
   }
   el('modalroot').innerHTML = modalHtml;
   if(S.scrollTop!==false) window.scrollTo(0,0);
+  if(typeof S.focusQuestion==='number'){
+    var fq = S.focusQuestion;
+    S.focusQuestion = null;
+    scrollToReviewQuestion(fq);
+  }
   syncHash();
 }
 
@@ -3629,7 +4062,7 @@ function stopTimer(){ if(S.tick){ clearInterval(S.tick); S.tick = null; } }
 function serializeAttempt(a){
   var qsSer = a.qs.map(function(q){
     var s=q.src;
-    return { subj:q.subj, order:q.order.slice(), src:{ t:s.t, q:s.q, o:s.o.slice(), a:s.a, e:s.e, ch:s.ch, maths:(s.maths||[]).slice(), imgs:(s.imgs||[]).slice(), __s:s.__s, n:s.n, d:s.d, topics:(s.topics||[]).slice(), id:s.id, __i:s.__i } };
+    return { subj:q.subj, order:q.order.slice(), src:{ t:s.t, q:s.q, o:s.o.slice(), a:s.a, e:s.e, ch:s.ch, maths:(s.maths||[]).slice(), imgs:(s.imgs||[]).slice(), __s:s.__s, n:s.n, d:s.d, topics:(s.topics||[]).slice(), id:s.id, __i:s.__i, theory:s.theory||null, distractores:(s.distractores||[]).slice(), fig:s.fig||null } };
   });
   // view/onePage/cur se guardan para qué F5 vuelva exactamente al mismo lugar (pregunta, paginación, resumen)
   var v = (a.view || S.view || 'attempt');
@@ -3637,7 +4070,7 @@ function serializeAttempt(a){
   var cur = (typeof a.cur==='number' ? a.cur : (typeof S.attempt!=='undefined' && S.attempt && typeof S.attempt.cur==='number' ? S.attempt.cur : 0));
   // endMs para revisiones (finished review) — permite F5 en revisión sin perder el intento recién corregido
   var endMs = (a.end ? a.end.getTime() : null);
-  return { course:a.course, level:a.level, area:(a.area||S.area), qs:qsSer, ans:a.ans.slice(), flags:a.flags.slice(), cur:cur, startMs:a.start.getTime(), endMs:endMs, limitMs:a.limitMs, isGuia1000:!!a.isGuia1000, isGuia69:!!a.isGuia69, noSave:!!a.noSave, view:v, onePage:op, finished:!!a.finished, historic:!!a.historic };
+  return { course:a.course, level:a.level, area:(a.area||S.area), qs:qsSer, ans:a.ans.slice(), flags:a.flags.slice(), cur:cur, startMs:a.start.getTime(), endMs:endMs, limitMs:a.limitMs, isGuia1000:!!a.isGuia1000, isGuia69:!!a.isGuia69, isProgrammedSim:!!(a.isProgrammedSim||isProgrammedSimId(a.course)), noSave:!!a.noSave, view:v, onePage:op, finished:!!a.finished, historic:!!a.historic };
 }
 function deserializeAttempt(raw){
   if(!raw || !Array.isArray(raw.qs) || typeof raw.startMs!=='number' || typeof raw.limitMs!=='number') return null;
@@ -3658,13 +4091,13 @@ function deserializeAttempt(raw){
   var left2 = (raw.startMs + raw.limitMs) - Date.now();
   var expired2 = left2 <= 0;
   var qs = raw.qs.map(function(x){
-    return { subj:x.subj, order:x.order.slice(), src:{ t:x.src.t, q:x.src.q, o:x.src.o.slice(), a:x.src.a, e:x.src.e, ch:x.src.ch, maths:(x.src.maths||[]).slice(), imgs:(x.src.imgs||[]).slice(), __s:x.src.__s, n:x.src.n, d:x.src.d, topics:(x.src.topics||[]).slice(), id:x.src.id, __i:x.src.__i } };
+    return { subj:x.subj, order:x.order.slice(), src:{ t:x.src.t, q:x.src.q, o:x.src.o.slice(), a:x.src.a, e:x.src.e, ch:x.src.ch, maths:(x.src.maths||[]).slice(), imgs:(x.src.imgs||[]).slice(), __s:x.src.__s, n:x.src.n, d:x.src.d, topics:(x.src.topics||[]).slice(), id:x.src.id, __i:x.src.__i, theory:x.src.theory||null, distractores:(x.src.distractores||[]).slice(), fig:x.src.fig||null } };
   });
   var view = raw.view || 'attempt';
   var onePage = (raw.onePage!=null ? raw.onePage : null);
   var finished = !!raw.finished || (expired2 && !isReview);
   var end = raw.endMs ? new Date(raw.endMs) : (finished ? new Date(Math.min(Date.now(), raw.startMs+raw.limitMs)) : null);
-  var a={ course:raw.course, level:raw.level, area:raw.área, qs:qs, ans:raw.ans.slice(), flags:raw.flags.slice(), cur:(typeof raw.cur==='number'?raw.cur:0), start:new Date(raw.startMs), end: end, finished: finished, limitMs: raw.limitMs, historic:!!raw.historic, isGuia1000:!!raw.isGuia1000, isGuia69:!!raw.isGuia69, noSave:!!raw.noSave, restored:true, view:view, onePage:onePage };
+  var a={ course:raw.course, level:raw.level, area:raw.area, qs:qs, ans:raw.ans.slice(), flags:raw.flags.slice(), cur:(typeof raw.cur==='number'?raw.cur:0), start:new Date(raw.startMs), end: end, finished: finished, limitMs: raw.limitMs, historic:!!raw.historic, isGuia1000:!!raw.isGuia1000, isGuia69:!!raw.isGuia69, isProgrammedSim:!!(raw.isProgrammedSim||isProgrammedSimId(raw.course)), noSave:!!raw.noSave, restored:true, view:view, onePage:onePage, simId: raw.course };
   // si es revisión, marca historic false pero finished true para qué renderice review sin bloquear
   return a;
 }
@@ -3714,7 +4147,8 @@ function recordAttempt(a){
     return {k:q.subj, i:q.src.__i, sel:sel};
   });
   var rec = { id:'a'+a.start.getTime(), ts:a.start.getTime(), course:a.course, level:a.level,
-    min:Math.round(a.limitMs/60000), durMs:(a.end-a.start), n:a.qs.length, score:score, qs:qsRec };
+    min:Math.round(a.limitMs/60000), durMs:(a.end-a.start), n:a.qs.length, score:score, qs:qsRec,
+    isProgrammedSim: !!(a.isProgrammedSim || isProgrammedSimId(a.course)) };
   HIST.push(rec); saveHist();
   if(a.isGuia1000){
     // SEEN1000 ya se marcó al generar, no duplicar; asegura persistencia
@@ -3843,24 +4277,32 @@ document.addEventListener('click', function(e){
   if(act==='closemodal' && t.classList.contains('modalbg') && e.target!==t) return;
   switch(act){
     case 'home': if(blocked()) break; stopTimer(); go('home'); break;
-    case 'learn': if(blocked()) break; go('learn'); break;
+    case 'learn':
+      if(blocked()) break;
+      if(S.view==='review' && S.attempt) captureReviewReturn(S.onePage!=null? S.onePage : S.attempt.cur);
+      go('learn');
+      break;
     case 'guiawork': if(blocked()) break; go('guiawork'); break;
     case 'preview-prog-sim':
       S.selectedSimId = t.dataset.sim;
       S.area = 'guia';
+      (getSimuladoresList()||[]).forEach(function(sim){
+        if(sim.sim_id === S.selectedSimId) S.simTab = sim.nivel;
+      });
       go('sim_preview');
       break;
     case 'go-theory-deep':
-      if(blocked()) break;
+      if(inProgress()){ blocked(); break; }
       var chId = t.dataset.ch || 'mat-L01';
       var anchor = t.dataset.anchor || '';
       var qix = parseInt(t.dataset.qix || '0', 10);
-      if(S.attempt && S.view === 'review'){
-        S.reviewReturn = { course: S.attempt.course, qIndex: qix, onePage: S.onePage };
+      if(S.attempt && (S.view === 'review' || S.attempt.finished)){
+        captureReviewReturn(qix);
       }
       S.area = 'guia';
       S.chapter = chId;
       S.view = 'chapter';
+      S.scrollTop = true;
       render();
       if(anchor){
         setTimeout(function(){
@@ -3870,23 +4312,7 @@ document.addEventListener('click', function(e){
       }
       break;
     case 'return-to-review':
-      if(blocked()) break;
-      if(S.reviewReturn){
-        var targetQix = S.reviewReturn.qIndex;
-        S.view = 'review';
-        if(S.reviewReturn.onePage != null){
-          S.onePage = targetQix;
-        }
-        S.reviewReturn = null;
-        render();
-        setTimeout(function(){
-          var qEl = document.querySelector('.que') || document.getElementById('timerbox');
-          if(qEl) qEl.scrollIntoView({behavior:'smooth', block:'start'});
-        }, 100);
-      } else {
-        S.view = 'review';
-        render();
-      }
+      applyReturnToReview();
       break;
     case 'setsimtab':
       S.simTab = t.dataset.tab || 'intermedio';
@@ -3951,6 +4377,8 @@ document.addEventListener('click', function(e){
       if(isPinAuthenticated()) pushCloudState();
       break;
     case 'start-prog-sim':
+      if(blocked()) break;
+      clearReviewReturn();
       stopTimer();
       clearActive();
       var simId = t.dataset.sim;
@@ -4018,14 +4446,18 @@ document.addEventListener('click', function(e){
     case 'enterguialearn': enterGuia('learn'); break;
     case 'exitguia': exitGuia(); break;
     case 'guiaplaceholder':
-      S.toast = 'Taller \u00ab'+(t.dataset.id||'')+'\u00bb a\u00fan no cableado. Usa Aprender para la teor\u00eda; el banco de preguntas vendr\u00e1 despu\u00e9s.';
-      render(); break;
+      go('home');
+      break;
     case 'stats': if(blocked()) break; go('stats'); break;
     case 'history': if(blocked()) break; S.histTab='all'; go('history'); break;
     case 'histtab': S.histTab = t.dataset.t; render(); break;
     case 'histtabgo': if(blocked()) break; S.histTab = t.dataset.t; go('history'); break;
     case 'chapter':
-      if(blocked()) break;
+      if(inProgress()){ blocked(); break; }
+      if(S.view==='review' && S.attempt){
+        var qFromBtn = t.dataset.qix != null ? parseInt(t.dataset.qix,10) : (S.onePage!=null? S.onePage : S.attempt.cur);
+        captureReviewReturn(qFromBtn);
+      }
       S.chapter = t.dataset.id; go('chapter');
       try{
         UI.read = UI.read || {};
@@ -4044,7 +4476,11 @@ document.addEventListener('click', function(e){
       render(); break;
     case 'clearplan': clearPlan(t.dataset.c || S.course); S.toast = null; render(); break;
     case 'anchor': var anchorEl = document.getElementById(t.dataset.id); if(anchorEl) anchorEl.scrollIntoView({behavior:'smooth',block:'start'}); break;
-    case 'stayin': S.modal = null; render(); break;
+    case 'stayin':
+      S.modal = null;
+      if(S.attempt && !S.attempt.finished && !S.attempt.historic) S.view = 'attempt';
+      render();
+      break;
     case 'forcefinish': finishAttempt(false); break;
     case 'toggledrawer': UI.drawer = !UI.drawer; saveUI(); rerenderKeepScroll(); break;
     case 'cfg': S.modal = 'cfg'; render(); break;
@@ -4132,11 +4568,19 @@ document.addEventListener('click', function(e){
       if(rec){
         if(blocked()) break;
         var aHist = attemptFromRecord(rec);
+        if(!aHist || !aHist.qs || !aHist.qs.length){
+          S.toast = 'No se pudo abrir la revisión de este intento. Las preguntas ya no están en el banco.';
+          render();
+          break;
+        }
         S.attempt = aHist; S.course = rec.course; S.onePage = null; S.view = 'review';
-        // persiste revisión histórica para F5 profesional (no cuenta cómo intento activo)
+        if(aHist.isProgrammedSim || isProgrammedSimId(rec.course)){
+          S.area = 'guia';
+          S.selectedSimId = rec.course;
+        }
         try{
-          var qsSerHist = aHist.qs.map(function(q){ var s=q.src; return { subj:q.subj, order:q.order.slice(), src:{ t:s.t, q:s.q, o:s.o.slice(), a:s.a, e:s.e, ch:s.ch, maths:(s.maths||[]).slice(), imgs:(s.imgs||[]).slice(), __s:s.__s, n:s.n, d:s.d, topics:(s.topics||[]).slice(), id:s.id, __i:s.__i } }; });
-          localStorage.setItem(ACTIVE_KEY, JSON.stringify({ course:aHist.course, level:aHist.level, area:(aHist.area||S.area), qs:qsSerHist, ans:aHist.ans.slice(), flags:aHist.flags.slice(), cur:aHist.cur, startMs:aHist.start.getTime(), endMs:(aHist.end?aHist.end.getTime():null), limitMs:aHist.limitMs, isGuia1000:!!aHist.isGuia1000, isGuia69:!!aHist.isGuia69, view:'review', onePage:null, finished:true, historic:true }));
+          var qsSerHist = aHist.qs.map(function(q){ var s=q.src; return { subj:q.subj, order:q.order.slice(), src:{ t:s.t, q:s.q, o:s.o.slice(), a:s.a, e:s.e, ch:s.ch, maths:(s.maths||[]).slice(), imgs:(s.imgs||[]).slice(), __s:s.__s, n:s.n, d:s.d, topics:(s.topics||[]).slice(), id:s.id, __i:s.__i, theory:s.theory||null, distractores:(s.distractores||[]).slice(), fig:s.fig||null } }; });
+          localStorage.setItem(ACTIVE_KEY, JSON.stringify({ course:aHist.course, level:aHist.level, area:(aHist.area||S.area), qs:qsSerHist, ans:aHist.ans.slice(), flags:aHist.flags.slice(), cur:aHist.cur, startMs:aHist.start.getTime(), endMs:(aHist.end?aHist.end.getTime():null), limitMs:aHist.limitMs, isGuia1000:!!aHist.isGuia1000, isGuia69:!!aHist.isGuia69, isProgrammedSim:!!aHist.isProgrammedSim, view:'review', onePage:null, finished:true, historic:true }));
         }catch(e){}
         S.toast = rec.deleted? 'Est\u00e1s viendo un intento eliminado: se conserva para consulta pero no cuenta en las estad\u00edsticas.' : null;
         render();
@@ -4159,7 +4603,20 @@ document.addEventListener('click', function(e){
     case 'showall': S.onePage = (S.onePage==null? 0 : null); if(S.attempt) S.attempt.onePage=S.onePage; saveActive(); persistActiveThrottled(); render(); break;
     case 'rnext': S.onePage = Math.min(S.attempt.qs.length-1, S.onePage+1); if(S.attempt) S.attempt.onePage=S.onePage; saveActive(); persistActiveThrottled(); render(); break;
     case 'rprev': S.onePage = Math.max(0, S.onePage-1); if(S.attempt) S.attempt.onePage=S.onePage; saveActive(); persistActiveThrottled(); render(); break;
-    case 'finishreview': try{ localStorage.removeItem(ACTIVE_KEY); }catch(e){} if(isPinAuthenticated()){ try{ pushCloudState(); }catch(e2){} } S.onePage = null; if(S.attempt) S.attempt.view=null; go(S.attempt && S.attempt.historic? 'history' : 'course'); break;
+    case 'finishreview':
+      try{ localStorage.removeItem(ACTIVE_KEY); }catch(e){}
+      if(isPinAuthenticated()){ try{ pushCloudState(); }catch(e2){} }
+      S.onePage = null;
+      clearReviewReturn();
+      if(S.attempt) S.attempt.view=null;
+      if(S.attempt && (S.attempt.isProgrammedSim || isProgrammedSimId(S.attempt.course))){
+        S.selectedSimId = S.attempt.course;
+        S.area = 'guia';
+        go('sim_preview');
+      } else {
+        go(S.attempt && S.attempt.historic? 'history' : 'course');
+      }
+      break;
     case 'openrecdel': break;
   }
 });
@@ -4185,6 +4642,7 @@ window.addEventListener('hashchange', function(){
 // Boot una sola vez: previene doble render y qué applyHashRoute pise intento restaurado
 (function bootOnce(){
   registerProgrammedSimsInCourses();
+  loadReviewReturn();
   var hadHash = !!String(location.hash||'');
   try{
     // intenta restaurar intento/revisión desde LS primero (F5 profesional)

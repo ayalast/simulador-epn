@@ -794,7 +794,7 @@ function lookupFig(name){
     var reg = regs[i];
     if (reg && reg[name]) return reg[name]();
   }
-  return '';
+  return '<div class="figure warn">Falta FIG: '+escH(name)+'</div>';
 }
 function md(src){
   var lines = String(src).split('\n'), out = '', i = 0, para = [];
@@ -3394,38 +3394,80 @@ var GUIDE = {
     time:'90 minutos (examen filtro: si no lo apruebas no rindes las demas áreas)',
     bib:['Stewart, Redlin y Watson (2012). Precalculo. Matemáticas para el cálculo, 6a ed. Cengage.','Moise, E. y Downs, F. (1970). Geometria Moderna. Addison Wesley.','Lehmann, C. H. (1984). Geometria Analítica. Limusa.'],
     secs:{
-      m1:{ code:'4.1.1', items:['Operaciones con números enteros','Operaciones con números racionales','Operaciones con números reales','Expresiones algebraicas'] },
-      m2:{ code:'4.1.2', items:['Ecuaciones de primer grado','Sistemas de ecuaciones lineales','Ecuaciones de segundo grado con una incognita','Inecuaciones y valor absoluto'] },
-      m3:{ code:'4.1.3', items:['Axiomas de punto, recta y distancia','Paralelismo y ángulos','Medida angular, congruencia de ángulos y ángulos entre paralelas y una transversal','Congruencia de triángulos','Semejanza de triángulos'] },
-      m4:{ code:'4.1.4', items:['Razones trigonométricas','Identidades trigonométricas','Ley de senos y ley de cosenos','Rectas y circunferencias en el plano'] }
+      "mat-L01":{ code:"4.1.1 · L1", items:["Contenido del capítulo","Ejemplos resueltos","Errores frecuentes","Repaso de conceptos"] },
+      "mat-L02":{ code:"4.1.1 · L2", items:["Contenido del capítulo","Ejemplos resueltos","Errores frecuentes"] },
+      "mat-L03":{ code:"4.1.1 · L3", items:["Contenido del capítulo","Ejemplos resueltos","Errores frecuentes","Repaso de conceptos"] },
+      "mat-L04":{ code:"4.1.1 · L4", items:["Contenido del capítulo","Ejemplos resueltos","Errores frecuentes"] },
+      "mat-L05":{ code:"4.1.2 · L5", items:["Contenido del capítulo","Ejemplos resueltos","Errores frecuentes","Repaso de conceptos"] },
+      "mat-L06":{ code:"4.1.2 · L6", items:["Contenido del capítulo","Ejemplos resueltos","Errores frecuentes"] },
+      "mat-L07":{ code:"4.1.2 · L7", items:["Contenido del capítulo","Ejemplos resueltos","Errores frecuentes","Repaso de conceptos"] },
+      "mat-L08":{ code:"4.1.2 · L8", items:["Contenido del capítulo","Ejemplos resueltos","Errores frecuentes"] },
+      "mat-L09":{ code:"4.1.2 · L9", items:["Contenido del capítulo","Ejemplos resueltos","Errores frecuentes","Repaso de conceptos"] },
+      "mat-L10":{ code:"4.1.3 · L10", items:["Contenido del capítulo","Ejemplos resueltos","Errores frecuentes"] },
+      "mat-L11":{ code:"4.1.4 · L11", items:["Contenido del capítulo","Ejemplos resueltos","Errores frecuentes","Repaso de conceptos"] },
+      "mat-L12":{ code:"4.1.4 · L12", items:["Contenido del capítulo","Ejemplos resueltos","Errores frecuentes"] },
+      "mat-L13":{ code:"4.1.4 · L13", items:["Contenido del capítulo","Ejemplos resueltos","Errores frecuentes","Repaso de conceptos"] },
+      "mat-L14":{ code:"4.1.4 · L14", items:["Contenido del capítulo","Ejemplos resueltos","Errores frecuentes"] }
     } },
   fis:{ code:'4.2', name:'Física', color:'#8fc7e8',
     purpose:'Evaluar la comprension de los principios fundamentales de la mecanica.',
     time:'Parte de los 120 minutos del segundo bloque',
     bib:['Hewitt, P. G. (2016). Física conceptual, 12a ed. Pearson.','Serway, R. A. y Vuille, C. (2018). Fundamentos de física, 10a ed. Cengage.'],
     secs:{
-      f1:{ code:'4.2.1', items:['Primera ley de Newton','Fuerza neta, vectores y suma vectorial','Equilibrio estatico y dinamico','Movimiento rectilineo: posición, distancia, desplazamiento, rapidez, velocidad y aceleracion','Caida de los cuerpos','Movimiento de proyectiles y satelites'] },
-      f2:{ code:'4.2.2', items:['Segunda ley de Newton','Fuerza gravitacional','Fuerzas de rozamiento y de resistencia; caida libre con resistencia del aire','Tercera ley de Newton','Cinematica y dinamica del movimiento circular uniforme','Momento lineal e impulso; conservacion del momento'] },
-      f3:{ code:'4.2.3', items:['Trabajo y potencia','Trabajo neto y energia cinetica','Fuerzas conservativas y energia potencial','Energia mecanica y su conservacion','Fuentes de energia'] }
+      "fis-L01":{ code:"4.2.1 · L1", items:["Primera ley / inercia","Reposo y MRU son el mismo estado","Masa (kg) ≠ peso (N)","La inercia no es una fuerza"] },
+      "fis-L02":{ code:"4.2.1 · L2", items:["Escalar vs vector","Suma: recta, cabeza-cola, componentes","Fuerza neta"] },
+      "fis-L03":{ code:"4.2.1 · L3", items:["DCL","ΣFx=0 y ΣFy=0","Estático vs dinámico"] },
+      "fis-L04":{ code:"4.2.1 · L4", items:["Posición, distancia, desplazamiento","Rapidez vs velocidad","Gráficas x-t y v-t"] },
+      "fis-L05":{ code:"4.2.1 · L5", items:["Caída libre","v=gt y d=½gt²","Subir tarda lo mismo que bajar"] },
+      "fis-L06":{ code:"4.2.1 · L6", items:["Dos movimientos a la vez","Independencia horizontal/vertical","Montaña de Newton / órbita"] },
+      "fis-L07":{ code:"4.2.2 · L7", items:["F=ma","Misma F, más masa → menos a","Masa ≠ peso"] },
+      "fis-L08":{ code:"4.2.2 · L8", items:["F=Gm1m2/r²","Inverso del cuadrado","g=GM/R²"] },
+      "fis-L09":{ code:"4.2.2 · L9", items:["Estático vs cinético","Velocidad límite","Paracaídas"] },
+      "fis-L10":{ code:"4.2.2 · L10", items:["Acción-reacción en DOS cuerpos","No se cancelan","Caballo y carreta"] },
+      "fis-L11":{ code:"4.2.2 · L11", items:["MCU: v tangente, ac al centro","Fc es un papel, no una fuerza extra","Al cortar la cuerda sigue tangente"] },
+      "fis-L12":{ code:"4.2.2 · L12", items:["p=mv","Impulso = área F-t","Conservación si Fext=0"] },
+      "fis-L13":{ code:"4.2.3 · L13", items:["W=Fd cosθ","Signo del trabajo","P=W/t"] },
+      "fis-L14":{ code:"4.2.3 · L14", items:["K=½mv²","Teorema trabajo-energía","Frenado ∝ v²"] },
+      "fis-L15":{ code:"4.2.3 · L15", items:["Conservativa: no depende del camino","Ug=mgh y resortes","Familias de fuerzas"] },
+      "fis-L16":{ code:"4.2.3 · L16", items:["Emec=K+U si no hay disipación","Intercambio K↔U","Fuentes renovables vs no"] }
     } },
   qui:{ code:'4.3', name:'Química', color:'#a8d5a2',
     purpose:'Evaluar conocimientos basicos sobre la estructura de la materia y las reacciones quimicas.',
     time:'Parte de los 120 minutos del segundo bloque',
     bib:['Chang, R. y Goldsby, K. (2016). Química, 12a ed. McGraw-Hill.','Hein, M., Willard, C. y Arena, S. (2018). Fundamentos de Química. Cengage.'],
     secs:{
-      q1:{ code:'4.3.1', items:['Transformacion de unidades','Clasificación de la materia; procesos fisicos y quimicos','Particulas fundamentales','Estructura electronica de atomos e iones'] },
-      q2:{ code:'4.3.2', items:['Estructura de la tabla periódica','Propiedades periódicas de los elementos','Nomenclatura inorganica de compuestos binarios, ternarios y cuaternarios'] },
-      q3:{ code:'4.3.3', items:['Enlace ionico','Enlace covalente','Estructuras de Lewis','Geometria molecular','Fuerzas intermoleculares'] },
-      q4:{ code:'4.3.4', items:['Concepto de mol','Formulas empiricas y moleculares','Reacciones quimicas','Cálculos estequiometricos y reactivo limitante'] }
+      "qui-L01":{ code:"4.3.1 · L1", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "qui-L02":{ code:"4.3.1 · L2", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "qui-L03":{ code:"4.3.1 · L3", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "qui-L04":{ code:"4.3.1 · L4", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "qui-L05":{ code:"4.3.1+ · L5", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "qui-L06":{ code:"4.3.2 · L6", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "qui-L07":{ code:"4.3.2 · L7", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "qui-L08":{ code:"4.3.2 · L8", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "qui-L09":{ code:"4.3.2 · L9", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "qui-L10":{ code:"4.3.3 · L10", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "qui-L11":{ code:"4.3.3 · L11", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "qui-L12":{ code:"4.3.3 · L12", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "qui-L13":{ code:"4.3.3 · L13", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "qui-L14":{ code:"4.3.4 · L14", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "qui-L15":{ code:"4.3.4 · L15", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "qui-L16":{ code:"4.3.4 · L16", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "qui-L17":{ code:"4.3.4 · L17", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] }
     } },
   len:{ code:'4.4', name:'Lenguaje', color:'#f3c778',
     purpose:'Evaluar comprension lectora, pensamiento critico y capacidad de argumentacion.',
     time:'Parte de los 120 minutos del segundo bloque',
     bib:['Rubio, E., Duenas, F., Garcia, L. y Garzon, D. (2019). Competencias linguisticas. Uniminuto.','Copi, I. M., Cohen, C. y McMahon, K. (2011). Introduccion a la logica. Pearson.'],
     secs:{
-      l1:{ code:'4.4.1', items:['La comunicacion: rol, importancia y elementos','La razon y el pensamiento logico','Analisis, interpretacion y elaboracion de juicios de valor propios'] },
-      l2:{ code:'4.4.2', items:['Razonamiento logico','Analisis e interpretacion de textos','Lectura critica'] },
-      l3:{ code:'4.4.3', items:['Construccion del parrafo','Argumentacion logica: construccion de argumentos e identificacion de falacias','Uso de signos de puntuacion y concordancia gramatical'] }
+      "len-L01":{ code:"4.4.1 · L1", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "len-L02":{ code:"4.4.1 · L2", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "len-L03":{ code:"4.4.1 · L3", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "len-L04":{ code:"4.4.2 · L4", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "len-L05":{ code:"4.4.2 · L5", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "len-L06":{ code:"4.4.2 · L6", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "len-L07":{ code:"4.4.3 · L7", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "len-L08":{ code:"4.4.3 · L8", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] },
+      "len-L09":{ code:"4.4.3 · L9", items:["Conceptos fundamentales","Ejemplos resueltos","Errores frecuentes"] }
     } },
   gen:{ code:'\u2605', name:'Estrategia de examen', color:'#b9c6d4',
     purpose:'Cómo esta armada la prueba real y cómo administrar los 210 minutos.',

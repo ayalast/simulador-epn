@@ -789,7 +789,7 @@ function quoteClass(t){
   return '';
 }
 function lookupFig(name){
-  var regs = [window.FIG_FILTRO, window.FIG_FIS, window.FIG_QUI, window.FIG_LEN];
+  var regs = [window.FIG_FILTRO, window.FIG_FIS, window.FIG_QUI, window.FIG_LEN, window.FIG_AVZ];
   for (var i = 0; i < regs.length; i++) {
     var reg = regs[i];
     if (reg && reg[name]) return reg[name]();
@@ -869,7 +869,9 @@ function chapterToc(body){
 var CFG_KEY='epn_cfg_v3', HIST_KEY='epn_hist_v1', SEEN_KEY='epn_seen_v1', UI_KEY='epn_ui_v1';
 var DEFAULT_CFG = {minutes:30, count: 15, mixMinutes:90, mixCount:20, level:'medio', noRepeat:true,
   shuffleOptions:true, shuffleQuestions:true, showFeedback:true, student:'AYALA PABON ETHAN FARID',
-  guiaCfg:{ guia_mat30:{n:30, min:90}, guia_fql120:{n:60, min:120}, guia_fis:{n:20, min:40}, guia_qui:{n:20, min:40}, guia_len:{n:20, min:40} } };
+  guiaCfg:{ guia_mat30:{n:30, min:90}, guia_fql120:{n:60, min:120}, guia_fis:{n:20, min:40}, guia_qui:{n:20, min:40}, guia_len:{n:20, min:40},
+    guia_fis_avz:{n:20, min:50}, guia_qui_avz:{n:20, min:50}, guia_len_avz:{n:20, min:50}, guia_fql_avz:{n:45, min:120},
+    guia_fql_dia2:{n:60, min:120} } };
 function load(key, def){ try{ var v = JSON.parse(localStorage.getItem(key)); return v==null? def : v; }catch(e){ return def; } }
 function save(key, val){ try{ localStorage.setItem(key, JSON.stringify(val)); }catch(e){} }
 var cfg = Object.assign({}, DEFAULT_CFG, load(CFG_KEY, {}));
@@ -979,10 +981,24 @@ function loadActiveRaw(){ try{ var v=localStorage.getItem(ACTIVE_KEY); return v?
 var SEENSET = {};
 ['mat','trig','ineq','fis','qui','len'].forEach(function(k){ SEEN[k] = SEEN[k]||[]; SEENSET[k] = {}; SEEN[k].forEach(function(i){ SEENSET[k][i]=1; }); });
 var SEEN1000SET = {};
-['mat','fis','qui','len','filtro'].forEach(function(k){ SEEN1000[k]=SEEN1000[k]||[]; SEEN1000SET[k]={}; SEEN1000[k].forEach(function(id){ SEEN1000SET[k][id]=1; }); });
+['mat','fis','qui','len','filtro','fis-avz','qui-avz','len-avz','fis-d2','qui-d2','len-d2'].forEach(function(k){ SEEN1000[k]=SEEN1000[k]||[]; SEEN1000SET[k]={}; SEEN1000[k].forEach(function(id){ SEEN1000SET[k][id]=1; }); });
 
 var LEVELS = [{k:'facil',n:'F\u00e1cil',c:'f1'},{k:'medio',n:'Intermedio',c:'f2'},{k:'dificil',n:'Dif\u00edcil',c:'f3'},{k:'experto',n:'Experto',c:'f4'},{k:'todos',n:'Mezclado',c:'f0'}];
-var GUIA_COURSES = ['guia_mat30','guia_fql120','guia_fis','guia_qui','guia_len'];
+var GUIA_COURSES_OFICIAL = ['guia_mat30','guia_fql120','guia_fis','guia_qui','guia_len'];
+var GUIA_COURSES_AVZ = ['guia_fis_avz','guia_qui_avz','guia_len_avz','guia_fql_avz','guia_fql_dia2'];
+var GUIA_COURSES = GUIA_COURSES_OFICIAL.concat(GUIA_COURSES_AVZ);
+function isGuiaAvzCourse(k){ return GUIA_COURSES_AVZ.indexOf(k)>=0; }
+function isGuiaDia2Course(k){ return k==='guia_fql_dia2'; }
+/* Solo el Aula Barreno filtra el banco con las pastillas Fácil/Intermedio/Difícil/Experto/Mezclado.
+   Guía oficial, avanzado, 30 MAT y filtro eligen el set por simulador, no por cfg.level. */
+var AULA_LEVEL_COURSES = ['mat','trig','ineq','fis','qui','len','mix'];
+function courseUsesDifficultySelector(k){
+  return AULA_LEVEL_COURSES.indexOf(k)>=0;
+}
+function contextUsesDifficultySelector(){
+  if(S.view==='course' && S.course) return courseUsesDifficultySelector(S.course);
+  return !isGuia();
+}
 function levelName(k){ for(var i=0;i<LEVELS.length;i++) if(LEVELS[i].k===k) return LEVELS[i].n; return k; }
 
 var S = { view:'home', area:(UI.area==='aula'?'aula':'guia'), course:'mat', attempt:null, modal:null, tick:null, onePage:null, chapter:null, scrollTop:true, histTab:'all', toast:null, viewingRecord:null };
@@ -994,6 +1010,11 @@ var COURSES = {
   guia_fis:{key:'guia_fis',name:'Física EPN — Individual (20 preg · 40 min)',short:'FIS 20',full:'Simulador Física EPN 2026-B — Individual (20 preguntas · 40 min)',desc:'Práctica focalizada de Física (15 temas 4.2.1–4.2.3), 20 preguntas nivel intermedio, 40 min, con figuras DCL/vectores/proyectiles validadas.',color:'#2a9d8f',icon:'⚙️'},
   guia_qui:{key:'guia_qui',name:'Química EPN — Individual (20 preg · 40 min)',short:'QUI 20',full:'Simulador Química EPN 2026-B — Individual (20 preguntas · 40 min)',desc:'Práctica focalizada de Química (16 temas 4.3.1–4.3.4), 20 preguntas nivel intermedio, 40 min.',color:'#6a994e',icon:'⚗️'},
   guia_len:{key:'guia_len',name:'Lenguaje EPN — Individual (20 preg · 40 min)',short:'LEN 20',full:'Simulador Lenguaje EPN 2026-B — Individual (20 preguntas · 40 min)',desc:'Práctica focalizada de Lenguaje (9 temas 4.4.1–4.4.3), 20 preguntas nivel intermedio, 40 min, falacias y lectura crítica.',color:'#e9c46a',icon:'📝'},
+  guia_fis_avz:{key:'guia_fis_avz',name:'NUEVO · Física avanzada (20 preg · 50 min)',short:'FIS AVZ',full:'Entrenamiento avanzado de Física — por encima del simulador oficial',desc:'44 problemas originales más exigentes que el simulador oficial de 69 preguntas. Figuras redibujadas. No sustituye al simulador intermedio.',color:'#0f766e',icon:'⚙️',nuevo:true},
+  guia_qui_avz:{key:'guia_qui_avz',name:'NUEVO · Química avanzada (20 preg · 50 min)',short:'QUI AVZ',full:'Entrenamiento avanzado de Química — por encima del simulador oficial',desc:'44 problemas originales (Lewis, estequiometría, mol, periódica) más exigentes que el oficial. Figuras redibujadas.',color:'#3f6212',icon:'⚗️',nuevo:true},
+  guia_len_avz:{key:'guia_len_avz',name:'NUEVO · Lenguaje avanzado (20 preg · 50 min)',short:'LEN AVZ',full:'Entrenamiento avanzado de Lenguaje — por encima del simulador oficial',desc:'44 ítems de lectura crítica, falacias y coherencia, más exigentes que el oficial. Esquemas redibujados.',color:'#a16207',icon:'📝',nuevo:true},
+  guia_fql_avz:{key:'guia_fql_avz',name:'NUEVO · Combinado avanzado corto (45 preg · 120 min)',short:'FQL AVZ',full:'Entrenamiento avanzado corto — 15+15+15 intercaladas',desc:'15 Física + 15 Química + 15 Lenguaje intercaladas. Más difíciles que el oficial. No es el formato de bloques del Día 2.',color:'#7c2d12',icon:'🧪',nuevo:true},
+  guia_fql_dia2:{key:'guia_fql_dia2',name:'NUEVO · Día 2 real avanzado (60 preg · 120 min)',short:'DÍA 2 REAL',full:'Simulacro Día 2 — formato oficial (20+20+20 · 120 min)',desc:'Como el segundo día de la EPN: 20 Lenguaje (un texto, varias preguntas), 20 Física (un caso, varias preguntas) y 20 Química, en bloques, 120 minutos. Más exigente que el simulador de 69. Rota textos y casos; no repite lo ya visto.',color:'#9a3412',icon:'📋',nuevo:true},
   trig:{key:'trig',name:'Identidades Trigonométricas',short:'Trigonometría Especial',full:'Taller Especializado: Identidades Trigonométricas',color:'#7b2cbf',icon:'📐',
        desc:'Práctica enfocada en identidades pitagóricas, recíprocas, de cociente, simplificación de expresiones y ecuaciones.',
        prev:'Examen Lenguaje EPN 2026-B',next:'Taller Especializado: Inecuaciones y Valor Absoluto'},
@@ -1016,11 +1037,11 @@ var COURSES = {
        desc:'Las cuatro \u00e1reas mezcladas en un solo intento cronometrado, como el examen real.',
        prev:'Examen Lenguaje EPN 2026-B',next:'Estad\u00edsticas de progreso'}
 };
-var CKEYS = ['mat','trig','ineq','fis','qui','len','mix','guia_mat30','guia_fql120','guia_fis','guia_qui','guia_len'];
+var CKEYS = ['mat','trig','ineq','fis','qui','len','mix','guia_mat30','guia_fql120','guia_fis','guia_qui','guia_len','guia_fis_avz','guia_qui_avz','guia_len_avz','guia_fql_avz','guia_fql_dia2'];
 var SUBJ = ['mat','trig','ineq','fis','qui','len'];
 var EXAM = ['mat','fis','qui','len'];
 SUBJ.forEach(function(k){ BANK[k].forEach(function(q,i){ q.__s=k; q.__i=i; }); });
-function bankOf(k){ if(k==='guia_mat30'||k==='guia_fis'||k==='guia_qui'||k==='guia_len'||k==='guia_fql120') return []; return k==='mix' ? BANK.mat.concat(BANK.fis,BANK.qui,BANK.len) : (BANK[k]||[]); }
+function bankOf(k){ if(GUIA_COURSES.indexOf(k)>=0) return []; return k==='mix' ? BANK.mat.concat(BANK.fis,BANK.qui,BANK.len) : (BANK[k]||[]); }
 
 function freshPool(k){
   var pool = levelPool(k);
@@ -1028,19 +1049,33 @@ function freshPool(k){
   var fresh = pool.filter(function(q){ return !SEENSET[k][q.__i]; });
   return {pool:fresh, reset:false, all:pool};
 }
+function defaultGuiaCfg(){
+  return {
+    guia_mat30:{n:30,min:90}, guia_fql120:{n:60,min:120},
+    guia_fis:{n:20,min:40}, guia_qui:{n:20,min:40}, guia_len:{n:20,min:40},
+    guia_fis_avz:{n:20,min:50}, guia_qui_avz:{n:20,min:50}, guia_len_avz:{n:20,min:50},
+    guia_fql_avz:{n:45,min:120}, guia_fql_dia2:{n:60,min:120}
+  };
+}
 function countFor(k){
   if(GUIA_COURSES.indexOf(k)>=0){
-    cfg.guiaCfg = cfg.guiaCfg || {guia_mat30:{n:30,min:90}, guia_fql120:{n:60,min:120}, guia_fis:{n:20,min:40}, guia_qui:{n:20,min:40}, guia_len:{n:20,min:40}};
+    cfg.guiaCfg = cfg.guiaCfg || defaultGuiaCfg();
     var g=cfg.guiaCfg[k]; if(g && g.n) return Math.max(5, Math.min(60, g.n));
-    if(k==='guia_mat30') return 30; if(k==='guia_fql120') return 60; return 20;
+    if(k==='guia_mat30') return 30;
+    if(k==='guia_fql120' || k==='guia_fql_dia2') return 60;
+    if(k==='guia_fql_avz') return 45;
+    return 20;
   }
   return k==='mix'? cfg.mixCount : cfg.count;
 }
 function minutesFor(k){
   if(GUIA_COURSES.indexOf(k)>=0){
-    cfg.guiaCfg = cfg.guiaCfg || {guia_mat30:{n:30,min:90}, guia_fql120:{n:60,min:120}, guia_fis:{n:20,min:40}, guia_qui:{n:20,min:40}, guia_len:{n:20,min:40}};
+    cfg.guiaCfg = cfg.guiaCfg || defaultGuiaCfg();
     var g=cfg.guiaCfg[k]; if(g && g.min) return Math.max(10, Math.min(180, g.min));
-    if(k==='guia_mat30') return 90; if(k==='guia_fql120') return 120; return 40;
+    if(k==='guia_mat30') return 90;
+    if(k==='guia_fql120' || k==='guia_fql_avz' || k==='guia_fql_dia2') return 120;
+    if(isGuiaAvzCourse(k)) return 50;
+    return 40;
   }
   return k==='mix'? cfg.mixMinutes : cfg.minutes;
 }
@@ -1076,13 +1111,16 @@ function pickSpread(pool, n){
 function levelPool(k){ return cfg.level==='todos'? BANK[k].slice() : BANK[k].filter(function(q){return q.d===cfg.level;}); }
 
 /* ---------- Banco 1000 intermedio: pick por topics con cobertura máxima ---------- */
-function pickForGuia1000(subject, want, notes, forcedLevel){
-  var bank1000 = window.GUIA_BANK_1000 || {mat:[],fis:[],qui:[],len:[]};
+function pickForGuia1000(subject, want, notes, forcedLevel, bankSrc, seenKey, opts){
+  opts = opts || {};
+  var bank1000 = bankSrc || window.GUIA_BANK_1000 || {mat:[],fis:[],qui:[],len:[]};
   var pool = bank1000[subject] || [];
   if(!pool.length) return [];
+  var seenSubj = seenKey || subject;
+  if(!SEEN1000SET[seenSubj]){ SEEN1000SET[seenSubj]={}; SEEN1000[seenSubj]=SEEN1000[seenSubj]||[]; }
   var requestedLevel = forcedLevel || cfg.level || 'intermedio';
   var hasLevel = pool.some(function(q){ return q.d===requestedLevel; });
-  var targetLevel = hasLevel ? requestedLevel : 'intermedio';
+  var targetLevel = hasLevel ? requestedLevel : (pool[0] && pool[0].d) || 'intermedio';
   var levelPool1000;
   if(targetLevel==='todos'){
     levelPool1000 = pool.slice();
@@ -1096,8 +1134,8 @@ function pickForGuia1000(subject, want, notes, forcedLevel){
   var unseenByTopic={}, seenByTopic={};
   topics.forEach(function(t){
     var arr=byTopic[t]||[];
-    unseenByTopic[t]=arr.filter(function(q){ return !SEEN1000SET[subject][q.id]; });
-    seenByTopic[t]=arr.filter(function(q){ return SEEN1000SET[subject][q.id]; });
+    unseenByTopic[t]=arr.filter(function(q){ return !SEEN1000SET[seenSubj][q.id]; });
+    seenByTopic[t]=arr.filter(function(q){ return SEEN1000SET[seenSubj][q.id]; });
     unseenByTopic[t]=shuffle(unseenByTopic[t]); seenByTopic[t]=shuffle(seenByTopic[t]);
   });
   // Hard guarantee: no duplicate id nor prompt within the returned result
@@ -1116,21 +1154,21 @@ function pickForGuia1000(subject, want, notes, forcedLevel){
     var addedThisRound=0;
     for(var ti=0; ti<topics.length && result.length<want; ti++){
       var t=topics[ti];
-      var pick = tryPopNonDup(unseenByTopic[t]) || tryPopNonDup(seenByTopic[t]);
+      var pick = tryPopNonDup(unseenByTopic[t]) || (opts.strictUnseen ? null : tryPopNonDup(seenByTopic[t]));
       if(!pick){
         var best=null, bestAvail=-1;
         for(var k=0;k<topics.length;k++){
           var tt=topics[k]; if(tt===t) continue;
           var avail=0;
           for(var a=0;a<unseenByTopic[tt].length;a++) if(!isDup(unseenByTopic[tt][a])) avail++;
-          for(var b=0;b<seenByTopic[tt].length;b++) if(!isDup(seenByTopic[tt][b])) avail++;
+          if(!opts.strictUnseen) for(var b=0;b<seenByTopic[tt].length;b++) if(!isDup(seenByTopic[tt][b])) avail++;
           if(avail>bestAvail){ best=tt; bestAvail=avail; }
         }
-        if(best && bestAvail>0) pick = tryPopNonDup(unseenByTopic[best]) || tryPopNonDup(seenByTopic[best]);
+        if(best && bestAvail>0) pick = tryPopNonDup(unseenByTopic[best]) || (opts.strictUnseen ? null : tryPopNonDup(seenByTopic[best]));
       }
       if(!pick){
         var restCollect=[];
-        topics.forEach(function(tt){ restCollect=restCollect.concat(unseenByTopic[tt], seenByTopic[tt]); });
+        topics.forEach(function(tt){ restCollect=restCollect.concat(unseenByTopic[tt], opts.strictUnseen?[]:seenByTopic[tt]); });
         var candidates=[];
         for(var r=0;r<restCollect.length;r++) if(!isDup(restCollect[r])) candidates.push(restCollect[r]);
         if(candidates.length){
@@ -1164,7 +1202,7 @@ function pickForGuia1000(subject, want, notes, forcedLevel){
     var remaining = want - result.length;
     notes.push('Banco '+targetLevel+' de '+subject.toUpperCase()+' con '+levelPool1000.length+' preguntas: faltan '+remaining+' únicas tras evitar duplicados exactos en este intento (se entregan '+result.length+'/'+want+').');
   }
-  result.forEach(function(q){ if(!SEEN1000SET[subject][q.id]){ SEEN1000SET[subject][q.id]=1; SEEN1000[subject].push(q.id); } });
+  result.forEach(function(q){ if(!SEEN1000SET[seenSubj][q.id]){ SEEN1000SET[seenSubj][q.id]=1; SEEN1000[seenSubj].push(q.id); } });
   saveSeen1000();
   var distinctTopics = {};
   result.forEach(function(q){ distinctTopics[(q.topics&&q.topics[0])||'misc']=1; });
@@ -1189,6 +1227,79 @@ function pickForGuia1000(subject, want, notes, forcedLevel){
     }
   }
   return result;
+}
+
+function seedDia2SeenFromHistory(){
+  function mark(id, subj){
+    if(!id) return;
+    var k = null;
+    var sid = String(id);
+    if(subj==='fis' || sid.indexOf('fis-d2')===0) k='fis-d2';
+    else if(subj==='qui' || sid.indexOf('qui-d2')===0) k='qui-d2';
+    else if(subj==='len' || sid.indexOf('len-d2')===0) k='len-d2';
+    if(!k) return;
+    if(!SEEN1000SET[k]){ SEEN1000SET[k]={}; SEEN1000[k]=SEEN1000[k]||[]; }
+    if(!SEEN1000SET[k][id]){ SEEN1000SET[k][id]=1; SEEN1000[k].push(id); }
+  }
+  function eatQs(qs){
+    (qs||[]).forEach(function(q){
+      if(!q) return;
+      mark(q.id || (q.src && q.src.id), q.k || q.s || q.subj || (q.src && (q.src.__s || q.src.s)));
+    });
+  }
+  (typeof liveHist==='function' ? liveHist() : (HIST||[])).forEach(function(r){
+    if(!r || r.deleted) return;
+    if(r.course==='guia_fql_dia2') eatQs(r.qs);
+  });
+  if(S.attempt && S.attempt.course==='guia_fql_dia2') eatQs(S.attempt.qs);
+  try{
+    var raw = loadActiveRaw();
+    if(raw && raw.course==='guia_fql_dia2') eatQs(raw.qs);
+  }catch(e){}
+}
+
+function fillDia2Subject(subject, want, notes){
+  var root = window.GUIA_BANK_FQL_DIA2 || {};
+  var bank = root[subject] || [];
+  var packs = (root.packs && root.packs[subject]) || [];
+  var seenKey = subject + '-d2';
+  if(!SEEN1000SET[seenKey]){ SEEN1000SET[seenKey]={}; SEEN1000[seenKey]=SEEN1000[seenKey]||[]; }
+  var byId = {};
+  bank.forEach(function(q){ byId[q.id]=q; });
+  var picked = [];
+  var used = {};
+  function isSeen(id){ return !!(SEEN1000SET[seenKey] && SEEN1000SET[seenKey][id]); }
+  function addQ(q){
+    if(!q || used[q.id] || picked.length>=want) return false;
+    used[q.id]=1;
+    picked.push(q);
+    return true;
+  }
+  function addPack(p){
+    var qs = (p.qids||[]).map(function(id){ return byId[id]; }).filter(Boolean);
+    if(!qs.length || picked.length+qs.length>want) return false;
+    for(var i=0;i<qs.length;i++){ if(used[qs[i].id]) return false; }
+    qs.forEach(addQ);
+    return true;
+  }
+  function packFresh(p){
+    return (p.qids||[]).length>0 && (p.qids||[]).every(function(id){ return byId[id] && !isSeen(id) && !used[id]; });
+  }
+  // 1) textos/casos que el estudiante nunca vio
+  shuffle(packs.filter(packFresh)).forEach(addPack);
+  // 2) ítems sueltos inéditos (rellena a 20 sin repetir)
+  shuffle(bank.filter(function(q){ return !used[q.id] && !isSeen(q.id); })).forEach(addQ);
+  // 3) solo si el banco inédito no alcanza: reciclar
+  if(picked.length < want){
+    shuffle(packs.filter(function(p){ return !packFresh(p); })).forEach(addPack);
+    shuffle(bank.filter(function(q){ return !used[q.id]; })).forEach(addQ);
+  }
+  picked.forEach(function(q){
+    if(!SEEN1000SET[seenKey][q.id]){ SEEN1000SET[seenKey][q.id]=1; SEEN1000[seenKey].push(q.id); }
+  });
+  saveSeen1000();
+  if(picked.length < want) notes.push('Día 2 '+subject.toUpperCase()+': banco con '+bank.length+' ítems, se entregan '+picked.length+'/'+want+'.');
+  return picked;
 }
 
 function pickForSubject(k, want, notes){
@@ -1374,17 +1485,42 @@ function buildGuia1000Attempt(courseKey){
   var notes=[];
   var picked=[];
   if(courseKey==='guia_mat30'){
-    picked = pickForGuia1000('mat', 30, notes);
+    picked = pickForGuia1000('mat', 30, notes, 'todos');
   } else if(courseKey==='guia_fis'){
-    picked = pickForGuia1000('fis', 20, notes);
+    picked = pickForGuia1000('fis', 20, notes, 'todos');
   } else if(courseKey==='guia_qui'){
-    picked = pickForGuia1000('qui', 20, notes);
+    picked = pickForGuia1000('qui', 20, notes, 'todos');
   } else if(courseKey==='guia_len'){
-    picked = pickForGuia1000('len', 20, notes);
+    picked = pickForGuia1000('len', 20, notes, 'todos');
+  } else if(courseKey==='guia_fis_avz'){
+    picked = pickForGuia1000('fis', countFor(courseKey), notes, 'todos', window.GUIA_BANK_FQL_AVANZADO, 'fis-avz');
+  } else if(courseKey==='guia_qui_avz'){
+    picked = pickForGuia1000('qui', countFor(courseKey), notes, 'todos', window.GUIA_BANK_FQL_AVANZADO, 'qui-avz');
+  } else if(courseKey==='guia_len_avz'){
+    picked = pickForGuia1000('len', countFor(courseKey), notes, 'todos', window.GUIA_BANK_FQL_AVANZADO, 'len-avz');
+  } else if(courseKey==='guia_fql_avz'){
+    var fisA = pickForGuia1000('fis', 15, notes, 'todos', window.GUIA_BANK_FQL_AVANZADO, 'fis-avz');
+    var quiA = pickForGuia1000('qui', 15, notes, 'todos', window.GUIA_BANK_FQL_AVANZADO, 'qui-avz');
+    var lenA = pickForGuia1000('len', 15, notes, 'todos', window.GUIA_BANK_FQL_AVANZADO, 'len-avz');
+    var maxA=Math.max(fisA.length, quiA.length, lenA.length);
+    for(var ia=0;ia<maxA;ia++){
+      if(fisA[ia]) picked.push(fisA[ia]);
+      if(quiA[ia]) picked.push(quiA[ia]);
+      if(lenA[ia]) picked.push(lenA[ia]);
+    }
+  } else if(courseKey==='guia_fql_dia2'){
+    seedDia2SeenFromHistory();
+    var lenD = fillDia2Subject('len', 20, notes);
+    var fisD = fillDia2Subject('fis', 20, notes);
+    var quiD = fillDia2Subject('qui', 20, notes);
+    picked = lenD.concat(fisD, quiD);
+    if(picked.length!==60 || lenD.length!==20 || fisD.length!==20 || quiD.length!==20){
+      notes.push('Día 2 incompleto (LEN '+lenD.length+' · FIS '+fisD.length+' · QUI '+quiD.length+'). Revisa guia-bank-fql-dia2.js.');
+    }
   } else if(courseKey==='guia_fql120'){
-    var fis = pickForGuia1000('fis', 20, notes);
-    var qui = pickForGuia1000('qui', 20, notes);
-    var len = pickForGuia1000('len', 20, notes);
+    var fis = pickForGuia1000('fis', 20, notes, 'todos');
+    var qui = pickForGuia1000('qui', 20, notes, 'todos');
+    var len = pickForGuia1000('len', 20, notes, 'todos');
     // intercala 1-1-1 para no agrupar por materia
     var maxLen=Math.max(fis.length, qui.length, len.length);
     for(var i=0;i<maxLen;i++){
@@ -1414,12 +1550,12 @@ function buildGuia1000Attempt(courseKey){
     var order = q.opts.map(function(_,ix){return ix;});
     if(cfg.shuffleOptions) order = shuffle(order);
     return {
-      src: { t: q.t, q: q.prompt, o: q.opts, a: q.ans, e: q.exp, ch: q.ch, maths: q.maths||[], imgs: q.imgs||[], __s: q.s, n: q.n, d: q.d, topics: q.topics, id: q.id },
+      src: { t: q.t, q: q.prompt, o: q.opts, a: q.ans, e: q.exp, ch: q.ch, maths: q.maths||[], imgs: q.imgs||[], figName: q.fig||null, reading: q.reading||null, pack: q.pack||null, __s: q.s, n: q.n, d: q.d, topics: q.topics, id: q.id },
       order: order,
       subj: q.s
     };
   });
-  if(cfg.shuffleQuestions){
+  if(cfg.shuffleQuestions && courseKey!=='guia_fql_dia2'){
     qs = shuffle(qs);
     // anti-contigüidad final (clave para MAT y FQL intercalado): evita mismo topic/template contiguo tras shuffle
     (function(){
@@ -1437,21 +1573,28 @@ function buildGuia1000Attempt(courseKey){
     })();
   }
 
-  // Final intra-intento guard for Guia1000: ensure qs have unique prompt/id (no duplicate exact statement)
+  // Sin duplicar el mismo id. En Día 2 NO se recorta por enunciado: varios ítems
+  // de un texto pueden preguntar «la idea principal» sobre pasajes distintos.
   (function(){
-    var seenP={}, seenI={}, uniq=[];
+    var seenI={}, uniq=[];
     for(var i=0;i<qs.length;i++){
       var q=qs[i];
-      var key=q.src.q;
-      var id=q.src.id;
-      if(!seenP[key] && !seenI[id]){ seenP[key]=1; seenI[id]=1; uniq.push(q); }
+      var id=q.src.id || (q.src.q+'#'+i);
+      if(courseKey!=='guia_fql_dia2'){
+        var key=q.src.q;
+        if(seenI['p:'+key]) continue;
+        seenI['p:'+key]=1;
+      }
+      if(!seenI['i:'+id]){ seenI['i:'+id]=1; uniq.push(q); }
     }
-    if(uniq.length < qs.length){
+    if(uniq.length < qs.length && courseKey!=='guia_fql_dia2'){
       S.toast = (S.toast? S.toast+' ' : '') + 'Intento Guia sin duplicados: se entregan '+uniq.length+'/'+qs.length+' preguntas unicas.';
+      qs = uniq;
+    } else {
       qs = uniq;
     }
   })();
-  return { course: courseKey, level: 'intermedio', qs: qs, ans: qs.map(function(){return null;}), flags: qs.map(function(){return false;}), cur:0, start:new Date(), end:null, finished:false, limitMs: minutesFor(courseKey)*60000, historic:false, isGuia1000:true };
+  return { course: courseKey, level: 'intermedio', qs: qs, ans: qs.map(function(){return null;}), flags: qs.map(function(){return false;}), cur:0, start:new Date(), end:null, finished:false, limitMs: minutesFor(courseKey)*60000, historic:false, isGuia1000:true, sequential: (courseKey==='guia_fql_dia2') ? !!S.dia2Sequential : false };
 }
 function attemptFromRecord(r){
   registerProgrammedSimsInCourses();
@@ -1477,12 +1620,16 @@ function attemptFromRecord(r){
   if(GUIA_COURSES.indexOf(r.course)>=0){
     var bank1000 = window.GUIA_BANK_1000||{mat:[],fis:[],qui:[],len:[]};
     var byId={}; ['mat','fis','qui','len'].forEach(function(sub){ (bank1000[sub]||[]).forEach(function(q){ byId[q.id]=q; }); });
+    var avzB = window.GUIA_BANK_FQL_AVANZADO||{};
+    ['fis','qui','len'].forEach(function(sub){ (avzB[sub]||[]).forEach(function(q){ byId[q.id]=q; }); });
+    var d2B = window.GUIA_BANK_FQL_DIA2||{};
+    ['fis','qui','len'].forEach(function(sub){ (d2B[sub]||[]).forEach(function(q){ byId[q.id]=q; }); });
     var qsG = [];
     var ansG = [];
     (r.qs||[]).forEach(function(x){
       var q = byId[x.id] || byId[x.k+'-'+String(x.i).padStart(3,'0')] || null;
       if(!q) return;
-      var src = { t:q.t, q:q.prompt, o:q.opts, a:q.ans, e:q.exp, ch:q.ch, maths:q.maths||[], imgs:q.imgs||[], __s:q.s, n:q.n, d:q.d, topics:q.topics, id:q.id };
+      var src = { t:q.t, q:q.prompt, o:q.opts, a:q.ans, e:q.exp, ch:q.ch, maths:q.maths||[], imgs:q.imgs||[], figName:q.fig||null, reading:q.reading||null, pack:q.pack||null, __s:q.s, n:q.n, d:q.d, topics:q.topics, id:q.id };
       qsG.push({src:src, order:src.o.map(function(_,ix){return ix;}), subj:q.s});
       ansG.push(x.sel==null? null : x.sel);
     });
@@ -2290,7 +2437,16 @@ function explainHtml(ix){
   }
 
   if(src.e){
-    var expBody = inlineMd(src.e);
+    var expBody = (function(){
+      var raw = String(src.e||'');
+      var chunks = raw.split(/(?=\*\*Paso\s+\d)/);
+      if(chunks.length>1){
+        return chunks.filter(function(p){ return p.trim(); }).map(function(p){
+          return '<p style="margin:10px 0 8px">'+inlineMd(p.trim())+'</p>';
+        }).join('');
+      }
+      return inlineMd(raw);
+    })();
     var chLabel = src.ch ? (function(){ var b=(window.GUIA_THEORY||[]).find(function(c){return c.id===src.ch;}); return b? b.t : src.ch; })() : '';
     var theoryDeepLink = (src.theory && src.theory.concept_title) ? ('<div style="margin-top:10px;"><button class="btn ghost mini" data-act="go-theory-deep" data-ch="' + (src.theory.lesson_id || src.ch || 'mat-L01') + '" data-anchor="' + (src.theory.anchor || '') + '" data-qix="' + ix + '" style="border-color:#0f6cbf;color:#0f6cbf;font-weight:700;">📖 Estudiar concepto en la teoría: ' + escH(src.theory.concept_title) + '</button></div>') : '';
     var linkBtn = src.ch ? '<div class="solvelink" style="margin-top:14px;"><button class="btn primary" data-act="go-theory-deep" data-ch="'+src.ch+'" data-qix="'+ix+'">📖 Estudiar lección completa: '+(chLabel? escH(chLabel): src.ch)+'</button> <span style="font-size:12px; color:#5b6b7a; margin-left:6px;">Teoría autosuficiente — sin conocimientos previos</span></div>' : '';
@@ -2330,8 +2486,13 @@ function questionHtml(ix, mode){
     (review? '' : '<button class="flag'+(a.flags[ix]?' on':'')+'" data-act="flag" data-i="'+ix+'">\u2691 <u>'+(a.flags[ix]?'Quitar marca':'Marcar pregunta')+'</u></button>')+
     '</div>';
   var body = '';
+  if(src.reading) body += '<div class="passagebox"><div class="passage-kicker">Texto</div><div class="passage-body">'+tex(src.reading)+'</div></div>';
   if(src.stem) body += '<div class="stembox">'+tex(src.stem)+'</div>';
   body += '<div class="qtext">'+tex(src.q)+'</div>';
+  if(src.figName){
+    var named = lookupFig(src.figName);
+    if(named && named.indexOf('Falta FIG')<0) body += '<div class="figure">'+named+'</div>';
+  }
   if(src.fig) body += figHtml(src.fig);
   if(src.imgs && src.imgs.length){ src.imgs.forEach(function(svg){ body += '<div class="figure">'+svg+'</div>'; }); }
   if(src.q2) body += '<div class="qtext">'+tex(src.q2)+'</div>';
@@ -2715,6 +2876,19 @@ function viewGuiaHome(){
       '<div class="cbody"><h3>'+s.title+'</h3><p>'+s.sub+'</p>'+
       '<div class="cbtns"><button class="btn" data-act="course" data-c="'+s.course+'" style="background:'+s.color+';border-color:'+s.color+'">Abrir</button></div></div></div>';
   }).join('');
+  var avzSims = [
+    {course:'guia_fis_avz', title:'Física avanzada', sub:'20 preguntas · 50 min · 44 en el banco', color:'#0f766e', icon:'⚙️'},
+    {course:'guia_qui_avz', title:'Química avanzada', sub:'20 preguntas · 50 min · 44 en el banco', color:'#3f6212', icon:'⚗️'},
+    {course:'guia_len_avz', title:'Lenguaje avanzado', sub:'20 preguntas · 50 min · 44 en el banco', color:'#a16207', icon:'📝'},
+    {course:'guia_fql_dia2', title:'Día 2 · formato real', sub:'60 preg · 120 min · 20+20+20 · un texto, varias preguntas', color:'#9a3412', icon:'📋'},
+    {course:'guia_fql_avz', title:'Combinado avanzado corto', sub:'45 preguntas · 120 min · 15+15+15 intercaladas', color:'#7c2d12', icon:'🧪'}
+  ];
+  var avzCards = avzSims.map(function(s){
+    return '<div class="card" style="border-top:4px solid '+s.color+'">'+
+      '<div class="cimg" style="background:'+s.color+'">'+s.icon+'</div>'+
+      '<div class="cbody"><h3>'+s.title+' <span class="chip" style="background:#7c2d12;color:#fff;font-size:10px;">NUEVO</span></h3><p>'+s.sub+'</p>'+
+      '<div class="cbtns"><button class="btn" data-act="course" data-c="'+s.course+'" style="background:'+s.color+';border-color:'+s.color+'">Abrir</button></div></div></div>';
+  }).join('');
   return navbar('home')+'<div class="wrap">'+drawer('home')+'<div class="main reading">'+
     '<div class="homehero guia-hero homehero-compact">'+
       '<h2>Guía oficial EPN 2026-B</h2>'+
@@ -2738,10 +2912,18 @@ function viewGuiaHome(){
       '</section>'+
       '<section class="home-section">'+
         '<div class="home-section-head">'+
-          '<div><h2>Simuladores por materia</h2>'+
-          '<p>Banco de 1000 preguntas a nivel intermedio. Vistas: '+seenTot+(tot1000? ' de '+tot1000 : '')+'.</p></div>'+
+          '<div><h2>Simuladores actuales · nivel del oficial</h2>'+
+          '<p>Mismo nivel que el simulador de 69 preguntas que liberó la EPN. Vistas: '+seenTot+(tot1000? ' de '+tot1000 : '')+'.</p></div>'+
         '</div>'+
         '<div class="cards">'+otherCards+'</div>'+
+      '</section>'+
+      '<section class="home-section">'+
+        '<div class="home-section-head">'+
+          '<div><h2>Nuevos · entrenamiento avanzado</h2>'+
+          '<p>Banco de 132 problemas originales (44 por materia), más exigentes que el simulador oficial. Úsalos después de dominar los actuales. Figuras redibujadas.</p></div>'+
+          '<span class="chip" style="background:#7c2d12;color:#fff;">NUEVO</span>'+
+        '</div>'+
+        '<div class="cards">'+avzCards+'</div>'+
       '</section>'+
       '<section class="home-section">'+
         '<div class="home-section-head">'+
@@ -3567,10 +3749,27 @@ function viewCourse(){
   var c = getCourseInfo(S.course), k = S.course;
   var isG1000 = GUIA_COURSES.indexOf(k)>=0;
   var bank1000 = window.GUIA_BANK_1000 || {mat:[],fis:[],qui:[],len:[]};
-  var subjForG = ({guia_mat30:'mat', guia_fis:'fis', guia_qui:'qui', guia_len:'len'})[k];
+  var subjForG = ({guia_mat30:'mat', guia_fis:'fis', guia_qui:'qui', guia_len:'len', guia_fis_avz:'fis', guia_qui_avz:'qui', guia_len_avz:'len'})[k];
+  var avzBank = window.GUIA_BANK_FQL_AVANZADO || {fis:[],qui:[],len:[]};
   var pool, fresh;
   if(isG1000){
-    if(k==='guia_fql120'){
+    if(isGuiaAvzCourse(k)){
+      if(k==='guia_fql_avz' || k==='guia_fql_dia2'){
+        var srcBank = (k==='guia_fql_dia2' ? (window.GUIA_BANK_FQL_DIA2||{fis:[],qui:[],len:[]}) : avzBank);
+        var skF = k==='guia_fql_dia2' ? 'fis-d2' : 'fis-avz';
+        var skQ = k==='guia_fql_dia2' ? 'qui-d2' : 'qui-avz';
+        var skL = k==='guia_fql_dia2' ? 'len-d2' : 'len-avz';
+        pool = (srcBank.fis||[]).length + (srcBank.qui||[]).length + (srcBank.len||[]).length;
+        fresh = (srcBank.fis||[]).filter(function(q){return !(SEEN1000SET[skF]||{})[q.id];}).length
+              + (srcBank.qui||[]).filter(function(q){return !(SEEN1000SET[skQ]||{})[q.id];}).length
+              + (srcBank.len||[]).filter(function(q){return !(SEEN1000SET[skL]||{})[q.id];}).length;
+      } else {
+        var avzArr = avzBank[subjForG]||[];
+        var avzSeen = SEEN1000SET[subjForG+'-avz']||{};
+        pool = avzArr.length;
+        fresh = avzArr.filter(function(q){return !avzSeen[q.id];}).length;
+      }
+    } else if(k==='guia_fql120'){
       pool = bank1000.fis.length + bank1000.qui.length + bank1000.len.length;
       fresh = (bank1000.fis.filter(function(q){return !SEEN1000SET.fis[q.id];}).length)
             + (bank1000.qui.filter(function(q){return !SEEN1000SET.qui[q.id];}).length)
@@ -3585,37 +3784,51 @@ function viewCourse(){
     fresh = k==='mix'? EXAM.reduce(function(s,x){ return s+levelPool(x).filter(function(q){return !SEENSET[x][q.__i];}).length; },0)
                      : levelPool(k).filter(function(q){ return !SEENSET[k][q.__i]; }).length;
   }
-  var guiaBadge = isG1000 ? '<span style="background:#0e2a47;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:middle;">Guía EPN · Día '+(k==='guia_mat30'?'1':'2')+'</span>' : '';
-  var lv = LEVELS.map(function(l){
-    var disabled = isG1000 && l.k!=='medio';
-    return '<button class="pill '+l.c+(cfg.level===l.k?' on':'')+(disabled?' disabled':'')+'" data-act="setlevel" data-l="'+l.k+'"'+(disabled?' disabled title="Este banco trabaja en nivel intermedio"':'')+'>'+l.n+(disabled?' 🔒':'')+'</button>';
-  }).join('');
+  var guiaBadge = isGuiaAvzCourse(k)
+    ? '<span style="background:#7c2d12;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:middle;">NUEVO · avanzado</span>'
+    : (isG1000 ? '<span style="background:#0e2a47;color:#fff;font-size:11px;padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:middle;">Actual · nivel oficial</span>' : '');
+  var usesLevel = courseUsesDifficultySelector(k);
+  var lv = usesLevel ? LEVELS.map(function(l){
+    return '<button class="pill '+l.c+(cfg.level===l.k?' on':'')+'" data-act="setlevel" data-l="'+l.k+'">'+l.n+'</button>';
+  }).join('') : '';
   var hs = liveHist().filter(function(r){ return r.course===k; }).sort(function(a,b){return b.ts-a.ts;});
   var crumbBase = isG1000 ? 'Guía oficial EPN \u203a Simuladores' : '01-SEA-EPN_2026-2';
-  var totalBank = isG1000 ? (k==='guia_fql120'? 750 : 250) : bankOf(k).length;
+  var totalBank = isGuiaAvzCourse(k)
+    ? ((k==='guia_fql_avz'||k==='guia_fql_dia2') ? pool : 44)
+    : (isG1000 ? (k==='guia_fql120'? 750 : 250) : bankOf(k).length);
   var perInfo = '';
   if(k==='guia_fql120') perInfo = ' <span style="color:#64748b;">(20 FIS + 20 QUI + 20 LEN, intercaladas 1-1-1)</span>';
+  else if(k==='guia_fql_avz') perInfo = ' <span style="color:#64748b;">(15 FIS + 15 QUI + 15 LEN, intercaladas)</span>';
+  else if(k==='guia_fql_dia2') perInfo = ' <span style="color:#64748b;">(20 LEN con textos compartidos + 20 FIS por caso + 20 QUI, en bloques, como el Día 2)</span>';
   else if(subjForG) perInfo = ' <span style="color:#64748b;">(cobertura máxima de '+(bank1000[subjForG].length? Object.keys((function(){var m={};bank1000[subjForG].forEach(function(q){m[q.topics[0]]=1;});return m;})()).length : '-')+' temas)</span>';
   return navbar(isG1000?'home':'')+'<div class="wrap">'+drawer(isG1000?'home':'quiz')+'<div class="main">'+
     pagehead(c.full+guiaBadge, crumbBase+' \u203a '+c.full)+toastHtml()+
     '<div style="max-width:840px">'+
-    '<p>'+c.desc+' Cada intento toma <b>'+countFor(k)+' preguntas</b> distintas'+(k==='mix'?' repartidas entre las cuatro áreas': perInfo)+' de un banco de <b>'+totalBank+'</b>'+(isG1000?' (banco 1000 original)':'')+'.</p>'+
-    '<div style="margin:14px 0 6px;font-weight:600;font-size:14px">Dificultad</div><div class="pills">'+lv+'</div>'+
-    (isG1000? '<div class="hint" style="margin-top:6px;">Este banco trabaja en <b>nivel intermedio</b>, el mismo exigido por la EPN.</div>' : '')+
+    '<p>'+c.desc+' Cada intento toma <b>'+countFor(k)+' preguntas</b> distintas'+(k==='mix'?' repartidas entre las cuatro áreas': perInfo)+' de un banco de <b>'+totalBank+'</b>'+(isGuiaAvzCourse(k)?' (banco avanzado nuevo)':(isG1000?' (banco intermedio actual)':''))+'.</p>'+
+    (usesLevel? '<div style="margin:14px 0 6px;font-weight:600;font-size:14px">Dificultad</div><div class="pills">'+lv+'</div>' : '')+
+    (k==='guia_fql_dia2'? '<div class="hint" style="margin-top:6px;">Formato del <b>segundo día oficial</b> (guía 2026-B + simulador de 69): Lenguaje con un texto y varias preguntas, Física con un mismo caso, Química suelta. Bloques LEN → FIS → QUI. 120 minutos. Más difícil que el de 69. Rota textos y casos; no repite los ya vistos ni los del combinado corto.</div>' : (isGuiaAvzCourse(k)? '<div class="hint" style="margin-top:6px;">Este es un <b>simulador NUEVO</b>, más exigente que el oficial de 69 preguntas. Cada intento toma del banco avanzado completo (no hay pastillas de dificultad). No reemplaza a los simuladores actuales de nivel intermedio.</div>' : (isG1000? '<div class="hint" style="margin-top:6px;">Este banco es fijo de <b>nivel intermedio</b>, el mismo exigido por la EPN. No hay selector de dificultad.</div>' : '')))+
     '<table class="quizsummary"><tbody>'+
     '<tr><th>Método de calificación</th><td>Calificación más alta</td></tr>'+
     '<tr><th>Límite de tiempo</th><td>'+minutesFor(k)+' minutos</td></tr>'+
     '<tr><th>Preguntas</th><td>'+countFor(k)+' (1,00 punto cada una)</td></tr>'+
-    '<tr><th>Banco</th><td>'+pool+' preguntas (nivel intermedio)</td></tr>'+
+    '<tr><th>Banco</th><td>'+pool+' preguntas ('+(isGuiaAvzCourse(k)?'avanzado · por encima del oficial':(isG1000?'nivel intermedio · oficial EPN':'nivel '+levelName(cfg.level)))+')</td></tr>'+
     '<tr><th>Sin repetir</th><td>'+(cfg.noRepeat? 'Activado · '+fresh+' preguntas nuevas disponibles' : 'Desactivado (pueden repetirse)')+'</td></tr>'+
     '<tr><th>Intentos rendidos</th><td>'+hs.length+(hs.length?' · último '+fmtCorta(hs[0].ts)+' ('+recPct(hs[0])+'%)':'')+'</td></tr>'+
     '</tbody></table>'+
     (k==='mix'? '<div class="infobox">El examen real dura 210 minutos: 90 de Matemática (componente filtro) y 120 para Física, Química y Lenguaje. Puedes reproducir esos tiempos desde la configuración.</div>':'')+
     (isG1000? '<div class="infobox" style="border-left:4px solid #0e2a47;"><b>Cobertura garantizada:</b> cada intento cubre el máximo de temas distintos antes de repetir tema. Si pides menos preguntas qué temas, todas serán de temas distintos; si pides más, se hace una ronda completa por todos los temas antes de repetir. Ajusta N y minutos en <b>Configuración → Simuladores Guía EPN</b>.</div>':'')+
     (isG1000? '<div style="margin:10px 0; display:flex; gap:8px; flex-wrap:wrap;"><button class="btn sec" data-act="cfg">⚙ Ajustar N y tiempo de este simulador</button><span style="font-size:12px; color:#64748b; align-self:center;">Cada simulador recuerda su propio N/minutos.</span></div>':'')+
+    (k==='guia_fql_dia2'? '<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:14px 18px;margin:14px 0 8px;">'+
+    '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">'+
+    '<div style="display:flex;align-items:center;gap:10px;">'+
+    '<input type="checkbox" id="chkSequential" '+(S.dia2Sequential?'checked':'')+' style="width:18px;height:18px;cursor:pointer;accent-color:#0284c7;">'+
+    '<label for="chkSequential" style="font-size:13.5px;color:#0e2a47;cursor:pointer;font-weight:700;">Navegación secuencial (como el examen oficial)</label>'+
+    '</div>'+
+    '<span style="font-size:12px;color:#64748b;">Si está apagado puedes saltar entre preguntas. Si lo enciendes, avanzas una por una.</span>'+
+    '</div></div>' : '')+
     ((GUIA_COURSES.indexOf(k)>=0) ? (function(){
       var total = 1000, seenTot = SEEN1000.mat.length+SEEN1000.fis.length+SEEN1000.qui.length+SEEN1000.len.length;
-      var preview = (function(){ var arr=[]; var bank1000=window.GUIA_BANK_1000||{mat:[],fis:[],qui:[],len:[]}; if(k==='guia_mat30') arr=bank1000.mat||[]; else if(k==='guia_fql120') arr=(bank1000.fis||[]).concat(bank1000.qui||[]).concat(bank1000.len||[]); else { var s=({guia_fis:'fis',guia_qui:'qui',guia_len:'len'})[k]; arr=s? (bank1000[s]||[]):[]; } var n=Math.min(3,arr.length); var out=[]; for(var i=0;i<n;i++) out.push('<li style="font-size:12px;color:#334155;">'+escH(String(arr[i].prompt).slice(0,110))+'… <span class="chip light">'+escH(arr[i].t)+'</span></li>'); return out.length? '<ul style="margin:6px 0 0;padding-left:18px;">'+out.join('')+'</ul><div class="hint">+ '+(arr.length-n)+' preguntas más en el banco · vista previa solo lectura (editor igual qué aula: inspeccionar/cambiar/quitar antes de iniciar)</div>' : '<div class="hint">Banco listo — '+arr.length+' preguntas.</div>'; })();
+      var preview = (function(){ var arr=[]; var bank1000=window.GUIA_BANK_1000||{mat:[],fis:[],qui:[],len:[]}; var avz=window.GUIA_BANK_FQL_AVANZADO||{fis:[],qui:[],len:[]}; if(k==='guia_mat30') arr=bank1000.mat||[]; else if(k==='guia_fql120') arr=(bank1000.fis||[]).concat(bank1000.qui||[]).concat(bank1000.len||[]); else if(k==='guia_fql_avz') arr=(avz.fis||[]).concat(avz.qui||[]).concat(avz.len||[]); else if(k==='guia_fql_dia2'){ var d2=window.GUIA_BANK_FQL_DIA2||{fis:[],qui:[],len:[]}; arr=(d2.len||[]).concat(d2.fis||[]).concat(d2.qui||[]); } else if(isGuiaAvzCourse(k)){ var sa=({guia_fis_avz:'fis',guia_qui_avz:'qui',guia_len_avz:'len'})[k]; arr=sa?(avz[sa]||[]):[]; } else { var s=({guia_fis:'fis',guia_qui:'qui',guia_len:'len'})[k]; arr=s? (bank1000[s]||[]):[]; } var n=Math.min(3,arr.length); var out=[]; for(var i=0;i<n;i++) out.push('<li style="font-size:12px;color:#334155;">'+escH(String(arr[i].prompt).slice(0,110))+'… <span class="chip light">'+escH(arr[i].t)+'</span></li>'); return out.length? '<ul style="margin:6px 0 0;padding-left:18px;">'+out.join('')+'</ul><div class="hint">+ '+(arr.length-n)+' preguntas más en el banco · vista previa solo lectura (editor igual qué aula: inspeccionar/cambiar/quitar antes de iniciar)</div>' : '<div class="hint">Banco listo — '+arr.length+' preguntas.</div>'; })();
       return '<div class="planbox" style="border-left:4px solid #0e2a47;"><b>Vista previa (solo lectura)</b> — '+preview+'<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;"><button class="btn sec mini" data-act="openadmin" style="border-color:#7b2cbf;color:#7b2cbf;">🔑 Editor (inspeccionar / cambiar / quitar)</button><span class="hint" style="align-self:center;">Corrección previa idéntica a la versión normal.</span></div></div>';
     })() : planBox(k))+
     '<label class="switch" style="margin:14px 0 10px;display:flex;align-items:center;gap:10px;cursor:pointer;background:rgba(217,130,43,0.08);padding:10px 14px;border-radius:8px;border:1px solid rgba(217,130,43,0.25)">'+
@@ -3640,8 +3853,15 @@ function viewAttempt(){
     (a.cur<a.qs.length-1? '<button class="btn" data-act="next">Siguiente p\u00e1gina</button>'
                         : '<button class="btn" data-act="summary">Terminar intento...</button>')+
     '</div>';
+  var seqToggle = (a.course==='guia_fql_dia2')
+    ? '<label style="display:flex;align-items:center;gap:8px;margin:0 0 10px;font-size:13px;color:#334155;cursor:pointer;">'+
+      '<input type="checkbox" '+(isSeq?'checked':'')+' data-act="toggleseq" style="width:16px;height:16px;cursor:pointer;accent-color:#0284c7;">'+
+      (isSeq? 'Modo oficial: una pregunta a la vez. Quita la marca para saltar entre preguntas.' : 'Puedes moverte entre preguntas. Marca esto si quieres el modo oficial (una a una).')+
+      '</label>'
+    : '';
   return navbar('')+'<div class="wrap">'+drawer('quiz')+'<div class="main">'+
     pagehead(c.full,'01-SEA-EPN_2026-2 \u203a '+c.full)+toastHtml()+
+    seqToggle+
     questionHtml(a.cur,'attempt')+nav+'</div>'+
     '<div class="rightblock"><div class="timerbox '+timerCls+'" id="timerbox">Tiempo restante<div class="t" id="timer">'+clock(left)+'</div></div>'+
     navButtons('attempt')+'</div></div>'+drawerBtn();
@@ -3928,14 +4148,15 @@ function removePlanQuestion(courseKey, qIndex) {
 
 /* ---------- MODALES ---------- */
 function modalCfg(){
-  cfg.guiaCfg = cfg.guiaCfg || {guia_mat30:{n:30,min:90}, guia_fql120:{n:60,min:120}, guia_fis:{n:20,min:40}, guia_qui:{n:20,min:40}, guia_len:{n:20,min:40}};
-  var lv = LEVELS.map(function(l){ return '<button class="pill '+l.c+(cfg.level===l.k?' on':'')+'" data-act="setlevel" data-l="'+l.k+'">'+l.n+'</button>'; }).join('');
+  cfg.guiaCfg = cfg.guiaCfg || defaultGuiaCfg();
+  var showLevelPills = contextUsesDifficultySelector();
+  var lv = showLevelPills ? LEVELS.map(function(l){ return '<button class="pill '+l.c+(cfg.level===l.k?' on':'')+'" data-act="setlevel" data-l="'+l.k+'">'+l.n+'</button>'; }).join('') : '';
   var guiaCfgHtml = '';
   try {
     var gc = cfg.guiaCfg;
     guiaCfgHtml = '<div class="field" style="background:#f0f7ff; border:1px solid #cfe0f3; border-radius:8px; padding:12px; margin:14px 0;">'
       +'<label style="color:#0e2a47; font-weight:700;">⚙ Simuladores Guía EPN (banco 1000) — por simulador</label>'
-      +'<div class="hint" style="margin-bottom:10px;">Ajusta N y minutos para cada uno de los 5 simuladores guía. Quedan guardados y el simulador los respeta al iniciar.</div>'
+      +'<div class="hint" style="margin-bottom:10px;">Ajusta N y minutos de cada simulador guía (oficial y avanzado). Quedan guardados y el simulador los respeta al iniciar.</div>'
       + GUIA_COURSES.map(function(k){
           var v=gc[k]||{n:countFor(k), min:minutesFor(k)};
           return '<div style="display:flex; gap:8px; align-items:center; margin-bottom:8px; flex-wrap:wrap;">'
@@ -3950,8 +4171,8 @@ function modalCfg(){
   return '<div class="modalbg" data-act="closemodal"><div class="modal" data-stop="1">'+
     '<header>Configuraci\u00f3n del simulador<button data-act="closemodal">\u2715</button></header>'+
     '<div class="body">'+
-    '<div class="field"><label>Dificultad de las preguntas</label><div class="pills">'+lv+'</div>'+
-    '<div class="hint">Aula Barreno: 100 por materia y nivel. Guía 1000: solo nivel intermedio por ahora. \u00abMezclado\u00bb combina niveles del aula.</div></div>'+
+    (showLevelPills? '<div class="field"><label>Dificultad de las preguntas</label><div class="pills">'+lv+'</div>'+
+    '<div class="hint">Solo el Aula Barreno filtra el banco con estas pastillas. En la Guía, el set lo elige el simulador (oficial, avanzado o las pestañas de los 30 de MAT).</div></div>' : '')+
     guiaCfgHtml+
     '<div class="field"><label>L\u00edmite de tiempo por materia (minutos) — Aula</label><input id="cfgmin" type="number" min="1" max="300" value="'+cfg.minutes+'"></div>'+
     '<div class="field"><label>Preguntas por intento (una materia) — Aula</label><input id="cfgcount" type="number" min="1" max="100" value="'+cfg.count+'"></div>'+
@@ -4115,7 +4336,7 @@ function stopTimer(){ if(S.tick){ clearInterval(S.tick); S.tick = null; } }
 function serializeAttempt(a){
   var qsSer = a.qs.map(function(q){
     var s=q.src;
-    return { subj:q.subj, order:q.order.slice(), src:{ t:s.t, q:s.q, o:s.o.slice(), a:s.a, e:s.e, ch:s.ch, maths:(s.maths||[]).slice(), imgs:(s.imgs||[]).slice(), __s:s.__s, n:s.n, d:s.d, topics:(s.topics||[]).slice(), id:s.id, __i:s.__i, theory:s.theory||null, distractores:(s.distractores||[]).slice(), fig:s.fig||null } };
+    return { subj:q.subj, order:q.order.slice(), src:{ t:s.t, q:s.q, o:s.o.slice(), a:s.a, e:s.e, ch:s.ch, maths:(s.maths||[]).slice(), imgs:(s.imgs||[]).slice(), figName:s.figName||null, reading:s.reading||null, pack:s.pack||null, __s:s.__s, n:s.n, d:s.d, topics:(s.topics||[]).slice(), id:s.id, __i:s.__i, theory:s.theory||null, distractores:(s.distractores||[]).slice(), fig:s.fig||null } };
   });
   // view/onePage/cur se guardan para qué F5 vuelva exactamente al mismo lugar (pregunta, paginación, resumen)
   var v = (a.view || S.view || 'attempt');
@@ -4123,7 +4344,7 @@ function serializeAttempt(a){
   var cur = (typeof a.cur==='number' ? a.cur : (typeof S.attempt!=='undefined' && S.attempt && typeof S.attempt.cur==='number' ? S.attempt.cur : 0));
   // endMs para revisiones (finished review) — permite F5 en revisión sin perder el intento recién corregido
   var endMs = (a.end ? a.end.getTime() : null);
-  return { course:a.course, level:a.level, area:(a.area||S.area), qs:qsSer, ans:a.ans.slice(), flags:a.flags.slice(), cur:cur, startMs:a.start.getTime(), endMs:endMs, limitMs:a.limitMs, isGuia1000:!!a.isGuia1000, isGuia69:!!a.isGuia69, isProgrammedSim:!!(a.isProgrammedSim||isProgrammedSimId(a.course)), noSave:!!a.noSave, view:v, onePage:op, finished:!!a.finished, historic:!!a.historic };
+  return { course:a.course, level:a.level, area:(a.area||S.area), qs:qsSer, ans:a.ans.slice(), flags:a.flags.slice(), cur:cur, startMs:a.start.getTime(), endMs:endMs, limitMs:a.limitMs, isGuia1000:!!a.isGuia1000, isGuia69:!!a.isGuia69, isProgrammedSim:!!(a.isProgrammedSim||isProgrammedSimId(a.course)), noSave:!!a.noSave, sequential:!!a.sequential, view:v, onePage:op, finished:!!a.finished, historic:!!a.historic };
 }
 function deserializeAttempt(raw){
   if(!raw || !Array.isArray(raw.qs) || typeof raw.startMs!=='number' || typeof raw.limitMs!=='number') return null;
@@ -4144,13 +4365,13 @@ function deserializeAttempt(raw){
   var left2 = (raw.startMs + raw.limitMs) - Date.now();
   var expired2 = left2 <= 0;
   var qs = raw.qs.map(function(x){
-    return { subj:x.subj, order:x.order.slice(), src:{ t:x.src.t, q:x.src.q, o:x.src.o.slice(), a:x.src.a, e:x.src.e, ch:x.src.ch, maths:(x.src.maths||[]).slice(), imgs:(x.src.imgs||[]).slice(), __s:x.src.__s, n:x.src.n, d:x.src.d, topics:(x.src.topics||[]).slice(), id:x.src.id, __i:x.src.__i, theory:x.src.theory||null, distractores:(x.src.distractores||[]).slice(), fig:x.src.fig||null } };
+    return { subj:x.subj, order:x.order.slice(), src:{ t:x.src.t, q:x.src.q, o:x.src.o.slice(), a:x.src.a, e:x.src.e, ch:x.src.ch, maths:(x.src.maths||[]).slice(), imgs:(x.src.imgs||[]).slice(), figName:x.src.figName||null, reading:x.src.reading||null, pack:x.src.pack||null, __s:x.src.__s, n:x.src.n, d:x.src.d, topics:(x.src.topics||[]).slice(), id:x.src.id, __i:x.src.__i, theory:x.src.theory||null, distractores:(x.src.distractores||[]).slice(), fig:x.src.fig||null } };
   });
   var view = raw.view || 'attempt';
   var onePage = (raw.onePage!=null ? raw.onePage : null);
   var finished = !!raw.finished || (expired2 && !isReview);
   var end = raw.endMs ? new Date(raw.endMs) : (finished ? new Date(Math.min(Date.now(), raw.startMs+raw.limitMs)) : null);
-  var a={ course:raw.course, level:raw.level, area:raw.area, qs:qs, ans:raw.ans.slice(), flags:raw.flags.slice(), cur:(typeof raw.cur==='number'?raw.cur:0), start:new Date(raw.startMs), end: end, finished: finished, limitMs: raw.limitMs, historic:!!raw.historic, isGuia1000:!!raw.isGuia1000, isGuia69:!!raw.isGuia69, isProgrammedSim:!!(raw.isProgrammedSim||isProgrammedSimId(raw.course)), noSave:!!raw.noSave, restored:true, view:view, onePage:onePage, simId: raw.course };
+  var a={ course:raw.course, level:raw.level, area:raw.area, qs:qs, ans:raw.ans.slice(), flags:raw.flags.slice(), cur:(typeof raw.cur==='number'?raw.cur:0), start:new Date(raw.startMs), end: end, finished: finished, limitMs: raw.limitMs, historic:!!raw.historic, isGuia1000:!!raw.isGuia1000, isGuia69:!!raw.isGuia69, isProgrammedSim:!!(raw.isProgrammedSim||isProgrammedSimId(raw.course)), noSave:!!raw.noSave, sequential:!!raw.sequential, restored:true, view:view, onePage:onePage, simId: raw.course };
   // si es revisión, marca historic false pero finished true para qué renderice review sin bloquear
   return a;
 }
@@ -4301,9 +4522,12 @@ function startAttempt(k){
   S.course = k || S.course || 'mat';
   var chkEl = el('chkNoSave') || el('chkNoSavePreview');
   if(chkEl) S.noSave = chkEl.checked;
+  var chkSeqEl = el('chkSequential');
+  if(chkSeqEl) S.dia2Sequential = chkSeqEl.checked;
   S.attempt = buildAttempt(S.course);
   S.attempt.área=S.area;
   if(S.noSave) S.attempt.noSave = true;
+  if(S.attempt && S.attempt.course==='guia_fql_dia2') S.attempt.sequential = !!S.dia2Sequential;
   S.view = 'attempt'; S.onePage = null; S.modal = null;
   render(); startTimer();
   saveActive(); if(isPinAuthenticated()) pushCloudState();
@@ -4577,7 +4801,7 @@ document.addEventListener('click', function(e){
       cfg.mixMinutes = Math.max(1, Math.min(300, +el('cfgmixmin').value||90));
       cfg.mixCount = Math.max(4, Math.min(120, +el('cfgmixcount').value||20));
       // guarda config guía 1000 por simulador
-      cfg.guiaCfg = cfg.guiaCfg || {guia_mat30:{n:30,min:90}, guia_fql120:{n:60,min:120}, guia_fis:{n:20,min:40}, guia_qui:{n:20,min:40}, guia_len:{n:20,min:40}};
+      cfg.guiaCfg = cfg.guiaCfg || defaultGuiaCfg();
       GUIA_COURSES.forEach(function(k){
         var nEl=el('gc-n-'+k), mEl=el('gc-min-'+k);
         if(nEl) cfg.guiaCfg[k].n = Math.max(5, Math.min(60, parseInt(nEl.value,10)||countFor(k)));
@@ -4637,6 +4861,14 @@ document.addEventListener('click', function(e){
         }catch(e){}
         S.toast = rec.deleted? 'Est\u00e1s viendo un intento eliminado: se conserva para consulta pero no cuenta en las estad\u00edsticas.' : null;
         render();
+      }
+      break;
+    case 'toggleseq':
+      if(S.attempt && S.attempt.course==='guia_fql_dia2' && !S.attempt.finished){
+        S.attempt.sequential = !S.attempt.sequential;
+        S.dia2Sequential = S.attempt.sequential;
+        saveActive();
+        rerenderKeepScroll();
       }
       break;
     case 'start': if(blocked()) break; startAttempt(S.course); break;

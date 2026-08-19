@@ -75,6 +75,9 @@ table.quizreviewsummary td{padding:5px 12px;border-bottom:1px solid #f0f0f0}
 .qtext{font-size:15px;margin-bottom:14px}
 .qtext p{margin:0 0 8px}
 .stembox{background:#fff;border:1px solid #cfe0e0;border-radius:4px;padding:10px 14px;margin-bottom:12px;font-size:14.5px;line-height:1.6}
+.passagebox{background:#f8fafc;border:1px solid #cbd5e1;border-left:4px solid #0e2a47;border-radius:8px;padding:14px 16px;margin:0 0 14px;font-size:14.5px;line-height:1.65;color:#1e293b}
+.passage-kicker{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#64748b;margin-bottom:8px}
+.passage-body{white-space:pre-wrap}
 .answer{margin:0}
 .answer .option{display:flex;gap:9px;align-items:flex-start;padding:5px 4px;border-radius:4px;cursor:pointer}
 .answer .option:hover{background:rgba(255,255,255,.55)}

@@ -1064,6 +1064,186 @@ window.STUDY_DATA = {
   ],
   "quizzes": [
     {
+      "id": "q_p1_cinematica",
+      "topicId": "p1_fis_01",
+      "subject": "fisica",
+      "topic": "Cinemática",
+      "prompt": "Un móvil parte del reposo y acelera uniformemente a $3\\text{ m/s}^2$ durante $4\\text{ s}$. ¿Cuál es la distancia total recorrida?",
+      "options": [
+        "$12\\text{ m}$",
+        "$24\\text{ m}$",
+        "$48\\text{ m}$",
+        "$6\\text{ m}$"
+      ],
+      "answer": 1,
+      "explanation": "Aplicando $d = v_0 t + \\frac{1}{2}a t^2 = 0 + \\frac{1}{2}(3\\text{ m/s}^2)(4\\text{ s})^2 = \\frac{1}{2}(3)(16) = 24\\text{ m}$."
+    },
+    {
+      "id": "q_p1_newton",
+      "topicId": "p1_fis_02",
+      "subject": "fisica",
+      "topic": "Newton",
+      "prompt": "Una fuerza neta de $20\\text{ N}$ actúa sobre una masa de $5\\text{ kg}$. La aceleración resultante es:",
+      "options": [
+        "$0.25\\text{ m/s}^2$",
+        "$4\\text{ m/s}^2$",
+        "$15\\text{ m/s}^2$",
+        "$100\\text{ m/s}^2$"
+      ],
+      "answer": 1,
+      "explanation": "Segunda ley de Newton: $a = \\frac{F}{m} = \\frac{20\\text{ N}}{5\\text{ kg}} = 4\\text{ m/s}^2$."
+    },
+    {
+      "id": "q_p1_energia",
+      "topicId": "p1_fis_03",
+      "subject": "fisica",
+      "topic": "Energía",
+      "prompt": "En un péndulo ideal que oscila sin rozamiento, ¿en qué punto es máxima la energía cinética?",
+      "options": [
+        "En el punto más bajo del recorrido (valle).",
+        "En cualquiera de los dos extremos superiores.",
+        "En todos los puntos por igual.",
+        "Solo durante la fase de ascenso."
+      ],
+      "answer": 0,
+      "explanation": "En el punto más bajo, la energía potencial gravitatoria es mínima ($h = 0$) y toda la energía mecánica se ha transformado en energía cinética máxima ($K_{\\text{máx}} = \\frac{1}{2}m v_{\\text{máx}}^2$)."
+    },
+    {
+      "id": "q_p1_impulso",
+      "topicId": "p1_fis_04",
+      "subject": "fisica",
+      "topic": "Momento Lineal",
+      "prompt": "Una fuerza de $10\\text{ N}$ actúa durante $0.4\\text{ s}$ sobre un balón de $0.5\\text{ kg}$ en reposo. ¿Cuál es su rapidez final?",
+      "options": [
+        "$2\\text{ m/s}$",
+        "$4\\text{ m/s}$",
+        "$8\\text{ m/s}$",
+        "$20\\text{ m/s}$"
+      ],
+      "answer": 2,
+      "explanation": "Impulso $J = F \\Delta t = 4.0\\text{ N}\\cdot\\text{s} = m(v_f - 0) \\implies v_f = \\frac{4.0}{0.5} = 8\\text{ m/s}$."
+    },
+    {
+      "id": "q_p1_nomenclatura",
+      "topicId": "p1_qui_01",
+      "subject": "quimica",
+      "topic": "Nomenclatura",
+      "prompt": "El estado de oxidación del azufre en el ácido sulfúrico ($\\text{H}_2\\text{SO}_4$) es:",
+      "options": [
+        "$+2$",
+        "$+4$",
+        "$+6$",
+        "$-2$"
+      ],
+      "answer": 2,
+      "explanation": "$2(+1) + S + 4(-2) = 0 \\implies +2 + S - 8 = 0 \\implies S = +6$."
+    },
+    {
+      "id": "q_p1_atomo",
+      "topicId": "p1_qui_02",
+      "subject": "quimica",
+      "topic": "Átomo",
+      "prompt": "Para el catión $^{27}_{13}\\text{Al}^{3+}$, el número de protones, neutrones y electrones es:",
+      "options": [
+        "$13$ protones, $14$ neutrones, $10$ electrones",
+        "$13$ protones, $27$ neutrones, $13$ electrones",
+        "$10$ protones, $14$ neutrones, $13$ electrones",
+        "$13$ protones, $14$ neutrones, $16$ electrones"
+      ],
+      "answer": 0,
+      "explanation": "Protones $p^+ = 13$, neutrones $n = 27 - 13 = 14$, electrones $e^- = 13 - 3 = 10$."
+    },
+    {
+      "id": "q_p1_lewis",
+      "topicId": "p1_qui_03",
+      "subject": "quimica",
+      "topic": "Geometría Molecular",
+      "prompt": "¿Por qué la molécula de dióxido de carbono ($\\text{CO}_2$) es apolar a pesar de tener enlaces polares $\\text{C=O}$?",
+      "options": [
+        "Porque no tiene electrones libres en el oxígeno.",
+        "Porque su geometría lineal ($180^\\circ$) anula vectorialmente los momentos dipolares individuales.",
+        "Porque el carbono es más electronegativo que el oxígeno.",
+        "Porque forma enlaces metálicos en solución."
+      ],
+      "answer": 1,
+      "explanation": "El $\\text{CO}_2$ es lineal y perfectamente simétrico: los dos vectores dipolo $\\text{C=O}$ son de igual magnitud y sentido opuesto, sumando $\\vec{\\mu}_{\\text{neto}} = 0$."
+    },
+    {
+      "id": "q_p1_mol",
+      "topicId": "p1_qui_04",
+      "subject": "quimica",
+      "topic": "Fórmula Molecular",
+      "prompt": "Un compuesto tiene fórmula empírica $\\text{CH}_2$ ($M_{\\text{emp}} = 14\\text{ g/mol}$) y masa molar de $42\\text{ g/mol}$. Su fórmula molecular es:",
+      "options": [
+        "$\\text{CH}_4$",
+        "$\\text{C}_2\\text{H}_4$",
+        "$\\text{C}_3\\text{H}_6$",
+        "$\\text{C}_4\\text{H}_8$"
+      ],
+      "answer": 2,
+      "explanation": "Factor entero $k = \\frac{42}{14} = 3$. Multiplicando $(\\text{CH}_2) \\times 3 = \\text{C}_3\\text{H}_6$."
+    },
+    {
+      "id": "q_rampa_vs_vertical",
+      "topicId": "p2_fis_01",
+      "subject": "fisica",
+      "topic": "Trabajo y Energía",
+      "prompt": "Para elevar una caja de masa $m$ hasta una altura $h$, comparando subirla verticalmente vs empujarla por una rampa inclinada sin fricción:",
+      "options": [
+        "La rampa requiere mayor trabajo que la subida vertical.",
+        "La rampa requiere menor trabajo que la subida vertical.",
+        "Ambos métodos requieren exactamente el mismo trabajo contra la gravedad ($W = mgh$), pero la rampa requiere menor fuerza.",
+        "La fuerza requerida en ambos casos es exactamente la misma."
+      ],
+      "answer": 2,
+      "explanation": "El trabajo depende únicamente del cambio de energía potencial gravitatoria ($\\Delta U_g = mgh$). La rampa permite aplicar menor fuerza ($F = mg\\sin\\theta$) distribuida a lo largo de una distancia mayor."
+    },
+    {
+      "id": "q_parabolico_apice",
+      "topicId": "p2_fis_02",
+      "subject": "fisica",
+      "topic": "Proyectiles",
+      "prompt": "En el punto más alto de un tiro parabólico en el aire (sin fricción), ¿cuál afirmación es verdadera?",
+      "options": [
+        "La velocidad del proyectil es totalmente nula.",
+        "La velocidad es horizontal ($v = v_{0x} = v_0\\cos\\theta$) y la aceleración es $g$ hacia abajo.",
+        "La aceleración se hace cero momentáneamente.",
+        "La aceleración apunta en la misma dirección que la velocidad horizontal."
+      ],
+      "answer": 1,
+      "explanation": "En el ápice solo se anula la velocidad vertical ($v_y = 0$). La velocidad horizontal $v_x = v_0\\cos\\theta$ permanece constante y la gravedad $g$ sigue actuando verticalmente hacia abajo."
+    },
+    {
+      "id": "q_newton_cuerda",
+      "topicId": "p2_fis_03",
+      "subject": "fisica",
+      "topic": "3ra Ley",
+      "prompt": "Juan y Pedro jalan los extremos de una misma cuerda tensa en direcciones opuestas sobre piso liso sin fricción. Según la Tercera Ley de Newton:",
+      "options": [
+        "La persona de mayor masa ejerce siempre mayor fuerza sobre la cuerda.",
+        "La fuerza que Juan ejerce sobre la cuerda es exactamente igual en magnitud a la que la cuerda ejerce sobre Juan.",
+        "La cuerda no experimenta tensión si ambas personas tienen la misma fuerza.",
+        "La fuerza neta sobre la cuerda es el doble de la fuerza de Juan."
+      ],
+      "answer": 1,
+      "explanation": "Por la 3ra Ley de Newton (acción y reacción), las fuerzas transmitidas en los extremos de la cuerda tensa son de igual magnitud y sentido opuesto."
+    },
+    {
+      "id": "q_mcu_acel",
+      "topicId": "p2_fis_04",
+      "subject": "fisica",
+      "topic": "MCU",
+      "prompt": "Un cuerpo describe un Movimiento Circular Uniforme (MCU) con rapidez constante $v$. ¿Cuál afirmación es verdadera sobre su aceleración?",
+      "options": [
+        "La aceleración es nula porque la rapidez es constante.",
+        "Posee aceleración tangencial constante.",
+        "Posee aceleración centrípeta dirigida radialmente hacia el centro de la trayectoria ($a_c = \\frac{v^2}{r}$).",
+        "La aceleración apunta en la misma dirección tangente que la velocidad."
+      ],
+      "answer": 2,
+      "explanation": "En MCU la rapidez no varía, pero la dirección del vector velocidad cambia continuamente, originando una aceleración centrípeta $a_c = \\frac{v^2}{r}$ dirigida hacia el centro."
+    },
+    {
       "id": "q_hooke_u",
       "topicId": "p2_fis_05",
       "subject": "fisica",
@@ -1109,6 +1289,21 @@ window.STUDY_DATA = {
       "explanation": "El oxígeno ($\\text{O}_2$) pasa de estado de oxidación $0$ a $-2$. Al ganar electrones experimenta reducción, actuando como agente oxidante al quitarle electrones al magnesio."
     },
     {
+      "id": "q_estequiometria_mgo",
+      "topicId": "p2_qui_02",
+      "subject": "quimica",
+      "topic": "Estequiometría",
+      "prompt": "$2\\text{Mg} + \\text{O}_2 \\to 2\\text{MgO}$. Si reaccionan $24\\text{ g}$ de $\\text{Mg}$ ($M = 24\\text{ g/mol}$) con $16\\text{ g}$ de $\\text{O}_2$ ($M = 32\\text{ g/mol}$):",
+      "options": [
+        "El $\\text{Mg}$ es limitante y se obtienen $20\\text{ g}$ de $\\text{MgO}$.",
+        "Ambos se consumen en proporción exacta y se obtienen $40.0\\text{ g}$ de $\\text{MgO}$.",
+        "El $\\text{O}_2$ es limitante y se obtienen $80\\text{ g}$ de $\\text{MgO}$.",
+        "Sobran $8\\text{ g}$ de $\\text{Mg}$ sin reaccionar."
+      ],
+      "answer": 1,
+      "explanation": "$24\\text{ g Mg} = 1.0\\text{ mol}$; $16\\text{ g O}_2 = 0.5\\text{ mol}$. La proporción $1.0 : 0.5$ coincide exactamente con la estequiometría $2:1$. Por tanto, ambos se consumen por completo produciendo $40.0\\text{ g}$ de $\\text{MgO}$."
+    },
+    {
       "id": "q_cuanticos_s",
       "topicId": "p2_qui_03",
       "subject": "quimica",
@@ -1139,142 +1334,37 @@ window.STUDY_DATA = {
       "explanation": "En un grupo de la tabla periódica, el radio atómico aumenta hacia abajo conforme aumentan los niveles de energía: $\\text{F} < \\text{Cl} < \\text{Br} < \\text{I}$."
     },
     {
-      "id": "q_rampa_vs_vertical",
-      "topicId": "p2_fis_01",
-      "subject": "fisica",
-      "topic": "Trabajo y Energía",
-      "prompt": "Para elevar una caja de masa $m$ hasta una altura $h$, comparando subirla verticalmente vs empujarla por una rampa inclinada sin fricción:",
+      "id": "q_puentes_h",
+      "topicId": "p2_qui_05",
+      "subject": "quimica",
+      "topic": "Fuerzas Intermoleculares",
+      "prompt": "¿Cuál de las siguientes sustancias forma puentes de hidrógeno intermoleculares?",
       "options": [
-        "La rampa requiere mayor trabajo que la subida vertical.",
-        "La rampa requiere menor trabajo que la subida vertical.",
-        "Ambos métodos requieren exactamente el mismo trabajo contra la gravedad ($W = mgh$), pero la rampa requiere menor fuerza.",
-        "La fuerza requerida en ambos casos es exactamente la misma."
+        "$\\text{CH}_4$",
+        "$\\text{H}_2\\text{S}$",
+        "$\\text{NH}_3$",
+        "$\\text{HCl}$"
       ],
       "answer": 2,
-      "explanation": "El trabajo depende únicamente del cambio de energía potencial gravitatoria ($\\Delta U_g = mgh$). La rampa permite aplicar menor fuerza ($F = mg\\sin\\theta$) distribuida a lo largo de una distancia mayor."
+      "explanation": "El puente de hidrógeno requiere hidrógeno unido directamente a átomos pequeños y muy electronegativos: $\\text{F, O, N}$. Por tanto, el $\\text{NH}_3$ forma puentes de hidrógeno."
     },
     {
-      "id": "q_newton_cuerda",
-      "topicId": "p2_fis_03",
-      "subject": "fisica",
-      "topic": "3ra Ley",
-      "prompt": "Juan y Pedro jalan los extremos de una misma cuerda tensa en direcciones opuestas sobre piso liso sin fricción. Según la Tercera Ley de Newton:",
+      "id": "q_conversion_volumen",
+      "topicId": "p2_qui_06",
+      "subject": "quimica",
+      "topic": "Conversiones",
+      "prompt": "El volumen de $230\\text{ cm}^3$ expresado en metros cúbicos ($\\text{m}^3$) es:",
       "options": [
-        "La persona de mayor masa ejerce siempre mayor fuerza sobre la cuerda.",
-        "La fuerza que Juan ejerce sobre la cuerda es exactamente igual en magnitud a la que la cuerda ejerce sobre Juan.",
-        "La cuerda no experimenta tensión si ambas personas tienen la misma fuerza.",
-        "La fuerza neta sobre la cuerda es el doble de la fuerza de Juan."
-      ],
-      "answer": 1,
-      "explanation": "Por la 3ra Ley de Newton (acción y reacción), las fuerzas transmitidas en los extremos de la cuerda tensa son de igual magnitud y sentido opuesto."
-    },
-    {
-      "id": "q_mcu_acel",
-      "topicId": "p2_fis_04",
-      "subject": "fisica",
-      "topic": "MCU",
-      "prompt": "Un cuerpo describe un Movimiento Circular Uniforme (MCU) con rapidez constante $v$. ¿Cuál afirmación es verdadera sobre su aceleración?",
-      "options": [
-        "La aceleración es nula porque la rapidez es constante.",
-        "Posee aceleración tangencial constante.",
-        "Posee aceleración centrípeta dirigida radialmente hacia el centro de la trayectoria ($a_c = \\frac{v^2}{r}$).",
-        "La aceleración apunta en la misma dirección tangente que la velocidad."
+        "$2.30\\text{ m}^3$",
+        "$2.30 \\times 10^{-2}\\text{ m}^3$",
+        "$2.30 \\times 10^{-4}\\text{ m}^3$",
+        "$2.30 \\times 10^{-6}\\text{ m}^3$"
       ],
       "answer": 2,
-      "explanation": "En MCU la rapidez no varía, pero la dirección del vector velocidad cambia continuamente, originando una aceleración centrípeta $a_c = \\frac{v^2}{r}$ dirigida hacia el centro."
+      "explanation": "$1\\text{ m}^3 = 10^6\\text{ cm}^3 \\implies 230\\text{ cm}^3 \\times \\frac{1\\text{ m}^3}{10^6\\text{ cm}^3} = 2.30 \\times 10^{-4}\\text{ m}^3$."
     },
     {
-      "id": "q1",
-      "topicId": "p1_fis_01",
-      "subject": "fisica",
-      "topic": "Cinemática",
-      "prompt": "En el punto más alto de un tiro vertical, despreciando el aire:",
-      "options": [
-        "La velocidad y la aceleración son cero.",
-        "La velocidad es cero ($v = 0$) y la aceleración apunta hacia abajo ($a = g$).",
-        "La aceleración es cero y la rapidez es máxima.",
-        "La velocidad apunta hacia arriba."
-      ],
-      "answer": 1,
-      "explanation": "En el ápice, la velocidad instantánea se anula ($v = 0$), pero la aceleración de la gravedad sigue actuando hacia abajo ($a = g = 9.8\\text{ m/s}^2$)."
-    },
-    {
-      "id": "q2",
-      "topicId": "p1_fis_02",
-      "subject": "fisica",
-      "topic": "Newton",
-      "prompt": "Una fuerza neta de $20\\text{ N}$ actúa sobre una masa de $5\\text{ kg}$. La aceleración es:",
-      "options": [
-        "$0.25\\text{ m/s}^2$",
-        "$4\\text{ m/s}^2$",
-        "$15\\text{ m/s}^2$",
-        "$100\\text{ m/s}^2$"
-      ],
-      "answer": 1,
-      "explanation": "Segunda ley de Newton: $a = \\frac{F}{m} = \\frac{20\\text{ N}}{5\\text{ kg}} = 4\\text{ m/s}^2$."
-    },
-    {
-      "id": "q3",
-      "topicId": "p1_fis_03",
-      "subject": "fisica",
-      "topic": "Energía",
-      "prompt": "En un péndulo ideal que oscila sin rozamiento, ¿en qué punto es máxima la energía cinética?",
-      "options": [
-        "En el punto más bajo del recorrido (valle).",
-        "En cualquiera de los dos extremos superiores.",
-        "En todos los puntos por igual.",
-        "Solo durante la fase de ascenso."
-      ],
-      "answer": 0,
-      "explanation": "En el punto más bajo, la energía potencial gravitatoria es mínima ($h = 0$) y toda la energía mecánica se ha transformado en energía cinética máxima ($K_{\\text{máx}} = \\frac{1}{2}m v_{\\text{máx}}^2$)."
-    },
-    {
-      "id": "q4",
-      "topicId": "p2_fis_03",
-      "subject": "fisica",
-      "topic": "Newton",
-      "prompt": "Un objeto de $1.0\\text{ kg}$ se tira hacia abajo con $v_0 = 2\\text{ m/s}$ y alcanza $v_f = 14\\text{ m/s}$ en $4\\text{ s}$. La fuerza neta resultante es:",
-      "options": [
-        "$9.8\\text{ N}$",
-        "$3.0\\text{ N}$",
-        "$14.0\\text{ N}$",
-        "$0.5\\text{ N}$"
-      ],
-      "answer": 1,
-      "explanation": "Aceleración: $a = \\frac{14 - 2}{4} = 3.0\\text{ m/s}^2$. Fuerza neta: $F_{\\text{neta}} = m a = (1.0\\text{ kg})(3.0\\text{ m/s}^2) = 3.0\\text{ N}$."
-    },
-    {
-      "id": "q5",
-      "topicId": "p1_qui_01",
-      "subject": "quimica",
-      "topic": "Nomenclatura",
-      "prompt": "El nombre Stock oficial del compuesto $\\text{FeCl}_3$ es:",
-      "options": [
-        "Cloruro de hierro (II)",
-        "Cloruro de hierro (III)",
-        "Tricloruro férrico",
-        "Clorato de hierro"
-      ],
-      "answer": 1,
-      "explanation": "Cada átomo de cloro actúa con estado de oxidación $-1$; por tanto, el hierro actúa con $+3$. Su nombre Stock oficial es cloruro de hierro (III)."
-    },
-    {
-      "id": "q6",
-      "topicId": "p2_qui_02",
-      "subject": "quimica",
-      "topic": "Estequiometría",
-      "prompt": "$2\\text{Mg} + \\text{O}_2 \\to 2\\text{MgO}$. Si reaccionan $24\\text{ g}$ de $\\text{Mg}$ ($M = 24\\text{ g/mol}$) con $16\\text{ g}$ de $\\text{O}_2$ ($M = 32\\text{ g/mol}$):",
-      "options": [
-        "El $\\text{Mg}$ es limitante y se obtienen $20\\text{ g}$ de $\\text{MgO}$.",
-        "Ambos se consumen en proporción exacta y se obtienen $40.0\\text{ g}$ de $\\text{MgO}$.",
-        "El $\\text{O}_2$ es limitante y se obtienen $80\\text{ g}$ de $\\text{MgO}$.",
-        "Sobran $8\\text{ g}$ de $\\text{Mg}$ sin reaccionar."
-      ],
-      "answer": 1,
-      "explanation": "$24\\text{ g Mg} = 1.0\\text{ mol}$; $16\\text{ g O}_2 = 0.5\\text{ mol}$. La proporción $1.0 : 0.5$ coincide exactamente con la estequiometría $2:1$. Por tanto, ambos se consumen por completo produciendo $40.0\\text{ g}$ de $\\text{MgO}$."
-    },
-    {
-      "id": "q7",
+      "id": "q_tesis_definicion",
       "topicId": "p2_len_01",
       "subject": "lenguaje",
       "topic": "Lectura Crítica",
@@ -1287,6 +1377,21 @@ window.STUDY_DATA = {
       ],
       "answer": 1,
       "explanation": "La tesis es la postura u opinión central que el autor defiende a lo largo del texto mediante argumentos y evidencias."
+    },
+    {
+      "id": "q_conectores_logicos",
+      "topicId": "p2_len_02",
+      "subject": "lenguaje",
+      "topic": "Conectores",
+      "prompt": "En la frase: 'El estudiante comprendió la teoría; _______, resolvió el ejercicio en menos de un minuto', el conector adecuado es:",
+      "options": [
+        "por lo tanto (consecuencia)",
+        "sin embargo (oposición)",
+        "porque (causa)",
+        "a pesar de que (concesión)"
+      ],
+      "answer": 0,
+      "explanation": "La segunda proposición es el resultado directo de la primera, por lo que corresponde un conector consecutivo como 'por lo tanto'."
     }
   ]
 };

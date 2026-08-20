@@ -382,6 +382,8 @@ function startPracticeForTopic(topicId) {
   togglePracticeMode(true, topicId);
 }
 
+let currentPracticeQuizzes = [];
+
 function renderPracticeQuiz(specificTopicId) {
   const container = document.getElementById('practice-card-container');
   if (!container) return;
@@ -393,6 +395,8 @@ function renderPracticeQuiz(specificTopicId) {
     quizzes = allQuizzes.filter(q => q.topicId === specificTopicId);
     if (!quizzes.length) quizzes = allQuizzes;
   }
+
+  currentPracticeQuizzes = quizzes;
 
   // Update Score
   let score = 0;
@@ -468,13 +472,13 @@ function selectPracticeAnswer(qId, optIdx, correctAns) {
   if (exp) exp.classList.remove('hidden');
 
   // Update Score
-  const allQuizzes = (window.STUDY_DATA && window.STUDY_DATA.quizzes) || [];
   let score = 0;
-  allQuizzes.forEach(q => {
+  const quizList = currentPracticeQuizzes.length ? currentPracticeQuizzes : ((window.STUDY_DATA && window.STUDY_DATA.quizzes) || []);
+  quizList.forEach(q => {
     if (practiceAnswers[q.id] === q.answer) score++;
   });
   const scoreVal = document.getElementById('practice-score-val');
-  if (scoreVal) scoreVal.textContent = `${score} / ${allQuizzes.length}`;
+  if (scoreVal) scoreVal.textContent = `${score} / ${quizList.length}`;
 
   triggerMath();
 }

@@ -1263,22 +1263,20 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 14,
       "d": "intermedio",
       "topics": [
-        "2.2.1-leyesNewton"
+        "4.2.2-3raNewton"
       ],
-      "ch": "fis-F02",
-      "t": "Tercera Ley y Aceleración por Inercia",
-      "prompt": "Un camión pesado de $3000\\text{ kg}$ empuja horizontalmente a un automóvil pequeño averiado de $1000\\text{ kg}$ sobre una pista lisa, acelerando juntos hacia adelante. Respecto a las fuerzas de contacto y las aceleraciones:",
+      "ch": "fis-L10",
+      "t": "Camión y Auto en Empuje",
+      "prompt": "Un camión de $3000\\text{ kg}$ se coloca detrás de un auto averiado de $1000\\text{ kg}$ y lo empuja en línea recta acelerando a $1.5\\text{ m/s}^2$. Despreciando el rozamiento de las ruedas con el suelo, ¿cuál es la magnitud de la fuerza que el camión ejerce sobre el auto y la que el auto ejerce sobre el camión?",
       "opts": [
-        "El camión ejerce sobre el automóvil una fuerza de mayor magnitud que la que el automóvil ejerce sobre el camión.",
-        "La fuerza que el camión ejerce sobre el automóvil tiene exactamente la misma magnitud que la fuerza que el automóvil ejerce sobre el camión, y ambos adquieren la misma aceleración.",
-        "El automóvil ejerce una fuerza de reacción nula porque su masa es tres veces menor.",
-        "La aceleración del automóvil es tres veces mayor que la del camión porque están en contacto."
+        "Ambas fuerzas tienen exactamente la misma magnitud de $1500\\text{ N}$, en sentidos opuestos.",
+        "El camión ejerce $4500\\text{ N}$ y el auto reacciona con $1500\\text{ N}$.",
+        "El camión ejerce $6000\\text{ N}$ y el auto no ejerce ninguna fuerza por estar averiado.",
+        "El camión ejerce $1500\\text{ N}$ y el auto reacciona con $4500\\text{ N}$."
       ],
-      "ans": 1,
-      "exp": "**Paso 1. Tercera Ley de Newton (Acción y Reacción):** Toda interacción entre dos cuerpos $A$ (camión) y $B$ (automóvil) genera un par de fuerzas de igual magnitud ($|\\vec{F}_{AB}| = |\\vec{F}_{BA}|$) y sentido opuesto, sin importar sus masas.\n**Paso 2. Análisis del movimiento conjunto:** Al estar en contacto y desplazarse unidos, ambos vehículos comparten idéntica aceleración instantánea $\\vec{a}$.\n**Paso 3. Conclusión:** Las fuerzas de interacción mutua son idénticas en magnitud y la aceleración del conjunto es la misma.\n**Respuesta correcta: B.**",
-      "maths": [
-        "|\\vec{F}_{AB}| = |\\vec{F}_{BA}|"
-      ],
+      "ans": 0,
+      "exp": "**Paso 1. Dinámica del cuerpo empujado (auto):**\n- Masa del auto: $m_{\\text{auto}} = 1000\\text{ kg}$, aceleración: $a = 1.5\\text{ m/s}^2$.\n- La fuerza neta que acelera al auto es la fuerza de contacto que le aplica el camión:\n  $F_{\\text{camión}\\to\\text{auto}} = m_{\\text{auto}} \\cdot a = 1000\\text{ kg} \\times 1.5\\text{ m/s}^2 = 1500\\text{ N}$.\n**Paso 2. Aplicación de la 3ra Ley de Newton:**\n- Por acción y reacción, la fuerza de contacto que el auto ejerce en sentido opuesto sobre el parachoques del camión es de igual módulo:\n  $|F_{\\text{auto}\\to\\text{camión}}| = |F_{\\text{camión}\\to\\text{auto}}| = 1500\\text{ N}$.\n**Paso 3. Conclusión:** Ambas fuerzas valen exactamente $1500\\text{ N}$ en sentidos contrarios.\n**Respuesta correcta: A.**",
+      "maths": [],
       "imgs": []
     },
     {
@@ -1287,24 +1285,22 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 15,
       "d": "intermedio",
       "topics": [
-        "2.1.2-mcu"
+        "4.2.2-circular"
       ],
-      "ch": "fis-F01",
-      "t": "Naturaleza de la Aceleración en MCU",
-      "prompt": "Una partícula describe un Movimiento Circular Uniforme (MCU) con rapidez tangencial constante. ¿Cuál afirmación describe con rigor físico sus vectores cinemáticos?",
+      "ch": "fis-L11",
+      "t": "MCU y Aceleración Centrípeta",
+      "prompt": "Una partícula describe un Movimiento Circular Uniforme (MCU) en un plano horizontal con radio $R = 2\\text{ m}$ y rapidez constante $v = 6\\text{ m/s}$. ¿Cuál es el valor de su aceleración tangencial $a_t$ y de su aceleración centrípeta $a_c$?",
       "opts": [
-        "No tiene aceleración porque su rapidez es constante.",
-        "Tiene aceleración tangencial nula ($a_t = 0$), pero posee aceleración centrípeta ($a_c = \\frac{v^2}{R}$) dirigida radialmente hacia el centro debido al continuo cambio de dirección de la velocidad.",
-        "La aceleración total apunta en la misma dirección y sentido del vector velocidad tangencial.",
-        "La velocidad angular $\\omega$ cambia de dirección en cada cuarto de vuelta."
+        "$a_t = 0\\text{ m/s}^2$ y $a_c = 18\\text{ m/s}^2$ dirigida radialmente hacia el centro del círculo.",
+        "$a_t = 3\\text{ m/s}^2$ y $a_c = 0\\text{ m/s}^2$.",
+        "$a_t = 18\\text{ m/s}^2$ y $a_c = 36\\text{ m/s}^2$.",
+        "$a_t = 0\\text{ m/s}^2$ y $a_c = 0\\text{ m/s}^2$ porque la velocidad es uniforme."
       ],
-      "ans": 1,
-      "exp": "**Paso 1. Concepto de vector velocidad:** En MCU la magnitud (rapidez) es constante, lo que implica aceleración tangencial nula ($a_t = 0$).\n**Paso 2. Aceleración centrípeta:** La dirección del vector velocidad varía instante a instante; este cambio en orientación genera una aceleración normal o centrípeta dirigida hacia el centro ($a_c = \\frac{v^2}{R}$).",
-      "maths": [
-        "a_t = 0",
-        "a_c = \\frac{v^2}{R}"
-      ],
-      "imgs": []
+      "ans": 0,
+      "exp": "**Paso 1. Concepto de MCU:** En un MCU, la rapidez (módulo del vector velocidad) es constante, pero la dirección del vector velocidad cambia continuamente.\n**Paso 2. Cálculo a mano de las componentes de aceleración:**\n- Aceleración tangencial (tasa de cambio de la rapidez): $a_t = \\frac{dv}{dt} = 0$.\n- Aceleración centrípeta (responsable del cambio de dirección):\n  $a_c = \\frac{v^2}{R} = \\frac{6^2}{2} = \\frac{36}{2} = 18\\text{ m/s}^2$.\n- Dirección: Siempre orientada radialmente hacia el centro de la circunferencia.\n**Paso 3. Conclusión:** $a_t = 0$ y $a_c = 18\\text{ m/s}^2$ hacia el centro.\n**Respuesta correcta: A.**",
+      "maths": [],
+      "imgs": [],
+      "fig": "fql19-mcu-vectorial"
     },
     {
       "id": "fis-19ago-16",
@@ -1312,23 +1308,20 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 16,
       "d": "intermedio",
       "topics": [
-        "2.1.2-mcu",
-        "2.2.1-leyesNewton"
+        "4.2.2-circular"
       ],
-      "ch": "fis-F02",
-      "t": "Fuerza Centrípeta Real en un Viraje Plano",
-      "prompt": "Cuando un automóvil toma una curva circular en una carretera horizontal plana no peraltada sin derrapar, ¿cuál es la fuerza física real que provee la fuerza centrípeta necesaria para el giro?",
+      "ch": "fis-L11",
+      "t": "Fuerza Centrípeta en Giro",
+      "prompt": "Un automóvil de $1200\\text{ kg}$ toma una curva circular plana de radio $R = 50\\text{ m}$ a una rapidez constante de $20\\text{ m/s}$. ¿Qué fuerza horizontal proporciona la aceleración centrípeta necesaria para que el auto no derrape hacia afuera?",
       "opts": [
-        "La fuerza centrífuga que empuja al vehículo hacia afuera.",
-        "La fuerza de rozamiento estático entre los neumáticos y el asfalto, dirigida hacia el centro de curvatura.",
-        "La componente horizontal de la fuerza gravitatoria.",
-        "La fuerza normal ejercida por el pavimento hacia arriba."
+        "La fuerza de rozamiento estático entre los neumáticos y el asfalto, de valor $9600\\text{ N}$ hacia el centro.",
+        "La fuerza centrífuga que empuja el auto hacia el exterior con $9600\\text{ N}$.",
+        "La fuerza de gravedad vertical que actúa sobre el techo del vehículo con $12000\\text{ N}$.",
+        "La fuerza del motor que impulsa el auto hacia adelante con $24000\\text{ N}$."
       ],
-      "ans": 1,
-      "exp": "**Paso 1. Fuerzas reales en marco inercial:** Sobre el auto actúan el peso (vertical hacia abajo), la normal (vertical hacia arriba) y el rozamiento con el suelo.\n**Paso 2. Origen de la fuerza centrípeta:** Al girar en plano horizontal sin peralte, la única fuerza con componente horizontal hacia el centro es la fuerza de fricción estática entre los neumáticos y la calzada ($f_s = m\\frac{v^2}{R}$).\n**Paso 3. Descarte:** La fuerza centrífuga es una fuerza ficticia que solo aparece en marcos no inerciales.\n**Respuesta correcta: B.**",
-      "maths": [
-        "f_s = m\\frac{v^2}{R}"
-      ],
+      "ans": 0,
+      "exp": "**Paso 1. Identificación de la fuerza real:** Para que un auto gire en una pista horizontal sin peralte, la única fuerza radial hacia el centro de la curva es la fricción lateral de las llantas con el pavimento.\n**Paso 2. Cálculo a mano de la fuerza requerida:**\n- Aceleración centrípeta: $a_c = \\frac{v^2}{R} = \\frac{20^2}{50} = \\frac{400}{50} = 8\\text{ m/s}^2$.\n- Fuerza centrípeta: $F_c = m \\cdot a_c = 1200\\text{ kg} \\times 8\\text{ m/s}^2 = 9600\\text{ N}$.\n- La fuerza centrífuga no es una fuerza real en un marco inercial, sino una fuerza ficticia.\n**Paso 3. Conclusión:** La fricción estática proporciona los $9600\\text{ N}$ dirigidos hacia el centro.\n**Respuesta correcta: A.**",
+      "maths": [],
       "imgs": []
     },
     {
@@ -1359,24 +1352,20 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 18,
       "d": "intermedio",
       "topics": [
-        "2.2.1-leyesNewton",
-        "2.2.4-gravitacion"
+        "4.2.2-2daNewton"
       ],
-      "ch": "fis-F02",
-      "t": "Invarianza de la Masa vs Variabilidad del Peso",
-      "prompt": "Un astronauta transporta una roca de $2.5\\text{ kg}$ desde la Tierra hasta la superficie de la Luna, donde la aceleración de la gravedad es aproximadamente $\\frac{1}{6}$ de la terrestre. Al medir la roca en la Luna:",
+      "ch": "fis-L08",
+      "t": "Gravedad y Peso en Otro Planeta",
+      "prompt": "Una roca tiene una masa de $2.5\\text{ kg}$ en la Tierra. En una misión de exploración a otro planeta, se suelta dicha roca desde el reposo y tarda exactamente $2\\text{ segundos}$ en caer una altura vertical de $8\\text{ metros}$ (sin atmósfera). ¿Cuál es el peso de la roca en dicho planeta?",
       "opts": [
-        "Tanto la masa como el peso se reducen a la sexta parte.",
-        "La masa permanece exactamente en $2.5\\text{ kg}$, mientras que su peso disminuye a $\\frac{1}{6}$ de su valor terrestre.",
-        "El peso permanece constante pero la inercia de la roca disminuye.",
-        "La masa aumenta porque la gravedad lunar ofrece menor resistencia."
+        "$10\\text{ N}$",
+        "$20\\text{ N}$",
+        "$5\\text{ N}$",
+        "$25\\text{ N}$"
       ],
-      "ans": 1,
-      "exp": "**Paso 1. Masa inercial:** La masa es una propiedad intrínseca del cuerpo (cantidad de materia e inercia) y es invariable sin importar el lugar del universo ($m = 2.5\\text{ kg}$). \n**Paso 2. Peso:** El peso $P = m g$ depende directamente de la gravedad local, reduciéndose a $P_{\\text{Luna}} = \\frac{1}{6}P_{\\text{Tierra}}$.\n**Respuesta correcta: B.**",
-      "maths": [
-        "P = mg",
-        "P_{\\text{Luna}} = \\frac{1}{6}P_{\\text{Tierra}}"
-      ],
+      "ans": 0,
+      "exp": "**Paso 1. Invarianza de la masa:** La masa es una propiedad intrínseca de la materia ($m = 2.5\\text{ kg}$) y no cambia en ningún planeta.\n**Paso 2. Cálculo a mano de la aceleración gravitatoria del planeta ($g_p$):**\n- Caída libre desde el reposo ($v_0 = 0$): $h = \\frac{1}{2}g_p t^2$.\n- Despejando la gravedad:\n  $g_p = \\frac{2h}{t^2} = \\frac{2(8\\text{ m})}{(2\\text{ s})^2} = \\frac{16}{4} = 4\\text{ m/s}^2$.\n**Paso 3. Cálculo del peso en el planeta:**\n- Peso: $P_p = m \\cdot g_p = 2.5\\text{ kg} \\times 4\\text{ m/s}^2 = 10\\text{ N}$.\n**Respuesta correcta: A.**",
+      "maths": [],
       "imgs": []
     },
     {
@@ -1385,22 +1374,20 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 19,
       "d": "intermedio",
       "topics": [
-        "2.2.1-leyesNewton"
+        "4.2.2-2daNewton"
       ],
-      "ch": "fis-F02",
-      "t": "Fuerza Neta y Aceleración en Caída",
-      "prompt": "Un objeto de $1.0\\text{ kg}$ se lanza verticalmente hacia abajo adquiriendo una aceleración inicial conocida de $3.0\\text{ m/s}^2$ en un medio resistivo. De acuerdo con la Segunda Ley de Newton, la fuerza neta resultante que actúa sobre el objeto es:",
+      "ch": "fis-L07",
+      "t": "Fuerza Neta Resultante en Caída",
+      "prompt": "Un cuerpo de $1\\text{ kg}$ de masa es lanzado verticalmente hacia abajo con una rapidez inicial de $2\\text{ m/s}$. Al cabo de $4\\text{ segundos}$ alcanza una rapidez de $14\\text{ m/s}$. ¿Cuál es la fuerza neta resultante en Newtons que actúa sobre el cuerpo durante este intervalo?",
       "opts": [
-        "$9.8\\text{ N}$ hacia abajo.",
-        "$3.0\\text{ N}$ hacia abajo.",
-        "$12.8\\text{ N}$ hacia arriba.",
-        "$0.33\\text{ N}$ hacia abajo."
+        "$3\\text{ N}$",
+        "$5\\text{ N}$",
+        "$12\\text{ N}$",
+        "$10\\text{ N}$"
       ],
-      "ans": 1,
-      "exp": "**Paso 1. Segunda Ley de Newton:** La fuerza neta total es el producto de la masa por la aceleración resultante real del cuerpo: $F_{\\text{neta}} = m \\cdot a$.\n**Paso 2. Sustitución:** $F_{\\text{neta}} = (1.0\\text{ kg})(3.0\\text{ m/s}^2) = 3.0\\text{ N}$.\n**Paso 3. Alerta de examen:** No confundas el peso bruto ($mg = 9.8\\text{ N}$) con la fuerza neta resultante cuando existen fuerzas resistentes.\n**Respuesta correcta: B.**",
-      "maths": [
-        "F_{\\text{neta}} = ma = (1.0)(3.0) = 3.0\\text{ N}"
-      ],
+      "ans": 0,
+      "exp": "**Paso 1. Datos cinemáticos:** Masa $m = 1\\text{ kg}$, rapidez inicial $v_0 = 2\\text{ m/s}$, tiempo $t = 4\\text{ s}$, rapidez final $v_f = 14\\text{ m/s}$.\n**Paso 2. Cálculo de la aceleración a mano:**\n- $a = \\frac{v_f - v_0}{t} = \\frac{14\\text{ m/s} - 2\\text{ m/s}}{4\\text{ s}} = \\frac{12}{4} = 3\\text{ m/s}^2$.\n**Paso 3. Aplicación de la Segunda Ley de Newton:**\n- Fuerza neta resultante: $F_{\\text{neta}} = m \\cdot a = 1\\text{ kg} \\times 3\\text{ m/s}^2 = 3\\text{ N}$.\n- (Nota: como la aceleración es $3\\text{ m/s}^2 < 9.8\\text{ m/s}^2$, el peso hacia abajo de $9.8\\text{ N}$ se opone a una resistencia del aire hacia arriba de $6.8\\text{ N}$, dando una fuerza resultante de $3\\text{ N}$).\n**Respuesta correcta: A.**",
+      "maths": [],
       "imgs": []
     },
     {
@@ -1431,22 +1418,24 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 21,
       "d": "intermedio",
       "topics": [
-        "4.2.3-consEnergia"
+        "2.2.2-trabajoEnergia"
       ],
-      "ch": "fis-L16",
+      "ch": "fis-F02",
       "t": "Pista de Patinaje y Puntos de Energía",
-      "prompt": "En una pista de patinaje sin fricción con desniveles, un patinador desciende pasando por los puntos $A$ (más alto), $B$ (intermedio), $C$ (punto más bajo) y $D$ (curva de ascenso). ¿En qué punto la energía potencial gravitatoria es máxima y en cuál la rapidez es máxima?",
+      "prompt": "En una pista de patinaje sin fricción con desniveles, un patinador desciende pasando por los puntos $A$ (más alto), $B$ (intermedio) y $C$ (el más bajo del valle). Despreciando el rozamiento, ¿dónde se alcanzan los valores máximos de energía potencial y rapidez?",
       "opts": [
         "Energía potencial máxima en A; rapidez máxima en C.",
         "Energía potencial máxima en C; rapidez máxima en A.",
-        "Energía potencial máxima en D; rapidez máxima en B.",
-        "Energía potencial máxima en A; rapidez máxima en B."
+        "Energía potencial y rapidez son constantes en todos los puntos.",
+        "Rapidez máxima en B; energía potencial máxima en C."
       ],
       "ans": 0,
-      "exp": "**Paso 1. Dependencia de la energía potencial:** $E_p = mgh$. Es máxima en el punto de mayor altitud sobre el nivel de referencia, que es el punto $A$.\n**Paso 2. Conservación de la energía mecánica:** Sin rozamiento, $E_m = E_p + E_c = \\text{constante}$. Al descender, la energía potencial se transforma íntegramente en energía cinética ($E_c = \\frac{1}{2}mv^2$).\n**Paso 3. Conclusión:** La energía cinética (y la rapidez) alcanza su valor máximo en el punto más bajo de la pista ($C$), donde la energía potencial es mínima.\n**Respuesta correcta: A.**",
-      "maths": [],
-      "imgs": [],
-      "fig": "fql19-pista-patinador"
+      "exp": "**Paso 1. Conservación de energía mecánica:** $E_m = E_p + E_c = \\text{constante}$.\n**Paso 2. Altura máxima:** En el punto más alto $A$, la energía potencial $E_p = mgh$ es máxima y la cinética es mínima.\n**Paso 3. Valle:** En el punto más bajo $C$ ($h = 0$), toda la energía potencial se ha convertido en energía cinética máxima, alcanzando la rapidez máxima ($v = \\sqrt{2gh}$).\n**Respuesta correcta: A.**",
+      "maths": [
+        "E_m = E_p + E_c = \\text{cte}",
+        "v = \\sqrt{2gh}"
+      ],
+      "imgs": []
     },
     {
       "id": "fis-19ago-22",
@@ -1454,20 +1443,22 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 22,
       "d": "intermedio",
       "topics": [
-        "4.2.3-trabajoPotencia"
+        "2.2.2-trabajoEnergia"
       ],
-      "ch": "fis-L13",
-      "t": "Trabajo de Fuerza Normal",
-      "prompt": "Un cuerpo de masa $m$ se desplaza una distancia horizontal $d = 8\\text{ m}$ sobre un piso horizontal. ¿Cuál es el trabajo realizado por la fuerza normal $N$ y por el peso $P$ durante este desplazamiento?",
+      "ch": "fis-F02",
+      "t": "Trabajo de Fuerza Normal y Peso",
+      "prompt": "Un cuerpo de masa $m$ se desplaza una distancia horizontal $d$ sobre un piso plano horizontal. ¿Cuál es el trabajo realizado por la fuerza normal y por la fuerza del peso durante este movimiento?",
       "opts": [
-        "El trabajo de ambas fuerzas es $0\\text{ J}$ porque son estrictamente perpendiculares al desplazamiento ($90^\\circ$).",
-        "El trabajo de la normal es $mgd$ y el del peso es $-mgd$.",
-        "El trabajo de la normal es positivo y el del peso es cero.",
-        "El trabajo de ambas fuerzas es infinito porque sostienen la masa."
+        "El trabajo de ambas fuerzas es $0\\text{ J}$ porque son estrictamente perpendiculares al desplazamiento horizontal.",
+        "El peso realiza trabajo positivo y la normal trabajo negativo.",
+        "La normal realiza trabajo $W = mgd$ y el peso $0\\text{ J}$.",
+        "El trabajo depende de la velocidad del cuerpo."
       ],
       "ans": 0,
-      "exp": "**Paso 1. Definición de trabajo mecánico:** $W = \\vec{F} \\cdot \\vec{d} = F \\cdot d \\cdot \\cos\\theta$, donde $\\theta$ es el ángulo entre el vector fuerza y el vector desplazamiento.\n**Paso 2. Análisis a mano:**\n- Desplazamiento: Vector horizontal $\\vec{d}$.\n- Fuerza normal $\\vec{N}$ (vertical hacia arriba): $\\theta = 90^\\circ \\implies \\cos 90^\\circ = 0 \\implies W_N = N \\cdot d \\cdot 0 = 0\\text{ J}$.\n- Fuerza peso $\\vec{P}$ (vertical hacia abajo): $\\theta = 90^\\circ \\implies \\cos 90^\\circ = 0 \\implies W_P = P \\cdot d \\cdot 0 = 0\\text{ J}$.\n**Paso 3. Conclusión:** Toda fuerza perpendicular al desplazamiento realiza trabajo nulo ($0\\text{ J}$).\n**Respuesta correcta: A.**",
-      "maths": [],
+      "exp": "**Paso 1. Definición de trabajo:** $W = F d \\cos\\theta$.\n**Paso 2. Análisis del ángulo:** Tanto la normal (hacia arriba) como el peso (hacia abajo) forman un ángulo de $\\theta = 90^\\circ$ con el desplazamiento horizontal.\n**Paso 3. Cálculo:** Como $\\cos(90^\\circ) = 0$, el trabajo realizado por ambas fuerzas es exactamente $0\\text{ J}$.\n**Respuesta correcta: A.**",
+      "maths": [
+        "W = F d \\cos(90^\\circ) = 0\\text{ J}"
+      ],
       "imgs": []
     },
     {
@@ -1501,22 +1492,23 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 24,
       "d": "intermedio",
       "topics": [
-        "4.2.1-equilibrio"
+        "2.2.1-leyesNewton"
       ],
-      "ch": "fis-L03",
+      "ch": "fis-F02",
       "t": "Equilibrio con Cuerdas Simétricas",
-      "prompt": "Un semáforo de peso $W = 100\\text{ N}$ cuelga en reposo sostenido simétricamente por dos cables que forman un ángulo de $30^\\circ$ con la horizontal. ¿Cuál es la tensión $T$ en cada uno de los cables? (Dato: $\\sin 30^\\circ = 0.5$)",
+      "prompt": "Un semáforo de peso $W = 100\\text{ N}$ cuelga en reposo sostenido simétricamente por dos cables que forman un ángulo de $30^\\circ$ con la horizontal cada uno. La tensión en cada cable es:",
       "opts": [
-        "$T = 100\\text{ N}$",
         "$T = 50\\text{ N}$",
+        "$T = 100\\text{ N}$",
         "$T = 200\\text{ N}$",
-        "$T = 25\\text{ N}$"
+        "$T = 57.7\\text{ N}$"
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Diagrama de cuerpo libre del nudo central:**\n- Hacia arriba: Componentes verticales de ambos cables: $2 \\cdot T\\sin 30^\\circ$.\n- Hacia abajo: Peso del semáforo: $W = 100\\text{ N}$.\n**Paso 2. Ecuación de equilibrio a mano:**\n- $\\sum F_y = 0 \\implies 2T\\sin 30^\\circ - W = 0$\n- Sustituyendo datos:\n  $2T(0.5) = 100 \\implies 1T = 100\\text{ N}$.\n**Paso 3. Conclusión:** La tensión en cada cable es de $100\\text{ N}$.\n**Respuesta correcta: A.**",
-      "maths": [],
-      "imgs": [],
-      "fig": "fql19-semaforo-cables"
+      "ans": 1,
+      "exp": "**Paso 1. Condición de equilibrio en $y$:** $\\sum F_y = 0 \\implies 2T\\sin(30^\\circ) - W = 0$.\n**Paso 2. Sustitución de valores:** Como $\\sin(30^\\circ) = 0.5$, tenemos $2T(0.5) = W \\implies T = W = 100\\text{ N}$.\n**Respuesta correcta: B.**",
+      "maths": [
+        "2T\\sin(30^\\circ) = 100 \\implies T = 100\\text{ N}"
+      ],
+      "imgs": []
     },
     {
       "id": "fis-19ago-25",
@@ -1524,20 +1516,22 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 25,
       "d": "intermedio",
       "topics": [
-        "4.2.3-energiaCinetica"
+        "2.2.2-trabajoEnergia"
       ],
-      "ch": "fis-L14",
-      "t": "Energía Cinética al Triplicar Rapidez",
-      "prompt": "Un vehículo de masa $m$ viaja con rapidez $v_0$ teniendo una energía cinética $E_0$. Si el conductor acelera hasta triplicar su rapidez ($3v_0$), ¿cuántas veces aumenta su energía cinética respecto al valor original $E_0$?",
+      "ch": "fis-F02",
+      "t": "Energía Cinética y Proporcionalidad Cuadrática",
+      "prompt": "Un vehículo de masa $m$ viaja con rapidez $v_0$ teniendo una energía cinética $E_0$. Si el conductor acelera hasta triplicar su rapidez ($3v_0$), su nueva energía cinética:",
       "opts": [
-        "Aumenta $9\\text{ veces}$ ($9E_0$).",
-        "Aumenta $3\\text{ veces}$ ($3E_0$).",
-        "Aumenta $6\\text{ veces}$ ($6E_0$).",
-        "Permanece igual porque la masa no ha cambiado."
+        "Se triplica en relación directa con la rapidez.",
+        "Se incrementa a nueve veces su valor inicial debido a la dependencia cuadrática con la velocidad.",
+        "Se multiplica por seis respecto al valor original.",
+        "Permanece constante al conservarse la masa del vehículo."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Fórmula de energía cinética:** $E_c = \\frac{1}{2}mv^2$. La energía cinética es proporcional al cuadrado de la rapidez ($E_c \\propto v^2$).\n**Paso 2. Cálculo a mano:**\n- Estado inicial: $E_0 = \\frac{1}{2}m v_0^2$.\n- Estado final con $v = 3v_0$:\n  $E_{\\text{final}} = \\frac{1}{2}m (3v_0)^2 = \\frac{1}{2}m (9v_0^2) = 9 \\cdot \\left(\\frac{1}{2}m v_0^2\right) = 9E_0$.\n**Paso 3. Conclusión:** Al triplicar la rapidez, la energía cinética se multiplica por $3^2 = 9$.\n**Respuesta correcta: A.**",
-      "maths": [],
+      "ans": 1,
+      "exp": "**Paso 1. Definición:** $E_c = \\frac{1}{2}m v^2$.\n**Paso 2. Proporcionalidad:** La energía cinética es directamente proporcional al cuadrado de la rapidez ($E_c \\propto v^2$). Si $v$ se multiplica por 3, $(3)^2 = 9$, por lo que la energía se multiplica por 9 ($9E_0$).\n**Respuesta correcta: B.**",
+      "maths": [
+        "E_c = \\frac{1}{2}m(3v_0)^2 = 9\\left(\\frac{1}{2}m v_0^2\\right) = 9E_0"
+      ],
       "imgs": []
     },
     {
@@ -1546,20 +1540,23 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 26,
       "d": "intermedio",
       "topics": [
-        "4.2.3-energiaPotencial"
+        "2.2.1-leyesNewton"
       ],
-      "ch": "fis-L15",
+      "ch": "fis-F02",
       "t": "Ley de Hooke y Constante Elástica",
-      "prompt": "De acuerdo con la Ley de Hooke, un resorte ideal se alarga $0.05\\text{ m}$ cuando se le cuelga un bloque de $20\\text{ N}$. ¿Cuál es la constante elástica $k$ del resorte y qué fuerza elástica ejerce si se deforma $0.15\\text{ m}$?",
+      "prompt": "De acuerdo con la Ley de Hooke, un resorte ideal se alarga $0.05\\text{ m}$ cuando se le cuelga un bloque de $20\\text{ N}$. ¿Cuál es la constante elástica del resorte y qué fuerza se requiere para estirarlo $0.15\\text{ m}$?",
       "opts": [
-        "$400\\text{ N/m}$ y $60\\text{ N}$",
         "$100\\text{ N/m}$ y $15\\text{ N}$",
-        "$400\\text{ N/m}$ y $40\\text{ N}$",
-        "$200\\text{ N/m}$ y $30\\text{ N}$"
+        "$400\\text{ N/m}$ y $60\\text{ N}$",
+        "$200\\text{ N/m}$ y $30\\text{ N}$",
+        "$400\\text{ N/m}$ y $20\\text{ N}$"
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Identificación de datos iniciales:** Deformación inicial $x_1 = 0.05\\text{ m}$, fuerza $F_1 = 20\\text{ N}$.\n**Paso 2. Cálculo a mano de la constante elástica $k$:**\n- $k = \\frac{F_1}{x_1} = \\frac{20\\text{ N}}{0.05\\text{ m}} = \\frac{20}{\\frac{5}{100}} = \\frac{2000}{5} = 400\\text{ N/m}$.\n**Paso 3. Cálculo de la fuerza para la nueva deformación $x_2 = 0.15\\text{ m}$:**\n- $F_2 = k \\cdot x_2 = 400\\text{ N/m} \\times 0.15\\text{ m} = 60\\text{ N}$.\n**Respuesta correcta: A.**",
-      "maths": [],
+      "ans": 1,
+      "exp": "**Paso 1. Constante elástica:** $k = \\frac{F_1}{x_1} = \\frac{20\\text{ N}}{0.05\\text{ m}} = 400\\text{ N/m}$.\n**Paso 2. Fuerza para $0.15\\text{ m}$:** $F_2 = k x_2 = (400\\text{ N/m})(0.15\\text{ m}) = 60\\text{ N}$.\n**Respuesta correcta: B.**",
+      "maths": [
+        "k = \\frac{20}{0.05} = 400\\text{ N/m}",
+        "F = 400 \\times 0.15 = 60\\text{ N}"
+      ],
       "imgs": []
     },
     {
@@ -1618,22 +1615,23 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 29,
       "d": "intermedio",
       "topics": [
-        "4.2.1-cinemRecta"
+        "2.1.1-mruv"
       ],
-      "ch": "fis-L04",
+      "ch": "fis-F01",
       "t": "Gráfica Velocidad-Tiempo y Pendiente",
-      "prompt": "En la misma gráfica de velocidad versus tiempo ($v$ vs $t$) del móvil anterior (pasa de $0$ a $12\\text{ m/s}$ en $6\\text{ s}$), ¿qué representa físicamente la pendiente de la recta?",
+      "prompt": "En una gráfica de velocidad versus tiempo ($v$ vs $t$) donde la gráfica es una línea recta inclinada no horizontal, la pendiente constante de dicha recta representa físicamente:",
       "opts": [
-        "La aceleración instantánea y constante del móvil, con valor $a = 2\\text{ m/s}^2$.",
-        "La velocidad media con valor $6\\text{ m/s}$.",
-        "La distancia recorrida por unidad de masa.",
-        "El trabajo realizado por la fuerza de fricción."
+        "La posición inicial del objeto.",
+        "La aceleración constante del movimiento ($a = \\frac{\\Delta v}{\\Delta t}$).",
+        "El trabajo total desarrollado por el motor.",
+        "La rapidez media del recorrido."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Significado de la pendiente en $v-t$:** La derivada de la velocidad respecto al tiempo es la aceleración: $a = \\frac{dv}{dt} = \\frac{\\Delta v}{\\Delta t}$.\n**Paso 2. Cálculo a mano:**\n- $\\Delta v = 12\\text{ m/s} - 0\\text{ m/s} = 12\\text{ m/s}$.\n- $\\Delta t = 6\\text{ s} - 0\\text{ s} = 6\\text{ s}$.\n- Pendiente: $m = \\frac{12}{6} = 2\\text{ m/s}^2$.\n**Paso 3. Conclusión:** La pendiente representa la aceleración constante ($a = 2\\text{ m/s}^2$).\n**Respuesta correcta: A.**",
-      "maths": [],
-      "imgs": [],
-      "fig": "fql19-grafica-vt"
+      "ans": 1,
+      "exp": "**Paso 1. Definición matemática de pendiente:** $m = \\frac{\\Delta y}{\\Delta x} = \\frac{\\Delta v}{\\Delta t}$.\n**Paso 2. Significado físico:** La tasa de cambio de la velocidad respecto al tiempo es la aceleración $a$.\n**Respuesta correcta: B.**",
+      "maths": [
+        "a = \\frac{\\Delta v}{\\Delta t}"
+      ],
+      "imgs": []
     },
     {
       "id": "fis-19ago-30",
@@ -1641,20 +1639,22 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 30,
       "d": "intermedio",
       "topics": [
-        "4.2.2-impulsoCML"
+        "2.2.3-impulso"
       ],
-      "ch": "fis-L12",
+      "ch": "fis-F02",
       "t": "Choque Inelástico y Conservación",
-      "prompt": "Un vagón de ferrocarril $A$ de $4000\\text{ kg}$ que se mueve a $3\\text{ m/s}$ sobre una vía horizontal sin fricción choca contra un vagón $B$ de $2000\\text{ kg}$ inicialmente en reposo. Tras el impacto, ambos vagones quedan acoplados y se mueven juntos. ¿Cuál es la velocidad común final del conjunto acoplado?",
+      "prompt": "Un vagón de ferrocarril $A$ de $4000\\text{ kg}$ que se mueve a $3\\text{ m/s}$ sobre una vía horizontal sin fricción choca y se acopla con otro vagón $B$ de $2000\\text{ kg}$ inicialmente en reposo. La rapidez final del conjunto acoplado es:",
       "opts": [
+        "$v_f = 1.0\\text{ m/s}$",
         "$v_f = 2.0\\text{ m/s}$ en la misma dirección del vagón inicial.",
-        "$v_f = 1.5\\text{ m/s}$.",
-        "$v_f = 3.0\\text{ m/s}$.",
-        "$v_f = 0.5\\text{ m/s}$."
+        "$v_f = 3.0\\text{ m/s}$",
+        "$v_f = 1.5\\text{ m/s}$"
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Conservación de cantidad de movimiento en choque plástico/inelástico:** $P_{\\text{inicial}} = P_{\\text{final}}$.\n**Paso 2. Cálculo paso a paso a mano:**\n- $m_A v_{A0} + m_B v_{B0} = (m_A + m_B) v_f$\n- $(4000\\text{ kg})(3\\text{ m/s}) + (2000\\text{ kg})(0) = (4000 + 2000) v_f$\n- $12000\\text{ kg}\\cdot\\text{m/s} = 6000 v_f$\n- $v_f = \\frac{12000}{6000} = 2.0\\text{ m/s}$.\n**Paso 3. Conclusión:** La velocidad del conjunto acoplado es $2.0\\text{ m/s}$.\n**Respuesta correcta: A.**",
-      "maths": [],
+      "ans": 1,
+      "exp": "**Paso 1. Conservación de momento:** $m_A v_A + m_B v_B = (m_A + m_B) v_f$.\n**Paso 2. Cálculo:** $(4000)(3) + (2000)(0) = (4000 + 2000) v_f \\implies 12000 = 6000 v_f \\implies v_f = 2.0\\text{ m/s}$.\n**Respuesta correcta: B.**",
+      "maths": [
+        "v_f = \\frac{12000}{6000} = 2.0\\text{ m/s}"
+      ],
       "imgs": []
     },
     {
@@ -1692,15 +1692,15 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-F02",
       "t": "Relación Cuadrática en la Distancia de Frenado",
-      "prompt": "Un automóvil que viaja con rapidez inicial $v$ aplica sus frenos produciendo una desaceleración constante $a$ hasta detenerse en una distancia $d$. Si el mismo automóvil viaja al doble de rapidez inicial ($2v$), la distancia mínima de frenado requerida será:",
+      "prompt": "Un automóvil que viaja con rapidez inicial $v$ aplica sus frenos produciendo una desaceleración constante $a$ hasta detenerse en una distancia $d$. Si el mismo automóvil viaja al doble de rapidez inicial ($2v$), la distancia mínima de frenado requerida:",
       "opts": [
-        "El doble ($2d$).",
-        "El cuádruple ($4d$).",
-        "Ocho veces mayor ($8d$).",
-        "La misma distancia $d$ si los frenos son eficientes."
+        "Se duplica en proporción directa a la rapidez.",
+        "Se cuadruplica (cuatro veces mayor) debido a la escala cuadrática de la energía cinética.",
+        "Aumenta ocho veces respecto a la distancia original.",
+        "Permanece idéntica si los frenos ejercen la misma fuerza de retención."
       ],
       "ans": 1,
-      "exp": "**Paso 1. Cinemática / Trabajo y Energía:** Por Torricelli: $v_f^2 = v_0^2 - 2ad \\implies 0 = v_0^2 - 2ad \\implies d = \\frac{v_0^2}{2a}$.\n**Paso 2. Escalamiento:** La distancia de frenado es proporcional al cuadrado de la rapidez inicial ($d \\propto v_0^2$). Si $v_0$ se duplica, $(2)^2 = 4$, por lo que la distancia se cuadruplica ($4d$).\n**Respuesta correcta: B.**",
+      "exp": "**Paso 1. Cinemática / Trabajo y Energía:** Por Torricelli: $v_f^2 = v_0^2 - 2ad \\implies 0 = v_0^2 - 2ad \\implies d = \\frac{v_0^2}{2a}$.\n**Paso 2. Escalamiento:** La distancia de frenado es proporcional al cuadrado de la rapidez inicial ($d \\propto v_0^2$). Si $v_0$ se duplica, $(2)^2 = 4$, por lo que la distancia se cuadruplica.\n**Respuesta correcta: B.**",
       "maths": [
         "d = \\frac{v_0^2}{2a} \\implies d \\propto v_0^2"
       ],
@@ -1736,20 +1736,22 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 34,
       "d": "intermedio",
       "topics": [
-        "4.2.3-trabajoPotencia"
+        "2.2.2-trabajoEnergia"
       ],
-      "ch": "fis-L13",
+      "ch": "fis-F02",
       "t": "Teorema del Trabajo y la Energía Cinética",
-      "prompt": "Un cuerpo de masa $m = 4\\text{ kg}$ incrementa su rapidez de $v_1 = 3\\text{ m/s}$ a $v_2 = 7\\text{ m/s}$ mientras se desplaza sobre una superficie horizontal. ¿Cuál fue el trabajo neto total $W_{\\text{neto}}$ realizado sobre el cuerpo?",
+      "prompt": "De acuerdo con el Teorema del Trabajo y la Energía Cinética, si la fuerza neta resultante que actúa sobre un cuerpo realiza un trabajo total positivo ($W_{\\text{neto}} > 0$):",
       "opts": [
-        "$W_{\\text{neto}} = 80\\text{ J}$",
-        "$W_{\\text{neto}} = 40\\text{ J}$",
-        "$W_{\\text{neto}} = 160\\text{ J}$",
-        "$W_{\\text{neto}} = 16\\text{ J}$"
+        "La energía potencial del cuerpo siempre disminuye.",
+        "La energía cinética del cuerpo necesariamente se incrementa ($\\Delta K > 0$).",
+        "La rapidez del cuerpo se reduce debido a la inercia.",
+        "El cuerpo se encuentra en equilibrio estático."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Teorema del Trabajo y la Energía Cinética:** El trabajo de la fuerza neta es igual al cambio de energía cinética: $W_{\\text{neto}} = \\Delta E_c = \\frac{1}{2}m v_2^2 - \\frac{1}{2}m v_1^2 = \\frac{1}{2}m(v_2^2 - v_1^2)$.\n**Paso 2. Cálculo a mano:**\n- $v_1^2 = 3^2 = 9\\text{ m}^2/\\text{s}^2$, $v_2^2 = 7^2 = 49\\text{ m}^2/\\text{s}^2$.\n- $\\Delta(v^2) = 49 - 9 = 40\\text{ m}^2/\\text{s}^2$.\n- $W_{\\text{neto}} = \\frac{1}{2}(4\\text{ kg})(40) = 2 \\times 40 = 80\\text{ J}$.\n**Paso 3. Conclusión:** El trabajo neto es $80\\text{ J}$.\n**Respuesta correcta: A.**",
-      "maths": [],
+      "ans": 1,
+      "exp": "**Paso 1. Teorema formal:** $W_{\\text{neto}} = \\Delta K = K_f - K_0$.\n**Paso 2. Deducción física:** Si el trabajo neto es positivo, la energía cinética final es estrictamente mayor que la inicial, aumentando la rapidez del objeto.\n**Respuesta correcta: B.**",
+      "maths": [
+        "W_{\\text{neto}} = \\Delta K = K_f - K_0 > 0"
+      ],
       "imgs": []
     },
     {
@@ -1783,20 +1785,23 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 36,
       "d": "intermedio",
       "topics": [
-        "4.2.2-3raNewton"
+        "2.2.1-leyesNewton",
+        "2.2.4-gravitacion"
       ],
-      "ch": "fis-L10",
+      "ch": "fis-F02",
       "t": "Tercera Ley en Atracción Gravitatoria",
-      "prompt": "La masa de la Tierra es aproximadamente $81\\text{ veces}$ mayor que la masa de la Luna. Considerando la fuerza gravitatoria mutua que las mantiene unidas en órbita, ¿cuál de las siguientes afirmaciones es físicamente correcta según la Tercera Ley de Newton?",
+      "prompt": "La masa de la Tierra es aproximadamente $81\\text{ veces}$ mayor que la masa de la Luna. Considerando la fuerza gravitatoria mutua que ejercen entre sí:",
       "opts": [
-        "La fuerza gravitatoria que la Tierra ejerce sobre la Luna tiene exactamente la misma magnitud que la fuerza que la Luna ejerce sobre la Tierra.",
-        "La Tierra ejerce una fuerza 81 veces mayor sobre la Luna porque su masa es muy superior.",
-        "La Luna no ejerce ninguna fuerza sobre la Tierra porque su gravedad no llega al espacio exterior.",
-        "La Luna ejerce mayor fuerza sobre la Tierra debido a su velocidad orbital más rápida."
+        "La fuerza que la Tierra ejerce sobre la Luna es $81\\text{ veces}$ mayor.",
+        "La fuerza gravitatoria que la Tierra ejerce sobre la Luna tiene exactamente la misma magnitud que la que la Luna ejerce sobre la Tierra.",
+        "La Luna no ejerce fuerza sobre la Tierra porque está en órbita.",
+        "La fuerza depende de la fase lunar."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Ley de Gravitación Universal:** $F = G\\frac{M_{\\text{Tierra}} M_{\\text{Luna}}}{d^2}$. La fórmula es simétrica respecto a ambas masas.\n**Paso 2. Tercera Ley de Newton (acción y reacción):** Toda interacción entre dos cuerpos constituye un par de fuerzas de igual magnitud, en la misma dirección y en sentidos opuestos: $|\\vec{F}_{T\\to L}| = |\\vec{F}_{L\\to T}|$.\n**Paso 3. Conclusión:** Ambas fuerzas son exactamente iguales en módulo; la diferencia de masa únicamente hace que la aceleración orbital de la Luna sea 81 veces mayor que la de la Tierra.\n**Respuesta correcta: A.**",
-      "maths": [],
+      "ans": 1,
+      "exp": "**Paso 1. Ley de Gravitación Universal:** $F = G\\frac{M_{\\text{Tierra}} M_{\\text{Luna}}}{r^2}$.\n**Paso 2. Tercera Ley de Newton:** La atracción gravitatoria constituye un par de acción y reacción: la Tierra atrae a la Luna con una fuerza idéntica en magnitud a la que la Luna atrae a la Tierra.\n**Respuesta correcta: B.**",
+      "maths": [
+        "|\\vec{F}_{TL}| = |\\vec{F}_{LT}| = G\\frac{M_T M_L}{r^2}"
+      ],
       "imgs": []
     },
     {
@@ -1853,20 +1858,22 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 39,
       "d": "intermedio",
       "topics": [
-        "4.2.3-consEnergia"
+        "2.2.2-trabajoEnergia"
       ],
-      "ch": "fis-L16",
+      "ch": "fis-F02",
       "t": "Energía a la Mitad de la Altura Máxima",
-      "prompt": "Se lanza una pelota verticalmente hacia arriba con energía mecánica total $E_m = 100\\text{ J}$ (nivel de referencia en el suelo, sin fricción del aire). Cuando la pelota alcanza exactamente la mitad de su altura máxima ($h = H_{\\text{máx}}/2$), ¿cuáles son sus valores de energía cinética ($E_c$) y energía potencial ($E_p$)?",
+      "prompt": "Se lanza una pelota verticalmente hacia arriba con energía mecánica total constante $E_m$. En el punto medio de su altura máxima ($h = \\frac{1}{2}H_{\\text{máx}}$), la relación entre su energía cinética ($E_c$) y su energía potencial gravitatoria ($E_p$) es:",
       "opts": [
-        "$E_c = 50\\text{ J}$ y $E_p = 50\\text{ J}$",
-        "$E_c = 25\\text{ J}$ y $E_p = 75\\text{ J}$",
-        "$E_c = 75\\text{ J}$ y $E_p = 25\\text{ J}$",
-        "$E_c = 0\\text{ J}$ y $E_p = 100\\text{ J}$"
+        "La energía cinética es el triple de la potencial.",
+        "Ambas energías son exactamente iguales ($E_c = E_p = \\frac{1}{2}E_m$).",
+        "La energía potencial es el cuádruple de la cinética.",
+        "La energía cinética se anula a la mitad de la subida."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Balance energético total:** Por conservación, $E_m = E_c + E_p = 100\\text{ J} = \\text{constante}$.\n**Paso 2. Procedimiento a mano a media altura:**\n- En la cúspide $H_{\\text{máx}}$: Toda la energía es potencial: $E_p(H_{\\text{máx}}) = mg H_{\\text{máx}} = 100\\text{ J}$.\n- A media altura $h = \\frac{H_{\\text{máx}}}{2}$:\n  $E_p(h) = mg\\left(\\frac{H_{\\text{máx}}}{2}\\right) = \\frac{1}{2}(mg H_{\\text{máx}}) = \\frac{100\\text{ J}}{2} = 50\\text{ J}$.\n- Por conservación: $E_c = E_m - E_p = 100\\text{ J} - 50\\text{ J} = 50\\text{ J}$.\n**Paso 3. Conclusión:** Ambas energías son iguales a $50\\text{ J}$.\n**Respuesta correcta: A.**",
-      "maths": [],
+      "ans": 1,
+      "exp": "**Paso 1. Conservación de energía:** $E_m = E_p + E_c = mgH_{\\text{máx}}$.\n**Paso 2. Altura media:** A $h = \\frac{1}{2}H_{\\text{máx}}$, la energía potencial es $E_p = mg\\left(\\frac{1}{2}H_{\\text{máx}}\\right) = \\frac{1}{2}E_m$.\n**Paso 3. Energía cinética restante:** $E_c = E_m - E_p = \\frac{1}{2}E_m$. Por tanto, $E_c = E_p$.\n**Respuesta correcta: B.**",
+      "maths": [
+        "E_p = E_c = \\frac{1}{2}E_m"
+      ],
       "imgs": []
     },
     {

@@ -1683,6 +1683,8 @@ function attemptFromRecord(r){
     ['fis','qui','len'].forEach(function(sub){ (avzB[sub]||[]).forEach(function(q){ byId[q.id]=q; }); });
     var d2B = window.GUIA_BANK_FQL_DIA2||{};
     ['fis','qui','len'].forEach(function(sub){ (d2B[sub]||[]).forEach(function(q){ byId[q.id]=q; }); });
+    var b19 = window.GUIA_BANK_FQL_19AGO||{};
+    ['fis','qui','len'].forEach(function(sub){ (b19[sub]||[]).forEach(function(q){ byId[q.id]=q; }); });
     var qsG = [];
     var ansG = [];
     (r.qs||[]).forEach(function(x){

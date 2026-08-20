@@ -1,0 +1,268 @@
+[
+  {
+    "id": "f1",
+    "subject": "fisica",
+    "topic": "Cinemática",
+    "prompt": "En el punto más alto de un tiro vertical, despreciando el aire:",
+    "options": [
+      "La velocidad y la aceleración son cero.",
+      "La velocidad es cero y la aceleración apunta hacia abajo.",
+      "La aceleración es cero y la rapidez es máxima.",
+      "La velocidad apunta hacia arriba."
+    ],
+    "answer": 1,
+    "explanation": "En la altura máxima la velocidad instantánea vale cero, pero la gravedad sigue acelerando hacia abajo."
+  },
+  {
+    "id": "f2",
+    "subject": "fisica",
+    "topic": "Newton",
+    "prompt": "Una fuerza neta de 20 N actúa sobre una masa de 5 kg. La aceleración es:",
+    "options": [
+      "0,25 m/s²",
+      "4 m/s²",
+      "15 m/s²",
+      "100 m/s²"
+    ],
+    "answer": 1,
+    "explanation": "Usa ΣF = ma: a = 20/5 = 4 m/s²."
+  },
+  {
+    "id": "f3",
+    "subject": "fisica",
+    "topic": "Energía",
+    "prompt": "Un arco tensado almacena energía potencial elástica. Al soltarlo, esa energía se transforma principalmente en:",
+    "options": [
+      "Energía nuclear",
+      "Energía cinética de la flecha",
+      "Masa de la flecha",
+      "Energía potencial gravitatoria"
+    ],
+    "answer": 1,
+    "explanation": "La deformación del arco y la cuerda entrega energía cinética a la flecha."
+  },
+  {
+    "id": "f4",
+    "subject": "fisica",
+    "topic": "Impulso",
+    "prompt": "Una fuerza de 10 N actúa durante 0,4 s. El impulso es:",
+    "options": [
+      "0,25 N·s",
+      "2,5 N·s",
+      "4 N·s",
+      "25 N·s"
+    ],
+    "answer": 2,
+    "explanation": "J = FΔt = 10 × 0,4 = 4 N·s."
+  },
+  {
+    "id": "f5",
+    "subject": "fisica",
+    "topic": "Proyectiles",
+    "prompt": "Un proyectil se lanza con 20 m/s formando 30° con la horizontal. Si sen30° = 0,5, su componente vertical inicial es:",
+    "options": [
+      "5 m/s",
+      "10 m/s",
+      "17,3 m/s",
+      "20 m/s"
+    ],
+    "answer": 1,
+    "explanation": "v0y = v0 senθ = 20 × 0,5 = 10 m/s."
+  },
+  {
+    "id": "f6",
+    "subject": "fisica",
+    "topic": "Gravitación",
+    "prompt": "Si la distancia al centro de un planeta se duplica, la intensidad de g se vuelve:",
+    "options": [
+      "El doble",
+      "La mitad",
+      "La cuarta parte",
+      "La misma"
+    ],
+    "answer": 2,
+    "explanation": "g es inversamente proporcional a r². Al duplicar r, queda en 1/4."
+  },
+  {
+    "id": "q1",
+    "subject": "quimica",
+    "topic": "Nomenclatura",
+    "prompt": "El nombre Stock correcto de FeCl₃ es:",
+    "options": [
+      "Cloruro de hierro (I)",
+      "Cloruro de hierro (II)",
+      "Cloruro de hierro (III)",
+      "Tricloruro de monohierro"
+    ],
+    "answer": 2,
+    "explanation": "Cada Cl vale −1; tres cloruros suman −3. Por neutralidad, Fe es +3."
+  },
+  {
+    "id": "q2",
+    "subject": "quimica",
+    "topic": "Nomenclatura",
+    "prompt": "La fórmula del dicromato de potasio es:",
+    "options": [
+      "KCrO₄",
+      "K₂CrO₄",
+      "KCr₂O₇",
+      "K₂Cr₂O₇"
+    ],
+    "answer": 3,
+    "explanation": "El anión dicromato es Cr₂O₇²⁻; requiere dos iones K⁺."
+  },
+  {
+    "id": "q3",
+    "subject": "quimica",
+    "topic": "Fórmula molecular",
+    "prompt": "La fórmula empírica es CH₂ y la masa molar es 42 g/mol. ¿Cuál es la fórmula molecular?",
+    "options": [
+      "CH₂",
+      "C₂H₄",
+      "C₃H₆",
+      "C₄H₈"
+    ],
+    "answer": 2,
+    "explanation": "La masa empírica es 14 g/mol. 42/14 = 3; multiplica todos los subíndices por 3."
+  },
+  {
+    "id": "q4",
+    "subject": "quimica",
+    "topic": "Estequiometría",
+    "prompt": "2Mg + O₂ → 2MgO. Si reaccionan 72 g de Mg, con M(Mg)=24 y M(MgO)=40, se forman:",
+    "options": [
+      "24 g",
+      "40 g",
+      "72 g",
+      "120 g"
+    ],
+    "answer": 3,
+    "explanation": "72/24=3 mol Mg; la razón con MgO es 1:1; 3×40=120 g."
+  },
+  {
+    "id": "q5",
+    "subject": "quimica",
+    "topic": "Lewis",
+    "prompt": "La molécula CO₂ es globalmente apolar porque:",
+    "options": [
+      "No contiene oxígeno",
+      "Sus enlaces no tienen dipolo",
+      "Es lineal y sus dipolos se cancelan",
+      "Tiene pares libres en el carbono"
+    ],
+    "answer": 2,
+    "explanation": "Cada enlace C=O es polar, pero la geometría lineal y simétrica cancela los dipolos."
+  },
+  {
+    "id": "q6",
+    "subject": "quimica",
+    "topic": "Configuración electrónica",
+    "prompt": "Si Fe tiene Z=26, ¿cuántos electrones tiene Fe²⁺?",
+    "options": [
+      "24",
+      "26",
+      "28",
+      "52"
+    ],
+    "answer": 0,
+    "explanation": "El catión +2 ha perdido dos electrones: 26 − 2 = 24."
+  },
+  {
+    "id": "f7",
+    "subject": "fisica",
+    "topic": "Unidades",
+    "prompt": "72 km/h equivalen a:",
+    "options": [
+      "7,2 m/s",
+      "20 m/s",
+      "25,9 m/s",
+      "259,2 m/s"
+    ],
+    "answer": 1,
+    "explanation": "Para pasar de km/h a m/s divide entre 3,6: 72/3,6 = 20 m/s."
+  },
+  {
+    "id": "f8",
+    "subject": "fisica",
+    "topic": "Movimiento circular",
+    "prompt": "En movimiento circular uniforme, la aceleración apunta:",
+    "options": [
+      "Siempre tangente a la trayectoria",
+      "En el sentido del movimiento",
+      "Hacia el centro del círculo",
+      "Hacia fuera del círculo"
+    ],
+    "answer": 2,
+    "explanation": "Aunque la rapidez sea constante, la velocidad cambia de dirección. La aceleración centrípeta apunta hacia el centro."
+  },
+  {
+    "id": "f9",
+    "subject": "fisica",
+    "topic": "Proyectiles",
+    "prompt": "Sin resistencia del aire, durante un lanzamiento oblicuo la aceleración horizontal es:",
+    "options": [
+      "g",
+      "Constante y positiva",
+      "Cero",
+      "Máxima en el punto más alto"
+    ],
+    "answer": 2,
+    "explanation": "La única aceleración es la gravedad y es vertical; por eso aₓ = 0."
+  },
+  {
+    "id": "q7",
+    "subject": "quimica",
+    "topic": "Tabla periódica",
+    "prompt": "¿Cuál afirmación sobre el radio atómico es correcta?",
+    "options": [
+      "Aumenta hacia arriba y derecha",
+      "Aumenta hacia abajo e izquierda",
+      "No depende de la posición en la tabla",
+      "Es igual para todos los elementos de un período"
+    ],
+    "answer": 1,
+    "explanation": "Al bajar hay más niveles de energía y hacia la izquierda la atracción efectiva es menor; ambos factores aumentan el radio."
+  },
+  {
+    "id": "q8",
+    "subject": "quimica",
+    "topic": "Iones poliatómicos",
+    "prompt": "La fórmula de hidróxido de calcio es:",
+    "options": [
+      "CaOH",
+      "Ca(OH)₂",
+      "Ca₂OH",
+      "CaO₂H"
+    ],
+    "answer": 1,
+    "explanation": "Ca²⁺ necesita dos iones OH⁻ para neutralizar la carga total. Como el grupo se repite, se usan paréntesis."
+  },
+  {
+    "id": "q9",
+    "subject": "quimica",
+    "topic": "Fuerzas intermoleculares",
+    "prompt": "La fuerza intermolecular característica entre moléculas de agua es:",
+    "options": [
+      "Solo dispersión de London",
+      "Puente de hidrógeno",
+      "Enlace iónico",
+      "Enlace metálico"
+    ],
+    "answer": 1,
+    "explanation": "El H está unido a O, un átomo muy electronegativo, y permite puentes de hidrógeno entre moléculas."
+  },
+  {
+    "id": "q10",
+    "subject": "quimica",
+    "topic": "Balanceo",
+    "prompt": "Al balancear una ecuación química, se debe modificar:",
+    "options": [
+      "Los subíndices de cada fórmula",
+      "Los números atómicos",
+      "Los coeficientes delante de las fórmulas",
+      "La carga del átomo"
+    ],
+    "answer": 2,
+    "explanation": "Los coeficientes cambian cantidades de sustancias. Los subíndices describen la sustancia y no se pueden modificar."
+  }
+]

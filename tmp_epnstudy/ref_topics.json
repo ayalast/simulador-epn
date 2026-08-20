@@ -1,0 +1,752 @@
+[
+  {
+    "id": "movimiento",
+    "subject": "fisica",
+    "unit": "Movimiento",
+    "priority": "Esencial",
+    "eyebrow": "01 · Cinemática",
+    "title": "Convierte el recorrido en una ecuación",
+    "lead": "Antes de usar una fórmula, identifica si el movimiento es uniforme, acelerado o una combinación de ambos. La unidad coherente es la mitad de la respuesta.",
+    "quickRule": "Si la dirección cambia, la velocidad cambia; por eso puede haber aceleración aunque la rapidez sea constante.",
+    "formula": "\\begin{aligned}v&=\\frac{\\Delta x}{\\Delta t}\\\\a&=\\frac{\\Delta v}{\\Delta t}\\\\x&=x_0+v_0t+\\tfrac12at^2\\end{aligned}",
+    "variables": [
+      "x: posición (m)",
+      "v: velocidad (m/s)",
+      "a: aceleración (m/s²)",
+      "t: tiempo (s)"
+    ],
+    "sections": [
+      {
+        "heading": "Distancia no es desplazamiento",
+        "body": "La distancia es todo lo que recorres y siempre es positiva. El desplazamiento es la diferencia entre la posición final e inicial; incluye dirección y puede ser cero aunque hayas caminado.",
+        "bullets": [
+          "MRU: velocidad constante, aceleración cero.",
+          "MRUV: aceleración constante.",
+          "En una gráfica v–t, el área representa desplazamiento."
+        ]
+      },
+      {
+        "heading": "Caída libre y tiro vertical",
+        "body": "Sin aire, la aceleración siempre apunta hacia abajo y vale g. En el punto más alto de un tiro vertical, la velocidad instantánea es cero, pero la aceleración no desaparece.",
+        "bullets": [
+          "Usa g = 10 m/s² si el ejercicio lo indica o no proporciona otro valor.",
+          "En caída desde reposo: d = ½gt².",
+          "Al volver a la misma altura, el módulo de la velocidad es el mismo que al salir."
+        ]
+      }
+    ],
+    "examNote": "No escribas la ecuación antes de fijar el eje positivo. Si tomas arriba como positivo, g es negativa.",
+    "example": {
+      "prompt": "Una piedra se lanza verticalmente hacia arriba con 20 m/s. Usa g = 10 m/s². ¿Cuánto tarda en llegar al punto más alto?",
+      "steps": [
+        "En el máximo, v = 0.",
+        "0 = 20 − 10t.",
+        "t = 2 s."
+      ],
+      "result": "Llega al punto más alto en 2 s."
+    }
+  },
+  {
+    "id": "fuerzas",
+    "subject": "fisica",
+    "unit": "Fuerzas",
+    "priority": "Esencial",
+    "eyebrow": "02 · Newton",
+    "title": "Dibuja las fuerzas antes de calcular",
+    "lead": "La segunda ley de Newton conecta lo que actúa sobre un cuerpo con el cambio de su movimiento. El diagrama de cuerpo libre evita errores de signo y de sentido.",
+    "quickRule": "Fuerza neta cero no significa que no existan fuerzas: significa que se equilibran.",
+    "formula": "\\sum F = ma\\qquad P=mg\\qquad f_k=\\mu_kN",
+    "variables": [
+      "F: fuerza (N)",
+      "m: masa (kg)",
+      "a: aceleración (m/s²)",
+      "N: normal (N)"
+    ],
+    "sections": [
+      {
+        "heading": "Las tres ideas que se repiten",
+        "body": "La inercia no es una fuerza. La fuerza neta produce aceleración. Acción y reacción tienen igual magnitud y sentidos opuestos, pero actúan sobre cuerpos diferentes.",
+        "bullets": [
+          "Peso: siempre apunta hacia abajo.",
+          "Normal: es perpendicular a la superficie.",
+          "Rozamiento: se opone al deslizamiento o a su tendencia."
+        ]
+      },
+      {
+        "heading": "Equilibrio",
+        "body": "Un objeto en reposo o con velocidad constante tiene fuerza neta cero. Separa las fuerzas horizontales y verticales antes de sumar.",
+        "bullets": [
+          "ΣFx = 0 y ΣFy = 0 en equilibrio.",
+          "En un plano inclinado: mg senθ va paralelo al plano y mg cosθ es perpendicular."
+        ]
+      }
+    ],
+    "examNote": "Nunca dibujes 'la fuerza de la aceleración'. Dibuja solo interacciones reales: peso, normal, tensión, rozamiento y fuerza aplicada.",
+    "example": {
+      "prompt": "Una caja de 5 kg recibe una fuerza horizontal neta de 20 N. ¿Cuál es su aceleración?",
+      "steps": [
+        "Aplica ΣF = ma.",
+        "a = 20/5.",
+        "a = 4 m/s²."
+      ],
+      "result": "La aceleración es 4 m/s²."
+    }
+  },
+  {
+    "id": "energia",
+    "subject": "fisica",
+    "unit": "Energía",
+    "priority": "Esencial",
+    "eyebrow": "03 · Trabajo y energía",
+    "title": "Sigue la transformación, no memorices el dibujo",
+    "lead": "Cuando no te preguntan por el tiempo sino por rapidez, altura o una conversión de energía, la conservación de energía suele ser el camino más corto.",
+    "quickRule": "En un péndulo, la energía cinética es máxima en el punto más bajo porque la rapidez es máxima.",
+    "formula": "K=\\tfrac12mv^2\\qquad U_g=mgh\\qquad U_e=\\tfrac12kx^2\\qquad W=Fd\\cos\\theta",
+    "variables": [
+      "K: energía cinética (J)",
+      "Ug: potencial gravitatoria (J)",
+      "Ue: potencial elástica (J)",
+      "W: trabajo (J)"
+    ],
+    "sections": [
+      {
+        "heading": "Trabajo y potencia",
+        "body": "El trabajo depende de la parte de la fuerza que va en la misma dirección que el desplazamiento. Si fuerza y desplazamiento son perpendiculares, el trabajo de esa fuerza es cero.",
+        "bullets": [
+          "Potencia: P = W/t.",
+          "Para elevar con rapidez constante: P = mgv.",
+          "La unidad de energía y trabajo es el joule."
+        ]
+      },
+      {
+        "heading": "Conservación",
+        "body": "Si no hay rozamiento ni otra fuerza no conservativa, la energía mecánica se conserva. Una energía puede cambiar de forma, pero no aparece desde nada.",
+        "bullets": [
+          "Arco tensado: energía elástica → cinética de la flecha.",
+          "Caída: potencial gravitatoria → cinética.",
+          "Con rozamiento: parte de la energía mecánica se disipa como energía térmica."
+        ]
+      }
+    ],
+    "examNote": "No uses conservación de energía mecánica sin revisar si el rozamiento hace trabajo. Si existe, agrega su trabajo con signo negativo.",
+    "example": {
+      "prompt": "Un objeto de 2 kg está a 5 m de altura. Usa g = 10 m/s². ¿Cuál es su energía potencial?",
+      "steps": [
+        "Usa Ug = mgh.",
+        "Ug = 2 × 10 × 5.",
+        "Ug = 100 J."
+      ],
+      "result": "Tiene 100 J de energía potencial gravitatoria."
+    }
+  },
+  {
+    "id": "momento",
+    "subject": "fisica",
+    "unit": "Choques",
+    "priority": "Muy rentable",
+    "eyebrow": "04 · Impulso",
+    "title": "Mide el cambio de movimiento",
+    "lead": "El impulso es el efecto de una fuerza actuando durante un tiempo. En choques, el momento lineal total se conserva si el sistema está aislado.",
+    "quickRule": "En un choque inelástico puede conservarse el momento, aunque no se conserve la energía cinética.",
+    "formula": "p=mv\\qquad J=F\\Delta t=\\Delta p\\qquad \\sum p_i=\\sum p_f",
+    "variables": [
+      "p: momento (kg·m/s)",
+      "J: impulso (N·s)",
+      "F: fuerza (N)",
+      "Δt: intervalo (s)"
+    ],
+    "sections": [
+      {
+        "heading": "Impulso",
+        "body": "Una misma variación de momento puede producirse con una fuerza grande durante poco tiempo o con una fuerza menor durante más tiempo. Por eso airbags y colchonetas aumentan el tiempo de frenado.",
+        "bullets": [
+          "El área bajo una gráfica F–t es impulso.",
+          "N·s y kg·m/s son unidades equivalentes."
+        ]
+      },
+      {
+        "heading": "Choques",
+        "body": "Define el sistema y conserva el momento total en cada dirección. Si los objetos quedan unidos, ambos comparten la misma velocidad final.",
+        "bullets": [
+          "Elige una dirección positiva y respétala.",
+          "Usa signos para velocidades contrarias."
+        ]
+      }
+    ],
+    "examNote": "Si el objeto parte desde reposo, el momento inicial es cero; eso simplifica mucho la ecuación.",
+    "example": {
+      "prompt": "Una fuerza de 10 N actúa durante 0,4 s sobre un objeto inicialmente en reposo. ¿Cuál es el impulso?",
+      "steps": [
+        "J = FΔt.",
+        "J = 10 × 0,4.",
+        "J = 4 N·s."
+      ],
+      "result": "El impulso es 4 N·s."
+    }
+  },
+  {
+    "id": "oxidacion",
+    "subject": "quimica",
+    "unit": "Nomenclatura",
+    "priority": "Esencial",
+    "eyebrow": "01 · Cargas y nombres",
+    "title": "Haz que la suma de cargas cierre",
+    "lead": "Los números de oxidación te permiten nombrar compuestos, verificar fórmulas y distinguir óxidos de peróxidos. La regla final siempre es la misma: la suma debe coincidir con la carga total.",
+    "quickRule": "En FeCl₃, cada Cl vale −1: el hierro tiene que valer +3. Su nombre Stock es cloruro de hierro (III).",
+    "formula": "\\sum(\\text{Nox})=0\\quad\\text{en un compuesto neutro}",
+    "variables": [
+      "Nox: número de oxidación",
+      "La suma de Nox = carga total",
+      "Los romanos señalan el Nox del metal"
+    ],
+    "sections": [
+      {
+        "heading": "Valores que debes reconocer",
+        "body": "Los metales de los grupos 1 y 2 son predecibles. Oxígeno e hidrógeno tienen reglas frecuentes, con excepciones que conviene identificar.",
+        "bullets": [
+          "Grupo 1: +1; grupo 2: +2; Al: +3.",
+          "O normalmente −2; en peróxidos, −1.",
+          "H normalmente +1; en hidruros metálicos, −1.",
+          "F siempre −1 en compuestos habituales."
+        ]
+      },
+      {
+        "heading": "Stock y formulación",
+        "body": "En la nomenclatura Stock escribe el anión y luego el metal con su número romano si puede variar. Para formular, usa las cargas de catión y anión hasta neutralizar el compuesto.",
+        "bullets": [
+          "FeCl₂: cloruro de hierro (II).",
+          "FeCl₃: cloruro de hierro (III).",
+          "K₂Cr₂O₇: dicromato de potasio.",
+          "Na₂O₂: peróxido de sodio; el anión es O₂²⁻."
+        ]
+      }
+    ],
+    "examNote": "No balancees una fórmula cambiando los subíndices por intuición. Comprueba siempre la carga total final.",
+    "example": {
+      "prompt": "Halla el Nox del Cr en K₂Cr₂O₇.",
+      "steps": [
+        "K aporta 2(+1) y O aporta 7(−2).",
+        "2 + 2x − 14 = 0.",
+        "2x = 12; x = +6."
+      ],
+      "result": "Cada Cr tiene número de oxidación +6."
+    }
+  },
+  {
+    "id": "atomo",
+    "subject": "quimica",
+    "unit": "Átomo y enlace",
+    "priority": "Muy rentable",
+    "eyebrow": "02 · Electrones",
+    "title": "Cuenta protones, neutrones y electrones sin perder el signo",
+    "lead": "El número atómico identifica al elemento. Cuando aparece un ion, la carga solo cambia el número de electrones; los protones no cambian.",
+    "quickRule": "Un catión perdió electrones; un anión ganó electrones.",
+    "formula": "A=Z+n\\qquad e^- = Z-\\text{carga}",
+    "variables": [
+      "A: número másico",
+      "Z: número atómico = protones",
+      "n: neutrones",
+      "e⁻: electrones"
+    ],
+    "sections": [
+      {
+        "heading": "Configuración electrónica",
+        "body": "Los electrones llenan orbitales siguiendo un orden. Para iones de metales de transición, retira primero los electrones del nivel 4s antes de los 3d.",
+        "bullets": [
+          "Orden inicial: 1s, 2s, 2p, 3s, 3p, 4s, 3d.",
+          "Fe: [Ar] 4s²3d⁶.",
+          "Fe²⁺: [Ar]3d⁶."
+        ]
+      },
+      {
+        "heading": "Tendencias",
+        "body": "Hacia la derecha de un período suele disminuir el radio y aumentar la electronegatividad. Hacia abajo de un grupo suele aumentar el radio.",
+        "bullets": [
+          "Los isótopos comparten Z, pero no A.",
+          "En especies isoelectrónicas, más protones suelen implicar radio más pequeño."
+        ]
+      }
+    ],
+    "examNote": "El signo del ion funciona como una cuenta: Na⁺ tiene un electrón menos que Na; Cl⁻ tiene uno más que Cl.",
+    "example": {
+      "prompt": "¿Cuántos electrones tiene Fe²⁺ si Z = 26?",
+      "steps": [
+        "Fe neutro tiene 26 electrones.",
+        "La carga +2 indica que perdió 2.",
+        "26 − 2 = 24."
+      ],
+      "result": "Fe²⁺ tiene 24 electrones."
+    }
+  },
+  {
+    "id": "enlace",
+    "subject": "quimica",
+    "unit": "Lewis y geometría",
+    "priority": "Muy rentable",
+    "eyebrow": "03 · Estructura",
+    "title": "La forma decide la polaridad",
+    "lead": "No basta saber que un enlace es polar: debes mirar la geometría completa para decidir si los dipolos se cancelan o no.",
+    "quickRule": "CO₂ tiene enlaces polares, pero la molécula es apolar porque es lineal y simétrica.",
+    "formula": "\\text{electrones de valencia}=\\sum(\\text{valencias})\\pm\\text{carga}",
+    "variables": [
+      "Par libre: pareja de electrones no enlazante",
+      "Dipolo: separación de carga",
+      "VSEPR: repulsión de pares electrónicos"
+    ],
+    "sections": [
+      {
+        "heading": "Lewis sin saltos",
+        "body": "Cuenta electrones de valencia, decide el átomo central, une con enlaces simples, completa octetos externos y usa pares o enlaces múltiples para completar el centro.",
+        "bullets": [
+          "Suma electrones para un anión.",
+          "Resta electrones para un catión.",
+          "H nunca es átomo central."
+        ]
+      },
+      {
+        "heading": "Formas frecuentes",
+        "body": "Las regiones electrónicas se repelen y generan geometrías conocidas. Los pares libres modifican la forma molecular visible.",
+        "bullets": [
+          "2 regiones: lineal (CO₂).",
+          "3 regiones: trigonal plana (BF₃).",
+          "4 regiones: tetraédrica (CH₄), piramidal (NH₃) o angular (H₂O).",
+          "H₂O es polar; CO₂ es apolar."
+        ]
+      }
+    ],
+    "examNote": "No confundas geometría electrónica con geometría molecular: los pares libres cuentan para la primera, aunque no se vean como átomos.",
+    "example": {
+      "prompt": "¿Por qué H₂O es polar?",
+      "steps": [
+        "El oxígeno tiene dos pares libres.",
+        "La forma molecular es angular.",
+        "Los dipolos O–H no se cancelan."
+      ],
+      "result": "H₂O presenta un dipolo neto y es polar."
+    }
+  },
+  {
+    "id": "estequiometria",
+    "subject": "quimica",
+    "unit": "Mol y reacciones",
+    "priority": "Esencial",
+    "eyebrow": "04 · Cantidad de sustancia",
+    "title": "De gramos a moles; de moles a respuesta",
+    "lead": "La ecuación balanceada da proporciones en moles. Siempre transforma el dato a moles antes de buscar masa, volumen o número de partículas.",
+    "quickRule": "Los coeficientes son relaciones molares; los subíndices pertenecen a la sustancia y no se cambian al balancear.",
+    "formula": "n=\\frac{m}{M}\\qquad N=nN_A\\qquad \\%R=\\frac{R_\\text{real}}{R_\\text{teórico}}\\times100",
+    "variables": [
+      "n: moles",
+      "m: masa (g)",
+      "M: masa molar (g/mol)",
+      "NA: 6,022×10²³"
+    ],
+    "sections": [
+      {
+        "heading": "El procedimiento universal",
+        "body": "Balancea, convierte a moles, aplica la relación de coeficientes y vuelve a la unidad que pide el ejercicio. Este orden protege contra la mayoría de errores.",
+        "bullets": [
+          "Nunca cambies subíndices para balancear.",
+          "En CNPT, 1 mol de gas suele ocupar 22,4 L cuando el ejercicio lo permite.",
+          "Molaridad = moles de soluto / litros de solución."
+        ]
+      },
+      {
+        "heading": "Reactivo limitante",
+        "body": "Con dos reactivos, calcula cuánto producto podría formar cada uno. El que forma menos producto es el limitante y decide el resultado máximo.",
+        "bullets": [
+          "Divide los moles disponibles por su coeficiente: el menor cociente limita.",
+          "El otro reactivo queda en exceso.",
+          "Rendimiento porcentual compara lo real con lo teórico."
+        ]
+      }
+    ],
+    "examNote": "Si el problema da gramos de un reactivo y pregunta gramos de producto, debes pasar por moles dos veces: gramos → moles → gramos.",
+    "example": {
+      "prompt": "2Mg + O₂ → 2MgO. Si reaccionan 72 g de Mg, ¿cuántos g de MgO se forman? M(Mg)=24, M(MgO)=40.",
+      "steps": [
+        "72/24 = 3 mol de Mg.",
+        "La razón Mg:MgO es 1:1, entonces se forman 3 mol MgO.",
+        "3 × 40 = 120 g."
+      ],
+      "result": "Se forman 120 g de MgO."
+    }
+  },
+  {
+    "id": "proyectiles",
+    "subject": "fisica",
+    "unit": "Movimiento en dos dimensiones",
+    "priority": "Muy rentable",
+    "eyebrow": "05 · Proyectiles y gravedad",
+    "title": "Separa horizontal y vertical: son dos movimientos",
+    "lead": "Un lanzamiento oblicuo parece una sola trayectoria, pero se resuelve como MRU horizontal y caída libre vertical. Comparten el mismo tiempo, no la misma aceleración.",
+    "quickRule": "Sin aire, la gravedad solo acelera verticalmente; en x la velocidad permanece constante.",
+    "formula": "v_{0x}=v_0cos\\thetaqquad v_{0y}=v_0sin\\theta\\\\x=v_{0x}tqquad y=v_{0y}t-\tfrac12gt^2",
+    "variables": [
+      "v₀x: componente horizontal",
+      "v₀y: componente vertical",
+      "g: 9,8 o 10 m/s²",
+      "θ: ángulo de lanzamiento"
+    ],
+    "sections": [
+      {
+        "heading": "La separación que resuelve el problema",
+        "body": "Primero descompón la velocidad inicial. Después usa las ecuaciones de x y de y por separado. La única conexión entre ambos ejes es el tiempo t.",
+        "bullets": [
+          "Horizontal: aₓ = 0, por tanto vₓ constante.",
+          "Vertical: aᵧ = −g si eliges arriba como positivo.",
+          "En el punto más alto, vᵧ = 0 pero vₓ sigue existiendo."
+        ]
+      },
+      {
+        "heading": "Órbita y gravedad",
+        "body": "Un satélite está continuamente cayendo hacia la Tierra, pero su velocidad lateral hace que siga rodeándola. La gravedad disminuye con el cuadrado de la distancia al centro del planeta.",
+        "bullets": [
+          "F = G Mm/r² y g = GM/r².",
+          "Duplicar r hace que g valga la cuarta parte.",
+          "En una trayectoria simétrica que termina a la misma altura, subida y bajada tardan lo mismo."
+        ]
+      }
+    ],
+    "examNote": "No uses v₀ completa en una ecuación de un eje. Usa v₀x o v₀y según corresponda.",
+    "example": {
+      "prompt": "Se lanza una pelota a 20 m/s con 30° respecto de la horizontal. sen30°=0,5 y cos30°≈0,866. Halla sus componentes iniciales.",
+      "steps": [
+        "v₀x = 20 cos30° ≈ 20(0,866).",
+        "v₀y = 20 sen30° = 20(0,5).",
+        "v₀x≈17,3 m/s y v₀y=10 m/s."
+      ],
+      "result": "La velocidad se separa en 17,3 m/s horizontal y 10 m/s vertical."
+    }
+  },
+  {
+    "id": "circular",
+    "subject": "fisica",
+    "unit": "Movimiento circular",
+    "priority": "Repaso",
+    "eyebrow": "06 · Curvas",
+    "title": "Cambiar dirección también es acelerar",
+    "lead": "En movimiento circular uniforme la rapidez es constante, pero la velocidad no: el vector velocidad cambia continuamente de dirección. Por eso existe una fuerza neta hacia el centro.",
+    "quickRule": "La aceleración y la fuerza centrípeta apuntan al centro; la velocidad es tangente al círculo.",
+    "formula": "a_c=\frac{v^2}{r}=omega^2rqquad F_c=m\frac{v^2}{r}qquad v=\frac{2\\pi r}{T}",
+    "variables": [
+      "aᶜ: aceleración centrípeta",
+      "r: radio (m)",
+      "T: período (s/vuelta)",
+      "ω: velocidad angular"
+    ],
+    "sections": [
+      {
+        "heading": "No existe una fuerza nueva llamada centrípeta",
+        "body": "‘Centrípeta’ describe el papel de la fuerza neta dirigida al centro. Esa fuerza puede ser rozamiento en una curva, tensión en una cuerda o gravedad en una órbita.",
+        "bullets": [
+          "La rapidez puede ser constante y aun así a ≠ 0.",
+          "Si se corta la cuerda, el objeto sale en dirección tangente.",
+          "Mayor velocidad exige mayor fuerza centrípeta si el radio no cambia."
+        ]
+      },
+      {
+        "heading": "Período y frecuencia",
+        "body": "El período es el tiempo de una vuelta; la frecuencia es el número de vueltas por segundo. Son inversos entre sí.",
+        "bullets": [
+          "f = 1/T.",
+          "Una vuelta completa equivale a 2π radianes.",
+          "No confundas el radio con la distancia total recorrida: una vuelta mide 2πr."
+        ]
+      }
+    ],
+    "examNote": "Si te preguntan hacia dónde apunta la velocidad en una curva, responde tangente; si preguntan fuerza o aceleración, responde hacia el centro.",
+    "example": {
+      "prompt": "Una masa de 2 kg gira con rapidez 4 m/s en un círculo de radio 2 m. ¿Qué fuerza centrípeta requiere?",
+      "steps": [
+        "Fᶜ = mv²/r.",
+        "Fᶜ = 2(4²)/2.",
+        "Fᶜ = 16 N."
+      ],
+      "result": "La fuerza neta hacia el centro es 16 N."
+    }
+  },
+  {
+    "id": "unidades",
+    "subject": "fisica",
+    "unit": "Herramientas",
+    "priority": "Esencial",
+    "eyebrow": "07 · Unidades",
+    "title": "Convierte con fracciones, no con memoria",
+    "lead": "Muchos ejercicios correctos terminan mal por una unidad incoherente. La forma segura es multiplicar por factores que valen uno y cancelar unidades igual que si fueran números.",
+    "quickRule": "En las ecuaciones del SI usa m, s, kg, N y J. Convierte antes de sustituir.",
+    "formula": "72 \frac{mathrm{km}}{mathrm{h}}left(\frac{1000 mathrm{m}}{1 mathrm{km}}\right)left(\frac{1 mathrm{h}}{3600 mathrm{s}}\right)=20 \frac{mathrm{m}}{mathrm{s}}",
+    "variables": [
+      "1 km = 1000 m",
+      "1 h = 3600 s",
+      "1 N = 1 kg·m/s²",
+      "1 J = 1 N·m"
+    ],
+    "sections": [
+      {
+        "heading": "El factor de conversión",
+        "body": "Escribe una razón equivalente a uno de modo que la unidad que sobra se cancele. Si quieres pasar de km/h a m/s, usa 1000 m/1 km y 1 h/3600 s.",
+        "bullets": [
+          "Para km/h → m/s, divide entre 3,6.",
+          "Para m/s → km/h, multiplica por 3,6.",
+          "Revisa la unidad final antes de elegir una alternativa."
+        ]
+      },
+      {
+        "heading": "Orden de magnitud",
+        "body": "Una respuesta debe tener sentido físico. Una persona corriendo a 300 m/s o una masa de 0,0002 kg para un automóvil revelan una conversión mal hecha.",
+        "bullets": [
+          "La velocidad de un auto urbano suele expresarse como decenas de km/h.",
+          "El peso se mide en N; la masa se mide en kg.",
+          "En áreas y volúmenes, el factor también se eleva al cuadrado o al cubo."
+        ]
+      }
+    ],
+    "examNote": "No conviertas solo el número: convierte y cancela las unidades en cada paso. Ellas te dicen si invertiste el factor.",
+    "example": {
+      "prompt": "Convierte 72 km/h a m/s.",
+      "steps": [
+        "72 ÷ 3,6.",
+        "72 ÷ 3,6 = 20.",
+        "La unidad final es m/s."
+      ],
+      "result": "72 km/h equivalen a 20 m/s."
+    }
+  },
+  {
+    "id": "materia",
+    "subject": "quimica",
+    "unit": "Fundamentos",
+    "priority": "Repaso",
+    "eyebrow": "05 · Materia y átomo",
+    "title": "Distingue qué cambia y qué permanece",
+    "lead": "Un cambio físico modifica estado, forma o tamaño; un cambio químico forma sustancias nuevas. Esta diferencia aparece desde la clasificación de la materia hasta el balanceo de ecuaciones.",
+    "quickRule": "Si la composición cambia y aparecen sustancias nuevas, el proceso es químico; si solo cambia la presentación, es físico.",
+    "formula": "A=Z+nqquad Z=p^+qquad \text{carga}=p^+-e^-",
+    "variables": [
+      "Z: protones",
+      "A: protones + neutrones",
+      "Isótopos: mismo Z",
+      "Iones: cambia e⁻"
+    ],
+    "sections": [
+      {
+        "heading": "Sustancias y mezclas",
+        "body": "Un elemento contiene un tipo de átomo; un compuesto tiene una proporción fija de elementos; una mezcla reúne sustancias sin que necesariamente reaccionen.",
+        "bullets": [
+          "Mezcla homogénea: una sola fase visible, como agua salada.",
+          "Mezcla heterogénea: más de una fase, como agua y aceite.",
+          "Una sustancia pura puede ser elemento o compuesto."
+        ]
+      },
+      {
+        "heading": "Partículas fundamentales",
+        "body": "Los protones determinan el elemento, los neutrones cambian el isótopo y los electrones cambian cuando se forma un ion.",
+        "bullets": [
+          "Protón: +1, núcleo.",
+          "Neutrón: 0, núcleo.",
+          "Electrón: −1, región externa."
+        ]
+      }
+    ],
+    "examNote": "Evaporar agua salada es un cambio físico y permite separar componentes; quemar papel forma otras sustancias y es cambio químico.",
+    "example": {
+      "prompt": "Un átomo tiene Z=17 y A=35. ¿Cuántos protones y neutrones tiene?",
+      "steps": [
+        "Z indica protones: 17.",
+        "n = A − Z = 35 − 17.",
+        "n = 18."
+      ],
+      "result": "Tiene 17 protones y 18 neutrones."
+    }
+  },
+  {
+    "id": "periodica",
+    "subject": "quimica",
+    "unit": "Tabla periódica",
+    "priority": "Muy rentable",
+    "eyebrow": "06 · Tendencias periódicas",
+    "title": "Lee la tabla como un mapa de tendencias",
+    "lead": "La posición en la tabla permite comparar radio atómico, electronegatividad, energía de ionización y reactividad sin aprender valores aislados.",
+    "quickRule": "Radio aumenta hacia abajo e izquierda; electronegatividad y energía de ionización aumentan hacia arriba y derecha.",
+    "formula": "\text{radio atómico} \nearrow leftarrowqquad \text{electronegatividad} \nearrow \rightarrow",
+    "variables": [
+      "Grupo: columna, valencia semejante",
+      "Período: fila, niveles de energía",
+      "F: electronegatividad máxima",
+      "Metales: pierden e⁻"
+    ],
+    "sections": [
+      {
+        "heading": "Por qué cambian las propiedades",
+        "body": "Al avanzar a la derecha aumenta la carga nuclear efectiva y los electrones son atraídos con más fuerza: el radio disminuye. Al bajar aparecen más capas electrónicas: el radio aumenta.",
+        "bullets": [
+          "Alcalinos (grupo 1): forman +1.",
+          "Alcalinotérreos (grupo 2): forman +2.",
+          "Halógenos (grupo 17): tienden a formar −1."
+        ]
+      },
+      {
+        "heading": "Iones y tamaños",
+        "body": "Un catión es menor que su átomo porque perdió electrones; un anión es mayor porque aumentan las repulsiones electrón-electrón.",
+        "bullets": [
+          "Na⁺ es menor que Na.",
+          "Cl⁻ es mayor que Cl.",
+          "Entre especies isoelectrónicas, más protones atraen más y el radio es menor."
+        ]
+      }
+    ],
+    "examNote": "Si comparas dos elementos, primero ubícalos: no intentes recordar una lista de radios o electronegatividades.",
+    "example": {
+      "prompt": "¿Cuál tiene mayor electronegatividad: Na o Cl?",
+      "steps": [
+        "Ambos están en el período 3.",
+        "Cl está más a la derecha.",
+        "La electronegatividad aumenta hacia la derecha."
+      ],
+      "result": "Cl es más electronegativo que Na."
+    }
+  },
+  {
+    "id": "sales-acidos",
+    "subject": "quimica",
+    "unit": "Nomenclatura",
+    "priority": "Esencial",
+    "eyebrow": "07 · Ácidos, bases y sales",
+    "title": "Reconoce el ion antes de nombrar",
+    "lead": "Para nombrar hidróxidos, ácidos y oxosales no necesitas adivinar: identifica el catión, el anión y la carga. Después haz que el compuesto completo sea neutro.",
+    "quickRule": "OH⁻ indica hidróxido; un H inicial suele indicar ácido; un metal unido a un ion poliatómico suele ser una sal.",
+    "formula": "mathrm{Ca^{2+}+2OH^-\rightarrow Ca(OH)_2}qquad mathrm{SO_4^{2-}}qquad mathrm{NO_3^-}",
+    "variables": [
+      "OH⁻: hidróxido",
+      "SO₄²⁻: sulfato",
+      "NO₃⁻: nitrato",
+      "CO₃²⁻: carbonato"
+    ],
+    "sections": [
+      {
+        "heading": "Nombres frecuentes",
+        "body": "Un hidróxido se nombra ‘hidróxido de’ más el metal; los ácidos hidrácidos usan ‘ácido ...hídrico’ y muchos oxoácidos se relacionan con su oxoanión.",
+        "bullets": [
+          "Ca(OH)₂: hidróxido de calcio.",
+          "HCl: ácido clorhídrico.",
+          "H₂SO₄: ácido sulfúrico.",
+          "Na₂CO₃: carbonato de sodio."
+        ]
+      },
+      {
+        "heading": "Paréntesis que sí importan",
+        "body": "Cuando un ion poliatómico se repite más de una vez, usa paréntesis: Ca(OH)₂ tiene dos grupos OH⁻ completos, no solo dos oxígenos.",
+        "bullets": [
+          "Al³⁺ con SO₄²⁻ produce Al₂(SO₄)₃.",
+          "Cruza cargas como ayuda, luego simplifica si es posible.",
+          "El número romano solo se escribe si el metal tiene carga variable."
+        ]
+      }
+    ],
+    "examNote": "Lee los subíndices después del paréntesis como multiplicadores de todo el ion poliatómico.",
+    "example": {
+      "prompt": "Formula sulfato de aluminio a partir de Al³⁺ y SO₄²⁻.",
+      "steps": [
+        "Necesitas igualar +3 y −2.",
+        "Mínimo común: 6; usa 2 Al³⁺ y 3 sulfatos.",
+        "Escribe Al₂(SO₄)₃."
+      ],
+      "result": "La fórmula es Al₂(SO₄)₃."
+    }
+  },
+  {
+    "id": "intermoleculares",
+    "subject": "quimica",
+    "unit": "Fuerzas y estados",
+    "priority": "Muy rentable",
+    "eyebrow": "08 · Fuerzas intermoleculares",
+    "title": "Explica el estado de una sustancia por sus atracciones",
+    "lead": "Las fuerzas entre moléculas determinan puntos de ebullición, viscosidad y solubilidad. No rompen enlaces internos: cambian qué tan difícil es separar moléculas.",
+    "quickRule": "A mayor fuerza intermolecular, mayor punto de ebullición. El puente de hidrógeno requiere H unido a N, O o F.",
+    "formula": "\text{London}<\text{dipolo-dipolo}<\text{puente de H}quad (\text{en moléculas comparables})",
+    "variables": [
+      "London: todas las partículas",
+      "Dipolo-dipolo: moléculas polares",
+      "Puente H: H–N, H–O, H–F",
+      "Ion-dipolo: sal en agua"
+    ],
+    "sections": [
+      {
+        "heading": "Tres fuerzas que debes distinguir",
+        "body": "La dispersión de London existe en todas las moléculas y aumenta con el tamaño. Las moléculas polares también tienen atracción dipolo-dipolo. El puente de hidrógeno es una interacción especialmente intensa.",
+        "bullets": [
+          "CH₄: London predominante.",
+          "HCl: dipolo-dipolo y London.",
+          "H₂O y NH₃: puente de hidrógeno."
+        ]
+      },
+      {
+        "heading": "Solubilidad",
+        "body": "Como regla de examen, ‘semejante disuelve a semejante’: solutos polares o iónicos se disuelven mejor en solventes polares; sustancias apolares se disuelven mejor entre sí.",
+        "bullets": [
+          "El agua es polar.",
+          "El aceite es mayormente apolar.",
+          "NaCl se hidrata por fuerzas ion-dipolo en agua."
+        ]
+      }
+    ],
+    "examNote": "No confundas un enlace covalente O–H con un puente de hidrógeno: el primero está dentro de una molécula, el segundo es entre moléculas.",
+    "example": {
+      "prompt": "¿Por qué H₂O tiene un punto de ebullición mayor que H₂S?",
+      "steps": [
+        "H₂O es polar y el H está unido a O.",
+        "Entre moléculas de agua hay puentes de hidrógeno.",
+        "H₂S no forma puentes de hidrógeno comparables."
+      ],
+      "result": "El agua necesita más energía para separar sus moléculas."
+    }
+  },
+  {
+    "id": "formulas-reacciones",
+    "subject": "quimica",
+    "unit": "Fórmulas y reacciones",
+    "priority": "Esencial",
+    "eyebrow": "09 · Fórmulas y balanceo",
+    "title": "Conserva átomos; cambia coeficientes, nunca subíndices",
+    "lead": "La fórmula empírica da la proporción más simple; la molecular da el número real de átomos. En una ecuación, los coeficientes equilibran átomos sin alterar la identidad de las sustancias.",
+    "quickRule": "Para balancear, solo ajusta números delante de las fórmulas. Cambiar subíndices crea otra sustancia.",
+    "formula": "n=\frac{M_{mathrm{molecular}}}{M_{mathrm{empírica}}}qquad 2mathrm{H_2}+mathrm{O_2}\rightarrow2mathrm{H_2O}",
+    "variables": [
+      "Fórmula empírica: razón mínima",
+      "Fórmula molecular: múltiplo entero",
+      "Coeficiente: cantidad de moléculas/mol",
+      "Subíndice: composición"
+    ],
+    "sections": [
+      {
+        "heading": "Fórmula molecular",
+        "body": "Calcula primero la masa de la fórmula empírica y divide la masa molar real entre ella. El resultado debe ser un entero que multiplica todos los subíndices.",
+        "bullets": [
+          "CH₂ pesa 14 g/mol.",
+          "Si la masa molecular es 42, el factor es 3.",
+          "La fórmula molecular es C₃H₆."
+        ]
+      },
+      {
+        "heading": "Balanceo ordenado",
+        "body": "Cuenta átomos a ambos lados, deja H y O al final cuando sea posible, y verifica todo antes de terminar. Los coeficientes representan relaciones de moles.",
+        "bullets": [
+          "Empieza por el elemento que aparece en menos especies.",
+          "No uses fracciones si puedes multiplicar toda la ecuación al final.",
+          "Una ecuación balanceada conserva masa y átomos."
+        ]
+      }
+    ],
+    "examNote": "En ejercicios de estequiometría, una ecuación sin balancear da una proporción molar equivocada aunque hagas bien todas las conversiones.",
+    "example": {
+      "prompt": "La fórmula empírica es CH₂ y la masa molar es 42 g/mol. Halla la molecular.",
+      "steps": [
+        "M(CH₂)=12+2(1)=14 g/mol.",
+        "42/14=3.",
+        "Multiplica C y H por 3."
+      ],
+      "result": "La fórmula molecular es C₃H₆."
+    }
+  }
+]

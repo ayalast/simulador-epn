@@ -1,103 +1,144 @@
-/* Estilos modernos para la Plataforma de Estudio Intensivo EPN Día 2 */
+/* Estilos idénticos al cuaderno editorial de EPN Estudio Hoy */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap');
+
 :root {
   --font-serif: 'DM Serif Display', Georgia, serif;
-  --font-sans: 'Manrope', system-ui, -apple-system, sans-serif;
-  --bg-primary: #f8fafc;
+  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  
+  --bg-page: #fbf7ee;
+  --bg-header: rgba(255, 250, 242, 0.92);
   --bg-card: #ffffff;
-  --text-main: #0f172a;
-  --text-muted: #64748b;
-  --border-color: #e2e8f0;
   
-  --fis-primary: #0284c7;
-  --fis-light: #e0f2fe;
-  --fis-dark: #0369a1;
+  --border-main: #d9ccba;
+  --border-light: #e6dbcd;
+  --border-dark: #b8a690;
   
-  --qui-primary: #059669;
-  --qui-light: #d1fae5;
-  --qui-dark: #047857;
+  --text-ink: #1f1a14;
+  --text-body: #383027;
+  --text-muted: #6d6152;
+  --text-subtle: #948675;
   
-  --len-primary: #6366f1;
-  --len-light: #ede9fe;
-  --len-dark: #4f46e5;
+  /* Temas de materias */
+  --fis-bg: #e9eef6;
+  --fis-border: #2a3d57;
+  --fis-text: #10233f;
+  --fis-accent: #0284c7;
+  
+  --qui-bg: #e7f2ed;
+  --qui-border: #31765f;
+  --qui-text: #1a4d3e;
+  --qui-accent: #059669;
+  
+  --len-bg: #fff0e7;
+  --len-border: #e86b2e;
+  --len-text: #a94515;
+  --len-accent: #ea580c;
+  
+  --trap-bg: #fdf2f0;
+  --trap-border: #be3730;
+  --trap-text: #8c1d18;
+  
+  --rule-bg: #fffbe6;
+  --rule-border: #d4a300;
+  --rule-text: #7a5900;
 }
 
 body {
+  background-color: var(--bg-page);
+  color: var(--text-ink);
   font-family: var(--font-sans);
-  background-color: var(--bg-primary);
-  color: var(--text-main);
-  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
-.font-serif-title {
+.font-display {
   font-family: var(--font-serif);
 }
 
-/* Glassmorphism Navigation */
-.nav-glass {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+/* Header Vidrio Cuaderno */
+.notebook-header {
+  background: var(--bg-header);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(217, 204, 186, 0.85);
 }
 
-/* Interactive Cards */
-.study-card {
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
-  border: 1px solid var(--border-color);
+/* Tarjeta Editorial de Estudio */
+.notebook-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-main);
+  border-radius: 20px;
+  box-shadow: 0 4px 16px -2px rgba(44, 37, 30, 0.05);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease, border-color 0.2s ease;
 }
-.study-card:hover {
+
+.notebook-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.08);
+  border-color: var(--border-dark);
+  box-shadow: 0 12px 28px -4px rgba(44, 37, 30, 0.1);
 }
 
-/* Trap Banner */
+/* Cajas de Alerta y Reglas */
+.rule-box {
+  background: var(--rule-bg);
+  border: 1px solid var(--rule-border);
+  border-left: 4px solid var(--rule-border);
+  border-radius: 12px;
+}
+
 .trap-box {
-  background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
-  border-left: 4px solid #e11d48;
+  background: var(--trap-bg);
+  border: 1px solid var(--trap-border);
+  border-left: 4px solid var(--trap-border);
+  border-radius: 12px;
 }
 
-/* Gold Rule Banner */
-.gold-rule-box {
-  background: linear-gradient(135deg, #fefce8 0%, #fef9c3 100%);
-  border-left: 4px solid #ca8a04;
+.formula-dark-box {
+  background: #152945;
+  color: #ffffff;
+  border-radius: 14px;
+  border: 1px solid #2a3d57;
 }
 
-/* Formula Highlight Box */
-.formula-box {
-  background: #f1f5f9;
-  border-radius: 8px;
-  padding: 12px 16px;
-  border-left: 4px solid #0284c7;
+/* Botones de Opciones de Quiz */
+.quiz-opt-btn {
+  background: #ffffff;
+  border: 1.5px solid var(--border-main);
+  border-radius: 14px;
+  transition: all 0.15s ease;
 }
 
-/* Flashcard Flip Effect */
-.flashcard-inner {
-  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
-  transform-style: preserve-3d;
-}
-.flashcard.flipped .flashcard-inner {
-  transform: rotateY(180deg);
-}
-.flashcard-front, .flashcard-back {
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
-.flashcard-back {
-  transform: rotateY(180deg);
+.quiz-opt-btn:hover:not(:disabled) {
+  border-color: #1f1a14;
+  background: #f7f3ea;
+  transform: translateY(-1px);
 }
 
-/* Custom Scrollbar */
+.quiz-opt-btn.correct {
+  background: #e7f2ed !important;
+  border-color: #31765f !important;
+  color: #1a4d3e !important;
+  font-weight: 700;
+}
+
+.quiz-opt-btn.incorrect {
+  background: #fdf2f0 !important;
+  border-color: #be3730 !important;
+  color: #8c1d18 !important;
+  font-weight: 700;
+}
+
+/* Scrollbar cálido */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f5f9;
+  background: #f1ebd8;
 }
 ::-webkit-scrollbar-thumb {
-  background: #cbd5e1;
+  background: #cbb9a3;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #b39f88;
 }

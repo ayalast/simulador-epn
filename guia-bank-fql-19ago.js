@@ -1125,16 +1125,16 @@ window.GUIA_BANK_FQL_19AGO = {
         "4.2.2-2daNewton"
       ],
       "ch": "fis-L08",
-      "t": "Ley de Gravitación Universal",
-      "prompt": "Dos masas puntuales se atraen con una fuerza gravitatoria $F_0$ cuando se encuentran a una distancia $d$. Si la distancia entre ellas se incrementa al doble ($2d$), ¿cuál es el nuevo valor de la fuerza gravitatoria de atracción entre ambas masas?",
+      "t": "Gravedad y Peso en Otro Planeta",
+      "prompt": "Una roca tiene una masa de $2.5\\text{ kg}$ en la Tierra. En una misión de exploración a otro planeta, se suelta dicha roca desde el reposo y tarda exactamente $2\\text{ segundos}$ en caer una altura vertical de $8\\text{ metros}$ (sin atmósfera). ¿Cuál es el peso de la roca en dicho planeta?",
       "opts": [
-        "$\\frac{1}{4}F_0 = 0.25\\,F_0$",
-        "$\\frac{1}{2}F_0 = 0.50\\,F_0$",
-        "$2\\,F_0$",
-        "$4\\,F_0$"
+        "$10\\text{ N}$",
+        "$20\\text{ N}$",
+        "$5\\text{ N}$",
+        "$25\\text{ N}$"
       ],
       "ans": 0,
-      "exp": "**Paso 1. Ley de Gravitación Universal de Newton:**\n$F = G\\frac{m_1 m_2}{r^2}$.\n**Paso 2. Procedimiento a mano con la nueva distancia:**\n- Distancia inicial $r_1 = d \\implies F_0 = G\\frac{m_1 m_2}{d^2}$.\n- Distancia duplicada $r_2 = 2d \\implies F_{\\text{nueva}} = G\\frac{m_1 m_2}{(2d)^2} = G\\frac{m_1 m_2}{4d^2} = \\frac{1}{4}\\left(G\\frac{m_1 m_2}{d^2}\\right) = \\frac{1}{4}F_0$.\n**Paso 3. Conclusión:** Al duplicar la distancia, la fuerza gravitacional se reduce a la cuarta parte ($0.25 F_0$).\n**Respuesta correcta: A.**",
+      "exp": "**Paso 1. Invarianza de la masa:** La masa es una propiedad intrínseca de la materia ($m = 2.5\\text{ kg}$) y no cambia en ningún planeta.\n**Paso 2. Cálculo a mano de la aceleración gravitatoria del planeta ($g_p$):**\n- Caída libre desde el reposo ($v_0 = 0$): $h = \\frac{1}{2}g_p t^2$.\n- Despejando la gravedad:\n  $g_p = \\frac{2h}{t^2} = \\frac{2(8\\text{ m})}{(2\\text{ s})^2} = \\frac{16}{4} = 4\\text{ m/s}^2$.\n**Paso 3. Cálculo del peso en el planeta:**\n- Peso: $P_p = m \\cdot g_p = 2.5\\text{ kg} \\times 4\\text{ m/s}^2 = 10\\text{ N}$.\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": []
     },
@@ -1147,16 +1147,16 @@ window.GUIA_BANK_FQL_19AGO = {
         "4.2.2-2daNewton"
       ],
       "ch": "fis-L07",
-      "t": "Segunda Ley con Masa Duplicada",
-      "prompt": "Una fuerza neta horizontal constante $F$ acelera a un bloque de masa $m$ produciendo una aceleración $a_0 = 8\\text{ m/s}^2$ sobre una superficie sin fricción. Si se coloca encima otro bloque idéntico duplicando la masa total a $2m$ y se aplica exactamente la misma fuerza $F$, ¿cuál será la nueva aceleración del sistema?",
+      "t": "Fuerza Neta Resultante en Caída",
+      "prompt": "Un cuerpo de $1\\text{ kg}$ de masa es lanzado verticalmente hacia abajo con una rapidez inicial de $2\\text{ m/s}$. Al cabo de $4\\text{ segundos}$ alcanza una rapidez de $14\\text{ m/s}$. ¿Cuál es la fuerza neta resultante en Newtons que actúa sobre el cuerpo durante este intervalo?",
       "opts": [
-        "$4\\text{ m/s}^2$ (la mitad de la aceleración original)",
-        "$16\\text{ m/s}^2$ (el doble de la aceleración original)",
-        "$8\\text{ m/s}^2$ (la aceleración se mantiene idéntica)",
-        "$2\\text{ m/s}^2$ (la cuarta parte de la aceleración)"
+        "$3\\text{ N}$",
+        "$5\\text{ N}$",
+        "$12\\text{ N}$",
+        "$10\\text{ N}$"
       ],
       "ans": 0,
-      "exp": "**Paso 1. 2da Ley de Newton:** $a = \\frac{F}{m}$. La aceleración es inversamente proporcional a la masa para una fuerza fija.\n**Paso 2. Cálculo a mano:**\n- Caso inicial: $a_0 = \\frac{F}{m} = 8\\text{ m/s}^2$.\n- Caso con masa duplicada: $a_{\\text{nueva}} = \\frac{F}{2m} = \\frac{1}{2}\\left(\\frac{F}{m}\\right) = \\frac{1}{2}(8\\text{ m/s}^2) = 4\\text{ m/s}^2$.\n**Paso 3. Conclusión:** La aceleración se reduce a la mitad: $4\\text{ m/s}^2$.\n**Respuesta correcta: A.**",
+      "exp": "**Paso 1. Datos cinemáticos:** Masa $m = 1\\text{ kg}$, rapidez inicial $v_0 = 2\\text{ m/s}$, tiempo $t = 4\\text{ s}$, rapidez final $v_f = 14\\text{ m/s}$.\n**Paso 2. Cálculo de la aceleración a mano:**\n- $a = \\frac{v_f - v_0}{t} = \\frac{14\\text{ m/s} - 2\\text{ m/s}}{4\\text{ s}} = \\frac{12}{4} = 3\\text{ m/s}^2$.\n**Paso 3. Aplicación de la Segunda Ley de Newton:**\n- Fuerza neta resultante: $F_{\\text{neta}} = m \\cdot a = 1\\text{ kg} \\times 3\\text{ m/s}^2 = 3\\text{ N}$.\n- (Nota: como la aceleración es $3\\text{ m/s}^2 < 9.8\\text{ m/s}^2$, el peso hacia abajo de $9.8\\text{ N}$ se opone a una resistencia del aire hacia arriba de $6.8\\text{ N}$, dando una fuerza resultante de $3\\text{ N}$).\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": []
     },
@@ -1191,16 +1191,16 @@ window.GUIA_BANK_FQL_19AGO = {
         "4.2.3-consEnergia"
       ],
       "ch": "fis-L16",
-      "t": "Rampa Curva y Conservación",
-      "prompt": "Un bloque de $2\\text{ kg}$ se suelta desde el reposo en la parte superior de una rampa curva sin rozamiento de altura $h = 5\\text{ m}$. Al llegar a la base horizontal, ¿cuál es la rapidez del bloque? (Tome $g = 10\\text{ m/s}^2$)",
+      "t": "Pista de Patinaje y Puntos de Energía",
+      "prompt": "En una pista de patinaje sin fricción con desniveles, un patinador desciende pasando por los puntos $A$ (más alto), $B$ (intermedio), $C$ (punto más bajo) y $D$ (curva de ascenso). ¿En qué punto la energía potencial gravitatoria es máxima y en cuál la rapidez es máxima?",
       "opts": [
-        "$v = 10\\text{ m/s}$",
-        "$v = 5\\text{ m/s}$",
-        "$v = 20\\text{ m/s}$",
-        "$v = 100\\text{ m/s}$"
+        "Energía potencial máxima en A; rapidez máxima en C.",
+        "Energía potencial máxima en C; rapidez máxima en A.",
+        "Energía potencial máxima en D; rapidez máxima en B.",
+        "Energía potencial máxima en A; rapidez máxima en B."
       ],
       "ans": 0,
-      "exp": "**Paso 1. Conservación de energía mecánica:** $E_{p,\\text{inicial}} = E_{c,\\text{final}}$.\n**Paso 2. Cálculo a mano paso a paso:**\n- $mgh = \\frac{1}{2}mv^2$\n- Simplificando la masa $m$:\n  $v = \\sqrt{2gh} = \\sqrt{2 \\times 10\\text{ m/s}^2 \\times 5\\text{ m}} = \\sqrt{100} = 10\\text{ m/s}$.\n- Obsérvese que la masa ($2\\text{ kg}$) no influye en la rapidez final.\n**Paso 3. Conclusión:** La rapidez al llegar a la base es exactamente $10\\text{ m/s}$.\n**Respuesta correcta: A.**",
+      "exp": "**Paso 1. Dependencia de la energía potencial:** $E_p = mgh$. Es máxima en el punto de mayor altitud sobre el nivel de referencia, que es el punto $A$.\n**Paso 2. Conservación de la energía mecánica:** Sin rozamiento, $E_m = E_p + E_c = \\text{constante}$. Al descender, la energía potencial se transforma íntegramente en energía cinética ($E_c = \\frac{1}{2}mv^2$).\n**Paso 3. Conclusión:** La energía cinética (y la rapidez) alcanza su valor máximo en el punto más bajo de la pista ($C$), donde la energía potencial es mínima.\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": []
     },
@@ -1232,19 +1232,19 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 23,
       "d": "intermedio",
       "topics": [
-        "4.2.2-roceResistencia"
+        "4.2.1-caida"
       ],
-      "ch": "fis-L09",
-      "t": "Velocidad Terminal y Resistencia del Aire",
-      "prompt": "Un paracaidista salta de un avión y cae libremente durante varios segundos antes de abrir su paracaídas. A medida que su rapidez de caída aumenta, la fuerza de resistencia del aire $F_{\\text{aire}}$ se incrementa hasta igualar al peso $P = mg$. Cuando esto ocurre, ¿cómo es el movimiento del paracaidista a partir de ese instante?",
+      "ch": "fis-L05",
+      "t": "Salto Vertical y Tiempo de Vuelo",
+      "prompt": "Un atleta realiza un salto vertical alcanzando una altura máxima de $1.25\\text{ m}$ sobre el suelo. Despreciando la resistencia del aire y considerando $g = 10\\text{ m/s}^2$, ¿cuánto tiempo total permanece el atleta en el aire (tiempo de vuelo entre el despegue y el aterrizaje)?",
       "opts": [
-        "Cae con velocidad constante (velocidad terminal), ya que la aceleración neta se hace cero ($a=0$).",
-        "Frena bruscamente y asciende hacia el avión.",
-        "Acelera al doble de la gravedad ($2g$) debido a la presión del aire.",
-        "Se detiene en el aire suspendido inmóvil."
+        "$1.0\\text{ s}$",
+        "$0.5\\text{ s}$",
+        "$2.0\\text{ s}$",
+        "$1.5\\text{ s}$"
       ],
       "ans": 0,
-      "exp": "**Paso 1. Sumatoria de fuerzas verticales:** $F_{\\text{neta}} = P - F_{\\text{aire}} = mg - F_{\\text{aire}}$.\n**Paso 2. Procedimiento dinámico:**\n- Al inicio ($v$ baja), $F_{\\text{aire}} < mg \\implies a > 0$ (acelera).\n- Al crecer $v$, $F_{\\text{aire}}$ aumenta hasta que $F_{\\text{aire}} = mg$.\n- En ese punto: $F_{\\text{neta}} = mg - mg = 0 \\implies a = 0$.\n- Por la 1ra Ley de Newton, con $a=0$ la velocidad ya no cambia y permanece constante: $v = v_{\\text{terminal}}$.\n**Paso 3. Conclusión:** Continúa cayendo a velocidad terminal constante.\n**Respuesta correcta: A.**",
+      "exp": "**Paso 1. Identificación de datos cinemáticos:** Altura máxima $h = 1.25\\text{ m}$, aceleración $g = 10\\text{ m/s}^2$. En el punto más alto, la velocidad vertical es cero ($v = 0$).\n**Paso 2. Cálculo a mano del tiempo de subida:**\n- $h = \\frac{1}{2}gt_{\\text{sub}}^2 \\implies t_{\\text{sub}} = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2(1.25\\text{ m})}{10\\text{ m/s}^2}} = \\sqrt{\\frac{2.5}{10}} = \\sqrt{0.25} = 0.5\\text{ s}$.\n**Paso 3. Cálculo del tiempo de vuelo total:**\n- Por simetría parabólica/vertical: $t_{\\text{vuelo}} = 2 \\times t_{\\text{sub}} = 2 \\times 0.5\\text{ s} = 1.0\\text{ s}$.\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": []
     },
@@ -1302,16 +1302,16 @@ window.GUIA_BANK_FQL_19AGO = {
         "4.2.3-energiaPotencial"
       ],
       "ch": "fis-L15",
-      "t": "Energía en Resorte Comprimido",
-      "prompt": "Un resorte helicoidal ideal con constante elástica $k = 400\\text{ N/m}$ se comprime una distancia $x = 0.1\\text{ m}$. Si luego se comprime el doble ($x = 0.2\\text{ m}$), ¿cuál es la energía potencial elástica almacenada en este segundo caso y cuántas veces aumentó?",
+      "t": "Ley de Hooke y Constante Elástica",
+      "prompt": "De acuerdo con la Ley de Hooke, un resorte ideal se alarga $0.05\\text{ m}$ cuando se le cuelga un bloque de $20\\text{ N}$. ¿Cuál es la constante elástica $k$ del resorte y qué fuerza elástica ejerce si se deforma $0.15\\text{ m}$?",
       "opts": [
-        "$E_{pe} = 8.0\\text{ J}$ (aumentó $4\\text{ veces}$ respecto a los $2.0\\text{ J}$ iniciales).",
-        "$E_{pe} = 4.0\\text{ J}$ (aumentó $2\\text{ veces}$).",
-        "$E_{pe} = 16.0\\text{ J}$ (aumentó $8\\text{ veces}$).",
-        "$E_{pe} = 2.0\\text{ J}$ (no cambió)."
+        "$400\\text{ N/m}$ y $60\\text{ N}$",
+        "$100\\text{ N/m}$ y $15\\text{ N}$",
+        "$400\\text{ N/m}$ y $40\\text{ N}$",
+        "$200\\text{ N/m}$ y $30\\text{ N}$"
       ],
       "ans": 0,
-      "exp": "**Paso 1. Fórmula de energía potencial elástica:** $E_{pe} = \\frac{1}{2}kx^2$.\n**Paso 2. Cálculos a mano:**\n- Para $x_1 = 0.1\\text{ m}$:\n  $E_{pe,1} = \\frac{1}{2}(400)(0.1)^2 = 200 \\times 0.01 = 2.0\\text{ J}$.\n- Para $x_2 = 0.2\\text{ m}$ (el doble):\n  $E_{pe,2} = \\frac{1}{2}(400)(0.2)^2 = 200 \\times 0.04 = 8.0\\text{ J}$.\n- Razón: $\\frac{8.0\\text{ J}}{2.0\\text{ J}} = 4\\text{ veces}$ (debido a que $2^2 = 4$).\n**Paso 3. Conclusión:** $E_{pe} = 8.0\\text{ J}$, aumentando 4 veces.\n**Respuesta correcta: A.**",
+      "exp": "**Paso 1. Identificación de datos iniciales:** Deformación inicial $x_1 = 0.05\\text{ m}$, fuerza $F_1 = 20\\text{ N}$.\n**Paso 2. Cálculo a mano de la constante elástica $k$:**\n- $k = \\frac{F_1}{x_1} = \\frac{20\\text{ N}}{0.05\\text{ m}} = \\frac{20}{\\frac{5}{100}} = \\frac{2000}{5} = 400\\text{ N/m}$.\n**Paso 3. Cálculo de la fuerza para la nueva deformación $x_2 = 0.15\\text{ m}$:**\n- $F_2 = k \\cdot x_2 = 400\\text{ N/m} \\times 0.15\\text{ m} = 60\\text{ N}$.\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": []
     },
@@ -1770,16 +1770,16 @@ window.GUIA_BANK_FQL_19AGO = {
         "4.3.2-nomInorganica"
       ],
       "ch": "qui-L08",
-      "t": "Óxido Niqueloso y Estados de Oxidación",
-      "prompt": "El níquel ($Ni$) posee dos estados de oxidación comunes: $+2$ y $+3$. ¿Cuál es la fórmula del óxido niqueloso y del óxido niquélico respectivamente?",
+      "t": "Nomenclatura Tradicional de Anhídridos",
+      "prompt": "¿Cuál es el nombre tradicional correcto del óxido no metálico $\\text{SO}_3$ y con qué estado de oxidación actúa el azufre?",
       "opts": [
-        "Óxido niqueloso: $\\text{NiO}$; Óxido niquélico: $\\text{Ni}_2\\text{O}_3$",
-        "Óxido niqueloso: $\\text{Ni}_2\\text{O}$; Óxido niquélico: $\\text{NiO}_2$",
-        "Óxido niqueloso: $\\text{Ni}_2\\text{O}_3$; Óxido niquélico: $\\text{NiO}$",
-        "Óxido niqueloso: $\\text{NiO}_2$; Óxido niquélico: $\\text{Ni}_3\\text{O}_4$"
+        "Anhídrido sulfúrico, estado de oxidación $+6$",
+        "Anhídrido sulfuroso, estado de oxidación $+4$",
+        "Óxido de azufre (VI), estado de oxidación $-2$",
+        "Óxido sulfúrico, estado de oxidación $+2$"
       ],
       "ans": 0,
-      "exp": "**Paso 1. Nomenclatura tradicional con sufijos -oso e -ico:**\n- Menor estado de oxidación ($+2$): sufijo -oso $\\implies$ ion niqueloso $\\text{Ni}^{2+}$.\n- Mayor estado de oxidación ($+3$): sufijo -ico $\\implies$ ion niquélico $\\text{Ni}^{3+}$.\n**Paso 2. Formulación con el ion óxido $\\text{O}^{2-}$:**\n- Óxido niqueloso: $\\text{Ni}^{2+} + \\text{O}^{2-} \\implies \\text{Ni}_2\\text{O}_2 \\xrightarrow{\\text{simplificando}} \\text{NiO}$.\n- Óxido niquélico: $\\text{Ni}^{3+} + \\text{O}^{2-} \\implies \\text{Ni}_2\\text{O}_3$.\n**Paso 3. Conclusión:** $\\text{NiO}$ y $\\text{Ni}_2\\text{O}_3$.\n**Respuesta correcta: A.**",
+      "exp": "**Paso 1. Determinación del estado de oxidación del azufre ($S$):**\n- El oxígeno actúa con $-2$ en los óxidos: $\\text{E.O.}(S) + 3(-2) = 0 \\implies \\text{E.O.}(S) = +6$.\n**Paso 2. Nomenclatura tradicional para no metales:**\n- Estados positivos del azufre: $+2$ (hipo-...-oso), $+4$ (-oso), $+6$ (-ico).\n- Al actuar con su máxima valencia $+6$, le corresponde el sufijo -ico.\n- La combinación de un no metal con oxígeno se denomina tradicionalmente anhídrido.\n**Paso 3. Conclusión:** El compuesto es el anhídrido sulfúrico (o trióxido de azufre en IUPAC sistemática).\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": []
     },
@@ -1880,16 +1880,16 @@ window.GUIA_BANK_FQL_19AGO = {
         "4.3.1-numerosCuanticos"
       ],
       "ch": "qui-L05",
-      "t": "Experimento de Rutherford",
-      "prompt": "En 1911, Ernest Rutherford bombardeó una delgada lámina de oro con partículas alfa (núcleos de Helio con carga positiva $+2$). Al observar que la gran mayoría de partículas atravesaban la lámina sin desviarse y solo una pequeña fracción rebotaba fuertemente, ¿qué concluyó sobre la estructura atómica?",
+      "t": "Postulados del Modelo Atómico de Bohr",
+      "prompt": "¿Cuál es el postulado fundamental del modelo atómico de Niels Bohr que corrigió las limitaciones del modelo clásico de Rutherford?",
       "opts": [
-        "El átomo está constituido mayoritariamente por espacio vacío, con un núcleo central diminuto, denso y cargado positivamente.",
-        "El átomo es una esfera maciza y compacta de carga positiva homogénea (modelo de pudín).",
-        "Los electrones se encuentran en el centro del átomo y los protones orbitan a gran distancia.",
-        "La materia no contiene partículas subatómicas cargadas."
+        "Los electrones orbitan en niveles de energía discretos y cuantizados sin emitir radiación continuamente.",
+        "Los electrones se distribuyen en una nube de probabilidad según la ecuación de onda de Schrödinger.",
+        "El átomo es una esfera maciza de carga positiva con electrones incrustados en su superficie.",
+        "El núcleo atómico contiene neutrones que evitan la repulsión electrostática de los protones."
       ],
       "ans": 0,
-      "exp": "**Paso 1. Análisis del experimento de dispersión de partículas alfa:**\n- Más del $99.9\\%$ de partículas alfa pasaron en línea recta $\\implies$ la mayor parte del volumen del átomo es espacio vacío.\n- Unas pocas se desviaron en ángulos grandes o rebotaron $\\implies$ debieron colisionar o ser repelidas electrostáticamente por una concentración de masa y carga positiva muy compacta en el centro.\n**Paso 2. Deducción del modelo nuclear de Rutherford:**\n- Se postula la existencia del núcleo atómico positivo donde reside casi toda la masa, con los electrones orbitando alrededor en el espacio circundante.\n**Paso 3. Conclusión:** El átomo es mayormente espacio vacío con un núcleo central denso y positivo.\n**Respuesta correcta: A.**",
+      "exp": "**Paso 1. Limitación del modelo clásico de Rutherford:** Según la electrodinámica clásica, una carga acelerada (como el electrón en órbita) debe emitir radiación continuamente, perdiendo energía y colapsando en espiral hacia el núcleo.\n**Paso 2. Aporte cuántico de Bohr:**\n- Postuló que el momento angular del electrón está cuantizado ($L = n\\hbar$).\n- Los electrones solo pueden ocupar órbitas estacionarias permitidas (niveles $n=1, 2, 3...$).\n- Mientras el electrón permanezca en un nivel estacionario, no emite energía electromagnética, garantizando la estabilidad del átomo.\n**Paso 3. Conclusión:** Los electrones orbitan en niveles estacionarios discretos y cuantizados sin emitir radiación continuamente.\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": []
     },
@@ -1946,16 +1946,16 @@ window.GUIA_BANK_FQL_19AGO = {
         "4.3.4-reacciones"
       ],
       "ch": "qui-L16",
-      "t": "Balanceo por Tanteo de Combustión",
-      "prompt": "Al balancear por tanteo la ecuación de combustión completa del gas propano ($\\text{C}_3\\text{H}_8$):\n$$a\\,\\text{C}_3\\text{H}_8 + b\\,\\text{O}_2 \\to c\\,\\text{CO}_2 + d\\,\\text{H}_2\\text{O}$$\n¿Cuáles son los coeficientes estequiométricos enteros mínimos $(a, b, c, d)$?",
+      "t": "Comportamiento del Oxígeno en Reacciones Redox",
+      "prompt": "En las reacciones de combustión y oxidación de alcoholes o hidrocarburos con gas oxígeno molecular ($\\text{O}_2$), ¿cuál es el comportamiento electroquímico del oxígeno al interactuar con el combustible?",
       "opts": [
-        "$(1, 5, 3, 4)$",
-        "$(1, 3, 3, 4)$",
-        "$(2, 10, 6, 8)$",
-        "$(1, 4, 3, 4)$"
+        "Gana electrones reduciéndose de estado de oxidación $0$ a $-2$ y actúa como agente oxidante.",
+        "Pierde electrones oxidándose de estado de oxidación $-2$ a $0$ y actúa como agente reductor.",
+        "Mantiene su estado de oxidación en cero sin intercambiar ningún electrón con el combustible.",
+        "Gana protones del núcleo y se transforma en un catión neutro sin alterar su carga."
       ],
       "ans": 0,
-      "exp": "**Paso 1. Balanceo de átomos paso a paso:**\n1. Carbono ($C$): Hay $3$ carbonos en reactivos ($\\text{C}_3\\text{H}_8$) $\\implies c = 3$ en $\\text{CO}_2$.\n2. Hidrógeno ($H$): Hay $8$ hidrógenos en reactivos $\\implies d = 4$ en $\\text{H}_2\\text{O}$ (pues $4 \\times 2 = 8$).\n3. Oxígeno ($O$): Contamos los oxígenos en productos:\n   $3\\,\\text{CO}_2 \\implies 3 \\times 2 = 6\\text{ oxígenos}$\n   $4\\,\\text{H}_2\\text{O} \\implies 4 \\times 1 = 4\\text{ oxígenos}$\n   Total en productos = $6 + 4 = 10\\text{ átomos de O}$.\n4. En reactivos: $b\\,\\text{O}_2 \\implies 2b = 10 \\implies b = 5$.\n**Paso 2. Verificación de coeficientes mínimos enteros:**\n$\\text{C}_3\\text{H}_8 + 5\\,\\text{O}_2 \\to 3\\,\\text{CO}_2 + 4\\,\\text{H}_2\\text{O}$. Los números $1, 5, 3, 4$ no se pueden simplificar más.\n**Paso 3. Conclusión:** El conjunto de coeficientes estequiométricos es $(1, 5, 3, 4)$.\n**Respuesta correcta: A.**",
+      "exp": "**Paso 1. Estado inicial del oxígeno:** En el gas oxígeno molecular ($\text{O}_2$), el estado de oxidación es estrictamente $0$ por ser una sustancia simple elemental.\n**Paso 2. Estado final en los productos de combustión ($\\text{CO}_2$ y $\\text{H}_2\\text{O}$):**\n- En el agua ($\text{H}_2\text{O}$) y en el dióxido de carbono ($\text{CO}_2$), el oxígeno pasa a estado de oxidación $-2$.\n- Cambio de electrones: $\\text{O}^0 + 2e^- \\to \\text{O}^{-2}$ (captura/gana 2 electrones por átomo, es decir, se reduce).\n**Paso 3. Conclusión:** Al reducirse y ganar electrones, el oxígeno es el agente oxidante que provoca la oxidación del combustible.\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": []
     },

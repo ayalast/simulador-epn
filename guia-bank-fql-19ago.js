@@ -742,7 +742,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L01",
       "t": "Inercia y Proyectil",
-      "fig": "fql19-avion-bola",
       "prompt": "Un avión de carga vuela en línea recta horizontal a velocidad constante de $180\\text{ m/s}$ y a gran altitud. En un instante dado, se desprende accidentalmente un paquete desde su bodega. Despreciando por completo la resistencia del aire, ¿qué trayectoria describe el paquete según la perspectiva de un observador inmóvil situado en tierra?",
       "opts": [
         "Una trayectoria parabólica que avanza horizontalmente en el mismo sentido del avión mientras cae.",
@@ -753,7 +752,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Identificación de principios físicos:** Por la Primera Ley de Newton (inercia), un cuerpo en movimiento conserva su velocidad si no actúan fuerzas netas sobre él en esa dirección.\n**Paso 2. Procedimiento a mano y descomposición:**\n- Eje $x$ (horizontal): Sin fricción del aire, $F_x = 0 \\implies v_x = 180\\text{ m/s} = \\text{constante}$. El paquete avanza a la par del avión.\n- Eje $y$ (vertical): La gravedad ejerce aceleración constante hacia abajo: $a_y = g \\approx 9.8\\text{ m/s}^2 \\implies v_y = gt, y = \\frac{1}{2}gt^2$.\n- Combinación paramétrica: $y = \\frac{g}{2v_x^2}x^2$, que corresponde exactamente a la ecuación de una parábola abierta hacia abajo orientada hacia adelante.\n**Paso 3. Conclusión y descarte:** Para el observador en tierra, la trayectoria es una parábola que avanza en el sentido del vuelo. (Solo para el piloto que mira hacia abajo parecería una línea recta vertical).\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-avion-proyectil"
     },
     {
       "id": "fis-19ago-02",
@@ -765,7 +765,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L10",
       "t": "Tercera Ley de Newton",
-      "fig": "fql19-choque-bloques",
       "prompt": "Dos bloques, $A$ de masa $10\\text{ kg}$ y $B$ de masa $2\\text{ kg}$, se deslizan sobre una pista horizontal sin rozamiento y colisionan de frente. Durante el impacto, el bloque $A$ ejerce una fuerza de contacto sobre $B$. ¿Cuál es la relación entre la fuerza que $A$ ejerce sobre $B$ y la fuerza que $B$ ejerce sobre $A$?",
       "opts": [
         "Ambas fuerzas tienen exactamente la misma magnitud, actúan simultáneamente y en sentidos opuestos.",
@@ -776,7 +775,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Ley física aplicable:** La Tercera Ley de Newton establece que a toda fuerza de acción le corresponde una fuerza de reacción de igual módulo y dirección, pero de sentido contrario: $\\vec{F}_{A \\to B} = -\\vec{F}_{B \\to A}$.\n**Paso 2. Procedimiento y deducción a mano:**\n- La magnitud de las fuerzas es estrictamente idéntica: $|\\vec{F}_{A \\to B}| = |\\vec{F}_{B \\to A}| = F$.\n- La diferencia de masas solo modifica las aceleraciones de cada cuerpo según la 2da Ley: $a_B = \\frac{F}{2\\text{ kg}}$ será 5 veces mayor que $a_A = \\frac{F}{10\\text{ kg}}$, pero las fuerzas son rigurosamente iguales.\n- Las fuerzas del par acción-reacción son rigurosamente simultáneas (no hay desfase de tiempo).\n**Paso 3. Conclusión:** Tienen igual magnitud, sentidos opuestos y ocurren al mismo tiempo.\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-choque-bloques"
     },
     {
       "id": "fis-19ago-03",
@@ -788,7 +788,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L05",
       "t": "Tiro Vertical en el Ápice",
-      "fig": "fql19-tiro-vertical",
       "prompt": "Se lanza verticalmente hacia arriba una piedra desde el suelo con rapidez inicial $v_0$. La piedra sube hasta su altura máxima $T$ y luego regresa al suelo (resistencia del aire despreciable). En el instante exacto en que alcanza el punto más alto $T$, ¿qué ocurre con su rapidez y su aceleración?",
       "opts": [
         "Su rapidez se hace cero instantáneamente ($v = 0$), pero su aceleración permanece constante e igual a $g$ dirigida hacia abajo.",
@@ -799,7 +798,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Planteamiento físico:** En un tiro vertical en el vacío, la única fuerza que actúa durante todo el vuelo (subida, ápice y bajada) es la fuerza de gravedad (peso: $P = mg$).\n**Paso 2. Análisis a mano:**\n- Rapidez en el punto más alto: La piedra frena hasta detener su ascenso: $v(t_{\\text{máx}}) = 0$.\n- Aceleración en el punto más alto: Por la 2da Ley de Newton, $a = \\frac{F_{\\text{neta}}}{m} = \\frac{-mg}{m} = -g \\approx 9.8\\text{ m/s}^2$ dirigida hacia el centro de la Tierra.\n- Si la aceleración fuera cero en el ápice, la piedra se quedaría flotando indefinidamente en el aire.\n**Paso 3. Conclusión:** $v = 0$, mientras que $a = g$ (constante y hacia abajo).\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-tiro-vertical"
     },
     {
       "id": "fis-19ago-04",
@@ -811,7 +811,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L05",
       "t": "Simetría de Tiro Vertical",
-      "fig": "fql19-tiro-vertical",
       "prompt": "En el mismo lanzamiento vertical de la piedra anterior, ésta pasa por un punto intermedio $Q$ a $15\\text{ m}$ de altura durante el ascenso y vuelve a pasar por $Q$ durante el descenso. Despreciando el rozamiento del aire, la rapidez de la piedra al pasar por $Q$ en la bajada es:",
       "opts": [
         "Exactamente igual a la rapidez que tenía al pasar por $Q$ durante la subida.",
@@ -822,7 +821,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Principio de conservación de la energía mecánica:** Al no existir rozamiento con el aire, la energía mecánica total se conserva en todo punto de la trayectoria: $E_m = E_c + E_p = \\text{constante}$.\n**Paso 2. Procedimiento a mano:**\n- En el punto $Q$ ($h = 15\\text{ m}$):\n  Subida: $E_m = \\frac{1}{2}m v_{\\text{subida}}^2 + mgh$\n  Bajada: $E_m = \\frac{1}{2}m v_{\\text{bajada}}^2 + mgh$\n- Igualando ambas ecuaciones:\n  $\\frac{1}{2}m v_{\\text{subida}}^2 + mgh = \\frac{1}{2}m v_{\\text{bajada}}^2 + mgh \\implies v_{\\text{bajada}} = v_{\\text{subida}}$.\n**Paso 3. Conclusión:** La rapidez (módulo de la velocidad) es rigurosamente idéntica a la misma altura en ascenso y descenso.\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-tiro-vertical"
     },
     {
       "id": "fis-19ago-05",
@@ -834,7 +834,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L16",
       "t": "Péndulo y Energía Cinética",
-      "fig": "fql19-pendulo",
       "prompt": "Un péndulo simple oscila libremente entre dos extremos laterales $A$ y $B$, pasando por su posición más baja de equilibrio $C$. Despreciando la fricción con el aire y en el pivote, ¿en qué punto de su recorrido la energía cinética de la masa pendular alcanza su valor máximo?",
       "opts": [
         "En el punto más bajo de su trayectoria (posición $C$).",
@@ -845,7 +844,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Conservación de energía mecánica:** $E_m = E_c + E_p = \\frac{1}{2}mv^2 + mgh = \\text{constante}$.\n**Paso 2. Procedimiento de balance energético:**\n- En los extremos $A$ y $B$: La altura $h$ es máxima ($E_p$ máxima) y el péndulo se detiene momentáneamente ($v = 0 \\implies E_c = 0$).\n- En el punto más bajo $C$: La altura $h$ es mínima ($E_p = 0$). Por conservación, toda la energía potencial se ha transformado en energía cinética ($E_c = E_m = \\text{máxima}$).\n**Paso 3. Conclusión:** La rapidez y la energía cinética son máximas al cruzar la vertical inferior (posición $C$).\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-pendulo-oscilante"
     },
     {
       "id": "fis-19ago-06",
@@ -857,7 +857,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L15",
       "t": "Energía Potencial Elástica",
-      "fig": "fql19-arco-flecha",
       "prompt": "Un arquero tensa la cuerda de su arco acumulando $120\\text{ J}$ de energía potencial elástica. Al soltar la flecha de $0.06\\text{ kg}$, ¿en qué forma de energía se convierte la mayor parte de dicha energía almacenada?",
       "opts": [
         "En energía cinética de traslación de la flecha en movimiento.",
@@ -880,7 +879,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L01",
       "t": "Experimento de Rampas de Galileo",
-      "fig": "fql19-rampa-galileo",
       "prompt": "Galileo Galilei analizó el movimiento de una esfera que desciende por un plano inclinado desde una altura $h$ y luego asciende por un plano opuesto. Si las superficies carecen por completo de fricción, ¿qué predice el principio de inercia y conservación respecto a la altura alcanzada en el plano opuesto?",
       "opts": [
         "La esfera subirá por el plano opuesto hasta alcanzar exactamente la misma altura inicial $h$ antes de detenerse momentáneamente.",
@@ -891,7 +889,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Principio físico de Galileo:** Galileo dedujo que en ausencia de rozamiento, la tendencia natural de los cuerpos es conservar su estado de movimiento.\n**Paso 2. Demostración por balance de energía:**\n- Inicio en rampa 1: $E_m = mgh + 0 = mgh$.\n- Valle (punto más bajo): $E_m = \\frac{1}{2}mv^2$.\n- Ascenso en rampa 2: Sube transformando $E_c$ en $E_p = mgh_{\\text{final}}$ hasta que $v=0$.\n- Igualando: $mgh = mgh_{\\text{final}} \\implies h_{\\text{final}} = h$.\n- No importa la inclinación del segundo plano (incluso si la rampa es muy tendida, recorrerá mayor distancia pero llegará exactamente a la altura $h$).\n**Paso 3. Conclusión:** La esfera alcanza exactamente la misma altura inicial $h$.\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-rampa-galileo"
     },
     {
       "id": "fis-19ago-08",
@@ -903,7 +902,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L07",
       "t": "Fricción Dinámica y Fuerza Doble",
-      "fig": "fql19-caja-roce",
       "prompt": "Se empuja una caja sobre un piso horizontal rugoso aplicando una fuerza constante $F$ horizontal, logrando que se desplace con rapidez constante $v_0$. Si repentinamente se duplica la fuerza aplicada a $2F$ manteniendo el mismo coeficiente de rozamiento, ¿cómo se comportará el movimiento de la caja?",
       "opts": [
         "Se moverá con aceleración constante positiva, aumentando su rapidez de forma continua.",
@@ -926,7 +924,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L13",
       "t": "Trabajo de Fuerza Gravitatoria",
-      "fig": "fql19-caja-rampa-vs-vertical",
       "prompt": "Se eleva una caja de masa $M$ desde el suelo hasta una plataforma a altura $H$. Se comparan dos métodos sin rozamiento: (1) levantarla verticalmente hacia arriba a velocidad constante, y (2) empujarla a lo largo de una rampa inclinada de longitud $L > H$. El trabajo neto realizado contra la gravedad en ambos métodos es:",
       "opts": [
         "Exactamente igual en ambos casos ($W = MgH$).",
@@ -937,7 +934,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Definición de trabajo de una fuerza conservativa:** La fuerza gravitatoria es conservativa; el trabajo realizado contra el peso depende exclusivamente de la diferencia de altura inicial y final, no de la trayectoria recorrida.\n**Paso 2. Cálculo a mano en ambos métodos:**\n- Método 1 (vertical): $W_1 = F_{\\text{vert}} \\cdot H = (Mg) \\cdot H = MgH$.\n- Método 2 (rampa con ángulo $\\theta$, donde $\\sin\\theta = H/L$):\n  Fuerza paralela al plano: $F_{\\text{rampa}} = Mg\\sin\\theta = Mg\\left(\\frac{H}{L}\\right)$.\n  Trabajo: $W_2 = F_{\\text{rampa}} \\cdot L = Mg\\left(\\frac{H}{L}\\right) \\cdot L = MgH$.\n**Paso 3. Conclusión:** La rampa reduce la fuerza requerida ($Mg\\sin\\theta < Mg$) a costa de aumentar la distancia ($L > H$), manteniendo el trabajo total exactamente igual: $W = MgH$.\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-rampa-vs-vertical"
     },
     {
       "id": "fis-19ago-10",
@@ -949,7 +947,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L10",
       "t": "Tirar de la Cuerda y Pares de Fuerzas",
-      "fig": "fql19-cuerda-tirar",
       "prompt": "Juan y Pedro tiran de los extremos opuestos de una cuerda ligera en un juego de tira y afloja sobre un piso liso. Si Juan tira con una fuerza de $350\\text{ N}$ hacia la izquierda y la cuerda se encuentra en equilibrio estático (inmóvil), ¿con qué fuerza tira Pedro hacia la derecha y cuál es la tensión en la cuerda?",
       "opts": [
         "Pedro tira con $350\\text{ N}$ y la tensión en cualquier punto de la cuerda es de $350\\text{ N}$.",
@@ -972,7 +969,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L03",
       "t": "Equilibrio Traslacional con 4 Fuerzas",
-      "fig": "fql19-puck-4fuerzas",
       "prompt": "Un disco de tejo de $0.5\\text{ kg}$ se desliza sobre hielo sin fricción sometido a 4 fuerzas coplanares concurrentes: $F_1 = 12\\text{ N}$ al Norte, $F_2 = 12\\text{ N}$ al Sur, $F_3 = 8\\text{ N}$ al Este y $F_4 = 8\\text{ N}$ al Oeste. ¿Cuál es el estado de movimiento del disco?",
       "opts": [
         "Se mueve en línea recta con velocidad constante (MRU) o permanece en reposo porque la fuerza neta es cero.",
@@ -983,7 +979,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Sumatoria de fuerzas vectoriales:**\n- Eje $y$ (Norte-Sur): $\\sum F_y = F_{\\text{Norte}} - F_{\\text{Sur}} = 12\\text{ N} - 12\\text{ N} = 0\\text{ N}$.\n- Eje $x$ (Este-Oeste): $\\sum F_x = F_{\\text{Este}} - F_{\\text{Oeste}} = 8\\text{ N} - 8\\text{ N} = 0\\text{ N}$.\n**Paso 2. Aplicación de la 1ra Ley de Newton:**\n- Fuerza neta resultante: $\\vec{F}_{\\text{neta}} = (0\\hat{i} + 0\\hat{j})\\text{ N} \\implies a = 0$.\n- Si la aceleración es nula, el cuerpo no cambia su velocidad: si estaba en reposo sigue en reposo; si ya se estaba deslizando, mantiene su velocidad constante en línea recta (MRU).\n**Paso 3. Conclusión:** Fuerza neta nula implica reposo o MRU.\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-disco-4fuerzas"
     },
     {
       "id": "fis-19ago-12",
@@ -995,7 +992,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L04",
       "t": "Sombra y Trigonometría",
-      "fig": "fql19-poste-sombra",
       "prompt": "Un poste vertical de altura $H$ proyecta en el suelo horizontal una sombra de longitud $S = 6\\text{ m}$. Si los rayos del sol inciden formando un ángulo de elevación de $30^\\circ$ respecto al suelo horizontal, ¿cuál es la altura exacta $H$ del poste? (Dato: $\\tan 30^\\circ = \\frac{\\sqrt{3}}{3} \\approx 0.577$)",
       "opts": [
         "$H = 2\\sqrt{3}\\text{ m} \\approx 3.46\\text{ m}$",
@@ -1006,7 +1002,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Planteamiento geométrico:** El poste vertical, la sombra en el suelo y el rayo solar forman un triángulo rectángulo con cateto opuesto $H$, cateto adyacente $S=6\\text{ m}$ y ángulo de elevación $\\theta = 30^\\circ$.\n**Paso 2. Procedimiento de cálculo a mano:**\n- Definición trigonométrica:\n  $\\tan 30^\\circ = \\frac{\\text{Cateto Opuesto}}{\\text{Cateto Adyacente}} = \\frac{H}{S}$\n- Despeje de la altura $H$:\n  $H = S \\cdot \\tan 30^\\circ = 6 \\cdot \\left(\\frac{\\sqrt{3}}{3}\\right) = \\frac{6\\sqrt{3}}{3} = 2\\sqrt{3}\\text{ m}$.\n- Valor decimal aproximado: $2 \\times 1.732 = 3.464\\text{ m}$.\n**Paso 3. Conclusión:** $H = 2\\sqrt{3}\\text{ m} \\approx 3.46\\text{ m}$.\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-poste-sombra"
     },
     {
       "id": "fis-19ago-13",
@@ -1018,7 +1015,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L09",
       "t": "Rozamiento Estático vs Cinético",
-      "fig": "fql19-caja-roce",
       "prompt": "Se coloca un bloque de $5\\text{ kg}$ en reposo sobre un plano horizontal con coeficientes de fricción $\\mu_s = 0.5$ y $\\mu_k = 0.3$ ($g=10\\text{ m/s}^2$). Se aplica gradualmente una fuerza horizontal $F$. ¿Cuál es la fuerza mínima requerida para iniciar el movimiento y cuál es la fuerza de fricción una vez que el bloque ya está en movimiento?",
       "opts": [
         "Fuerza para iniciar: $F > 25\\text{ N}$; fuerza de rozamiento en movimiento: $f_k = 15\\text{ N}$.",
@@ -1041,7 +1037,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L10",
       "t": "Camión y Auto en Empuje",
-      "fig": "fql19-choque-bloques",
       "prompt": "Un camión de $3000\\text{ kg}$ se coloca detrás de un auto averiado de $1000\\text{ kg}$ y lo empuja en línea recta acelerando a $1.5\\text{ m/s}^2$. Despreciando el rozamiento de las ruedas con el suelo, ¿cuál es la magnitud de la fuerza que el camión ejerce sobre el auto y la que el auto ejerce sobre el camión?",
       "opts": [
         "Ambas fuerzas tienen exactamente la misma magnitud de $1500\\text{ N}$, en sentidos opuestos.",
@@ -1064,7 +1059,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L11",
       "t": "MCU y Aceleración Centrípeta",
-      "fig": "fql19-puck-4fuerzas",
       "prompt": "Una partícula describe un Movimiento Circular Uniforme (MCU) en un plano horizontal con radio $R = 2\\text{ m}$ y rapidez constante $v = 6\\text{ m/s}$. ¿Cuál es el valor de su aceleración tangencial $a_t$ y de su aceleración centrípeta $a_c$?",
       "opts": [
         "$a_t = 0\\text{ m/s}^2$ y $a_c = 18\\text{ m/s}^2$ dirigida radialmente hacia el centro del círculo.",
@@ -1075,7 +1069,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Concepto de MCU:** En un MCU, la rapidez (módulo del vector velocidad) es constante, pero la dirección del vector velocidad cambia continuamente.\n**Paso 2. Cálculo a mano de las componentes de aceleración:**\n- Aceleración tangencial (tasa de cambio de la rapidez): $a_t = \\frac{dv}{dt} = 0$.\n- Aceleración centrípeta (responsable del cambio de dirección):\n  $a_c = \\frac{v^2}{R} = \\frac{6^2}{2} = \\frac{36}{2} = 18\\text{ m/s}^2$.\n- Dirección: Siempre orientada radialmente hacia el centro de la circunferencia.\n**Paso 3. Conclusión:** $a_t = 0$ y $a_c = 18\\text{ m/s}^2$ hacia el centro.\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-mcu-vectorial"
     },
     {
       "id": "fis-19ago-16",
@@ -1087,7 +1082,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L11",
       "t": "Fuerza Centrípeta en Giro",
-      "fig": "fql19-puck-4fuerzas",
       "prompt": "Un automóvil de $1200\\text{ kg}$ toma una curva circular plana de radio $R = 50\\text{ m}$ a una rapidez constante de $20\\text{ m/s}$. ¿Qué fuerza horizontal proporciona la aceleración centrípeta necesaria para que el auto no derrape hacia afuera?",
       "opts": [
         "La fuerza de rozamiento estático entre los neumáticos y el asfalto, de valor $9600\\text{ N}$ hacia el centro.",
@@ -1110,7 +1104,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L13",
       "t": "Cálculo de Potencia Mecánica",
-      "fig": "fql19-caja-roce",
       "prompt": "Un motor eléctrico ejerce una fuerza de tracción constante de $400\\text{ N}$ para desplazar una carga horizontalmente a una rapidez constante de $5\\text{ m/s}$ durante $20\\text{ segundos}$. ¿Qué potencia mecánica desarrolla el motor?",
       "opts": [
         "$2000\\text{ W} = 2.0\\text{ kW}$",
@@ -1133,7 +1126,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L08",
       "t": "Ley de Gravitación Universal",
-      "fig": "fql19-avion-bola",
       "prompt": "Dos masas puntuales se atraen con una fuerza gravitatoria $F_0$ cuando se encuentran a una distancia $d$. Si la distancia entre ellas se incrementa al doble ($2d$), ¿cuál es el nuevo valor de la fuerza gravitatoria de atracción entre ambas masas?",
       "opts": [
         "$\\frac{1}{4}F_0 = 0.25\\,F_0$",
@@ -1156,7 +1148,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L07",
       "t": "Segunda Ley con Masa Duplicada",
-      "fig": "fql19-caja-roce",
       "prompt": "Una fuerza neta horizontal constante $F$ acelera a un bloque de masa $m$ produciendo una aceleración $a_0 = 8\\text{ m/s}^2$ sobre una superficie sin fricción. Si se coloca encima otro bloque idéntico duplicando la masa total a $2m$ y se aplica exactamente la misma fuerza $F$, ¿cuál será la nueva aceleración del sistema?",
       "opts": [
         "$4\\text{ m/s}^2$ (la mitad de la aceleración original)",
@@ -1179,7 +1170,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L12",
       "t": "Conservación de Cantidad de Movimiento",
-      "fig": "fql19-pista-patinaje",
       "prompt": "Dos patinadores, una joven de $40\\text{ kg}$ y un joven de $80\\text{ kg}$, se encuentran inicialmente en reposo juntos sobre una pista de hielo sin fricción. De pronto se empujan mutuamente con las manos y se separan. Si la joven sale despedida hacia la izquierda a $4\\text{ m/s}$, ¿con qué velocidad y sentido se mueve el joven?",
       "opts": [
         "$2\\text{ m/s}$ hacia la derecha.",
@@ -1202,7 +1192,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L16",
       "t": "Rampa Curva y Conservación",
-      "fig": "fql19-rampa-galileo",
       "prompt": "Un bloque de $2\\text{ kg}$ se suelta desde el reposo en la parte superior de una rampa curva sin rozamiento de altura $h = 5\\text{ m}$. Al llegar a la base horizontal, ¿cuál es la rapidez del bloque? (Tome $g = 10\\text{ m/s}^2$)",
       "opts": [
         "$v = 10\\text{ m/s}$",
@@ -1225,7 +1214,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L13",
       "t": "Trabajo de Fuerza Normal",
-      "fig": "fql19-caja-roce",
       "prompt": "Un cuerpo de masa $m$ se desplaza una distancia horizontal $d = 8\\text{ m}$ sobre un piso horizontal. ¿Cuál es el trabajo realizado por la fuerza normal $N$ y por el peso $P$ durante este desplazamiento?",
       "opts": [
         "El trabajo de ambas fuerzas es $0\\text{ J}$ porque son estrictamente perpendiculares al desplazamiento ($90^\\circ$).",
@@ -1248,7 +1236,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L09",
       "t": "Velocidad Terminal y Resistencia del Aire",
-      "fig": "fql19-avion-bola",
       "prompt": "Un paracaidista salta de un avión y cae libremente durante varios segundos antes de abrir su paracaídas. A medida que su rapidez de caída aumenta, la fuerza de resistencia del aire $F_{\\text{aire}}$ se incrementa hasta igualar al peso $P = mg$. Cuando esto ocurre, ¿cómo es el movimiento del paracaidista a partir de ese instante?",
       "opts": [
         "Cae con velocidad constante (velocidad terminal), ya que la aceleración neta se hace cero ($a=0$).",
@@ -1271,7 +1258,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L03",
       "t": "Equilibrio con Cuerdas Simétricas",
-      "fig": "fql19-cuerda-tirar",
       "prompt": "Un semáforo de peso $W = 100\\text{ N}$ cuelga en reposo sostenido simétricamente por dos cables que forman un ángulo de $30^\\circ$ con la horizontal. ¿Cuál es la tensión $T$ en cada uno de los cables? (Dato: $\\sin 30^\\circ = 0.5$)",
       "opts": [
         "$T = 100\\text{ N}$",
@@ -1282,7 +1268,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Diagrama de cuerpo libre del nudo central:**\n- Hacia arriba: Componentes verticales de ambos cables: $2 \\cdot T\\sin 30^\\circ$.\n- Hacia abajo: Peso del semáforo: $W = 100\\text{ N}$.\n**Paso 2. Ecuación de equilibrio a mano:**\n- $\\sum F_y = 0 \\implies 2T\\sin 30^\\circ - W = 0$\n- Sustituyendo datos:\n  $2T(0.5) = 100 \\implies 1T = 100\\text{ N}$.\n**Paso 3. Conclusión:** La tensión en cada cable es de $100\\text{ N}$.\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-semaforo-cables"
     },
     {
       "id": "fis-19ago-25",
@@ -1294,7 +1281,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L14",
       "t": "Energía Cinética al Triplicar Rapidez",
-      "fig": "fql19-caja-roce",
       "prompt": "Un vehículo de masa $m$ viaja con rapidez $v_0$ teniendo una energía cinética $E_0$. Si el conductor acelera hasta triplicar su rapidez ($3v_0$), ¿cuántas veces aumenta su energía cinética respecto al valor original $E_0$?",
       "opts": [
         "Aumenta $9\\text{ veces}$ ($9E_0$).",
@@ -1317,7 +1303,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L15",
       "t": "Energía en Resorte Comprimido",
-      "fig": "fql19-arco-flecha",
       "prompt": "Un resorte helicoidal ideal con constante elástica $k = 400\\text{ N/m}$ se comprime una distancia $x = 0.1\\text{ m}$. Si luego se comprime el doble ($x = 0.2\\text{ m}$), ¿cuál es la energía potencial elástica almacenada en este segundo caso y cuántas veces aumentó?",
       "opts": [
         "$E_{pe} = 8.0\\text{ J}$ (aumentó $4\\text{ veces}$ respecto a los $2.0\\text{ J}$ iniciales).",
@@ -1340,7 +1325,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L06",
       "t": "Proyectil y Componentes de Velocidad",
-      "fig": "fql19-avion-bola",
       "prompt": "Un cañón dispara un proyectil con velocidad inicial $v_0 = 50\\text{ m/s}$ y un ángulo de elevación de $37^\\circ$ sobre la horizontal (considere $\\cos 37^\\circ = 0.8, \\sin 37^\\circ = 0.6$ y $g = 10\\text{ m/s}^2$). Despreciando el aire, ¿cuáles son las componentes horizontal ($v_x$) y vertical ($v_y$) de la velocidad al cabo de $2\\text{ segundos}$ de vuelo?",
       "opts": [
         "$v_x = 40\\text{ m/s}$ y $v_y = 10\\text{ m/s}$ hacia arriba.",
@@ -1363,8 +1347,7 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L04",
       "t": "Gráfica Velocidad-Tiempo y Desplazamiento",
-      "fig": "fql19-puck-4fuerzas",
-      "prompt": "En una gráfica de velocidad en función del tiempo ($v$ vs $t$), un móvil parte del reposo y acelera uniformemente hasta alcanzar $12\\text{ m/s}$ en $6\\text{ segundos}$. ¿Qué representa el área bajo la curva del gráfico y cuál es el desplazamiento total del móvil?",
+      "prompt": "En la gráfica de velocidad en función del tiempo ($v$ vs $t$) adjunta, un móvil parte del reposo y acelera uniformemente hasta alcanzar $12\\text{ m/s}$ en $6\\text{ segundos}$. ¿Qué representa el área bajo la curva del gráfico y cuál es el desplazamiento total del móvil?",
       "opts": [
         "Representa el desplazamiento realizado, que equivale a $\\Delta x = 36\\text{ m}$.",
         "Representa la aceleración media, que equivale a $2\\text{ m/s}^2$.",
@@ -1374,7 +1357,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Significado físico del área en $v-t$:** La integral del área bajo la curva de velocidad respecto al tiempo representa el desplazamiento neto $\\Delta x = \\int v\\,dt$.\n**Paso 2. Cálculo geométrico del área a mano:**\n- La figura formada desde $t=0$ hasta $t=6\\text{ s}$ es un triángulo rectángulo de base $b = 6\\text{ s}$ y altura $h = 12\\text{ m/s}$.\n- $\\text{Área} = \\frac{\\text{base} \\times \\text{altura}}{2} = \\frac{6\\text{ s} \\times 12\\text{ m/s}}{2} = \\frac{72}{2} = 36\\text{ m}$.\n**Paso 3. Conclusión:** El área representa el desplazamiento y su valor es $\\Delta x = 36\\text{ m}$.\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-grafica-vt"
     },
     {
       "id": "fis-19ago-29",
@@ -1386,7 +1370,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L04",
       "t": "Gráfica Velocidad-Tiempo y Pendiente",
-      "fig": "fql19-puck-4fuerzas",
       "prompt": "En la misma gráfica de velocidad versus tiempo ($v$ vs $t$) del móvil anterior (pasa de $0$ a $12\\text{ m/s}$ en $6\\text{ s}$), ¿qué representa físicamente la pendiente de la recta?",
       "opts": [
         "La aceleración instantánea y constante del móvil, con valor $a = 2\\text{ m/s}^2$.",
@@ -1397,7 +1380,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Significado de la pendiente en $v-t$:** La derivada de la velocidad respecto al tiempo es la aceleración: $a = \\frac{dv}{dt} = \\frac{\\Delta v}{\\Delta t}$.\n**Paso 2. Cálculo a mano:**\n- $\\Delta v = 12\\text{ m/s} - 0\\text{ m/s} = 12\\text{ m/s}$.\n- $\\Delta t = 6\\text{ s} - 0\\text{ s} = 6\\text{ s}$.\n- Pendiente: $m = \\frac{12}{6} = 2\\text{ m/s}^2$.\n**Paso 3. Conclusión:** La pendiente representa la aceleración constante ($a = 2\\text{ m/s}^2$).\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-grafica-vt"
     },
     {
       "id": "fis-19ago-30",
@@ -1409,7 +1393,6 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "fis-L12",
       "t": "Choque Inelástico y Conservación",
-      "fig": "fql19-choque-bloques",
       "prompt": "Un vagón de ferrocarril $A$ de $4000\\text{ kg}$ que se mueve a $3\\text{ m/s}$ sobre una vía horizontal sin fricción choca contra un vagón $B$ de $2000\\text{ kg}$ inicialmente en reposo. Tras el impacto, ambos vagones quedan acoplados y se mueven juntos. ¿Cuál es la velocidad común final del conjunto acoplado?",
       "opts": [
         "$v_f = 2.0\\text{ m/s}$ en la misma dirección del vagón inicial.",
@@ -1610,7 +1593,7 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "qui-L11",
       "t": "Estructura de Lewis del Amoníaco",
-      "prompt": "Al dibujar la estructura de Lewis de la molécula de amoníaco ($\\text{NH}_3$, donde el Nitrógeno tiene $Z=7$ y el Hidrógeno $Z=1$), ¿cuántos pares de electrones compartidos (enlaces simples) y cuántos pares libres (no enlazantes) posee el átomo central de nitrógeno?",
+      "prompt": "Al examinar la estructura de Lewis del amoníaco ($\\text{NH}_3$, donde el Nitrógeno tiene $Z=7$ y el Hidrógeno $Z=1$), ¿cuántos pares de electrones compartidos (enlaces simples) y cuántos pares libres (no enlazantes) posee el átomo central de nitrógeno?",
       "opts": [
         "3 pares compartidos (enlaces simples N-H) y 1 par de electrones libre.",
         "4 pares compartidos y 0 pares libres.",
@@ -1620,7 +1603,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Conteo de electrones de valencia totales:**\n- Nitrógeno (Grupo 15): $5\\, e^-$ de valencia.\n- 3 Hidrógenos: $3 \\times 1 = 3\\, e^-$.\n- Total de electrones = $5 + 3 = 8\\, e^-$ (4 pares de electrones).\n**Paso 2. Distribución de enlaces a mano:**\n- Se forman 3 enlaces simples $\\text{N}-\\text{H}$ (utilizando $3 \\times 2 = 6\\, e^-$).\n- Los $2\\, e^-$ restantes ($1\\text{ par}$) se ubican como un par solitario no enlazante sobre el nitrógeno completando su octeto.\n**Paso 3. Conclusión:** Posee 3 pares enlazantes y 1 par no enlazante (geometría piramidal trigonal).\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-lewis-nh3"
     },
     {
       "id": "qui-19ago-10",
@@ -1642,7 +1626,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Estructura de Lewis y RPECV del $\\text{CO}_2$:**\n$\\text{O}=\\text{C}=\\text{O}$. El carbono central no tiene pares libres y está unido a dos átomos de oxígeno mediante dobles enlaces.\n**Paso 2. Análisis vectorial de dipolos:**\n- Cada enlace $\\text{C}=\\text{O}$ es polar debido a la mayor electronegatividad del oxígeno ($\\Delta EN \\approx 1.0$).\n- La geometría es lineal con ángulo de $180^\\circ$.\n- Los dos vectores momento dipolar $\\vec{\\mu}_1$ y $\\vec{\\mu}_2$ apuntan en sentidos opuestos: $\\vec{\\mu}_{\\text{neto}} = \\vec{\\mu}_1 + \\vec{\\mu}_2 = \\mu\\hat{i} - \\mu\\hat{i} = 0$.\n**Paso 3. Conclusión:** La simetría lineal cancela los momentos dipolares individuales.\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-lewis-co2"
     },
     {
       "id": "qui-19ago-11",
@@ -1970,7 +1955,7 @@ window.GUIA_BANK_FQL_19AGO = {
         "$(1, 4, 3, 4)$"
       ],
       "ans": 0,
-      "exp": "**Paso 1. Balanceo de átomos paso a paso:**\n1. Carbono ($C$): Hay $3$ carbonos en reactivos ($\\text{C}_3\\text{H}_8$) $\\implies c = 3$ en $\\text{CO}_2$.\n2. Hidrógeno ($H$): Hay $8$ hidrógenos en reactivos $\\implies d = 4$ en $\\text{H}_2\\text{O}$ (pues $4 \\times 2 = 8$).\n3. Oxígeno ($O$): Contamos los oxígenos en productos:\n   $3\\,\\text{CO}_2 \\implies 3 \\times 2 = 6\\text{ oxígenos}$\n   $4\\,\\text{H}_2\\text{O} \\implies 4 \\times 1 = 4\\text{ oxígenos}$\n   Total en productos = $6 + 4 = 10\\text{ átomos de O}$.\n4. En reactivos: $b\\,\\text{O}_2 \\implies 2b = 10 \\implies b = 5$.\n**Paso 2. Verificación de coeficientes mínimos enteros:**\n$\\text{C}_3\\text{H}_8 + 5\\,\\text{O}_2 \\to 3\\,\\text{CO}_2 + 4\\,\\text{H}_2\\text{O} \\implies (1, 5, 3, 4)$.\n**Respuesta correcta: A.**",
+      "exp": "**Paso 1. Balanceo de átomos paso a paso:**\n1. Carbono ($C$): Hay $3$ carbonos en reactivos ($\\text{C}_3\\text{H}_8$) $\\implies c = 3$ en $\\text{CO}_2$.\n2. Hidrógeno ($H$): Hay $8$ hidrógenos en reactivos $\\implies d = 4$ en $\\text{H}_2\\text{O}$ (pues $4 \\times 2 = 8$).\n3. Oxígeno ($O$): Contamos los oxígenos en productos:\n   $3\\,\\text{CO}_2 \\implies 3 \\times 2 = 6\\text{ oxígenos}$\n   $4\\,\\text{H}_2\\text{O} \\implies 4 \\times 1 = 4\\text{ oxígenos}$\n   Total en productos = $6 + 4 = 10\\text{ átomos de O}$.\n4. En reactivos: $b\\,\\text{O}_2 \\implies 2b = 10 \\implies b = 5$.\n**Paso 2. Verificación de coeficientes mínimos enteros:**\n$\\text{C}_3\\text{H}_8 + 5\\,\\text{O}_2 \\to 3\\,\\text{CO}_2 + 4\\,\\text{H}_2\\text{O}$. Los números $1, 5, 3, 4$ no se pueden simplificar más.\n**Paso 3. Conclusión:** El conjunto de coeficientes estequiométricos es $(1, 5, 3, 4)$.\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": []
     },

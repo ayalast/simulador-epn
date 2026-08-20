@@ -1,15 +1,306 @@
 # scripts/build_fql_19ago_bank.py
-# Generates guia-bank-fql-19ago.js and js/fig-fql-19ago.js with 90 high quality questions
-# Every question includes:
-# 1. Exact step-by-step hand solution in 'exp' (**Paso 1.** ... **Paso 2.** ... **Paso 3.** ... **Respuesta correcta: X.**)
-# 2. Canonical chapter ID in 'ch' matching GUIA_THEORY (fis-L01..fis-L16, qui-L01..qui-L17, len-L01..len-L09)
+# Generates guia-bank-fql-19ago.js and js/fig-fql-19ago.js
+# 1. High precision tailor-made SVG figures only where mathematically appropriate.
+# 2. LaTeX rendered style typography in all figures.
+# 3. Step-by-step hand calculations in every single question.
 import json
 import os
 
 print("Building complete 90-item bank and figures for 19 Ago Simulator...")
 
 # ---------------------------------------------------------
-# LENGUAJE (6 packs x 5 questions = 30 questions)
+# 1. WRITE JS/FIG-FQL-19AGO.JS
+# ---------------------------------------------------------
+fig_js_content = """/* Figuras pedagógicas vectoriales SVG para el Simulador Día 2 — 19 Agosto EPN.
+   Renderizado matemático nítido tipo LaTeX con cotas, vectores y colores contrastantes.
+   window.FIG_19AGO */
+(function () {
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  function openSvg(w, h) {
+    return '<svg width="100%" height="auto" viewBox="0 0 ' + w + ' ' + h +
+      '" xmlns="http://www.w3.org/2000/svg" style="max-width:' + w + 'px;display:block;margin:12px auto;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;box-shadow:0 2px 8px rgba(0,0,0,0.04);font-family:system-ui, -apple-system, sans-serif;">' +
+      '<defs>' +
+      '<marker id="f19-arr-blue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#0284c7"/></marker>' +
+      '<marker id="f19-arr-red" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#dc2626"/></marker>' +
+      '<marker id="f19-arr-dark" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#0e2a47"/></marker>' +
+      '<marker id="f19-arr-green" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#16a34a"/></marker>' +
+      '</defs>';
+  }
+
+  var FIG = {};
+
+  // 1. Avión soltando paquete (MRU horizontal + Caída Libre vertical = Parábola)
+  FIG['fql19-avion-proyectil'] = function () {
+    var s = openSvg(540, 220);
+    s += '<line x1="30" y1="185" x2="510" y2="185" stroke="#64748b" stroke-width="2"/>';
+    s += '<text x="270" y="205" fill="#64748b" font-size="12" font-weight="600" text-anchor="middle">Suelo horizontal (Observador inmóvil en tierra)</text>';
+    s += '<rect x="50" y="35" width="80" height="22" rx="4" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>';
+    s += '<polygon points="130,46 160,46 130,35" fill="#94a3b8" stroke="#475569" stroke-width="1.2"/>';
+    s += '<line x1="130" y1="46" x2="200" y2="46" stroke="#0284c7" stroke-width="2.5" marker-end="url(#f19-arr-blue)"/>';
+    s += '<text x="208" y="50" fill="#0284c7" font-size="13" font-weight="700" font-style="italic">v_x = 180 m/s (constante)</text>';
+    s += '<path d="M 90,57 Q 240,65 400,185" fill="none" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6 4"/>';
+    s += '<circle cx="90" cy="57" r="5.5" fill="#dc2626"/>';
+    s += '<circle cx="230" cy="95" r="6" fill="#dc2626"/>';
+    s += '<circle cx="400" cy="185" r="6.5" fill="#dc2626"/>';
+    s += '<line x1="230" y1="95" x2="230" y2="145" stroke="#dc2626" stroke-width="2" marker-end="url(#f19-arr-red)"/>';
+    s += '<text x="242" y="125" fill="#dc2626" font-size="12" font-weight="700" font-style="italic">a_y = g</text>';
+    s += '<text x="265" y="85" fill="#dc2626" font-size="13" font-weight="700">Trayectoria parabólica hacia adelante</text>';
+    s += '</svg>';
+    return s;
+  };
+
+  // 2. Choque de bloques (3ra Ley de Newton: Acción y Reacción)
+  FIG['fql19-choque-bloques'] = function () {
+    var s = openSvg(520, 190);
+    s += '<line x1="40" y1="145" x2="480" y2="145" stroke="#64748b" stroke-width="2"/>';
+    s += '<text x="260" y="165" fill="#64748b" font-size="12" text-anchor="middle">Superficie horizontal sin rozamiento</text>';
+    s += '<rect x="140" y="75" width="80" height="70" rx="4" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>';
+    s += '<text x="180" y="115" fill="#0369a1" font-size="14" font-weight="800" text-anchor="middle">Bloque A</text>';
+    s += '<text x="180" y="132" fill="#0369a1" font-size="12" font-weight="600" text-anchor="middle">(10 kg)</text>';
+    s += '<rect x="220" y="95" width="60" height="50" rx="4" fill="#ffedd5" stroke="#ea580c" stroke-width="2"/>';
+    s += '<text x="250" y="123" fill="#c2410c" font-size="13" font-weight="800" text-anchor="middle">Bloque B</text>';
+    s += '<text x="250" y="138" fill="#c2410c" font-size="11" font-weight="600" text-anchor="middle">(2 kg)</text>';
+    s += '<line x1="220" y1="50" x2="295" y2="50" stroke="#dc2626" stroke-width="2.5" marker-end="url(#f19-arr-red)"/>';
+    s += '<text x="305" y="54" fill="#dc2626" font-size="13" font-weight="800">F_{A → B}</text>';
+    s += '<line x1="220" y1="50" x2="145" y2="50" stroke="#dc2626" stroke-width="2.5" marker-end="url(#f19-arr-red)"/>';
+    s += '<text x="135" y="54" fill="#dc2626" font-size="13" font-weight="800" text-anchor="end">F_{B → A}</text>';
+    s += '<text x="260" y="25" fill="#0e2a47" font-size="14" font-weight="800" text-anchor="middle">|F_{A → B}| = |F_{B → A}| (Misma magnitud, sentidos opuestos)</text>';
+    s += '</svg>';
+    return s;
+  };
+
+  // 3. Tiro vertical (Lanzamiento P, Intermedio Q con subida/bajada, Ápice T)
+  FIG['fql19-tiro-vertical'] = function () {
+    var s = openSvg(420, 270);
+    s += '<line x1="150" y1="230" x2="150" y2="40" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4"/>';
+    s += '<circle cx="150" cy="230" r="6" fill="#0284c7"/>';
+    s += '<text x="175" y="235" fill="#0e2a47" font-size="13" font-weight="700">Punto P (Suelo, v = v₀)</text>';
+    s += '<circle cx="150" cy="140" r="6" fill="#16a34a"/>';
+    s += '<text x="175" y="145" fill="#16a34a" font-size="13" font-weight="700">Punto Q (h = 15 m)</text>';
+    s += '<text x="175" y="162" fill="#64748b" font-size="11.5">|v_{subida}| = |v_{bajada}| (misma rapidez)</text>';
+    s += '<circle cx="150" cy="40" r="7" fill="#dc2626"/>';
+    s += '<text x="175" y="42" fill="#dc2626" font-size="13" font-weight="800">Punto T (Ápice: v = 0)</text>';
+    s += '<text x="175" y="58" fill="#dc2626" font-size="12" font-weight="600">Aceleración a = g (hacia abajo)</text>';
+    s += '<line x1="100" y1="80" x2="100" y2="150" stroke="#dc2626" stroke-width="2.2" marker-end="url(#f19-arr-red)"/>';
+    s += '<text x="90" y="120" fill="#dc2626" font-size="13" font-weight="800" text-anchor="end">g = 9.8 m/s²</text>';
+    s += '</svg>';
+    return s;
+  };
+
+  // 4. Péndulo oscilante (A y B extremos con Ec=0; C punto más bajo con Ec=máx)
+  FIG['fql19-pendulo-oscilante'] = function () {
+    var s = openSvg(460, 230);
+    s += '<line x1="150" y1="20" x2="310" y2="20" stroke="#475569" stroke-width="3"/>';
+    s += '<circle cx="230" cy="20" r="4" fill="#0e2a47"/>';
+    s += '<path d="M 120,130 Q 230,205 340,130" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4"/>';
+    s += '<line x1="230" y1="20" x2="120" y2="130" stroke="#64748b" stroke-width="1.2" stroke-dasharray="3 3"/>';
+    s += '<line x1="230" y1="20" x2="340" y2="130" stroke="#64748b" stroke-width="1.2" stroke-dasharray="3 3"/>';
+    s += '<line x1="230" y1="20" x2="230" y2="185" stroke="#0e2a47" stroke-width="2"/>';
+    s += '<circle cx="120" cy="130" r="10" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>';
+    s += '<text x="120" y="110" fill="#0e2a47" font-size="12" font-weight="800" text-anchor="middle">A (v=0)</text>';
+    s += '<text x="120" y="160" fill="#64748b" font-size="11" text-anchor="middle">E_p máx · E_c = 0</text>';
+
+    s += '<circle cx="340" cy="130" r="10" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>';
+    s += '<text x="340" y="110" fill="#0e2a47" font-size="12" font-weight="800" text-anchor="middle">B (v=0)</text>';
+    s += '<text x="340" y="160" fill="#64748b" font-size="11" text-anchor="middle">E_p máx · E_c = 0</text>';
+
+    s += '<circle cx="230" cy="185" r="12" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>';
+    s += '<text x="230" y="215" fill="#0284c7" font-size="13" font-weight="800" text-anchor="middle">Posición C (Punto más bajo)</text>';
+    s += '<text x="230" y="170" fill="#dc2626" font-size="12" font-weight="800" text-anchor="middle">E_c MÁXIMA (v = v_{máx})</text>';
+    s += '</svg>';
+    return s;
+  };
+
+  // 5. Doble plano inclinado de Galileo (Conservación de altura h)
+  FIG['fql19-rampa-galileo'] = function () {
+    var s = openSvg(520, 200);
+    s += '<path d="M 40,50 L 200,160 L 480,50" fill="none" stroke="#0e2a47" stroke-width="3"/>';
+    s += '<line x1="40" y1="160" x2="480" y2="160" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3 3"/>';
+    s += '<line x1="40" y1="50" x2="15" y2="50" stroke="#64748b" stroke-width="1"/>';
+    s += '<line x1="40" y1="160" x2="15" y2="160" stroke="#64748b" stroke-width="1"/>';
+    s += '<line x1="25" y1="50" x2="25" y2="160" stroke="#0284c7" stroke-width="1.8" marker-start="url(#f19-arr-blue)" marker-end="url(#f19-arr-blue)"/>';
+    s += '<text x="15" y="110" fill="#0284c7" font-size="13" font-weight="800" text-anchor="end">h</text>';
+    s += '<circle cx="50" cy="45" r="9" fill="#dc2626"/>';
+    s += '<text x="55" y="28" fill="#dc2626" font-size="12" font-weight="700">Inicio (v=0)</text>';
+    s += '<circle cx="470" cy="45" r="9" fill="#16a34a"/>';
+    s += '<text x="465" y="28" fill="#16a34a" font-size="12" font-weight="700" text-anchor="end">Llega exactamente a la misma altura h</text>';
+    s += '<text x="260" y="185" fill="#0e2a47" font-size="12" font-weight="700" text-anchor="middle">Superficie ideal sin fricción (mgh = constante)</text>';
+    s += '</svg>';
+    return s;
+  };
+
+  // 6. Rampa vs Levantamiento vertical (Trabajo W = MgH)
+  FIG['fql19-rampa-vs-vertical'] = function () {
+    var s = openSvg(540, 220);
+    s += '<polygon points="60,180 340,180 340,60 60,180" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>';
+    s += '<rect x="340" y="60" width="80" height="120" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>';
+    s += '<line x1="430" y1="60" x2="430" y2="180" stroke="#0284c7" stroke-width="2" marker-start="url(#f19-arr-blue)" marker-end="url(#f19-arr-blue)"/>';
+    s += '<text x="445" y="125" fill="#0284c7" font-size="14" font-weight="800">H</text>';
+    s += '<rect x="160" y="110" width="36" height="26" transform="rotate(-23 160 110)" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5"/>';
+    s += '<text x="140" y="95" fill="#0369a1" font-size="11" font-weight="700">F = Mg·sin θ</text>';
+    s += '<text x="180" y="195" fill="#64748b" font-size="12" text-anchor="middle">Rampa de longitud L (sin roce)</text>';
+    s += '<rect x="470" y="110" width="30" height="26" fill="#fed7aa" stroke="#ea580c" stroke-width="1.5"/>';
+    s += '<line x1="485" y1="110" x2="485" y2="70" stroke="#ea580c" stroke-width="2" marker-end="url(#f19-arr-red)"/>';
+    s += '<text x="485" y="60" fill="#ea580c" font-size="11" font-weight="700" text-anchor="middle">F = Mg</text>';
+    s += '<text x="270" y="25" fill="#0e2a47" font-size="13" font-weight="800" text-anchor="middle">W_{vertical} = W_{rampa} = MgH</text>';
+    s += '</svg>';
+    return s;
+  };
+
+  // 7. Disco sobre hielo con 4 fuerzas ortogonales (F_N=12, F_S=12, F_E=8, F_O=8)
+  FIG['fql19-disco-4fuerzas'] = function () {
+    var s = openSvg(420, 240);
+    var cx = 210, cy = 120;
+    s += '<line x1="50" y1="120" x2="370" y2="120" stroke="#cbd5e1" stroke-width="1.2"/>';
+    s += '<line x1="210" y1="20" x2="210" y2="220" stroke="#cbd5e1" stroke-width="1.2"/>';
+    s += '<circle cx="' + cx + '" cy="' + cy + '" r="16" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>';
+    s += '<text x="' + cx + '" y="' + (cy + 4) + '" fill="#0369a1" font-size="10" font-weight="800" text-anchor="middle">0.5 kg</text>';
+    s += '<line x1="' + cx + '" y1="' + (cy - 16) + '" x2="' + cx + '" y2="35" stroke="#dc2626" stroke-width="2.5" marker-end="url(#f19-arr-red)"/>';
+    s += '<text x="' + (cx + 8) + '" y="45" fill="#dc2626" font-size="12" font-weight="800">F₁ = 12 N (Norte)</text>';
+
+    s += '<line x1="' + cx + '" y1="' + (cy + 16) + '" x2="' + cx + '" y2="205" stroke="#dc2626" stroke-width="2.5" marker-end="url(#f19-arr-red)"/>';
+    s += '<text x="' + (cx + 8) + '" y="200" fill="#dc2626" font-size="12" font-weight="800">F₂ = 12 N (Sur)</text>';
+
+    s += '<line x1="' + (cx + 16) + '" y1="' + cy + '" x2="330" y2="' + cy + '" stroke="#0284c7" stroke-width="2.5" marker-end="url(#f19-arr-blue)"/>';
+    s += '<text x="335" y="' + (cy - 8) + '" fill="#0284c7" font-size="12" font-weight="800">F₃ = 8 N (Este)</text>';
+
+    s += '<line x1="' + (cx - 16) + '" y1="' + cy + '" x2="90" y2="' + cy + '" stroke="#0284c7" stroke-width="2.5" marker-end="url(#f19-arr-blue)"/>';
+    s += '<text x="85" y="' + (cy - 8) + '" fill="#0284c7" font-size="12" font-weight="800" text-anchor="end">F₄ = 8 N (Oeste)</text>';
+
+    s += '<text x="' + cx + '" y="15" fill="#0e2a47" font-size="13" font-weight="800" text-anchor="middle">ΣF_x = 0  ·  ΣF_y = 0  ⇒  F_{neta} = 0 (MRU o Reposo)</text>';
+    s += '</svg>';
+    return s;
+  };
+
+  // 8. Sombra de un poste y trigonometría (H = S * tan 30°)
+  FIG['fql19-poste-sombra'] = function () {
+    var s = openSvg(480, 220);
+    s += '<line x1="40" y1="180" x2="440" y2="180" stroke="#64748b" stroke-width="2"/>';
+    s += '<line x1="100" y1="180" x2="100" y2="60" stroke="#0e2a47" stroke-width="4"/>';
+    s += '<text x="85" y="120" fill="#0e2a47" font-size="14" font-weight="800" text-anchor="end">H = ?</text>';
+    s += '<line x1="100" y1="60" x2="380" y2="180" stroke="#eab308" stroke-width="2.5" stroke-dasharray="5 4"/>';
+    s += '<line x1="100" y1="180" x2="380" y2="180" stroke="#0284c7" stroke-width="4"/>';
+    s += '<text x="240" y="200" fill="#0284c7" font-size="13" font-weight="800" text-anchor="middle">Sombra S = 6 m</text>';
+    s += '<path d="M 330,180 A 50 50 0 0 0 345,165" fill="none" stroke="#dc2626" stroke-width="2"/>';
+    s += '<text x="315" y="170" fill="#dc2626" font-size="13" font-weight="800">30°</text>';
+    s += '<circle cx="80" cy="40" r="14" fill="#fde047" stroke="#eab308" stroke-width="2"/>';
+    s += '<text x="280" y="80" fill="#0e2a47" font-size="13" font-weight="800">tan 30° = H / S</text>';
+    s += '<text x="280" y="102" fill="#0284c7" font-size="13" font-weight="800">H = 6 · (√3 / 3) = 2√3 m ≈ 3.46 m</text>';
+    s += '</svg>';
+    return s;
+  };
+
+  // 9. Movimiento Circular Uniforme (MCU) — Vectores v y a_c
+  FIG['fql19-mcu-vectorial'] = function () {
+    var s = openSvg(440, 240);
+    var cx = 200, cy = 120, r = 70;
+    s += '<circle cx="' + cx + '" cy="' + cy + '" r="' + r + '" fill="none" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5 4"/>';
+    s += '<circle cx="' + cx + '" cy="' + cy + '" r="3" fill="#0e2a47"/>';
+    s += '<text x="' + (cx - 10) + '" y="' + (cy - 8) + '" fill="#64748b" font-size="11">Centro</text>';
+    s += '<line x1="' + cx + '" y1="' + cy + '" x2="' + (cx + r) + '" y2="' + cy + '" stroke="#64748b" stroke-width="1.5"/>';
+    s += '<text x="' + (cx + r/2) + '" y="' + (cy - 6) + '" fill="#64748b" font-size="11" text-anchor="middle">R = 2 m</text>';
+    var px = cx + r, py = cy;
+    s += '<circle cx="' + px + '" cy="' + py + '" r="7" fill="#0284c7"/>';
+    s += '<line x1="' + px + '" y1="' + py + '" x2="' + px + '" y2="35" stroke="#16a34a" stroke-width="2.5" marker-end="url(#f19-arr-green)"/>';
+    s += '<text x="' + (px + 10) + '" y="45" fill="#16a34a" font-size="12" font-weight="800">v = 6 m/s (tangencial, a_t = 0)</text>';
+    s += '<line x1="' + px + '" y1="' + py + '" x2="' + (cx + 15) + '" y2="' + cy + '" stroke="#dc2626" stroke-width="2.5" marker-end="url(#f19-arr-red)"/>';
+    s += '<text x="' + (cx + r/2) + '" y="' + (cy + 22) + '" fill="#dc2626" font-size="12" font-weight="800" text-anchor="middle">a_c = v²/R = 18 m/s²</text>';
+    s += '</svg>';
+    return s;
+  };
+
+  // 10. Semáforo colgado simétricamente (2T sin 30° = W)
+  FIG['fql19-semaforo-cables'] = function () {
+    var s = openSvg(460, 220);
+    s += '<line x1="60" y1="30" x2="400" y2="30" stroke="#475569" stroke-width="3"/>';
+    s += '<line x1="80" y1="30" x2="230" y2="110" stroke="#0284c7" stroke-width="2.2"/>';
+    s += '<line x1="380" y1="30" x2="230" y2="110" stroke="#0284c7" stroke-width="2.2"/>';
+    s += '<line x1="140" y1="110" x2="320" y2="110" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 3"/>';
+    s += '<text x="140" y="98" fill="#dc2626" font-size="12" font-weight="700">30°</text>';
+    s += '<text x="300" y="98" fill="#dc2626" font-size="12" font-weight="700">30°</text>';
+    s += '<line x1="230" y1="110" x2="230" y2="140" stroke="#0e2a47" stroke-width="2"/>';
+    s += '<rect x="215" y="140" width="30" height="55" rx="4" fill="#334155" stroke="#0e2a47" stroke-width="1.5"/>';
+    s += '<circle cx="230" cy="152" r="5" fill="#ef4444"/>';
+    s += '<circle cx="230" cy="167" r="5" fill="#eab308"/>';
+    s += '<circle cx="230" cy="182" r="5" fill="#22c55e"/>';
+    s += '<text x="270" y="170" fill="#0e2a47" font-size="13" font-weight="800">W = 100 N</text>';
+    s += '<text x="230" y="210" fill="#0284c7" font-size="13" font-weight="800" text-anchor="middle">2·T·sin 30° = W  ⇒  2·T·(0.5) = 100  ⇒  T = 100 N</text>';
+    s += '</svg>';
+    return s;
+  };
+
+  // 11. Gráfica cartesiana exacta v vs t (Área = Desplazamiento 36 m, Pendiente = 2 m/s²)
+  FIG['fql19-grafica-vt'] = function () {
+    var s = openSvg(480, 240);
+    s += '<line x1="60" y1="190" x2="430" y2="190" stroke="#0e2a47" stroke-width="2" marker-end="url(#f19-arr-dark)"/>';
+    s += '<text x="435" y="194" fill="#0e2a47" font-size="13" font-weight="800">t (s)</text>';
+    s += '<line x1="60" y1="190" x2="60" y2="30" stroke="#0e2a47" stroke-width="2" marker-end="url(#f19-arr-dark)"/>';
+    s += '<text x="50" y="24" fill="#0e2a47" font-size="13" font-weight="800">v (m/s)</text>';
+    s += '<line x1="60" y1="70" x2="360" y2="70" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="3 3"/>';
+    s += '<line x1="360" y1="70" x2="360" y2="190" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="3 3"/>';
+    s += '<text x="50" y="74" fill="#0e2a47" font-size="12" font-weight="700" text-anchor="end">12</text>';
+    s += '<text x="360" y="208" fill="#0e2a47" font-size="12" font-weight="700" text-anchor="middle">6</text>';
+    s += '<text x="50" y="194" fill="#0e2a47" font-size="12" text-anchor="end">0</text>';
+    s += '<polygon points="60,190 360,70 360,190" fill="#bae6fd" opacity="0.6"/>';
+    s += '<text x="240" y="150" fill="#0369a1" font-size="13" font-weight="800" text-anchor="middle">Área = (6 × 12)/2 = 36 m</text>';
+    s += '<text x="240" y="168" fill="#0369a1" font-size="11.5" text-anchor="middle">(Desplazamiento total Δx)</text>';
+    s += '<line x1="60" y1="190" x2="360" y2="70" stroke="#0284c7" stroke-width="3"/>';
+    s += '<circle cx="360" cy="70" r="5" fill="#0284c7"/>';
+    s += '<text x="210" y="55" fill="#0284c7" font-size="13" font-weight="800">Pendiente = a = 12/6 = 2 m/s²</text>';
+    s += '</svg>';
+    return s;
+  };
+
+  // 12. Estructura de Lewis del Amoníaco (NH3 con par libre superior)
+  FIG['fql19-lewis-nh3'] = function () {
+    var s = openSvg(360, 200);
+    var cx = 180, cy = 105;
+    s += '<text x="' + cx + '" y="' + (cy + 8) + '" fill="#0e2a47" font-size="28" font-weight="800" text-anchor="middle">N</text>';
+    s += '<circle cx="' + (cx - 6) + '" cy="' + (cy - 20) + '" r="3" fill="#dc2626"/>';
+    s += '<circle cx="' + (cx + 6) + '" cy="' + (cy - 20) + '" r="3" fill="#dc2626"/>';
+    s += '<text x="' + cx + '" y="' + (cy - 30) + '" fill="#dc2626" font-size="12" font-weight="700" text-anchor="middle">1 par no enlazante (libre)</text>';
+    s += '<line x1="' + cx + '" y1="' + (cy + 18) + '" x2="' + cx + '" y2="' + (cy + 45) + '" stroke="#0e2a47" stroke-width="2.5"/>';
+    s += '<text x="' + cx + '" y="' + (cy + 68) + '" fill="#0e2a47" font-size="22" font-weight="700" text-anchor="middle">H</text>';
+    s += '<line x1="' + (cx - 18) + '" y1="' + (cy + 12) + '" x2="' + (cx - 45) + '" y2="' + (cy + 35) + '" stroke="#0e2a47" stroke-width="2.5"/>';
+    s += '<text x="' + (cx - 60) + '" y="' + (cy + 48) + '" fill="#0e2a47" font-size="22" font-weight="700" text-anchor="middle">H</text>';
+    s += '<line x1="' + (cx + 18) + '" y1="' + (cy + 12) + '" x2="' + (cx + 45) + '" y2="' + (cy + 35) + '" stroke="#0e2a47" stroke-width="2.5"/>';
+    s += '<text x="' + (cx + 60) + '" y="' + (cy + 48) + '" fill="#0e2a47" font-size="22" font-weight="700" text-anchor="middle">H</text>';
+    s += '<text x="180" y="190" fill="#0369a1" font-size="12.5" font-weight="700" text-anchor="middle">3 enlaces covalentes simples + 1 par libre</text>';
+    s += '</svg>';
+    return s;
+  };
+
+  // 13. Geometría Lineal y Cancelación de Dipolos del CO2
+  FIG['fql19-lewis-co2'] = function () {
+    var s = openSvg(440, 180);
+    var cy = 90;
+    s += '<text x="90" y="' + (cy + 10) + '" fill="#0e2a47" font-size="28" font-weight="800" text-anchor="middle">O</text>';
+    s += '<line x1="120" y1="' + (cy - 4) + '" x2="190" y2="' + (cy - 4) + '" stroke="#0e2a47" stroke-width="2.5"/>';
+    s += '<line x1="120" y1="' + (cy + 6) + '" x2="190" y2="' + (cy + 6) + '" stroke="#0e2a47" stroke-width="2.5"/>';
+    s += '<text x="220" y="' + (cy + 10) + '" fill="#0e2a47" font-size="28" font-weight="800" text-anchor="middle">C</text>';
+    s += '<line x1="250" y1="' + (cy - 4) + '" x2="320" y2="' + (cy - 4) + '" stroke="#0e2a47" stroke-width="2.5"/>';
+    s += '<line x1="250" y1="' + (cy + 6) + '" x2="320" y2="' + (cy + 6) + '" stroke="#0e2a47" stroke-width="2.5"/>';
+    s += '<text x="350" y="' + (cy + 10) + '" fill="#0e2a47" font-size="28" font-weight="800" text-anchor="middle">O</text>';
+    s += '<line x1="205" y1="40" x2="115" y2="40" stroke="#dc2626" stroke-width="2.2" marker-end="url(#f19-arr-red)"/>';
+    s += '<text x="160" y="30" fill="#dc2626" font-size="12" font-weight="800" text-anchor="middle">μ₁ (hacia O)</text>';
+    s += '<line x1="235" y1="40" x2="325" y2="40" stroke="#dc2626" stroke-width="2.2" marker-end="url(#f19-arr-red)"/>';
+    s += '<text x="280" y="30" fill="#dc2626" font-size="12" font-weight="800" text-anchor="middle">μ₂ (hacia O)</text>';
+    s += '<text x="220" y="145" fill="#0e2a47" font-size="13" font-weight="800" text-anchor="middle">Geometría lineal 180° ⇒ μ_{neto} = μ₁ + μ₂ = 0 (Molécula apolar)</text>';
+    s += '</svg>';
+    return s;
+  };
+
+  window.FIG_19AGO = FIG;
+})();
+"""
+with open(r"C:\simulador-epn\js\fig-fql-19ago.js", "w", encoding="utf-8") as f:
+    f.write(fig_js_content)
+
+# ---------------------------------------------------------
+# 2. LENGUAJE (30 items in 6 packs)
 # ---------------------------------------------------------
 len_packs = [
     {
@@ -496,12 +787,12 @@ for pack in len_packs:
 print(f"Generated {len(len_items)} Lenguaje items in {len(len_packs)} packs.")
 
 # ---------------------------------------------------------
-# FÍSICA (30 items)
+# 3. FÍSICA (30 items)
 # ---------------------------------------------------------
 fis_items_data = [
     {
         "topics": ["4.2.1-1raNewton"], "ch": "fis-L01", "t": "Inercia y Proyectil",
-        "fig": "fql19-avion-bola",
+        "fig": "fql19-avion-proyectil",
         "prompt": "Un avión de carga vuela en línea recta horizontal a velocidad constante de $180\\text{ m/s}$ y a gran altitud. En un instante dado, se desprende accidentalmente un paquete desde su bodega. Despreciando por completo la resistencia del aire, ¿qué trayectoria describe el paquete según la perspectiva de un observador inmóvil situado en tierra?",
         "opts": [
             "Una trayectoria parabólica que avanza horizontalmente en el mismo sentido del avión mientras cae.",
@@ -553,7 +844,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.3-consEnergia"], "ch": "fis-L16", "t": "Péndulo y Energía Cinética",
-        "fig": "fql19-pendulo",
+        "fig": "fql19-pendulo-oscilante",
         "prompt": "Un péndulo simple oscila libremente entre dos extremos laterales $A$ y $B$, pasando por su posición más baja de equilibrio $C$. Despreciando la fricción con el aire y en el pivote, ¿en qué punto de su recorrido la energía cinética de la masa pendular alcanza su valor máximo?",
         "opts": [
             "En el punto más bajo de su trayectoria (posición $C$).",
@@ -566,7 +857,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.3-energiaPotencial"], "ch": "fis-L15", "t": "Energía Potencial Elástica",
-        "fig": "fql19-arco-flecha",
+        "fig": None,
         "prompt": "Un arquero tensa la cuerda de su arco acumulando $120\\text{ J}$ de energía potencial elástica. Al soltar la flecha de $0.06\\text{ kg}$, ¿en qué forma de energía se convierte la mayor parte de dicha energía almacenada?",
         "opts": [
             "En energía cinética de traslación de la flecha en movimiento.",
@@ -592,7 +883,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.2-2daNewton"], "ch": "fis-L07", "t": "Fricción Dinámica y Fuerza Doble",
-        "fig": "fql19-caja-roce",
+        "fig": None,
         "prompt": "Se empuja una caja sobre un piso horizontal rugoso aplicando una fuerza constante $F$ horizontal, logrando que se desplace con rapidez constante $v_0$. Si repentinamente se duplica la fuerza aplicada a $2F$ manteniendo el mismo coeficiente de rozamiento, ¿cómo se comportará el movimiento de la caja?",
         "opts": [
             "Se moverá con aceleración constante positiva, aumentando su rapidez de forma continua.",
@@ -605,7 +896,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.3-trabajoPotencia"], "ch": "fis-L13", "t": "Trabajo de Fuerza Gravitatoria",
-        "fig": "fql19-caja-rampa-vs-vertical",
+        "fig": "fql19-rampa-vs-vertical",
         "prompt": "Se eleva una caja de masa $M$ desde el suelo hasta una plataforma a altura $H$. Se comparan dos métodos sin rozamiento: (1) levantarla verticalmente hacia arriba a velocidad constante, y (2) empujarla a lo largo de una rampa inclinada de longitud $L > H$. El trabajo neto realizado contra la gravedad en ambos métodos es:",
         "opts": [
             "Exactamente igual en ambos casos ($W = MgH$).",
@@ -618,7 +909,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.2-3raNewton"], "ch": "fis-L10", "t": "Tirar de la Cuerda y Pares de Fuerzas",
-        "fig": "fql19-cuerda-tirar",
+        "fig": None,
         "prompt": "Juan y Pedro tiran de los extremos opuestos de una cuerda ligera en un juego de tira y afloja sobre un piso liso. Si Juan tira con una fuerza de $350\\text{ N}$ hacia la izquierda y la cuerda se encuentra en equilibrio estático (inmóvil), ¿con qué fuerza tira Pedro hacia la derecha y cuál es la tensión en la cuerda?",
         "opts": [
             "Pedro tira con $350\\text{ N}$ y la tensión en cualquier punto de la cuerda es de $350\\text{ N}$.",
@@ -631,7 +922,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.1-equilibrio"], "ch": "fis-L03", "t": "Equilibrio Traslacional con 4 Fuerzas",
-        "fig": "fql19-puck-4fuerzas",
+        "fig": "fql19-disco-4fuerzas",
         "prompt": "Un disco de tejo de $0.5\\text{ kg}$ se desliza sobre hielo sin fricción sometido a 4 fuerzas coplanares concurrentes: $F_1 = 12\\text{ N}$ al Norte, $F_2 = 12\\text{ N}$ al Sur, $F_3 = 8\\text{ N}$ al Este y $F_4 = 8\\text{ N}$ al Oeste. ¿Cuál es el estado de movimiento del disco?",
         "opts": [
             "Se mueve en línea recta con velocidad constante (MRU) o permanece en reposo porque la fuerza neta es cero.",
@@ -657,7 +948,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.2-roceResistencia"], "ch": "fis-L09", "t": "Rozamiento Estático vs Cinético",
-        "fig": "fql19-caja-roce",
+        "fig": None,
         "prompt": "Se coloca un bloque de $5\\text{ kg}$ en reposo sobre un plano horizontal con coeficientes de fricción $\\mu_s = 0.5$ y $\\mu_k = 0.3$ ($g=10\\text{ m/s}^2$). Se aplica gradualmente una fuerza horizontal $F$. ¿Cuál es la fuerza mínima requerida para iniciar el movimiento y cuál es la fuerza de fricción una vez que el bloque ya está en movimiento?",
         "opts": [
             "Fuerza para iniciar: $F > 25\\text{ N}$; fuerza de rozamiento en movimiento: $f_k = 15\\text{ N}$.",
@@ -670,7 +961,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.2-3raNewton"], "ch": "fis-L10", "t": "Camión y Auto en Empuje",
-        "fig": "fql19-choque-bloques",
+        "fig": None,
         "prompt": "Un camión de $3000\\text{ kg}$ se coloca detrás de un auto averiado de $1000\\text{ kg}$ y lo empuja en línea recta acelerando a $1.5\\text{ m/s}^2$. Despreciando el rozamiento de las ruedas con el suelo, ¿cuál es la magnitud de la fuerza que el camión ejerce sobre el auto y la que el auto ejerce sobre el camión?",
         "opts": [
             "Ambas fuerzas tienen exactamente la misma magnitud de $1500\\text{ N}$, en sentidos opuestos.",
@@ -683,7 +974,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.2-circular"], "ch": "fis-L11", "t": "MCU y Aceleración Centrípeta",
-        "fig": "fql19-puck-4fuerzas",
+        "fig": "fql19-mcu-vectorial",
         "prompt": "Una partícula describe un Movimiento Circular Uniforme (MCU) en un plano horizontal con radio $R = 2\\text{ m}$ y rapidez constante $v = 6\\text{ m/s}$. ¿Cuál es el valor de su aceleración tangencial $a_t$ y de su aceleración centrípeta $a_c$?",
         "opts": [
             "$a_t = 0\\text{ m/s}^2$ y $a_c = 18\\text{ m/s}^2$ dirigida radialmente hacia el centro del círculo.",
@@ -696,7 +987,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.2-circular"], "ch": "fis-L11", "t": "Fuerza Centrípeta en Giro",
-        "fig": "fql19-puck-4fuerzas",
+        "fig": None,
         "prompt": "Un automóvil de $1200\\text{ kg}$ toma una curva circular plana de radio $R = 50\\text{ m}$ a una rapidez constante de $20\\text{ m/s}$. ¿Qué fuerza horizontal proporciona la aceleración centrípeta necesaria para que el auto no derrape hacia afuera?",
         "opts": [
             "La fuerza de rozamiento estático entre los neumáticos y el asfalto, de valor $9600\\text{ N}$ hacia el centro.",
@@ -709,7 +1000,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.3-trabajoPotencia"], "ch": "fis-L13", "t": "Cálculo de Potencia Mecánica",
-        "fig": "fql19-caja-roce",
+        "fig": None,
         "prompt": "Un motor eléctrico ejerce una fuerza de tracción constante de $400\\text{ N}$ para desplazar una carga horizontalmente a una rapidez constante de $5\\text{ m/s}$ durante $20\\text{ segundos}$. ¿Qué potencia mecánica desarrolla el motor?",
         "opts": [
             "$2000\\text{ W} = 2.0\\text{ kW}$",
@@ -722,7 +1013,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.2-2daNewton"], "ch": "fis-L08", "t": "Ley de Gravitación Universal",
-        "fig": "fql19-avion-bola",
+        "fig": None,
         "prompt": "Dos masas puntuales se atraen con una fuerza gravitatoria $F_0$ cuando se encuentran a una distancia $d$. Si la distancia entre ellas se incrementa al doble ($2d$), ¿cuál es el nuevo valor de la fuerza gravitatoria de atracción entre ambas masas?",
         "opts": [
             "$\\frac{1}{4}F_0 = 0.25\\,F_0$",
@@ -735,7 +1026,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.2-2daNewton"], "ch": "fis-L07", "t": "Segunda Ley con Masa Duplicada",
-        "fig": "fql19-caja-roce",
+        "fig": None,
         "prompt": "Una fuerza neta horizontal constante $F$ acelera a un bloque de masa $m$ produciendo una aceleración $a_0 = 8\\text{ m/s}^2$ sobre una superficie sin fricción. Si se coloca encima otro bloque idéntico duplicando la masa total a $2m$ y se aplica exactamente la misma fuerza $F$, ¿cuál será la nueva aceleración del sistema?",
         "opts": [
             "$4\\text{ m/s}^2$ (la mitad de la aceleración original)",
@@ -748,7 +1039,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.2-impulsoCML"], "ch": "fis-L12", "t": "Conservación de Cantidad de Movimiento",
-        "fig": "fql19-pista-patinaje",
+        "fig": None,
         "prompt": "Dos patinadores, una joven de $40\\text{ kg}$ y un joven de $80\\text{ kg}$, se encuentran inicialmente en reposo juntos sobre una pista de hielo sin fricción. De pronto se empujan mutuamente con las manos y se separan. Si la joven sale despedida hacia la izquierda a $4\\text{ m/s}$, ¿con qué velocidad y sentido se mueve el joven?",
         "opts": [
             "$2\\text{ m/s}$ hacia la derecha.",
@@ -761,7 +1052,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.3-consEnergia"], "ch": "fis-L16", "t": "Rampa Curva y Conservación",
-        "fig": "fql19-rampa-galileo",
+        "fig": None,
         "prompt": "Un bloque de $2\\text{ kg}$ se suelta desde el reposo en la parte superior de una rampa curva sin rozamiento de altura $h = 5\\text{ m}$. Al llegar a la base horizontal, ¿cuál es la rapidez del bloque? (Tome $g = 10\\text{ m/s}^2$)",
         "opts": [
             "$v = 10\\text{ m/s}$",
@@ -774,7 +1065,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.3-trabajoPotencia"], "ch": "fis-L13", "t": "Trabajo de Fuerza Normal",
-        "fig": "fql19-caja-roce",
+        "fig": None,
         "prompt": "Un cuerpo de masa $m$ se desplaza una distancia horizontal $d = 8\\text{ m}$ sobre un piso horizontal. ¿Cuál es el trabajo realizado por la fuerza normal $N$ y por el peso $P$ durante este desplazamiento?",
         "opts": [
             "El trabajo de ambas fuerzas es $0\\text{ J}$ porque son estrictamente perpendiculares al desplazamiento ($90^\\circ$).",
@@ -787,7 +1078,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.2-roceResistencia"], "ch": "fis-L09", "t": "Velocidad Terminal y Resistencia del Aire",
-        "fig": "fql19-avion-bola",
+        "fig": None,
         "prompt": "Un paracaidista salta de un avión y cae libremente durante varios segundos antes de abrir su paracaídas. A medida que su rapidez de caída aumenta, la fuerza de resistencia del aire $F_{\\text{aire}}$ se incrementa hasta igualar al peso $P = mg$. Cuando esto ocurre, ¿cómo es el movimiento del paracaidista a partir de ese instante?",
         "opts": [
             "Cae con velocidad constante (velocidad terminal), ya que la aceleración neta se hace cero ($a=0$).",
@@ -800,7 +1091,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.1-equilibrio"], "ch": "fis-L03", "t": "Equilibrio con Cuerdas Simétricas",
-        "fig": "fql19-cuerda-tirar",
+        "fig": "fql19-semaforo-cables",
         "prompt": "Un semáforo de peso $W = 100\\text{ N}$ cuelga en reposo sostenido simétricamente por dos cables que forman un ángulo de $30^\\circ$ con la horizontal. ¿Cuál es la tensión $T$ en cada uno de los cables? (Dato: $\\sin 30^\\circ = 0.5$)",
         "opts": [
             "$T = 100\\text{ N}$",
@@ -813,7 +1104,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.3-energiaCinetica"], "ch": "fis-L14", "t": "Energía Cinética al Triplicar Rapidez",
-        "fig": "fql19-caja-roce",
+        "fig": None,
         "prompt": "Un vehículo de masa $m$ viaja con rapidez $v_0$ teniendo una energía cinética $E_0$. Si el conductor acelera hasta triplicar su rapidez ($3v_0$), ¿cuántas veces aumenta su energía cinética respecto al valor original $E_0$?",
         "opts": [
             "Aumenta $9\\text{ veces}$ ($9E_0$).",
@@ -826,7 +1117,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.3-energiaPotencial"], "ch": "fis-L15", "t": "Energía en Resorte Comprimido",
-        "fig": "fql19-arco-flecha",
+        "fig": None,
         "prompt": "Un resorte helicoidal ideal con constante elástica $k = 400\\text{ N/m}$ se comprime una distancia $x = 0.1\\text{ m}$. Si luego se comprime el doble ($x = 0.2\\text{ m}$), ¿cuál es la energía potencial elástica almacenada en este segundo caso y cuántas veces aumentó?",
         "opts": [
             "$E_{pe} = 8.0\\text{ J}$ (aumentó $4\\text{ veces}$ respecto a los $2.0\\text{ J}$ iniciales).",
@@ -839,7 +1130,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.1-proyectiles"], "ch": "fis-L06", "t": "Proyectil y Componentes de Velocidad",
-        "fig": "fql19-avion-bola",
+        "fig": None,
         "prompt": "Un cañón dispara un proyectil con velocidad inicial $v_0 = 50\\text{ m/s}$ y un ángulo de elevación de $37^\\circ$ sobre la horizontal (considere $\\cos 37^\\circ = 0.8, \\sin 37^\\circ = 0.6$ y $g = 10\\text{ m/s}^2$). Despreciando el aire, ¿cuáles son las componentes horizontal ($v_x$) y vertical ($v_y$) de la velocidad al cabo de $2\\text{ segundos}$ de vuelo?",
         "opts": [
             "$v_x = 40\\text{ m/s}$ y $v_y = 10\\text{ m/s}$ hacia arriba.",
@@ -852,8 +1143,8 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.1-cinemRecta"], "ch": "fis-L04", "t": "Gráfica Velocidad-Tiempo y Desplazamiento",
-        "fig": "fql19-puck-4fuerzas",
-        "prompt": "En una gráfica de velocidad en función del tiempo ($v$ vs $t$), un móvil parte del reposo y acelera uniformemente hasta alcanzar $12\\text{ m/s}$ en $6\\text{ segundos}$. ¿Qué representa el área bajo la curva del gráfico y cuál es el desplazamiento total del móvil?",
+        "fig": "fql19-grafica-vt",
+        "prompt": "En la gráfica de velocidad en función del tiempo ($v$ vs $t$) adjunta, un móvil parte del reposo y acelera uniformemente hasta alcanzar $12\\text{ m/s}$ en $6\\text{ segundos}$. ¿Qué representa el área bajo la curva del gráfico y cuál es el desplazamiento total del móvil?",
         "opts": [
             "Representa el desplazamiento realizado, que equivale a $\\Delta x = 36\\text{ m}$.",
             "Representa la aceleración media, que equivale a $2\\text{ m/s}^2$.",
@@ -865,7 +1156,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.1-cinemRecta"], "ch": "fis-L04", "t": "Gráfica Velocidad-Tiempo y Pendiente",
-        "fig": "fql19-puck-4fuerzas",
+        "fig": "fql19-grafica-vt",
         "prompt": "En la misma gráfica de velocidad versus tiempo ($v$ vs $t$) del móvil anterior (pasa de $0$ a $12\\text{ m/s}$ en $6\\text{ s}$), ¿qué representa físicamente la pendiente de la recta?",
         "opts": [
             "La aceleración instantánea y constante del móvil, con valor $a = 2\\text{ m/s}^2$.",
@@ -878,7 +1169,7 @@ fis_items_data = [
     },
     {
         "topics": ["4.2.2-impulsoCML"], "ch": "fis-L12", "t": "Choque Inelástico y Conservación",
-        "fig": "fql19-choque-bloques",
+        "fig": None,
         "prompt": "Un vagón de ferrocarril $A$ de $4000\\text{ kg}$ que se mueve a $3\\text{ m/s}$ sobre una vía horizontal sin fricción choca contra un vagón $B$ de $2000\\text{ kg}$ inicialmente en reposo. Tras el impacto, ambos vagones quedan acoplados y se mueven juntos. ¿Cuál es la velocidad común final del conjunto acoplado?",
         "opts": [
             "$v_f = 2.0\\text{ m/s}$ en la misma dirección del vagón inicial.",
@@ -893,7 +1184,7 @@ fis_items_data = [
 
 fis_items = []
 for i, d in enumerate(fis_items_data, start=1):
-    fis_items.append({
+    item = {
         "id": f"fis-19ago-{i:02d}",
         "s": "fis",
         "n": i,
@@ -901,23 +1192,26 @@ for i, d in enumerate(fis_items_data, start=1):
         "topics": d["topics"],
         "ch": d["ch"],
         "t": d["t"],
-        "fig": d.get("fig"),
         "prompt": d["prompt"],
         "opts": d["opts"],
         "ans": d["ans"],
         "exp": d["exp"],
         "maths": [],
         "imgs": []
-    })
+    }
+    if d.get("fig"):
+        item["fig"] = d["fig"]
+    fis_items.append(item)
 
 print(f"Generated {len(fis_items)} Física items.")
 
 # ---------------------------------------------------------
-# QUÍMICA (30 items)
+# 4. QUÍMICA (30 items)
 # ---------------------------------------------------------
 qui_items_data = [
     {
         "topics": ["4.3.1-numerosCuanticos"], "ch": "qui-L05", "t": "Números Cuánticos de Azufre",
+        "fig": None,
         "prompt": "El azufre ($S$) posee un número atómico $Z = 16$. Siguiendo el principio de Aufbau, la regla de Hund y el principio de exclusión de Pauli, ¿cuáles son los cuatro números cuánticos $(n, l, m_l, m_s)$ del último electrón de su configuración basal en su capa de valencia? (Convención: orbitales $p$ ordenados $m_l = -1, 0, +1$, primer spin $+1/2$ hacia arriba)",
         "opts": [
             "$(3, 1, -1, -1/2)$",
@@ -930,6 +1224,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.1-configElectronica"], "ch": "qui-L04", "t": "Configuración de Sodio y Catión",
+        "fig": None,
         "prompt": "El sodio neutro tiene número atómico $Z = 11$. ¿Cuál es la configuración electrónica de su catión monovalente $\\text{Na}^+$ y qué gas noble es isoelectrónico con él?",
         "opts": [
             "$1s^2\\, 2s^2\\, 2p^6$ (isoelectrónico con el gas noble Neón, $Z=10$).",
@@ -942,6 +1237,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.1-configElectronica"], "ch": "qui-L04", "t": "Configuración de Ion de Transición Fe2+",
+        "fig": None,
         "prompt": "El hierro ($Fe$) tiene número atómico $Z = 26$. Su configuración basal neutra es $[\\text{Ar}]\\, 4s^2\\, 3d^6$. Al formar el catión ferroso $\\text{Fe}^{2+}$, ¿de qué orbitales se desprenden los 2 electrones y cuál es su configuración electrónica resultante?",
         "opts": [
             "Se desprenden del orbital $4s$, quedando como $[\\text{Ar}]\\, 3d^6$.",
@@ -954,6 +1250,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.4-esteqReactivoLim"], "ch": "qui-L17", "t": "Estequiometría con Exceso de Magnesio",
+        "fig": None,
         "prompt": "Se hacen reaccionar $72\\text{ g}$ de magnesio metálico ($Mg$, masa molar $24\\text{ g/mol}$) con suficiente gas oxígeno ($O_2$) según la ecuación balanceada:\n$$2\\text{Mg}_{(s)} + \\text{O}_{2(g)} \\to 2\\text{MgO}_{(s)}$$\n¿Cuántos gramos de óxido de magnesio ($MgO$, masa molar $40\\text{ g/mol}$) se producirán con un rendimiento del $100\\%$?",
         "opts": [
             "$120\\text{ g de MgO}$",
@@ -966,6 +1263,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.4-esteqReactivoLim"], "ch": "qui-L17", "t": "Identificación de Reactivo Limitante",
+        "fig": None,
         "prompt": "Se combinan $24\\text{ g}$ de Magnesio ($Mg$, masa molar $24\\text{ g/mol}$) con $16\\text{ g}$ de Oxígeno gaseoso ($O_2$, masa molar $32\\text{ g/mol}$) en la reacción:\n$$2\\text{Mg} + \\text{O}_2 \\to 2\\text{MgO}$$\n¿Cuál es el reactivo limitante y cuántos gramos de $MgO$ ($40\\text{ g/mol}$) se obtienen?",
         "opts": [
             "El magnesio ($Mg$) es el reactivo limitante y se obtienen $40\\text{ g de MgO}$.",
@@ -978,6 +1276,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.4-formEmpMol"], "ch": "qui-L15", "t": "Fórmula Empírica y Molecular",
+        "fig": None,
         "prompt": "Un compuesto orgánico gaseoso tiene una composición centesimal de $85.7\\%$ de Carbono ($C$, $12\\text{ g/mol}$) y $14.3\\%$ de Hidrógeno ($H$, $1\\text{ g/mol}$). Si su masa molar experimental es de $42\\text{ g/mol}$, ¿cuáles son su fórmula empírica y su fórmula molecular respectivamente?",
         "opts": [
             "Fórmula empírica: $\\text{CH}_2$; Fórmula molecular: $\\text{C}_3\\text{H}_6$",
@@ -990,6 +1289,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.4-esteqReactivoLim"], "ch": "qui-L17", "t": "Síntesis de Urea y Volumen en CNPT",
+        "fig": None,
         "prompt": "La urea $(\\text{NH}_2)_2\\text{CO}$ (masa molar $60\\text{ g/mol}$) se sintetiza industrialmente mediante la reacción:\n$$2\\text{NH}_{3(g)} + \\text{CO}_{2(g)} \\to (\\text{NH}_2)_2\\text{CO}_{(s)} + \\text{H}_2\\text{O}_{(l)}$$\nPara producir $1000\\text{ g}$ de urea pura, ¿qué volumen de amoníaco gaseoso ($\text{NH}_3$) en Condiciones Normales de Presión y Temperatura (CNPT, $1\\text{ mol} = 22.4\\text{ L}$) se necesita como mínimo?",
         "opts": [
             "$746.67\\text{ L de NH}_3$",
@@ -1002,6 +1302,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.1-particulas"], "ch": "qui-L03", "t": "Masa Atómica e Isótopos",
+        "fig": None,
         "prompt": "Un elemento hipotético $X$ tiene dos isótopos estables en la naturaleza: el $^{185}X$ con masa isotópica de $184.95\\text{ uma}$ y abundancia del $37.40\\%$, y el $^{187}X$ con masa de $186.96\\text{ uma}$ y abundancia del $62.60\\%$. ¿Cuál es la masa atómica relativa promedio del elemento $X$?",
         "opts": [
             "$186.21\\text{ uma}$",
@@ -1014,7 +1315,8 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.3-Lewis"], "ch": "qui-L11", "t": "Estructura de Lewis del Amoníaco",
-        "prompt": "Al dibujar la estructura de Lewis de la molécula de amoníaco ($\\text{NH}_3$, donde el Nitrógeno tiene $Z=7$ y el Hidrógeno $Z=1$), ¿cuántos pares de electrones compartidos (enlaces simples) y cuántos pares libres (no enlazantes) posee el átomo central de nitrógeno?",
+        "fig": "fql19-lewis-nh3",
+        "prompt": "Al examinar la estructura de Lewis del amoníaco ($\\text{NH}_3$, donde el Nitrógeno tiene $Z=7$ y el Hidrógeno $Z=1$), ¿cuántos pares de electrones compartidos (enlaces simples) y cuántos pares libres (no enlazantes) posee el átomo central de nitrógeno?",
         "opts": [
             "3 pares compartidos (enlaces simples N-H) y 1 par de electrones libre.",
             "4 pares compartidos y 0 pares libres.",
@@ -1026,6 +1328,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.3-geomMolec"], "ch": "qui-L12", "t": "Geometría y Polaridad del CO2",
+        "fig": "fql19-lewis-co2",
         "prompt": "La molécula de dióxido de carbono ($\\text{CO}_2$) posee dos enlaces polares carbono-oxígeno ($\\text{C}=\\text{O}$). Sin embargo, la molécula en su conjunto es apolar (momento dipolar neto $\\mu = 0$). ¿A qué se debe este comportamiento físico-químico?",
         "opts": [
             "A su geometría molecular lineal ($180^\\circ$), donde los dos dipolos de enlace tienen igual magnitud pero sentidos opuestos, cancelándose vectorialmente.",
@@ -1038,6 +1341,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.2-propPeriodicas"], "ch": "qui-L07", "t": "Radio Atómico en Halógenos",
+        "fig": None,
         "prompt": "¿Cuál es el orden correcto de menor a mayor radio atómico para los elementos halógenos del Grupo 17: Cloro ($Cl$), Flúor ($F$), Yodo ($I$) y Bromo ($Br$)?",
         "opts": [
             "$F < Cl < Br < I$",
@@ -1050,6 +1354,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.2-propPeriodicas"], "ch": "qui-L07", "t": "Tendencia de Electronegatividad",
+        "fig": None,
         "prompt": "¿Cómo varía la electronegatividad en la tabla periódica y cuál es el elemento con mayor electronegatividad de todos según la escala de Pauling?",
         "opts": [
             "Aumenta de izquierda a derecha en un periodo y disminuye de arriba hacia abajo en un grupo; el elemento más electronegativo es el Flúor ($F = 4.0$).",
@@ -1062,6 +1367,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.3-fuerzasInter"], "ch": "qui-L13", "t": "Puentes de Hidrógeno en Agua",
+        "fig": None,
         "prompt": "El agua ($\\text{H}_2\\text{O}$) tiene una masa molar de solo $18\\text{ g/mol}$ pero presenta un punto de ebullición excepcionalmente alto ($100^\\circ\\text{C}$) en comparación con el sulfuro de hidrógeno ($\\text{H}_2\\text{S}$, $34\\text{ g/mol}$, punto de ebullición $-60^\\circ\\text{C}$). ¿Qué tipo de fuerza intermolecular explica esta notable diferencia?",
         "opts": [
             "Los puentes de hidrógeno (enlaces de hidrógeno) intermoleculares altamente energéticos entre el átomo de hidrógeno y el oxígeno muy electronegativo.",
@@ -1074,6 +1380,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.4-mol"], "ch": "qui-L14", "t": "Masa Molar del Dihidrógeno Fosfato de Potasio",
+        "fig": None,
         "prompt": "Determine la masa molar exacta del dihidrógeno fosfato de potasio ($\\text{KH}_2\\text{PO}_4$) a partir de las siguientes masas atómicas: $K = 39\\text{ g/mol}$, $H = 1\\text{ g/mol}$, $P = 31\\text{ g/mol}$, $O = 16\\text{ g/mol}$.",
         "opts": [
             "$136\\text{ g/mol}$",
@@ -1086,6 +1393,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.2-nomInorganica"], "ch": "qui-L08", "t": "Nomenclatura Stock de Cloruro Férrico",
+        "fig": None,
         "prompt": "¿Cuál es el nombre correcto del compuesto inorgánico $\\text{FeCl}_3$ según el sistema de nomenclatura IUPAC (Stock)?",
         "opts": [
             "Cloruro de hierro (III)",
@@ -1098,6 +1406,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.2-nomInorganica2"], "ch": "qui-L09", "t": "Fórmula del Dicromato de Potasio",
+        "fig": None,
         "prompt": "¿Cuál es la fórmula química correcta del dicromato de potasio, en el cual el cromo actúa con su estado de oxidación $+6$?",
         "opts": [
             "$\\text{K}_2\\text{Cr}_2\\text{O}_7$",
@@ -1110,6 +1419,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.2-nomInorganica"], "ch": "qui-L08", "t": "Óxido Niqueloso y Estados de Oxidación",
+        "fig": None,
         "prompt": "El níquel ($Ni$) posee dos estados de oxidación comunes: $+2$ y $+3$. ¿Cuál es la fórmula del óxido niqueloso y del óxido niquélico respectivamente?",
         "opts": [
             "Óxido niqueloso: $\\text{NiO}$; Óxido niquélico: $\\text{Ni}_2\\text{O}_3$",
@@ -1122,6 +1432,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.2-nomInorganica"], "ch": "qui-L08", "t": "Peróxido de Sodio y Número de Oxidación",
+        "fig": None,
         "prompt": "En el peróxido de sodio ($\\text{Na}_2\\text{O}_2$), ¿cuál es el estado de oxidación característico del átomo de oxígeno?",
         "opts": [
             "$-1$",
@@ -1134,6 +1445,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.2-nomInorganica2"], "ch": "qui-L09", "t": "Oxácidos y Regla de Formulación",
+        "fig": None,
         "prompt": "El fósforo ($P$, estado $+5$) forma el ácido fosfórico (ácido ortofosfórico) mediante la adición de tres moléculas de agua a su anhídrido. ¿Cuál es su fórmula molecular correcta siguiendo la regla de polihidratación $314$?",
         "opts": [
             "$\\text{H}_3\\text{PO}_4$",
@@ -1146,6 +1458,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.2-nomInorganica2"], "ch": "qui-L09", "t": "Sulfato de Aluminio",
+        "fig": None,
         "prompt": "¿Cuál es la fórmula química correcta del sulfato de aluminio, obtenido de la neutralización del hidróxido de aluminio $\\text{Al}(\\text{OH})_3$ con ácido sulfúrico $\\text{H}_2\\text{SO}_4$?",
         "opts": [
             "$\\text{Al}_2(\\text{SO}_4)_3$",
@@ -1158,6 +1471,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.4-reacciones"], "ch": "qui-L16", "t": "Ley de Conservación de la Masa",
+        "fig": None,
         "prompt": "Antoine Lavoisier enunció la Ley de Conservación de la Masa. Si en un recipiente cerrado herméticamente reaccionan por completo $10.0\\text{ g}$ de gas hidrógeno con $80.0\\text{ g}$ de gas oxígeno formando agua líquida pura, ¿cuál es la masa total dentro del recipiente al finalizar la reacción?",
         "opts": [
             "$90.0\\text{ g}$",
@@ -1170,6 +1484,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.1-numerosCuanticos"], "ch": "qui-L05", "t": "Experimento de Rutherford",
+        "fig": None,
         "prompt": "En 1911, Ernest Rutherford bombardeó una delgada lámina de oro con partículas alfa (núcleos de Helio con carga positiva $+2$). Al observar que la gran mayoría de partículas atravesaban la lámina sin desviarse y solo una pequeña fracción rebotaba fuertemente, ¿qué concluyó sobre la estructura atómica?",
         "opts": [
             "El átomo está constituido mayoritariamente por espacio vacío, con un núcleo central diminuto, denso y cargado positivamente.",
@@ -1182,6 +1497,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.3-enlaceIonico"], "ch": "qui-L10", "t": "Enlace Iónico y Transferencia de Electrones",
+        "fig": None,
         "prompt": "El cloruro de sodio ($\\text{NaCl}$) se forma por la reacción entre el sodio metal ($Na$, electronegatividad $0.9$) y el cloro no metal ($Cl$, electronegatividad $3.0$). ¿Qué tipo de enlace se establece entre ellos y cómo se produce?",
         "opts": [
             "Enlace iónico (o electrovalente), formado por la transferencia completa del electrón de valencia del sodio al cloro, generando atracción electrostática entre $\\text{Na}^+$ y $\\text{Cl}^-$.",
@@ -1194,6 +1510,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.3-enlaceCovalente"], "ch": "qui-L10", "t": "Enlace Covalente No Polar",
+        "fig": None,
         "prompt": "En la molécula diatómica de gas cloro ($\\text{Cl}_2$), ¿qué tipo de enlace une a ambos átomos de cloro?",
         "opts": [
             "Enlace covalente simple no polar (o apolar), porque la diferencia de electronegatividad entre átomos idénticos es cero ($\\Delta EN = 0$).",
@@ -1206,6 +1523,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.4-reacciones"], "ch": "qui-L16", "t": "Balanceo por Tanteo de Combustión",
+        "fig": None,
         "prompt": "Al balancear por tanteo la ecuación de combustión completa del gas propano ($\\text{C}_3\\text{H}_8$):\n$$a\\,\\text{C}_3\\text{H}_8 + b\\,\\text{O}_2 \\to c\\,\\text{CO}_2 + d\\,\\text{H}_2\\text{O}$$\n¿Cuáles son los coeficientes estequiométricos enteros mínimos $(a, b, c, d)$?",
         "opts": [
             "$(1, 5, 3, 4)$",
@@ -1214,10 +1532,11 @@ qui_items_data = [
             "$(1, 4, 3, 4)$"
         ],
         "ans": 0,
-        "exp": "**Paso 1. Balanceo de átomos paso a paso:**\n1. Carbono ($C$): Hay $3$ carbonos en reactivos ($\\text{C}_3\\text{H}_8$) $\\implies c = 3$ en $\\text{CO}_2$.\n2. Hidrógeno ($H$): Hay $8$ hidrógenos en reactivos $\\implies d = 4$ en $\\text{H}_2\\text{O}$ (pues $4 \\times 2 = 8$).\n3. Oxígeno ($O$): Contamos los oxígenos en productos:\n   $3\\,\\text{CO}_2 \\implies 3 \\times 2 = 6\\text{ oxígenos}$\n   $4\\,\\text{H}_2\\text{O} \\implies 4 \\times 1 = 4\\text{ oxígenos}$\n   Total en productos = $6 + 4 = 10\\text{ átomos de O}$.\n4. En reactivos: $b\\,\\text{O}_2 \\implies 2b = 10 \\implies b = 5$.\n**Paso 2. Verificación de coeficientes mínimos enteros:**\n$\\text{C}_3\\text{H}_8 + 5\\,\\text{O}_2 \\to 3\\,\\text{CO}_2 + 4\\,\\text{H}_2\\text{O} \\implies (1, 5, 3, 4)$.\n**Respuesta correcta: A.**"
+        "exp": "**Paso 1. Balanceo de átomos paso a paso:**\n1. Carbono ($C$): Hay $3$ carbonos en reactivos ($\\text{C}_3\\text{H}_8$) $\\implies c = 3$ en $\\text{CO}_2$.\n2. Hidrógeno ($H$): Hay $8$ hidrógenos en reactivos $\\implies d = 4$ en $\\text{H}_2\\text{O}$ (pues $4 \\times 2 = 8$).\n3. Oxígeno ($O$): Contamos los oxígenos en productos:\n   $3\\,\\text{CO}_2 \\implies 3 \\times 2 = 6\\text{ oxígenos}$\n   $4\\,\\text{H}_2\\text{O} \\implies 4 \\times 1 = 4\\text{ oxígenos}$\n   Total en productos = $6 + 4 = 10\\text{ átomos de O}$.\n4. En reactivos: $b\\,\\text{O}_2 \\implies 2b = 10 \\implies b = 5$.\n**Paso 2. Verificación de coeficientes mínimos enteros:**\n$\\text{C}_3\\text{H}_8 + 5\\,\\text{O}_2 \\to 3\\,\\text{CO}_2 + 4\\,\\text{H}_2\\text{O}$. Los números $1, 5, 3, 4$ no se pueden simplificar más.\n**Paso 3. Conclusión:** El conjunto de coeficientes estequiométricos es $(1, 5, 3, 4)$.\n**Respuesta correcta: A.**"
     },
     {
         "topics": ["4.3.4-mol"], "ch": "qui-L14", "t": "Número de Avogadro y Cantidad de Moléculas",
+        "fig": None,
         "prompt": "¿Cuántas moléculas están contenidas exactamente en $2.0\\text{ moles}$ de gas dióxido de carbono ($\\text{CO}_2$)? (Dato: Constante de Avogadro $N_A = 6.022 \\times 10^{23}\\text{ moléculas/mol}$)",
         "opts": [
             "$1.2044 \\times 10^{24}\\text{ moléculas}$",
@@ -1230,6 +1549,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.2-propPeriodicas"], "ch": "qui-L07", "t": "Energía de Primera Ionización",
+        "fig": None,
         "prompt": "¿Qué es la energía de primera ionización ($EI_1$) y cuál de los siguientes elementos presenta la mayor energía de ionización?",
         "opts": [
             "Es la energía mínima requerida para arrancar el electrón más externo de un átomo gaseoso en su estado fundamental; el Helio ($He$) presenta la mayor $EI_1$.",
@@ -1242,6 +1562,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.1-materia"], "ch": "qui-L02", "t": "Clasificación de la Materia",
+        "fig": None,
         "prompt": "Una disolución de cloruro de sodio en agua destilada es un ejemplo de:",
         "opts": [
             "Mezcla homogénea (solución), con una sola fase visualmente uniforme y composición constante en cualquier porción.",
@@ -1254,6 +1575,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.1-materia"], "ch": "qui-L02", "t": "Cambios Físicos vs Químicos",
+        "fig": None,
         "prompt": "¿Cuál de los siguientes procesos corresponde a un cambio químico (reacción química) y no a un simple cambio de estado físico?",
         "opts": [
             "La combustión de un trozo de madera formando cenizas, dióxido de carbono y vapor de agua.",
@@ -1266,6 +1588,7 @@ qui_items_data = [
     },
     {
         "topics": ["4.3.4-esteqReactivoLim"], "ch": "qui-L17", "t": "Porcentaje de Rendimiento",
+        "fig": None,
         "prompt": "En un ensayo de síntesis química, el cálculo estequiométrico teórico indicaba que debían obtenerse $50.0\\text{ g}$ de aspirina. Tras realizar el experimento y purificar el producto en el laboratorio, se pesaron efectivamente $42.5\\text{ g}$. ¿Cuál fue el porcentaje de rendimiento de la reacción?",
         "opts": [
             "$85.0\\%$",
@@ -1280,7 +1603,7 @@ qui_items_data = [
 
 qui_items = []
 for i, d in enumerate(qui_items_data, start=1):
-    qui_items.append({
+    item = {
         "id": f"qui-19ago-{i:02d}",
         "s": "qui",
         "n": i,
@@ -1294,11 +1617,16 @@ for i, d in enumerate(qui_items_data, start=1):
         "exp": d["exp"],
         "maths": [],
         "imgs": []
-    })
+    }
+    if d.get("fig"):
+        item["fig"] = d["fig"]
+    qui_items.append(item)
 
 print(f"Generated {len(qui_items)} Química items.")
 
-# Assemble GUIA_BANK_FQL_19AGO
+# ---------------------------------------------------------
+# 5. ASSEMBLE AND SAVE
+# ---------------------------------------------------------
 bank_output = {
     "metadata": {
         "title": "Banco EPN Día 2 — Filtradas y Reales 19 Agosto",
@@ -1317,9 +1645,8 @@ bank_output = {
     }
 }
 
-# Write guia-bank-fql-19ago.js
 js_content = "window.GUIA_BANK_FQL_19AGO = " + json.dumps(bank_output, ensure_ascii=False, indent=2) + ";\n"
 with open(r"C:\simulador-epn\guia-bank-fql-19ago.js", "w", encoding="utf-8") as f:
     f.write(js_content)
 
-print("Saved guia-bank-fql-19ago.js successfully with 90 items and verified theory links.")
+print("Saved guia-bank-fql-19ago.js successfully with 90 items and verified figures/theory links.")

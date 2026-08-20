@@ -5,11 +5,11 @@ window.STUDY_DATA = {
       "id": "p1_fis_01",
       "part": "parte1",
       "subject": "fisica",
-      "unit": "Movimiento",
+      "unit": "Cinemática Conceptual",
       "priority": "Esencial",
       "eyebrow": "01 · Cinemática",
-      "title": "Convierte el recorrido en una ecuación",
-      "lead": "Antes de usar una fórmula, identifica si el movimiento es uniforme ($a = 0$), acelerado ($a = \\text{cte}$) o en dos dimensiones. La unidad coherente en el SI es la mitad de la respuesta.",
+      "title": "Movimiento, vectores y gráficas de posición",
+      "lead": "Antes de calcular, distingue la naturaleza del movimiento: uniforme a velocidad constante ($a = 0$) o acelerado con cambio de velocidad ($a = \\text{cte}$). En física conceptual, la lectura de gráficas y vectores ahorra el $90\\%$ de los cálculos.",
       "quickRule": "Si la dirección cambia, la velocidad cambia; por eso existe aceleración centrípeta $a_c$ aunque la rapidez sea constante.",
       "formula": "v = \\frac{\\Delta x}{\\Delta t} \\qquad a = \\frac{\\Delta v}{\\Delta t} \\qquad x = x_0 + v_0 t + \\frac{1}{2}a t^2",
       "variables": [
@@ -20,79 +20,83 @@ window.STUDY_DATA = {
       ],
       "sections": [
         {
-          "heading": "Distancia no es desplazamiento",
-          "body": "La distancia $d$ es la longitud total recorrida (siempre positiva). El desplazamiento $\\Delta x = x_f - x_0$ es el vector neto entre la posición inicial y final."
+          "heading": "Distancia escalar vs Desplazamiento vectorial",
+          "body": "• **Distancia ($d$):** Es la longitud total del camino recorrido. Es una magnitud escalar y siempre es positiva ($d \\ge 0$).\n• **Desplazamiento ($\\Delta \\vec{x}$):** Es el vector que une la posición inicial con la final: $\\Delta \\vec{x} = \\vec{x}_f - \\vec{x}_0$. Puede ser positivo, negativo o cero.\n• **Ejemplo conceptual:** Si un atleta corre una vuelta completa en una pista circular de $400\\text{ m}$ y regresa al punto de partida, la distancia recorrida es $400\\text{ m}$, pero su desplazamiento es $\\Delta x = 0$ y su velocidad media es $0\\text{ m/s}$."
         },
         {
-          "heading": "Gráficas $v$ vs $t$",
-          "body": "La pendiente de la gráfica $v-t$ representa la aceleración instantánea $a = \\frac{\\Delta v}{\\Delta t}$. El área bajo la curva corresponde al desplazamiento $\\Delta x$."
+          "heading": "Lectura conceptual de gráficas cinemáticas",
+          "body": "• **Gráfica $x-t$ (Posición vs Tiempo):** La pendiente de la recta tangente es la **velocidad instantánea**. Línea recta $\\implies$ velocidad constante ($a = 0$). Curva cóncava hacia arriba $\\implies$ aceleración positiva ($a > 0$).\n• **Gráfica $v-t$ (Velocidad vs Tiempo):** La pendiente de la recta es la **aceleración**. El **área bajo la curva** es igual al **desplazamiento neto** realizado por el móvil."
         }
       ],
-      "commonTrap": "No confundas rapidez media ($\\frac{\\text{distancia}}{t}$) con el módulo de la velocidad media ($\\frac{|\\Delta x|}{t}$). En una pista circular cerrada de $400\\text{ m}$, el desplazamiento es $\\Delta x = 0$.",
+      "commonTrap": "No confundas rapidez media (distancia total entre tiempo) con velocidad media (desplazamiento vectorial entre tiempo).",
       "stepByStep": [
         {
           "step": "1",
-          "text": "Identifica si la aceleración es nula ($a = 0$) o constante ($a = \\text{cte}$)."
+          "text": "Determina si el vector velocidad es constante en magnitud y dirección."
         },
         {
           "step": "2",
-          "text": "Convierte todas las magnitudes al SI ($\\text{m}$, $\\text{s}$, $\\text{m/s}$)."
+          "text": "Verifica si el problema pide distancia recorrida (escalar) o desplazamiento (vectorial)."
         },
         {
           "step": "3",
-          "text": "Aplica la ecuación cinemática sin variables desconocidas superfluas."
+          "text": "Usa la pendiente de $x-t$ para velocidad y el área de $v-t$ para desplazamiento."
         }
       ],
       "example": {
         "prompt": "Un móvil parte del reposo con aceleración constante de $3\\text{ m/s}^2$ durante $4\\text{ s}$. ¿Qué distancia recorre y qué rapidez final alcanza?",
         "steps": [
           "1. Rapidez final: $v_f = v_0 + a t = 0 + (3\\text{ m/s}^2)(4\\text{ s}) = 12\\text{ m/s}$.",
-          "2. Distancia: $d = v_0 t + \\frac{1}{2}a t^2 = 0 + \\frac{1}{2}(3\\text{ m/s}^2)(4\\text{ s})^2 = 24\\text{ m}$."
+          "2. Distancia recorrida: $d = v_0 t + \\frac{1}{2}a t^2 = 0 + \\frac{1}{2}(3)(4)^2 = 24\\text{ m}$."
         ],
-        "result": "Distancia $d = 24\\text{ m}$ | Rapidez final $v_f = 12\\text{ m/s}$"
+        "result": "Distancia = $24\\text{ m}$ | Rapidez final = $12\\text{ m/s}$"
       }
     },
     {
       "id": "p1_fis_02",
       "part": "parte1",
       "subject": "fisica",
-      "unit": "Fuerzas",
+      "unit": "Dinámica Conceptual",
       "priority": "Esencial",
-      "eyebrow": "02 · Newton",
-      "title": "Dibuja las fuerzas antes de calcular",
-      "lead": "La segunda ley de Newton conecta la fuerza resultante externa con el cambio de movimiento. El diagrama de cuerpo libre (DCL) evita errores de signo.",
-      "quickRule": "Fuerza neta nula ($\\sum \\vec{F} = 0$) significa equilibrio traslacional (reposo o MRU a velocidad constante), no ausencia de fuerzas.",
+      "eyebrow": "02 · Leyes de Newton",
+      "title": "Fuerzas, inercia y pares de interacción",
+      "lead": "Las leyes de Newton describen por qué cambian los movimientos. La clave conceptual es entender que las fuerzas son interacciones entre pares de cuerpos y no propiedades intrínsecas de un solo objeto.",
+      "quickRule": "Fuerza neta nula ($\\sum \\vec{F} = 0$) significa equilibrio (reposo o MRU a velocidad constante), no ausencia de fuerzas.",
       "formula": "\\sum \\vec{F} = m \\vec{a} \\qquad P = m g \\qquad f_k = \\mu_k N",
       "variables": [
         "$F$: fuerza neta ($\\text{N}$)",
-        "$m$: masa ($\\text{kg}$)",
+        "$m$: masa inercial ($\\text{kg}$)",
         "$a$: aceleración ($\\text{m/s}^2$)",
         "$N$: normal ($\\text{N}$)",
         "$\\mu_k$: coef. fricción"
       ],
       "sections": [
         {
-          "heading": "Tercera Ley: Acción y Reacción",
-          "body": "Son iguales en magnitud ($|\\vec{F}_{AB}| = |\\vec{F}_{BA}|$) y opuestas en sentido, pero actúan sobre cuerpos distintos: jamás se anulan entre sí en el mismo cuerpo."
+          "heading": "1ra Ley (Inercia): Movimiento sin fuerzas",
+          "body": "Un objeto continuará en reposo o en movimiento rectilíneo uniforme a menos que una fuerza neta externa actúe sobre él. Un disco de hockey sobre hielo liso no necesita fuerza para mantenerse en movimiento."
         },
         {
-          "heading": "La fuerza normal no siempre es igual al peso",
-          "body": "En un plano horizontal $N = mg$. En un plano inclinado de ángulo $\\theta$, $N = mg \\cos\\theta$. Con una fuerza de tracción hacia arriba $T$, $N = mg - T$."
+          "heading": "2da Ley (Causa y Efecto): $\\sum \\vec{F} = m\\vec{a}$",
+          "body": "La aceleración es directamente proporcional a la fuerza neta e inversamente proporcional a la masa inercial. Si la fuerza neta se duplica, la aceleración se duplica. Si la masa se duplica, la aceleración se reduce a la mitad."
+        },
+        {
+          "heading": "3ra Ley (Acción y Reacción): Siempre en cuerpos distintos",
+          "body": "Si el cuerpo $A$ ejerce una fuerza sobre $B$, el cuerpo $B$ ejerce una fuerza de **igual magnitud y sentido opuesto** sobre $A$. Jamás se cancelan entre sí porque actúan sobre cuerpos diferentes."
         }
       ],
-      "commonTrap": "No sumes la fuerza de reacción en el diagrama del mismo cuerpo que ejerce la acción.",
+      "commonTrap": "La fuerza normal no siempre es igual al peso. En un plano inclinado de ángulo $\\theta$, la normal es $N = mg\\cos\\theta$.",
       "stepByStep": [
         {
           "step": "1",
-          "text": "Aísla el cuerpo y traza los ejes $x$ e $y$ alineados con el movimiento."
+          "text": "Dibuja el Diagrama de Cuerpo Libre (DCL) aislando únicamente las fuerzas externas sobre el objeto."
         },
         {
           "step": "2",
-          "text": "Dibuja el peso $P = mg$, la normal $N$ y la fricción $f_k = \\mu_k N$ opuesta al deslizamiento."
+          "text": "Descompón las fuerzas en ejes paralelo y perpendicular al movimiento."
         },
         {
           "step": "3",
-          "text": "Aplica $\\sum F_x = m a$ y $\\sum F_y = 0$."
+          "text": "Aplica $\\sum F_x = m a$ en el eje del movimiento y $\\sum F_y = 0$ en el eje perpendicular."
         }
       ],
       "example": {
@@ -102,18 +106,18 @@ window.STUDY_DATA = {
           "2. Aplicando $\\sum F = m a$: $20\\text{ N} = (5\\text{ kg}) a$.",
           "3. Despejando: $a = \\frac{20}{5} = 4\\text{ m/s}^2$."
         ],
-        "result": "Aceleración $a = 4\\text{ m/s}^2$"
+        "result": "Aceleración = $4\\text{ m/s}^2$"
       }
     },
     {
       "id": "p1_fis_03",
       "part": "parte1",
       "subject": "fisica",
-      "unit": "Energía",
+      "unit": "Trabajo y Energía",
       "priority": "Esencial",
-      "eyebrow": "03 · Trabajo y Energía",
-      "title": "Sigue la transformación, no memorices el dibujo",
-      "lead": "Sin fuerzas no conservativas (como fricción o resistencia del aire), la energía mecánica total $E_m$ permanece constante en todos los puntos.",
+      "eyebrow": "03 · Conservación de Energía",
+      "title": "Transformación de energía mecánica y trabajo",
+      "lead": "La energía mecánica total es la capacidad de realizar trabajo. En ausencia de fricción, la energía no se crea ni se destruye: se transforma continuamente entre energía cinética y potenciales.",
       "quickRule": "Conservación: $E_m = K + U_g + U_e = \\text{constante}$. En el punto más alto $K = 0$; en el valle $U_g = 0$ y $K$ es máxima ($v = \\sqrt{2gh}$).",
       "formula": "E_m = K + U_g + U_e = \\text{cte} \\qquad K = \\frac{1}{2}m v^2 \\qquad U_g = m g h \\qquad U_e = \\frac{1}{2}k x^2",
       "variables": [
@@ -125,10 +129,14 @@ window.STUDY_DATA = {
       "sections": [
         {
           "heading": "Trabajo de fuerzas perpendiculares es cero",
-          "body": "Como $W = F d \\cos(90^\\circ) = 0$, fuerzas como la normal y la centrípeta no realizan trabajo mecánico sobre el cuerpo."
+          "body": "El trabajo mecánico se define como $W = F d \\cos\\theta$. Si la fuerza es perpendicular al desplazamiento ($\\theta = 90^\\circ$), como la fuerza normal o la fuerza centrípeta, el trabajo es exactamente $0\\text{ J}$."
+        },
+        {
+          "heading": "Teorema del Trabajo y la Energía Cinética",
+          "body": "El trabajo neto realizado por todas las fuerzas sobre un cuerpo es igual al cambio en su energía cinética: $W_{\\text{neto}} = \\Delta K = \\frac{1}{2}m v_f^2 - \\frac{1}{2}m v_0^2$."
         }
       ],
-      "commonTrap": "Si existe fricción, la energía mecánica no se conserva: $E_{\\text{final}} = E_{\\text{inicial}} - |W_{\\text{fricción}}|$, donde $|W_f| = f_k d = \\mu_k N d$.",
+      "commonTrap": "Si hay rozamiento, la energía mecánica no se conserva: $E_{\\text{final}} = E_{\\text{inicial}} - |W_{\\text{fricción}}|$, donde $|W_f| = f_k d = \\mu_k N d$.",
       "stepByStep": [
         {
           "step": "1",
@@ -150,30 +158,34 @@ window.STUDY_DATA = {
           "2. Abajo: $U_{g2} = 0$, $K_2 = \\frac{1}{2} m v^2 = \\frac{1}{2}(2\\text{ kg}) v^2 = v^2$.",
           "3. Conservación: $100 = v^2 \\implies v = \\sqrt{100} = 10\\text{ m/s}$."
         ],
-        "result": "Rapidez final $v = 10\\text{ m/s}$"
+        "result": "Rapidez final = $10\\text{ m/s}$"
       }
     },
     {
       "id": "p1_fis_04",
       "part": "parte1",
       "subject": "fisica",
-      "unit": "Choques",
+      "unit": "Impulso y Choques",
       "priority": "Esencial",
-      "eyebrow": "04 · Impulso y Momento",
-      "title": "Mide el cambio de movimiento",
-      "lead": "El impulso $\\vec{J}$ de una fuerza externa modifica la cantidad de movimiento $\\vec{p}$. En un sistema aislado, el momento total se conserva.",
-      "quickRule": "Teorema del impulso: $\\vec{J} = \\vec{F} \\Delta t = \\Delta \\vec{p} = m (\\vec{v}_f - \\vec{v}_0)$. En choques aislados: $\\sum \\vec{p}_i = \\sum \\vec{p}_f$.",
+      "eyebrow": "04 · Momento Lineal",
+      "title": "Impulso, colisiones y tiempo de impacto",
+      "lead": "El impulso de una fuerza externa cambia el momento lineal del cuerpo. En un choque sin fuerzas externas netas, el momento lineal total siempre se conserva.",
+      "quickRule": "Teorema del impulso: $\\vec{J} = \\vec{F} \\Delta t = \\Delta \\vec{p} = m (\\vec{v}_f - \\vec{v}_0)$. Mayor tiempo de contacto $\\Delta t \\implies$ menor fuerza de impacto $F$.",
       "formula": "\\vec{J} = \\vec{F}\\Delta t = \\Delta \\vec{p} \\qquad \\vec{p} = m\\vec{v} \\qquad \\sum \\vec{p}_i = \\sum \\vec{p}_f",
       "variables": [
         "$p$: momento lineal ($\\text{kg}\\cdot\\text{m/s}$)",
         "$J$: impulso ($\\text{N}\\cdot\\text{s}$)",
-        "$F$: fuerza ($\\text{N}$)",
-        "$\\Delta t$: tiempo ($\\text{s}$)"
+        "$F$: fuerza media ($\\text{N}$)",
+        "$\\Delta t$: tiempo de contacto ($\\text{s}$)"
       ],
       "sections": [
         {
-          "heading": "Choque Elástico vs Inelástico",
-          "body": "En todo choque se conserva el momento lineal total. En choques elásticos se conserva además la energía cinética. En choques inelásticos los cuerpos quedan unidos."
+          "heading": "Por qué doblamos las rodillas al saltar (Aplicación conceptual)",
+          "body": "Al caer de una altura, el cambio de momento $\\Delta p$ es fijo. Al doblar las rodillas aumentamos el tiempo de frenado $\\Delta t$, lo que reduce drásticamente la fuerza media $F = \\frac{\\Delta p}{\\Delta t}$ que reciben las articulaciones."
+        },
+        {
+          "heading": "Choques elásticos vs inelásticos",
+          "body": "• **Choque Elástico:** Se conserva el momento lineal total y la energía cinética total ($K_i = K_f$).\n• **Choque Inelástico:** Se conserva el momento lineal, pero parte de la energía cinética se disipa como calor o deformación. Si quedan unidos tras el impacto, es perfectamente inelástico."
         }
       ],
       "commonTrap": "El momento lineal es un vector: si un balón rebota con la misma rapidez $v$, el cambio es $\\Delta p = -m v - (+m v) = -2mv$.",
@@ -198,7 +210,7 @@ window.STUDY_DATA = {
           "2. Relación impulso-momento: $4.0 = (0.5\\text{ kg})(v_f - 0)$.",
           "3. Despejando: $v_f = \\frac{4.0}{0.5} = 8\\text{ m/s}$."
         ],
-        "result": "Rapidez adquirida $v_f = 8\\text{ m/s}$"
+        "result": "Rapidez adquirida = $8\\text{ m/s}$"
       }
     },
     {
@@ -419,7 +431,7 @@ window.STUDY_DATA = {
         },
         {
           "heading": "Péndulo oscilante y Doble rampa de Galileo",
-          "body": "• Péndulo: en el punto más bajo $U_g = 0$ y $K$ es máxima. En los extremos $v = 0$ y $U_g$ es máxima.\n• Galileo: la esfera alcanza exactamente la misma altura $h$ en cualquier rampa si no hay rozamiento."
+          "body": "• **Péndulo:** En el punto más bajo $U_g = 0$ y $K$ es máxima ($v = \\sqrt{2gh}$). En los extremos $v = 0$ y $U_g$ es máxima.\n• **Galileo:** La esfera alcanza exactamente la misma altura $h$ en cualquier rampa si no hay rozamiento, sin importar la inclinación."
         }
       ],
       "commonTrap": "En las fotos apareció el distractor 'la energía potencial es constante'. Es FALSO: la energía potencial varía con la altura $h$; lo que permanece constante es la energía mecánica total $E_m$.",

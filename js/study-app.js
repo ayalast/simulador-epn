@@ -7,6 +7,13 @@ let reviewedTopics = {};
 let practiceAnswers = {};
 let isPracticeMode = false;
 
+function formatMarkdown(str) {
+  if (!str) return '';
+  return str
+    .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-[#1f1a14]">$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em class="italic text-[#4a5568]">$1</em>');
+}
+
 document.addEventListener('DOMContentLoaded', function () {
   loadReviewedState();
   initApp();
@@ -178,8 +185,8 @@ function renderCurrentTopic() {
   if (heroPart) heroPart.textContent = currentPart === 'parte2' ? 'PARTE II · EXAMEN REPORTADO 19 AGO' : 'PARTE I · FUNDAMENTOS';
   if (heroPriority) heroPriority.textContent = (topic.priority || 'Esencial').toUpperCase();
   if (heroEyebrow) heroEyebrow.textContent = `${(topic.subject || 'Física').toUpperCase()} · ${topic.eyebrow}`;
-  if (heroTitle) heroTitle.innerHTML = topic.title;
-  if (heroLead) heroLead.innerHTML = topic.lead;
+  if (heroTitle) heroTitle.innerHTML = formatMarkdown(topic.title);
+  if (heroLead) heroLead.innerHTML = formatMarkdown(topic.lead);
 
   // Update Details Card Body
   const container = document.getElementById('topic-detail-card');
@@ -220,7 +227,7 @@ function renderCurrentTopic() {
           <i class="fa-solid fa-bolt"></i> Reconoce antes de calcular
         </div>
         <div class="font-display text-lg sm:text-xl font-bold leading-snug text-[#6e2908]">
-          ${topic.quickRule}
+          ${formatMarkdown(topic.quickRule)}
         </div>
       </div>
     ` : ''}
@@ -240,8 +247,8 @@ function renderCurrentTopic() {
       <div class="space-y-6 pt-2">
         ${topic.sections.map(sec => `
           <div>
-            <h3 class="font-display text-2xl font-bold text-[#1f1a14] mb-2">${sec.heading}</h3>
-            <p class="text-xs sm:text-sm text-[#51606e] leading-relaxed whitespace-pre-line">${sec.body}</p>
+            <h3 class="font-display text-2xl font-bold text-[#1f1a14] mb-2">${formatMarkdown(sec.heading)}</h3>
+            <p class="text-xs sm:text-sm text-[#51606e] leading-relaxed whitespace-pre-line">${formatMarkdown(sec.body)}</p>
           </div>
         `).join('')}
       </div>
@@ -254,7 +261,7 @@ function renderCurrentTopic() {
           <i class="fa-regular fa-compass text-emerald-600"></i> Ejemplo resuelto, paso a paso
         </div>
         <h4 class="font-display text-xl sm:text-2xl font-bold text-[#1f1a14] leading-snug">
-          ${topic.example.prompt}
+          ${formatMarkdown(topic.example.prompt)}
         </h4>
         
         <div class="space-y-2.5 pt-2">
@@ -263,13 +270,13 @@ function renderCurrentTopic() {
               <span class="flex-shrink-0 w-5 h-5 rounded-full bg-[#31765f] text-white flex items-center justify-center font-bold text-[10px]">
                 ${i + 1}
               </span>
-              <span class="leading-relaxed">${st.replace(/^\d+\.\s*/, '')}</span>
+              <span class="leading-relaxed">${formatMarkdown(st.replace(/^\d+\.\s*/, ''))}</span>
             </div>
           `).join('')}
         </div>
 
         <div class="p-3.5 rounded-xl bg-[#276749] text-white font-bold text-xs sm:text-sm">
-          ${topic.example.result}
+          ${formatMarkdown(topic.example.result)}
         </div>
       </div>
     ` : ''}
@@ -280,7 +287,7 @@ function renderCurrentTopic() {
         <div class="flex items-center gap-2 text-[10px] font-extrabold uppercase tracking-[0.14em] text-[#be3730] mb-1.5">
           <i class="fa-solid fa-star text-[#be3730]"></i> Nota de examen / Alerta
         </div>
-        <p class="text-xs sm:text-sm text-[#7a1b16] font-medium leading-relaxed">${topic.commonTrap}</p>
+        <p class="text-xs sm:text-sm text-[#7a1b16] font-medium leading-relaxed">${formatMarkdown(topic.commonTrap)}</p>
       </div>
     ` : ''}
 
@@ -316,7 +323,7 @@ function renderSidebarVariables(topic) {
   vars.forEach(v => {
     html += `
       <div class="p-2.5 rounded-xl bg-[#f7f0e5] border border-[#e6dbcd] text-[#383027] text-xs font-semibold">
-        ${v}
+        ${formatMarkdown(v)}
       </div>
     `;
   });
@@ -411,13 +418,13 @@ function renderPracticeQuiz(specificTopicId) {
         </div>
 
         <h3 class="font-display text-xl sm:text-2xl font-bold text-[#1f1a14] leading-snug">
-          ${q.prompt}
+          ${formatMarkdown(q.prompt)}
         </h3>
 
         <div class="space-y-2.5">
           ${q.options.map((opt, optIdx) => `
             <button onclick="selectPracticeAnswer('${q.id}', ${optIdx}, ${q.answer})" id="btn-opt-${q.id}-${optIdx}" class="quiz-opt-btn w-full text-left p-4 rounded-xl text-xs sm:text-sm text-[#383027] font-medium flex items-center justify-between">
-              <span><strong>${String.fromCharCode(65 + optIdx)}.</strong> ${opt}</span>
+              <span><strong>${String.fromCharCode(65 + optIdx)}.</strong> ${formatMarkdown(opt)}</span>
               <i class="fa-regular fa-circle text-[#b8a690]"></i>
             </button>
           `).join('')}
@@ -427,7 +434,7 @@ function renderPracticeQuiz(specificTopicId) {
           <div class="font-bold text-[#1a4d3e] flex items-center gap-1.5 mb-1">
             <i class="fa-solid fa-circle-info"></i> Explicación analítica:
           </div>
-          <p>${q.explanation}</p>
+          <p>${formatMarkdown(q.explanation)}</p>
         </div>
       </div>
     `;

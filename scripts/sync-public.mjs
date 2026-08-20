@@ -4,7 +4,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const out = join(root, 'public');
-const files = ['index.html', 'styles.css', 'app.js', 'bank.js', 'theory.js', 'guia-theory.js', 'guia-theory-mat.js', 'guia-theory-filtro.js', 'guia-theory-fis.js', 'guia-theory-qui.js', 'guia-theory-len.js', 'guia-bank-69.js', 'guia-bank-1000-intermedio.js', 'guia-bank-fql-avanzado.js', 'guia-bank-fql-dia2.js', 'guia-bank-fql-19ago.js', 'guia-bank-mat-1500.js', 'guia-bank-filtro-intensivo.js', 'guia-bank-filtro-rotativo.js', 'simuladores-programados.js', 'simuladores-filtro.js', 'simuladores_programados.json', 'mini_banco_teoria_700.json'];
+const files = ['index.html', 'study.html', 'styles.css', 'app.js', 'bank.js', 'theory.js', 'guia-theory.js', 'guia-theory-mat.js', 'guia-theory-filtro.js', 'guia-theory-fis.js', 'guia-theory-qui.js', 'guia-theory-len.js', 'guia-bank-69.js', 'guia-bank-1000-intermedio.js', 'guia-bank-fql-avanzado.js', 'guia-bank-fql-dia2.js', 'guia-bank-fql-19ago.js', 'guia-bank-mat-1500.js', 'guia-bank-filtro-intensivo.js', 'guia-bank-filtro-rotativo.js', 'simuladores-programados.js', 'simuladores-filtro.js', 'simuladores_programados.json', 'mini_banco_teoria_700.json'];
 
 try {
   if (existsSync(out)) rmSync(out, { recursive: true, force: true });
@@ -13,7 +13,15 @@ try {
 }
 mkdirSync(out, { recursive: true });
 for (const f of files) {
-  cpSync(join(root, f), join(out, f), { force: true });
+  if (existsSync(join(root, f))) {
+    cpSync(join(root, f), join(out, f), { force: true });
+  }
+}
+const cssSrc = join(root, 'css');
+const cssDst = join(out, 'css');
+if (existsSync(cssSrc)) {
+  cpSync(cssSrc, cssDst, { recursive: true });
+  console.log('public/css synced');
 }
 const jsSrc = join(root, 'js');
 const jsDst = join(out, 'js');

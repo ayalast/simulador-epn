@@ -1,0 +1,103 @@
+/* Estilos modernos para la Plataforma de Estudio Intensivo EPN Día 2 */
+:root {
+  --font-serif: 'DM Serif Display', Georgia, serif;
+  --font-sans: 'Manrope', system-ui, -apple-system, sans-serif;
+  --bg-primary: #f8fafc;
+  --bg-card: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --border-color: #e2e8f0;
+  
+  --fis-primary: #0284c7;
+  --fis-light: #e0f2fe;
+  --fis-dark: #0369a1;
+  
+  --qui-primary: #059669;
+  --qui-light: #d1fae5;
+  --qui-dark: #047857;
+  
+  --len-primary: #6366f1;
+  --len-light: #ede9fe;
+  --len-dark: #4f46e5;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  scroll-behavior: smooth;
+}
+
+.font-serif-title {
+  font-family: var(--font-serif);
+}
+
+/* Glassmorphism Navigation */
+.nav-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* Interactive Cards */
+.study-card {
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s ease;
+  border: 1px solid var(--border-color);
+}
+.study-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.08);
+}
+
+/* Trap Banner */
+.trap-box {
+  background: linear-gradient(135deg, #fff1f2 0%, #ffe4e6 100%);
+  border-left: 4px solid #e11d48;
+}
+
+/* Gold Rule Banner */
+.gold-rule-box {
+  background: linear-gradient(135deg, #fefce8 0%, #fef9c3 100%);
+  border-left: 4px solid #ca8a04;
+}
+
+/* Formula Highlight Box */
+.formula-box {
+  background: #f1f5f9;
+  border-radius: 8px;
+  padding: 12px 16px;
+  border-left: 4px solid #0284c7;
+}
+
+/* Flashcard Flip Effect */
+.flashcard-inner {
+  transition: transform 0.6s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+}
+.flashcard.flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+.flashcard-front, .flashcard-back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.flashcard-back {
+  transform: rotateY(180deg);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

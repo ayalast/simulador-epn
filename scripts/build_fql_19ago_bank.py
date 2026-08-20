@@ -1,8 +1,8 @@
 # scripts/build_fql_19ago_bank.py
 # Generates guia-bank-fql-19ago.js and js/fig-fql-19ago.js
-# 1. High precision tailor-made SVG figures only where mathematically appropriate.
-# 2. LaTeX rendered style typography in all figures.
-# 3. Step-by-step hand calculations in every single question.
+# 1. High-precision tailor-made SVG figures ONLY where mathematically appropriate.
+# 2. Perfect LaTeX-style typography in all SVG diagrams using <tspan> subscripts/italics.
+# 3. 3-step hand solutions in every question.
 import json
 import os
 
@@ -21,7 +21,7 @@ fig_js_content = """/* Figuras pedagógicas vectoriales SVG para el Simulador D�
   }
   function openSvg(w, h) {
     return '<svg width="100%" height="auto" viewBox="0 0 ' + w + ' ' + h +
-      '" xmlns="http://www.w3.org/2000/svg" style="max-width:' + w + 'px;display:block;margin:12px auto;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;box-shadow:0 2px 8px rgba(0,0,0,0.04);font-family:system-ui, -apple-system, sans-serif;">' +
+      '" xmlns="http://www.w3.org/2000/svg" style="max-width:' + w + 'px;display:block;margin:14px auto;background:#f8fafc;border-radius:10px;border:1px solid #e2e8f0;box-shadow:0 2px 8px rgba(0,0,0,0.04);font-family:system-ui, -apple-system, sans-serif;">' +
       '<defs>' +
       '<marker id="f19-arr-blue" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#0284c7"/></marker>' +
       '<marker id="f19-arr-red" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="#dc2626"/></marker>' +
@@ -40,13 +40,13 @@ fig_js_content = """/* Figuras pedagógicas vectoriales SVG para el Simulador D�
     s += '<rect x="50" y="35" width="80" height="22" rx="4" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>';
     s += '<polygon points="130,46 160,46 130,35" fill="#94a3b8" stroke="#475569" stroke-width="1.2"/>';
     s += '<line x1="130" y1="46" x2="200" y2="46" stroke="#0284c7" stroke-width="2.5" marker-end="url(#f19-arr-blue)"/>';
-    s += '<text x="208" y="50" fill="#0284c7" font-size="13" font-weight="700" font-style="italic">v_x = 180 m/s (constante)</text>';
+    s += '<text x="208" y="50" fill="#0284c7" font-size="13" font-weight="700"><tspan font-style="italic">v</tspan><tspan font-size="10" dy="3">x</tspan><tspan dy="-3"> = 180 m/s (constante)</tspan></text>';
     s += '<path d="M 90,57 Q 240,65 400,185" fill="none" stroke="#dc2626" stroke-width="2.5" stroke-dasharray="6 4"/>';
     s += '<circle cx="90" cy="57" r="5.5" fill="#dc2626"/>';
     s += '<circle cx="230" cy="95" r="6" fill="#dc2626"/>';
     s += '<circle cx="400" cy="185" r="6.5" fill="#dc2626"/>';
     s += '<line x1="230" y1="95" x2="230" y2="145" stroke="#dc2626" stroke-width="2" marker-end="url(#f19-arr-red)"/>';
-    s += '<text x="242" y="125" fill="#dc2626" font-size="12" font-weight="700" font-style="italic">a_y = g</text>';
+    s += '<text x="242" y="125" fill="#dc2626" font-size="12" font-weight="700"><tspan font-style="italic">a</tspan><tspan font-size="10" dy="3">y</tspan><tspan dy="-3"> = </tspan><tspan font-style="italic">g</tspan></text>';
     s += '<text x="265" y="85" fill="#dc2626" font-size="13" font-weight="700">Trayectoria parabólica hacia adelante</text>';
     s += '</svg>';
     return s;
@@ -64,10 +64,10 @@ fig_js_content = """/* Figuras pedagógicas vectoriales SVG para el Simulador D�
     s += '<text x="250" y="123" fill="#c2410c" font-size="13" font-weight="800" text-anchor="middle">Bloque B</text>';
     s += '<text x="250" y="138" fill="#c2410c" font-size="11" font-weight="600" text-anchor="middle">(2 kg)</text>';
     s += '<line x1="220" y1="50" x2="295" y2="50" stroke="#dc2626" stroke-width="2.5" marker-end="url(#f19-arr-red)"/>';
-    s += '<text x="305" y="54" fill="#dc2626" font-size="13" font-weight="800">F_{A → B}</text>';
+    s += '<text x="305" y="54" fill="#dc2626" font-size="13" font-weight="800"><tspan font-style="italic">F</tspan><tspan font-size="10" dy="3">A→B</tspan></text>';
     s += '<line x1="220" y1="50" x2="145" y2="50" stroke="#dc2626" stroke-width="2.5" marker-end="url(#f19-arr-red)"/>';
-    s += '<text x="135" y="54" fill="#dc2626" font-size="13" font-weight="800" text-anchor="end">F_{B → A}</text>';
-    s += '<text x="260" y="25" fill="#0e2a47" font-size="14" font-weight="800" text-anchor="middle">|F_{A → B}| = |F_{B → A}| (Misma magnitud, sentidos opuestos)</text>';
+    s += '<text x="135" y="54" fill="#dc2626" font-size="13" font-weight="800" text-anchor="end"><tspan font-style="italic">F</tspan><tspan font-size="10" dy="3">B→A</tspan></text>';
+    s += '<text x="260" y="25" fill="#0e2a47" font-size="13.5" font-weight="800" text-anchor="middle">|<tspan font-style="italic">F</tspan><tspan font-size="10" dy="2">A→B</tspan><tspan dy="-2">| = |</tspan><tspan font-style="italic">F</tspan><tspan font-size="10" dy="2">B→A</tspan><tspan dy="-2">| (Misma magnitud, sentidos opuestos)</tspan></text>';
     s += '</svg>';
     return s;
   };
@@ -77,15 +77,15 @@ fig_js_content = """/* Figuras pedagógicas vectoriales SVG para el Simulador D�
     var s = openSvg(420, 270);
     s += '<line x1="150" y1="230" x2="150" y2="40" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4 4"/>';
     s += '<circle cx="150" cy="230" r="6" fill="#0284c7"/>';
-    s += '<text x="175" y="235" fill="#0e2a47" font-size="13" font-weight="700">Punto P (Suelo, v = v₀)</text>';
+    s += '<text x="175" y="235" fill="#0e2a47" font-size="13" font-weight="700">Punto P (Suelo, <tspan font-style="italic">v</tspan> = <tspan font-style="italic">v</tspan><tspan font-size="10" dy="3">0</tspan><tspan dy="-3">)</tspan></text>';
     s += '<circle cx="150" cy="140" r="6" fill="#16a34a"/>';
-    s += '<text x="175" y="145" fill="#16a34a" font-size="13" font-weight="700">Punto Q (h = 15 m)</text>';
-    s += '<text x="175" y="162" fill="#64748b" font-size="11.5">|v_{subida}| = |v_{bajada}| (misma rapidez)</text>';
+    s += '<text x="175" y="145" fill="#16a34a" font-size="13" font-weight="700">Punto Q (<tspan font-style="italic">h</tspan> = 15 m)</text>';
+    s += '<text x="175" y="162" fill="#64748b" font-size="11.5">|<tspan font-style="italic">v</tspan><tspan font-size="9" dy="2">subida</tspan><tspan dy="-2">| = |</tspan><tspan font-style="italic">v</tspan><tspan font-size="9" dy="2">bajada</tspan><tspan dy="-2">| (misma rapidez)</tspan></text>';
     s += '<circle cx="150" cy="40" r="7" fill="#dc2626"/>';
-    s += '<text x="175" y="42" fill="#dc2626" font-size="13" font-weight="800">Punto T (Ápice: v = 0)</text>';
-    s += '<text x="175" y="58" fill="#dc2626" font-size="12" font-weight="600">Aceleración a = g (hacia abajo)</text>';
+    s += '<text x="175" y="42" fill="#dc2626" font-size="13" font-weight="800">Punto T (Ápice: <tspan font-style="italic">v</tspan> = 0)</text>';
+    s += '<text x="175" y="58" fill="#dc2626" font-size="12" font-weight="600">Aceleración <tspan font-style="italic">a</tspan> = <tspan font-style="italic">g</tspan> (hacia abajo)</text>';
     s += '<line x1="100" y1="80" x2="100" y2="150" stroke="#dc2626" stroke-width="2.2" marker-end="url(#f19-arr-red)"/>';
-    s += '<text x="90" y="120" fill="#dc2626" font-size="13" font-weight="800" text-anchor="end">g = 9.8 m/s²</text>';
+    s += '<text x="90" y="120" fill="#dc2626" font-size="13" font-weight="800" text-anchor="end"><tspan font-style="italic">g</tspan> = 9.8 m/s²</text>';
     s += '</svg>';
     return s;
   };
@@ -100,16 +100,16 @@ fig_js_content = """/* Figuras pedagógicas vectoriales SVG para el Simulador D�
     s += '<line x1="230" y1="20" x2="340" y2="130" stroke="#64748b" stroke-width="1.2" stroke-dasharray="3 3"/>';
     s += '<line x1="230" y1="20" x2="230" y2="185" stroke="#0e2a47" stroke-width="2"/>';
     s += '<circle cx="120" cy="130" r="10" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>';
-    s += '<text x="120" y="110" fill="#0e2a47" font-size="12" font-weight="800" text-anchor="middle">A (v=0)</text>';
-    s += '<text x="120" y="160" fill="#64748b" font-size="11" text-anchor="middle">E_p máx · E_c = 0</text>';
+    s += '<text x="120" y="110" fill="#0e2a47" font-size="12" font-weight="800" text-anchor="middle">A (<tspan font-style="italic">v</tspan> = 0)</text>';
+    s += '<text x="120" y="160" fill="#64748b" font-size="11" text-anchor="middle"><tspan font-style="italic">E</tspan><tspan font-size="9" dy="2">p</tspan><tspan dy="-2"> máx · </tspan><tspan font-style="italic">E</tspan><tspan font-size="9" dy="2">c</tspan><tspan dy="-2"> = 0</tspan></text>';
 
     s += '<circle cx="340" cy="130" r="10" fill="#cbd5e1" stroke="#475569" stroke-width="1.5"/>';
-    s += '<text x="340" y="110" fill="#0e2a47" font-size="12" font-weight="800" text-anchor="middle">B (v=0)</text>';
-    s += '<text x="340" y="160" fill="#64748b" font-size="11" text-anchor="middle">E_p máx · E_c = 0</text>';
+    s += '<text x="340" y="110" fill="#0e2a47" font-size="12" font-weight="800" text-anchor="middle">B (<tspan font-style="italic">v</tspan> = 0)</text>';
+    s += '<text x="340" y="160" fill="#64748b" font-size="11" text-anchor="middle"><tspan font-style="italic">E</tspan><tspan font-size="9" dy="2">p</tspan><tspan dy="-2"> máx · </tspan><tspan font-style="italic">E</tspan><tspan font-size="9" dy="2">c</tspan><tspan dy="-2"> = 0</tspan></text>';
 
     s += '<circle cx="230" cy="185" r="12" fill="#0284c7" stroke="#0369a1" stroke-width="2"/>';
     s += '<text x="230" y="215" fill="#0284c7" font-size="13" font-weight="800" text-anchor="middle">Posición C (Punto más bajo)</text>';
-    s += '<text x="230" y="170" fill="#dc2626" font-size="12" font-weight="800" text-anchor="middle">E_c MÁXIMA (v = v_{máx})</text>';
+    s += '<text x="230" y="170" fill="#dc2626" font-size="12" font-weight="800" text-anchor="middle"><tspan font-style="italic">E</tspan><tspan font-size="9" dy="2">c</tspan><tspan dy="-2"> MÁXIMA (</tspan><tspan font-style="italic">v</tspan> = <tspan font-style="italic">v</tspan><tspan font-size="9" dy="2">máx</tspan><tspan dy="-2">)</tspan></text>';
     s += '</svg>';
     return s;
   };
@@ -122,12 +122,12 @@ fig_js_content = """/* Figuras pedagógicas vectoriales SVG para el Simulador D�
     s += '<line x1="40" y1="50" x2="15" y2="50" stroke="#64748b" stroke-width="1"/>';
     s += '<line x1="40" y1="160" x2="15" y2="160" stroke="#64748b" stroke-width="1"/>';
     s += '<line x1="25" y1="50" x2="25" y2="160" stroke="#0284c7" stroke-width="1.8" marker-start="url(#f19-arr-blue)" marker-end="url(#f19-arr-blue)"/>';
-    s += '<text x="15" y="110" fill="#0284c7" font-size="13" font-weight="800" text-anchor="end">h</text>';
+    s += '<text x="15" y="110" fill="#0284c7" font-size="14" font-weight="800" text-anchor="end"><tspan font-style="italic">h</tspan></text>';
     s += '<circle cx="50" cy="45" r="9" fill="#dc2626"/>';
-    s += '<text x="55" y="28" fill="#dc2626" font-size="12" font-weight="700">Inicio (v=0)</text>';
+    s += '<text x="55" y="28" fill="#dc2626" font-size="12" font-weight="700">Inicio (<tspan font-style="italic">v</tspan> = 0)</text>';
     s += '<circle cx="470" cy="45" r="9" fill="#16a34a"/>';
-    s += '<text x="465" y="28" fill="#16a34a" font-size="12" font-weight="700" text-anchor="end">Llega exactamente a la misma altura h</text>';
-    s += '<text x="260" y="185" fill="#0e2a47" font-size="12" font-weight="700" text-anchor="middle">Superficie ideal sin fricción (mgh = constante)</text>';
+    s += '<text x="465" y="28" fill="#16a34a" font-size="12" font-weight="700" text-anchor="end">Llega exactamente a la misma altura <tspan font-style="italic">h</tspan></text>';
+    s += '<text x="260" y="185" fill="#0e2a47" font-size="12" font-weight="700" text-anchor="middle">Superficie ideal sin fricción (<tspan font-style="italic">mgh</tspan> = constante)</text>';
     s += '</svg>';
     return s;
   };
@@ -138,14 +138,14 @@ fig_js_content = """/* Figuras pedagógicas vectoriales SVG para el Simulador D�
     s += '<polygon points="60,180 340,180 340,60 60,180" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>';
     s += '<rect x="340" y="60" width="80" height="120" fill="#e2e8f0" stroke="#475569" stroke-width="1.5"/>';
     s += '<line x1="430" y1="60" x2="430" y2="180" stroke="#0284c7" stroke-width="2" marker-start="url(#f19-arr-blue)" marker-end="url(#f19-arr-blue)"/>';
-    s += '<text x="445" y="125" fill="#0284c7" font-size="14" font-weight="800">H</text>';
+    s += '<text x="445" y="125" fill="#0284c7" font-size="14" font-weight="800"><tspan font-style="italic">H</tspan></text>';
     s += '<rect x="160" y="110" width="36" height="26" transform="rotate(-23 160 110)" fill="#bae6fd" stroke="#0284c7" stroke-width="1.5"/>';
-    s += '<text x="140" y="95" fill="#0369a1" font-size="11" font-weight="700">F = Mg·sin θ</text>';
-    s += '<text x="180" y="195" fill="#64748b" font-size="12" text-anchor="middle">Rampa de longitud L (sin roce)</text>';
+    s += '<text x="140" y="95" fill="#0369a1" font-size="11.5" font-weight="700"><tspan font-style="italic">F</tspan> = <tspan font-style="italic">Mg</tspan> sin θ</text>';
+    s += '<text x="180" y="195" fill="#64748b" font-size="12" text-anchor="middle">Rampa de longitud <tspan font-style="italic">L</tspan> (sin roce)</text>';
     s += '<rect x="470" y="110" width="30" height="26" fill="#fed7aa" stroke="#ea580c" stroke-width="1.5"/>';
     s += '<line x1="485" y1="110" x2="485" y2="70" stroke="#ea580c" stroke-width="2" marker-end="url(#f19-arr-red)"/>';
-    s += '<text x="485" y="60" fill="#ea580c" font-size="11" font-weight="700" text-anchor="middle">F = Mg</text>';
-    s += '<text x="270" y="25" fill="#0e2a47" font-size="13" font-weight="800" text-anchor="middle">W_{vertical} = W_{rampa} = MgH</text>';
+    s += '<text x="485" y="60" fill="#ea580c" font-size="11.5" font-weight="700" text-anchor="middle"><tspan font-style="italic">F</tspan> = <tspan font-style="italic">Mg</tspan></text>';
+    s += '<text x="270" y="25" fill="#0e2a47" font-size="13.5" font-weight="800" text-anchor="middle"><tspan font-style="italic">W</tspan><tspan font-size="10" dy="2">vertical</tspan><tspan dy="-2"> = </tspan><tspan font-style="italic">W</tspan><tspan font-size="10" dy="2">rampa</tspan><tspan dy="-2"> = </tspan><tspan font-style="italic">MgH</tspan></text>';
     s += '</svg>';
     return s;
   };
@@ -159,18 +159,18 @@ fig_js_content = """/* Figuras pedagógicas vectoriales SVG para el Simulador D�
     s += '<circle cx="' + cx + '" cy="' + cy + '" r="16" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>';
     s += '<text x="' + cx + '" y="' + (cy + 4) + '" fill="#0369a1" font-size="10" font-weight="800" text-anchor="middle">0.5 kg</text>';
     s += '<line x1="' + cx + '" y1="' + (cy - 16) + '" x2="' + cx + '" y2="35" stroke="#dc2626" stroke-width="2.5" marker-end="url(#f19-arr-red)"/>';
-    s += '<text x="' + (cx + 8) + '" y="45" fill="#dc2626" font-size="12" font-weight="800">F₁ = 12 N (Norte)</text>';
+    s += '<text x="' + (cx + 8) + '" y="45" fill="#dc2626" font-size="12" font-weight="800"><tspan font-style="italic">F</tspan><tspan font-size="9" dy="2">1</tspan><tspan dy="-2"> = 12 N (Norte)</tspan></text>';
 
     s += '<line x1="' + cx + '" y1="' + (cy + 16) + '" x2="' + cx + '" y2="205" stroke="#dc2626" stroke-width="2.5" marker-end="url(#f19-arr-red)"/>';
-    s += '<text x="' + (cx + 8) + '" y="200" fill="#dc2626" font-size="12" font-weight="800">F₂ = 12 N (Sur)</text>';
+    s += '<text x="' + (cx + 8) + '" y="200" fill="#dc2626" font-size="12" font-weight="800"><tspan font-style="italic">F</tspan><tspan font-size="9" dy="2">2</tspan><tspan dy="-2"> = 12 N (Sur)</tspan></text>';
 
     s += '<line x1="' + (cx + 16) + '" y1="' + cy + '" x2="330" y2="' + cy + '" stroke="#0284c7" stroke-width="2.5" marker-end="url(#f19-arr-blue)"/>';
-    s += '<text x="335" y="' + (cy - 8) + '" fill="#0284c7" font-size="12" font-weight="800">F₃ = 8 N (Este)</text>';
+    s += '<text x="335" y="' + (cy - 8) + '" fill="#0284c7" font-size="12" font-weight="800"><tspan font-style="italic">F</tspan><tspan font-size="9" dy="2">3</tspan><tspan dy="-2"> = 8 N (Este)</tspan></text>';
 
     s += '<line x1="' + (cx - 16) + '" y1="' + cy + '" x2="90" y2="' + cy + '" stroke="#0284c7" stroke-width="2.5" marker-end="url(#f19-arr-blue)"/>';
-    s += '<text x="85" y="' + (cy - 8) + '" fill="#0284c7" font-size="12" font-weight="800" text-anchor="end">F₄ = 8 N (Oeste)</text>';
+    s += '<text x="85" y="' + (cy - 8) + '" fill="#0284c7" font-size="12" font-weight="800" text-anchor="end"><tspan font-style="italic">F</tspan><tspan font-size="9" dy="2">4</tspan><tspan dy="-2"> = 8 N (Oeste)</tspan></text>';
 
-    s += '<text x="' + cx + '" y="15" fill="#0e2a47" font-size="13" font-weight="800" text-anchor="middle">ΣF_x = 0  ·  ΣF_y = 0  ⇒  F_{neta} = 0 (MRU o Reposo)</text>';
+    s += '<text x="' + cx + '" y="15" fill="#0e2a47" font-size="13" font-weight="800" text-anchor="middle">Σ<tspan font-style="italic">F</tspan><tspan font-size="9" dy="2">x</tspan><tspan dy="-2"> = 0 · Σ</tspan><tspan font-style="italic">F</tspan><tspan font-size="9" dy="2">y</tspan><tspan dy="-2"> = 0 ⇒ </tspan><tspan font-style="italic">F</tspan><tspan font-size="9" dy="2">neta</tspan><tspan dy="-2"> = 0 (MRU o Reposo)</tspan></text>';
     s += '</svg>';
     return s;
   };
@@ -180,15 +180,15 @@ fig_js_content = """/* Figuras pedagógicas vectoriales SVG para el Simulador D�
     var s = openSvg(480, 220);
     s += '<line x1="40" y1="180" x2="440" y2="180" stroke="#64748b" stroke-width="2"/>';
     s += '<line x1="100" y1="180" x2="100" y2="60" stroke="#0e2a47" stroke-width="4"/>';
-    s += '<text x="85" y="120" fill="#0e2a47" font-size="14" font-weight="800" text-anchor="end">H = ?</text>';
+    s += '<text x="85" y="120" fill="#0e2a47" font-size="14" font-weight="800" text-anchor="end"><tspan font-style="italic">H</tspan> = ?</text>';
     s += '<line x1="100" y1="60" x2="380" y2="180" stroke="#eab308" stroke-width="2.5" stroke-dasharray="5 4"/>';
     s += '<line x1="100" y1="180" x2="380" y2="180" stroke="#0284c7" stroke-width="4"/>';
-    s += '<text x="240" y="200" fill="#0284c7" font-size="13" font-weight="800" text-anchor="middle">Sombra S = 6 m</text>';
+    s += '<text x="240" y="200" fill="#0284c7" font-size="13" font-weight="800" text-anchor="middle">Sombra <tspan font-style="italic">S</tspan> = 6 m</text>';
     s += '<path d="M 330,180 A 50 50 0 0 0 345,165" fill="none" stroke="#dc2626" stroke-width="2"/>';
     s += '<text x="315" y="170" fill="#dc2626" font-size="13" font-weight="800">30°</text>';
     s += '<circle cx="80" cy="40" r="14" fill="#fde047" stroke="#eab308" stroke-width="2"/>';
-    s += '<text x="280" y="80" fill="#0e2a47" font-size="13" font-weight="800">tan 30° = H / S</text>';
-    s += '<text x="280" y="102" fill="#0284c7" font-size="13" font-weight="800">H = 6 · (√3 / 3) = 2√3 m ≈ 3.46 m</text>';
+    s += '<text x="280" y="80" fill="#0e2a47" font-size="13" font-weight="800">tan 30° = <tspan font-style="italic">H</tspan> / <tspan font-style="italic">S</tspan></text>';
+    s += '<text x="280" y="102" fill="#0284c7" font-size="13" font-weight="800"><tspan font-style="italic">H</tspan> = 6 · (√3 / 3) = 2√3 m ≈ 3.46 m</text>';
     s += '</svg>';
     return s;
   };
@@ -201,13 +201,13 @@ fig_js_content = """/* Figuras pedagógicas vectoriales SVG para el Simulador D�
     s += '<circle cx="' + cx + '" cy="' + cy + '" r="3" fill="#0e2a47"/>';
     s += '<text x="' + (cx - 10) + '" y="' + (cy - 8) + '" fill="#64748b" font-size="11">Centro</text>';
     s += '<line x1="' + cx + '" y1="' + cy + '" x2="' + (cx + r) + '" y2="' + cy + '" stroke="#64748b" stroke-width="1.5"/>';
-    s += '<text x="' + (cx + r/2) + '" y="' + (cy - 6) + '" fill="#64748b" font-size="11" text-anchor="middle">R = 2 m</text>';
+    s += '<text x="' + (cx + r/2) + '" y="' + (cy - 6) + '" fill="#64748b" font-size="11" text-anchor="middle"><tspan font-style="italic">R</tspan> = 2 m</text>';
     var px = cx + r, py = cy;
     s += '<circle cx="' + px + '" cy="' + py + '" r="7" fill="#0284c7"/>';
     s += '<line x1="' + px + '" y1="' + py + '" x2="' + px + '" y2="35" stroke="#16a34a" stroke-width="2.5" marker-end="url(#f19-arr-green)"/>';
-    s += '<text x="' + (px + 10) + '" y="45" fill="#16a34a" font-size="12" font-weight="800">v = 6 m/s (tangencial, a_t = 0)</text>';
+    s += '<text x="' + (px + 10) + '" y="45" fill="#16a34a" font-size="12" font-weight="800"><tspan font-style="italic">v</tspan> = 6 m/s (tangencial, <tspan font-style="italic">a</tspan><tspan font-size="9" dy="2">t</tspan><tspan dy="-2"> = 0)</tspan></text>';
     s += '<line x1="' + px + '" y1="' + py + '" x2="' + (cx + 15) + '" y2="' + cy + '" stroke="#dc2626" stroke-width="2.5" marker-end="url(#f19-arr-red)"/>';
-    s += '<text x="' + (cx + r/2) + '" y="' + (cy + 22) + '" fill="#dc2626" font-size="12" font-weight="800" text-anchor="middle">a_c = v²/R = 18 m/s²</text>';
+    s += '<text x="' + (cx + r/2) + '" y="' + (cy + 22) + '" fill="#dc2626" font-size="12" font-weight="800" text-anchor="middle"><tspan font-style="italic">a</tspan><tspan font-size="9" dy="2">c</tspan><tspan dy="-2"> = </tspan><tspan font-style="italic">v</tspan><tspan font-size="9" dy="-3">2</tspan><tspan dy="3">/<tspan font-style="italic">R</tspan> = 18 m/s²</text>';
     s += '</svg>';
     return s;
   };
@@ -226,8 +226,8 @@ fig_js_content = """/* Figuras pedagógicas vectoriales SVG para el Simulador D�
     s += '<circle cx="230" cy="152" r="5" fill="#ef4444"/>';
     s += '<circle cx="230" cy="167" r="5" fill="#eab308"/>';
     s += '<circle cx="230" cy="182" r="5" fill="#22c55e"/>';
-    s += '<text x="270" y="170" fill="#0e2a47" font-size="13" font-weight="800">W = 100 N</text>';
-    s += '<text x="230" y="210" fill="#0284c7" font-size="13" font-weight="800" text-anchor="middle">2·T·sin 30° = W  ⇒  2·T·(0.5) = 100  ⇒  T = 100 N</text>';
+    s += '<text x="270" y="170" fill="#0e2a47" font-size="13" font-weight="800"><tspan font-style="italic">W</tspan> = 100 N</text>';
+    s += '<text x="230" y="210" fill="#0284c7" font-size="13" font-weight="800" text-anchor="middle">2·<tspan font-style="italic">T</tspan>·sin 30° = <tspan font-style="italic">W</tspan> ⇒ 2·<tspan font-style="italic">T</tspan>·(0.5) = 100 ⇒ <tspan font-style="italic">T</tspan> = 100 N</text>';
     s += '</svg>';
     return s;
   };
@@ -236,9 +236,9 @@ fig_js_content = """/* Figuras pedagógicas vectoriales SVG para el Simulador D�
   FIG['fql19-grafica-vt'] = function () {
     var s = openSvg(480, 240);
     s += '<line x1="60" y1="190" x2="430" y2="190" stroke="#0e2a47" stroke-width="2" marker-end="url(#f19-arr-dark)"/>';
-    s += '<text x="435" y="194" fill="#0e2a47" font-size="13" font-weight="800">t (s)</text>';
+    s += '<text x="435" y="194" fill="#0e2a47" font-size="13" font-weight="800"><tspan font-style="italic">t</tspan> (s)</text>';
     s += '<line x1="60" y1="190" x2="60" y2="30" stroke="#0e2a47" stroke-width="2" marker-end="url(#f19-arr-dark)"/>';
-    s += '<text x="50" y="24" fill="#0e2a47" font-size="13" font-weight="800">v (m/s)</text>';
+    s += '<text x="50" y="24" fill="#0e2a47" font-size="13" font-weight="800"><tspan font-style="italic">v</tspan> (m/s)</text>';
     s += '<line x1="60" y1="70" x2="360" y2="70" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="3 3"/>';
     s += '<line x1="360" y1="70" x2="360" y2="190" stroke="#cbd5e1" stroke-width="1.2" stroke-dasharray="3 3"/>';
     s += '<text x="50" y="74" fill="#0e2a47" font-size="12" font-weight="700" text-anchor="end">12</text>';
@@ -246,10 +246,10 @@ fig_js_content = """/* Figuras pedagógicas vectoriales SVG para el Simulador D�
     s += '<text x="50" y="194" fill="#0e2a47" font-size="12" text-anchor="end">0</text>';
     s += '<polygon points="60,190 360,70 360,190" fill="#bae6fd" opacity="0.6"/>';
     s += '<text x="240" y="150" fill="#0369a1" font-size="13" font-weight="800" text-anchor="middle">Área = (6 × 12)/2 = 36 m</text>';
-    s += '<text x="240" y="168" fill="#0369a1" font-size="11.5" text-anchor="middle">(Desplazamiento total Δx)</text>';
+    s += '<text x="240" y="168" fill="#0369a1" font-size="11.5" text-anchor="middle">(Desplazamiento total Δ<tspan font-style="italic">x</tspan>)</text>';
     s += '<line x1="60" y1="190" x2="360" y2="70" stroke="#0284c7" stroke-width="3"/>';
     s += '<circle cx="360" cy="70" r="5" fill="#0284c7"/>';
-    s += '<text x="210" y="55" fill="#0284c7" font-size="13" font-weight="800">Pendiente = a = 12/6 = 2 m/s²</text>';
+    s += '<text x="210" y="55" fill="#0284c7" font-size="13" font-weight="800">Pendiente = <tspan font-style="italic">a</tspan> = 12/6 = 2 m/s²</text>';
     s += '</svg>';
     return s;
   };
@@ -261,14 +261,14 @@ fig_js_content = """/* Figuras pedagógicas vectoriales SVG para el Simulador D�
     s += '<text x="' + cx + '" y="' + (cy + 8) + '" fill="#0e2a47" font-size="28" font-weight="800" text-anchor="middle">N</text>';
     s += '<circle cx="' + (cx - 6) + '" cy="' + (cy - 20) + '" r="3" fill="#dc2626"/>';
     s += '<circle cx="' + (cx + 6) + '" cy="' + (cy - 20) + '" r="3" fill="#dc2626"/>';
-    s += '<text x="' + cx + '" y="' + (cy - 30) + '" fill="#dc2626" font-size="12" font-weight="700" text-anchor="middle">1 par no enlazante (libre)</text>';
+    s += '<text x="' + cx + '" y="' + (cy - 30) + '" fill="#dc2626" font-size="12" font-weight="700" text-anchor="middle">1 par de electrones no enlazante (libre)</text>';
     s += '<line x1="' + cx + '" y1="' + (cy + 18) + '" x2="' + cx + '" y2="' + (cy + 45) + '" stroke="#0e2a47" stroke-width="2.5"/>';
     s += '<text x="' + cx + '" y="' + (cy + 68) + '" fill="#0e2a47" font-size="22" font-weight="700" text-anchor="middle">H</text>';
     s += '<line x1="' + (cx - 18) + '" y1="' + (cy + 12) + '" x2="' + (cx - 45) + '" y2="' + (cy + 35) + '" stroke="#0e2a47" stroke-width="2.5"/>';
     s += '<text x="' + (cx - 60) + '" y="' + (cy + 48) + '" fill="#0e2a47" font-size="22" font-weight="700" text-anchor="middle">H</text>';
     s += '<line x1="' + (cx + 18) + '" y1="' + (cy + 12) + '" x2="' + (cx + 45) + '" y2="' + (cy + 35) + '" stroke="#0e2a47" stroke-width="2.5"/>';
     s += '<text x="' + (cx + 60) + '" y="' + (cy + 48) + '" fill="#0e2a47" font-size="22" font-weight="700" text-anchor="middle">H</text>';
-    s += '<text x="180" y="190" fill="#0369a1" font-size="12.5" font-weight="700" text-anchor="middle">3 enlaces covalentes simples + 1 par libre</text>';
+    s += '<text x="180" y="190" fill="#0369a1" font-size="12.5" font-weight="700" text-anchor="middle">3 enlaces covalentes simples N−H + 1 par libre</text>';
     s += '</svg>';
     return s;
   };
@@ -284,11 +284,14 @@ fig_js_content = """/* Figuras pedagógicas vectoriales SVG para el Simulador D�
     s += '<line x1="250" y1="' + (cy - 4) + '" x2="320" y2="' + (cy - 4) + '" stroke="#0e2a47" stroke-width="2.5"/>';
     s += '<line x1="250" y1="' + (cy + 6) + '" x2="320" y2="' + (cy + 6) + '" stroke="#0e2a47" stroke-width="2.5"/>';
     s += '<text x="350" y="' + (cy + 10) + '" fill="#0e2a47" font-size="28" font-weight="800" text-anchor="middle">O</text>';
+
     s += '<line x1="205" y1="40" x2="115" y2="40" stroke="#dc2626" stroke-width="2.2" marker-end="url(#f19-arr-red)"/>';
     s += '<text x="160" y="30" fill="#dc2626" font-size="12" font-weight="800" text-anchor="middle">μ₁ (hacia O)</text>';
+
     s += '<line x1="235" y1="40" x2="325" y2="40" stroke="#dc2626" stroke-width="2.2" marker-end="url(#f19-arr-red)"/>';
     s += '<text x="280" y="30" fill="#dc2626" font-size="12" font-weight="800" text-anchor="middle">μ₂ (hacia O)</text>';
-    s += '<text x="220" y="145" fill="#0e2a47" font-size="13" font-weight="800" text-anchor="middle">Geometría lineal 180° ⇒ μ_{neto} = μ₁ + μ₂ = 0 (Molécula apolar)</text>';
+
+    s += '<text x="220" y="145" fill="#0e2a47" font-size="13" font-weight="800" text-anchor="middle">Geometría lineal 180° ⇒ μ<tspan font-size="9" dy="2">neto</tspan><tspan dy="-2"> = μ₁ + μ₂ = 0 (Molécula apolar)</tspan></text>';
     s += '</svg>';
     return s;
   };
@@ -322,7 +325,7 @@ len_packs = [
                 "exp": "**Paso 1. Identificación del tema central:** El texto expone cómo la meteorología pasó de atribuir los cambios climáticos al caos a identificar patrones regulares mediante mediciones satelitales sistemáticas.\n**Paso 2. Análisis y deducción:** El autor recalca que esta predictibilidad permite anticipar desastres y planificar la agricultura, la urbanización y el transporte.\n**Paso 3. Conclusión y descarte de trampas:** La opción A resume con precisión toda la estructura textual. La opción C es falsa porque el texto afirma expresamente que no hay certeza absoluta, y la D restringe arbitrariamente los beneficios.\n**Respuesta correcta: A.**"
             },
             {
-                "prompt": "En el contexto del segundo enunciado, ¿qué significado tiene la palabra «regularidad»?",
+                "prompt": "En el contexto del fragmento, ¿qué significado tiene la palabra «regularidad»?",
                 "opts": [
                     "Patrón o conjunto de fenómenos que ocurren de manera constante, periódica y previsible.",
                     "Reglamentación legal impuesta por organismos internacionales de aviación.",
@@ -457,7 +460,7 @@ len_packs = [
     },
     {
         "pack_id": "len-19-p3",
-        "reading": "La neuroplasticidad es la capacidad adaptativa intrínseca del sistema nervioso central para modificar su estructura y funcionamiento a lo largo de toda la existencia biológica del individuo. Lejos del antiguo dogma mecanicista que concebía al cerebro adulto como un órgano estático e inmutable tras la adolescencia, las técnicas de neuroimagen funcional han demostrado que las sinapsis se reorganizan continuamente en respuesta al aprendizaje deliberado, la práctica deliberada de habilidades y la recuperación postraumática. Este dinamismo estructural, sin embargo, no opera en el vacío: requiere de estímulos cognitivos exigentes y hábitos sostenidos de descanso. De este modo, el cerebro humano se asemeja más a un músculo dinámico y maleable que a un circuito rígido prediseñado de fábrica.",
+        "reading": "La neuroplasticidad es la capacidad adaptativa intrínseca del sistema nervioso central para modificar su estructura y funcionamiento a lo largo de toda la existencia biológica del individuo. Lejos del antiguo dogma mecanicista que concebía al cerebro adulto como un órgano estático e inmutable tras la adolescencia, las técnicas de neuroimagen funcional han demostrado que las sinapsis se reorganizan continuamente en respuesta al aprendizaje deliberado, la práctica sostenida de habilidades y la recuperación postraumática. Este dinamismo estructural, sin embargo, no opera en el vacío: requiere de estímulos cognitivos exigentes y hábitos sostenidos de descanso. De este modo, el cerebro humano se asemeja más a un músculo dinámico y maleable que a un circuito rígido prediseñado de fábrica.",
         "questions": [
             {
                 "prompt": "¿Cuál es la idea principal que sintetiza el pasaje?",
@@ -474,7 +477,7 @@ len_packs = [
                 "exp": "**Paso 1. Identificación del núcleo informativo:** El texto expone la neuroplasticidad como la capacidad continua del cerebro de reorganizarse ante el aprendizaje, derribando el mito del órgano estático.\n**Paso 2. Contraste:** La analogía final resume que el cerebro es maleable y dinámico ante la exigencia y los hábitos.\n**Paso 3. Conclusión:** La opción A expresa de manera cabal esta tesis neurocientífica.\n**Respuesta correcta: A.**"
             },
             {
-                "prompt": "¿Qué significado contextual tiene la palabra «dogma» en el primer enunciado?",
+                "prompt": "¿Qué significado contextual tiene la palabra «dogma» en el fragmento?",
                 "opts": [
                     "Creencia o doctrina aceptada como verdad incuestionable sin suficiente respaldo empírico.",
                     "Protocolo de laboratorio verificado mediante microscopía electrónica de alta resolución.",
@@ -1113,7 +1116,7 @@ fis_items_data = [
             "Permanece igual porque la masa no ha cambiado."
         ],
         "ans": 0,
-        "exp": "**Paso 1. Fórmula de energía cinética:** $E_c = \\frac{1}{2}mv^2$. La energía cinética es proporcional al cuadrado de la rapidez ($E_c \\propto v^2$).\n**Paso 2. Cálculo a mano:**\n- Estado inicial: $E_0 = \\frac{1}{2}m v_0^2$.\n- Estado final con $v = 3v_0$:\n  $E_{\\text{final}} = \\frac{1}{2}m (3v_0)^2 = \\frac{1}{2}m (9v_0^2) = 9 \\cdot \\left(\\frac{1}{2}m v_0^2\\right) = 9E_0$.\n**Paso 3. Conclusión:** Al triplicar la rapidez, la energía cinética se multiplica por $3^2 = 9$.\n**Respuesta correcta: A.**"
+        "exp": "**Paso 1. Fórmula de energía cinética:** $E_c = \\frac{1}{2}mv^2$. La energía cinética es proporcional al cuadrado de la rapidez ($E_c \\propto v^2$).\n**Paso 2. Cálculo a mano:**\n- Estado inicial: $E_0 = \\frac{1}{2}m v_0^2$.\n- Estado final con $v = 3v_0$:\n  $E_{\\text{final}} = \\frac{1}{2}m (3v_0)^2 = \\frac{1}{2}m (9v_0^2) = 9 \\cdot \\left(\\frac{1}{2}m v_0^2\right) = 9E_0$.\n**Paso 3. Conclusión:** Al triplicar la rapidez, la energía cinética se multiplica por $3^2 = 9$.\n**Respuesta correcta: A.**"
     },
     {
         "topics": ["4.2.3-energiaPotencial"], "ch": "fis-L15", "t": "Energía en Resorte Comprimido",

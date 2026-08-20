@@ -125,7 +125,7 @@ allQs.forEach(q => {
     if (q.id === 'fis-19ago-15' && (!svgCode.includes('2 m') || !svgCode.includes('18 m/s²'))) throw new Error('Fig 15 mismatch');
     if (q.id === 'fis-19ago-24' && (!svgCode.includes('100 N') || !svgCode.includes('30°'))) throw new Error('Fig 24 mismatch');
     if (q.id === 'fis-19ago-28' && (!svgCode.includes('36 m') || !svgCode.includes('12'))) throw new Error('Fig 28 mismatch');
-    if (q.id === 'qui-19ago-09' && !svgCode.includes('par no enlazante')) throw new Error('Fig qui-09 mismatch');
+    if (q.id === 'qui-19ago-09' && !svgCode.includes('no enlazante')) throw new Error('Fig qui-09 mismatch');
     if (q.id === 'qui-19ago-10' && !svgCode.includes('180°')) throw new Error('Fig qui-10 mismatch');
   } else {
     // If no figure, make sure the prompt doesn't falsely say "En la figura adjunta"

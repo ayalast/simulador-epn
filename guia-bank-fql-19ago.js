@@ -44,7 +44,7 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "len-L06",
       "t": "Sinónimo Contextual",
-      "prompt": "En el contexto del segundo enunciado, ¿qué significado tiene la palabra «regularidad»?",
+      "prompt": "En el contexto del fragmento, ¿qué significado tiene la palabra «regularidad»?",
       "opts": [
         "Patrón o conjunto de fenómenos que ocurren de manera constante, periódica y previsible.",
         "Reglamentación legal impuesta por organismos internacionales de aviación.",
@@ -271,7 +271,7 @@ window.GUIA_BANK_FQL_19AGO = {
       "exp": "**Paso 1. Identificación del núcleo informativo:** El texto expone la neuroplasticidad como la capacidad continua del cerebro de reorganizarse ante el aprendizaje, derribando el mito del órgano estático.\n**Paso 2. Contraste:** La analogía final resume que el cerebro es maleable y dinámico ante la exigencia y los hábitos.\n**Paso 3. Conclusión:** La opción A expresa de manera cabal esta tesis neurocientífica.\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": [],
-      "reading": "La neuroplasticidad es la capacidad adaptativa intrínseca del sistema nervioso central para modificar su estructura y funcionamiento a lo largo de toda la existencia biológica del individuo. Lejos del antiguo dogma mecanicista que concebía al cerebro adulto como un órgano estático e inmutable tras la adolescencia, las técnicas de neuroimagen funcional han demostrado que las sinapsis se reorganizan continuamente en respuesta al aprendizaje deliberado, la práctica deliberada de habilidades y la recuperación postraumática. Este dinamismo estructural, sin embargo, no opera en el vacío: requiere de estímulos cognitivos exigentes y hábitos sostenidos de descanso. De este modo, el cerebro humano se asemeja más a un músculo dinámico y maleable que a un circuito rígido prediseñado de fábrica.",
+      "reading": "La neuroplasticidad es la capacidad adaptativa intrínseca del sistema nervioso central para modificar su estructura y funcionamiento a lo largo de toda la existencia biológica del individuo. Lejos del antiguo dogma mecanicista que concebía al cerebro adulto como un órgano estático e inmutable tras la adolescencia, las técnicas de neuroimagen funcional han demostrado que las sinapsis se reorganizan continuamente en respuesta al aprendizaje deliberado, la práctica sostenida de habilidades y la recuperación postraumática. Este dinamismo estructural, sin embargo, no opera en el vacío: requiere de estímulos cognitivos exigentes y hábitos sostenidos de descanso. De este modo, el cerebro humano se asemeja más a un músculo dinámico y maleable que a un circuito rígido prediseñado de fábrica.",
       "pack": "len-19-p3"
     },
     {
@@ -284,7 +284,7 @@ window.GUIA_BANK_FQL_19AGO = {
       ],
       "ch": "len-L06",
       "t": "Significado Contextual",
-      "prompt": "¿Qué significado contextual tiene la palabra «dogma» en el primer enunciado?",
+      "prompt": "¿Qué significado contextual tiene la palabra «dogma» en el fragmento?",
       "opts": [
         "Creencia o doctrina aceptada como verdad incuestionable sin suficiente respaldo empírico.",
         "Protocolo de laboratorio verificado mediante microscopía electrónica de alta resolución.",
@@ -295,7 +295,7 @@ window.GUIA_BANK_FQL_19AGO = {
       "exp": "**Paso 1. Contexto de uso:** 'Lejos del antiguo dogma mecanicista que concebía al cerebro como un órgano estático...'.\n**Paso 2. Análisis semántico:** 'Dogma' aquí se refiere a una creencia rígida del pasado que la comunidad médica asumía sin cuestionar hasta que llegaron las neuroimágenes.\n**Paso 3. Conclusión:** Significa una creencia asumida como verdad incuestionable.\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": [],
-      "reading": "La neuroplasticidad es la capacidad adaptativa intrínseca del sistema nervioso central para modificar su estructura y funcionamiento a lo largo de toda la existencia biológica del individuo. Lejos del antiguo dogma mecanicista que concebía al cerebro adulto como un órgano estático e inmutable tras la adolescencia, las técnicas de neuroimagen funcional han demostrado que las sinapsis se reorganizan continuamente en respuesta al aprendizaje deliberado, la práctica deliberada de habilidades y la recuperación postraumática. Este dinamismo estructural, sin embargo, no opera en el vacío: requiere de estímulos cognitivos exigentes y hábitos sostenidos de descanso. De este modo, el cerebro humano se asemeja más a un músculo dinámico y maleable que a un circuito rígido prediseñado de fábrica.",
+      "reading": "La neuroplasticidad es la capacidad adaptativa intrínseca del sistema nervioso central para modificar su estructura y funcionamiento a lo largo de toda la existencia biológica del individuo. Lejos del antiguo dogma mecanicista que concebía al cerebro adulto como un órgano estático e inmutable tras la adolescencia, las técnicas de neuroimagen funcional han demostrado que las sinapsis se reorganizan continuamente en respuesta al aprendizaje deliberado, la práctica sostenida de habilidades y la recuperación postraumática. Este dinamismo estructural, sin embargo, no opera en el vacío: requiere de estímulos cognitivos exigentes y hábitos sostenidos de descanso. De este modo, el cerebro humano se asemeja más a un músculo dinámico y maleable que a un circuito rígido prediseñado de fábrica.",
       "pack": "len-19-p3"
     },
     {
@@ -319,7 +319,7 @@ window.GUIA_BANK_FQL_19AGO = {
       "exp": "**Paso 1. Función de la analogía:** Un músculo crece y se adapta si se entrena y descansa; si no, se atrofia.\n**Paso 2. Correspondencia analógica:** El autor aplica esta misma idea a las conexiones sinápticas del cerebro humano frente al aprendizaje y los estímulos exigentes.\n**Paso 3. Conclusión:** Sirve para ilustrar gráficamente la maleabilidad por entrenamiento.\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": [],
-      "reading": "La neuroplasticidad es la capacidad adaptativa intrínseca del sistema nervioso central para modificar su estructura y funcionamiento a lo largo de toda la existencia biológica del individuo. Lejos del antiguo dogma mecanicista que concebía al cerebro adulto como un órgano estático e inmutable tras la adolescencia, las técnicas de neuroimagen funcional han demostrado que las sinapsis se reorganizan continuamente en respuesta al aprendizaje deliberado, la práctica deliberada de habilidades y la recuperación postraumática. Este dinamismo estructural, sin embargo, no opera en el vacío: requiere de estímulos cognitivos exigentes y hábitos sostenidos de descanso. De este modo, el cerebro humano se asemeja más a un músculo dinámico y maleable que a un circuito rígido prediseñado de fábrica.",
+      "reading": "La neuroplasticidad es la capacidad adaptativa intrínseca del sistema nervioso central para modificar su estructura y funcionamiento a lo largo de toda la existencia biológica del individuo. Lejos del antiguo dogma mecanicista que concebía al cerebro adulto como un órgano estático e inmutable tras la adolescencia, las técnicas de neuroimagen funcional han demostrado que las sinapsis se reorganizan continuamente en respuesta al aprendizaje deliberado, la práctica sostenida de habilidades y la recuperación postraumática. Este dinamismo estructural, sin embargo, no opera en el vacío: requiere de estímulos cognitivos exigentes y hábitos sostenidos de descanso. De este modo, el cerebro humano se asemeja más a un músculo dinámico y maleable que a un circuito rígido prediseñado de fábrica.",
       "pack": "len-19-p3"
     },
     {
@@ -343,7 +343,7 @@ window.GUIA_BANK_FQL_19AGO = {
       "exp": "**Paso 1. Premisa del texto:** La neuroplasticidad opera 'a lo largo de toda la existencia biológica del individuo' en respuesta a estímulos exigentes.\n**Paso 2. Inferencia lógica:** Si la plasticidad dura toda la vida, los adultos mayores también pueden formar nuevas redes y aprender habilidades con práctica deliberada.\n**Paso 3. Conclusión:** La opción A es una inferencia rigurosa y directa.\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": [],
-      "reading": "La neuroplasticidad es la capacidad adaptativa intrínseca del sistema nervioso central para modificar su estructura y funcionamiento a lo largo de toda la existencia biológica del individuo. Lejos del antiguo dogma mecanicista que concebía al cerebro adulto como un órgano estático e inmutable tras la adolescencia, las técnicas de neuroimagen funcional han demostrado que las sinapsis se reorganizan continuamente en respuesta al aprendizaje deliberado, la práctica deliberada de habilidades y la recuperación postraumática. Este dinamismo estructural, sin embargo, no opera en el vacío: requiere de estímulos cognitivos exigentes y hábitos sostenidos de descanso. De este modo, el cerebro humano se asemeja más a un músculo dinámico y maleable que a un circuito rígido prediseñado de fábrica.",
+      "reading": "La neuroplasticidad es la capacidad adaptativa intrínseca del sistema nervioso central para modificar su estructura y funcionamiento a lo largo de toda la existencia biológica del individuo. Lejos del antiguo dogma mecanicista que concebía al cerebro adulto como un órgano estático e inmutable tras la adolescencia, las técnicas de neuroimagen funcional han demostrado que las sinapsis se reorganizan continuamente en respuesta al aprendizaje deliberado, la práctica sostenida de habilidades y la recuperación postraumática. Este dinamismo estructural, sin embargo, no opera en el vacío: requiere de estímulos cognitivos exigentes y hábitos sostenidos de descanso. De este modo, el cerebro humano se asemeja más a un músculo dinámico y maleable que a un circuito rígido prediseñado de fábrica.",
       "pack": "len-19-p3"
     },
     {
@@ -367,7 +367,7 @@ window.GUIA_BANK_FQL_19AGO = {
       "exp": "**Paso 1. Análisis del conector:** 'De este modo' funciona como nexo explicativo-conclusivo.\n**Paso 2. Aplicación:** Resume los argumentos de remodelación sináptica para rematar con la analogía final del músculo maleable.\n**Paso 3. Conclusión:** Sintetiza la explicación con claridad.\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": [],
-      "reading": "La neuroplasticidad es la capacidad adaptativa intrínseca del sistema nervioso central para modificar su estructura y funcionamiento a lo largo de toda la existencia biológica del individuo. Lejos del antiguo dogma mecanicista que concebía al cerebro adulto como un órgano estático e inmutable tras la adolescencia, las técnicas de neuroimagen funcional han demostrado que las sinapsis se reorganizan continuamente en respuesta al aprendizaje deliberado, la práctica deliberada de habilidades y la recuperación postraumática. Este dinamismo estructural, sin embargo, no opera en el vacío: requiere de estímulos cognitivos exigentes y hábitos sostenidos de descanso. De este modo, el cerebro humano se asemeja más a un músculo dinámico y maleable que a un circuito rígido prediseñado de fábrica.",
+      "reading": "La neuroplasticidad es la capacidad adaptativa intrínseca del sistema nervioso central para modificar su estructura y funcionamiento a lo largo de toda la existencia biológica del individuo. Lejos del antiguo dogma mecanicista que concebía al cerebro adulto como un órgano estático e inmutable tras la adolescencia, las técnicas de neuroimagen funcional han demostrado que las sinapsis se reorganizan continuamente en respuesta al aprendizaje deliberado, la práctica sostenida de habilidades y la recuperación postraumática. Este dinamismo estructural, sin embargo, no opera en el vacío: requiere de estímulos cognitivos exigentes y hábitos sostenidos de descanso. De este modo, el cerebro humano se asemeja más a un músculo dinámico y maleable que a un circuito rígido prediseñado de fábrica.",
       "pack": "len-19-p3"
     },
     {
@@ -1289,7 +1289,7 @@ window.GUIA_BANK_FQL_19AGO = {
         "Permanece igual porque la masa no ha cambiado."
       ],
       "ans": 0,
-      "exp": "**Paso 1. Fórmula de energía cinética:** $E_c = \\frac{1}{2}mv^2$. La energía cinética es proporcional al cuadrado de la rapidez ($E_c \\propto v^2$).\n**Paso 2. Cálculo a mano:**\n- Estado inicial: $E_0 = \\frac{1}{2}m v_0^2$.\n- Estado final con $v = 3v_0$:\n  $E_{\\text{final}} = \\frac{1}{2}m (3v_0)^2 = \\frac{1}{2}m (9v_0^2) = 9 \\cdot \\left(\\frac{1}{2}m v_0^2\\right) = 9E_0$.\n**Paso 3. Conclusión:** Al triplicar la rapidez, la energía cinética se multiplica por $3^2 = 9$.\n**Respuesta correcta: A.**",
+      "exp": "**Paso 1. Fórmula de energía cinética:** $E_c = \\frac{1}{2}mv^2$. La energía cinética es proporcional al cuadrado de la rapidez ($E_c \\propto v^2$).\n**Paso 2. Cálculo a mano:**\n- Estado inicial: $E_0 = \\frac{1}{2}m v_0^2$.\n- Estado final con $v = 3v_0$:\n  $E_{\\text{final}} = \\frac{1}{2}m (3v_0)^2 = \\frac{1}{2}m (9v_0^2) = 9 \\cdot \\left(\\frac{1}{2}m v_0^2\right) = 9E_0$.\n**Paso 3. Conclusión:** Al triplicar la rapidez, la energía cinética se multiplica por $3^2 = 9$.\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": []
     },
@@ -2096,7 +2096,7 @@ window.GUIA_BANK_FQL_19AGO = {
       },
       {
         "pack_id": "len-19-p3",
-        "reading": "La neuroplasticidad es la capacidad adaptativa intrínseca del sistema nervioso central para modificar su estructura y funcionamiento a lo largo de toda la existencia biológica del individuo. Lejos del antiguo dogma mecanicista que concebía al cerebro adulto como un órgano estático e inmutable tras la adolescencia, las técnicas de neuroimagen funcional han demostrado que las sinapsis se reorganizan continuamente en respuesta al aprendizaje deliberado, la práctica deliberada de habilidades y la recuperación postraumática. Este dinamismo estructural, sin embargo, no opera en el vacío: requiere de estímulos cognitivos exigentes y hábitos sostenidos de descanso. De este modo, el cerebro humano se asemeja más a un músculo dinámico y maleable que a un circuito rígido prediseñado de fábrica.",
+        "reading": "La neuroplasticidad es la capacidad adaptativa intrínseca del sistema nervioso central para modificar su estructura y funcionamiento a lo largo de toda la existencia biológica del individuo. Lejos del antiguo dogma mecanicista que concebía al cerebro adulto como un órgano estático e inmutable tras la adolescencia, las técnicas de neuroimagen funcional han demostrado que las sinapsis se reorganizan continuamente en respuesta al aprendizaje deliberado, la práctica sostenida de habilidades y la recuperación postraumática. Este dinamismo estructural, sin embargo, no opera en el vacío: requiere de estímulos cognitivos exigentes y hábitos sostenidos de descanso. De este modo, el cerebro humano se asemeja más a un músculo dinámico y maleable que a un circuito rígido prediseñado de fábrica.",
         "qids": [
           "len-19ago-11",
           "len-19ago-12",

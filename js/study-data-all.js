@@ -1,4 +1,4 @@
-/* Banco de Estudio EPN Día 2 — Exact Manus App Replica con LaTeX Integral */
+/* Banco de Estudio EPN Día 2 — Exact Manus App Replica con Contenido Reportado Integral */
 window.STUDY_DATA = {
   "parte1": [
     {
@@ -28,7 +28,7 @@ window.STUDY_DATA = {
           "body": "La pendiente de la gráfica $v-t$ representa la aceleración instantánea $a = \\frac{\\Delta v}{\\Delta t}$. El área bajo la curva corresponde al desplazamiento $\\Delta x$."
         }
       ],
-      "commonTrap": "No confundas rapidez media ($\\frac{\\text{distancia}}{t}$) con el módulo de la velocidad media ($\\frac{|\\Delta x|}{t}$). En una pista circular cerrada de $400\\text{ m}$, el desplazamiento es $\\Delta x = 0$.",
+      "commonTrap": "No confundas rapidez media ($\\frac{\\text{distancia}}{t}$) con el módulo de la velocidad media ($\\frac{|\\Delta x|}{t}$). En una pista cerrada de $400\\text{ m}$, el desplazamiento es $\\Delta x = 0$.",
       "stepByStep": [
         {
           "step": "1",
@@ -40,14 +40,14 @@ window.STUDY_DATA = {
         },
         {
           "step": "3",
-          "text": "Aplica la ecuación cinemática sin variables desconocidas superfluas."
+          "text": "Aplica la ecuación cinemática que relacione las variables conocidas."
         }
       ],
       "example": {
         "prompt": "Un móvil parte del reposo con aceleración constante de $3\\text{ m/s}^2$ durante $4\\text{ s}$. ¿Qué distancia recorre y qué rapidez final alcanza?",
         "steps": [
           "1. Rapidez final: $v_f = v_0 + a t = 0 + (3\\text{ m/s}^2)(4\\text{ s}) = 12\\text{ m/s}$.",
-          "2. Distancia: $d = v_0 t + \\frac{1}{2}a t^2 = 0 + \\frac{1}{2}(3\\text{ m/s}^2)(4\\text{ s})^2 = \\frac{1}{2}(3)(16) = 24\\text{ m}$."
+          "2. Distancia: $d = v_0 t + \\frac{1}{2}a t^2 = 0 + \\frac{1}{2}(3\\text{ m/s}^2)(4\\text{ s})^2 = 24\\text{ m}$."
         ],
         "result": "Distancia $d = 24\\text{ m}$ | Rapidez final $v_f = 12\\text{ m/s}$"
       }
@@ -61,7 +61,7 @@ window.STUDY_DATA = {
       "eyebrow": "02 · Newton",
       "title": "Dibuja las fuerzas antes de calcular",
       "lead": "La segunda ley de Newton conecta la fuerza resultante externa con el cambio de movimiento. El diagrama de cuerpo libre (DCL) evita errores de signo.",
-      "quickRule": "Fuerza neta nula ($\\sum \\vec{F} = 0$) significa equilibrio (reposo o MRU a velocidad constante), no ausencia de fuerzas.",
+      "quickRule": "Fuerza neta nula ($\\sum \\vec{F} = 0$) significa equilibrio traslacional (reposo o MRU a velocidad constante), no ausencia de fuerzas.",
       "formula": "\\sum \\vec{F} = m \\vec{a} \\qquad P = m g \\qquad f_k = \\mu_k N",
       "variables": [
         "$F$: fuerza neta ($\\text{N}$)",
@@ -73,11 +73,11 @@ window.STUDY_DATA = {
       "sections": [
         {
           "heading": "Tercera Ley: Acción y Reacción",
-          "body": "Son iguales en magnitud ($|\\vec{F}_{AB}| = |\\vec{F}_{BA}|$) y opuestas en sentido, pero actúan sobre cuerpos distintos: jamás se anulan entre sí."
+          "body": "Son iguales en magnitud ($|\\vec{F}_{AB}| = |\\vec{F}_{BA}|$) y opuestas en sentido, pero actúan sobre cuerpos distintos: jamás se anulan entre sí en el mismo cuerpo."
         },
         {
           "heading": "La fuerza normal no siempre es igual al peso",
-          "body": "En un plano horizontal $N = mg$. En un plano inclinado de ángulo $\\theta$, $N = mg \\cos\\theta$. Con una fuerza tensora vertical hacia arriba $T$, $N = mg - T$."
+          "body": "En un plano horizontal $N = mg$. En un plano inclinado de ángulo $\\theta$, $N = mg \\cos\\theta$. Con una fuerza de tracción hacia arriba $T$, $N = mg - T$."
         }
       ],
       "commonTrap": "No sumes la fuerza de reacción en el diagrama del mismo cuerpo que ejerce la acción.",
@@ -126,13 +126,9 @@ window.STUDY_DATA = {
         {
           "heading": "Trabajo de fuerzas perpendiculares es cero",
           "body": "Como $W = F d \\cos(90^\\circ) = 0$, fuerzas como la normal y la centrípeta no realizan trabajo mecánico sobre el cuerpo."
-        },
-        {
-          "heading": "Rampas y péndulos",
-          "body": "En ausencia de fricción, la rapidez al llegar a la base depende únicamente del desnivel vertical $h$: $v = \\sqrt{2gh}$, sin importar la forma o longitud de la rampa."
         }
       ],
-      "commonTrap": "Si existe fricción, la energía no se conserva: $E_{\\text{final}} = E_{\\text{inicial}} - |W_{\\text{fricción}}|$, donde $|W_f| = f_k d = \\mu_k N d$.",
+      "commonTrap": "Si existe fricción, la energía mecánica no se conserva: $E_{\\text{final}} = E_{\\text{inicial}} - |W_{\\text{fricción}}|$, donde $|W_f| = f_k d = \\mu_k N d$.",
       "stepByStep": [
         {
           "step": "1",
@@ -177,7 +173,7 @@ window.STUDY_DATA = {
       "sections": [
         {
           "heading": "Choque Elástico vs Inelástico",
-          "body": "En todo choque se conserva el momento lineal total. En choques elásticos se conserva además la energía cinética ($K_i = K_f$). En choques perfectamente inelásticos los cuerpos quedan unidos ($v_f = \\frac{m_1 v_1 + m_2 v_2}{m_1 + m_2}$)."
+          "body": "En todo choque se conserva el momento lineal total. En choques elásticos se conserva además la energía cinética. En choques inelásticos los cuerpos quedan unidos."
         }
       ],
       "commonTrap": "El momento lineal es un vector: si un balón rebota con la misma rapidez $v$, el cambio es $\\Delta p = -m v - (+m v) = -2mv$.",
@@ -226,7 +222,7 @@ window.STUDY_DATA = {
       "sections": [
         {
           "heading": "Iones poliatómicos fundamentales",
-          "body": "• Sulfato: $\\text{SO}_4^{2-}$\n• Nitrato: $\\text{NO}_3^-$\n• Carbonato: $\\text{CO}_3^{2-}$\n• Hidróxido: $\\text{OH}^-$\n• Amonio: $\\text{NH}_4^+$"
+          "body": "• Sulfato: $\\text{SO}_4^{2-}$\n• Nitrato: $\\text{NO}_3^-$\n• Carbonato: $\\text{CO}_3^{2-}$\n• Hidróxido: $\\text{OH}^-$\n• Dicromato: $\\text{Cr}_2\\text{O}_7^{2-}$"
         }
       ],
       "commonTrap": "No confundas el óxido ferroso ($\\text{FeO}$, $\\text{Fe} = +2$) con el óxido férrico ($\\text{Fe}_2\\text{O}_3$, $\\text{Fe} = +3$).",
@@ -418,8 +414,12 @@ window.STUDY_DATA = {
       ],
       "sections": [
         {
-          "heading": "El patrón que apareció en la prueba",
-          "body": "• Péndulo oscilante: en el valle más bajo la energía cinética es máxima y la potencial gravitatoria es mínima.\n• Doble rampa de Galileo: en ausencia de fricción, el cuerpo alcanza exactamente la misma altura inicial $h$, sin importar la inclinación de la segunda rampa.\n• Arco tensado: la energía potencial elástica $U_e = \\frac{1}{2}kx^2$ se transfiere como energía cinética de la flecha ($K = \\frac{1}{2}mv^2$)."
+          "heading": "Caja vertical vs Rampa inclinada (Reporte 19 ago)",
+          "body": "Pregunta reportada: ¿Alzar una caja verticalmente requiere el mismo trabajo que empujarla por una rampa sin fricción? Respuesta: El **trabajo realizado contra la gravedad es exactamente el mismo** ($W = mgh$), pero la **fuerza aplicada en la rampa es menor** ($F = mg\\sin\\theta$) porque se aplica a lo largo de mayor distancia."
+        },
+        {
+          "heading": "Péndulo oscilante y Doble rampa de Galileo",
+          "body": "• Péndulo: en el punto más bajo $U_g = 0$ y $K$ es máxima. En los extremos $v = 0$ y $U_g$ es máxima.\n• Galileo: la esfera alcanza exactamente la misma altura $h$ en cualquier rampa si no hay rozamiento."
         }
       ],
       "commonTrap": "En las fotos apareció el distractor 'la energía potencial es constante'. Es FALSO: la energía potencial varía con la altura $h$; lo que permanece constante es la energía mecánica total $E_m$.",
@@ -468,6 +468,10 @@ window.STUDY_DATA = {
         {
           "heading": "Paquete soltado desde un avión",
           "body": "Un paquete liberado desde un avión en vuelo horizontal a $180\\text{ m/s}$ conserva $v_x = 180\\text{ m/s}$ y describe una trayectoria parabólica hacia adelante para un observador en tierra."
+        },
+        {
+          "heading": "Sandía lanzada verticalmente hacia arriba",
+          "body": "En el punto más alto, $v = 0\\text{ m/s}$, pero $a = g = 9.8\\text{ m/s}^2$ hacia abajo en todo instante. Al regresar al punto de partida, la rapidez es igual a la inicial ($|v| = v_0$)."
         }
       ],
       "commonTrap": "No caigas en la trampa de marcar 'en el punto más alto la velocidad es cero'. Solo es cero la componente vertical $v_y$; la componente horizontal $v_x$ sigue activa.",
@@ -501,11 +505,11 @@ window.STUDY_DATA = {
       "subject": "fisica",
       "unit": "Parte II · Examen reportado 19 ago",
       "priority": "Esencial",
-      "eyebrow": "P2 · 03 · 2da Ley",
-      "title": "Aceleración vertical con fuerza aplicada ($1\\text{ kg} \\to 3\\text{ N}$)",
-      "lead": "Reportado en la prueba: Objeto de $1.0\\text{ kg}$ lanzado verticalmente con $v_0 = 2.0\\text{ m/s}$ que alcanza $v_f = 14.0\\text{ m/s}$ en $t = 4.0\\text{ s}$. La fuerza resultante se deduce de la cinemática.",
+      "eyebrow": "P2 · 03 · 2da y 3ra Ley",
+      "title": "Aceleración vertical y pares de fuerza en cuerdas",
+      "lead": "Reportado en la prueba: Objeto de $1.0\\text{ kg}$ lanzado hacia abajo con $v_0 = 2.0\\text{ m/s}$ que alcanza $v_f = 14.0\\text{ m/s}$ en $t = 4.0\\text{ s}$, y preguntas conceptuales de pares de fuerzas.",
       "quickRule": "Aceleración: $a = \\frac{v_f - v_0}{t} = \\frac{14 - 2}{4} = 3.0\\text{ m/s}^2$. Fuerza neta: $F_{\\text{neta}} = m a = (1.0\\text{ kg})(3.0\\text{ m/s}^2) = 3.0\\text{ N}$.",
-      "formula": "a = \\frac{v_f - v_0}{t} \\qquad F_{\\text{neta}} = m \\cdot a",
+      "formula": "a = \\frac{v_f - v_0}{t} \\qquad F_{\\text{neta}} = m \\cdot a \\qquad \\vec{F}_{AB} = -\\vec{F}_{BA}",
       "variables": [
         "$m = 1.0\\text{ kg}$",
         "$v_0 = 2.0\\text{ m/s}$",
@@ -515,11 +519,11 @@ window.STUDY_DATA = {
       ],
       "sections": [
         {
-          "heading": "Peso vs Fuerza Neta",
-          "body": "El peso del objeto es $P = mg = (1.0)(9.8) = 9.8\\text{ N}$. La fuerza neta resultante es la suma de todas las fuerzas actuantes, que por la 2da ley de Newton vale $F_{\\text{neta}} = ma = 3.0\\text{ N}$."
+          "heading": "Juan y Pedro jalan una cuerda (Reporte 19 ago)",
+          "body": "Pregunta reportada: Despreciando fricción, ¿quién ejerce mayor fuerza en la cuerda? Por Tercera Ley de Newton, **la tensión en la cuerda y las fuerzas de acción y reacción son idénticas en magnitud**."
         }
       ],
-      "commonTrap": "No respondas $9.8\\text{ N}$ de memoria: el enunciado proporciona datos cinemáticos específicos para calcular la fuerza neta real.",
+      "commonTrap": "No respondas $9.8\\text{ N}$ de memoria en el problema de aceleración: el enunciado proporciona datos cinemáticos específicos para calcular la fuerza neta real ($3.0\\text{ N}$).",
       "stepByStep": [
         {
           "step": "1",
@@ -544,15 +548,109 @@ window.STUDY_DATA = {
       }
     },
     {
+      "id": "p2_fis_04",
+      "part": "parte2",
+      "subject": "fisica",
+      "unit": "Parte II · Examen reportado 19 ago",
+      "priority": "Esencial",
+      "eyebrow": "P2 · 04 · Movimiento Circular",
+      "title": "Aceleración centrípeta y rapidez constante",
+      "lead": "En un Movimiento Circular Uniforme (MCU), aunque el módulo de la velocidad (rapidez $v$) no cambie, el vector velocidad cambia continuamente de dirección.",
+      "quickRule": "En MCU: la aceleración centrípeta apunta siempre hacia el centro de giro y vale $a_c = \\frac{v^2}{r} = \\omega^2 r$. La fuerza centrípeta es $F_c = m a_c$.",
+      "formula": "a_c = \\frac{v^2}{r} = \\omega^2 r \\qquad F_c = m\\frac{v^2}{r} \\qquad v = \\omega r = \\frac{2\\pi r}{T}",
+      "variables": [
+        "$a_c$: aceleración centrípeta ($\\text{m/s}^2$)",
+        "$v$: rapidez tangencial ($\\text{m/s}$)",
+        "$r$: radio ($\\text{m}$)",
+        "$\\omega$: velocidad angular ($\\text{rad/s}$)"
+      ],
+      "sections": [
+        {
+          "heading": "Concepto clave de examen",
+          "body": "¿Hay aceleración si la rapidez es constante? SÍ, existe aceleración centrípeta dirigida radialmente hacia el centro debido al cambio en la orientación del vector velocidad."
+        }
+      ],
+      "commonTrap": "La fuerza centrípeta no es una fuerza mágica adicional: es el nombre que recibe la fuerza neta real (tensión, fricción, gravedad o normal) dirigida hacia el centro.",
+      "stepByStep": [
+        {
+          "step": "1",
+          "text": "Identifica el radio de giro $r$ y la rapidez $v$ o período $T$."
+        },
+        {
+          "step": "2",
+          "text": "Calcula la aceleración centrípeta: $a_c = \\frac{v^2}{r}$."
+        },
+        {
+          "step": "3",
+          "text": "Multiplica por la masa para hallar la fuerza centrípeta: $F_c = m a_c$."
+        }
+      ],
+      "example": {
+        "prompt": "Un móvil describe una curva de radio $10\\text{ m}$ con rapidez constante de $20\\text{ m/s}$. Calcule su aceleración centrípeta.",
+        "steps": [
+          "1. $a_c = \\frac{v^2}{r} = \\frac{(20\\text{ m/s})^2}{10\\text{ m}} = \\frac{400}{10} = 40\\text{ m/s}^2$."
+        ],
+        "result": "Aceleración centrípeta $a_c = 40\\text{ m/s}^2$ hacia el centro."
+      }
+    },
+    {
       "id": "p2_qui_01",
       "part": "parte2",
       "subject": "quimica",
       "unit": "Parte II · Examen reportado 19 ago",
       "priority": "Esencial",
-      "eyebrow": "P2 · 01 · Estequiometría",
-      "title": "Proporción estequiométrica exacta en óxido de magnesio",
-      "lead": "Reportado en la prueba: Se mezclan $24.0\\text{ g}$ de $\\text{Mg}$ ($24.0\\text{ g/mol}$) con $16.0\\text{ g}$ de $\\text{O}_2$ ($32.0\\text{ g/mol}$). Ambos reactivos se consumen al $100\\%$ produciendo $40.0\\text{ g}$ de $\\text{MgO}$.",
-      "quickRule": "$1.0\\text{ mol Mg}$ ($24\\text{ g}$) con $0.5\\text{ mol O}_2$ ($16\\text{ g}$) cumplen la relación $2:1$ exacta. Por ley de conservación de la masa: $24 + 16 = 40.0\\text{ g de MgO}$ sin limitante ni exceso.",
+      "eyebrow": "P2 · 05 · Redox y Oxígeno",
+      "title": "¿Qué hace el Oxígeno al reaccionar? (Redox)",
+      "lead": "Reportado en la prueba: En reacciones de síntesis y combustión (ej. $2\\text{Mg} + \\text{O}_2 \\to 2\\text{MgO}$ o $4\\text{Fe} + 3\\text{O}_2 \\to 2\\text{Fe}_2\\text{O}_3$), el oxígeno molecular $\\text{O}_2$ pasa de estado de oxidación $0$ a $-2$.",
+      "quickRule": "El Oxígeno GANA ELECTRONES (se reduce) y actúa como AGENTE OXIDANTE, provocando que el metal pierda electrones (se oxide).",
+      "formula": "\\text{O}_2^0 + 4e^- \\to 2\\,\\text{O}^{2-} \\quad (\\text{Reducción}) \\qquad \\text{Mg}^0 \\to \\text{Mg}^{2+} + 2e^- \\quad (\\text{Oxidación})",
+      "variables": [
+        "Oxidación: pérdida de electrones (aumento de Nox)",
+        "Reducción: ganancia de electrones (disminución de Nox)",
+        "Agente oxidante: la sustancia que gana electrones (el $\\text{O}_2$)",
+        "Agente reductor: la sustancia que cede electrones"
+      ],
+      "sections": [
+        {
+          "heading": "Análisis de la pregunta exacta reportada",
+          "body": "Pregunta reportada en el chat: Dada una ecuación estequiométrica de formación de óxidos, ¿qué hace el oxígeno al interactuar?\n• Opción A: No hace nada.\n• Opción B: Cede electrones.\n• Opción C: Gana electrones (acepta electrones).\n• Opción D: Se oxida.\n\nRespuesta correcta: **Gana electrones** (el oxígeno tiene alta electronegatividad y capta electrones de valencia para formar el anión óxido $\\text{O}^{2-}$, experimentando reducción)."
+        }
+      ],
+      "commonTrap": "No confundas 'agente oxidante' con 'sustancia que se oxida'. El oxígeno es el agente oxidante PORQUE él mismo SE REDUCE (gana electrones).",
+      "stepByStep": [
+        {
+          "step": "1",
+          "text": "Determina el número de oxidación inicial del $\\text{O}_2$ libre: $\\text{Nox} = 0$."
+        },
+        {
+          "step": "2",
+          "text": "Determina el número de oxidación final del oxígeno en el óxido: $\\text{Nox} = -2$."
+        },
+        {
+          "step": "3",
+          "text": "De $0$ a $-2$ el Nox disminuye: gana electrones $\\implies$ se reduce."
+        }
+      ],
+      "example": {
+        "prompt": "En la reacción $2\\text{Mg} + \\text{O}_2 \\to 2\\text{MgO}$, ¿qué proceso experimenta el oxígeno?",
+        "steps": [
+          "1. $\\text{Mg}$ pasa de $0$ a $+2$ (pierde 2 electrones por átomo, se oxida).",
+          "2. $\\text{O}_2$ pasa de $0$ a $-2$ (gana 2 electrones por átomo, se reduce).",
+          "3. El oxígeno actúa como agente oxidante captando electrones."
+        ],
+        "result": "El oxígeno gana electrones y experimenta reducción."
+      }
+    },
+    {
+      "id": "p2_qui_02",
+      "part": "parte2",
+      "subject": "quimica",
+      "unit": "Parte II · Examen reportado 19 ago",
+      "priority": "Esencial",
+      "eyebrow": "P2 · 06 · Estequiometría",
+      "title": "Proporción estequiométrica exacta y reactivo limitante",
+      "lead": "Reportado en la prueba: Se mezclan $24.0\\text{ g}$ de $\\text{Mg}$ con $16.0\\text{ g}$ de $\\text{O}_2$. Ambos reactivos se consumen en proporción $2:1$ exacta produciendo $40.0\\text{ g}$ de $\\text{MgO}$.",
+      "quickRule": "$1.0\\text{ mol Mg}$ ($24\\text{ g}$) con $0.5\\text{ mol O}_2$ ($16\\text{ g}$) cumplen la relación $2:1$ exacta. Masa total por Lavoisier: $24 + 16 = 40.0\\text{ g de MgO}$.",
       "formula": "2\\,\\text{Mg} + \\text{O}_2 \\to 2\\,\\text{MgO} \\qquad 1.0\\,\\text{mol Mg} + 0.5\\,\\text{mol O}_2 = 1.0\\,\\text{mol MgO} \\; (40.0\\,\\text{g})",
       "variables": [
         "$n(\\text{Mg}) = \\frac{24.0}{24.0} = 1.0\\text{ mol}$",
@@ -562,23 +660,23 @@ window.STUDY_DATA = {
       ],
       "sections": [
         {
-          "heading": "Cero reactivo en exceso",
-          "body": "Como la proporción molar disponible coincide exactamente con los coeficientes estequiométricos de la reacción balanceada ($2\\text{Mg} : 1\\text{O}_2$), no hay reactivo limitante ni sobrante."
+          "heading": "Reactivo limitante en síntesis de amoníaco (Reporte 19 ago)",
+          "body": "En $\\text{N}_2 + 3\\text{H}_2 \\to 2\\text{NH}_3$, al mezclar $28\\text{ g de N}_2$ ($1.0\\text{ mol}$) con $9\\text{ g de H}_2$ ($4.5\\text{ mol}$): el $\\text{N}_2$ consume solo $3.0\\text{ mol de H}_2$ ($6\\text{ g}$), por lo que el $\\text{N}_2$ es el limitante y sobran $3.0\\text{ g de H}_2$ en exceso."
         }
       ],
-      "commonTrap": "No marques que el magnesio o el oxígeno es reactivo limitante: la respuesta correcta es que ambos se consumen por completo en proporción exacta.",
+      "commonTrap": "No busques un reactivo limitante cuando la relación estequiométrica coincida exactamente con la relación molar calculada.",
       "stepByStep": [
         {
           "step": "1",
-          "text": "Halla moles de $\\text{Mg}$: $n = \\frac{24.0\\text{ g}}{24.0\\text{ g/mol}} = 1.0\\text{ mol}$."
+          "text": "Halla moles de cada reactivo: $n = \\frac{m}{M}$."
         },
         {
           "step": "2",
-          "text": "Halla moles de $\\text{O}_2$: $n = \\frac{16.0\\text{ g}}{32.0\\text{ g/mol}} = 0.5\\text{ mol}$."
+          "text": "Divide entre sus coeficientes estequiométricos para comparar."
         },
         {
           "step": "3",
-          "text": "Compara la relación: $\\frac{1.0}{0.5} = 2.0$ (proporción $2:1$ exacta). Masa producida: $40.0\\text{ g}$."
+          "text": "Si los cocientes son idénticos, la mezcla es estequiométrica perfecta."
         }
       ],
       "example": {
@@ -592,51 +690,187 @@ window.STUDY_DATA = {
       }
     },
     {
-      "id": "p2_qui_02",
+      "id": "p2_qui_03",
       "part": "parte2",
       "subject": "quimica",
       "unit": "Parte II · Examen reportado 19 ago",
       "priority": "Esencial",
-      "eyebrow": "P2 · 02 · Reactivo Limitante",
-      "title": "Reactivo limitante y exceso en síntesis de amoníaco",
-      "lead": "Reportado en la prueba: Se combinan $28.0\\text{ g}$ de $\\text{N}_2$ ($28.0\\text{ g/mol}$) con $9.0\\text{ g}$ de $\\text{H}_2$ ($2.0\\text{ g/mol}$). El $\\text{N}_2$ es el limitante y sobran $3.0\\text{ g}$ de $\\text{H}_2$ en exceso.",
-      "quickRule": "$1\\text{ mol N}_2$ ($28\\text{ g}$) consume $3\\text{ moles de H}_2$ ($6\\text{ g}$). Disponemos de $4.5\\text{ moles de H}_2$ ($9\\text{ g}$), por lo que el $\\text{N}_2$ se agota primero y sobran $9.0 - 6.0 = 3.0\\text{ g de H}_2$.",
-      "formula": "\\text{N}_2 + 3\\,\\text{H}_2 \\to 2\\,\\text{NH}_3 \\qquad m_{\\text{exceso}} = 9.0\\,\\text{g} - 6.0\\,\\text{g} = 3.0\\,\\text{g de H}_2",
+      "eyebrow": "P2 · 07 · Números Cuánticos",
+      "title": "Números cuánticos y configuración de valencia",
+      "lead": "Reportado en la prueba: Determinar los números cuánticos del electrón diferencial del Azufre ($Z = 16$) y el orden de llenado según el diagrama de Moeller.",
+      "quickRule": "Azufre $Z = 16$: configuración $1s^2 2s^2 2p^6 3s^2 3p^4$. Para el 4to electrón en $3p$: $n = 3$, $l = 1$, $m_l = -1$, $m_s = -\\frac{1}{2}$.",
+      "formula": "n \\in \\{1,2,3,4\\} \\qquad l \\in \\{0, \\dots, n-1\\} \\; (s=0, p=1, d=2, f=3) \\qquad m_l \\in \\{-l, \\dots, +l\\} \\qquad m_s = \\pm \\tfrac{1}{2}",
       "variables": [
-        "$n(\\text{N}_2) = \\frac{28}{28} = 1.0\\text{ mol}$",
-        "$n(\\text{H}_2) = \\frac{9.0}{2.0} = 4.5\\text{ mol}$",
-        "$\\text{H}_2$ requerido: $3.0\\text{ mol}$ ($6.0\\text{ g}$)",
-        "$\\text{H}_2$ sobrante: $1.5\\text{ mol}$ ($3.0\\text{ g}$)"
+        "$n$: nivel principal de energía",
+        "$l$: forma del orbital ($s,p,d,f$)",
+        "$m_l$: orientación espacial",
+        "$m_s$: espín del electrón"
       ],
       "sections": [
         {
-          "heading": "Cálculo directo del sobrante",
-          "body": "$1\\text{ mol de N}_2$ necesita $3\\text{ moles de H}_2$. Como disponemos de $4.5\\text{ moles de H}_2$, sobran $4.5 - 3.0 = 1.5\\text{ moles de H}_2 = 1.5 \\times 2.0\\text{ g/mol} = 3.0\\text{ g}$."
+          "heading": "Regla de Hund y Principio de Pauli",
+          "body": "En el subnivel $3p^4$, se colocan primero 3 electrones desapareados con espín $+1/2$ en las casillas $m_l = -1, 0, +1$, y el 4to electrón entra apareado en $m_l = -1$ con espín antiparalelo $-1/2$."
         }
       ],
-      "commonTrap": "No confundas los moles sobrantes ($1.5\\text{ mol}$) con los gramos sobrantes ($3.0\\text{ g}$). Multiplica siempre por la masa molar del $\\text{H}_2$ ($M = 2.0\\text{ g/mol}$).",
+      "commonTrap": "No confundas el número cuántico secundario $l$: $s=0$, $p=1$, $d=2$, $f=3$. Para cualquier orbital $p$, $l$ siempre vale $1$.",
       "stepByStep": [
         {
           "step": "1",
-          "text": "$n(\\text{N}_2) = \\frac{28}{28} = 1.0\\text{ mol}$. $n(\\text{H}_2) = \\frac{9}{2} = 4.5\\text{ mol}$."
+          "text": "Escribe la configuración electrónica por Aufbau: $1s^2 2s^2 2p^6 3s^2 3p^4$."
         },
         {
           "step": "2",
-          "text": "$1\\text{ mol de N}_2$ consume $3.0\\text{ mol de H}_2$. El $\\text{N}_2$ es el reactivo limitante."
+          "text": "Identifica el nivel $n = 3$ y subnivel $p \\implies l = 1$."
         },
         {
           "step": "3",
-          "text": "Exceso: $4.5 - 3.0 = 1.5\\text{ mol de H}_2 = 3.0\\text{ g}$."
+          "text": "Dibuja las 3 casillas de $3p$ y coloca los 4 electrones por Hund: el 4to cae en $m_l = -1$ con $m_s = -1/2$."
         }
       ],
       "example": {
-        "prompt": "En $\\text{N}_2 + 3\\text{H}_2 \\to 2\\text{NH}_3$, reaccionan $28\\text{ g}$ de $\\text{N}_2$ con $9\\text{ g}$ de $\\text{H}_2$. ¿Cuál es el limitante y cuánto sobra?",
+        "prompt": "¿Cuáles son los 4 números cuánticos del electrón diferencial del Azufre ($Z = 16$)?",
         "steps": [
-          "1. $n(\\text{N}_2) = 1.0\\text{ mol}$ (limitante).",
-          "2. $\\text{H}_2$ consumido: $3.0\\text{ mol} = 6.0\\text{ g}$.",
-          "3. $\\text{H}_2$ sobrante: $9.0\\text{ g} - 6.0\\text{ g} = 3.0\\text{ g}$."
+          "1. Configuración: $[\\text{Ne}] 3s^2 3p^4$.",
+          "2. Subnivel $3p \\implies n = 3, l = 1$.",
+          "3. Casillas $3p$: $[-1(\\uparrow\\downarrow)][0(\\uparrow)][+1(\\uparrow)] \\implies m_l = -1, m_s = -1/2$."
         ],
-        "result": "El $\\text{N}_2$ es el reactivo limitante y sobran $3.0\\text{ g}$ de $\\text{H}_2$."
+        "result": "Números cuánticos: $(n=3, l=1, m_l=-1, m_s=-1/2)$"
+      }
+    },
+    {
+      "id": "p2_qui_04",
+      "part": "parte2",
+      "subject": "quimica",
+      "unit": "Parte II · Examen reportado 19 ago",
+      "priority": "Esencial",
+      "eyebrow": "P2 · 08 · Tabla Periódica",
+      "title": "Tendencias periódicas y radio atómico en halógenos",
+      "lead": "Reportado en la prueba: Comparación del radio atómico en los elementos halógenos (Grupo 17) y variación de la electronegatividad.",
+      "quickRule": "En un mismo grupo, el radio atómico aumenta hacia abajo por adición de capas electrónicas: $\\text{F} < \\text{Cl} < \\text{Br} < \\text{I}$. La electronegatividad aumenta hacia arriba: $\\text{F}$ es el máximo (4.0).",
+      "formula": "\\text{Radio Atómico: } \\downarrow \\leftarrow \\qquad \\text{Electronegatividad / Energía de Ionización: } \\uparrow \\rightarrow",
+      "variables": [
+        "Grupo 17 (Halógenos): $\\text{F, Cl, Br, I}$",
+        "Mayor radio: $\\text{Iodo (I)}$",
+        "Mayor electronegatividad: $\\text{Flúor (F)}$",
+        "Mayor energía de ionización: $\\text{Flúor (F)}$"
+      ],
+      "sections": [
+        {
+          "heading": "Causa del aumento de tamaño en el grupo",
+          "body": "Al descender en el grupo se añaden niveles cuánticos principales completos ($n = 2$ en $\\text{F}$, $n = 3$ en $\\text{Cl}$, $n = 4$ en $\\text{Br}$, $n = 5$ en $\\text{I}$), incrementando el apantallamiento y la distancia al núcleo."
+        }
+      ],
+      "commonTrap": "El radio atómico y la electronegatividad varían en sentidos opuestos: el elemento más electronegativo ($\\text{F}$) es el más pequeño de su familia.",
+      "stepByStep": [
+        {
+          "step": "1",
+          "text": "Ubica el grupo y período de los elementos a comparar."
+        },
+        {
+          "step": "2",
+          "text": "Si están en el mismo grupo, el de período mayor tiene mayor radio."
+        },
+        {
+          "step": "3",
+          "text": "Si están en el mismo período, el de la izquierda tiene mayor radio."
+        }
+      ],
+      "example": {
+        "prompt": "Ordene de menor a mayor radio atómico los halógenos: $\\text{Br, F, I, Cl}$.",
+        "steps": [
+          "1. Niveles: $\\text{F}(n=2), \\text{Cl}(n=3), \\text{Br}(n=4), \\text{I}(n=5)$.",
+          "2. A mayor nivel cuántico, mayor tamaño atómico."
+        ],
+        "result": "Orden creciente de radio: $\\text{F} < \\text{Cl} < \\text{Br} < \\text{I}$"
+      }
+    },
+    {
+      "id": "p2_qui_05",
+      "part": "parte2",
+      "subject": "quimica",
+      "unit": "Parte II · Examen reportado 19 ago",
+      "priority": "Esencial",
+      "eyebrow": "P2 · 09 · Fuerzas Intermoleculares",
+      "title": "Puentes de hidrógeno y geometría tetraédrica",
+      "lead": "Reportado en la prueba: Reconocimiento de sustancias que forman puentes de hidrógeno y moléculas de geometría tetraédrica.",
+      "quickRule": "Puente de Hidrógeno: ocurre solo cuando el $\\text{H}$ está unido directamente a $\\text{F, O}$ o $\\text{N}$ (ej. $\\text{H}_2\\text{O}, \\text{NH}_3, \\text{HF}$). Moléculas tetraédricas ($109.5^\\circ$): $\\text{CH}_4, \\text{SiCl}_4, \\text{NH}_4^+$.",
+      "formula": "\\text{Fuerza Intermolecular: } \\text{London} < \\text{Dipolo-Dipolo} < \\text{Puente de H}",
+      "variables": [
+        "Puente de H: $\\text{H-F, H-O, H-N}$",
+        "Tetraédrico: 4 pares de enlace, 0 libres ($109.5^\\circ$)",
+        "Puntos de ebullición altos: sustancias con puentes de H"
+      ],
+      "sections": [
+        {
+          "heading": "Por qué el agua hierve a $100^\\circ\\text{C}$",
+          "body": "El $\\text{H}_2\\text{O}$ posee puentes de hidrógeno intermoleculares tridimensionales muy fuertes en comparación con el $\\text{H}_2\\text{S}$ (que solo tiene dipolo-dipolo débil), explicando su alto punto de ebullición."
+        }
+      ],
+      "commonTrap": "En $\\text{CH}_4$ hay hidrógeno, pero NO forma puentes de hidrógeno porque el enlace $\\text{C-H}$ no tiene suficiente diferencia de electronegatividad.",
+      "stepByStep": [
+        {
+          "step": "1",
+          "text": "Verifica si la molécula contiene enlaces directos $\\text{H-F}$, $\\text{H-O}$ o $\\text{H-N}$."
+        },
+        {
+          "step": "2",
+          "text": "Si los tiene, la fuerza intermolecular principal es el puente de hidrógeno."
+        }
+      ],
+      "example": {
+        "prompt": "¿Cuál de las siguientes sustancias presenta puentes de hidrógeno: $\\text{CH}_4, \\text{HCl}, \\text{NH}_3, \\text{H}_2\\text{S}$?",
+        "steps": [
+          "1. $\\text{CH}_4$ y $\\text{H}_2\\text{S}$ no tienen $\\text{F, O, N}$.",
+          "2. $\\text{NH}_3$ posee enlaces directos $\\text{N-H}$ con nitrógeno altamente electronegativo."
+        ],
+        "result": "El amoníaco ($\\text{NH}_3$) forma puentes de hidrógeno."
+      }
+    },
+    {
+      "id": "p2_qui_06",
+      "part": "parte2",
+      "subject": "quimica",
+      "unit": "Parte II · Examen reportado 19 ago",
+      "priority": "Esencial",
+      "eyebrow": "P2 · 10 · Nomenclatura y Conversiones",
+      "title": "Nomenclatura Stock y conversiones de unidades",
+      "lead": "Reportado en la prueba: Nombres Stock oficiales ($\text{FeCl}_3$), dicromato de potasio ($\text{K}_2\text{Cr}_2\text{O}_7$) y conversiones rápidas ($1\text{ t} = 1000\text{ kg}$, $230\text{ cm}^3 \to \text{m}^3$).",
+      "quickRule": "Stock usa números romanos para el Nox del metal: $\\text{FeCl}_3 = \\text{cloruro de hierro (III)}$. Factores: $1\\text{ m}^3 = 10^6\\text{ cm}^3 \\implies 230\\text{ cm}^3 = 2.30 \\times 10^{-4}\\text{ m}^3$.",
+      "formula": "1\\text{ tonelada} = 1000\\text{ kg} \\qquad 1\\text{ m}^3 = 10^6\\text{ cm}^3 = 1000\\text{ L}",
+      "variables": [
+        "$\\text{FeCl}_3$: cloruro de hierro (III)",
+        "$\\text{K}_2\\text{Cr}_2\\text{O}_7$: dicromato de potasio",
+        "$1\\text{ t} = 1000\\text{ kg}$",
+        "$230\\text{ cm}^3 = 2.30 \\times 10^{-4}\\text{ m}^3$"
+      ],
+      "sections": [
+        {
+          "heading": "Cálculo de conversión de volumen",
+          "body": "$230\\text{ cm}^3 \\times \\left(\\frac{1\\text{ m}}{100\\text{ cm}}\\right)^3 = 230 \\times 10^{-6}\\text{ m}^3 = 2.30 \\times 10^{-4}\\text{ m}^3$."
+        }
+      ],
+      "commonTrap": "Al convertir unidades al cubo ($\text{cm}^3 \to \text{m}^3$), no dividas para $100$: debes elevar el factor al cubo ($100^3 = 1\\,000\\,000$).",
+      "stepByStep": [
+        {
+          "step": "1",
+          "text": "Plantea el factor unitario con la equivalencia fundamental."
+        },
+        {
+          "step": "2",
+          "text": "Eleva al exponente correspondiente (cúbico o cuadrado)."
+        },
+        {
+          "step": "3",
+          "text": "Expresa en notación científica estándar."
+        }
+      ],
+      "example": {
+        "prompt": "Convierta $230\\text{ cm}^3$ a metros cúbicos ($\\text{m}^3$).",
+        "steps": [
+          "1. $1\\text{ m} = 100\\text{ cm} \\implies 1\\text{ m}^3 = 10^6\\text{ cm}^3$.",
+          "2. $230\\text{ cm}^3 \\times \\frac{1\\text{ m}^3}{10^6\\text{ cm}^3} = 230 \\times 10^{-6}\\text{ m}^3 = 2.30 \\times 10^{-4}\\text{ m}^3$."
+        ],
+        "result": "$230\\text{ cm}^3 = 2.30 \\times 10^{-4}\\text{ m}^3$"
       }
     },
     {
@@ -645,7 +879,7 @@ window.STUDY_DATA = {
       "subject": "lenguaje",
       "unit": "Parte II · Examen reportado 19 ago",
       "priority": "Esencial",
-      "eyebrow": "P2 · 01 · Lectura Crítica",
+      "eyebrow": "P2 · 11 · Lectura Crítica",
       "title": "Método infalible para la Tesis y Argumentos",
       "lead": "La tesis es la postura u opinión central debatible que defiende el autor a lo largo del texto. Los ejemplos, estadísticas y citas son argumentos de apoyo.",
       "quickRule": "Pregúntate: ¿Qué opinión quiere el autor que yo acepte? Si es un hecho objetivo no debatible, es evidencia o dato, no la tesis.",
@@ -684,9 +918,141 @@ window.STUDY_DATA = {
         ],
         "result": "La tesis es que la inversión en ciencia básica es indispensable para el progreso."
       }
+    },
+    {
+      "id": "p2_len_02",
+      "part": "parte2",
+      "subject": "lenguaje",
+      "unit": "Parte II · Examen reportado 19 ago",
+      "priority": "Esencial",
+      "eyebrow": "P2 · 12 · Tipos de Texto y Conectores",
+      "title": "Tono del autor, cohesión y conectores lógicos",
+      "lead": "Reportado en la prueba: Identificar la intención comunicativa del texto (informativo, crítico, reflexivo, argumentativo) y elegir el conector lógico adecuado.",
+      "quickRule": "Crítico = señala fallas o problemas. Reflexivo = invita a pensar. Argumentativo = defiende una postura. Informativo = expone datos objetivos.",
+      "formula": "\\text{Causa: } \\text{porque, ya que} \\qquad \\text{Consecuencia: } \\text{por lo tanto, por ende} \\qquad \\text{Oposición: } \\text{sin embargo, no obstante}",
+      "variables": [
+        "Informativo: objetivo e imparcial",
+        "Crítico: cuestiona o denuncia",
+        "Reflexivo: invita a la introspección",
+        "Argumentativo: convence con razones"
+      ],
+      "sections": [
+        {
+          "heading": "Conectores lógicos frecuentes",
+          "body": "• Causa: 'Llegó tarde porque había tráfico.'\n• Consecuencia: 'Había tráfico; por lo tanto, llegó tarde.'\n• Oposición: 'Estudió mucho; no obstante, el examen fue complejo.'"
+        }
+      ],
+      "commonTrap": "No confundas el conector de causa con el de consecuencia al invertir el orden de las proposiciones.",
+      "stepByStep": [
+        {
+          "step": "1",
+          "text": "Identifica qué idea va primero: el motivo (causa) o el resultado (consecuencia)."
+        },
+        {
+          "step": "2",
+          "text": "Elige el conector que corresponda exactamente a esa dirección lógica."
+        }
+      ],
+      "example": {
+        "prompt": "Complete: 'El estudiante repasó todo el temario; _______, revisó nuevamente cada fórmula para asegurar su comprensión.'",
+        "steps": [
+          "1. La segunda proposición añade una acción de precaución o continuidad afirmativa."
+        ],
+        "result": "El conector adecuado es 'asimismo' o 'por consiguiente'."
+      }
     }
   ],
   "quizzes": [
+    {
+      "id": "q_redox_o2",
+      "topicId": "p2_qui_01",
+      "subject": "quimica",
+      "topic": "Redox",
+      "prompt": "En una reacción química como $2\\text{Mg} + \\text{O}_2 \\to 2\\text{MgO}$, ¿qué función cumple y qué proceso experimenta el oxígeno molecular ($\\text{O}_2$)?",
+      "options": [
+        "No experimenta ningún cambio químico.",
+        "Cede electrones y se oxida.",
+        "Gana electrones (se reduce) y actúa como agente oxidante.",
+        "Aumenta su número de oxidación de $-2$ a $0$."
+      ],
+      "answer": 2,
+      "explanation": "El oxígeno ($\\text{O}_2$) pasa de estado de oxidación $0$ a $-2$. Al ganar electrones experimenta reducción, actuando como agente oxidante al quitarle electrones al magnesio."
+    },
+    {
+      "id": "q_cuanticos_s",
+      "topicId": "p2_qui_03",
+      "subject": "quimica",
+      "topic": "Números Cuánticos",
+      "prompt": "Para el electrón diferencial del átomo de Azufre ($Z = 16$, $[\\text{Ne}] 3s^2 3p^4$), el conjunto de números cuánticos ($n, l, m_l, m_s$) es:",
+      "options": [
+        "$(3, 0, 0, +1/2)$",
+        "$(3, 1, -1, -1/2)$",
+        "$(3, 2, +1, +1/2)$",
+        "$(2, 1, -1, -1/2)$"
+      ],
+      "answer": 1,
+      "explanation": "El subnivel es $3p$ ($n=3, l=1$). Los primeros 3 electrones llenan $m_l = -1, 0, +1$ con $+1/2$, y el 4to entra en $m_l = -1$ con espín $-1/2$."
+    },
+    {
+      "id": "q_halogenos_radio",
+      "topicId": "p2_qui_04",
+      "subject": "quimica",
+      "topic": "Tabla Periódica",
+      "prompt": "¿Cuál es el orden correcto de menor a mayor radio atómico en los halógenos (Grupo 17)?",
+      "options": [
+        "$\\text{I} < \\text{Br} < \\text{Cl} < \\text{F}$",
+        "$\\text{F} < \\text{Cl} < \\text{Br} < \\text{I}$",
+        "$\\text{Cl} < \\text{F} < \\text{Br} < \\text{I}$",
+        "$\\text{F} < \\text{I} < \\text{Cl} < \\text{Br}$"
+      ],
+      "answer": 1,
+      "explanation": "En un grupo de la tabla periódica, el radio atómico aumenta hacia abajo conforme aumentan los niveles de energía: $\text{F} < \text{Cl} < \text{Br} < \text{I}$."
+    },
+    {
+      "id": "q_rampa_vs_vertical",
+      "topicId": "p2_fis_01",
+      "subject": "fisica",
+      "topic": "Trabajo y Energía",
+      "prompt": "Para elevar una caja de masa $m$ hasta una altura $h$, comparando subirla verticalmente vs empujarla por una rampa inclinada sin fricción:",
+      "options": [
+        "La rampa requiere mayor trabajo que la subida vertical.",
+        "La rampa requiere menor trabajo que la subida vertical.",
+        "Ambos métodos requieren exactamente el mismo trabajo contra la gravedad ($W = mgh$), pero la rampa requiere menor fuerza.",
+        "La fuerza requerida en ambos casos es exactamente la misma."
+      ],
+      "answer": 2,
+      "explanation": "El trabajo depende únicamente del cambio de energía potencial gravitatoria ($\\Delta U_g = mgh$). La rampa permite aplicar menor fuerza ($F = mg\\sin\theta$) distribuida a lo largo de una distancia mayor."
+    },
+    {
+      "id": "q_newton_cuerda",
+      "topicId": "p2_fis_03",
+      "subject": "fisica",
+      "topic": "3ra Ley",
+      "prompt": "Juan y Pedro jalan los extremos de una misma cuerda tensa en direcciones opuestas sobre piso liso sin fricción. Según la Tercera Ley de Newton:",
+      "options": [
+        "La persona de mayor masa ejerce siempre mayor fuerza sobre la cuerda.",
+        "La fuerza que Juan ejerce sobre la cuerda es exactamente igual en magnitud a la que la cuerda ejerce sobre Juan.",
+        "La cuerda no experimenta tensión si ambas personas tienen la misma fuerza.",
+        "La fuerza neta sobre la cuerda es el doble de la fuerza de Juan."
+      ],
+      "answer": 1,
+      "explanation": "Por la 3ra Ley de Newton (acción y reacción), las fuerzas transmitidas en los extremos de la cuerda tensa son de igual magnitud y sentido opuesto."
+    },
+    {
+      "id": "q_mcu_acel",
+      "topicId": "p2_fis_04",
+      "subject": "fisica",
+      "topic": "MCU",
+      "prompt": "Un cuerpo describe un Movimiento Circular Uniforme (MCU) con rapidez constante $v$. ¿Cuál afirmación es verdadera sobre su aceleración?",
+      "options": [
+        "La aceleración es nula porque la rapidez es constante.",
+        "Posee aceleración tangencial constante.",
+        "Posee aceleración centrípeta dirigida radialmente hacia el centro de la trayectoria ($a_c = \\frac{v^2}{r}$).",
+        "La aceleración apunta en la misma dirección tangente que la velocidad."
+      ],
+      "answer": 2,
+      "explanation": "En MCU la rapidez no varía, pero la dirección del vector velocidad cambia continuamente, originando una aceleración centrípeta $a_c = \frac{v^2}{r}$ dirigida hacia el centro."
+    },
     {
       "id": "q1",
       "topicId": "p1_fis_01",
@@ -700,7 +1066,7 @@ window.STUDY_DATA = {
         "La velocidad apunta hacia arriba."
       ],
       "answer": 1,
-      "explanation": "En el ápice de la trayectoria, la velocidad instantánea se anula ($v = 0$), pero la aceleración de la gravedad sigue actuando hacia abajo ($a = g = 9.8\\text{ m/s}^2$)."
+      "explanation": "En el ápice, la velocidad instantánea se anula ($v = 0$), pero la aceleración de la gravedad sigue actuando hacia abajo ($a = g = 9.8\text{ m/s}^2$)."
     },
     {
       "id": "q2",
@@ -715,7 +1081,7 @@ window.STUDY_DATA = {
         "$100\\text{ m/s}^2$"
       ],
       "answer": 1,
-      "explanation": "Segunda ley de Newton: $a = \\frac{F}{m} = \\frac{20\\text{ N}}{5\\text{ kg}} = 4\\text{ m/s}^2$."
+      "explanation": "Segunda ley de Newton: $a = \frac{F}{m} = \frac{20\text{ N}}{5\text{ kg}} = 4\text{ m/s}^2$."
     },
     {
       "id": "q3",
@@ -730,7 +1096,7 @@ window.STUDY_DATA = {
         "Solo durante la fase de ascenso."
       ],
       "answer": 0,
-      "explanation": "En el punto más bajo, la energía potencial gravitatoria es mínima ($h = 0$) y toda la energía mecánica se ha transformado en energía cinética máxima ($K_{\\text{máx}} = \\frac{1}{2}m v_{\\text{máx}}^2$)."
+      "explanation": "En el punto más bajo, la energía potencial gravitatoria es mínima ($h = 0$) y toda la energía mecánica se ha transformado en energía cinética máxima ($K_{\text{máx}} = \frac{1}{2}m v_{\text{máx}}^2$)."
     },
     {
       "id": "q4",
@@ -745,7 +1111,7 @@ window.STUDY_DATA = {
         "$0.5\\text{ N}$"
       ],
       "answer": 1,
-      "explanation": "Aceleración: $a = \\frac{14 - 2}{4} = 3.0\\text{ m/s}^2$. Fuerza neta: $F_{\\text{neta}} = m a = (1.0\\text{ kg})(3.0\\text{ m/s}^2) = 3.0\\text{ N}$."
+      "explanation": "Aceleración: $a = \frac{14 - 2}{4} = 3.0\text{ m/s}^2$. Fuerza neta: $F_{\text{neta}} = m a = (1.0\text{ kg})(3.0\text{ m/s}^2) = 3.0\text{ N}$."
     },
     {
       "id": "q5",
@@ -764,7 +1130,7 @@ window.STUDY_DATA = {
     },
     {
       "id": "q6",
-      "topicId": "p2_qui_01",
+      "topicId": "p2_qui_02",
       "subject": "quimica",
       "topic": "Estequiometría",
       "prompt": "$2\\text{Mg} + \\text{O}_2 \\to 2\\text{MgO}$. Si reaccionan $24\\text{ g}$ de $\\text{Mg}$ ($M = 24\\text{ g/mol}$) con $16\\text{ g}$ de $\\text{O}_2$ ($M = 32\\text{ g/mol}$):",
@@ -775,7 +1141,7 @@ window.STUDY_DATA = {
         "Sobran $8\\text{ g}$ de $\\text{Mg}$ sin reaccionar."
       ],
       "answer": 1,
-      "explanation": "$24\\text{ g Mg} = 1.0\\text{ mol}$; $16\\text{ g O}_2 = 0.5\\text{ mol}$. La proporción $1.0 : 0.5$ coincide exactamente con la estequiometría $2:1$. Por tanto, ambos se consumen por completo produciendo $40.0\\text{ g}$ de $\\text{MgO}$."
+      "explanation": "$24\text{ g Mg} = 1.0\text{ mol}$; $16\text{ g O}_2 = 0.5\text{ mol}$. La proporción $1.0 : 0.5$ coincide exactamente con la estequiometría $2:1$. Por tanto, ambos se consumen por completo produciendo $40.0\text{ g}$ de $\\text{MgO}$."
     },
     {
       "id": "q7",

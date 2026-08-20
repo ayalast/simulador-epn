@@ -1,0 +1,1365 @@
+[
+  {
+    "id": "len-19ago-21",
+    "s": "len",
+    "n": 21,
+    "d": "intermedio",
+    "topics": [
+      "4.4.2-analisisTexto"
+    ],
+    "ch": "len-L05",
+    "t": "Idea Principal",
+    "prompt": "¿Cuál es la idea principal que sintetiza la epistemología de Popper según el texto?",
+    "opts": [
+      "La cientificidad de una teoría radica en su capacidad de ser sometida a pruebas empíricas que puedan refutarla (falsabilidad), y no en la acumulación de verificaciones o dogmas de autoridad.",
+      "Las teorías científicas verdaderas son aquellas que jamás pueden ser desmentidas por ningún experimento humano.",
+      "El principio de autoridad es el único criterio válido para distinguir la física de las supersticiones populares.",
+      "Una hipótesis es más científica mientras más general y vaga sea su formulación matemática."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Identificación del concepto popperiano:** El texto explica el criterio de demarcación de Karl Popper: la falsabilidad.\n**Paso 2. Desarrollo del razonamiento:** La ciencia avanza con predicciones arriesgadas que pueden refutarse con observaciones, no acumulando confirmaciones fáciles o dogmas intocables.\n**Paso 3. Conclusión:** La opción A formula con precisión la idea central.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "En su célebre tratado sobre la lógica de la investigación científica, Karl Popper argumentó que el criterio fundamental para delimitar la ciencia genuina frente a la pseudociencia no es la verificación acumulativa, sino la falsabilidad empírica. Una teoría que pretende explicarlo absolutamente todo sin dejar margen para ningún experimento que pudiera refutarla no es más sólida, sino metodológicamente estéril. Para Popper, una hipótesis adquiere valor científico precisamente cuando formula predicciones audaces y específicas que se exponen al riesgo constante de ser desmentidas por los hechos observacionales. Por consiguiente, el conocimiento científico no progresa consolidando dogmas inmutables respaldados por la mera autoridad de sus autores, sino mediante un riguroso proceso de conjeturas y refutaciones continuas.",
+    "pack": "len-19-p5"
+  },
+  {
+    "id": "len-19ago-22",
+    "s": "len",
+    "n": 22,
+    "d": "intermedio",
+    "topics": [
+      "4.4.2-lecturaCritica"
+    ],
+    "ch": "len-L06",
+    "t": "Sentido Figurado y Contextual",
+    "prompt": "En la frase «una teoría... metodológicamente estéril», la palabra «estéril» significa que la teoría es:",
+    "opts": [
+      "Incapaz de generar nuevo conocimiento científico contrastable o de orientar la investigación empírica.",
+      "Completamente libre de bacterias y agentes patógenos infecciosos.",
+      "Imposible de traducir a otros idiomas por su extrema complejidad gramatical.",
+      "Aceptada por unanimidad por todos los premios Nobel de Física contemporáneos."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Significado base:** Estéril es lo que no da fruto o no produce.\n**Paso 2. Aplicación metodológica:** Una teoría que lo explica todo sin poder ponerse a prueba no genera descubrimientos ni avance real; es infructuosa o estéril para la ciencia.\n**Paso 3. Conclusión:** Significa incapaz de producir conocimiento contrastable.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "En su célebre tratado sobre la lógica de la investigación científica, Karl Popper argumentó que el criterio fundamental para delimitar la ciencia genuina frente a la pseudociencia no es la verificación acumulativa, sino la falsabilidad empírica. Una teoría que pretende explicarlo absolutamente todo sin dejar margen para ningún experimento que pudiera refutarla no es más sólida, sino metodológicamente estéril. Para Popper, una hipótesis adquiere valor científico precisamente cuando formula predicciones audaces y específicas que se exponen al riesgo constante de ser desmentidas por los hechos observacionales. Por consiguiente, el conocimiento científico no progresa consolidando dogmas inmutables respaldados por la mera autoridad de sus autores, sino mediante un riguroso proceso de conjeturas y refutaciones continuas.",
+    "pack": "len-19-p5"
+  },
+  {
+    "id": "len-19ago-23",
+    "s": "len",
+    "n": 23,
+    "d": "intermedio",
+    "topics": [
+      "4.4.3-argumentacionFalacias"
+    ],
+    "ch": "len-L08",
+    "t": "Falacias Argumentativas",
+    "prompt": "Cuando el autor descalifica los «dogmas respaldados por la mera autoridad de sus autores», alude a:",
+    "opts": [
+      "La falacia ad verecundiam (apelación indebida al prestigio o autoridad de una persona sin evidencia empírica).",
+      "La falacia ad hominem (ataque personal descalificatorio contra el interlocutor).",
+      "La falacia ad baculum (imposición de una conclusión mediante el uso de la fuerza o amenazas).",
+      "La falacia de falsa causa (asumir que correlación temporal implica causalidad física)."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Definición de la falacia:** Defender una premisa diciendo 'es verdad porque lo dijo tal autor famoso o tal profesor prestigioso' sin pruebas es la falacia *ad verecundiam*.\n**Paso 2. Conexión con el texto:** Popper rechaza expresamente que la ciencia se base en la autoridad de los autores en lugar de pruebas falsables.\n**Paso 3. Conclusión:** Corresponde a la falacia de apelación a la autoridad (*ad verecundiam*).\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "En su célebre tratado sobre la lógica de la investigación científica, Karl Popper argumentó que el criterio fundamental para delimitar la ciencia genuina frente a la pseudociencia no es la verificación acumulativa, sino la falsabilidad empírica. Una teoría que pretende explicarlo absolutamente todo sin dejar margen para ningún experimento que pudiera refutarla no es más sólida, sino metodológicamente estéril. Para Popper, una hipótesis adquiere valor científico precisamente cuando formula predicciones audaces y específicas que se exponen al riesgo constante de ser desmentidas por los hechos observacionales. Por consiguiente, el conocimiento científico no progresa consolidando dogmas inmutables respaldados por la mera autoridad de sus autores, sino mediante un riguroso proceso de conjeturas y refutaciones continuas.",
+    "pack": "len-19-p5"
+  },
+  {
+    "id": "len-19ago-24",
+    "s": "len",
+    "n": 24,
+    "d": "intermedio",
+    "topics": [
+      "4.4.3-constrParrafo"
+    ],
+    "ch": "len-L07",
+    "t": "Conectores Lógicos",
+    "prompt": "El conector «Por consiguiente» en la última oración introduce:",
+    "opts": [
+      "Una deducción lógica necesaria a partir de la premisa de la falsabilidad científica.",
+      "Un contraargumento empírico que invalida toda la filosofía de Popper.",
+      "Una anécdota personal sobre la vida universitaria de Karl Popper.",
+      "Un elemento de adición meramente ornamental sin trascendencia lógica."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Tipo de conector:** 'Por consiguiente' es un conector ilativo o consecutivo.\n**Paso 2. Operación discursiva:** Une el principio de predicciones arriesgadas con la conclusión de que la ciencia progresa por conjeturas y refutaciones, no por dogmas.\n**Paso 3. Conclusión:** Introduce la deducción lógica final.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "En su célebre tratado sobre la lógica de la investigación científica, Karl Popper argumentó que el criterio fundamental para delimitar la ciencia genuina frente a la pseudociencia no es la verificación acumulativa, sino la falsabilidad empírica. Una teoría que pretende explicarlo absolutamente todo sin dejar margen para ningún experimento que pudiera refutarla no es más sólida, sino metodológicamente estéril. Para Popper, una hipótesis adquiere valor científico precisamente cuando formula predicciones audaces y específicas que se exponen al riesgo constante de ser desmentidas por los hechos observacionales. Por consiguiente, el conocimiento científico no progresa consolidando dogmas inmutables respaldados por la mera autoridad de sus autores, sino mediante un riguroso proceso de conjeturas y refutaciones continuas.",
+    "pack": "len-19-p5"
+  },
+  {
+    "id": "len-19ago-25",
+    "s": "len",
+    "n": 25,
+    "d": "intermedio",
+    "topics": [
+      "4.4.2-razLogico"
+    ],
+    "ch": "len-L04",
+    "t": "Deducción Lógica Válida",
+    "prompt": "¿Cuál de las siguientes afirmaciones se DEDUCE válidamente del texto?",
+    "opts": [
+      "Una afirmación que no puede ser sometida a ninguna prueba empírica de refutación no califica como científica en sentido riguroso.",
+      "Las ciencias exactas no requieren de experimentos reproducibles para consolidar sus leyes.",
+      "La opinión de la mayoría en una votación es suficiente para convertir una creencia en ley universal.",
+      "Karl Popper consideraba que todas las doctrinas dogmáticas eran ramas legítimas de la física teórica."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Premisa mayor de Popper:** El criterio de cientificidad es la falsabilidad empírica.\n**Paso 2. Silogismo deducido:** Si una afirmación no permite ninguna prueba que pueda desmentirla, entonces no cumple el criterio de falsabilidad; por tanto, no califica como científica.\n**Paso 3. Conclusión:** La opción A es una deducción impecable.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "En su célebre tratado sobre la lógica de la investigación científica, Karl Popper argumentó que el criterio fundamental para delimitar la ciencia genuina frente a la pseudociencia no es la verificación acumulativa, sino la falsabilidad empírica. Una teoría que pretende explicarlo absolutamente todo sin dejar margen para ningún experimento que pudiera refutarla no es más sólida, sino metodológicamente estéril. Para Popper, una hipótesis adquiere valor científico precisamente cuando formula predicciones audaces y específicas que se exponen al riesgo constante de ser desmentidas por los hechos observacionales. Por consiguiente, el conocimiento científico no progresa consolidando dogmas inmutables respaldados por la mera autoridad de sus autores, sino mediante un riguroso proceso de conjeturas y refutaciones continuas.",
+    "pack": "len-19-p5"
+  },
+  {
+    "id": "len-19ago-26",
+    "s": "len",
+    "n": 26,
+    "d": "intermedio",
+    "topics": [
+      "4.4.2-analisisTexto"
+    ],
+    "ch": "len-L05",
+    "t": "Idea Principal",
+    "prompt": "¿Cuál es la idea principal que expone el fragmento?",
+    "opts": [
+      "La escritura nació fundamentalmente como una respuesta a necesidades prácticas de registro contable y administrativo en Mesopotamia.",
+      "Los primeros textos sumerios estaban dedicados exclusivamente a la poesía lírica y la mitología sagrada.",
+      "La tradición oral fue suficiente para administrar los tributos de las grandes ciudades-estado durante siglos.",
+      "Los estiletes de caña eran herramientas sagradas utilizadas solo por sacerdotes en templos religiosos."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Identificación del tema central:** El texto aclara el origen utilitario de la escritura sumeria (control contable de cosechas, tributos y contratos) desmitificando un origen puramente literario.\n**Paso 2. Desarrollo:** La burocracia contable impulsó la creación de las tablillas cuneiformes.\n**Paso 3. Conclusión:** La opción A resume fielmente la tesis histórica expuesta.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "El surgimiento de la escritura en la antigua Mesopotamia, hacia el cuarto milenio antes de Cristo, no obedeció a fines literarios ni religiosos, sino a la imperiosa necesidad administrativa de registrar excedentes agrícolas, tributos y transacciones comerciales en las incipientes ciudades-estado sumerias. Mediante incisiones en tablillas de arcilla húmeda con estiletes de caña, los escribas crearon los primeros pictogramas que más tarde evolucionaron hacia el sistema cuneiforme. Así, la fijación gráfica de la memoria colectiva permitió coordinar redes económicas complejas y garantizar la perdurabilidad de acuerdos contractuales más allá de la efímera tradición oral. Por lo tanto, la burocracia y la contabilidad fueron los verdaderos motores que impulsaron el mayor hito comunicativo de la humanidad.",
+    "pack": "len-19-p6"
+  },
+  {
+    "id": "len-19ago-27",
+    "s": "len",
+    "n": 27,
+    "d": "intermedio",
+    "topics": [
+      "4.4.2-lecturaCritica"
+    ],
+    "ch": "len-L06",
+    "t": "Léxico Contextual",
+    "prompt": "En la expresión «más allá de la efímera tradición oral», la palabra «efímera» significa:",
+    "opts": [
+      "De corta duración, pasajera o vulnerable al olvido con el transcurso del tiempo.",
+      "Sumamente compleja y difícil de comprender para los sacerdotes.",
+      "Inalterable y permanente a través de incontables generaciones.",
+      "Perteneciente al lenguaje secreto de los gobernantes mesopotámicos."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Contexto de oposición:** El autor compara la durabilidad física de la arcilla grabada frente a la fragilidad de la memoria hablada.\n**Paso 2. Significado:** 'Efímero' significa fugaz o de poca duración; la palabra hablada se olvida con facilidad con el paso del tiempo.\n**Paso 3. Conclusión:** La opción A expresa con exactitud este carácter perecedero.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "El surgimiento de la escritura en la antigua Mesopotamia, hacia el cuarto milenio antes de Cristo, no obedeció a fines literarios ni religiosos, sino a la imperiosa necesidad administrativa de registrar excedentes agrícolas, tributos y transacciones comerciales en las incipientes ciudades-estado sumerias. Mediante incisiones en tablillas de arcilla húmeda con estiletes de caña, los escribas crearon los primeros pictogramas que más tarde evolucionaron hacia el sistema cuneiforme. Así, la fijación gráfica de la memoria colectiva permitió coordinar redes económicas complejas y garantizar la perdurabilidad de acuerdos contractuales más allá de la efímera tradición oral. Por lo tanto, la burocracia y la contabilidad fueron los verdaderos motores que impulsaron el mayor hito comunicativo de la humanidad.",
+    "pack": "len-19-p6"
+  },
+  {
+    "id": "len-19ago-28",
+    "s": "len",
+    "n": 28,
+    "d": "intermedio",
+    "topics": [
+      "4.4.3-constrParrafo"
+    ],
+    "ch": "len-L07",
+    "t": "Conectores Modales/Consecutivos",
+    "prompt": "¿Qué función cumple la palabra «Así» al inicio del tercer enunciado?",
+    "opts": [
+      "Conector de consecuencia y modo que explica de qué manera la fijación gráfica resolvió los retos administrativos.",
+      "Conector de disyunción que plantea dos caminos contradictorios e incompatibles.",
+      "Adverbio temporal que marca el fin definitivo de la civilización sumeria.",
+      "Pronombre relativo que sustituye a los escribas del templo."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Análisis del conector:** 'Así' enlaza el método material previo (arcilla e incisiones con caña) con el resultado alcanzado (coordinar redes y contratos duraderos).\n**Paso 2. Función lógica:** Expresa el modo y la consecuencia práctica de la invención.\n**Paso 3. Conclusión:** Corresponde a un conector modal y consecutivo.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "El surgimiento de la escritura en la antigua Mesopotamia, hacia el cuarto milenio antes de Cristo, no obedeció a fines literarios ni religiosos, sino a la imperiosa necesidad administrativa de registrar excedentes agrícolas, tributos y transacciones comerciales en las incipientes ciudades-estado sumerias. Mediante incisiones en tablillas de arcilla húmeda con estiletes de caña, los escribas crearon los primeros pictogramas que más tarde evolucionaron hacia el sistema cuneiforme. Así, la fijación gráfica de la memoria colectiva permitió coordinar redes económicas complejas y garantizar la perdurabilidad de acuerdos contractuales más allá de la efímera tradición oral. Por lo tanto, la burocracia y la contabilidad fueron los verdaderos motores que impulsaron el mayor hito comunicativo de la humanidad.",
+    "pack": "len-19-p6"
+  },
+  {
+    "id": "len-19ago-29",
+    "s": "len",
+    "n": 29,
+    "d": "intermedio",
+    "topics": [
+      "4.4.2-lecturaCritica"
+    ],
+    "ch": "len-L06",
+    "t": "Contradicción Textual",
+    "prompt": "¿Cuál de las siguientes afirmaciones CONTRADICE lo expuesto en el texto?",
+    "opts": [
+      "La escritura sumeria se originó primordialmente para la creación de relatos mitológicos y entretenimiento poético.",
+      "Las tablillas de arcilla húmeda sirvieron como soporte material para los signos cuneiformes.",
+      "Los excedentes agrícolas y los impuestos impulsaron la creación de registros sistemáticos.",
+      "Los escribas mesopotámicos utilizaban cañas talladas para realizar incisiones en arcilla."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Verificación textual:** La primera línea afirma expresamente que la escritura 'no obedeció a fines literarios ni religiosos'.\n**Paso 2. Oposición:** Decir que nació para mitología y entretenimiento contradice directamente la evidencia histórica expuesta.\n**Paso 3. Conclusión:** La opción A es falsa y contradice el pasaje.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "El surgimiento de la escritura en la antigua Mesopotamia, hacia el cuarto milenio antes de Cristo, no obedeció a fines literarios ni religiosos, sino a la imperiosa necesidad administrativa de registrar excedentes agrícolas, tributos y transacciones comerciales en las incipientes ciudades-estado sumerias. Mediante incisiones en tablillas de arcilla húmeda con estiletes de caña, los escribas crearon los primeros pictogramas que más tarde evolucionaron hacia el sistema cuneiforme. Así, la fijación gráfica de la memoria colectiva permitió coordinar redes económicas complejas y garantizar la perdurabilidad de acuerdos contractuales más allá de la efímera tradición oral. Por lo tanto, la burocracia y la contabilidad fueron los verdaderos motores que impulsaron el mayor hito comunicativo de la humanidad.",
+    "pack": "len-19-p6"
+  },
+  {
+    "id": "len-19ago-30",
+    "s": "len",
+    "n": 30,
+    "d": "intermedio",
+    "topics": [
+      "4.4.1-comunicacion"
+    ],
+    "ch": "len-L01",
+    "t": "Estructura Textual",
+    "prompt": "¿Qué estructura textual y tono caracterizan a este pasaje?",
+    "opts": [
+      "Estructura expositivo-histórica con tono informativo, riguroso y analítico.",
+      "Estructura dialogada con tono humorístico y satírico sobre los sumerios.",
+      "Estructura dramática teatral con tono trágico y quejumbroso.",
+      "Estructura epistolar con tono confidencial e íntimo en primera persona."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Rasgos de redacción:** Se describen procesos del cuarto milenio a.C. con datos arqueológicos y explicaciones causales precisas.\n**Paso 2. Registro lingüístico:** Prosa formal en tercera persona sin elementos de ficción ni diálogo.\n**Paso 3. Conclusión:** Es un texto expositivo histórico de tono objetivo e informativo.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "El surgimiento de la escritura en la antigua Mesopotamia, hacia el cuarto milenio antes de Cristo, no obedeció a fines literarios ni religiosos, sino a la imperiosa necesidad administrativa de registrar excedentes agrícolas, tributos y transacciones comerciales en las incipientes ciudades-estado sumerias. Mediante incisiones en tablillas de arcilla húmeda con estiletes de caña, los escribas crearon los primeros pictogramas que más tarde evolucionaron hacia el sistema cuneiforme. Así, la fijación gráfica de la memoria colectiva permitió coordinar redes económicas complejas y garantizar la perdurabilidad de acuerdos contractuales más allá de la efímera tradición oral. Por lo tanto, la burocracia y la contabilidad fueron los verdaderos motores que impulsaron el mayor hito comunicativo de la humanidad.",
+    "pack": "len-19-p6"
+  },
+  {
+    "id": "len-19ago-31",
+    "s": "len",
+    "n": 31,
+    "d": "intermedio",
+    "topics": [
+      "4.4.2-analisisTexto"
+    ],
+    "ch": "len-L05",
+    "t": "Tesis Central",
+    "prompt": "¿Cuál es la tesis fundamental que defiende el autor en el texto?",
+    "opts": [
+      "La sostenibilidad energética exige diversificar los sistemas de almacenamiento y reciclaje más allá del litio para evitar nuevas dependencias minerales frente a la intermitencia renovable.",
+      "Las fuentes solares y eólicas deben clausurarse definitivamente por su excesiva dependencia de los ciclos meteorológicos.",
+      "El hidrógeno verde es un compuesto fósil altamente tóxico que destruye las redes eléctricas contemporáneas.",
+      "Las baterías de ion de litio son infinitamente reciclables y carecen de cualquier impacto ambiental o geopolítico."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Identificación de la tesis:** El autor expone que la energía limpia solar y eólica es intermitente y requiere almacenamiento, pero advierte que depender solo del litio traslada el problema a una vulnerabilidad mineral; por ende, se debe diversificar.\n**Paso 2. Análisis del cierre:** La última oración sintetiza la postura: no sustituir una dependencia fósil por una mineral.\n**Paso 3. Conclusión:** La opción A recoge la tesis íntegra.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "La transición global hacia matrices energéticas descarbonizadas depende de manera crítica del desarrollo de sistemas de almacenamiento masivo y eficiente. Dado que las fuentes renovables predominantes, como la solar fotovoltaica y la eólica, son intrínsecamente intermitentes y fluctúan según los ciclos meteorológicos, la estabilidad de las redes eléctricas modernas exige baterías electroquímicas de alta densidad energética. En este escenario, la tecnología de ion de litio domina el mercado automotriz y estacionario; sin embargo, los desafíos vinculados con la escasez geopolítica de materias primas (como cobalto y litio) y los límites termodinámicos de degradación han impulsado la investigación de alternativas como el sodio, el vanadio y el vector hidrógeno verde. Por consiguiente, la verdadera sostenibilidad energética no consistirá únicamente en generar electricidad limpia, sino en diversificar los mecanismos de almacenamiento y reciclaje para no sustituir una dependencia fósil por una vulnerabilidad mineral.",
+    "pack": "len-19-p7"
+  },
+  {
+    "id": "len-19ago-32",
+    "s": "len",
+    "n": 32,
+    "d": "intermedio",
+    "topics": [
+      "4.4.2-lecturaCritica"
+    ],
+    "ch": "len-L06",
+    "t": "Léxico en Contexto",
+    "prompt": "En el texto, la palabra «intermitentes» referida a las fuentes renovables denota que:",
+    "opts": [
+      "Se interrumpen y reanudan continuamente según las condiciones climáticas y la hora del día.",
+      "Producen un flujo de corriente continuo y perfectamente idéntico durante las 24 horas.",
+      "Son completamente inútiles para alimentar motores eléctricos o ciudades industriales.",
+      "Generan descargas eléctricas de alto voltaje destructivas para los transformadores."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Análisis contextual:** El texto asocia 'intermitentes' con 'fluctúan según los ciclos meteorológicos' (hay sol solo de día, viento variable).\n**Paso 2. Significado preciso:** Intermitente es lo que no es continuo, que cesa y vuelve a comenzar por intervalos.\n**Paso 3. Conclusión:** La opción A expresa la definición contextual exacta.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "La transición global hacia matrices energéticas descarbonizadas depende de manera crítica del desarrollo de sistemas de almacenamiento masivo y eficiente. Dado que las fuentes renovables predominantes, como la solar fotovoltaica y la eólica, son intrínsecamente intermitentes y fluctúan según los ciclos meteorológicos, la estabilidad de las redes eléctricas modernas exige baterías electroquímicas de alta densidad energética. En este escenario, la tecnología de ion de litio domina el mercado automotriz y estacionario; sin embargo, los desafíos vinculados con la escasez geopolítica de materias primas (como cobalto y litio) y los límites termodinámicos de degradación han impulsado la investigación de alternativas como el sodio, el vanadio y el vector hidrógeno verde. Por consiguiente, la verdadera sostenibilidad energética no consistirá únicamente en generar electricidad limpia, sino en diversificar los mecanismos de almacenamiento y reciclaje para no sustituir una dependencia fósil por una vulnerabilidad mineral.",
+    "pack": "len-19-p7"
+  },
+  {
+    "id": "len-19ago-33",
+    "s": "len",
+    "n": 33,
+    "d": "intermedio",
+    "topics": [
+      "4.4.3-constrParrafo"
+    ],
+    "ch": "len-L07",
+    "t": "Conectores de Oposición",
+    "prompt": "¿Cuál es el conector discursivo que introduce la advertencia sobre los límites del litio frente a su dominio de mercado?",
+    "opts": [
+      "sin embargo",
+      "por consiguiente",
+      "dado que",
+      "como"
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Función requerida:** Introducir un contraste u objeción contra la idea previa de dominio comercial.\n**Paso 2. Verificación en el texto:** '...domina el mercado automotriz; sin embargo, los desafíos vinculados con la escasez...'.\n**Paso 3. Conclusión:** 'Sin embargo' actúa como conector adversativo u opositivo.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "La transición global hacia matrices energéticas descarbonizadas depende de manera crítica del desarrollo de sistemas de almacenamiento masivo y eficiente. Dado que las fuentes renovables predominantes, como la solar fotovoltaica y la eólica, son intrínsecamente intermitentes y fluctúan según los ciclos meteorológicos, la estabilidad de las redes eléctricas modernas exige baterías electroquímicas de alta densidad energética. En este escenario, la tecnología de ion de litio domina el mercado automotriz y estacionario; sin embargo, los desafíos vinculados con la escasez geopolítica de materias primas (como cobalto y litio) y los límites termodinámicos de degradación han impulsado la investigación de alternativas como el sodio, el vanadio y el vector hidrógeno verde. Por consiguiente, la verdadera sostenibilidad energética no consistirá únicamente en generar electricidad limpia, sino en diversificar los mecanismos de almacenamiento y reciclaje para no sustituir una dependencia fósil por una vulnerabilidad mineral.",
+    "pack": "len-19-p7"
+  },
+  {
+    "id": "len-19ago-34",
+    "s": "len",
+    "n": 34,
+    "d": "intermedio",
+    "topics": [
+      "4.4.2-lecturaCritica"
+    ],
+    "ch": "len-L06",
+    "t": "Identificación de Contradicción",
+    "prompt": "¿Qué afirmación CONTRADICE los argumentos expresados por el emisor?",
+    "opts": [
+      "La generación exclusiva de paneles solares es suficiente para abastecer de forma continua a una red sin requerir ningún sistema de almacenamiento.",
+      "La tecnología de ion de litio enfrenta límites relacionados con la degradación termodinámica.",
+      "El sodio, el vanadio y el hidrógeno verde constituyen vías alternativas de investigación energética.",
+      "La disponibilidad de cobalto y litio presenta desafíos geopolíticos en el mercado internacional."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Premisa del texto:** La solar es intermitente y exige obligatoriamente almacenamiento masivo para dar estabilidad a la red.\n**Paso 2. Detección de la oposición:** Afirmar que los paneles solares solos bastan sin almacenamiento contradice frontalmente la tesis central del autor.\n**Paso 3. Conclusión:** La opción A es la proposición contradictoria.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "La transición global hacia matrices energéticas descarbonizadas depende de manera crítica del desarrollo de sistemas de almacenamiento masivo y eficiente. Dado que las fuentes renovables predominantes, como la solar fotovoltaica y la eólica, son intrínsecamente intermitentes y fluctúan según los ciclos meteorológicos, la estabilidad de las redes eléctricas modernas exige baterías electroquímicas de alta densidad energética. En este escenario, la tecnología de ion de litio domina el mercado automotriz y estacionario; sin embargo, los desafíos vinculados con la escasez geopolítica de materias primas (como cobalto y litio) y los límites termodinámicos de degradación han impulsado la investigación de alternativas como el sodio, el vanadio y el vector hidrógeno verde. Por consiguiente, la verdadera sostenibilidad energética no consistirá únicamente en generar electricidad limpia, sino en diversificar los mecanismos de almacenamiento y reciclaje para no sustituir una dependencia fósil por una vulnerabilidad mineral.",
+    "pack": "len-19-p7"
+  },
+  {
+    "id": "len-19ago-35",
+    "s": "len",
+    "n": 35,
+    "d": "intermedio",
+    "topics": [
+      "4.4.2-razLogico"
+    ],
+    "ch": "len-L04",
+    "t": "Inferencia Lógica",
+    "prompt": "¿Qué se INFIERE válidamente sobre el futuro de las redes eléctricas sostenibles a partir del texto?",
+    "opts": [
+      "Un sistema eléctrico robusto combinará múltiples tecnologías químicas y físicas de almacenamiento adaptadas a diferentes escalas.",
+      "Los combustibles fósiles volverán a ser la única fuente de energía tolerada en los países desarrollados.",
+      "Las baterías de litio dejarán de fabricarse en menos de veinticuatro horas en todo el planeta.",
+      "La energía solar solo puede utilizarse en regiones polares durante el solsticio de invierno."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Premisas del texto:** Ninguna tecnología única resuelve todo sin riesgos de escasez mineral o degradación; se investigan sodio, vanadio e hidrógeno.\n**Paso 2. Inferencia válida:** El futuro demandará una matriz diversificada y complementaria de almacenamiento, no una solución monomaterial.\n**Paso 3. Conclusión:** La opción A es la inferencia lógica directa.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "La transición global hacia matrices energéticas descarbonizadas depende de manera crítica del desarrollo de sistemas de almacenamiento masivo y eficiente. Dado que las fuentes renovables predominantes, como la solar fotovoltaica y la eólica, son intrínsecamente intermitentes y fluctúan según los ciclos meteorológicos, la estabilidad de las redes eléctricas modernas exige baterías electroquímicas de alta densidad energética. En este escenario, la tecnología de ion de litio domina el mercado automotriz y estacionario; sin embargo, los desafíos vinculados con la escasez geopolítica de materias primas (como cobalto y litio) y los límites termodinámicos de degradación han impulsado la investigación de alternativas como el sodio, el vanadio y el vector hidrógeno verde. Por consiguiente, la verdadera sostenibilidad energética no consistirá únicamente en generar electricidad limpia, sino en diversificar los mecanismos de almacenamiento y reciclaje para no sustituir una dependencia fósil por una vulnerabilidad mineral.",
+    "pack": "len-19-p7"
+  },
+  {
+    "id": "len-19ago-36",
+    "s": "len",
+    "n": 36,
+    "d": "intermedio",
+    "topics": [
+      "4.4.2-analisisTexto"
+    ],
+    "ch": "len-L05",
+    "t": "Idea Central",
+    "prompt": "¿Cuál es la idea principal que articula el texto?",
+    "opts": [
+      "El sesgo de confirmación distorsiona la evaluación objetiva de evidencias, amplificándose en entornos digitales y exigiendo formación científica para su mitigación.",
+      "Peter Wason demostró que los seres humanos son máquinas lógicas infalibles inmunes a cualquier error cognitivo.",
+      "Los algoritmos de redes sociales fueron diseñados para enseñar lógica proposicional y método científico a la población.",
+      "Las creencias previas de una persona siempre coinciden de forma exacta con la verdad empírica universal."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Tema central:** Definición del sesgo de confirmación (buscar lo que coincide, descartar lo opuesto).\n**Paso 2. Problemática y propuesta:** Se agrava con las cámaras de eco en redes y se combate con formación en método científico y pensamiento crítico.\n**Paso 3. Conclusión:** La opción A sintetiza fielmente el texto.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "El sesgo de confirmación constituye una de las distorsiones cognitivas más arraigadas en la psicología del razonamiento humano. Descrito sistemáticamente por Peter Wason, consiste en la tendencia involuntaria a buscar, interpretar, favorecer y recordar aquella información que respalda las creencias o hipótesis previas, al tiempo que se desestima o se somete a un escrutinio hipercrítico la evidencia que las refuta. En los entornos digitales contemporáneos, este fenómeno se ve exponencialmente amplificado por los algoritmos de recomendación en redes sociales, los cuales crean cámaras de eco personalizadas que aíslan al usuario de puntos de vista divergentes. Por este motivo, el entrenamiento sistemático en el método científico y en la lógica proposicional resulta indispensable para cultivar un pensamiento crítico capaz de cuestionar las propias convicciones y contrastarlas con hechos verificables.",
+    "pack": "len-19-p8"
+  },
+  {
+    "id": "len-19ago-37",
+    "s": "len",
+    "n": 37,
+    "d": "intermedio",
+    "topics": [
+      "4.4.2-lecturaCritica"
+    ],
+    "ch": "len-L06",
+    "t": "Semántica Contextual",
+    "prompt": "En el contexto del segundo enunciado, ¿qué significa «desestimar» una evidencia refutatoria?",
+    "opts": [
+      "Rechazarla, restarle valor o no tomarla en cuenta por contradecir la postura inicial.",
+      "Analizarla minuciosamente en un laboratorio bajo el microscopio electrónico.",
+      "Publicarla en revistas internacionales con máxima difusión académica.",
+      "Memorizarla para recitarla en conferencias públicas de debate."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Análisis del término:** '...se desestima o se somete a un escrutinio hipercrítico...'.\n**Paso 2. Significado léxico:** Desestimar significa descartar, no hacer caso o tener en poco valor.\n**Paso 3. Conclusión:** Significa rechazarla o restarle valor.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "El sesgo de confirmación constituye una de las distorsiones cognitivas más arraigadas en la psicología del razonamiento humano. Descrito sistemáticamente por Peter Wason, consiste en la tendencia involuntaria a buscar, interpretar, favorecer y recordar aquella información que respalda las creencias o hipótesis previas, al tiempo que se desestima o se somete a un escrutinio hipercrítico la evidencia que las refuta. En los entornos digitales contemporáneos, este fenómeno se ve exponencialmente amplificado por los algoritmos de recomendación en redes sociales, los cuales crean cámaras de eco personalizadas que aíslan al usuario de puntos de vista divergentes. Por este motivo, el entrenamiento sistemático en el método científico y en la lógica proposicional resulta indispensable para cultivar un pensamiento crítico capaz de cuestionar las propias convicciones y contrastarlas con hechos verificables.",
+    "pack": "len-19-p8"
+  },
+  {
+    "id": "len-19ago-38",
+    "s": "len",
+    "n": 38,
+    "d": "intermedio",
+    "topics": [
+      "4.4.2-analisisTexto"
+    ],
+    "ch": "len-L05",
+    "t": "Figuras Retóricas y Metáforas",
+    "prompt": "La expresión «cámaras de eco» se utiliza en el texto como un recurso retórico de tipo:",
+    "opts": [
+      "Metáfora para ilustrar entornos donde solo resuenan y se retroalimentan las mismas opiniones.",
+      "Hipérbole numérica que cuantifica el precio en dólares de los servidores informáticos.",
+      "Pleonasmo redundante que repite innecesariamente la palabra sonido.",
+      "Onomatopeya que imita acústicamente el eco en una cueva de montaña."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Identificación del tropo:** 'Cámaras de eco' traslada el concepto acústico del sonido que rebota en una habitación cerrada al ámbito social y digital.\n**Paso 2. Función metafórica:** Describe cómo las opiniones homogéneas se amplifican sin entrada de ideas externas.\n**Paso 3. Conclusión:** Es una metáfora explicativa.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "El sesgo de confirmación constituye una de las distorsiones cognitivas más arraigadas en la psicología del razonamiento humano. Descrito sistemáticamente por Peter Wason, consiste en la tendencia involuntaria a buscar, interpretar, favorecer y recordar aquella información que respalda las creencias o hipótesis previas, al tiempo que se desestima o se somete a un escrutinio hipercrítico la evidencia que las refuta. En los entornos digitales contemporáneos, este fenómeno se ve exponencialmente amplificado por los algoritmos de recomendación en redes sociales, los cuales crean cámaras de eco personalizadas que aíslan al usuario de puntos de vista divergentes. Por este motivo, el entrenamiento sistemático en el método científico y en la lógica proposicional resulta indispensable para cultivar un pensamiento crítico capaz de cuestionar las propias convicciones y contrastarlas con hechos verificables.",
+    "pack": "len-19-p8"
+  },
+  {
+    "id": "len-19ago-39",
+    "s": "len",
+    "n": 39,
+    "d": "intermedio",
+    "topics": [
+      "4.4.3-constrParrafo"
+    ],
+    "ch": "len-L07",
+    "t": "Conectores Consecutivos",
+    "prompt": "¿Qué función sintáctica y discursiva cumple el conector «Por este motivo» en la última frase?",
+    "opts": [
+      "Introducir la consecuencia o solución práctica derivada del diagnóstico previo.",
+      "Presentar una duda filosófica que anula la credibilidad de Peter Wason.",
+      "Enumerar cronológicamente los siglos de la Edad Media.",
+      "Formular una pregunta retórica dirigida a los ingenieros de software."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Análisis del conector:** 'Por este motivo' conecta causalmente el problema (sesgo amplificado en redes) con la necesidad de entrenar el pensamiento crítico.\n**Paso 2. Función lógica:** Introduce la consecuencia propositiva.\n**Paso 3. Conclusión:** Introduce la consecuencia o solución práctica.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "El sesgo de confirmación constituye una de las distorsiones cognitivas más arraigadas en la psicología del razonamiento humano. Descrito sistemáticamente por Peter Wason, consiste en la tendencia involuntaria a buscar, interpretar, favorecer y recordar aquella información que respalda las creencias o hipótesis previas, al tiempo que se desestima o se somete a un escrutinio hipercrítico la evidencia que las refuta. En los entornos digitales contemporáneos, este fenómeno se ve exponencialmente amplificado por los algoritmos de recomendación en redes sociales, los cuales crean cámaras de eco personalizadas que aíslan al usuario de puntos de vista divergentes. Por este motivo, el entrenamiento sistemático en el método científico y en la lógica proposicional resulta indispensable para cultivar un pensamiento crítico capaz de cuestionar las propias convicciones y contrastarlas con hechos verificables.",
+    "pack": "len-19-p8"
+  },
+  {
+    "id": "len-19ago-40",
+    "s": "len",
+    "n": 40,
+    "d": "intermedio",
+    "topics": [
+      "4.4.2-razLogico"
+    ],
+    "ch": "len-L04",
+    "t": "Deducción Lógica",
+    "prompt": "¿Cuál de las siguientes conclusiones se DEDUCE válidamente del pasaje?",
+    "opts": [
+      "Someter una idea propia a pruebas deliberadas de refutación es una manifestación de pensamiento crítico riguroso.",
+      "Las redes sociales garantizan automáticamente que los ciudadanos desarrollen un criterio imparcial.",
+      "Los seres humanos recuerdan con mayor facilidad los datos que demuestran que estaban equivocados.",
+      "El sesgo de confirmación desaparece espontáneamente sin necesidad de ningún entrenamiento educativo."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Premisa del texto:** El pensamiento crítico contrasta las propias convicciones con evidencias y hechos verificables frente a la tendencia del sesgo.\n**Paso 2. Deducción lógica:** Si el sesgo busca solo confirmar, el pensamiento riguroso busca activamente poner a prueba y refutar hipótesis.\n**Paso 3. Conclusión:** La opción A es la deducción válida.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "reading": "El sesgo de confirmación constituye una de las distorsiones cognitivas más arraigadas en la psicología del razonamiento humano. Descrito sistemáticamente por Peter Wason, consiste en la tendencia involuntaria a buscar, interpretar, favorecer y recordar aquella información que respalda las creencias o hipótesis previas, al tiempo que se desestima o se somete a un escrutinio hipercrítico la evidencia que las refuta. En los entornos digitales contemporáneos, este fenómeno se ve exponencialmente amplificado por los algoritmos de recomendación en redes sociales, los cuales crean cámaras de eco personalizadas que aíslan al usuario de puntos de vista divergentes. Por este motivo, el entrenamiento sistemático en el método científico y en la lógica proposicional resulta indispensable para cultivar un pensamiento crítico capaz de cuestionar las propias convicciones y contrastarlas con hechos verificables.",
+    "pack": "len-19-p8"
+  },
+  {
+    "id": "fis-19ago-21",
+    "s": "fis",
+    "n": 21,
+    "d": "intermedio",
+    "topics": [
+      "4.2.3-consEnergia"
+    ],
+    "ch": "fis-L16",
+    "t": "Pista de Patinaje y Puntos de Energía",
+    "prompt": "En una pista de patinaje sin fricción con desniveles, un patinador desciende pasando por los puntos $A$ (más alto), $B$ (intermedio), $C$ (punto más bajo) y $D$ (curva de ascenso). ¿En qué punto la energía potencial gravitatoria es máxima y en cuál la rapidez es máxima?",
+    "opts": [
+      "Energía potencial máxima en A; rapidez máxima en C.",
+      "Energía potencial máxima en C; rapidez máxima en A.",
+      "Energía potencial máxima en D; rapidez máxima en B.",
+      "Energía potencial máxima en A; rapidez máxima en B."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Dependencia de la energía potencial:** $E_p = mgh$. Es máxima en el punto de mayor altitud sobre el nivel de referencia, que es el punto $A$.\n**Paso 2. Conservación de la energía mecánica:** Sin rozamiento, $E_m = E_p + E_c = \\text{constante}$. Al descender, la energía potencial se transforma íntegramente en energía cinética ($E_c = \\frac{1}{2}mv^2$).\n**Paso 3. Conclusión:** La energía cinética (y la rapidez) alcanza su valor máximo en el punto más bajo de la pista ($C$), donde la energía potencial es mínima.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "fis-19ago-22",
+    "s": "fis",
+    "n": 22,
+    "d": "intermedio",
+    "topics": [
+      "4.2.3-trabajoPotencia"
+    ],
+    "ch": "fis-L13",
+    "t": "Trabajo de Fuerza Normal",
+    "prompt": "Un cuerpo de masa $m$ se desplaza una distancia horizontal $d = 8\\text{ m}$ sobre un piso horizontal. ¿Cuál es el trabajo realizado por la fuerza normal $N$ y por el peso $P$ durante este desplazamiento?",
+    "opts": [
+      "El trabajo de ambas fuerzas es $0\\text{ J}$ porque son estrictamente perpendiculares al desplazamiento ($90^\\circ$).",
+      "El trabajo de la normal es $mgd$ y el del peso es $-mgd$.",
+      "El trabajo de la normal es positivo y el del peso es cero.",
+      "El trabajo de ambas fuerzas es infinito porque sostienen la masa."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Definición de trabajo mecánico:** $W = \\vec{F} \\cdot \\vec{d} = F \\cdot d \\cdot \\cos\\theta$, donde $\\theta$ es el ángulo entre el vector fuerza y el vector desplazamiento.\n**Paso 2. Análisis a mano:**\n- Desplazamiento: Vector horizontal $\\vec{d}$.\n- Fuerza normal $\\vec{N}$ (vertical hacia arriba): $\\theta = 90^\\circ \\implies \\cos 90^\\circ = 0 \\implies W_N = N \\cdot d \\cdot 0 = 0\\text{ J}$.\n- Fuerza peso $\\vec{P}$ (vertical hacia abajo): $\\theta = 90^\\circ \\implies \\cos 90^\\circ = 0 \\implies W_P = P \\cdot d \\cdot 0 = 0\\text{ J}$.\n**Paso 3. Conclusión:** Toda fuerza perpendicular al desplazamiento realiza trabajo nulo ($0\\text{ J}$).\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "fis-19ago-23",
+    "s": "fis",
+    "n": 23,
+    "d": "intermedio",
+    "topics": [
+      "4.2.1-caida"
+    ],
+    "ch": "fis-L05",
+    "t": "Salto Vertical y Tiempo de Vuelo",
+    "prompt": "Un atleta realiza un salto vertical alcanzando una altura máxima de $1.25\\text{ m}$ sobre el suelo. Despreciando la resistencia del aire y considerando $g = 10\\text{ m/s}^2$, ¿cuánto tiempo total permanece el atleta en el aire (tiempo de vuelo entre el despegue y el aterrizaje)?",
+    "opts": [
+      "$1.0\\text{ s}$",
+      "$0.5\\text{ s}$",
+      "$2.0\\text{ s}$",
+      "$1.5\\text{ s}$"
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Identificación de datos cinemáticos:** Altura máxima $h = 1.25\\text{ m}$, aceleración $g = 10\\text{ m/s}^2$. En el punto más alto, la velocidad vertical es cero ($v = 0$).\n**Paso 2. Cálculo a mano del tiempo de subida:**\n- $h = \\frac{1}{2}gt_{\\text{sub}}^2 \\implies t_{\\text{sub}} = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2(1.25\\text{ m})}{10\\text{ m/s}^2}} = \\sqrt{\\frac{2.5}{10}} = \\sqrt{0.25} = 0.5\\text{ s}$.\n**Paso 3. Cálculo del tiempo de vuelo total:**\n- Por simetría parabólica/vertical: $t_{\\text{vuelo}} = 2 \\times t_{\\text{sub}} = 2 \\times 0.5\\text{ s} = 1.0\\text{ s}$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "fis-19ago-24",
+    "s": "fis",
+    "n": 24,
+    "d": "intermedio",
+    "topics": [
+      "4.2.1-equilibrio"
+    ],
+    "ch": "fis-L03",
+    "t": "Equilibrio con Cuerdas Simétricas",
+    "prompt": "Un semáforo de peso $W = 100\\text{ N}$ cuelga en reposo sostenido simétricamente por dos cables que forman un ángulo de $30^\\circ$ con la horizontal. ¿Cuál es la tensión $T$ en cada uno de los cables? (Dato: $\\sin 30^\\circ = 0.5$)",
+    "opts": [
+      "$T = 100\\text{ N}$",
+      "$T = 50\\text{ N}$",
+      "$T = 200\\text{ N}$",
+      "$T = 25\\text{ N}$"
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Diagrama de cuerpo libre del nudo central:**\n- Hacia arriba: Componentes verticales de ambos cables: $2 \\cdot T\\sin 30^\\circ$.\n- Hacia abajo: Peso del semáforo: $W = 100\\text{ N}$.\n**Paso 2. Ecuación de equilibrio a mano:**\n- $\\sum F_y = 0 \\implies 2T\\sin 30^\\circ - W = 0$\n- Sustituyendo datos:\n  $2T(0.5) = 100 \\implies 1T = 100\\text{ N}$.\n**Paso 3. Conclusión:** La tensión en cada cable es de $100\\text{ N}$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "fig": "fql19-semaforo-cables"
+  },
+  {
+    "id": "fis-19ago-25",
+    "s": "fis",
+    "n": 25,
+    "d": "intermedio",
+    "topics": [
+      "4.2.3-energiaCinetica"
+    ],
+    "ch": "fis-L14",
+    "t": "Energía Cinética al Triplicar Rapidez",
+    "prompt": "Un vehículo de masa $m$ viaja con rapidez $v_0$ teniendo una energía cinética $E_0$. Si el conductor acelera hasta triplicar su rapidez ($3v_0$), ¿cuántas veces aumenta su energía cinética respecto al valor original $E_0$?",
+    "opts": [
+      "Aumenta $9\\text{ veces}$ ($9E_0$).",
+      "Aumenta $3\\text{ veces}$ ($3E_0$).",
+      "Aumenta $6\\text{ veces}$ ($6E_0$).",
+      "Permanece igual porque la masa no ha cambiado."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Fórmula de energía cinética:** $E_c = \\frac{1}{2}mv^2$. La energía cinética es proporcional al cuadrado de la rapidez ($E_c \\propto v^2$).\n**Paso 2. Cálculo a mano:**\n- Estado inicial: $E_0 = \\frac{1}{2}m v_0^2$.\n- Estado final con $v = 3v_0$:\n  $E_{\\text{final}} = \\frac{1}{2}m (3v_0)^2 = \\frac{1}{2}m (9v_0^2) = 9 \\cdot \\left(\\frac{1}{2}m v_0^2\right) = 9E_0$.\n**Paso 3. Conclusión:** Al triplicar la rapidez, la energía cinética se multiplica por $3^2 = 9$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "fis-19ago-26",
+    "s": "fis",
+    "n": 26,
+    "d": "intermedio",
+    "topics": [
+      "4.2.3-energiaPotencial"
+    ],
+    "ch": "fis-L15",
+    "t": "Ley de Hooke y Constante Elástica",
+    "prompt": "De acuerdo con la Ley de Hooke, un resorte ideal se alarga $0.05\\text{ m}$ cuando se le cuelga un bloque de $20\\text{ N}$. ¿Cuál es la constante elástica $k$ del resorte y qué fuerza elástica ejerce si se deforma $0.15\\text{ m}$?",
+    "opts": [
+      "$400\\text{ N/m}$ y $60\\text{ N}$",
+      "$100\\text{ N/m}$ y $15\\text{ N}$",
+      "$400\\text{ N/m}$ y $40\\text{ N}$",
+      "$200\\text{ N/m}$ y $30\\text{ N}$"
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Identificación de datos iniciales:** Deformación inicial $x_1 = 0.05\\text{ m}$, fuerza $F_1 = 20\\text{ N}$.\n**Paso 2. Cálculo a mano de la constante elástica $k$:**\n- $k = \\frac{F_1}{x_1} = \\frac{20\\text{ N}}{0.05\\text{ m}} = \\frac{20}{\\frac{5}{100}} = \\frac{2000}{5} = 400\\text{ N/m}$.\n**Paso 3. Cálculo de la fuerza para la nueva deformación $x_2 = 0.15\\text{ m}$:**\n- $F_2 = k \\cdot x_2 = 400\\text{ N/m} \\times 0.15\\text{ m} = 60\\text{ N}$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "fis-19ago-27",
+    "s": "fis",
+    "n": 27,
+    "d": "intermedio",
+    "topics": [
+      "4.2.1-proyectiles"
+    ],
+    "ch": "fis-L06",
+    "t": "Proyectil y Componentes de Velocidad",
+    "prompt": "Un cañón dispara un proyectil con velocidad inicial $v_0 = 50\\text{ m/s}$ y un ángulo de elevación de $37^\\circ$ sobre la horizontal (considere $\\cos 37^\\circ = 0.8, \\sin 37^\\circ = 0.6$ y $g = 10\\text{ m/s}^2$). Despreciando el aire, ¿cuáles son las componentes horizontal ($v_x$) y vertical ($v_y$) de la velocidad al cabo de $2\\text{ segundos}$ de vuelo?",
+    "opts": [
+      "$v_x = 40\\text{ m/s}$ y $v_y = 10\\text{ m/s}$ hacia arriba.",
+      "$v_x = 30\\text{ m/s}$ y $v_y = 20\\text{ m/s}$ hacia abajo.",
+      "$v_x = 40\\text{ m/s}$ y $v_y = 30\\text{ m/s}$ hacia arriba.",
+      "$v_x = 50\\text{ m/s}$ y $v_y = 0\\text{ m/s}$."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Descomposición de la velocidad inicial a mano:**\n- $v_{0x} = v_0 \\cos 37^\\circ = 50 \\times 0.8 = 40\\text{ m/s}$.\n- $v_{0y} = v_0 \\sin 37^\\circ = 50 \\times 0.6 = 30\\text{ m/s}$.\n**Paso 2. Cinemática a los $t = 2\\text{ s}$:**\n- Eje $x$ (MRU): $v_x(t) = v_{0x} = 40\\text{ m/s}$ (constante en todo momento).\n- Eje $y$ (MRUV con gravedad): $v_y(t) = v_{0y} - gt = 30 - (10 \\times 2) = 30 - 20 = 10\\text{ m/s}$ (positiva, subiendo).\n**Paso 3. Conclusión:** $v_x = 40\\text{ m/s}$ y $v_y = 10\\text{ m/s}$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "fis-19ago-28",
+    "s": "fis",
+    "n": 28,
+    "d": "intermedio",
+    "topics": [
+      "4.2.1-cinemRecta"
+    ],
+    "ch": "fis-L04",
+    "t": "Gráfica Velocidad-Tiempo y Desplazamiento",
+    "prompt": "En la gráfica de velocidad en función del tiempo ($v$ vs $t$) adjunta, un móvil parte del reposo y acelera uniformemente hasta alcanzar $12\\text{ m/s}$ en $6\\text{ segundos}$. ¿Qué representa el área bajo la curva del gráfico y cuál es el desplazamiento total del móvil?",
+    "opts": [
+      "Representa el desplazamiento realizado, que equivale a $\\Delta x = 36\\text{ m}$.",
+      "Representa la aceleración media, que equivale a $2\\text{ m/s}^2$.",
+      "Representa la fuerza neta, que equivale a $72\\text{ N}$.",
+      "Representa la energía cinética final, que equivale a $144\\text{ J}$."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Significado físico del área en $v-t$:** La integral del área bajo la curva de velocidad respecto al tiempo representa el desplazamiento neto $\\Delta x = \\int v\\,dt$.\n**Paso 2. Cálculo geométrico del área a mano:**\n- La figura formada desde $t=0$ hasta $t=6\\text{ s}$ es un triángulo rectángulo de base $b = 6\\text{ s}$ y altura $h = 12\\text{ m/s}$.\n- $\\text{Área} = \\frac{\\text{base} \\times \\text{altura}}{2} = \\frac{6\\text{ s} \\times 12\\text{ m/s}}{2} = \\frac{72}{2} = 36\\text{ m}$.\n**Paso 3. Conclusión:** El área representa el desplazamiento y su valor es $\\Delta x = 36\\text{ m}$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "fig": "fql19-grafica-vt"
+  },
+  {
+    "id": "fis-19ago-29",
+    "s": "fis",
+    "n": 29,
+    "d": "intermedio",
+    "topics": [
+      "4.2.1-cinemRecta"
+    ],
+    "ch": "fis-L04",
+    "t": "Gráfica Velocidad-Tiempo y Pendiente",
+    "prompt": "En la misma gráfica de velocidad versus tiempo ($v$ vs $t$) del móvil anterior (pasa de $0$ a $12\\text{ m/s}$ en $6\\text{ s}$), ¿qué representa físicamente la pendiente de la recta?",
+    "opts": [
+      "La aceleración instantánea y constante del móvil, con valor $a = 2\\text{ m/s}^2$.",
+      "La velocidad media con valor $6\\text{ m/s}$.",
+      "La distancia recorrida por unidad de masa.",
+      "El trabajo realizado por la fuerza de fricción."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Significado de la pendiente en $v-t$:** La derivada de la velocidad respecto al tiempo es la aceleración: $a = \\frac{dv}{dt} = \\frac{\\Delta v}{\\Delta t}$.\n**Paso 2. Cálculo a mano:**\n- $\\Delta v = 12\\text{ m/s} - 0\\text{ m/s} = 12\\text{ m/s}$.\n- $\\Delta t = 6\\text{ s} - 0\\text{ s} = 6\\text{ s}$.\n- Pendiente: $m = \\frac{12}{6} = 2\\text{ m/s}^2$.\n**Paso 3. Conclusión:** La pendiente representa la aceleración constante ($a = 2\\text{ m/s}^2$).\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": [],
+    "fig": "fql19-grafica-vt"
+  },
+  {
+    "id": "fis-19ago-30",
+    "s": "fis",
+    "n": 30,
+    "d": "intermedio",
+    "topics": [
+      "4.2.2-impulsoCML"
+    ],
+    "ch": "fis-L12",
+    "t": "Choque Inelástico y Conservación",
+    "prompt": "Un vagón de ferrocarril $A$ de $4000\\text{ kg}$ que se mueve a $3\\text{ m/s}$ sobre una vía horizontal sin fricción choca contra un vagón $B$ de $2000\\text{ kg}$ inicialmente en reposo. Tras el impacto, ambos vagones quedan acoplados y se mueven juntos. ¿Cuál es la velocidad común final del conjunto acoplado?",
+    "opts": [
+      "$v_f = 2.0\\text{ m/s}$ en la misma dirección del vagón inicial.",
+      "$v_f = 1.5\\text{ m/s}$.",
+      "$v_f = 3.0\\text{ m/s}$.",
+      "$v_f = 0.5\\text{ m/s}$."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Conservación de cantidad de movimiento en choque plástico/inelástico:** $P_{\\text{inicial}} = P_{\\text{final}}$.\n**Paso 2. Cálculo paso a paso a mano:**\n- $m_A v_{A0} + m_B v_{B0} = (m_A + m_B) v_f$\n- $(4000\\text{ kg})(3\\text{ m/s}) + (2000\\text{ kg})(0) = (4000 + 2000) v_f$\n- $12000\\text{ kg}\\cdot\\text{m/s} = 6000 v_f$\n- $v_f = \\frac{12000}{6000} = 2.0\\text{ m/s}$.\n**Paso 3. Conclusión:** La velocidad del conjunto acoplado es $2.0\\text{ m/s}$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "fis-19ago-31",
+    "s": "fis",
+    "n": 31,
+    "d": "intermedio",
+    "topics": [
+      "4.2.2-impulsoCML"
+    ],
+    "ch": "fis-L12",
+    "t": "Impulso Mecánico en Pelota de Béisbol",
+    "prompt": "Una pelota de béisbol de $0.15\\text{ kg}$ llega horizontalmente al bate con una rapidez de $30\\text{ m/s}$. El bateador la golpea en sentido exactamente opuesto, despidiéndola a $40\\text{ m/s}$. Si el contacto entre el bate y la pelota duró $\\Delta t = 0.005\\text{ segundos}$, ¿cuál es la magnitud del impulso $\\vec{J}$ transmitido y la fuerza media $\\bar{F}$ ejercida?",
+    "opts": [
+      "Impulso: $10.5\\text{ N}\\cdot\\text{s}$; Fuerza media: $2100\\text{ N}$.",
+      "Impulso: $1.5\\text{ N}\\cdot\\text{s}$; Fuerza media: $300\\text{ N}$.",
+      "Impulso: $6.0\\text{ N}\\cdot\\text{s}$; Fuerza media: $1200\\text{ N}$.",
+      "Impulso: $0.075\\text{ N}\\cdot\\text{s}$; Fuerza media: $15\\text{ N}$."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Teorema del impulso y la cantidad de movimiento:** $\\vec{J} = \\Delta \\vec{p} = m(\\vec{v}_f - \\vec{v}_0)$.\n**Paso 2. Procedimiento a mano con signos vectoriales:**\n- Considerando positivo el sentido de salida de la pelota:\n  $v_0 = -30\\text{ m/s}$ (hacia el bate), $v_f = +40\\text{ m/s}$ (saliendo del bate).\n- $\\Delta v = v_f - v_0 = 40 - (-30) = 70\\text{ m/s}$.\n- Impulso: $J = m \\cdot \\Delta v = 0.15\\text{ kg} \\times 70\\text{ m/s} = 10.5\\text{ N}\\cdot\\text{s}$.\n- Fuerza media: $\\bar{F} = \\frac{J}{\\Delta t} = \\frac{10.5\\text{ N}\\cdot\\text{s}}{0.005\\text{ s}} = \\frac{10500}{5} = 2100\\text{ N}$.\n**Paso 3. Conclusión:** $J = 10.5\\text{ N}\\cdot\\text{s}$ y $\\bar{F} = 2100\\text{ N}$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "fis-19ago-32",
+    "s": "fis",
+    "n": 32,
+    "d": "intermedio",
+    "topics": [
+      "4.2.1-cinemRecta"
+    ],
+    "ch": "fis-L04",
+    "t": "Frenado de Emergencia y Distancia de Parada",
+    "prompt": "Un automóvil que viaja en línea recta a $20\\text{ m/s}$ frena con una desaceleración constante de magnitud $a = 4\\text{ m/s}^2$ hasta detenerse por completo. ¿Qué distancia recorre el vehículo durante el proceso de frenado y cuánto tiempo tarda en detenerse?",
+    "opts": [
+      "Distancia: $50\\text{ m}$; Tiempo: $5\\text{ s}$.",
+      "Distancia: $100\\text{ m}$; Tiempo: $5\\text{ s}$.",
+      "Distancia: $25\\text{ m}$; Tiempo: $2.5\\text{ s}$.",
+      "Distancia: $80\\text{ m}$; Tiempo: $4\\text{ s}$."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Identificación de datos cinemáticos:** Rapidez inicial $v_0 = 20\\text{ m/s}$, rapidez final $v_f = 0$, aceleración $a = -4\\text{ m/s}^2$.\n**Paso 2. Cálculos a mano:**\n- Tiempo de frenado: $v_f = v_0 + at \\implies 0 = 20 - 4t \\implies 4t = 20 \\implies t = 5\\text{ s}$.\n- Distancia de parada mediante ecuación de Torricelli:\n  $v_f^2 = v_0^2 + 2a\\Delta x \\implies 0^2 = 20^2 + 2(-4)\\Delta x \\implies 0 = 400 - 8\\Delta x \\implies 8\\Delta x = 400 \\implies \\Delta x = \\frac{400}{8} = 50\\text{ m}$.\n**Paso 3. Conclusión:** Recorre $50\\text{ m}$ en $5\\text{ s}$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "fis-19ago-33",
+    "s": "fis",
+    "n": 33,
+    "d": "intermedio",
+    "topics": [
+      "4.2.2-roceResistencia"
+    ],
+    "ch": "fis-L09",
+    "t": "Ángulo de Inclinación Crítico y Rozamiento",
+    "prompt": "Se coloca un bloque sobre una tabla horizontal y se eleva lentamente uno de sus extremos. El bloque comienza a deslizarse justo cuando el ángulo de inclinación de la tabla alcanza $\\theta = 45^\\circ$. ¿Cuál es el coeficiente de rozamiento estático $\\mu_s$ entre el bloque y la tabla?",
+    "opts": [
+      "$\\mu_s = 1.00$",
+      "$\\mu_s = 0.50$",
+      "$\\mu_s = 0.71$",
+      "$\\mu_s = 0.86$"
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Diagrama de cuerpo libre en el plano inclinado en equilibrio límite:**\n- Paralelo al plano: $mg\\sin\\theta - f_{s,\\text{máx}} = 0 \\implies f_{s,\\text{máx}} = mg\\sin\\theta$.\n- Perpendicular al plano: $N - mg\\cos\\theta = 0 \\implies N = mg\\cos\\theta$.\n**Paso 2. Deducción de la relación de fricción a mano:**\n- Por definición: $f_{s,\\text{máx}} = \\mu_s N \\implies mg\\sin\\theta = \\mu_s (mg\\cos\\theta)$.\n- Simplificando $mg$:\n  $\\mu_s = \\frac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta$.\n- Evaluando en $\\theta = 45^\\circ$: $\\mu_s = \\tan 45^\\circ = 1.00$.\n**Paso 3. Conclusión:** $\\mu_s = 1.00$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "fis-19ago-34",
+    "s": "fis",
+    "n": 34,
+    "d": "intermedio",
+    "topics": [
+      "4.2.3-trabajoPotencia"
+    ],
+    "ch": "fis-L13",
+    "t": "Teorema del Trabajo y la Energía Cinética",
+    "prompt": "Un cuerpo de masa $m = 4\\text{ kg}$ incrementa su rapidez de $v_1 = 3\\text{ m/s}$ a $v_2 = 7\\text{ m/s}$ mientras se desplaza sobre una superficie horizontal. ¿Cuál fue el trabajo neto total $W_{\\text{neto}}$ realizado sobre el cuerpo?",
+    "opts": [
+      "$W_{\\text{neto}} = 80\\text{ J}$",
+      "$W_{\\text{neto}} = 40\\text{ J}$",
+      "$W_{\\text{neto}} = 160\\text{ J}$",
+      "$W_{\\text{neto}} = 16\\text{ J}$"
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Teorema del Trabajo y la Energía Cinética:** El trabajo de la fuerza neta es igual al cambio de energía cinética: $W_{\\text{neto}} = \\Delta E_c = \\frac{1}{2}m v_2^2 - \\frac{1}{2}m v_1^2 = \\frac{1}{2}m(v_2^2 - v_1^2)$.\n**Paso 2. Cálculo a mano:**\n- $v_1^2 = 3^2 = 9\\text{ m}^2/\\text{s}^2$, $v_2^2 = 7^2 = 49\\text{ m}^2/\\text{s}^2$.\n- $\\Delta(v^2) = 49 - 9 = 40\\text{ m}^2/\\text{s}^2$.\n- $W_{\\text{neto}} = \\frac{1}{2}(4\\text{ kg})(40) = 2 \\times 40 = 80\\text{ J}$.\n**Paso 3. Conclusión:** El trabajo neto es $80\\text{ J}$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "fis-19ago-35",
+    "s": "fis",
+    "n": 35,
+    "d": "intermedio",
+    "topics": [
+      "4.2.3-consEnergia"
+    ],
+    "ch": "fis-L16",
+    "t": "Rizo Vertical y Rapidez Crítica",
+    "prompt": "Un carrito de montaña rusa ingresa a un rizo circular vertical de radio $R = 10\\text{ m}$. Despreciando la fricción y con $g = 10\\text{ m/s}^2$, ¿cuál es la rapidez mínima que debe tener el carrito en el punto más alto del rizo para completar la vuelta sin despegarse de la vía?",
+    "opts": [
+      "$v_{\\text{mín}} = 10\\text{ m/s}$",
+      "$v_{\\text{mín}} = 5\\text{ m/s}$",
+      "$v_{\\text{mín}} = 20\\text{ m/s}$",
+      "$v_{\\text{mín}} = 14.14\\text{ m/s}$"
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Dinámica en el punto más alto del rizo:**\n- Fuerzas radiales hacia el centro: Peso ($mg$) + Fuerza Normal ($N$).\n- Segunda Ley en el eje centrípeto: $mg + N = m\\frac{v^2}{R}$.\n**Paso 2. Condición límite de despegue a mano:**\n- En la rapidez mínima, la fuerza normal con el riel tiende a cero ($N = 0$).\n- $mg = m\\frac{v_{\\text{mín}}^2}{R} \\implies v_{\\text{mín}}^2 = gR \\implies v_{\\text{mín}} = \\sqrt{gR}$.\n- Sustituyendo: $v_{\\text{mín}} = \\sqrt{10\\text{ m/s}^2 \\times 10\\text{ m}} = \\sqrt{100} = 10\\text{ m/s}$.\n**Paso 3. Conclusión:** La rapidez mínima en la cúspide es $10\\text{ m/s}$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "fis-19ago-36",
+    "s": "fis",
+    "n": 36,
+    "d": "intermedio",
+    "topics": [
+      "4.2.2-3raNewton"
+    ],
+    "ch": "fis-L10",
+    "t": "Tercera Ley en Atracción Gravitatoria",
+    "prompt": "La masa de la Tierra es aproximadamente $81\\text{ veces}$ mayor que la masa de la Luna. Considerando la fuerza gravitatoria mutua que las mantiene unidas en órbita, ¿cuál de las siguientes afirmaciones es físicamente correcta según la Tercera Ley de Newton?",
+    "opts": [
+      "La fuerza gravitatoria que la Tierra ejerce sobre la Luna tiene exactamente la misma magnitud que la fuerza que la Luna ejerce sobre la Tierra.",
+      "La Tierra ejerce una fuerza 81 veces mayor sobre la Luna porque su masa es muy superior.",
+      "La Luna no ejerce ninguna fuerza sobre la Tierra porque su gravedad no llega al espacio exterior.",
+      "La Luna ejerce mayor fuerza sobre la Tierra debido a su velocidad orbital más rápida."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Ley de Gravitación Universal:** $F = G\\frac{M_{\\text{Tierra}} M_{\\text{Luna}}}{d^2}$. La fórmula es simétrica respecto a ambas masas.\n**Paso 2. Tercera Ley de Newton (acción y reacción):** Toda interacción entre dos cuerpos constituye un par de fuerzas de igual magnitud, en la misma dirección y en sentidos opuestos: $|\\vec{F}_{T\\to L}| = |\\vec{F}_{L\\to T}|$.\n**Paso 3. Conclusión:** Ambas fuerzas son exactamente iguales en módulo; la diferencia de masa únicamente hace que la aceleración orbital de la Luna sea 81 veces mayor que la de la Tierra.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "fis-19ago-37",
+    "s": "fis",
+    "n": 37,
+    "d": "intermedio",
+    "topics": [
+      "4.2.2-2daNewton"
+    ],
+    "ch": "fis-L07",
+    "t": "Dos Bloques Unidos por Cuerda",
+    "prompt": "Dos bloques $A$ de $3\\text{ kg}$ y $B$ de $2\\text{ kg}$ están unidos por una cuerda ligera sobre una mesa horizontal sin fricción. Se jala al bloque $A$ hacia la derecha con una fuerza horizontal constante $F = 20\\text{ N}$. ¿Cuál es la aceleración del conjunto y la tensión $T$ en la cuerda que une a los bloques?",
+    "opts": [
+      "Aceleración: $4\\text{ m/s}^2$; Tensión: $8\\text{ N}$.",
+      "Aceleración: $4\\text{ m/s}^2$; Tensión: $12\\text{ N}$.",
+      "Aceleración: $10\\text{ m/s}^2$; Tensión: $20\\text{ N}$.",
+      "Aceleración: $2\\text{ m/s}^2$; Tensión: $6\\text{ N}$."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Aceleración del sistema conjunto:**\n- Masa total: $M = m_A + m_B = 3 + 2 = 5\\text{ kg}$.\n- Aceleración: $a = \\frac{F}{M} = \\frac{20\\text{ N}}{5\\text{ kg}} = 4\\text{ m/s}^2$.\n**Paso 2. Cálculo de la tensión en la cuerda que jala al bloque posterior $B$:**\n- Diagrama de cuerpo libre para el bloque $B$ ($m_B = 2\\text{ kg}$):\n  La única fuerza horizontal sobre $B$ es la tensión $T$: $T = m_B \\cdot a = 2\\text{ kg} \\times 4\\text{ m/s}^2 = 8\\text{ N}$.\n- (Verificación en bloque $A$: $F - T = m_A \\cdot a \\implies 20 - 8 = 12\\text{ N} = 3\\text{ kg} \\times 4\\text{ m/s}^2$).\n**Paso 3. Conclusión:** $a = 4\\text{ m/s}^2$ y $T = 8\\text{ N}$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "fis-19ago-38",
+    "s": "fis",
+    "n": 38,
+    "d": "intermedio",
+    "topics": [
+      "4.2.3-trabajoPotencia"
+    ],
+    "ch": "fis-L13",
+    "t": "Potencia al Elevar Carga Verticalmente",
+    "prompt": "Una grúa eléctrica levanta un contenedor de masa $m = 600\\text{ kg}$ a una altura de $15\\text{ metros}$ con velocidad constante en un tiempo de $30\\text{ segundos}$ ($g = 10\\text{ m/s}^2$). ¿Qué potencia media útil desarrolla el motor de la grúa?",
+    "opts": [
+      "$3000\\text{ W} = 3.0\\text{ kW}$",
+      "$90000\\text{ W} = 90\\text{ kW}$",
+      "$1500\\text{ W} = 1.5\\text{ kW}$",
+      "$6000\\text{ W} = 6.0\\text{ kW}$"
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Cálculo del trabajo mecánico contra la gravedad:**\n- $W = mgh = 600\\text{ kg} \\times 10\\text{ m/s}^2 \\times 15\\text{ m} = 90000\\text{ J}$.\n**Paso 2. Cálculo de la potencia media a mano:**\n- $P = \\frac{W}{t} = \\frac{90000\\text{ J}}{30\\text{ s}} = \\frac{9000}{3} = 3000\\text{ W} = 3.0\\text{ kW}$.\n**Paso 3. Conclusión:** La potencia desarrollada es $3.0\\text{ kW}$ ($3000\\text{ W}$).\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "fis-19ago-39",
+    "s": "fis",
+    "n": 39,
+    "d": "intermedio",
+    "topics": [
+      "4.2.3-consEnergia"
+    ],
+    "ch": "fis-L16",
+    "t": "Energía a la Mitad de la Altura Máxima",
+    "prompt": "Se lanza una pelota verticalmente hacia arriba con energía mecánica total $E_m = 100\\text{ J}$ (nivel de referencia en el suelo, sin fricción del aire). Cuando la pelota alcanza exactamente la mitad de su altura máxima ($h = H_{\\text{máx}}/2$), ¿cuáles son sus valores de energía cinética ($E_c$) y energía potencial ($E_p$)?",
+    "opts": [
+      "$E_c = 50\\text{ J}$ y $E_p = 50\\text{ J}$",
+      "$E_c = 25\\text{ J}$ y $E_p = 75\\text{ J}$",
+      "$E_c = 75\\text{ J}$ y $E_p = 25\\text{ J}$",
+      "$E_c = 0\\text{ J}$ y $E_p = 100\\text{ J}$"
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Balance energético total:** Por conservación, $E_m = E_c + E_p = 100\\text{ J} = \\text{constante}$.\n**Paso 2. Procedimiento a mano a media altura:**\n- En la cúspide $H_{\\text{máx}}$: Toda la energía es potencial: $E_p(H_{\\text{máx}}) = mg H_{\\text{máx}} = 100\\text{ J}$.\n- A media altura $h = \\frac{H_{\\text{máx}}}{2}$:\n  $E_p(h) = mg\\left(\\frac{H_{\\text{máx}}}{2}\\right) = \\frac{1}{2}(mg H_{\\text{máx}}) = \\frac{100\\text{ J}}{2} = 50\\text{ J}$.\n- Por conservación: $E_c = E_m - E_p = 100\\text{ J} - 50\\text{ J} = 50\\text{ J}$.\n**Paso 3. Conclusión:** Ambas energías son iguales a $50\\text{ J}$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "fis-19ago-40",
+    "s": "fis",
+    "n": 40,
+    "d": "intermedio",
+    "topics": [
+      "4.2.2-circular"
+    ],
+    "ch": "fis-L11",
+    "t": "Velocidad Angular y Período en MCU",
+    "prompt": "Un disco gira en un plano horizontal con Movimiento Circular Uniforme realizando $120\\text{ revoluciones por minuto (rpm)}$. ¿Cuál es su rapidez angular $\\omega$ en $\\text{rad/s}$ y su período de rotación $T$?",
+    "opts": [
+      "$\\omega = 4\\pi\\text{ rad/s} \\approx 12.57\\text{ rad/s}$; Período $T = 0.5\\text{ s}$.",
+      "$\\omega = 2\\pi\\text{ rad/s}$; Período $T = 1.0\\text{ s}$.",
+      "$\\omega = 120\\pi\\text{ rad/s}$; Período $T = 60\\text{ s}$.",
+      "$\\omega = 8\\pi\\text{ rad/s}$; Período $T = 0.25\\text{ s}$."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Conversión de frecuencia a hercios (vueltas por segundo):**\n$f = \\frac{120\\text{ rev}}{60\\text{ s}} = 2\\text{ rev/s} = 2\\text{ Hz}$.\n**Paso 2. Cálculo a mano de rapidez angular y período:**\n- Rapidez angular: $\\omega = 2\\pi f = 2\\pi(2) = 4\\pi\\text{ rad/s} \\approx 12.57\\text{ rad/s}$.\n- Período: $T = \\frac{1}{f} = \\frac{1}{2\\text{ Hz}} = 0.5\\text{ s}$.\n**Paso 3. Conclusión:** $\\omega = 4\\pi\\text{ rad/s}$ y $T = 0.5\\text{ s}$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-21",
+    "s": "qui",
+    "n": 21,
+    "d": "intermedio",
+    "topics": [
+      "4.3.4-reacciones"
+    ],
+    "ch": "qui-L16",
+    "t": "Ley de Conservación de la Masa",
+    "prompt": "Antoine Lavoisier enunció la Ley de Conservación de la Masa. Si en un recipiente cerrado herméticamente reaccionan por completo $10.0\\text{ g}$ de gas hidrógeno con $80.0\\text{ g}$ de gas oxígeno formando agua líquida pura, ¿cuál es la masa total dentro del recipiente al finalizar la reacción?",
+    "opts": [
+      "$90.0\\text{ g}$",
+      "$45.0\\text{ g}$",
+      "$80.0\\text{ g}$",
+      "$100.0\\text{ g}$"
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Enunciado de la Ley de Lavoisier:** En un sistema cerrado, la masa total de los reactivos es exactamente igual a la masa total de los productos: $\\sum m_{\\text{reactivos}} = \\sum m_{\\text{productos}}$.\n**Paso 2. Cálculo directo a mano:**\n- Masa de reactivos = $10.0\\text{ g de H}_2 + 80.0\\text{ g de O}_2 = 90.0\\text{ g}$.\n- Al no escapar ningún gas ni materia del recipiente hermético, la masa final es de $90.0\\text{ g}$ de $\\text{H}_2\\text{O}$.\n**Paso 3. Conclusión:** La masa final se mantiene constante en $90.0\\text{ g}$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-22",
+    "s": "qui",
+    "n": 22,
+    "d": "intermedio",
+    "topics": [
+      "4.3.1-numerosCuanticos"
+    ],
+    "ch": "qui-L05",
+    "t": "Postulados del Modelo Atómico de Bohr",
+    "prompt": "¿Cuál es el postulado fundamental del modelo atómico de Niels Bohr que corrigió las limitaciones del modelo clásico de Rutherford?",
+    "opts": [
+      "Los electrones orbitan en niveles de energía discretos y cuantizados sin emitir radiación continuamente.",
+      "Los electrones se distribuyen en una nube de probabilidad según la ecuación de onda de Schrödinger.",
+      "El átomo es una esfera maciza de carga positiva con electrones incrustados en su superficie.",
+      "El núcleo atómico contiene neutrones que evitan la repulsión electrostática de los protones."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Limitación del modelo clásico de Rutherford:** Según la electrodinámica clásica, una carga acelerada (como el electrón en órbita) debe emitir radiación continuamente, perdiendo energía y colapsando en espiral hacia el núcleo.\n**Paso 2. Aporte cuántico de Bohr:**\n- Postuló que el momento angular del electrón está cuantizado ($L = n\\hbar$).\n- Los electrones solo pueden ocupar órbitas estacionarias permitidas (niveles $n=1, 2, 3...$).\n- Mientras el electrón permanezca en un nivel estacionario, no emite energía electromagnética, garantizando la estabilidad del átomo.\n**Paso 3. Conclusión:** Los electrones orbitan en niveles estacionarios discretos y cuantizados sin emitir radiación continuamente.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-23",
+    "s": "qui",
+    "n": 23,
+    "d": "intermedio",
+    "topics": [
+      "4.3.3-enlaceIonico"
+    ],
+    "ch": "qui-L10",
+    "t": "Enlace Iónico y Transferencia de Electrones",
+    "prompt": "El cloruro de sodio ($\\text{NaCl}$) se forma por la reacción entre el sodio metal ($Na$, electronegatividad $0.9$) y el cloro no metal ($Cl$, electronegatividad $3.0$). ¿Qué tipo de enlace se establece entre ellos y cómo se produce?",
+    "opts": [
+      "Enlace iónico (o electrovalente), formado por la transferencia completa del electrón de valencia del sodio al cloro, generando atracción electrostática entre $\\text{Na}^+$ y $\\text{Cl}^-$.",
+      "Enlace covalente no polar, donde comparten equitativamente dos pares de electrones.",
+      "Enlace metálico con un mar de electrones libres.",
+      "Enlace covalente coordinado donde el cloro aporta ambos electrones al sodio."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Diferencia de electronegatividad:**\n$\\Delta EN = 3.0 - 0.9 = 2.1 > 1.7$.\n**Paso 2. Mecanismo de enlace iónico:**\n- El sodio ($1s^2\\, 2s^2\\, 2p^6\\, 3s^1$) cede fácilmente su electrón $3s^1$ para adquirir configuración estable de gas noble ($[\\text{Ne}]$), convirtiéndose en catión $\\text{Na}^+$.\n- El cloro ($1s^2\\, 2s^2\\, 2p^6\\, 3s^2\\, 3p^5$) capta ese electrón para completar su octeto ($[\\text{Ar}]$), convirtiéndose en anión $\\text{Cl}^-$.\n- La atracción electrostática entre iones de carga opuesta forma la red cristalina iónica.\n**Paso 3. Conclusión:** Es un enlace iónico por transferencia completa de electrones.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-24",
+    "s": "qui",
+    "n": 24,
+    "d": "intermedio",
+    "topics": [
+      "4.3.3-enlaceCovalente"
+    ],
+    "ch": "qui-L10",
+    "t": "Enlace Covalente No Polar",
+    "prompt": "En la molécula diatómica de gas cloro ($\\text{Cl}_2$), ¿qué tipo de enlace une a ambos átomos de cloro?",
+    "opts": [
+      "Enlace covalente simple no polar (o apolar), porque la diferencia de electronegatividad entre átomos idénticos es cero ($\\Delta EN = 0$).",
+      "Enlace iónico fuerte por transferencia de electrones.",
+      "Enlace covalente triple polar con momento dipolar permanente.",
+      "Enlace por puente de hidrógeno intracelular."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Cálculo de electronegatividad:** Al tratarse de dos átomos del mismo elemento químico ($Cl$ y $Cl$):\n$\\Delta EN = 3.0 - 3.0 = 0$.\n**Paso 2. Mecanismo de compartición:**\n- Cada átomo de cloro tiene $7$ electrones de valencia y necesita $1$ electrón para el octeto.\n- Comparten exactamente 1 par de electrones formando un enlace covalente simple ($\text{Cl}-\text{Cl}$).\n- Como la atracción es perfectamente simétrica, el par electrónico se comparte por igual, resultando apolar.\n**Paso 3. Conclusión:** Es un enlace covalente simple no polar.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-25",
+    "s": "qui",
+    "n": 25,
+    "d": "intermedio",
+    "topics": [
+      "4.3.4-reacciones"
+    ],
+    "ch": "qui-L16",
+    "t": "Comportamiento del Oxígeno en Reacciones Redox",
+    "prompt": "En las reacciones de combustión y oxidación de alcoholes o hidrocarburos con gas oxígeno molecular ($\\text{O}_2$), ¿cuál es el comportamiento electroquímico del oxígeno al interactuar con el combustible?",
+    "opts": [
+      "Gana electrones reduciéndose de estado de oxidación $0$ a $-2$ y actúa como agente oxidante.",
+      "Pierde electrones oxidándose de estado de oxidación $-2$ a $0$ y actúa como agente reductor.",
+      "Mantiene su estado de oxidación en cero sin intercambiar ningún electrón con el combustible.",
+      "Gana protones del núcleo y se transforma en un catión neutro sin alterar su carga."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Estado inicial del oxígeno:** En el gas oxígeno molecular ($\text{O}_2$), el estado de oxidación es estrictamente $0$ por ser una sustancia simple elemental.\n**Paso 2. Estado final en los productos de combustión ($\\text{CO}_2$ y $\\text{H}_2\\text{O}$):**\n- En el agua ($\text{H}_2\text{O}$) y en el dióxido de carbono ($\text{CO}_2$), el oxígeno pasa a estado de oxidación $-2$.\n- Cambio de electrones: $\\text{O}^0 + 2e^- \\to \\text{O}^{-2}$ (captura/gana 2 electrones por átomo, es decir, se reduce).\n**Paso 3. Conclusión:** Al reducirse y ganar electrones, el oxígeno es el agente oxidante que provoca la oxidación del combustible.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-26",
+    "s": "qui",
+    "n": 26,
+    "d": "intermedio",
+    "topics": [
+      "4.3.4-mol"
+    ],
+    "ch": "qui-L14",
+    "t": "Número de Avogadro y Cantidad de Moléculas",
+    "prompt": "¿Cuántas moléculas están contenidas exactamente en $2.0\\text{ moles}$ de gas dióxido de carbono ($\\text{CO}_2$)? (Dato: Constante de Avogadro $N_A = 6.022 \\times 10^{23}\\text{ moléculas/mol}$)",
+    "opts": [
+      "$1.2044 \\times 10^{24}\\text{ moléculas}$",
+      "$6.022 \\times 10^{23}\\text{ moléculas}$",
+      "$3.011 \\times 10^{23}\\text{ moléculas}$",
+      "$2.4088 \\times 10^{25}\\text{ moléculas}$"
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Definición del mol:** $1\\text{ mol}$ de cualquier sustancia contiene exactamente el número de Avogadro de partículas elementales ($N_A = 6.022 \\times 10^{23}$).\n**Paso 2. Multiplicación a mano:**\n$\\text{Número de moléculas} = n \\times N_A = 2.0\\text{ moles} \\times 6.022 \\times 10^{23}\\text{ moléculas/mol} = 1.2044 \\times 10^{24}\\text{ moléculas}$.\n**Paso 3. Conclusión:** Contiene $1.2044 \\times 10^{24}$ moléculas.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-27",
+    "s": "qui",
+    "n": 27,
+    "d": "intermedio",
+    "topics": [
+      "4.3.2-propPeriodicas"
+    ],
+    "ch": "qui-L07",
+    "t": "Energía de Primera Ionización",
+    "prompt": "¿Qué es la energía de primera ionización ($EI_1$) y cuál de los siguientes elementos presenta la mayor energía de ionización?",
+    "opts": [
+      "Es la energía mínima requerida para arrancar el electrón más externo de un átomo gaseoso en su estado fundamental; el Helio ($He$) presenta la mayor $EI_1$.",
+      "Es la energía liberada al ganar un electrón; el Sodio ($Na$) presenta la mayor $EI_1$.",
+      "Es la fuerza con que el núcleo atrae neutrones; el Francio ($Fr$) presenta la mayor $EI_1$.",
+      "Es la masa necesaria para formar un ion dipositivo; el Hierro ($Fe$) presenta la mayor $EI_1$."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Definición termodinámica:**\n$X_{(g)} + EI_1 \\to X^+_{(g)} + e^-$.\n**Paso 2. Tendencia periódica:**\n- Aumenta hacia la derecha y hacia arriba en la tabla periódica.\n- El Helio ($He$, $1s^2$) tiene su capa completa muy cercana al núcleo y sin apantallamiento interior, lo que le otorga la mayor energía de ionización de toda la tabla periódica ($2372\\text{ kJ/mol}$).\n**Paso 3. Conclusión:** La opción A contiene la definición rigurosa y el elemento correcto.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-28",
+    "s": "qui",
+    "n": 28,
+    "d": "intermedio",
+    "topics": [
+      "4.3.1-materia"
+    ],
+    "ch": "qui-L02",
+    "t": "Clasificación de la Materia",
+    "prompt": "Una disolución de cloruro de sodio en agua destilada es un ejemplo de:",
+    "opts": [
+      "Mezcla homogénea (solución), con una sola fase visualmente uniforme y composición constante en cualquier porción.",
+      "Mezcla heterogénea con fases separadas a simple vista.",
+      "Compuesto químico puro no separable por métodos físicos.",
+      "Elemento alotrópico con estructura cristalina fija."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Criterios de clasificación:**\n- Sustancia pura: Posee fórmula química única definida (ej. $\\text{NaCl}$ puro o $\\text{H}_2\\text{O}$ pura).\n- Mezcla: Unión física de dos o más sustancias que pueden separarse por métodos físicos (como evaporación del agua).\n**Paso 2. Homogeneidad:**\n- Al disolverse completamente la sal en agua, los iones se dispersan a nivel molecular formando una sola fase líquida transparente sin límites de separación visuales.\n**Paso 3. Conclusión:** Es una mezcla homogénea (solución).\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-29",
+    "s": "qui",
+    "n": 29,
+    "d": "intermedio",
+    "topics": [
+      "4.3.1-materia"
+    ],
+    "ch": "qui-L02",
+    "t": "Cambios Físicos vs Químicos",
+    "prompt": "¿Cuál de los siguientes procesos corresponde a un cambio químico (reacción química) y no a un simple cambio de estado físico?",
+    "opts": [
+      "La combustión de un trozo de madera formando cenizas, dióxido de carbono y vapor de agua.",
+      "La evaporación del alcohol etílico al dejarlo en un vaso abierto.",
+      "La fusión de un cubo de hielo al recibir calor ambiente.",
+      "La disolución de azúcar en agua tibia."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Distinción conceptual:**\n- Cambio físico: Se modifica el estado de agregación o la forma, pero las moléculas y los enlaces internos permanecen inalterados (ej. $\\text{H}_2\\text{O}_{(s)} \\to \\text{H}_2\\text{O}_{(l)}$).\n- Cambio químico: Se rompen y forman nuevos enlaces covalentes/iónicos, originando sustancias químicamente distintas con nuevas propiedades.\n**Paso 2. Análisis del caso:** La combustión de la celulosa con oxígeno oxida la materia orgánica produciendo nuevas especies químicas ($\\text{CO}_2, \\text{H}_2\\text{O}$ y carbón residual).\n**Paso 3. Conclusión:** La combustión es un cambio químico irreversible.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-30",
+    "s": "qui",
+    "n": 30,
+    "d": "intermedio",
+    "topics": [
+      "4.3.4-esteqReactivoLim"
+    ],
+    "ch": "qui-L17",
+    "t": "Porcentaje de Rendimiento",
+    "prompt": "En un ensayo de síntesis química, el cálculo estequiométrico teórico indicaba que debían obtenerse $50.0\\text{ g}$ de aspirina. Tras realizar el experimento y purificar el producto en el laboratorio, se pesaron efectivamente $42.5\\text{ g}$. ¿Cuál fue el porcentaje de rendimiento de la reacción?",
+    "opts": [
+      "$85.0\\%$",
+      "$92.5\\%$",
+      "$80.0\\%$",
+      "$75.0\\%$"
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Fórmula del porcentaje de rendimiento:**\n$\\text{\\% Rendimiento} = \\left(\\frac{\\text{Rendimiento Real}}{\\text{Rendimiento Teórico}}\\right) \\times 100$.\n**Paso 2. Cálculo a mano:**\n- Rendimiento real experimental = $42.5\\text{ g}$.\n- Rendimiento teórico calculado = $50.0\\text{ g}$.\n- $\\text{\\% Rendimiento} = \\left(\\frac{42.5}{50.0}\\right) \\times 100 = 0.85 \\times 100 = 85.0\\%$.\n**Paso 3. Conclusión:** El porcentaje de rendimiento es del $85.0\\%$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-31",
+    "s": "qui",
+    "n": 31,
+    "d": "intermedio",
+    "topics": [
+      "4.3.3-geomMolec"
+    ],
+    "ch": "qui-L12",
+    "t": "Geometría Molecular del Metano",
+    "prompt": "La molécula de metano ($\\text{CH}_4$) consta de un átomo central de carbono unido a cuatro átomos de hidrógeno. De acuerdo con la teoría de repulsión de pares de electrones de la capa de valencia (RPECV), ¿qué tipo de hibridación posee el carbono, cuál es su geometría molecular y qué ángulo forman sus enlaces?",
+    "opts": [
+      "Hibridación $sp^3$, geometría tetraédrica con ángulos de enlace de $109.5^\\circ$.",
+      "Hibridación $sp^2$, geometría trigonal plana con ángulos de enlace de $120^\\circ$.",
+      "Hibridación $sp$, geometría lineal con ángulos de enlace de $180^\\circ$.",
+      "Hibridación $sp^3d$, geometría bipiramidal trigonal con ángulos de $90^\\circ$ y $120^\\circ$."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Estructura de Lewis y pares de electrones:** El átomo de carbono ($Z=6$) tiene 4 electrones de valencia y forma 4 enlaces simples $\\text{C}-\\text{H}$, sin pares libres ($AX_4$).\n**Paso 2. Modelo RPECV e hibridación:**\n- 4 dominios electrónicos $\\implies$ hibridación $sp^3$.\n- La máxima separación tridimensional para 4 pares enlazantes equivalentes es la disposición tetraédrica regular con ángulos de $109.5^\\circ$ (o $109^\\circ 28'$).\n**Paso 3. Conclusión:** Hibridación $sp^3$, geometría tetraédrica y $109.5^\\circ$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-32",
+    "s": "qui",
+    "n": 32,
+    "d": "intermedio",
+    "topics": [
+      "4.3.3-Lewis"
+    ],
+    "ch": "qui-L11",
+    "t": "Octeto Incompleto en Trifluoruro de Boro",
+    "prompt": "El trifluoruro de boro ($\\text{BF}_3$) es una excepción común a la regla del octeto. ¿Cuántos electrones de valencia rodean al átomo central de boro en su estructura de Lewis y cuál es la geometría espacial de la molécula?",
+    "opts": [
+      "$6\\text{ electrones}$ (octeto incompleto/deficiente), con geometría trigonal plana ($120^\\circ$).",
+      "$8\\text{ electrones}$ (octeto completo), con geometría piramidal trigonal ($107^\\circ$).",
+      "$10\\text{ electrones}$ (octeto expandido), con geometría en forma de T.",
+      "$4\\text{ electrones}$, con geometría lineal ($180^\\circ$)."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Conteo de electrones de valencia:** Boro ($B$, Grupo 13) aporta $3\\, e^-$. Cada Flúor ($F$, Grupo 17) aporta $7\\, e^-$. Total $= 3 + 3(7) = 24\\, e^-$.\n**Paso 2. Estructura de Lewis:** El boro forma 3 enlaces simples con los 3 átomos de flúor ($\\text{B}-\\text{F}$), rodeándose de $3 \\times 2 = 6\\text{ electrones}$.\n- Al carecer de pares solitarios ($AX_3$), los 3 enlaces se disponen en un plano separados por $120^\\circ$.\n**Paso 3. Conclusión:** Posee 6 electrones en el átomo central y geometría trigonal plana.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-33",
+    "s": "qui",
+    "n": 33,
+    "d": "intermedio",
+    "topics": [
+      "4.3.4-formEmpMol"
+    ],
+    "ch": "qui-L15",
+    "t": "Fórmula Empírica y Molecular de Glucosa",
+    "prompt": "Un carbohidrato puro presenta una composición centesimal de $40.0\\%\\text{ C}$, $6.67\\%\\text{ H}$ y $53.33\\%\\text{ O}$. Si su masa molar experimental es de $180.0\\text{ g/mol}$, ¿cuál es su fórmula empírica y su fórmula molecular respectivamente? (Masas: $C=12, H=1, O=16\\text{ g/mol}$)",
+    "opts": [
+      "Fórmula empírica: $\\text{CH}_2\\text{O}$; Fórmula molecular: $\\text{C}_6\\text{H}_{12}\\text{O}_6$",
+      "Fórmula empírica: $\\text{CHO}$; Fórmula molecular: $\\text{C}_6\\text{H}_6\\text{O}_6$",
+      "Fórmula empírica: $\\text{CH}_2\\text{O}$; Fórmula molecular: $\\text{C}_3\\text{H}_6\\text{O}_3$",
+      "Fórmula empírica: $\\text{C}_2\\text{H}_4\\text{O}_2$; Fórmula molecular: $\\text{C}_4\\text{H}_8\\text{O}_4$"
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Moles de cada elemento en una base de $100\\text{ g}$:**\n- $n_C = \\frac{40.0\\text{ g}}{12\\text{ g/mol}} = 3.333\\text{ mol}$\n- $n_H = \\frac{6.67\\text{ g}}{1\\text{ g/mol}} = 6.670\\text{ mol}$\n- $n_O = \\frac{53.33\\text{ g}}{16\\text{ g/mol}} = 3.333\\text{ mol}$\n**Paso 2. Relación molar dividiendo por el menor ($3.333$):**\n- $C: \\frac{3.333}{3.333} = 1$; $H: \\frac{6.670}{3.333} \\approx 2$; $O: \\frac{3.333}{3.333} = 1$.\n- Fórmula empírica: $\\text{CH}_2\\text{O}$.\n- Masa de la fórmula empírica $= 12 + 2(1) + 16 = 30.0\\text{ g/mol}$.\n**Paso 3. Determinación de la fórmula molecular:**\n- Factor $n = \\frac{\\text{Masa Molar}}{\\text{Masa Empírica}} = \\frac{180.0}{30.0} = 6$.\n- Fórmula molecular: $(\\text{CH}_2\\text{O}) \\times 6 = \\text{C}_6\\text{H}_{12}\\text{O}_6$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-34",
+    "s": "qui",
+    "n": 34,
+    "d": "intermedio",
+    "topics": [
+      "4.3.4-esteqReactivoLim"
+    ],
+    "ch": "qui-L17",
+    "t": "Estequiometría con Pureza de Reactivo",
+    "prompt": "Se tratan $125\\text{ g}$ de piedra caliza que contiene $80\\%\\text{ en masa}$ de carbonato de calcio puro ($\\text{CaCO}_3$, masa molar $100\\text{ g/mol}$) con exceso de ácido clorhídrico según:\n$$\\text{CaCO}_3 + 2\\,\\text{HCl} \\to \\text{CaCl}_2 + \\text{CO}_2 + \\text{H}_2\\text{O}$$\n¿Cuántos gramos de dióxido de carbono ($\\text{CO}_2$, masa molar $44\\text{ g/mol}$) se producen estequiométricamente?",
+    "opts": [
+      "$44.0\\text{ g}$",
+      "$55.0\\text{ g}$",
+      "$88.0\\text{ g}$",
+      "$35.2\\text{ g}$"
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Cálculo de la masa pura de reactivo:**\n- $\\text{Masa pura de CaCO}_3 = 125\\text{ g} \\times 0.80 = 100.0\\text{ g}$.\n**Paso 2. Moles de $\\text{CaCO}_3$ a mano:**\n- $n(\\text{CaCO}_3) = \\frac{100.0\\text{ g}}{100.0\\text{ g/mol}} = 1.0\\text{ mol}$.\n**Paso 3. Relación estequiométrica y masa de $\\text{CO}_2$:**\n- Relación $1:1 \\implies 1.0\\text{ mol de CaCO}_3$ produce $1.0\\text{ mol de CO}_2$.\n- $\\text{Masa de CO}_2 = 1.0\\text{ mol} \\times 44.0\\text{ g/mol} = 44.0\\text{ g}$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-35",
+    "s": "qui",
+    "n": 35,
+    "d": "intermedio",
+    "topics": [
+      "4.3.2-nomInorganica2"
+    ],
+    "ch": "qui-L09",
+    "t": "Oxácidos de Nitrógeno HNO3 y HNO2",
+    "prompt": "¿Cuáles son los nombres tradicionales sistemáticos de los oxácidos $\\text{HNO}_3$ y $\\text{HNO}_2$, y qué estado de oxidación posee el nitrógeno en cada uno de ellos?",
+    "opts": [
+      "$\\text{HNO}_3$: Ácido nítrico ($+5$); $\\text{HNO}_2$: Ácido nitroso ($+3$).",
+      "$\\text{HNO}_3$: Ácido nitroso ($+3$); $\\text{HNO}_2$: Ácido nítrico ($+5$).",
+      "$\\text{HNO}_3$: Ácido pernítrico ($+7$); $\\text{HNO}_2$: Ácido hiponitroso ($+1$).",
+      "$\\text{HNO}_3$: Nitrato de hidrógeno ($+1$); $\\text{HNO}_2$: Nitrito de hidrógeno ($-3$)."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Cálculo de estados de oxidación del Nitrógeno ($N$) a mano:**\n- En $\\text{HNO}_3$: $+1 + \\text{E.O.}(N) + 3(-2) = 0 \\implies 1 + \\text{E.O.}(N) - 6 = 0 \\implies \\text{E.O.}(N) = +5$.\n- En $\\text{HNO}_2$: $+1 + \\text{E.O.}(N) + 2(-2) = 0 \\implies 1 + \\text{E.O.}(N) - 4 = 0 \\implies \\text{E.O.}(N) = +3$.\n**Paso 2. Nomenclatura con sufijos -oso e -ico:**\n- Estado menor ($+3$): sufijo -oso $\\implies$ Ácido nitroso.\n- Estado mayor ($+5$): sufijo -ico $\\implies$ Ácido nítrico.\n**Paso 3. Conclusión:** Ácido nítrico ($+5$) y ácido nitroso ($+3$).\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-36",
+    "s": "qui",
+    "n": 36,
+    "d": "intermedio",
+    "topics": [
+      "4.3.1-materia"
+    ],
+    "ch": "qui-L02",
+    "t": "Clasificación de Mezclas y Sustancias",
+    "prompt": "¿Cuál de los siguientes sistemas materiales corresponde a una mezcla homogénea (disolución verdadera) de una sola fase visible?",
+    "opts": [
+      "Una disolución acuosa filtrada de cloruro de sodio en agua destilada.",
+      "Una suspensión de arena gruesa agitada en agua.",
+      "Una emulsión de aceite vegetal y vinagre sin emulsionante.",
+      "Granito pulido donde se distinguen cuarzo, feldespato y mica."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Definición de mezcla homogénea:** Sistema material formado por dos o más componentes con composición y propiedades físicas idénticas en cualquier punto de su volumen, presentando una sola fase a nivel macroscópico y microscópico óptico.\n**Paso 2. Análisis de opciones:**\n- Sal disuelta en agua: Los iones $\\text{Na}^+$ y $\\text{Cl}^-$ están solvatados uniformemente formando una sola fase líquida transparente.\n- Arena en agua, vinagre con aceite y granito: presentan dos o más fases distinguibles (mezclas heterogéneas).\n**Paso 3. Conclusión:** La disolución de sal en agua es una mezcla homogénea.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-37",
+    "s": "qui",
+    "n": 37,
+    "d": "intermedio",
+    "topics": [
+      "4.3.3-fuerzasInter"
+    ],
+    "ch": "qui-L13",
+    "t": "Fuerzas Dipolo-Dipolo en HCl",
+    "prompt": "En el cloruro de hidrógeno líquido ($\\text{HCl}$), la diferencia de electronegatividad genera un enlace covalente polar con momento dipolar permanente. ¿Cuál es la fuerza intermolecular predominante que mantiene unidas a estas moléculas?",
+    "opts": [
+      "Fuerzas de atracción dipolo-dipolo (fuerzas de Keesom/Keesom-Debye).",
+      "Puentes de hidrógeno intensos.",
+      "Atracción electrostática iónica de red cristalina.",
+      "Fuerzas de enlace metálico deslocalizado."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Estructura molecular del $\\text{HCl}$:** Enlace polar $\\text{H}^{\\delta+} - \\text{Cl}^{\\delta-}$.\n**Paso 2. Identificación de la interacción intermolecular:**\n- Al ser una molécula polar neutra, los extremos de carga opuesta de moléculas vecinas se atraen mediante interacción dipolo-dipolo.\n- Nota clave: No forma puentes de hidrógeno porque el cloro, aunque electronegativo, tiene un radio atómico grande que difumina la densidad de carga (el puente de hidrógeno solo se forma con $F, O, N$).\n**Paso 3. Conclusión:** La fuerza predominante es la atracción dipolo-dipolo.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-38",
+    "s": "qui",
+    "n": 38,
+    "d": "intermedio",
+    "topics": [
+      "4.3.1-configElectronica"
+    ],
+    "ch": "qui-L04",
+    "t": "Configuración del Anión Cloruro Cl-",
+    "prompt": "El cloro tiene número atómico $Z = 17$. Al formar el anión cloruro $\\text{Cl}^-$, ¿cuál es su configuración electrónica completa y qué gas noble tiene su misma estructura?",
+    "opts": [
+      "$1s^2\\, 2s^2\\, 2p^6\\, 3s^2\\, 3p^6$ (isoelectrónico con el Argón, $Z=18$).",
+      "$1s^2\\, 2s^2\\, 2p^6\\, 3s^2\\, 3p^5$ (isoelectrónico con el Cloro neutro).",
+      "$1s^2\\, 2s^2\\, 2p^6\\, 3s^2\\, 3p^4$ (isoelectrónico con el Azufre).",
+      "$1s^2\\, 2s^2\\, 2p^6\\, 3s^1$ (isoelectrónico con el Sodio)."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Átomo neutro de Cloro ($17\\, e^-$):**\n$1s^2\\, 2s^2\\, 2p^6\\, 3s^2\\, 3p^5$.\n**Paso 2. Ganancia de 1 electrón para el anión $\\text{Cl}^-$ ($18\\, e^-$):**\n- El electrón adicional entra al orbital incompleto $3p$, completando el subnivel: $3p^5 + 1e^- \\to 3p^6$.\n- Configuración: $1s^2\\, 2s^2\\, 2p^6\\, 3s^2\\, 3p^6$.\n- El Argón ($Z=18$) tiene exactamente esta misma configuración electrónica de octeto cerrado.\n**Paso 3. Conclusión:** $1s^2\\, 2s^2\\, 2p^6\\, 3s^2\\, 3p^6$, isoelectrónico con el Argón.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-39",
+    "s": "qui",
+    "n": 39,
+    "d": "intermedio",
+    "topics": [
+      "4.3.4-reacciones"
+    ],
+    "ch": "qui-L16",
+    "t": "Agente Oxidante y Reductor en Redox de Cobre",
+    "prompt": "En la siguiente reacción redox no balanceada:\n$$\\text{Cu} + \\text{HNO}_3 \\to \\text{Cu}(\\text{NO}_3)_2 + \\text{NO}_2 + \\text{H}_2\\text{O}$$\n¿Qué elemento se oxida, cuál se reduce y cuál es el agente oxidante?",
+    "opts": [
+      "El Cobre se oxida (de $0$ a $+2$), el Nitrógeno se reduce (de $+5$ a $+4$), y el $\\text{HNO}_3$ es el agente oxidante.",
+      "El Cobre se reduce (de $+2$ a $0$), el Nitrógeno se oxida, y el $\\text{Cu}$ es el agente oxidante.",
+      "El Hidrógeno se oxida y el Oxígeno es el agente reductor.",
+      "El Nitrógeno se oxida de $+4$ a $+5$ y el agua actúa como agente oxidante."
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Determinación de estados de oxidación en reactivos y productos:**\n- $\\text{Cu}^0 \\to \\text{Cu}^{2+}$: Pierde 2 electrones (se oxida $\\implies$ actúa como agente reductor).\n- En $\\text{HNO}_3$: $N$ tiene $+5$.\n- En $\\text{NO}_2$: $N$ tiene $+4$ ($x + 2(-2) = 0 \\implies x = +4$).\n- El Nitrógeno pasa de $+5$ a $+4$: Gana 1 electrón (se reduce).\n**Paso 2. Definición de agente oxidante:**\n- La especie química que contiene al elemento que se reduce es el agente oxidante (el $\\text{HNO}_3$).\n**Paso 3. Conclusión:** El $\\text{Cu}$ se oxida, el $N$ se reduce y el $\\text{HNO}_3$ es el agente oxidante.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  },
+  {
+    "id": "qui-19ago-40",
+    "s": "qui",
+    "n": 40,
+    "d": "intermedio",
+    "topics": [
+      "4.3.1-unidades"
+    ],
+    "ch": "qui-L01",
+    "t": "Cálculo de Densidad y Conversión de Unidades",
+    "prompt": "Una probeta contiene un volumen de $250\\text{ cm}^3$ de un líquido desconocido cuya densidad es $\\rho = 1.20\\text{ g/cm}^3$. ¿Cuál es la masa del líquido expresada en kilogramos ($\\text{kg}$)?",
+    "opts": [
+      "$0.30\\text{ kg}$",
+      "$3.00\\text{ kg}$",
+      "$0.03\\text{ kg}$",
+      "$300\\text{ kg}$"
+    ],
+    "ans": 0,
+    "exp": "**Paso 1. Fórmula de masa a partir de la densidad:** $m = \\rho \\cdot V$.\n**Paso 2. Cálculo a mano paso a paso:**\n- $m = 1.20\\text{ g/cm}^3 \\times 250\\text{ cm}^3 = 300.0\\text{ gramos}$.\n**Paso 3. Conversión a kilogramos ($1\\text{ kg} = 1000\\text{ g}$):**\n- $m = \\frac{300.0\\text{ g}}{1000\\text{ g/kg}} = 0.30\\text{ kg}$.\n**Respuesta correcta: A.**",
+    "maths": [],
+    "imgs": []
+  }
+]

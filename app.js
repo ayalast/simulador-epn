@@ -1310,6 +1310,13 @@ function fill19AgoSubject(subject, want, notes){
   var packs = (root.packs && root.packs[subject]) || [];
   var seenKey = subject + '-19ago';
   if(!SEEN1000SET[seenKey]){ SEEN1000SET[seenKey]={}; SEEN1000[seenKey]=SEEN1000[seenKey]||[]; }
+  
+  // Si ya se vieron todos los ítems del banco, reinicia el ciclo determinístico
+  if(SEEN1000[seenKey].length >= bank.length && bank.length >= want * 2){
+    SEEN1000SET[seenKey] = {};
+    SEEN1000[seenKey] = [];
+  }
+
   var byId = {};
   bank.forEach(function(q){ byId[q.id]=q; });
   var picked = [];
@@ -1328,22 +1335,27 @@ function fill19AgoSubject(subject, want, notes){
     qs.forEach(addQ);
     return true;
   }
-  function packFresh(p){
-    return (p.qids||[]).length>0 && (p.qids||[]).every(function(id){ return byId[id] && !isSeen(id) && !used[id]; });
+
+  // Partición determinística:
+  // Intento 1 (0 vistas): Packs 1-4 / Ítems 1-20
+  // Intento 2 (>=20 vistas): Packs 5-8 / Ítems 21-40
+  var isAttempt2 = SEEN1000[seenKey].length >= want;
+  var targetPacks = packs.length >= 8 ? (isAttempt2 ? packs.slice(4, 8) : packs.slice(0, 4)) : packs;
+  var targetBank = bank.length >= 40 ? (isAttempt2 ? bank.slice(20, 40) : bank.slice(0, 20)) : bank;
+
+  // 1) Carga paquetes determinísticos para Lenguaje
+  if(targetPacks.length){
+    targetPacks.forEach(addPack);
   }
-  // 1) textos completos inéditos (para lenguaje)
-  if(packs.length){
-    shuffle(packs.filter(packFresh)).forEach(addPack);
-  }
-  // 2) ítems sueltos inéditos
-  shuffle(bank.filter(function(q){ return !used[q.id] && !isSeen(q.id); })).forEach(addQ);
-  // 3) solo si el banco inédito no alcanza: reciclar
+  // 2) Carga preguntas determinísticas para Física/Química
   if(picked.length < want){
-    if(packs.length){
-      shuffle(packs.filter(function(p){ return !packFresh(p); })).forEach(addPack);
-    }
-    shuffle(bank.filter(function(q){ return !used[q.id]; })).forEach(addQ);
+    targetBank.forEach(addQ);
   }
+  // 3) Respaldo de seguridad si falta alguna pregunta
+  if(picked.length < want){
+    bank.forEach(addQ);
+  }
+
   picked.forEach(function(q){
     if(!SEEN1000SET[seenKey][q.id]){ SEEN1000SET[seenKey][q.id]=1; SEEN1000[seenKey].push(q.id); }
   });

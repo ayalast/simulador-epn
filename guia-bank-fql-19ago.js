@@ -1958,16 +1958,16 @@ window.GUIA_BANK_FQL_19AGO = {
         "4.3.4-esteqReactivoLim"
       ],
       "ch": "qui-L17",
-      "t": "Identificación de Reactivo Limitante",
-      "prompt": "Se combinan $24\\text{ g}$ de Magnesio ($Mg$, masa molar $24\\text{ g/mol}$) con $16\\text{ g}$ de Oxígeno gaseoso ($O_2$, masa molar $32\\text{ g/mol}$) en la reacción:\n$$2\\text{Mg} + \\text{O}_2 \\to 2\\text{MgO}$$\n¿Cuál es el reactivo limitante y cuántos gramos de $MgO$ ($40\\text{ g/mol}$) se obtienen?",
+      "t": "Proporción Estequiométrica Exacta Mg + O2",
+      "prompt": "Se combinan $24\\text{ g}$ de Magnesio ($Mg$, masa molar $24\\text{ g/mol}$) con $16\\text{ g}$ de Oxígeno gaseoso ($O_2$, masa molar $32\\text{ g/mol}$) en la reacción:\n$$2\\text{Mg} + \\text{O}_2 \\to 2\\text{MgO}$$\n¿Qué ocurre con los reactivos y cuántos gramos de $MgO$ ($40\\text{ g/mol}$) se obtienen con rendimiento del $100\\%$?",
       "opts": [
+        "Ambos reactivos se consumen al $100\\%$ (proporción estequiométrica exacta $2:1$) y se obtienen $40.0\\text{ g de MgO}$.",
         "El magnesio ($Mg$) es el reactivo limitante y se obtienen $40\\text{ g de MgO}$.",
         "El oxígeno ($O_2$) es el reactivo limitante y se obtienen $80\\text{ g de MgO}$.",
-        "Ambos reactivos están en proporción estequiométrica exacta y se obtienen $80\\text{ g de MgO}$.",
-        "El magnesio es el reactivo limitante y se obtienen $20\\text{ g de MgO}$."
+        "Ambos reactivos están en proporción estequiométrica exacta y se obtienen $80\\text{ g de MgO}$."
       ],
       "ans": 0,
-      "exp": "**Paso 1. Conversión de masas a moles iniciales:**\n- Moles de $Mg$: $n_{\\text{Mg}} = \\frac{24\\text{ g}}{24\\text{ g/mol}} = 1.0\\text{ mol}$.\n- Moles de $O_2$: $n_{\\text{O}_2} = \\frac{16\\text{ g}}{32\\text{ g/mol}} = 0.5\\text{ mol}$.\n**Paso 2. Determinación del reactivo limitante:**\n- La relación estequiométrica exige $\\frac{2\\text{ moles Mg}}{1\\text{ mol O}_2} = 2$.\n- Razón disponible: $\\frac{1.0\\text{ mol Mg}}{0.5\\text{ mol O}_2} = 2$.\n- Ambos reactivos se consumen íntegramente de forma exacta (o $1.0\\text{ mol Mg}$ limita la producción máxima a $1.0\\text{ mol MgO}$).\n**Paso 3. Cálculo de masa de $MgO$ producida:**\n- $n_{\\text{MgO}} = 1.0\\text{ mol}$.\n- $\\text{Masa} = 1.0\\text{ mol} \\times 40\\text{ g/mol} = 40\\text{ g}$.\n**Respuesta correcta: A.**",
+      "exp": "**Paso 1. Conversión de masas a moles iniciales:**\n- Moles de $Mg$: $n_{\\text{Mg}} = \\frac{24\\text{ g}}{24\\text{ g/mol}} = 1.0\\text{ mol}$.\n- Moles de $O_2$: $n_{\\text{O}_2} = \\frac{16\\text{ g}}{32\\text{ g/mol}} = 0.5\\text{ mol}$.\n**Paso 2. Comparación con la estequiometría:**\n- La ecuación pide $2\\text{ mol Mg}$ por cada $1\\text{ mol O}_2$ (razón $2:1$).\n- Razón disponible: $\\frac{1.0\\text{ mol Mg}}{0.5\\text{ mol O}_2} = 2$. Coincide exactamente: **no hay reactivo en exceso ni limitante único**.\n- $1.0\\text{ mol Mg}$ y $0.5\\text{ mol O}_2$ se agotan juntos y producen $1.0\\text{ mol de MgO}$.\n**Paso 3. Masa de producto:**\n- $\\text{Masa de MgO} = 1.0\\text{ mol} \\times 40\\text{ g/mol} = 40.0\\text{ g}$.\n- El distractor de $80\\text{ g}$ duplica la masa (como si hubiera $2\\text{ mol}$ de producto). Llamar limitante al $Mg$ es incorrecto porque el $O_2$ también se acaba al $100\\%$.\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": []
     },
@@ -2641,19 +2641,19 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 36,
       "d": "intermedio",
       "topics": [
-        "4.3.1-materia"
+        "4.3.4-esteqReactivoLim"
       ],
-      "ch": "qui-L02",
-      "t": "Clasificación de Mezclas y Sustancias",
-      "prompt": "¿Cuál de los siguientes sistemas materiales corresponde a una mezcla homogénea (disolución verdadera) de una sola fase visible?",
+      "ch": "qui-L17",
+      "t": "Reactivo Limitante en la Síntesis de Amoníaco",
+      "prompt": "En la síntesis de Haber se combinan $28\\text{ g}$ de nitrógeno ($\\text{N}_2$, masa molar $28\\text{ g/mol}$) con $9\\text{ g}$ de hidrógeno ($\\text{H}_2$, masa molar $2\\text{ g/mol}$) según la ecuación:\n$$\\text{N}_2 + 3\\text{H}_2 \\to 2\\text{NH}_3$$\n¿Cuál es el reactivo limitante y qué masa de $\\text{H}_2$ queda sin reaccionar?",
       "opts": [
-        "Una disolución acuosa filtrada de cloruro de sodio en agua destilada.",
-        "Una suspensión de arena gruesa agitada en agua.",
-        "Una emulsión de aceite vegetal y vinagre sin emulsionante.",
-        "Granito pulido donde se distinguen cuarzo, feldespato y mica."
+        "El nitrógeno ($\\text{N}_2$) es el reactivo limitante y sobran $3.0\\text{ g}$ de $\\text{H}_2$.",
+        "El hidrógeno ($\\text{H}_2$) es el reactivo limitante y sobran $14\\text{ g}$ de $\\text{N}_2$.",
+        "El nitrógeno es el reactivo limitante y sobran $6.0\\text{ g}$ de $\\text{H}_2$.",
+        "Ambos reactivos se consumen por completo (proporción exacta) y no queda exceso."
       ],
       "ans": 0,
-      "exp": "**Paso 1. Definición de mezcla homogénea:** Sistema material formado por dos o más componentes con composición y propiedades físicas idénticas en cualquier punto de su volumen, presentando una sola fase a nivel macroscópico y microscópico óptico.\n**Paso 2. Análisis de opciones:**\n- Sal disuelta en agua: Los iones $\\text{Na}^+$ y $\\text{Cl}^-$ están solvatados uniformemente formando una sola fase líquida transparente.\n- Arena en agua, vinagre con aceite y granito: presentan dos o más fases distinguibles (mezclas heterogéneas).\n**Paso 3. Conclusión:** La disolución de sal en agua es una mezcla homogénea.\n**Respuesta correcta: A.**",
+      "exp": "**Paso 1. Moles iniciales:**\n- $n_{\\text{N}_2} = \\frac{28\\text{ g}}{28\\text{ g/mol}} = 1.0\\text{ mol}$.\n- $n_{\\text{H}_2} = \\frac{9\\text{ g}}{2\\text{ g/mol}} = 4.5\\text{ mol}$.\n**Paso 2. ¿Quién se acaba primero?**\n- La ecuación pide $3\\text{ mol H}_2$ por cada $1\\text{ mol N}_2$.\n- Con $1.0\\text{ mol N}_2$ se consumen $3.0\\text{ mol H}_2$. Hay $4.5\\text{ mol H}_2$, así que el $\\text{H}_2$ sobra y el $\\text{N}_2$ manda (limitante).\n**Paso 3. Exceso de hidrógeno:**\n- $\\text{H}_2$ que sobra: $4.5 - 3.0 = 1.5\\text{ mol}$.\n- Masa en exceso: $1.5\\text{ mol} \\times 2\\text{ g/mol} = 3.0\\text{ g}$.\n- El $6.0\\text{ g}$ es lo que **sí se consume** ($3.0\\text{ mol}$), no lo que queda. No es proporción exacta: $4.5/1.0 = 4.5 \\neq 3$.\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": []
     },

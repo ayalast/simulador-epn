@@ -1432,7 +1432,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Dependencia de la energía potencial:** $E_p = mgh$. Es máxima en el punto de mayor altitud sobre el nivel de referencia, que es el punto $A$.\n**Paso 2. Conservación de la energía mecánica:** Sin rozamiento, $E_m = E_p + E_c = \\text{constante}$. Al descender, la energía potencial se transforma íntegramente en energía cinética ($E_c = \\frac{1}{2}mv^2$).\n**Paso 3. Conclusión:** La energía cinética (y la rapidez) alcanza su valor máximo en el punto más bajo de la pista ($C$), donde la energía potencial es mínima.\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-pista-patinador"
     },
     {
       "id": "fis-19ago-22",
@@ -1699,7 +1700,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Diagrama de cuerpo libre en el plano inclinado en equilibrio límite:**\n- Paralelo al plano: $mg\\sin\\theta - f_{s,\\text{máx}} = 0 \\implies f_{s,\\text{máx}} = mg\\sin\\theta$.\n- Perpendicular al plano: $N - mg\\cos\\theta = 0 \\implies N = mg\\cos\\theta$.\n**Paso 2. Deducción de la relación de fricción a mano:**\n- Por definición: $f_{s,\\text{máx}} = \\mu_s N \\implies mg\\sin\\theta = \\mu_s (mg\\cos\\theta)$.\n- Simplificando $mg$:\n  $\\mu_s = \\frac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta$.\n- Evaluando en $\\theta = 45^\\circ$: $\\mu_s = \\tan 45^\\circ = 1.00$.\n**Paso 3. Conclusión:** $\\mu_s = 1.00$.\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-plano-inclinado-45"
     },
     {
       "id": "fis-19ago-34",
@@ -1743,7 +1745,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Dinámica en el punto más alto del rizo:**\n- Fuerzas radiales hacia el centro: Peso ($mg$) + Fuerza Normal ($N$).\n- Segunda Ley en el eje centrípeto: $mg + N = m\\frac{v^2}{R}$.\n**Paso 2. Condición límite de despegue a mano:**\n- En la rapidez mínima, la fuerza normal con el riel tiende a cero ($N = 0$).\n- $mg = m\\frac{v_{\\text{mín}}^2}{R} \\implies v_{\\text{mín}}^2 = gR \\implies v_{\\text{mín}} = \\sqrt{gR}$.\n- Sustituyendo: $v_{\\text{mín}} = \\sqrt{10\\text{ m/s}^2 \\times 10\\text{ m}} = \\sqrt{100} = 10\\text{ m/s}$.\n**Paso 3. Conclusión:** La rapidez mínima en la cúspide es $10\\text{ m/s}$.\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-rizo-vertical"
     },
     {
       "id": "fis-19ago-36",
@@ -1787,7 +1790,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Aceleración del sistema conjunto:**\n- Masa total: $M = m_A + m_B = 3 + 2 = 5\\text{ kg}$.\n- Aceleración: $a = \\frac{F}{M} = \\frac{20\\text{ N}}{5\\text{ kg}} = 4\\text{ m/s}^2$.\n**Paso 2. Cálculo de la tensión en la cuerda que jala al bloque posterior $B$:**\n- Diagrama de cuerpo libre para el bloque $B$ ($m_B = 2\\text{ kg}$):\n  La única fuerza horizontal sobre $B$ es la tensión $T$: $T = m_B \\cdot a = 2\\text{ kg} \\times 4\\text{ m/s}^2 = 8\\text{ N}$.\n- (Verificación en bloque $A$: $F - T = m_A \\cdot a \\implies 20 - 8 = 12\\text{ N} = 3\\text{ kg} \\times 4\\text{ m/s}^2$).\n**Paso 3. Conclusión:** $a = 4\\text{ m/s}^2$ y $T = 8\\text{ N}$.\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-dos-bloques-cuerda"
     },
     {
       "id": "fis-19ago-38",
@@ -1954,16 +1958,16 @@ window.GUIA_BANK_FQL_19AGO = {
         "4.3.4-esteqReactivoLim"
       ],
       "ch": "qui-L17",
-      "t": "Identificación de Reactivo Limitante",
-      "prompt": "Se combinan $24\\text{ g}$ de Magnesio ($Mg$, masa molar $24\\text{ g/mol}$) con $16\\text{ g}$ de Oxígeno gaseoso ($O_2$, masa molar $32\\text{ g/mol}$) en la reacción:\n$$2\\text{Mg} + \\text{O}_2 \\to 2\\text{MgO}$$\n¿Cuál es el reactivo limitante y cuántos gramos de $MgO$ ($40\\text{ g/mol}$) se obtienen?",
+      "t": "Proporción Estequiométrica Exacta Mg + O2",
+      "prompt": "Se combinan $24\\text{ g}$ de Magnesio ($Mg$, masa molar $24\\text{ g/mol}$) con $16\\text{ g}$ de Oxígeno gaseoso ($O_2$, masa molar $32\\text{ g/mol}$) en la reacción:\n$$2\\text{Mg} + \\text{O}_2 \\to 2\\text{MgO}$$\n¿Qué ocurre con los reactivos y cuántos gramos de $MgO$ ($40\\text{ g/mol}$) se obtienen con rendimiento del $100\\%$?",
       "opts": [
+        "Ambos reactivos se consumen al $100\\%$ (proporción estequiométrica exacta $2:1$) y se obtienen $40.0\\text{ g de MgO}$.",
         "El magnesio ($Mg$) es el reactivo limitante y se obtienen $40\\text{ g de MgO}$.",
         "El oxígeno ($O_2$) es el reactivo limitante y se obtienen $80\\text{ g de MgO}$.",
-        "Ambos reactivos están en proporción estequiométrica exacta y se obtienen $80\\text{ g de MgO}$.",
-        "El magnesio es el reactivo limitante y se obtienen $20\\text{ g de MgO}$."
+        "Ambos reactivos están en proporción estequiométrica exacta y se obtienen $80\\text{ g de MgO}$."
       ],
       "ans": 0,
-      "exp": "**Paso 1. Conversión de masas a moles iniciales:**\n- Moles de $Mg$: $n_{\\text{Mg}} = \\frac{24\\text{ g}}{24\\text{ g/mol}} = 1.0\\text{ mol}$.\n- Moles de $O_2$: $n_{\\text{O}_2} = \\frac{16\\text{ g}}{32\\text{ g/mol}} = 0.5\\text{ mol}$.\n**Paso 2. Determinación del reactivo limitante:**\n- La relación estequiométrica exige $\\frac{2\\text{ moles Mg}}{1\\text{ mol O}_2} = 2$.\n- Razón disponible: $\\frac{1.0\\text{ mol Mg}}{0.5\\text{ mol O}_2} = 2$.\n- Ambos reactivos se consumen íntegramente de forma exacta (o $1.0\\text{ mol Mg}$ limita la producción máxima a $1.0\\text{ mol MgO}$).\n**Paso 3. Cálculo de masa de $MgO$ producida:**\n- $n_{\\text{MgO}} = 1.0\\text{ mol}$.\n- $\\text{Masa} = 1.0\\text{ mol} \\times 40\\text{ g/mol} = 40\\text{ g}$.\n**Respuesta correcta: A.**",
+      "exp": "**Paso 1. Conversión de masas a moles iniciales:**\n- Moles de $Mg$: $n_{\\text{Mg}} = \\frac{24\\text{ g}}{24\\text{ g/mol}} = 1.0\\text{ mol}$.\n- Moles de $O_2$: $n_{\\text{O}_2} = \\frac{16\\text{ g}}{32\\text{ g/mol}} = 0.5\\text{ mol}$.\n**Paso 2. Comparación con la estequiometría:**\n- La ecuación pide $2\\text{ mol Mg}$ por cada $1\\text{ mol O}_2$ (razón $2:1$).\n- Razón disponible: $\\frac{1.0\\text{ mol Mg}}{0.5\\text{ mol O}_2} = 2$. Coincide exactamente: **no hay reactivo en exceso ni limitante único**.\n- $1.0\\text{ mol Mg}$ y $0.5\\text{ mol O}_2$ se agotan juntos y producen $1.0\\text{ mol de MgO}$.\n**Paso 3. Masa de producto:**\n- $\\text{Masa de MgO} = 1.0\\text{ mol} \\times 40\\text{ g/mol} = 40.0\\text{ g}$.\n- El distractor de $80\\text{ g}$ duplica la masa (como si hubiera $2\\text{ mol}$ de producto). Llamar limitante al $Mg$ es incorrecto porque el $O_2$ también se acaba al $100\\%$.\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": []
     },
@@ -2539,7 +2543,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Estructura de Lewis y pares de electrones:** El átomo de carbono ($Z=6$) tiene 4 electrones de valencia y forma 4 enlaces simples $\\text{C}-\\text{H}$, sin pares libres ($AX_4$).\n**Paso 2. Modelo RPECV e hibridación:**\n- 4 dominios electrónicos $\\implies$ hibridación $sp^3$.\n- La máxima separación tridimensional para 4 pares enlazantes equivalentes es la disposición tetraédrica regular con ángulos de $109.5^\\circ$ (o $109^\\circ 28'$).\n**Paso 3. Conclusión:** Hibridación $sp^3$, geometría tetraédrica y $109.5^\\circ$.\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-geometria-ch4"
     },
     {
       "id": "qui-19ago-32",
@@ -2561,7 +2566,8 @@ window.GUIA_BANK_FQL_19AGO = {
       "ans": 0,
       "exp": "**Paso 1. Conteo de electrones de valencia:** Boro ($B$, Grupo 13) aporta $3\\, e^-$. Cada Flúor ($F$, Grupo 17) aporta $7\\, e^-$. Total $= 3 + 3(7) = 24\\, e^-$.\n**Paso 2. Estructura de Lewis:** El boro forma 3 enlaces simples con los 3 átomos de flúor ($\\text{B}-\\text{F}$), rodeándose de $3 \\times 2 = 6\\text{ electrones}$.\n- Al carecer de pares solitarios ($AX_3$), los 3 enlaces se disponen en un plano separados por $120^\\circ$.\n**Paso 3. Conclusión:** Posee 6 electrones en el átomo central y geometría trigonal plana.\n**Respuesta correcta: A.**",
       "maths": [],
-      "imgs": []
+      "imgs": [],
+      "fig": "fql19-geometria-bf3"
     },
     {
       "id": "qui-19ago-33",
@@ -2635,19 +2641,19 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 36,
       "d": "intermedio",
       "topics": [
-        "4.3.1-materia"
+        "4.3.4-esteqReactivoLim"
       ],
-      "ch": "qui-L02",
-      "t": "Clasificación de Mezclas y Sustancias",
-      "prompt": "¿Cuál de los siguientes sistemas materiales corresponde a una mezcla homogénea (disolución verdadera) de una sola fase visible?",
+      "ch": "qui-L17",
+      "t": "Reactivo Limitante en la Síntesis de Amoníaco",
+      "prompt": "En la síntesis de Haber se combinan $28\\text{ g}$ de nitrógeno ($\\text{N}_2$, masa molar $28\\text{ g/mol}$) con $9\\text{ g}$ de hidrógeno ($\\text{H}_2$, masa molar $2\\text{ g/mol}$) según la ecuación:\n$$\\text{N}_2 + 3\\text{H}_2 \\to 2\\text{NH}_3$$\n¿Cuál es el reactivo limitante y qué masa de $\\text{H}_2$ queda sin reaccionar?",
       "opts": [
-        "Una disolución acuosa filtrada de cloruro de sodio en agua destilada.",
-        "Una suspensión de arena gruesa agitada en agua.",
-        "Una emulsión de aceite vegetal y vinagre sin emulsionante.",
-        "Granito pulido donde se distinguen cuarzo, feldespato y mica."
+        "El nitrógeno ($\\text{N}_2$) es el reactivo limitante y sobran $3.0\\text{ g}$ de $\\text{H}_2$.",
+        "El hidrógeno ($\\text{H}_2$) es el reactivo limitante y sobran $14\\text{ g}$ de $\\text{N}_2$.",
+        "El nitrógeno es el reactivo limitante y sobran $6.0\\text{ g}$ de $\\text{H}_2$.",
+        "Ambos reactivos se consumen por completo (proporción exacta) y no queda exceso."
       ],
       "ans": 0,
-      "exp": "**Paso 1. Definición de mezcla homogénea:** Sistema material formado por dos o más componentes con composición y propiedades físicas idénticas en cualquier punto de su volumen, presentando una sola fase a nivel macroscópico y microscópico óptico.\n**Paso 2. Análisis de opciones:**\n- Sal disuelta en agua: Los iones $\\text{Na}^+$ y $\\text{Cl}^-$ están solvatados uniformemente formando una sola fase líquida transparente.\n- Arena en agua, vinagre con aceite y granito: presentan dos o más fases distinguibles (mezclas heterogéneas).\n**Paso 3. Conclusión:** La disolución de sal en agua es una mezcla homogénea.\n**Respuesta correcta: A.**",
+      "exp": "**Paso 1. Moles iniciales:**\n- $n_{\\text{N}_2} = \\frac{28\\text{ g}}{28\\text{ g/mol}} = 1.0\\text{ mol}$.\n- $n_{\\text{H}_2} = \\frac{9\\text{ g}}{2\\text{ g/mol}} = 4.5\\text{ mol}$.\n**Paso 2. ¿Quién se acaba primero?**\n- La ecuación pide $3\\text{ mol H}_2$ por cada $1\\text{ mol N}_2$.\n- Con $1.0\\text{ mol N}_2$ se consumen $3.0\\text{ mol H}_2$. Hay $4.5\\text{ mol H}_2$, así que el $\\text{H}_2$ sobra y el $\\text{N}_2$ manda (limitante).\n**Paso 3. Exceso de hidrógeno:**\n- $\\text{H}_2$ que sobra: $4.5 - 3.0 = 1.5\\text{ mol}$.\n- Masa en exceso: $1.5\\text{ mol} \\times 2\\text{ g/mol} = 3.0\\text{ g}$.\n- El $6.0\\text{ g}$ es lo que **sí se consume** ($3.0\\text{ mol}$), no lo que queda. No es proporción exacta: $4.5/1.0 = 4.5 \\neq 3$.\n**Respuesta correcta: A.**",
       "maths": [],
       "imgs": []
     },

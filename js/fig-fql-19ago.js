@@ -188,23 +188,26 @@
     return s;
   };
 
-  // 10. Semáforo colgado simétricamente
+  // 10. Semáforo colgado simétricamente (cables a 30° con la horizontal)
   FIG['fql19-semaforo-cables'] = function () {
-    var s = openSvg(460, 210);
-    s += '<line x1="60" y1="30" x2="400" y2="30" stroke="#475569" stroke-width="3"/>';
-    s += '<line x1="80" y1="30" x2="230" y2="105" stroke="#0284c7" stroke-width="2.2"/>';
-    s += '<text x="135" y="60" fill="#0284c7" font-size="12" font-weight="700"><tspan font-style="italic">T</tspan></text>';
-    s += '<line x1="380" y1="30" x2="230" y2="105" stroke="#0284c7" stroke-width="2.2"/>';
-    s += '<text x="315" y="60" fill="#0284c7" font-size="12" font-weight="700"><tspan font-style="italic">T</tspan></text>';
-    s += '<line x1="140" y1="105" x2="320" y2="105" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 3"/>';
-    s += '<text x="140" y="95" fill="#dc2626" font-size="12" font-weight="700">30°</text>';
-    s += '<text x="300" y="95" fill="#dc2626" font-size="12" font-weight="700">30°</text>';
-    s += '<line x1="230" y1="105" x2="230" y2="135" stroke="#0e2a47" stroke-width="2"/>';
-    s += '<rect x="215" y="135" width="30" height="55" rx="4" fill="#334155" stroke="#0e2a47" stroke-width="1.5"/>';
-    s += '<circle cx="230" cy="147" r="5" fill="#ef4444"/>';
-    s += '<circle cx="230" cy="162" r="5" fill="#eab308"/>';
-    s += '<circle cx="230" cy="177" r="5" fill="#22c55e"/>';
-    s += '<text x="265" y="165" fill="#0e2a47" font-size="13" font-weight="800"><tspan font-style="italic">W</tspan> = 100 N</text>';
+    var s = openSvg(460, 220);
+    var jx = 230, topY = 30, run = 150, drop = Math.round(150 / Math.sqrt(3)); // tan 30° = 1/√3
+    var jy = topY + drop;
+    s += '<line x1="60" y1="' + topY + '" x2="400" y2="' + topY + '" stroke="#475569" stroke-width="3"/>';
+    s += '<line x1="' + (jx - run) + '" y1="' + topY + '" x2="' + jx + '" y2="' + jy + '" stroke="#0284c7" stroke-width="2.2"/>';
+    s += '<text x="125" y="62" fill="#0284c7" font-size="12" font-weight="700"><tspan font-style="italic">T</tspan></text>';
+    s += '<line x1="' + (jx + run) + '" y1="' + topY + '" x2="' + jx + '" y2="' + jy + '" stroke="#0284c7" stroke-width="2.2"/>';
+    s += '<text x="325" y="62" fill="#0284c7" font-size="12" font-weight="700"><tspan font-style="italic">T</tspan></text>';
+    s += '<line x1="140" y1="' + jy + '" x2="320" y2="' + jy + '" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="3 3"/>';
+    s += '<text x="148" y="' + (jy - 8) + '" fill="#dc2626" font-size="12" font-weight="700">30°</text>';
+    s += '<text x="292" y="' + (jy - 8) + '" fill="#dc2626" font-size="12" font-weight="700">30°</text>';
+    s += '<line x1="' + jx + '" y1="' + jy + '" x2="' + jx + '" y2="' + (jy + 18) + '" stroke="#0e2a47" stroke-width="2"/>';
+    var ly = jy + 18;
+    s += '<rect x="215" y="' + ly + '" width="30" height="50" rx="4" fill="#334155" stroke="#0e2a47" stroke-width="1.5"/>';
+    s += '<circle cx="230" cy="' + (ly + 10) + '" r="5" fill="#ef4444"/>';
+    s += '<circle cx="230" cy="' + (ly + 24) + '" r="5" fill="#eab308"/>';
+    s += '<circle cx="230" cy="' + (ly + 38) + '" r="5" fill="#22c55e"/>';
+    s += '<text x="265" y="' + (ly + 28) + '" fill="#0e2a47" font-size="13" font-weight="800"><tspan font-style="italic">W</tspan> = 100 N</text>';
     s += '</svg>';
     return s;
   };
@@ -305,14 +308,17 @@
     return s;
   };
 
-  // 15. Plano Inclinado Variable a 45° (fis-33)
+  // 15. Plano inclinado a 45° (catetos iguales; fis-33)
   FIG['fql19-plano-inclinado-45'] = function () {
-    var s = openSvg(440, 200);
-    s += '<polygon points="80,160 360,160 360,40 80,160" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>';
-    s += '<path d="M 140,160 A 60 60 0 0 0 130,135" fill="none" stroke="#dc2626" stroke-width="2"/>';
-    s += '<text x="145" y="145" fill="#dc2626" font-size="13" font-weight="800">θ = 45°</text>';
-    s += '<rect x="200" y="85" width="40" height="28" transform="rotate(-23 200 85)" fill="#bae6fd" stroke="#0284c7" stroke-width="1.8"/>';
-    s += '<text x="220" y="75" fill="#0369a1" font-size="12" font-weight="700" text-anchor="middle">Bloque</text>';
+    var s = openSvg(440, 220);
+    var x0 = 150, y0 = 185, leg = 140;
+    var x1 = x0 + leg, y1 = y0 - leg;
+    s += '<polygon points="' + x0 + ',' + y0 + ' ' + x1 + ',' + y0 + ' ' + x1 + ',' + y1 + '" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>';
+    s += '<path d="M ' + (x0 + 42) + ',' + y0 + ' A 42 42 0 0 0 ' + (x0 + 30) + ',' + (y0 - 30) + '" fill="none" stroke="#dc2626" stroke-width="2"/>';
+    s += '<text x="' + (x0 + 50) + '" y="' + (y0 - 12) + '" fill="#dc2626" font-size="13" font-weight="800">θ = 45°</text>';
+    var mx = (x0 + x1) / 2, my = (y0 + y1) / 2;
+    s += '<rect x="' + (mx - 20) + '" y="' + (my - 16) + '" width="40" height="28" transform="rotate(-45 ' + mx + ' ' + my + ')" fill="#bae6fd" stroke="#0284c7" stroke-width="1.8"/>';
+    s += '<text x="' + (mx + 36) + '" y="' + (my - 8) + '" fill="#0369a1" font-size="12" font-weight="700">Bloque</text>';
     s += '</svg>';
     return s;
   };
@@ -372,26 +378,25 @@
     // Línea discontinua
     s += '<line x1="' + (cx + 15) + '" y1="' + (cy + 8) + '" x2="' + (cx + 55) + '" y2="' + (cy + 35) + '" stroke="#64748b" stroke-width="2.5" stroke-dasharray="4 3"/>';
     s += '<text x="' + (cx + 68) + '" y="' + (cy + 46) + '" fill="#64748b" font-size="18" font-weight="700" text-anchor="middle">H</text>';
-    s += '<text x="190" y="190" fill="#0e2a47" font-size="12" font-weight="700" text-anchor="middle">Geometría Tetraédrica (<tspan font-style="italic">sp</tspan><tspan font-size="9" dy="-3">3</tspan><tspan dy="3">)</tspan></text>';
     s += '</svg>';
     return s;
   };
 
-  // 19. Geometría Trigonal Plana del Trifluoruro de Boro BF3 (qui-32)
+  // 19. Trifluoruro de boro BF3 (esqueleto; qui-32). Sin pie de geometría/ángulo.
   FIG['fql19-geometria-bf3'] = function () {
     var s = openSvg(380, 200);
-    var cx = 190, cy = 100;
+    var cx = 190, cy = 108;
+    function polar(deg, r) {
+      var rad = deg * Math.PI / 180;
+      return { x: cx + r * Math.cos(rad), y: cy - r * Math.sin(rad) };
+    }
     s += '<text x="' + cx + '" y="' + (cy + 8) + '" fill="#0e2a47" font-size="24" font-weight="800" text-anchor="middle">B</text>';
-    // Enlace superior
-    s += '<line x1="' + cx + '" y1="' + (cy - 16) + '" x2="' + cx + '" y2="' + (cy - 50) + '" stroke="#0e2a47" stroke-width="2.5"/>';
-    s += '<text x="' + cx + '" y="' + (cy - 58) + '" fill="#dc2626" font-size="18" font-weight="800" text-anchor="middle">F</text>';
-    // Enlace inferior izquierdo (120°)
-    s += '<line x1="' + (cx - 15) + '" y1="' + (cy + 8) + '" x2="' + (cx - 55) + '" y2="' + (cy + 40) + '" stroke="#0e2a47" stroke-width="2.5"/>';
-    s += '<text x="' + (cx - 68) + '" y="' + (cy + 52) + '" fill="#dc2626" font-size="18" font-weight="800" text-anchor="middle">F</text>';
-    // Enlace inferior derecho (120°)
-    s += '<line x1="' + (cx + 15) + '" y1="' + (cy + 8) + '" x2="' + (cx + 55) + '" y2="' + (cy + 40) + '" stroke="#0e2a47" stroke-width="2.5"/>';
-    s += '<text x="' + (cx + 68) + '" y="' + (cy + 52) + '" fill="#dc2626" font-size="18" font-weight="800" text-anchor="middle">F</text>';
-    s += '<text x="190" y="190" fill="#0e2a47" font-size="12" font-weight="700" text-anchor="middle">Geometría Trigonal Plana (Ángulos de 120°)</text>';
+    var angs = [90, 210, 330];
+    for (var i = 0; i < angs.length; i++) {
+      var a = polar(angs[i], 18), b = polar(angs[i], 52), t = polar(angs[i], 70);
+      s += '<line x1="' + a.x.toFixed(1) + '" y1="' + a.y.toFixed(1) + '" x2="' + b.x.toFixed(1) + '" y2="' + b.y.toFixed(1) + '" stroke="#0e2a47" stroke-width="2.5"/>';
+      s += '<text x="' + t.x.toFixed(1) + '" y="' + (t.y + 6).toFixed(1) + '" fill="#dc2626" font-size="18" font-weight="800" text-anchor="middle">F</text>';
+    }
     s += '</svg>';
     return s;
   };

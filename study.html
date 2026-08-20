@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-  <title>EPN Estudio Hoy · Física, Química y Lenguaje (Día 2)</title>
-  <meta name="description" content="Repaso intensivo y cuaderno interactivo de Física, Química y Lenguaje para el segundo día de admisión EPN.">
+  <title>EPN Estudio Hoy · Física, Química y Lenguaje</title>
+  <meta name="description" content="Repaso intensivo de Física, Química y Lenguaje para el segundo día de admisión EPN.">
   <link rel="icon" href="assets/epn-study-logo.png">
 
   <!-- Google Fonts -->
@@ -21,21 +21,6 @@
           fontFamily: {
             display: ['DM Serif Display', 'Georgia', 'serif'],
             sans: ['Manrope', 'sans-serif'],
-          },
-          colors: {
-            page: '#fbf7ee',
-            card: '#ffffff',
-            ink: '#1f1a14',
-            sepia: {
-              50: '#fffaf2',
-              100: '#f7f0e5',
-              200: '#e6dbcd',
-              300: '#d9ccba',
-              400: '#b8a690',
-              500: '#8c7a65',
-              800: '#383027',
-              900: '#1f1a14',
-            }
           }
         }
       }
@@ -52,107 +37,216 @@
 
   <link rel="stylesheet" href="css/study-app.css">
 </head>
-<body class="min-h-screen flex flex-col antialiased">
+<body class="min-h-screen flex flex-col bg-[#fbf7ee] text-[#1f1a14] font-sans antialiased">
 
-  <!-- Header Superior Cuaderno Editorial -->
-  <header class="sticky top-0 z-40 notebook-header">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 py-3 flex items-center justify-between">
+  <!-- Top Sticky Navigation Bar -->
+  <header class="sticky top-0 z-40 border-b border-[#d9ccba]/80 bg-[#fffaf2]/90 backdrop-blur-xl">
+    <div class="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-8 h-18 py-3 flex items-center justify-between">
       
       <!-- Brand Logo -->
       <a href="index.html" class="flex items-center gap-3.5 text-left group">
-        <img src="assets/epn-study-logo.png" alt="EPN Logo" class="h-9 w-9 object-contain group-hover:scale-105 transition-transform">
+        <img src="assets/epn-study-logo.png" alt="EPN Logo" class="h-8 w-8 object-contain">
         <div>
-          <span class="font-display block text-xl sm:text-2xl leading-none text-[#1f1a14] tracking-tight">EPN Estudio Hoy</span>
-          <span class="mt-1 block text-[10px] font-extrabold uppercase tracking-[0.16em] text-[#6d6152]">Segundo día · repaso por reportes</span>
+          <span class="font-display block text-xl leading-none text-[#1f1a14] tracking-tight">EPN Estudio Hoy</span>
+          <span class="mt-1 block text-[10px] font-extrabold uppercase tracking-[0.17em] text-[#6d7784]">Segundo día · repaso por reportes</span>
         </div>
       </a>
 
       <!-- Quick Metrics Pills (Desktop) -->
-      <div class="hidden md:flex items-center gap-2 text-xs font-bold">
-        <span class="flex items-center gap-1.5 rounded-full bg-[#fff0e7] px-3 py-1.5 text-[#a94515] border border-[#ecd2bf]">
-          <i class="fa-solid fa-bolt text-[#e86b2e]"></i> Examen 19 Ago
+      <div class="hidden md:flex items-center gap-3 text-xs font-bold">
+        <span class="flex items-center gap-1.5 text-xs text-[#526170]">
+          <i class="fa-regular fa-clock text-[#e86b2e]"></i> 120 min · bloque F/Q/L
         </span>
-        <span class="flex items-center gap-1.5 rounded-full bg-[#e9eef6] px-3 py-1.5 text-[#10233f] border border-[#cfe3d9]">
-          <i class="fa-solid fa-atom text-[#0284c7]"></i> Física 4.2
-        </span>
-        <span class="flex items-center gap-1.5 rounded-full bg-[#e7f2ed] px-3 py-1.5 text-[#1a4d3e] border border-[#c6dfd3]">
-          <i class="fa-solid fa-flask text-[#059669]"></i> Química 4.3
-        </span>
-      </div>
-
-      <!-- Action Button -->
-      <div class="flex items-center gap-2.5">
-        <a href="index.html" class="inline-flex items-center gap-2 rounded-xl bg-[#1f1a14] px-4 py-2 text-xs font-bold text-[#fbf7ee] hover:bg-[#383027] transition shadow-sm">
-          <i class="fa-solid fa-play text-amber-400"></i>
-          <span>Simulador Completo</span>
-        </a>
+        <button onclick="togglePracticeMode(true)" class="inline-flex items-center gap-2 rounded-xl bg-[#10233f] px-4 py-2.5 text-sm font-extrabold text-white shadow-[0_8px_18px_rgba(16,35,63,0.16)] hover:-translate-y-0.5 transition-transform">
+          <i class="fa-regular fa-circle-question"></i> Practicar ahora
+        </button>
       </div>
 
     </div>
   </header>
 
-  <!-- Hero / Plan de Hoy Banner -->
-  <section class="border-b border-[#d9ccba] bg-[#fffaf2]/60 py-10 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-5xl mx-auto text-center">
-      
-      <div class="inline-flex items-center gap-2 rounded-full bg-[#eee4d4] px-3.5 py-1 text-xs font-extrabold uppercase tracking-wider text-[#5c5246] mb-3">
-        <i class="fa-solid fa-bookmark text-[#a94515]"></i> Cuaderno de Estudio Activo · EPN 2026-B
-      </div>
-
-      <h1 class="font-display text-3xl sm:text-5xl font-bold text-[#1f1a14] tracking-tight leading-tight max-w-4xl mx-auto">
-        Lee el concepto, mira la herramienta matemática y resuelve una pregunta antes de pasar al siguiente bloque.
-      </h1>
-
-      <p class="mt-3 text-sm sm:text-base text-[#5c5246] max-w-2xl mx-auto leading-relaxed">
-        Todo el contenido depurado de los exámenes reales del 19 de agosto y la guía oficial EPN, con deducciones a mano paso a paso y trampas de examen.
-      </p>
-
-      <!-- Buscador en tiempo real -->
-      <div class="mt-6 max-w-xl mx-auto relative">
-        <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-[#8c7a65]"></i>
-        <input type="text" id="study-search" oninput="filterStudyCards(this.value)" placeholder="Buscar concepto, ley, fórmula o reacción (ej. Hooke, Bohr, Tesis, Redox)..." class="w-full pl-11 pr-4 py-3 bg-white rounded-2xl border border-[#d9ccba] text-sm text-[#1f1a14] placeholder-[#8c7a65] shadow-sm focus:outline-none focus:ring-2 focus:ring-[#1f1a14] focus:border-transparent transition">
-      </div>
-
-      <!-- Main Navigation Tabs -->
-      <div class="mt-8 flex flex-wrap items-center justify-center gap-2 text-xs font-bold">
-        <button onclick="setFilterSubject('todos')" id="filter-btn-todos" class="filter-tab-btn px-4 py-2 rounded-xl bg-[#1f1a14] text-white border border-[#1f1a14] transition shadow-sm flex items-center gap-2">
-          <i class="fa-solid fa-book-open"></i> Todos los Bloques (<span id="count-todos">0</span>)
-        </button>
-        <button onclick="setFilterSubject('fisica')" id="filter-btn-fisica" class="filter-tab-btn px-4 py-2 rounded-xl bg-white text-[#10233f] border border-[#d9ccba] hover:bg-[#e9eef6] transition flex items-center gap-2">
-          <i class="fa-solid fa-atom text-[#0284c7]"></i> Física (<span id="count-fisica">0</span>)
-        </button>
-        <button onclick="setFilterSubject('quimica')" id="filter-btn-quimica" class="filter-tab-btn px-4 py-2 rounded-xl bg-white text-[#1a4d3e] border border-[#d9ccba] hover:bg-[#e7f2ed] transition flex items-center gap-2">
-          <i class="fa-solid fa-flask text-[#059669]"></i> Química (<span id="count-quimica">0</span>)
-        </button>
-        <button onclick="setFilterSubject('lenguaje')" id="filter-btn-lenguaje" class="filter-tab-btn px-4 py-2 rounded-xl bg-white text-[#a94515] border border-[#d9ccba] hover:bg-[#fff0e7] transition flex items-center gap-2">
-          <i class="fa-solid fa-book-open-reader text-[#e86b2e]"></i> Lenguaje (<span id="count-lenguaje">0</span>)
-        </button>
-        <button onclick="setFilterSubject('quiz')" id="filter-btn-quiz" class="filter-tab-btn px-4 py-2 rounded-xl bg-white text-[#31765f] border border-[#d9ccba] hover:bg-[#f2fbf6] transition flex items-center gap-2">
-          <i class="fa-solid fa-circle-check text-[#059669]"></i> Práctica Rápida (Quiz)
-        </button>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Main Content Body -->
-  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex-1 w-full">
+  <!-- 3-Column Layout Container -->
+  <main class="max-w-[1520px] mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full flex-1 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
     
-    <!-- Container for Study Cards -->
-    <div id="topics-container" class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-      <!-- Dynamic rendering from study-app.js -->
+    <!-- LEFT COLUMN: SIDEBAR DE NAVEGACIÓN Y RUTA DE TEORÍA (Col 3 / 12) -->
+    <aside class="lg:col-span-3 space-y-6">
+      
+      <!-- Parte I vs Parte II Toggle -->
+      <div>
+        <div class="text-[10px] font-extrabold uppercase tracking-[0.16em] text-[#718090] mb-2">Parte de estudio</div>
+        <div class="grid grid-cols-2 gap-1.5 p-1 rounded-xl bg-[#eee4d4]/80 border border-[#d9ccba]">
+          <button onclick="switchPart('parte1')" id="btn-part1" class="part-btn rounded-lg px-2 py-2 text-[10px] font-extrabold uppercase tracking-[0.1em] text-[#687482] transition">
+            Parte I
+          </button>
+          <button onclick="switchPart('parte2')" id="btn-part2" class="part-btn rounded-lg px-2 py-2 text-[10px] font-extrabold uppercase tracking-[0.1em] bg-[#e86b2e] text-white shadow-sm transition">
+            Parte II · 19 Ago
+          </button>
+        </div>
+      </div>
+
+      <!-- Elige un Cuaderno (Filtro Materia) -->
+      <div>
+        <div class="text-[10px] font-extrabold uppercase tracking-[0.16em] text-[#718090] mb-2">Elige un cuaderno</div>
+        <div class="space-y-1">
+          <button onclick="setSubject('todo')" id="subj-btn-todo" class="subj-btn flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-sm font-bold bg-[#10233f] text-white shadow-[0_8px_17px_rgba(16,35,63,0.15)] transition">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-book-open"></i> Todo</span>
+          </button>
+          <button onclick="setSubject('fisica')" id="subj-btn-fisica" class="subj-btn flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-sm font-bold text-[#526170] hover:bg-[#eee4d4] transition">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-atom text-[#0284c7]"></i> Física</span>
+            <span class="text-xs text-[#8c9ba5]" id="badge-count-fisica">0</span>
+          </button>
+          <button onclick="setSubject('quimica')" id="subj-btn-quimica" class="subj-btn flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-sm font-bold text-[#526170] hover:bg-[#eee4d4] transition">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-flask text-[#059669]"></i> Química</span>
+            <span class="text-xs text-[#8c9ba5]" id="badge-count-quimica">0</span>
+          </button>
+          <button onclick="setSubject('lenguaje')" id="subj-btn-lenguaje" class="subj-btn flex w-full items-center justify-between rounded-xl px-3 py-2.5 text-sm font-bold text-[#526170] hover:bg-[#eee4d4] transition">
+            <span class="flex items-center gap-2.5"><i class="fa-solid fa-book-open-reader text-[#e86b2e]"></i> Lenguaje</span>
+            <span class="text-xs text-[#8c9ba5]" id="badge-count-lenguaje">0</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Ruta de Teoría (Timeline vertical de temas) -->
+      <div>
+        <div class="text-[10px] font-extrabold uppercase tracking-[0.16em] text-[#718090] mb-2">Ruta de teoría</div>
+        <div id="sidebar-topics-list" class="space-y-1.5 max-h-[550px] overflow-y-auto pr-1">
+          <!-- Dynamic sidebar items from study-app.js -->
+        </div>
+      </div>
+
+    </aside>
+
+    <!-- CENTER COLUMN: FEED DE ESTUDIO / TARJETA ACTIVA / QUIZ (Col 6 / 12) -->
+    <div class="lg:col-span-6 space-y-6" id="center-main-column">
+      
+      <!-- View 1: Theory Topic Card View -->
+      <div id="theory-view" class="space-y-6">
+        
+        <!-- Hero Header Card of Current Topic -->
+        <div class="relative overflow-hidden rounded-2xl bg-[#10233f] p-6 sm:p-8 text-white shadow-[0_18px_38px_rgba(16,35,63,0.22)]">
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <span class="rounded-md bg-white/10 px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-wider text-white/90 border border-white/15" id="hero-part-badge">
+              PARTE II · EXAMEN REPORTADO 19 AGO
+            </span>
+            <span class="rounded-md bg-[#e86b2e] px-2.5 py-1 text-[10px] font-extrabold uppercase tracking-wider text-white" id="hero-priority-badge">
+              PRIORIDAD ESENCIAL
+            </span>
+          </div>
+          <div class="text-xs font-bold uppercase tracking-wider text-[#98a8b8] mb-1.5" id="hero-eyebrow">
+            FÍSICA Y QUÍMICA · P2 · 01 · ENERGÍA
+          </div>
+          <h1 class="font-display text-2xl sm:text-4xl font-bold leading-tight mb-3" id="hero-title">
+            Péndulo, rampa y arco: sigue la energía
+          </h1>
+          <p class="text-xs sm:text-sm text-[#cbd5e1] leading-relaxed font-normal" id="hero-lead">
+            El reporte del 19 de agosto repitió transformaciones de energía. No memorices el dibujo: ubica el punto alto, el punto bajo y el rozamiento.
+          </p>
+        </div>
+
+        <!-- Main Card Body Container -->
+        <div id="topic-detail-card" class="notebook-card p-6 sm:p-8 space-y-6">
+          <!-- Dynamic details from study-app.js -->
+        </div>
+
+      </div>
+
+      <!-- View 2: Practice / Quiz Mode View -->
+      <div id="practice-view" class="hidden space-y-6">
+        
+        <button onclick="togglePracticeMode(false)" class="inline-flex items-center gap-2 text-xs font-extrabold uppercase tracking-wider text-[#6d7784] hover:text-[#10233f] transition">
+          <i class="fa-solid fa-arrow-left"></i> Volver a teoría
+        </button>
+
+        <div class="relative overflow-hidden rounded-2xl bg-[#10233f] p-6 sm:p-8 text-white shadow-lg">
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <div class="text-[10px] font-extrabold uppercase tracking-wider text-[#e86b2e]">Práctica de decisión rápida</div>
+              <h2 class="font-display text-2xl sm:text-3xl font-bold mt-1">Responde, entiende, continúa.</h2>
+            </div>
+            <div class="p-3 rounded-xl bg-white/10 border border-white/15 text-center flex-shrink-0">
+              <div class="text-[10px] font-extrabold uppercase tracking-wider text-slate-300">Aciertos</div>
+              <div class="font-display text-2xl font-bold text-white" id="practice-score-val">0 / 0</div>
+            </div>
+          </div>
+        </div>
+
+        <div id="practice-card-container" class="notebook-card p-6 sm:p-8 space-y-6">
+          <!-- Dynamic quiz card -->
+        </div>
+
+      </div>
+
     </div>
 
-    <!-- Practice / Quiz View (when selected) -->
-    <div id="quiz-section-container" class="hidden max-w-4xl mx-auto space-y-8">
-      <!-- Dynamic rendering from study-app.js -->
-    </div>
+    <!-- RIGHT COLUMN: TU PLAN DE HOY & VARIABLES DE BOLSILLO (Col 3 / 12) -->
+    <aside class="lg:col-span-3 space-y-6">
+      
+      <!-- TU PLAN DE HOY CARD -->
+      <div class="notebook-card p-6">
+        <div class="flex items-center justify-between text-[10px] font-extrabold uppercase tracking-[0.16em] text-[#718090] mb-2">
+          <span>Tu plan de hoy</span>
+          <i class="fa-regular fa-clock text-[#e86b2e]"></i>
+        </div>
+        <h3 class="font-display text-2xl font-bold text-[#1f1a14] mb-3">Ritmo, no pánico.</h3>
+
+        <!-- Progress Bar & Percentage -->
+        <div class="mb-5">
+          <div class="flex items-baseline justify-between mb-1.5">
+            <span class="font-display text-3xl font-bold text-[#e86b2e]" id="progress-percent">0%</span>
+            <span class="text-xs font-bold text-[#687482]" id="progress-count">0 / 14 temas</span>
+          </div>
+          <div class="w-full h-2.5 rounded-full bg-[#eee4d4] overflow-hidden">
+            <div id="progress-bar-fill" class="h-full bg-[#e86b2e] rounded-full transition-all duration-500" style="width: 0%;"></div>
+          </div>
+        </div>
+
+        <!-- 3 Plan Steps -->
+        <div class="space-y-3 pt-4 border-t border-[#e6dbcd] text-xs">
+          <div class="flex items-start gap-2.5">
+            <span class="font-bold text-[#e86b2e]">01</span>
+            <span class="text-[#51606e]">Lee un bloque y su nota de examen.</span>
+          </div>
+          <div class="flex items-start gap-2.5">
+            <span class="font-bold text-[#e86b2e]">02</span>
+            <span class="text-[#51606e]">Resuelve al menos una pregunta por tema.</span>
+          </div>
+          <div class="flex items-start gap-2.5">
+            <span class="font-bold text-[#e86b2e]">03</span>
+            <span class="text-[#51606e]">Repasa errores al final, no todo de nuevo.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ATAJO DE EXAMEN CARD -->
+      <div class="rounded-2xl bg-[#10233f] p-6 text-white shadow-md">
+        <div class="flex items-center gap-2 text-[10px] font-extrabold uppercase tracking-wider text-[#98a8b8] mb-2">
+          <i class="fa-solid fa-bolt text-amber-400"></i> Atajo de examen
+        </div>
+        <p class="text-sm font-bold leading-snug mb-4">
+          Si una respuesta tarda más de 90 segundos, déjala marcada y sigue.
+        </p>
+        <button onclick="togglePracticeMode(true)" class="inline-flex items-center gap-2 text-xs font-extrabold text-[#ffb48e] hover:text-white transition">
+          Entrar a práctica <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <!-- VARIABLES DE BOLSILLO CARD -->
+      <div class="notebook-card p-6">
+        <div class="text-[10px] font-extrabold uppercase tracking-[0.16em] text-[#718090] mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-cube text-[#8c9ba5]"></i> Variables de bolsillo
+        </div>
+        <div id="sidebar-variables-container" class="space-y-2 text-xs font-mono">
+          <!-- Dynamic variables for current topic -->
+        </div>
+      </div>
+
+    </aside>
 
   </main>
 
   <!-- Footer Cuaderno -->
-  <footer class="border-t border-[#d9ccba] bg-[#fffaf2] py-8 px-4 sm:px-6 lg:px-8 text-center text-xs text-[#6d6152]">
-    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+  <footer class="border-t border-[#d9ccba] bg-[#fffaf2] py-8 px-4 sm:px-6 lg:px-8 text-center text-xs text-[#6d6152] mt-auto">
+    <div class="max-w-[1520px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-2">
         <img src="assets/epn-study-logo.png" alt="EPN" class="h-6 w-6 object-contain">
         <span class="font-bold text-[#1f1a14]">EPN Estudio Hoy · Segundo Día</span>

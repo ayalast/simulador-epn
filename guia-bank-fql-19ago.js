@@ -1263,20 +1263,22 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 14,
       "d": "intermedio",
       "topics": [
-        "4.2.2-3raNewton"
+        "2.2.1-leyesNewton"
       ],
-      "ch": "fis-L10",
-      "t": "Camión y Auto en Empuje",
-      "prompt": "Un camión de $3000\\text{ kg}$ se coloca detrás de un auto averiado de $1000\\text{ kg}$ y lo empuja en línea recta acelerando a $1.5\\text{ m/s}^2$. Despreciando el rozamiento de las ruedas con el suelo, ¿cuál es la magnitud de la fuerza que el camión ejerce sobre el auto y la que el auto ejerce sobre el camión?",
+      "ch": "fis-F02",
+      "t": "Tercera Ley y Aceleración por Inercia",
+      "prompt": "Un camión pesado de $3000\\text{ kg}$ empuja horizontalmente a un automóvil pequeño averiado de $1000\\text{ kg}$ sobre una pista lisa, acelerando juntos hacia adelante. Respecto a las fuerzas de contacto y las aceleraciones:",
       "opts": [
-        "Ambas fuerzas tienen exactamente la misma magnitud de $1500\\text{ N}$, en sentidos opuestos.",
-        "El camión ejerce $4500\\text{ N}$ y el auto reacciona con $1500\\text{ N}$.",
-        "El camión ejerce $6000\\text{ N}$ y el auto no ejerce ninguna fuerza por estar averiado.",
-        "El camión ejerce $1500\\text{ N}$ y el auto reacciona con $4500\\text{ N}$."
+        "El camión ejerce sobre el automóvil una fuerza de mayor magnitud que la que el automóvil ejerce sobre el camión.",
+        "La fuerza que el camión ejerce sobre el automóvil tiene exactamente la misma magnitud que la fuerza que el automóvil ejerce sobre el camión, y ambos adquieren la misma aceleración.",
+        "El automóvil ejerce una fuerza de reacción nula porque su masa es tres veces menor.",
+        "La aceleración del automóvil es tres veces mayor que la del camión porque están en contacto."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Dinámica del cuerpo empujado (auto):**\n- Masa del auto: $m_{\\text{auto}} = 1000\\text{ kg}$, aceleración: $a = 1.5\\text{ m/s}^2$.\n- La fuerza neta que acelera al auto es la fuerza de contacto que le aplica el camión:\n  $F_{\\text{camión}\\to\\text{auto}} = m_{\\text{auto}} \\cdot a = 1000\\text{ kg} \\times 1.5\\text{ m/s}^2 = 1500\\text{ N}$.\n**Paso 2. Aplicación de la 3ra Ley de Newton:**\n- Por acción y reacción, la fuerza de contacto que el auto ejerce en sentido opuesto sobre el parachoques del camión es de igual módulo:\n  $|F_{\\text{auto}\\to\\text{camión}}| = |F_{\\text{camión}\\to\\text{auto}}| = 1500\\text{ N}$.\n**Paso 3. Conclusión:** Ambas fuerzas valen exactamente $1500\\text{ N}$ en sentidos contrarios.\n**Respuesta correcta: A.**",
-      "maths": [],
+      "ans": 1,
+      "exp": "**Paso 1. Tercera Ley de Newton (Acción y Reacción):** Toda interacción entre dos cuerpos $A$ (camión) y $B$ (automóvil) genera un par de fuerzas de igual magnitud ($|\\vec{F}_{AB}| = |\\vec{F}_{BA}|$) y sentido opuesto, sin importar sus masas.\n**Paso 2. Análisis del movimiento conjunto:** Al estar en contacto y desplazarse unidos, ambos vehículos comparten idéntica aceleración instantánea $\\vec{a}$.\n**Paso 3. Conclusión:** Las fuerzas de interacción mutua son idénticas en magnitud y la aceleración del conjunto es la misma.\n**Respuesta correcta: B.**",
+      "maths": [
+        "|\\vec{F}_{AB}| = |\\vec{F}_{BA}|"
+      ],
       "imgs": []
     },
     {
@@ -1285,22 +1287,24 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 15,
       "d": "intermedio",
       "topics": [
-        "4.2.2-circular"
+        "2.1.2-mcu"
       ],
-      "ch": "fis-L11",
-      "t": "MCU y Aceleración Centrípeta",
-      "prompt": "Una partícula describe un Movimiento Circular Uniforme (MCU) en un plano horizontal con radio $R = 2\\text{ m}$ y rapidez constante $v = 6\\text{ m/s}$. ¿Cuál es el valor de su aceleración tangencial $a_t$ y de su aceleración centrípeta $a_c$?",
+      "ch": "fis-F01",
+      "t": "Naturaleza de la Aceleración en MCU",
+      "prompt": "Una partícula describe un Movimiento Circular Uniforme (MCU) con rapidez tangencial constante. ¿Cuál afirmación describe con rigor físico sus vectores cinemáticos?",
       "opts": [
-        "$a_t = 0\\text{ m/s}^2$ y $a_c = 18\\text{ m/s}^2$ dirigida radialmente hacia el centro del círculo.",
-        "$a_t = 3\\text{ m/s}^2$ y $a_c = 0\\text{ m/s}^2$.",
-        "$a_t = 18\\text{ m/s}^2$ y $a_c = 36\\text{ m/s}^2$.",
-        "$a_t = 0\\text{ m/s}^2$ y $a_c = 0\\text{ m/s}^2$ porque la velocidad es uniforme."
+        "No tiene aceleración porque su rapidez es constante.",
+        "Tiene aceleración tangencial nula ($a_t = 0$), pero posee aceleración centrípeta ($a_c = \\frac{v^2}{R}$) dirigida radialmente hacia el centro debido al continuo cambio de dirección de la velocidad.",
+        "La aceleración total apunta en la misma dirección y sentido del vector velocidad tangencial.",
+        "La velocidad angular $\\omega$ cambia de dirección en cada cuarto de vuelta."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Concepto de MCU:** En un MCU, la rapidez (módulo del vector velocidad) es constante, pero la dirección del vector velocidad cambia continuamente.\n**Paso 2. Cálculo a mano de las componentes de aceleración:**\n- Aceleración tangencial (tasa de cambio de la rapidez): $a_t = \\frac{dv}{dt} = 0$.\n- Aceleración centrípeta (responsable del cambio de dirección):\n  $a_c = \\frac{v^2}{R} = \\frac{6^2}{2} = \\frac{36}{2} = 18\\text{ m/s}^2$.\n- Dirección: Siempre orientada radialmente hacia el centro de la circunferencia.\n**Paso 3. Conclusión:** $a_t = 0$ y $a_c = 18\\text{ m/s}^2$ hacia el centro.\n**Respuesta correcta: A.**",
-      "maths": [],
-      "imgs": [],
-      "fig": "fql19-mcu-vectorial"
+      "ans": 1,
+      "exp": "**Paso 1. Concepto de vector velocidad:** En MCU la magnitud (rapidez) es constante, lo que implica aceleración tangencial nula ($a_t = 0$).\n**Paso 2. Aceleración centrípeta:** La dirección del vector velocidad varía instante a instante; este cambio en orientación genera una aceleración normal o centrípeta dirigida hacia el centro ($a_c = \\frac{v^2}{R}$).",
+      "maths": [
+        "a_t = 0",
+        "a_c = \\frac{v^2}{R}"
+      ],
+      "imgs": []
     },
     {
       "id": "fis-19ago-16",
@@ -1308,20 +1312,23 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 16,
       "d": "intermedio",
       "topics": [
-        "4.2.2-circular"
+        "2.1.2-mcu",
+        "2.2.1-leyesNewton"
       ],
-      "ch": "fis-L11",
-      "t": "Fuerza Centrípeta en Giro",
-      "prompt": "Un automóvil de $1200\\text{ kg}$ toma una curva circular plana de radio $R = 50\\text{ m}$ a una rapidez constante de $20\\text{ m/s}$. ¿Qué fuerza horizontal proporciona la aceleración centrípeta necesaria para que el auto no derrape hacia afuera?",
+      "ch": "fis-F02",
+      "t": "Fuerza Centrípeta Real en un Viraje Plano",
+      "prompt": "Cuando un automóvil toma una curva circular en una carretera horizontal plana no peraltada sin derrapar, ¿cuál es la fuerza física real que provee la fuerza centrípeta necesaria para el giro?",
       "opts": [
-        "La fuerza de rozamiento estático entre los neumáticos y el asfalto, de valor $9600\\text{ N}$ hacia el centro.",
-        "La fuerza centrífuga que empuja el auto hacia el exterior con $9600\\text{ N}$.",
-        "La fuerza de gravedad vertical que actúa sobre el techo del vehículo con $12000\\text{ N}$.",
-        "La fuerza del motor que impulsa el auto hacia adelante con $24000\\text{ N}$."
+        "La fuerza centrífuga que empuja al vehículo hacia afuera.",
+        "La fuerza de rozamiento estático entre los neumáticos y el asfalto, dirigida hacia el centro de curvatura.",
+        "La componente horizontal de la fuerza gravitatoria.",
+        "La fuerza normal ejercida por el pavimento hacia arriba."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Identificación de la fuerza real:** Para que un auto gire en una pista horizontal sin peralte, la única fuerza radial hacia el centro de la curva es la fricción lateral de las llantas con el pavimento.\n**Paso 2. Cálculo a mano de la fuerza requerida:**\n- Aceleración centrípeta: $a_c = \\frac{v^2}{R} = \\frac{20^2}{50} = \\frac{400}{50} = 8\\text{ m/s}^2$.\n- Fuerza centrípeta: $F_c = m \\cdot a_c = 1200\\text{ kg} \\times 8\\text{ m/s}^2 = 9600\\text{ N}$.\n- La fuerza centrífuga no es una fuerza real en un marco inercial, sino una fuerza ficticia.\n**Paso 3. Conclusión:** La fricción estática proporciona los $9600\\text{ N}$ dirigidos hacia el centro.\n**Respuesta correcta: A.**",
-      "maths": [],
+      "ans": 1,
+      "exp": "**Paso 1. Fuerzas reales en marco inercial:** Sobre el auto actúan el peso (vertical hacia abajo), la normal (vertical hacia arriba) y el rozamiento con el suelo.\n**Paso 2. Origen de la fuerza centrípeta:** Al girar en plano horizontal sin peralte, la única fuerza con componente horizontal hacia el centro es la fuerza de fricción estática entre los neumáticos y la calzada ($f_s = m\\frac{v^2}{R}$).\n**Paso 3. Descarte:** La fuerza centrífuga es una fuerza ficticia que solo aparece en marcos no inerciales.\n**Respuesta correcta: B.**",
+      "maths": [
+        "f_s = m\\frac{v^2}{R}"
+      ],
       "imgs": []
     },
     {
@@ -1352,20 +1359,24 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 18,
       "d": "intermedio",
       "topics": [
-        "4.2.2-2daNewton"
+        "2.2.1-leyesNewton",
+        "2.2.4-gravitacion"
       ],
-      "ch": "fis-L08",
-      "t": "Gravedad y Peso en Otro Planeta",
-      "prompt": "Una roca tiene una masa de $2.5\\text{ kg}$ en la Tierra. En una misión de exploración a otro planeta, se suelta dicha roca desde el reposo y tarda exactamente $2\\text{ segundos}$ en caer una altura vertical de $8\\text{ metros}$ (sin atmósfera). ¿Cuál es el peso de la roca en dicho planeta?",
+      "ch": "fis-F02",
+      "t": "Invarianza de la Masa vs Variabilidad del Peso",
+      "prompt": "Un astronauta transporta una roca de $2.5\\text{ kg}$ desde la Tierra hasta la superficie de la Luna, donde la aceleración de la gravedad es aproximadamente $\\frac{1}{6}$ de la terrestre. Al medir la roca en la Luna:",
       "opts": [
-        "$10\\text{ N}$",
-        "$20\\text{ N}$",
-        "$5\\text{ N}$",
-        "$25\\text{ N}$"
+        "Tanto la masa como el peso se reducen a la sexta parte.",
+        "La masa permanece exactamente en $2.5\\text{ kg}$, mientras que su peso disminuye a $\\frac{1}{6}$ de su valor terrestre.",
+        "El peso permanece constante pero la inercia de la roca disminuye.",
+        "La masa aumenta porque la gravedad lunar ofrece menor resistencia."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Invarianza de la masa:** La masa es una propiedad intrínseca de la materia ($m = 2.5\\text{ kg}$) y no cambia en ningún planeta.\n**Paso 2. Cálculo a mano de la aceleración gravitatoria del planeta ($g_p$):**\n- Caída libre desde el reposo ($v_0 = 0$): $h = \\frac{1}{2}g_p t^2$.\n- Despejando la gravedad:\n  $g_p = \\frac{2h}{t^2} = \\frac{2(8\\text{ m})}{(2\\text{ s})^2} = \\frac{16}{4} = 4\\text{ m/s}^2$.\n**Paso 3. Cálculo del peso en el planeta:**\n- Peso: $P_p = m \\cdot g_p = 2.5\\text{ kg} \\times 4\\text{ m/s}^2 = 10\\text{ N}$.\n**Respuesta correcta: A.**",
-      "maths": [],
+      "ans": 1,
+      "exp": "**Paso 1. Masa inercial:** La masa es una propiedad intrínseca del cuerpo (cantidad de materia e inercia) y es invariable sin importar el lugar del universo ($m = 2.5\\text{ kg}$). \n**Paso 2. Peso:** El peso $P = m g$ depende directamente de la gravedad local, reduciéndose a $P_{\\text{Luna}} = \\frac{1}{6}P_{\\text{Tierra}}$.\n**Respuesta correcta: B.**",
+      "maths": [
+        "P = mg",
+        "P_{\\text{Luna}} = \\frac{1}{6}P_{\\text{Tierra}}"
+      ],
       "imgs": []
     },
     {
@@ -1374,20 +1385,22 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 19,
       "d": "intermedio",
       "topics": [
-        "4.2.2-2daNewton"
+        "2.2.1-leyesNewton"
       ],
-      "ch": "fis-L07",
-      "t": "Fuerza Neta Resultante en Caída",
-      "prompt": "Un cuerpo de $1\\text{ kg}$ de masa es lanzado verticalmente hacia abajo con una rapidez inicial de $2\\text{ m/s}$. Al cabo de $4\\text{ segundos}$ alcanza una rapidez de $14\\text{ m/s}$. ¿Cuál es la fuerza neta resultante en Newtons que actúa sobre el cuerpo durante este intervalo?",
+      "ch": "fis-F02",
+      "t": "Fuerza Neta y Aceleración en Caída",
+      "prompt": "Un objeto de $1.0\\text{ kg}$ se lanza verticalmente hacia abajo adquiriendo una aceleración inicial conocida de $3.0\\text{ m/s}^2$ en un medio resistivo. De acuerdo con la Segunda Ley de Newton, la fuerza neta resultante que actúa sobre el objeto es:",
       "opts": [
-        "$3\\text{ N}$",
-        "$5\\text{ N}$",
-        "$12\\text{ N}$",
-        "$10\\text{ N}$"
+        "$9.8\\text{ N}$ hacia abajo.",
+        "$3.0\\text{ N}$ hacia abajo.",
+        "$12.8\\text{ N}$ hacia arriba.",
+        "$0.33\\text{ N}$ hacia abajo."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Datos cinemáticos:** Masa $m = 1\\text{ kg}$, rapidez inicial $v_0 = 2\\text{ m/s}$, tiempo $t = 4\\text{ s}$, rapidez final $v_f = 14\\text{ m/s}$.\n**Paso 2. Cálculo de la aceleración a mano:**\n- $a = \\frac{v_f - v_0}{t} = \\frac{14\\text{ m/s} - 2\\text{ m/s}}{4\\text{ s}} = \\frac{12}{4} = 3\\text{ m/s}^2$.\n**Paso 3. Aplicación de la Segunda Ley de Newton:**\n- Fuerza neta resultante: $F_{\\text{neta}} = m \\cdot a = 1\\text{ kg} \\times 3\\text{ m/s}^2 = 3\\text{ N}$.\n- (Nota: como la aceleración es $3\\text{ m/s}^2 < 9.8\\text{ m/s}^2$, el peso hacia abajo de $9.8\\text{ N}$ se opone a una resistencia del aire hacia arriba de $6.8\\text{ N}$, dando una fuerza resultante de $3\\text{ N}$).\n**Respuesta correcta: A.**",
-      "maths": [],
+      "ans": 1,
+      "exp": "**Paso 1. Segunda Ley de Newton:** La fuerza neta total es el producto de la masa por la aceleración resultante real del cuerpo: $F_{\\text{neta}} = m \\cdot a$.\n**Paso 2. Sustitución:** $F_{\\text{neta}} = (1.0\\text{ kg})(3.0\\text{ m/s}^2) = 3.0\\text{ N}$.\n**Paso 3. Alerta de examen:** No confundas el peso bruto ($mg = 9.8\\text{ N}$) con la fuerza neta resultante cuando existen fuerzas resistentes.\n**Respuesta correcta: B.**",
+      "maths": [
+        "F_{\\text{neta}} = ma = (1.0)(3.0) = 3.0\\text{ N}"
+      ],
       "imgs": []
     },
     {
@@ -1463,20 +1476,23 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 23,
       "d": "intermedio",
       "topics": [
-        "4.2.1-caida"
+        "2.1.1-mruv"
       ],
-      "ch": "fis-L05",
-      "t": "Salto Vertical y Tiempo de Vuelo",
-      "prompt": "Un atleta realiza un salto vertical alcanzando una altura máxima de $1.25\\text{ m}$ sobre el suelo. Despreciando la resistencia del aire y considerando $g = 10\\text{ m/s}^2$, ¿cuánto tiempo total permanece el atleta en el aire (tiempo de vuelo entre el despegue y el aterrizaje)?",
+      "ch": "fis-F01",
+      "t": "Simetría Temporal y Aceleración en Salto Vertical",
+      "prompt": "Un atleta realiza un salto vertical en el aire. Despreciando la resistencia del aire, ¿cuál afirmación describe correctamente su movimiento?",
       "opts": [
-        "$1.0\\text{ s}$",
-        "$0.5\\text{ s}$",
-        "$2.0\\text{ s}$",
-        "$1.5\\text{ s}$"
+        "El tiempo de subida es menor que el de bajada porque la gravedad frena más rápido de lo que acelera.",
+        "El tiempo de subida es exactamente igual al tiempo de bajada, y la aceleración apunta hacia abajo con magnitud constante $g$ en todo instante.",
+        "En el punto más alto la aceleración se anula instantáneamente.",
+        "La rapidez al retornar al suelo es el doble de la rapidez de despegue."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Identificación de datos cinemáticos:** Altura máxima $h = 1.25\\text{ m}$, aceleración $g = 10\\text{ m/s}^2$. En el punto más alto, la velocidad vertical es cero ($v = 0$).\n**Paso 2. Cálculo a mano del tiempo de subida:**\n- $h = \\frac{1}{2}gt_{\\text{sub}}^2 \\implies t_{\\text{sub}} = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2(1.25\\text{ m})}{10\\text{ m/s}^2}} = \\sqrt{\\frac{2.5}{10}} = \\sqrt{0.25} = 0.5\\text{ s}$.\n**Paso 3. Cálculo del tiempo de vuelo total:**\n- Por simetría parabólica/vertical: $t_{\\text{vuelo}} = 2 \\times t_{\\text{sub}} = 2 \\times 0.5\\text{ s} = 1.0\\text{ s}$.\n**Respuesta correcta: A.**",
-      "maths": [],
+      "ans": 1,
+      "exp": "**Paso 1. Simetría cinemática:** En ausencia de fricción, la desaceleración durante el ascenso es simétrica a la aceleración durante el descenso ($t_{\\text{subida}} = t_{\\text{bajada}}$).\n**Paso 2. Invarianza de la aceleración:** La gravedad $g = 9.8\\text{ m/s}^2$ actúa de forma ininterrumpida hacia abajo en toda la trayectoria, incluso en el punto más alto.\n**Respuesta correcta: B.**",
+      "maths": [
+        "t_{\\text{subida}} = t_{\\text{bajada}}",
+        "a = g"
+      ],
       "imgs": []
     },
     {
@@ -1552,20 +1568,23 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 27,
       "d": "intermedio",
       "topics": [
-        "4.2.1-proyectiles"
+        "2.1.3-parabolico"
       ],
-      "ch": "fis-L06",
-      "t": "Proyectil y Componentes de Velocidad",
-      "prompt": "Un cañón dispara un proyectil con velocidad inicial $v_0 = 50\\text{ m/s}$ y un ángulo de elevación de $37^\\circ$ sobre la horizontal (considere $\\cos 37^\\circ = 0.8, \\sin 37^\\circ = 0.6$ y $g = 10\\text{ m/s}^2$). Despreciando el aire, ¿cuáles son las componentes horizontal ($v_x$) y vertical ($v_y$) de la velocidad al cabo de $2\\text{ segundos}$ de vuelo?",
+      "ch": "fis-F01",
+      "t": "Independencia de Componentes en Tiro Parabólico",
+      "prompt": "En el lanzamiento de un proyectil con ángulo de elevación $\\theta$ respecto a la horizontal (despreciando el rozamiento con el aire), ¿cómo evolucionan sus componentes de velocidad?",
       "opts": [
-        "$v_x = 40\\text{ m/s}$ y $v_y = 10\\text{ m/s}$ hacia arriba.",
-        "$v_x = 30\\text{ m/s}$ y $v_y = 20\\text{ m/s}$ hacia abajo.",
-        "$v_x = 40\\text{ m/s}$ y $v_y = 30\\text{ m/s}$ hacia arriba.",
-        "$v_x = 50\\text{ m/s}$ y $v_y = 0\\text{ m/s}$."
+        "Ambas componentes ($v_x$ y $v_y$) disminuyen uniformemente hasta anularse en el ápice.",
+        "La componente horizontal $v_x$ permanece constante durante todo el vuelo, mientras que la componente vertical $v_y$ varía linealmente con la gravedad ($v_y = v_{0y} - gt$).",
+        "La componente horizontal $v_x$ se acelera continuamente hacia adelante.",
+        "En el punto más alto ambas componentes de velocidad son nulas."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Descomposición de la velocidad inicial a mano:**\n- $v_{0x} = v_0 \\cos 37^\\circ = 50 \\times 0.8 = 40\\text{ m/s}$.\n- $v_{0y} = v_0 \\sin 37^\\circ = 50 \\times 0.6 = 30\\text{ m/s}$.\n**Paso 2. Cinemática a los $t = 2\\text{ s}$:**\n- Eje $x$ (MRU): $v_x(t) = v_{0x} = 40\\text{ m/s}$ (constante en todo momento).\n- Eje $y$ (MRUV con gravedad): $v_y(t) = v_{0y} - gt = 30 - (10 \\times 2) = 30 - 20 = 10\\text{ m/s}$ (positiva, subiendo).\n**Paso 3. Conclusión:** $v_x = 40\\text{ m/s}$ y $v_y = 10\\text{ m/s}$.\n**Respuesta correcta: A.**",
-      "maths": [],
+      "ans": 1,
+      "exp": "**Paso 1. Principio de independencia de Galileo:** El movimiento horizontal no tiene fuerzas netas ($a_x = 0 \\implies v_x = \\text{constante}$). \n**Paso 2. Eje vertical:** Experimenta la aceleración constante de la gravedad ($a_y = -g \\implies v_y = v_{0y} - gt$).\n**Respuesta correcta: B.**",
+      "maths": [
+        "v_x = v_0\\cos\\theta = \\text{cte}",
+        "v_y = v_0\\sin\\theta - gt"
+      ],
       "imgs": []
     },
     {
@@ -1574,22 +1593,24 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 28,
       "d": "intermedio",
       "topics": [
-        "4.2.1-cinemRecta"
+        "2.1.1-mruv"
       ],
-      "ch": "fis-L04",
-      "t": "Gráfica Velocidad-Tiempo y Desplazamiento",
-      "prompt": "En la gráfica de velocidad en función del tiempo ($v$ vs $t$) adjunta, un móvil parte del reposo y acelera uniformemente hasta alcanzar $12\\text{ m/s}$ en $6\\text{ segundos}$. ¿Qué representa el área bajo la curva del gráfico y cuál es el desplazamiento total del móvil?",
+      "ch": "fis-F01",
+      "t": "Significado Geométrico del Área en Gráfica v-t",
+      "prompt": "En cualquier gráfica de velocidad en función del tiempo ($v$ vs $t$) para un móvil en movimiento rectilíneo, el área geométrica comprendida entre la curva de velocidad y el eje temporal representa conceptualmente:",
       "opts": [
-        "Representa el desplazamiento realizado, que equivale a $\\Delta x = 36\\text{ m}$.",
-        "Representa la aceleración media, que equivale a $2\\text{ m/s}^2$.",
-        "Representa la fuerza neta, que equivale a $72\\text{ N}$.",
-        "Representa la energía cinética final, que equivale a $144\\text{ J}$."
+        "La aceleración instantánea del móvil.",
+        "El desplazamiento neto ($\\Delta x$) realizado por el móvil en dicho intervalo.",
+        "La fuerza neta aplicada sobre el cuerpo.",
+        "La energía potencial gravitatoria acumulada."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Significado físico del área en $v-t$:** La integral del área bajo la curva de velocidad respecto al tiempo representa el desplazamiento neto $\\Delta x = \\int v\\,dt$.\n**Paso 2. Cálculo geométrico del área a mano:**\n- La figura formada desde $t=0$ hasta $t=6\\text{ s}$ es un triángulo rectángulo de base $b = 6\\text{ s}$ y altura $h = 12\\text{ m/s}$.\n- $\\text{Área} = \\frac{\\text{base} \\times \\text{altura}}{2} = \\frac{6\\text{ s} \\times 12\\text{ m/s}}{2} = \\frac{72}{2} = 36\\text{ m}$.\n**Paso 3. Conclusión:** El área representa el desplazamiento y su valor es $\\Delta x = 36\\text{ m}$.\n**Respuesta correcta: A.**",
-      "maths": [],
-      "imgs": [],
-      "fig": "fql19-grafica-vt"
+      "ans": 1,
+      "exp": "**Paso 1. Análisis dimensional:** El producto de los ejes es $(\\text{m/s}) \\times (\\text{s}) = \\text{m}$ (unidad de longitud/desplazamiento).\n**Paso 2. Propiedad fundamental:** En una gráfica $v-t$, el área bajo la curva es el desplazamiento neto $\\Delta x$, mientras que la pendiente de la recta tangente es la aceleración instantánea $a$.\n**Respuesta correcta: B.**",
+      "maths": [
+        "\\text{Área}(v-t) = \\Delta x",
+        "\\text{Pendiente}(v-t) = a"
+      ],
+      "imgs": []
     },
     {
       "id": "fis-19ago-29",
@@ -1642,20 +1663,22 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 31,
       "d": "intermedio",
       "topics": [
-        "4.2.2-impulsoCML"
+        "2.2.3-impulso"
       ],
-      "ch": "fis-L12",
-      "t": "Impulso Mecánico en Pelota de Béisbol",
-      "prompt": "Una pelota de béisbol de $0.15\\text{ kg}$ llega horizontalmente al bate con una rapidez de $30\\text{ m/s}$. El bateador la golpea en sentido exactamente opuesto, despidiéndola a $40\\text{ m/s}$. Si el contacto entre el bate y la pelota duró $\\Delta t = 0.005\\text{ segundos}$, ¿cuál es la magnitud del impulso $\\vec{J}$ transmitido y la fuerza media $\\bar{F}$ ejercida?",
+      "ch": "fis-F02",
+      "t": "Teorema del Impulso y Duración del Impacto",
+      "prompt": "Durante el choque de una pelota contra un bate, para un cambio de cantidad de movimiento dado ($\\Delta p = \\text{constante}$), si se reduce el tiempo de contacto $\\Delta t$ a la mitad, la fuerza media de impacto:",
       "opts": [
-        "Impulso: $10.5\\text{ N}\\cdot\\text{s}$; Fuerza media: $2100\\text{ N}$.",
-        "Impulso: $1.5\\text{ N}\\cdot\\text{s}$; Fuerza media: $300\\text{ N}$.",
-        "Impulso: $6.0\\text{ N}\\cdot\\text{s}$; Fuerza media: $1200\\text{ N}$.",
-        "Impulso: $0.075\\text{ N}\\cdot\\text{s}$; Fuerza media: $15\\text{ N}$."
+        "Se reduce a la mitad.",
+        "Se duplica (aumenta al doble).",
+        "Permanece exactamente igual.",
+        "Se reduce a la cuarta parte."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Teorema del impulso y la cantidad de movimiento:** $\\vec{J} = \\Delta \\vec{p} = m(\\vec{v}_f - \\vec{v}_0)$.\n**Paso 2. Procedimiento a mano con signos vectoriales:**\n- Considerando positivo el sentido de salida de la pelota:\n  $v_0 = -30\\text{ m/s}$ (hacia el bate), $v_f = +40\\text{ m/s}$ (saliendo del bate).\n- $\\Delta v = v_f - v_0 = 40 - (-30) = 70\\text{ m/s}$.\n- Impulso: $J = m \\cdot \\Delta v = 0.15\\text{ kg} \\times 70\\text{ m/s} = 10.5\\text{ N}\\cdot\\text{s}$.\n- Fuerza media: $\\bar{F} = \\frac{J}{\\Delta t} = \\frac{10.5\\text{ N}\\cdot\\text{s}}{0.005\\text{ s}} = \\frac{10500}{5} = 2100\\text{ N}$.\n**Paso 3. Conclusión:** $J = 10.5\\text{ N}\\cdot\\text{s}$ y $\\bar{F} = 2100\\text{ N}$.\n**Respuesta correcta: A.**",
-      "maths": [],
+      "ans": 1,
+      "exp": "**Paso 1. Teorema del impulso:** $\\vec{J} = \\vec{F}_{\\text{media}} \\Delta t = \\Delta \\vec{p} \\implies \\vec{F}_{\\text{media}} = \\frac{\\Delta \\vec{p}}{\\Delta t}$.\n**Paso 2. Relación de proporcionalidad:** A menor tiempo de interacción $\\Delta t$, mayor es la fuerza media de impacto generada. Si $\\Delta t$ se divide por 2, la fuerza media se duplica.\n**Respuesta correcta: B.**",
+      "maths": [
+        "F_{\\text{media}} = \\frac{\\Delta p}{\\Delta t}"
+      ],
       "imgs": []
     },
     {
@@ -1664,20 +1687,23 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 32,
       "d": "intermedio",
       "topics": [
-        "4.2.1-cinemRecta"
+        "2.1.1-mruv",
+        "2.2.2-trabajoEnergia"
       ],
-      "ch": "fis-L04",
-      "t": "Frenado de Emergencia y Distancia de Parada",
-      "prompt": "Un automóvil que viaja en línea recta a $20\\text{ m/s}$ frena con una desaceleración constante de magnitud $a = 4\\text{ m/s}^2$ hasta detenerse por completo. ¿Qué distancia recorre el vehículo durante el proceso de frenado y cuánto tiempo tarda en detenerse?",
+      "ch": "fis-F02",
+      "t": "Relación Cuadrática en la Distancia de Frenado",
+      "prompt": "Un automóvil que viaja con rapidez inicial $v$ aplica sus frenos produciendo una desaceleración constante $a$ hasta detenerse en una distancia $d$. Si el mismo automóvil viaja al doble de rapidez inicial ($2v$), la distancia mínima de frenado requerida será:",
       "opts": [
-        "Distancia: $50\\text{ m}$; Tiempo: $5\\text{ s}$.",
-        "Distancia: $100\\text{ m}$; Tiempo: $5\\text{ s}$.",
-        "Distancia: $25\\text{ m}$; Tiempo: $2.5\\text{ s}$.",
-        "Distancia: $80\\text{ m}$; Tiempo: $4\\text{ s}$."
+        "El doble ($2d$).",
+        "El cuádruple ($4d$).",
+        "Ocho veces mayor ($8d$).",
+        "La misma distancia $d$ si los frenos son eficientes."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Identificación de datos cinemáticos:** Rapidez inicial $v_0 = 20\\text{ m/s}$, rapidez final $v_f = 0$, aceleración $a = -4\\text{ m/s}^2$.\n**Paso 2. Cálculos a mano:**\n- Tiempo de frenado: $v_f = v_0 + at \\implies 0 = 20 - 4t \\implies 4t = 20 \\implies t = 5\\text{ s}$.\n- Distancia de parada mediante ecuación de Torricelli:\n  $v_f^2 = v_0^2 + 2a\\Delta x \\implies 0^2 = 20^2 + 2(-4)\\Delta x \\implies 0 = 400 - 8\\Delta x \\implies 8\\Delta x = 400 \\implies \\Delta x = \\frac{400}{8} = 50\\text{ m}$.\n**Paso 3. Conclusión:** Recorre $50\\text{ m}$ en $5\\text{ s}$.\n**Respuesta correcta: A.**",
-      "maths": [],
+      "ans": 1,
+      "exp": "**Paso 1. Cinemática / Trabajo y Energía:** Por Torricelli: $v_f^2 = v_0^2 - 2ad \\implies 0 = v_0^2 - 2ad \\implies d = \\frac{v_0^2}{2a}$.\n**Paso 2. Escalamiento:** La distancia de frenado es proporcional al cuadrado de la rapidez inicial ($d \\propto v_0^2$). Si $v_0$ se duplica, $(2)^2 = 4$, por lo que la distancia se cuadruplica ($4d$).\n**Respuesta correcta: B.**",
+      "maths": [
+        "d = \\frac{v_0^2}{2a} \\implies d \\propto v_0^2"
+      ],
       "imgs": []
     },
     {
@@ -1686,22 +1712,23 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 33,
       "d": "intermedio",
       "topics": [
-        "4.2.2-roceResistencia"
+        "2.2.1-leyesNewton"
       ],
-      "ch": "fis-L09",
-      "t": "Ángulo de Inclinación Crítico y Rozamiento",
-      "prompt": "Se coloca un bloque sobre una tabla horizontal y se eleva lentamente uno de sus extremos. El bloque comienza a deslizarse justo cuando el ángulo de inclinación de la tabla alcanza $\\theta = 45^\\circ$. ¿Cuál es el coeficiente de rozamiento estático $\\mu_s$ entre el bloque y la tabla?",
+      "ch": "fis-F02",
+      "t": "Ángulo Crítico de Deslizamiento e Independencia de Masa",
+      "prompt": "Se coloca un bloque sobre un plano y se inclina gradualmente el ángulo $\\theta$. En el momento exacto en que el bloque está a punto de deslizar (equilibrio límite):",
       "opts": [
-        "$\\mu_s = 1.00$",
-        "$\\mu_s = 0.50$",
-        "$\\mu_s = 0.71$",
-        "$\\mu_s = 0.86$"
+        "El coeficiente de rozamiento estático depende exclusivamente de la masa del bloque.",
+        "El coeficiente de rozamiento estático es igual a la tangente del ángulo crítico ($\\mu_s = \\tan\\theta$) y es completamente independiente de la masa del bloque.",
+        "La fuerza normal se hace mayor que el peso total.",
+        "La fuerza de rozamiento estático se vuelve nula."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Diagrama de cuerpo libre en el plano inclinado en equilibrio límite:**\n- Paralelo al plano: $mg\\sin\\theta - f_{s,\\text{máx}} = 0 \\implies f_{s,\\text{máx}} = mg\\sin\\theta$.\n- Perpendicular al plano: $N - mg\\cos\\theta = 0 \\implies N = mg\\cos\\theta$.\n**Paso 2. Deducción de la relación de fricción a mano:**\n- Por definición: $f_{s,\\text{máx}} = \\mu_s N \\implies mg\\sin\\theta = \\mu_s (mg\\cos\\theta)$.\n- Simplificando $mg$:\n  $\\mu_s = \\frac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta$.\n- Evaluando en $\\theta = 45^\\circ$: $\\mu_s = \\tan 45^\\circ = 1.00$.\n**Paso 3. Conclusión:** $\\mu_s = 1.00$.\n**Respuesta correcta: A.**",
-      "maths": [],
-      "imgs": [],
-      "fig": "fql19-plano-inclinado-45"
+      "ans": 1,
+      "exp": "**Paso 1. Equilibrio en plano inclinado:** $\\sum F_x = mg\\sin\\theta - f_s = 0$ y $\\sum F_y = N - mg\\cos\\theta = 0$.\n**Paso 2. Condición límite:** $f_{s,\\text{máx}} = \\mu_s N = \\mu_s mg\\cos\\theta$. Igualando: $mg\\sin\\theta = \\mu_s mg\\cos\\theta \\implies \\mu_s = \\tan\\theta$.\n**Paso 3. Conclusión:** La masa $m$ y la gravedad $g$ se cancelan, demostrando que el ángulo crítico depende solo de los materiales en contacto.\n**Respuesta correcta: B.**",
+      "maths": [
+        "\\mu_s = \\tan\\theta"
+      ],
+      "imgs": []
     },
     {
       "id": "fis-19ago-34",
@@ -1731,22 +1758,24 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 35,
       "d": "intermedio",
       "topics": [
-        "4.2.3-consEnergia"
+        "2.1.2-mcu",
+        "2.2.1-leyesNewton"
       ],
-      "ch": "fis-L16",
-      "t": "Rizo Vertical y Rapidez Crítica",
-      "prompt": "Un carrito de montaña rusa ingresa a un rizo circular vertical de radio $R = 10\\text{ m}$. Despreciando la fricción y con $g = 10\\text{ m/s}^2$, ¿cuál es la rapidez mínima que debe tener el carrito en el punto más alto del rizo para completar la vuelta sin despegarse de la vía?",
+      "ch": "fis-F02",
+      "t": "Condición Crítica en la Cúspide de un Rizo Vertical",
+      "prompt": "Para que un carrito de montaña rusa complete un rizo circular vertical de radio $R$ sin despegarse de la vía en el punto más alto, la condición física límite de rapidez mínima ($v_{\\text{mín}} = \\sqrt{gR}$) ocurre cuando:",
       "opts": [
-        "$v_{\\text{mín}} = 10\\text{ m/s}$",
-        "$v_{\\text{mín}} = 5\\text{ m/s}$",
-        "$v_{\\text{mín}} = 20\\text{ m/s}$",
-        "$v_{\\text{mín}} = 14.14\\text{ m/s}$"
+        "La fuerza normal ejercida por el riel se anula ($N = 0$) y el peso actúa enteramente como la fuerza centrípeta requerida.",
+        "La aceleración centrípeta es exactamente cero.",
+        "La energía cinética es el triple de la energía potencial.",
+        "La fuerza centrífuga supera el peso del vehículo."
       ],
       "ans": 0,
-      "exp": "**Paso 1. Dinámica en el punto más alto del rizo:**\n- Fuerzas radiales hacia el centro: Peso ($mg$) + Fuerza Normal ($N$).\n- Segunda Ley en el eje centrípeto: $mg + N = m\\frac{v^2}{R}$.\n**Paso 2. Condición límite de despegue a mano:**\n- En la rapidez mínima, la fuerza normal con el riel tiende a cero ($N = 0$).\n- $mg = m\\frac{v_{\\text{mín}}^2}{R} \\implies v_{\\text{mín}}^2 = gR \\implies v_{\\text{mín}} = \\sqrt{gR}$.\n- Sustituyendo: $v_{\\text{mín}} = \\sqrt{10\\text{ m/s}^2 \\times 10\\text{ m}} = \\sqrt{100} = 10\\text{ m/s}$.\n**Paso 3. Conclusión:** La rapidez mínima en la cúspide es $10\\text{ m/s}$.\n**Respuesta correcta: A.**",
-      "maths": [],
-      "imgs": [],
-      "fig": "fql19-rizo-vertical"
+      "exp": "**Paso 1. Dinámica en el punto más alto:** En la cima del rizo, tanto el peso como la normal apuntan hacia el centro: $P + N = m\\frac{v^2}{R}$.\n**Paso 2. Rapidez mínima (despegue inminente):** La condición crítica ocurre cuando la vía deja de presionar al carrito ($N = 0$), quedando $mg = m\\frac{v^2}{R} \\implies v_{\\text{mín}} = \\sqrt{gR}$.\n**Respuesta correcta: A.**",
+      "maths": [
+        "N = 0 \\implies mg = m\\frac{v^2}{R} \\implies v_{\\text{mín}} = \\sqrt{gR}"
+      ],
+      "imgs": []
     },
     {
       "id": "fis-19ago-36",
@@ -1776,22 +1805,23 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 37,
       "d": "intermedio",
       "topics": [
-        "4.2.2-2daNewton"
+        "2.2.1-leyesNewton"
       ],
-      "ch": "fis-L07",
-      "t": "Dos Bloques Unidos por Cuerda",
-      "prompt": "Dos bloques $A$ de $3\\text{ kg}$ y $B$ de $2\\text{ kg}$ están unidos por una cuerda ligera sobre una mesa horizontal sin fricción. Se jala al bloque $A$ hacia la derecha con una fuerza horizontal constante $F = 20\\text{ N}$. ¿Cuál es la aceleración del conjunto y la tensión $T$ en la cuerda que une a los bloques?",
+      "ch": "fis-F02",
+      "t": "Tensión en Cuerda Intermedia entre Dos Bloques",
+      "prompt": "Dos bloques $A$ ($3\\text{ kg}$) y $B$ ($2\\text{ kg}$) están unidos por una cuerda ligera sobre una mesa horizontal sin fricción. Si se aplica una fuerza externa horizontal constante $F$ sobre el bloque $A$ para acelerar el sistema hacia adelante:",
       "opts": [
-        "Aceleración: $4\\text{ m/s}^2$; Tensión: $8\\text{ N}$.",
-        "Aceleración: $4\\text{ m/s}^2$; Tensión: $12\\text{ N}$.",
-        "Aceleración: $10\\text{ m/s}^2$; Tensión: $20\\text{ N}$.",
-        "Aceleración: $2\\text{ m/s}^2$; Tensión: $6\\text{ N}$."
+        "La tensión en la cuerda que une a los bloques es igual a la fuerza externa total $F$.",
+        "La tensión en la cuerda intermedia es menor que la fuerza externa total $F$, ya que la cuerda solo es responsable de acelerar al bloque posterior $B$.",
+        "La tensión en la cuerda intermedia es nula porque la mesa no tiene fricción.",
+        "El bloque $B$ experimenta el doble de aceleración que el bloque $A$."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Aceleración del sistema conjunto:**\n- Masa total: $M = m_A + m_B = 3 + 2 = 5\\text{ kg}$.\n- Aceleración: $a = \\frac{F}{M} = \\frac{20\\text{ N}}{5\\text{ kg}} = 4\\text{ m/s}^2$.\n**Paso 2. Cálculo de la tensión en la cuerda que jala al bloque posterior $B$:**\n- Diagrama de cuerpo libre para el bloque $B$ ($m_B = 2\\text{ kg}$):\n  La única fuerza horizontal sobre $B$ es la tensión $T$: $T = m_B \\cdot a = 2\\text{ kg} \\times 4\\text{ m/s}^2 = 8\\text{ N}$.\n- (Verificación en bloque $A$: $F - T = m_A \\cdot a \\implies 20 - 8 = 12\\text{ N} = 3\\text{ kg} \\times 4\\text{ m/s}^2$).\n**Paso 3. Conclusión:** $a = 4\\text{ m/s}^2$ y $T = 8\\text{ N}$.\n**Respuesta correcta: A.**",
-      "maths": [],
-      "imgs": [],
-      "fig": "fql19-dos-bloques-cuerda"
+      "ans": 1,
+      "exp": "**Paso 1. Segunda ley al sistema conjunto:** $F = (m_A + m_B)a \\implies a = \\frac{F}{m_A + m_B}$.\n**Paso 2. Segunda ley al bloque posterior $B$:** La única fuerza horizontal que acelera a $B$ es la tensión: $T = m_B a = F \\left(\\frac{m_B}{m_A + m_B}\\right) < F$.\n**Paso 3. Conclusión:** La tensión en la cuerda interior siempre es una fracción de la fuerza externa total aplicada.\n**Respuesta correcta: B.**",
+      "maths": [
+        "T = F\\left(\\frac{m_B}{m_A + m_B}\\right) < F"
+      ],
+      "imgs": []
     },
     {
       "id": "fis-19ago-38",
@@ -1799,20 +1829,22 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 38,
       "d": "intermedio",
       "topics": [
-        "4.2.3-trabajoPotencia"
+        "2.2.2-trabajoEnergia"
       ],
-      "ch": "fis-L13",
-      "t": "Potencia al Elevar Carga Verticalmente",
-      "prompt": "Una grúa eléctrica levanta un contenedor de masa $m = 600\\text{ kg}$ a una altura de $15\\text{ metros}$ con velocidad constante en un tiempo de $30\\text{ segundos}$ ($g = 10\\text{ m/s}^2$). ¿Qué potencia media útil desarrolla el motor de la grúa?",
+      "ch": "fis-F02",
+      "t": "Concepto de Potencia Mecánica a Rapidez Constante",
+      "prompt": "Si una máquina eleva una carga pesada verticalmente a velocidad constante $v$, la potencia mecánica media entregada por el motor se expresa conceptualmente como:",
       "opts": [
-        "$3000\\text{ W} = 3.0\\text{ kW}$",
-        "$90000\\text{ W} = 90\\text{ kW}$",
-        "$1500\\text{ W} = 1.5\\text{ kW}$",
-        "$6000\\text{ W} = 6.0\\text{ kW}$"
+        "El producto de la fuerza gravitatoria por la aceleración del sistema.",
+        "El producto de la fuerza de tracción (igual al peso) por la velocidad instantánea ($P = F \\cdot v = mg \\cdot v$).",
+        "El cociente entre la energía potencial y la distancia recorrida.",
+        "La mitad de la masa multiplicada por el cuadrado del tiempo."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Cálculo del trabajo mecánico contra la gravedad:**\n- $W = mgh = 600\\text{ kg} \\times 10\\text{ m/s}^2 \\times 15\\text{ m} = 90000\\text{ J}$.\n**Paso 2. Cálculo de la potencia media a mano:**\n- $P = \\frac{W}{t} = \\frac{90000\\text{ J}}{30\\text{ s}} = \\frac{9000}{3} = 3000\\text{ W} = 3.0\\text{ kW}$.\n**Paso 3. Conclusión:** La potencia desarrollada es $3.0\\text{ kW}$ ($3000\\text{ W}$).\n**Respuesta correcta: A.**",
-      "maths": [],
+      "ans": 1,
+      "exp": "**Paso 1. Definición de potencia:** $P = \\frac{W}{\\Delta t} = \\frac{F d}{\\Delta t} = F \\cdot v$.\n**Paso 2. Equilibrio dinámico:** Al subir a velocidad constante ($a = 0$), la fuerza de tracción equilibra exactamente al peso ($F = mg$), por lo que $P = mg \\cdot v$.\n**Respuesta correcta: B.**",
+      "maths": [
+        "P = F \\cdot v = mg \\cdot v"
+      ],
       "imgs": []
     },
     {
@@ -1843,20 +1875,23 @@ window.GUIA_BANK_FQL_19AGO = {
       "n": 40,
       "d": "intermedio",
       "topics": [
-        "4.2.2-circular"
+        "2.1.2-mcu"
       ],
-      "ch": "fis-L11",
-      "t": "Velocidad Angular y Período en MCU",
-      "prompt": "Un disco gira en un plano horizontal con Movimiento Circular Uniforme realizando $120\\text{ revoluciones por minuto (rpm)}$. ¿Cuál es su rapidez angular $\\omega$ en $\\text{rad/s}$ y su período de rotación $T$?",
+      "ch": "fis-F01",
+      "t": "Relación entre Período, Frecuencia y Velocidad Angular",
+      "prompt": "En un movimiento circular uniforme, si un cuerpo duplica su frecuencia de rotación ($f' = 2f$), ¿cómo cambian su período ($T$) y su velocidad angular ($\\omega$)?",
       "opts": [
-        "$\\omega = 4\\pi\\text{ rad/s} \\approx 12.57\\text{ rad/s}$; Período $T = 0.5\\text{ s}$.",
-        "$\\omega = 2\\pi\\text{ rad/s}$; Período $T = 1.0\\text{ s}$.",
-        "$\\omega = 120\\pi\\text{ rad/s}$; Período $T = 60\\text{ s}$.",
-        "$\\omega = 8\\pi\\text{ rad/s}$; Período $T = 0.25\\text{ s}$."
+        "El período se duplica y la velocidad angular se reduce a la mitad.",
+        "El período se reduce a la mitad ($T' = \\frac{T}{2}$) y la velocidad angular se duplica ($\\omega' = 2\\omega$).",
+        "Tanto el período como la velocidad angular se cuadruplican.",
+        "La velocidad angular permanece constante porque depende del radio."
       ],
-      "ans": 0,
-      "exp": "**Paso 1. Conversión de frecuencia a hercios (vueltas por segundo):**\n$f = \\frac{120\\text{ rev}}{60\\text{ s}} = 2\\text{ rev/s} = 2\\text{ Hz}$.\n**Paso 2. Cálculo a mano de rapidez angular y período:**\n- Rapidez angular: $\\omega = 2\\pi f = 2\\pi(2) = 4\\pi\\text{ rad/s} \\approx 12.57\\text{ rad/s}$.\n- Período: $T = \\frac{1}{f} = \\frac{1}{2\\text{ Hz}} = 0.5\\text{ s}$.\n**Paso 3. Conclusión:** $\\omega = 4\\pi\\text{ rad/s}$ y $T = 0.5\\text{ s}$.\n**Respuesta correcta: A.**",
-      "maths": [],
+      "ans": 1,
+      "exp": "**Paso 1. Relación fundamental de período y frecuencia:** $T = \\frac{1}{f}$. Si la frecuencia $f$ se duplica, el período $T$ se reduce a la mitad ($T' = T/2$).\n**Paso 2. Velocidad angular:** $\\omega = 2\\pi f$. Como $\\omega$ es directamente proporcional a $f$, al duplicar $f$, $\\omega$ se duplica ($\\omega' = 2\\omega$).\n**Respuesta correcta: B.**",
+      "maths": [
+        "T = \\frac{1}{f}",
+        "\\omega = 2\\pi f"
+      ],
       "imgs": []
     }
   ],

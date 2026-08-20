@@ -1,4 +1,4 @@
-/* Banco de Estudio EPN Día 2 — Exact Manus App Replica con Contenido Reportado Integral */
+/* Banco de Estudio EPN Día 2 — Exact Manus App Replica con Pareto 80/20 Reforzado en Física */
 window.STUDY_DATA = {
   "parte1": [
     {
@@ -21,14 +21,14 @@ window.STUDY_DATA = {
       "sections": [
         {
           "heading": "Distancia no es desplazamiento",
-          "body": "La distancia $d$ es la longitud total recorrida y siempre es positiva. El desplazamiento $\\Delta x = x_f - x_0$ es el vector neto entre la posición inicial y final."
+          "body": "La distancia $d$ es la longitud total recorrida (siempre positiva). El desplazamiento $\\Delta x = x_f - x_0$ es el vector neto entre la posición inicial y final."
         },
         {
           "heading": "Gráficas $v$ vs $t$",
           "body": "La pendiente de la gráfica $v-t$ representa la aceleración instantánea $a = \\frac{\\Delta v}{\\Delta t}$. El área bajo la curva corresponde al desplazamiento $\\Delta x$."
         }
       ],
-      "commonTrap": "No confundas rapidez media ($\\frac{\\text{distancia}}{t}$) con el módulo de la velocidad media ($\\frac{|\\Delta x|}{t}$). En una pista cerrada de $400\\text{ m}$, el desplazamiento es $\\Delta x = 0$.",
+      "commonTrap": "No confundas rapidez media ($\\frac{\\text{distancia}}{t}$) con el módulo de la velocidad media ($\\frac{|\\Delta x|}{t}$). En una pista circular cerrada de $400\\text{ m}$, el desplazamiento es $\\Delta x = 0$.",
       "stepByStep": [
         {
           "step": "1",
@@ -40,7 +40,7 @@ window.STUDY_DATA = {
         },
         {
           "step": "3",
-          "text": "Aplica la ecuación cinemática que relacione las variables conocidas."
+          "text": "Aplica la ecuación cinemática sin variables desconocidas superfluas."
         }
       ],
       "example": {
@@ -401,7 +401,7 @@ window.STUDY_DATA = {
       "subject": "fisica",
       "unit": "Parte II · Examen reportado 19 ago",
       "priority": "Esencial",
-      "eyebrow": "P2 · 01 · Energía",
+      "eyebrow": "P2 · 01 · Energía y Trabajo",
       "title": "Péndulo, rampa y arco: sigue la energía",
       "lead": "El reporte del 19 de agosto repitió transformaciones de energía mecánica. No memorices el dibujo: ubica el punto más alto, el punto más bajo y verifica si existe rozamiento.",
       "quickRule": "Punto más bajo = rapidez $v_{\\text{máx}}$ y energía cinética $K_{\\text{máx}}$. Punto más alto = energía potencial gravitatoria $U_{g,\\text{máx}}$. Rapidez: $v = \\sqrt{2gh}$.",
@@ -470,8 +470,8 @@ window.STUDY_DATA = {
           "body": "Un paquete liberado desde un avión en vuelo horizontal a $180\\text{ m/s}$ conserva $v_x = 180\\text{ m/s}$ y describe una trayectoria parabólica hacia adelante para un observador en tierra."
         },
         {
-          "heading": "Sandía lanzada verticalmente hacia arriba",
-          "body": "En el punto más alto, $v = 0\\text{ m/s}$, pero $a = g = 9.8\\text{ m/s}^2$ hacia abajo en todo instante. Al regresar al punto de partida, la rapidez es igual a la inicial ($|v| = v_0$)."
+          "heading": "Salto vertical de $1.25\\text{ m}$ (Reporte 19 ago)",
+          "body": "Tiempo de subida: $t = \\sqrt{\\frac{2h}{g}} = \\sqrt{\\frac{2(1.25)}{10}} = \\sqrt{0.25} = 0.5\\text{ s}$. Tiempo total en el aire: $t_{\\text{vuelo}} = 2 \\times 0.5 = 1.0\\text{ s}$."
         }
       ],
       "commonTrap": "No caigas en la trampa de marcar 'en el punto más alto la velocidad es cero'. Solo es cero la componente vertical $v_y$; la componente horizontal $v_x$ sigue activa.",
@@ -594,12 +594,100 @@ window.STUDY_DATA = {
       }
     },
     {
+      "id": "p2_fis_05",
+      "part": "parte2",
+      "subject": "fisica",
+      "unit": "Parte II · Examen reportado 19 ago",
+      "priority": "Esencial",
+      "eyebrow": "P2 · 05 · Ley de Hooke",
+      "title": "Fuerza restauradora y energía elástica",
+      "lead": "La fuerza ejercida por un resorte ideal es proporcional a su deformación ($F = kx$). La energía potencial elástica acumulada es proporcional al cuadrado de la deformación.",
+      "quickRule": "Ley de Hooke: $F = kx$. Energía potencial elástica: $U_e = \\frac{1}{2}kx^2$. Si la deformación se duplica ($2x$), la energía se cuadruplica ($4U_e$).",
+      "formula": "F = k x \\qquad U_e = \\frac{1}{2}k x^2 \\qquad E_m = \\frac{1}{2}m v^2 + \\frac{1}{2}k x^2 = \\text{cte}",
+      "variables": [
+        "$k$: constante elástica ($\\text{N/m}$)",
+        "$x$: deformación/elongación ($\\text{m}$)",
+        "$U_e$: energía elástica ($\\text{J}$)"
+      ],
+      "sections": [
+        {
+          "heading": "Conservación con resorte horizontal",
+          "body": "Al soltar una masa comprimida $x$ contra un resorte sobre superficie lisa, toda la energía elástica se convierte en energía cinética: $\\frac{1}{2}kx^2 = \\frac{1}{2}mv^2 \\implies v = x\\sqrt{\\frac{k}{m}}$."
+        }
+      ],
+      "commonTrap": "No olvides convertir los centímetros a metros antes de elevar $x$ al cuadrado ($10\\text{ cm} = 0.10\\text{ m}$).",
+      "stepByStep": [
+        {
+          "step": "1",
+          "text": "Convierte la deformación a metros: $x = \\frac{\\text{cm}}{100}$."
+        },
+        {
+          "step": "2",
+          "text": "Aplica $U_e = \\frac{1}{2}kx^2$."
+        },
+        {
+          "step": "3",
+          "text": "Iguala con la energía cinética $\\frac{1}{2}mv^2$ si se solicita la rapidez máxima."
+        }
+      ],
+      "example": {
+        "prompt": "Un resorte con $k = 200\\text{ N/m}$ se comprime $0.1\\text{ m}$. Calcule la energía potencial elástica almacenada.",
+        "steps": [
+          "1. $U_e = \\frac{1}{2} k x^2 = \\frac{1}{2}(200\\text{ N/m})(0.1\\text{ m})^2$.",
+          "2. $U_e = 100 \\times 0.01 = 1.0\\text{ J}$."
+        ],
+        "result": "Energía elástica almacenada: $U_e = 1.0\\text{ J}$"
+      }
+    },
+    {
+      "id": "p2_fis_06",
+      "part": "parte2",
+      "subject": "fisica",
+      "unit": "Parte II · Examen reportado 19 ago",
+      "priority": "Esencial",
+      "eyebrow": "P2 · 06 · Gravitación",
+      "title": "Ley de Gravitación Universal e inverso del cuadrado",
+      "lead": "La atracción gravitatoria entre dos masas es directamente proporcional al producto de sus masas e inversamente proporcional al cuadrado de la distancia que las separa.",
+      "quickRule": "Si la distancia al centro se duplica ($2r$), la fuerza gravitatoria y la aceleración de gravedad se reducen a la cuarta parte: $g' = \\frac{g}{4}$.",
+      "formula": "F_g = G\\frac{m_1 m_2}{r^2} \\qquad g = G\\frac{M}{r^2}",
+      "variables": [
+        "$G = 6.674 \\times 10^{-11}\\text{ N}\\cdot\\text{m}^2/\\text{kg}^2$",
+        "$M$: masa del planeta",
+        "$r$: distancia radial al centro"
+      ],
+      "sections": [
+        {
+          "heading": "Comportamiento del peso con la altura",
+          "body": "A una altura $h = R$ sobre la superficie terrestre (distancia al centro $r = 2R$), el peso de un objeto de $800\\text{ N}$ se reduce a $200\\text{ N}$ ($800 / 4$)."
+        }
+      ],
+      "commonTrap": "La distancia $r$ se mide siempre desde el CENTRO del planeta, no desde la superficie.",
+      "stepByStep": [
+        {
+          "step": "1",
+          "text": "Calcula la distancia total al centro: $r = R_{\\text{planeta}} + h$."
+        },
+        {
+          "step": "2",
+          "text": "Aplica el factor de escala cuadrático: si $r$ se multiplica por $k$, la fuerza se divide por $k^2$."
+        }
+      ],
+      "example": {
+        "prompt": "Si el radio terrestre es $R$ y una nave asciende hasta una distancia de $2R$ del centro de la Tierra, ¿en qué factor cambia la fuerza de atracción?",
+        "steps": [
+          "1. $F_1 = G\\frac{M m}{R^2}$.",
+          "2. $F_2 = G\\frac{M m}{(2R)^2} = \\frac{1}{4} F_1$."
+        ],
+        "result": "La fuerza se reduce a $\\frac{1}{4}$ de su valor en la superficie."
+      }
+    },
+    {
       "id": "p2_qui_01",
       "part": "parte2",
       "subject": "quimica",
       "unit": "Parte II · Examen reportado 19 ago",
       "priority": "Esencial",
-      "eyebrow": "P2 · 05 · Redox y Oxígeno",
+      "eyebrow": "P2 · 07 · Redox y Oxígeno",
       "title": "¿Qué hace el Oxígeno al reaccionar? (Redox)",
       "lead": "Reportado en la prueba: En reacciones de síntesis y combustión (ej. $2\\text{Mg} + \\text{O}_2 \\to 2\\text{MgO}$ o $4\\text{Fe} + 3\\text{O}_2 \\to 2\\text{Fe}_2\\text{O}_3$), el oxígeno molecular $\\text{O}_2$ pasa de estado de oxidación $0$ a $-2$.",
       "quickRule": "El Oxígeno GANA ELECTRONES (se reduce) y actúa como AGENTE OXIDANTE, provocando que el metal pierda electrones (se oxide).",
@@ -647,7 +735,7 @@ window.STUDY_DATA = {
       "subject": "quimica",
       "unit": "Parte II · Examen reportado 19 ago",
       "priority": "Esencial",
-      "eyebrow": "P2 · 06 · Estequiometría",
+      "eyebrow": "P2 · 08 · Estequiometría",
       "title": "Proporción estequiométrica exacta y reactivo limitante",
       "lead": "Reportado en la prueba: Se mezclan $24.0\\text{ g}$ de $\\text{Mg}$ con $16.0\\text{ g}$ de $\\text{O}_2$. Ambos reactivos se consumen en proporción $2:1$ exacta produciendo $40.0\\text{ g}$ de $\\text{MgO}$.",
       "quickRule": "$1.0\\text{ mol Mg}$ ($24\\text{ g}$) con $0.5\\text{ mol O}_2$ ($16\\text{ g}$) cumplen la relación $2:1$ exacta. Masa total por Lavoisier: $24 + 16 = 40.0\\text{ g de MgO}$.",
@@ -695,7 +783,7 @@ window.STUDY_DATA = {
       "subject": "quimica",
       "unit": "Parte II · Examen reportado 19 ago",
       "priority": "Esencial",
-      "eyebrow": "P2 · 07 · Números Cuánticos",
+      "eyebrow": "P2 · 09 · Números Cuánticos",
       "title": "Números cuánticos y configuración de valencia",
       "lead": "Reportado en la prueba: Determinar los números cuánticos del electrón diferencial del Azufre ($Z = 16$) y el orden de llenado según el diagrama de Moeller.",
       "quickRule": "Azufre $Z = 16$: configuración $1s^2 2s^2 2p^6 3s^2 3p^4$. Para el 4to electrón en $3p$: $n = 3$, $l = 1$, $m_l = -1$, $m_s = -\\frac{1}{2}$.",
@@ -743,7 +831,7 @@ window.STUDY_DATA = {
       "subject": "quimica",
       "unit": "Parte II · Examen reportado 19 ago",
       "priority": "Esencial",
-      "eyebrow": "P2 · 08 · Tabla Periódica",
+      "eyebrow": "P2 · 10 · Tabla Periódica",
       "title": "Tendencias periódicas y radio atómico en halógenos",
       "lead": "Reportado en la prueba: Comparación del radio atómico en los elementos halógenos (Grupo 17) y variación de la electronegatividad.",
       "quickRule": "En un mismo grupo, el radio atómico aumenta hacia abajo por adición de capas electrónicas: $\\text{F} < \\text{Cl} < \\text{Br} < \\text{I}$. La electronegatividad aumenta hacia arriba: $\\text{F}$ es el máximo (4.0).",
@@ -790,7 +878,7 @@ window.STUDY_DATA = {
       "subject": "quimica",
       "unit": "Parte II · Examen reportado 19 ago",
       "priority": "Esencial",
-      "eyebrow": "P2 · 09 · Fuerzas Intermoleculares",
+      "eyebrow": "P2 · 11 · Fuerzas Intermoleculares",
       "title": "Puentes de hidrógeno y geometría tetraédrica",
       "lead": "Reportado en la prueba: Reconocimiento de sustancias que forman puentes de hidrógeno y moléculas de geometría tetraédrica.",
       "quickRule": "Puente de Hidrógeno: ocurre solo cuando el $\\text{H}$ está unido directamente a $\\text{F, O}$ o $\\text{N}$ (ej. $\\text{H}_2\\text{O}, \\text{NH}_3, \\text{HF}$). Moléculas tetraédricas ($109.5^\\circ$): $\\text{CH}_4, \\text{SiCl}_4, \\text{NH}_4^+$.",
@@ -832,9 +920,9 @@ window.STUDY_DATA = {
       "subject": "quimica",
       "unit": "Parte II · Examen reportado 19 ago",
       "priority": "Esencial",
-      "eyebrow": "P2 · 10 · Nomenclatura y Conversiones",
+      "eyebrow": "P2 · 12 · Nomenclatura y Conversiones",
       "title": "Nomenclatura Stock y conversiones de unidades",
-      "lead": "Reportado en la prueba: Nombres Stock oficiales ($\text{FeCl}_3$), dicromato de potasio ($\text{K}_2\text{Cr}_2\text{O}_7$) y conversiones rápidas ($1\text{ t} = 1000\text{ kg}$, $230\text{ cm}^3 \to \text{m}^3$).",
+      "lead": "Reportado en la prueba: Nombres Stock oficiales ($\\text{FeCl}_3$), dicromato de potasio ($\\text{K}_2\\text{Cr}_2\\text{O}_7$) y conversiones rápidas ($1\\text{ t} = 1000\\text{ kg}$, $230\\text{ cm}^3 \\to \\text{m}^3$).",
       "quickRule": "Stock usa números romanos para el Nox del metal: $\\text{FeCl}_3 = \\text{cloruro de hierro (III)}$. Factores: $1\\text{ m}^3 = 10^6\\text{ cm}^3 \\implies 230\\text{ cm}^3 = 2.30 \\times 10^{-4}\\text{ m}^3$.",
       "formula": "1\\text{ tonelada} = 1000\\text{ kg} \\qquad 1\\text{ m}^3 = 10^6\\text{ cm}^3 = 1000\\text{ L}",
       "variables": [
@@ -849,7 +937,7 @@ window.STUDY_DATA = {
           "body": "$230\\text{ cm}^3 \\times \\left(\\frac{1\\text{ m}}{100\\text{ cm}}\\right)^3 = 230 \\times 10^{-6}\\text{ m}^3 = 2.30 \\times 10^{-4}\\text{ m}^3$."
         }
       ],
-      "commonTrap": "Al convertir unidades al cubo ($\text{cm}^3 \to \text{m}^3$), no dividas para $100$: debes elevar el factor al cubo ($100^3 = 1\\,000\\,000$).",
+      "commonTrap": "Al convertir unidades al cubo ($\\text{cm}^3 \\to \\text{m}^3$), no dividas para $100$: debes elevar el factor al cubo ($100^3 = 1\\,000\\,000$).",
       "stepByStep": [
         {
           "step": "1",
@@ -879,7 +967,7 @@ window.STUDY_DATA = {
       "subject": "lenguaje",
       "unit": "Parte II · Examen reportado 19 ago",
       "priority": "Esencial",
-      "eyebrow": "P2 · 11 · Lectura Crítica",
+      "eyebrow": "P2 · 13 · Lectura Crítica",
       "title": "Método infalible para la Tesis y Argumentos",
       "lead": "La tesis es la postura u opinión central debatible que defiende el autor a lo largo del texto. Los ejemplos, estadísticas y citas son argumentos de apoyo.",
       "quickRule": "Pregúntate: ¿Qué opinión quiere el autor que yo acepte? Si es un hecho objetivo no debatible, es evidencia o dato, no la tesis.",
@@ -925,7 +1013,7 @@ window.STUDY_DATA = {
       "subject": "lenguaje",
       "unit": "Parte II · Examen reportado 19 ago",
       "priority": "Esencial",
-      "eyebrow": "P2 · 12 · Tipos de Texto y Conectores",
+      "eyebrow": "P2 · 14 · Tipos de Texto y Conectores",
       "title": "Tono del autor, cohesión y conectores lógicos",
       "lead": "Reportado en la prueba: Identificar la intención comunicativa del texto (informativo, crítico, reflexivo, argumentativo) y elegir el conector lógico adecuado.",
       "quickRule": "Crítico = señala fallas o problemas. Reflexivo = invita a pensar. Argumentativo = defiende una postura. Informativo = expone datos objetivos.",
@@ -963,6 +1051,36 @@ window.STUDY_DATA = {
     }
   ],
   "quizzes": [
+    {
+      "id": "q_hooke_u",
+      "topicId": "p2_fis_05",
+      "subject": "fisica",
+      "topic": "Ley de Hooke",
+      "prompt": "Si la deformación de un resorte ideal se duplica de $x$ a $2x$, ¿qué ocurre con la energía potencial elástica almacenada ($U_e$)?",
+      "options": [
+        "Se mantiene igual.",
+        "Se duplica ($2U_e$).",
+        "Se triplica ($3U_e$).",
+        "Se cuadruplica ($4U_e$)."
+      ],
+      "answer": 3,
+      "explanation": "Como la energía potencial elástica es proporcional al cuadrado de la deformación ($U_e = \\frac{1}{2}kx^2$), al duplicar $x$, la energía aumenta por un factor $(2)^2 = 4$."
+    },
+    {
+      "id": "q_grav_dist",
+      "topicId": "p2_fis_06",
+      "subject": "fisica",
+      "topic": "Gravitación",
+      "prompt": "Si la distancia entre dos masas se duplica ($r \\to 2r$), la fuerza de atracción gravitatoria entre ellas:",
+      "options": [
+        "Se duplica.",
+        "Se reduce a la mitad ($1/2$).",
+        "Se reduce a la cuarta parte ($1/4$).",
+        "Se reduce a la octava parte ($1/8$)."
+      ],
+      "answer": 2,
+      "explanation": "Por la Ley de Gravitación Universal ($F = G\\frac{m_1 m_2}{r^2}$), la fuerza es inversamente proporcional al cuadrado de la distancia: al duplicar $r$, $F' = \\frac{F}{2^2} = \\frac{F}{4}$."
+    },
     {
       "id": "q_redox_o2",
       "topicId": "p2_qui_01",
@@ -1006,7 +1124,7 @@ window.STUDY_DATA = {
         "$\\text{F} < \\text{I} < \\text{Cl} < \\text{Br}$"
       ],
       "answer": 1,
-      "explanation": "En un grupo de la tabla periódica, el radio atómico aumenta hacia abajo conforme aumentan los niveles de energía: $\text{F} < \text{Cl} < \text{Br} < \text{I}$."
+      "explanation": "En un grupo de la tabla periódica, el radio atómico aumenta hacia abajo conforme aumentan los niveles de energía: $\\text{F} < \\text{Cl} < \\text{Br} < \\text{I}$."
     },
     {
       "id": "q_rampa_vs_vertical",
@@ -1021,7 +1139,7 @@ window.STUDY_DATA = {
         "La fuerza requerida en ambos casos es exactamente la misma."
       ],
       "answer": 2,
-      "explanation": "El trabajo depende únicamente del cambio de energía potencial gravitatoria ($\\Delta U_g = mgh$). La rampa permite aplicar menor fuerza ($F = mg\\sin\theta$) distribuida a lo largo de una distancia mayor."
+      "explanation": "El trabajo depende únicamente del cambio de energía potencial gravitatoria ($\\Delta U_g = mgh$). La rampa permite aplicar menor fuerza ($F = mg\\sin\\theta$) distribuida a lo largo de una distancia mayor."
     },
     {
       "id": "q_newton_cuerda",
@@ -1051,7 +1169,7 @@ window.STUDY_DATA = {
         "La aceleración apunta en la misma dirección tangente que la velocidad."
       ],
       "answer": 2,
-      "explanation": "En MCU la rapidez no varía, pero la dirección del vector velocidad cambia continuamente, originando una aceleración centrípeta $a_c = \frac{v^2}{r}$ dirigida hacia el centro."
+      "explanation": "En MCU la rapidez no varía, pero la dirección del vector velocidad cambia continuamente, originando una aceleración centrípeta $a_c = \\frac{v^2}{r}$ dirigida hacia el centro."
     },
     {
       "id": "q1",
@@ -1066,7 +1184,7 @@ window.STUDY_DATA = {
         "La velocidad apunta hacia arriba."
       ],
       "answer": 1,
-      "explanation": "En el ápice, la velocidad instantánea se anula ($v = 0$), pero la aceleración de la gravedad sigue actuando hacia abajo ($a = g = 9.8\text{ m/s}^2$)."
+      "explanation": "En el ápice, la velocidad instantánea se anula ($v = 0$), pero la aceleración de la gravedad sigue actuando hacia abajo ($a = g = 9.8\\text{ m/s}^2$)."
     },
     {
       "id": "q2",
@@ -1081,7 +1199,7 @@ window.STUDY_DATA = {
         "$100\\text{ m/s}^2$"
       ],
       "answer": 1,
-      "explanation": "Segunda ley de Newton: $a = \frac{F}{m} = \frac{20\text{ N}}{5\text{ kg}} = 4\text{ m/s}^2$."
+      "explanation": "Segunda ley de Newton: $a = \\frac{F}{m} = \\frac{20\\text{ N}}{5\\text{ kg}} = 4\\text{ m/s}^2$."
     },
     {
       "id": "q3",
@@ -1096,7 +1214,7 @@ window.STUDY_DATA = {
         "Solo durante la fase de ascenso."
       ],
       "answer": 0,
-      "explanation": "En el punto más bajo, la energía potencial gravitatoria es mínima ($h = 0$) y toda la energía mecánica se ha transformado en energía cinética máxima ($K_{\text{máx}} = \frac{1}{2}m v_{\text{máx}}^2$)."
+      "explanation": "En el punto más bajo, la energía potencial gravitatoria es mínima ($h = 0$) y toda la energía mecánica se ha transformado en energía cinética máxima ($K_{\\text{máx}} = \\frac{1}{2}m v_{\\text{máx}}^2$)."
     },
     {
       "id": "q4",
@@ -1111,7 +1229,7 @@ window.STUDY_DATA = {
         "$0.5\\text{ N}$"
       ],
       "answer": 1,
-      "explanation": "Aceleración: $a = \frac{14 - 2}{4} = 3.0\text{ m/s}^2$. Fuerza neta: $F_{\text{neta}} = m a = (1.0\text{ kg})(3.0\text{ m/s}^2) = 3.0\text{ N}$."
+      "explanation": "Aceleración: $a = \\frac{14 - 2}{4} = 3.0\\text{ m/s}^2$. Fuerza neta: $F_{\\text{neta}} = m a = (1.0\\text{ kg})(3.0\\text{ m/s}^2) = 3.0\\text{ N}$."
     },
     {
       "id": "q5",
@@ -1141,7 +1259,7 @@ window.STUDY_DATA = {
         "Sobran $8\\text{ g}$ de $\\text{Mg}$ sin reaccionar."
       ],
       "answer": 1,
-      "explanation": "$24\text{ g Mg} = 1.0\text{ mol}$; $16\text{ g O}_2 = 0.5\text{ mol}$. La proporción $1.0 : 0.5$ coincide exactamente con la estequiometría $2:1$. Por tanto, ambos se consumen por completo produciendo $40.0\text{ g}$ de $\\text{MgO}$."
+      "explanation": "$24\\text{ g Mg} = 1.0\\text{ mol}$; $16\\text{ g O}_2 = 0.5\\text{ mol}$. La proporción $1.0 : 0.5$ coincide exactamente con la estequiometría $2:1$. Por tanto, ambos se consumen por completo produciendo $40.0\\text{ g}$ de $\\text{MgO}$."
     },
     {
       "id": "q7",

@@ -1070,7 +1070,7 @@ fis_items_data = [
         ],
         "ch": "fis-L16",
         "t": "Pista de Patinaje y Puntos de Energía",
-        "fig": None,
+        "fig": "fql19-pista-patinador",
         "prompt": "En una pista de patinaje sin fricción con desniveles, un patinador desciende pasando por los puntos $A$ (más alto), $B$ (intermedio), $C$ (punto más bajo) y $D$ (curva de ascenso). ¿En qué punto la energía potencial gravitatoria es máxima y en cuál la rapidez es máxima?",
         "opts": [
             "Energía potencial máxima en A; rapidez máxima en C.",
@@ -1274,7 +1274,7 @@ fis_items_data = [
         ],
         "ch": "fis-L09",
         "t": "Ángulo de Inclinación Crítico y Rozamiento",
-        "fig": None,
+        "fig": "fql19-plano-inclinado-45",
         "prompt": "Se coloca un bloque sobre una tabla horizontal y se eleva lentamente uno de sus extremos. El bloque comienza a deslizarse justo cuando el ángulo de inclinación de la tabla alcanza $\\theta = 45^\\circ$. ¿Cuál es el coeficiente de rozamiento estático $\\mu_s$ entre el bloque y la tabla?",
         "opts": [
             "$\\mu_s = 1.00$",
@@ -1308,7 +1308,7 @@ fis_items_data = [
         ],
         "ch": "fis-L16",
         "t": "Rizo Vertical y Rapidez Crítica",
-        "fig": None,
+        "fig": "fql19-rizo-vertical",
         "prompt": "Un carrito de montaña rusa ingresa a un rizo circular vertical de radio $R = 10\\text{ m}$. Despreciando la fricción y con $g = 10\\text{ m/s}^2$, ¿cuál es la rapidez mínima que debe tener el carrito en el punto más alto del rizo para completar la vuelta sin despegarse de la vía?",
         "opts": [
             "$v_{\\text{mín}} = 10\\text{ m/s}$",
@@ -1342,7 +1342,7 @@ fis_items_data = [
         ],
         "ch": "fis-L07",
         "t": "Dos Bloques Unidos por Cuerda",
-        "fig": None,
+        "fig": "fql19-dos-bloques-cuerda",
         "prompt": "Dos bloques $A$ de $3\\text{ kg}$ y $B$ de $2\\text{ kg}$ están unidos por una cuerda ligera sobre una mesa horizontal sin fricción. Se jala al bloque $A$ hacia la derecha con una fuerza horizontal constante $F = 20\\text{ N}$. ¿Cuál es la aceleración del conjunto y la tensión $T$ en la cuerda que une a los bloques?",
         "opts": [
             "Aceleración: $4\\text{ m/s}^2$; Tensión: $8\\text{ N}$.",
@@ -1946,7 +1946,7 @@ qui_items_data = [
         ],
         "ch": "qui-L12",
         "t": "Geometría Molecular del Metano",
-        "fig": None,
+        "fig": "fql19-geometria-ch4",
         "prompt": "La molécula de metano ($\\text{CH}_4$) consta de un átomo central de carbono unido a cuatro átomos de hidrógeno. De acuerdo con la teoría de repulsión de pares de electrones de la capa de valencia (RPECV), ¿qué tipo de hibridación posee el carbono, cuál es su geometría molecular y qué ángulo forman sus enlaces?",
         "opts": [
             "Hibridación $sp^3$, geometría tetraédrica con ángulos de enlace de $109.5^\\circ$.",
@@ -1963,7 +1963,7 @@ qui_items_data = [
         ],
         "ch": "qui-L11",
         "t": "Octeto Incompleto en Trifluoruro de Boro",
-        "fig": None,
+        "fig": "fql19-geometria-bf3",
         "prompt": "El trifluoruro de boro ($\\text{BF}_3$) es una excepción común a la regla del octeto. ¿Cuántos electrones de valencia rodean al átomo central de boro en su estructura de Lewis y cuál es la geometría espacial de la molécula?",
         "opts": [
             "$6\\text{ electrones}$ (octeto incompleto/deficiente), con geometría trigonal plana ($120^\\circ$).",

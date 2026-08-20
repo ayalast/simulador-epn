@@ -1236,9 +1236,15 @@ function seedDia2SeenFromHistory(){
     if(!id) return;
     var k = null;
     var sid = String(id);
-    if(subj==='fis' || sid.indexOf('fis-d2')===0) k='fis-d2';
-    else if(subj==='qui' || sid.indexOf('qui-d2')===0) k='qui-d2';
-    else if(subj==='len' || sid.indexOf('len-d2')===0) k='len-d2';
+    if(sid.indexOf('fis-19ago')===0) k='fis-19ago';
+    else if(sid.indexOf('qui-19ago')===0) k='qui-19ago';
+    else if(sid.indexOf('len-19ago')===0) k='len-19ago';
+    else if(sid.indexOf('fis-d2')===0) k='fis-d2';
+    else if(sid.indexOf('qui-d2')===0) k='qui-d2';
+    else if(sid.indexOf('len-d2')===0) k='len-d2';
+    else if(subj==='fis') k='fis-d2';
+    else if(subj==='qui') k='qui-d2';
+    else if(subj==='len') k='len-d2';
     if(!k) return;
     if(!SEEN1000SET[k]){ SEEN1000SET[k]={}; SEEN1000[k]=SEEN1000[k]||[]; }
     if(!SEEN1000SET[k][id]){ SEEN1000SET[k][id]=1; SEEN1000[k].push(id); }

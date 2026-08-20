@@ -178,8 +178,8 @@ function renderCurrentTopic() {
   if (heroPart) heroPart.textContent = currentPart === 'parte2' ? 'PARTE II · EXAMEN REPORTADO 19 AGO' : 'PARTE I · FUNDAMENTOS';
   if (heroPriority) heroPriority.textContent = (topic.priority || 'Esencial').toUpperCase();
   if (heroEyebrow) heroEyebrow.textContent = `${(topic.subject || 'Física').toUpperCase()} · ${topic.eyebrow}`;
-  if (heroTitle) heroTitle.textContent = topic.title;
-  if (heroLead) heroLead.textContent = topic.lead;
+  if (heroTitle) heroTitle.innerHTML = topic.title;
+  if (heroLead) heroLead.innerHTML = topic.lead;
 
   // Update Details Card Body
   const container = document.getElementById('topic-detail-card');

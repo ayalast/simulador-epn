@@ -28,8 +28,8 @@ function ok(msg) {
 
 /* ---------- 1) Load tex from app.js head ---------- */
 const app = fs.readFileSync(path.join(root, 'app.js'), 'utf8');
-const cut = app.indexOf('/* ---------- Auto-Recuperación');
-const head = cut > 0 ? app.slice(0, cut) : app.slice(0, 8000);
+const endTex = app.indexOf('var tex = window.tex;');
+const head = endTex > 0 ? app.slice(0, endTex + 'var tex = window.tex;'.length) : app.slice(0, 12000);
 const sandbox = { window: {}, console };
 sandbox.window = sandbox;
 vm.runInNewContext(head, sandbox);

@@ -14,6 +14,7 @@ Hay **dos mundos** en la barra: **Guía EPN** (`S.area === 'guia'`) y **Aula Bar
 | Guía oficial (intermedio) | Home Guía → «Simuladores actuales» | `guia-bank-1000-intermedio.js` → `GUIA_BANK_1000` | `pickForGuia1000(..., 'todos')` | **No.** Banco fijo de nivel oficial. |
 | Entrenamiento avanzado F/Q/L | Home Guía → «Nuevos · entrenamiento avanzado» | `guia-bank-fql-avanzado.js` → `GUIA_BANK_FQL_AVANZADO` | `pickForGuia1000(..., 'todos', GUIA_BANK_FQL_AVANZADO, 'fis-avz')` | **No.** Toma el banco avanzado entero. |
 | Día 2 formato real | Home Guía → card «Día 2 · formato real» | `guia-bank-fql-dia2.js` → `GUIA_BANK_FQL_DIA2` | `pickDia2Packs` (textos/casos enteros) + `pickForGuia1000` química `strictUnseen` | **No.** El set lo elige el formato oficial. |
+| Prueba Real 19 Ago | Home Guía → card «Prueba Real 19 Ago» | `guia-bank-fql-19ago.js` → `GUIA_BANK_FQL_19AGO` | `fill19AgoSubject` (4 textos LEN + 20 FIS conceptual + 20 QUI) | **No.** Formato real 60 preguntas / 60 min. |
 | 30 simuladores MAT | Home Guía, pestañas Intermedio / Difícil / Experto | `guia-bank-mat-1500.js` + `simuladores-programados.js` | Lista fija `question_ids` por `sim_id` | **No en la ficha.** El nivel es la pestaña + el `sim.nivel`. |
 | Intensivo filtro | Home Guía, bloque filtro | `guia-bank-filtro-rotativo.js` + `simuladores-filtro.js` | `pickRotatingFiltroBank` (slots por familia) | **No.** |
 | Examen 69P | Home Guía → botón «Iniciar examen 69P» | `guia-bank-69.js` | Orden fijo del examen oficial | **No.** |
@@ -21,7 +22,7 @@ Hay **dos mundos** en la barra: **Guía EPN** (`S.area === 'guia'`) y **Aula Bar
 Cursos guía muestreados (no programados):
 
 - Oficiales: `guia_mat30`, `guia_fql120`, `guia_fis`, `guia_qui`, `guia_len` — array `GUIA_COURSES_OFICIAL`.
-- Avanzados: `guia_fis_avz`, `guia_qui_avz`, `guia_len_avz`, `guia_fql_avz` (corto 15+15+15), `guia_fql_dia2` (Día 2 real 20+20+20 en bloques) — array `GUIA_COURSES_AVZ`.
+- Avanzados: `guia_fis_avz`, `guia_qui_avz`, `guia_len_avz`, `guia_fql_avz` (corto 15+15+15), `guia_fql_dia2` (Día 2 real 20+20+20 en bloques), `guia_fql_19ago` (Prueba Real 19 Ago 20+20+20) — array `GUIA_COURSES_AVZ`.
 - Unión: `GUIA_COURSES`.
 
 La regla de UI está centralizada:

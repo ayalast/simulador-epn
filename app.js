@@ -789,7 +789,7 @@ function quoteClass(t){
   return '';
 }
 function lookupFig(name){
-  var regs = [window.FIG_FILTRO, window.FIG_FIS, window.FIG_QUI, window.FIG_LEN, window.FIG_AVZ];
+  var regs = [window.FIG_FILTRO, window.FIG_FIS, window.FIG_QUI, window.FIG_LEN, window.FIG_AVZ, window.FIG_19AGO];
   for (var i = 0; i < regs.length; i++) {
     var reg = regs[i];
     if (reg && reg[name]) return reg[name]();
@@ -981,14 +981,14 @@ function loadActiveRaw(){ try{ var v=localStorage.getItem(ACTIVE_KEY); return v?
 var SEENSET = {};
 ['mat','trig','ineq','fis','qui','len'].forEach(function(k){ SEEN[k] = SEEN[k]||[]; SEENSET[k] = {}; SEEN[k].forEach(function(i){ SEENSET[k][i]=1; }); });
 var SEEN1000SET = {};
-['mat','fis','qui','len','filtro','fis-avz','qui-avz','len-avz','fis-d2','qui-d2','len-d2'].forEach(function(k){ SEEN1000[k]=SEEN1000[k]||[]; SEEN1000SET[k]={}; SEEN1000[k].forEach(function(id){ SEEN1000SET[k][id]=1; }); });
+['mat','fis','qui','len','filtro','fis-avz','qui-avz','len-avz','fis-d2','qui-d2','len-d2','fis-19ago','qui-19ago','len-19ago'].forEach(function(k){ SEEN1000[k]=SEEN1000[k]||[]; SEEN1000SET[k]={}; SEEN1000[k].forEach(function(id){ SEEN1000SET[k][id]=1; }); });
 
 var LEVELS = [{k:'facil',n:'F\u00e1cil',c:'f1'},{k:'medio',n:'Intermedio',c:'f2'},{k:'dificil',n:'Dif\u00edcil',c:'f3'},{k:'experto',n:'Experto',c:'f4'},{k:'todos',n:'Mezclado',c:'f0'}];
 var GUIA_COURSES_OFICIAL = ['guia_mat30','guia_fql120','guia_fis','guia_qui','guia_len'];
-var GUIA_COURSES_AVZ = ['guia_fis_avz','guia_qui_avz','guia_len_avz','guia_fql_avz','guia_fql_dia2'];
+var GUIA_COURSES_AVZ = ['guia_fis_avz','guia_qui_avz','guia_len_avz','guia_fql_avz','guia_fql_dia2','guia_fql_19ago'];
 var GUIA_COURSES = GUIA_COURSES_OFICIAL.concat(GUIA_COURSES_AVZ);
 function isGuiaAvzCourse(k){ return GUIA_COURSES_AVZ.indexOf(k)>=0; }
-function isGuiaDia2Course(k){ return k==='guia_fql_dia2'; }
+function isGuiaDia2Course(k){ return k==='guia_fql_dia2' || k==='guia_fql_19ago'; }
 /* Solo el Aula Barreno filtra el banco con las pastillas Fácil/Intermedio/Difícil/Experto/Mezclado.
    Guía oficial, avanzado, 30 MAT y filtro eligen el set por simulador, no por cfg.level. */
 var AULA_LEVEL_COURSES = ['mat','trig','ineq','fis','qui','len','mix'];
@@ -1015,6 +1015,7 @@ var COURSES = {
   guia_len_avz:{key:'guia_len_avz',name:'NUEVO · Lenguaje avanzado (20 preg · 50 min)',short:'LEN AVZ',full:'Entrenamiento avanzado de Lenguaje — por encima del simulador oficial',desc:'44 ítems de lectura crítica, falacias y coherencia, más exigentes que el oficial. Esquemas redibujados.',color:'#a16207',icon:'📝',nuevo:true},
   guia_fql_avz:{key:'guia_fql_avz',name:'NUEVO · Combinado avanzado corto (45 preg · 120 min)',short:'FQL AVZ',full:'Entrenamiento avanzado corto — 15+15+15 intercaladas',desc:'15 Física + 15 Química + 15 Lenguaje intercaladas. Más difíciles que el oficial. No es el formato de bloques del Día 2.',color:'#7c2d12',icon:'🧪',nuevo:true},
   guia_fql_dia2:{key:'guia_fql_dia2',name:'NUEVO · Día 2 real avanzado (60 preg · 120 min)',short:'DÍA 2 REAL',full:'Simulacro Día 2 — formato oficial (20+20+20 · 120 min)',desc:'Como el segundo día de la EPN: 20 Lenguaje (un texto, varias preguntas), 20 Física (un caso, varias preguntas) y 20 Química, en bloques, 120 minutos. Más exigente que el simulador de 69. Rota textos y casos; no repite lo ya visto.',color:'#9a3412',icon:'📋',nuevo:true},
+  guia_fql_19ago:{key:'guia_fql_19ago',name:'NUEVO · Prueba Real 19 Ago (60 preg · 60 min)',short:'19 AGO REAL',full:'Simulacro Día 2 — Filtradas y Reales 19 Agosto (60 preg · 60 min)',desc:'Basado fielmente en el examen real del 19 de agosto: 20 Lenguaje (4 lecturas), 20 Física (80% conceptual, mecánica/energía) y 20 Química (teoría atómica, enlaces, estequiometría). Mínimo 6 por materia.',color:'#b91c1c',icon:'🎯',nuevo:true},
   trig:{key:'trig',name:'Identidades Trigonométricas',short:'Trigonometría Especial',full:'Taller Especializado: Identidades Trigonométricas',color:'#7b2cbf',icon:'📐',
        desc:'Práctica enfocada en identidades pitagóricas, recíprocas, de cociente, simplificación de expresiones y ecuaciones.',
        prev:'Examen Lenguaje EPN 2026-B',next:'Taller Especializado: Inecuaciones y Valor Absoluto'},
@@ -1037,7 +1038,7 @@ var COURSES = {
        desc:'Las cuatro \u00e1reas mezcladas en un solo intento cronometrado, como el examen real.',
        prev:'Examen Lenguaje EPN 2026-B',next:'Estad\u00edsticas de progreso'}
 };
-var CKEYS = ['mat','trig','ineq','fis','qui','len','mix','guia_mat30','guia_fql120','guia_fis','guia_qui','guia_len','guia_fis_avz','guia_qui_avz','guia_len_avz','guia_fql_avz','guia_fql_dia2'];
+var CKEYS = ['mat','trig','ineq','fis','qui','len','mix','guia_mat30','guia_fql120','guia_fis','guia_qui','guia_len','guia_fis_avz','guia_qui_avz','guia_len_avz','guia_fql_avz','guia_fql_dia2','guia_fql_19ago'];
 var SUBJ = ['mat','trig','ineq','fis','qui','len'];
 var EXAM = ['mat','fis','qui','len'];
 SUBJ.forEach(function(k){ BANK[k].forEach(function(q,i){ q.__s=k; q.__i=i; }); });
@@ -1054,7 +1055,7 @@ function defaultGuiaCfg(){
     guia_mat30:{n:30,min:90}, guia_fql120:{n:60,min:120},
     guia_fis:{n:20,min:40}, guia_qui:{n:20,min:40}, guia_len:{n:20,min:40},
     guia_fis_avz:{n:20,min:50}, guia_qui_avz:{n:20,min:50}, guia_len_avz:{n:20,min:50},
-    guia_fql_avz:{n:45,min:120}, guia_fql_dia2:{n:60,min:120}
+    guia_fql_avz:{n:45,min:120}, guia_fql_dia2:{n:60,min:120}, guia_fql_19ago:{n:60,min:60}
   };
 }
 function countFor(k){
@@ -1062,7 +1063,7 @@ function countFor(k){
     cfg.guiaCfg = cfg.guiaCfg || defaultGuiaCfg();
     var g=cfg.guiaCfg[k]; if(g && g.n) return Math.max(5, Math.min(60, g.n));
     if(k==='guia_mat30') return 30;
-    if(k==='guia_fql120' || k==='guia_fql_dia2') return 60;
+    if(k==='guia_fql120' || k==='guia_fql_dia2' || k==='guia_fql_19ago') return 60;
     if(k==='guia_fql_avz') return 45;
     return 20;
   }
@@ -1073,6 +1074,7 @@ function minutesFor(k){
     cfg.guiaCfg = cfg.guiaCfg || defaultGuiaCfg();
     var g=cfg.guiaCfg[k]; if(g && g.min) return Math.max(10, Math.min(180, g.min));
     if(k==='guia_mat30') return 90;
+    if(k==='guia_fql_19ago') return 60;
     if(k==='guia_fql120' || k==='guia_fql_avz' || k==='guia_fql_dia2') return 120;
     if(isGuiaAvzCourse(k)) return 50;
     return 40;
@@ -1249,12 +1251,12 @@ function seedDia2SeenFromHistory(){
   }
   (typeof liveHist==='function' ? liveHist() : (HIST||[])).forEach(function(r){
     if(!r || r.deleted) return;
-    if(r.course==='guia_fql_dia2') eatQs(r.qs);
+    if(r.course==='guia_fql_dia2' || r.course==='guia_fql_19ago') eatQs(r.qs);
   });
-  if(S.attempt && S.attempt.course==='guia_fql_dia2') eatQs(S.attempt.qs);
+  if(S.attempt && (S.attempt.course==='guia_fql_dia2' || S.attempt.course==='guia_fql_19ago')) eatQs(S.attempt.qs);
   try{
     var raw = loadActiveRaw();
-    if(raw && raw.course==='guia_fql_dia2') eatQs(raw.qs);
+    if(raw && (raw.course==='guia_fql_dia2' || raw.course==='guia_fql_19ago')) eatQs(raw.qs);
   }catch(e){}
 }
 
@@ -1299,6 +1301,54 @@ function fillDia2Subject(subject, want, notes){
   });
   saveSeen1000();
   if(picked.length < want) notes.push('Día 2 '+subject.toUpperCase()+': banco con '+bank.length+' ítems, se entregan '+picked.length+'/'+want+'.');
+  return picked;
+}
+
+function fill19AgoSubject(subject, want, notes){
+  var root = window.GUIA_BANK_FQL_19AGO || {};
+  var bank = root[subject] || [];
+  var packs = (root.packs && root.packs[subject]) || [];
+  var seenKey = subject + '-19ago';
+  if(!SEEN1000SET[seenKey]){ SEEN1000SET[seenKey]={}; SEEN1000[seenKey]=SEEN1000[seenKey]||[]; }
+  var byId = {};
+  bank.forEach(function(q){ byId[q.id]=q; });
+  var picked = [];
+  var used = {};
+  function isSeen(id){ return !!(SEEN1000SET[seenKey] && SEEN1000SET[seenKey][id]); }
+  function addQ(q){
+    if(!q || used[q.id] || picked.length>=want) return false;
+    used[q.id]=1;
+    picked.push(q);
+    return true;
+  }
+  function addPack(p){
+    var qs = (p.qids||[]).map(function(id){ return byId[id]; }).filter(Boolean);
+    if(!qs.length || picked.length+qs.length>want) return false;
+    for(var i=0;i<qs.length;i++){ if(used[qs[i].id]) return false; }
+    qs.forEach(addQ);
+    return true;
+  }
+  function packFresh(p){
+    return (p.qids||[]).length>0 && (p.qids||[]).every(function(id){ return byId[id] && !isSeen(id) && !used[id]; });
+  }
+  // 1) textos completos inéditos (para lenguaje)
+  if(packs.length){
+    shuffle(packs.filter(packFresh)).forEach(addPack);
+  }
+  // 2) ítems sueltos inéditos
+  shuffle(bank.filter(function(q){ return !used[q.id] && !isSeen(q.id); })).forEach(addQ);
+  // 3) solo si el banco inédito no alcanza: reciclar
+  if(picked.length < want){
+    if(packs.length){
+      shuffle(packs.filter(function(p){ return !packFresh(p); })).forEach(addPack);
+    }
+    shuffle(bank.filter(function(q){ return !used[q.id]; })).forEach(addQ);
+  }
+  picked.forEach(function(q){
+    if(!SEEN1000SET[seenKey][q.id]){ SEEN1000SET[seenKey][q.id]=1; SEEN1000[seenKey].push(q.id); }
+  });
+  saveSeen1000();
+  if(picked.length < want) notes.push('19 Ago '+subject.toUpperCase()+': banco con '+bank.length+' ítems, se entregan '+picked.length+'/'+want+'.');
   return picked;
 }
 
@@ -1517,6 +1567,15 @@ function buildGuia1000Attempt(courseKey){
     if(picked.length!==60 || lenD.length!==20 || fisD.length!==20 || quiD.length!==20){
       notes.push('Día 2 incompleto (LEN '+lenD.length+' · FIS '+fisD.length+' · QUI '+quiD.length+'). Revisa guia-bank-fql-dia2.js.');
     }
+  } else if(courseKey==='guia_fql_19ago'){
+    seedDia2SeenFromHistory();
+    var lenD19 = fill19AgoSubject('len', 20, notes);
+    var fisD19 = fill19AgoSubject('fis', 20, notes);
+    var quiD19 = fill19AgoSubject('qui', 20, notes);
+    picked = lenD19.concat(fisD19, quiD19);
+    if(picked.length!==60 || lenD19.length!==20 || fisD19.length!==20 || quiD19.length!==20){
+      notes.push('19 Ago incompleto (LEN '+lenD19.length+' · FIS '+fisD19.length+' · QUI '+quiD19.length+').');
+    }
   } else if(courseKey==='guia_fql120'){
     var fis = pickForGuia1000('fis', 20, notes, 'todos');
     var qui = pickForGuia1000('qui', 20, notes, 'todos');
@@ -1555,7 +1614,7 @@ function buildGuia1000Attempt(courseKey){
       subj: q.s
     };
   });
-  if(cfg.shuffleQuestions && courseKey!=='guia_fql_dia2'){
+  if(cfg.shuffleQuestions && courseKey!=='guia_fql_dia2' && courseKey!=='guia_fql_19ago'){
     qs = shuffle(qs);
     // anti-contigüidad final (clave para MAT y FQL intercalado): evita mismo topic/template contiguo tras shuffle
     (function(){
@@ -1573,28 +1632,28 @@ function buildGuia1000Attempt(courseKey){
     })();
   }
 
-  // Sin duplicar el mismo id. En Día 2 NO se recorta por enunciado: varios ítems
+  // Sin duplicar el mismo id. En Día 2 / 19 Ago NO se recorta por enunciado: varios ítems
   // de un texto pueden preguntar «la idea principal» sobre pasajes distintos.
   (function(){
     var seenI={}, uniq=[];
     for(var i=0;i<qs.length;i++){
       var q=qs[i];
       var id=q.src.id || (q.src.q+'#'+i);
-      if(courseKey!=='guia_fql_dia2'){
+      if(courseKey!=='guia_fql_dia2' && courseKey!=='guia_fql_19ago'){
         var key=q.src.q;
         if(seenI['p:'+key]) continue;
         seenI['p:'+key]=1;
       }
       if(!seenI['i:'+id]){ seenI['i:'+id]=1; uniq.push(q); }
     }
-    if(uniq.length < qs.length && courseKey!=='guia_fql_dia2'){
+    if(uniq.length < qs.length && courseKey!=='guia_fql_dia2' && courseKey!=='guia_fql_19ago'){
       S.toast = (S.toast? S.toast+' ' : '') + 'Intento Guia sin duplicados: se entregan '+uniq.length+'/'+qs.length+' preguntas unicas.';
       qs = uniq;
     } else {
       qs = uniq;
     }
   })();
-  return { course: courseKey, level: 'intermedio', qs: qs, ans: qs.map(function(){return null;}), flags: qs.map(function(){return false;}), cur:0, start:new Date(), end:null, finished:false, limitMs: minutesFor(courseKey)*60000, historic:false, isGuia1000:true, sequential: (courseKey==='guia_fql_dia2') ? !!S.dia2Sequential : false };
+  return { course: courseKey, level: 'intermedio', qs: qs, ans: qs.map(function(){return null;}), flags: qs.map(function(){return false;}), cur:0, start:new Date(), end:null, finished:false, limitMs: minutesFor(courseKey)*60000, historic:false, isGuia1000:true, sequential: (courseKey==='guia_fql_dia2' || courseKey==='guia_fql_19ago') ? !!S.dia2Sequential : false };
 }
 function attemptFromRecord(r){
   registerProgrammedSimsInCourses();
@@ -2877,10 +2936,11 @@ function viewGuiaHome(){
       '<div class="cbtns"><button class="btn" data-act="course" data-c="'+s.course+'" style="background:'+s.color+';border-color:'+s.color+'">Abrir</button></div></div></div>';
   }).join('');
   var avzSims = [
+    {course:'guia_fql_19ago', title:'Prueba Real 19 Ago', sub:'60 preg · 60 min · 20+20+20 · Filtradas y conceptos reales', color:'#b91c1c', icon:'🎯'},
+    {course:'guia_fql_dia2', title:'Día 2 · formato real', sub:'60 preg · 120 min · 20+20+20 · un texto, varias preguntas', color:'#9a3412', icon:'📋'},
     {course:'guia_fis_avz', title:'Física avanzada', sub:'20 preguntas · 50 min · 44 en el banco', color:'#0f766e', icon:'⚙️'},
     {course:'guia_qui_avz', title:'Química avanzada', sub:'20 preguntas · 50 min · 44 en el banco', color:'#3f6212', icon:'⚗️'},
     {course:'guia_len_avz', title:'Lenguaje avanzado', sub:'20 preguntas · 50 min · 44 en el banco', color:'#a16207', icon:'📝'},
-    {course:'guia_fql_dia2', title:'Día 2 · formato real', sub:'60 preg · 120 min · 20+20+20 · un texto, varias preguntas', color:'#9a3412', icon:'📋'},
     {course:'guia_fql_avz', title:'Combinado avanzado corto', sub:'45 preguntas · 120 min · 15+15+15 intercaladas', color:'#7c2d12', icon:'🧪'}
   ];
   var avzCards = avzSims.map(function(s){
@@ -3754,11 +3814,11 @@ function viewCourse(){
   var pool, fresh;
   if(isG1000){
     if(isGuiaAvzCourse(k)){
-      if(k==='guia_fql_avz' || k==='guia_fql_dia2'){
-        var srcBank = (k==='guia_fql_dia2' ? (window.GUIA_BANK_FQL_DIA2||{fis:[],qui:[],len:[]}) : avzBank);
-        var skF = k==='guia_fql_dia2' ? 'fis-d2' : 'fis-avz';
-        var skQ = k==='guia_fql_dia2' ? 'qui-d2' : 'qui-avz';
-        var skL = k==='guia_fql_dia2' ? 'len-d2' : 'len-avz';
+      if(k==='guia_fql_avz' || k==='guia_fql_dia2' || k==='guia_fql_19ago'){
+        var srcBank = (k==='guia_fql_19ago' ? (window.GUIA_BANK_FQL_19AGO||{fis:[],qui:[],len:[]}) : (k==='guia_fql_dia2' ? (window.GUIA_BANK_FQL_DIA2||{fis:[],qui:[],len:[]}) : avzBank));
+        var skF = k==='guia_fql_19ago' ? 'fis-19ago' : (k==='guia_fql_dia2' ? 'fis-d2' : 'fis-avz');
+        var skQ = k==='guia_fql_19ago' ? 'qui-19ago' : (k==='guia_fql_dia2' ? 'qui-d2' : 'qui-avz');
+        var skL = k==='guia_fql_19ago' ? 'len-19ago' : (k==='guia_fql_dia2' ? 'len-d2' : 'len-avz');
         pool = (srcBank.fis||[]).length + (srcBank.qui||[]).length + (srcBank.len||[]).length;
         fresh = (srcBank.fis||[]).filter(function(q){return !(SEEN1000SET[skF]||{})[q.id];}).length
               + (srcBank.qui||[]).filter(function(q){return !(SEEN1000SET[skQ]||{})[q.id];}).length
@@ -3794,19 +3854,20 @@ function viewCourse(){
   var hs = liveHist().filter(function(r){ return r.course===k; }).sort(function(a,b){return b.ts-a.ts;});
   var crumbBase = isG1000 ? 'Guía oficial EPN \u203a Simuladores' : '01-SEA-EPN_2026-2';
   var totalBank = isGuiaAvzCourse(k)
-    ? ((k==='guia_fql_avz'||k==='guia_fql_dia2') ? pool : 44)
+    ? ((k==='guia_fql_avz'||k==='guia_fql_dia2'||k==='guia_fql_19ago') ? pool : 44)
     : (isG1000 ? (k==='guia_fql120'? 750 : 250) : bankOf(k).length);
   var perInfo = '';
   if(k==='guia_fql120') perInfo = ' <span style="color:#64748b;">(20 FIS + 20 QUI + 20 LEN, intercaladas 1-1-1)</span>';
   else if(k==='guia_fql_avz') perInfo = ' <span style="color:#64748b;">(15 FIS + 15 QUI + 15 LEN, intercaladas)</span>';
   else if(k==='guia_fql_dia2') perInfo = ' <span style="color:#64748b;">(20 LEN con textos compartidos + 20 FIS por caso + 20 QUI, en bloques, como el Día 2)</span>';
+  else if(k==='guia_fql_19ago') perInfo = ' <span style="color:#64748b;">(20 LEN con 4 textos + 20 FIS conceptual + 20 QUI, en bloques, examen real)</span>';
   else if(subjForG) perInfo = ' <span style="color:#64748b;">(cobertura máxima de '+(bank1000[subjForG].length? Object.keys((function(){var m={};bank1000[subjForG].forEach(function(q){m[q.topics[0]]=1;});return m;})()).length : '-')+' temas)</span>';
   return navbar(isG1000?'home':'')+'<div class="wrap">'+drawer(isG1000?'home':'quiz')+'<div class="main">'+
     pagehead(c.full+guiaBadge, crumbBase+' \u203a '+c.full)+toastHtml()+
     '<div style="max-width:840px">'+
     '<p>'+c.desc+' Cada intento toma <b>'+countFor(k)+' preguntas</b> distintas'+(k==='mix'?' repartidas entre las cuatro áreas': perInfo)+' de un banco de <b>'+totalBank+'</b>'+(isGuiaAvzCourse(k)?' (banco avanzado nuevo)':(isG1000?' (banco intermedio actual)':''))+'.</p>'+
     (usesLevel? '<div style="margin:14px 0 6px;font-weight:600;font-size:14px">Dificultad</div><div class="pills">'+lv+'</div>' : '')+
-    (k==='guia_fql_dia2'? '<div class="hint" style="margin-top:6px;">Formato del <b>segundo día oficial</b> (guía 2026-B + simulador de 69): Lenguaje con un texto y varias preguntas, Física con un mismo caso, Química suelta. Bloques LEN → FIS → QUI. 120 minutos. Más difícil que el de 69. Rota textos y casos; no repite los ya vistos ni los del combinado corto.</div>' : (isGuiaAvzCourse(k)? '<div class="hint" style="margin-top:6px;">Este es un <b>simulador NUEVO</b>, más exigente que el oficial de 69 preguntas. Cada intento toma del banco avanzado completo (no hay pastillas de dificultad). No reemplaza a los simuladores actuales de nivel intermedio.</div>' : (isG1000? '<div class="hint" style="margin-top:6px;">Este banco es fijo de <b>nivel intermedio</b>, el mismo exigido por la EPN. No hay selector de dificultad.</div>' : '')))+
+    (k==='guia_fql_19ago'? '<div class="hint" style="margin-top:6px;">Basado fielmente en la <b>prueba real del 19 de agosto</b> (EPN 2026-B): 20 Lenguaje (4 textos con 5 preguntas), 20 Física (80% conceptual, mecánica y energía) y 20 Química (teoría atómica, enlaces, estequiometría). Bloques LEN → FIS → QUI. 60 minutos (1 min por pregunta). Mínimo 6 aciertos por materia.</div>' : (k==='guia_fql_dia2'? '<div class="hint" style="margin-top:6px;">Formato del <b>segundo día oficial</b> (guía 2026-B + simulador de 69): Lenguaje con un texto y varias preguntas, Física con un mismo caso, Química suelta. Bloques LEN → FIS → QUI. 120 minutos. Más difícil que el de 69. Rota textos y casos; no repite los ya vistos ni los del combinado corto.</div>' : (isGuiaAvzCourse(k)? '<div class="hint" style="margin-top:6px;">Este es un <b>simulador NUEVO</b>, más exigente que el oficial de 69 preguntas. Cada intento toma del banco avanzado completo (no hay pastillas de dificultad). No reemplaza a los simuladores actuales de nivel intermedio.</div>' : (isG1000? '<div class="hint" style="margin-top:6px;">Este banco es fijo de <b>nivel intermedio</b>, el mismo exigido por la EPN. No hay selector de dificultad.</div>' : ''))))+
     '<table class="quizsummary"><tbody>'+
     '<tr><th>Método de calificación</th><td>Calificación más alta</td></tr>'+
     '<tr><th>Límite de tiempo</th><td>'+minutesFor(k)+' minutos</td></tr>'+
@@ -3818,7 +3879,7 @@ function viewCourse(){
     (k==='mix'? '<div class="infobox">El examen real dura 210 minutos: 90 de Matemática (componente filtro) y 120 para Física, Química y Lenguaje. Puedes reproducir esos tiempos desde la configuración.</div>':'')+
     (isG1000? '<div class="infobox" style="border-left:4px solid #0e2a47;"><b>Cobertura garantizada:</b> cada intento cubre el máximo de temas distintos antes de repetir tema. Si pides menos preguntas qué temas, todas serán de temas distintos; si pides más, se hace una ronda completa por todos los temas antes de repetir. Ajusta N y minutos en <b>Configuración → Simuladores Guía EPN</b>.</div>':'')+
     (isG1000? '<div style="margin:10px 0; display:flex; gap:8px; flex-wrap:wrap;"><button class="btn sec" data-act="cfg">⚙ Ajustar N y tiempo de este simulador</button><span style="font-size:12px; color:#64748b; align-self:center;">Cada simulador recuerda su propio N/minutos.</span></div>':'')+
-    (k==='guia_fql_dia2'? '<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:14px 18px;margin:14px 0 8px;">'+
+    ((k==='guia_fql_dia2' || k==='guia_fql_19ago')? '<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:14px 18px;margin:14px 0 8px;">'+
     '<div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;">'+
     '<div style="display:flex;align-items:center;gap:10px;">'+
     '<input type="checkbox" id="chkSequential" '+(S.dia2Sequential?'checked':'')+' style="width:18px;height:18px;cursor:pointer;accent-color:#0284c7;">'+
@@ -3828,7 +3889,7 @@ function viewCourse(){
     '</div></div>' : '')+
     ((GUIA_COURSES.indexOf(k)>=0) ? (function(){
       var total = 1000, seenTot = SEEN1000.mat.length+SEEN1000.fis.length+SEEN1000.qui.length+SEEN1000.len.length;
-      var preview = (function(){ var arr=[]; var bank1000=window.GUIA_BANK_1000||{mat:[],fis:[],qui:[],len:[]}; var avz=window.GUIA_BANK_FQL_AVANZADO||{fis:[],qui:[],len:[]}; if(k==='guia_mat30') arr=bank1000.mat||[]; else if(k==='guia_fql120') arr=(bank1000.fis||[]).concat(bank1000.qui||[]).concat(bank1000.len||[]); else if(k==='guia_fql_avz') arr=(avz.fis||[]).concat(avz.qui||[]).concat(avz.len||[]); else if(k==='guia_fql_dia2'){ var d2=window.GUIA_BANK_FQL_DIA2||{fis:[],qui:[],len:[]}; arr=(d2.len||[]).concat(d2.fis||[]).concat(d2.qui||[]); } else if(isGuiaAvzCourse(k)){ var sa=({guia_fis_avz:'fis',guia_qui_avz:'qui',guia_len_avz:'len'})[k]; arr=sa?(avz[sa]||[]):[]; } else { var s=({guia_fis:'fis',guia_qui:'qui',guia_len:'len'})[k]; arr=s? (bank1000[s]||[]):[]; } var n=Math.min(3,arr.length); var out=[]; for(var i=0;i<n;i++) out.push('<li style="font-size:12px;color:#334155;">'+escH(String(arr[i].prompt).slice(0,110))+'… <span class="chip light">'+escH(arr[i].t)+'</span></li>'); return out.length? '<ul style="margin:6px 0 0;padding-left:18px;">'+out.join('')+'</ul><div class="hint">+ '+(arr.length-n)+' preguntas más en el banco · vista previa solo lectura (editor igual qué aula: inspeccionar/cambiar/quitar antes de iniciar)</div>' : '<div class="hint">Banco listo — '+arr.length+' preguntas.</div>'; })();
+      var preview = (function(){ var arr=[]; var bank1000=window.GUIA_BANK_1000||{mat:[],fis:[],qui:[],len:[]}; var avz=window.GUIA_BANK_FQL_AVANZADO||{fis:[],qui:[],len:[]}; if(k==='guia_mat30') arr=bank1000.mat||[]; else if(k==='guia_fql120') arr=(bank1000.fis||[]).concat(bank1000.qui||[]).concat(bank1000.len||[]); else if(k==='guia_fql_avz') arr=(avz.fis||[]).concat(avz.qui||[]).concat(avz.len||[]); else if(k==='guia_fql_dia2'){ var d2=window.GUIA_BANK_FQL_DIA2||{fis:[],qui:[],len:[]}; arr=(d2.len||[]).concat(d2.fis||[]).concat(d2.qui||[]); } else if(k==='guia_fql_19ago'){ var d19=window.GUIA_BANK_FQL_19AGO||{fis:[],qui:[],len:[]}; arr=(d19.len||[]).concat(d19.fis||[]).concat(d19.qui||[]); } else if(isGuiaAvzCourse(k)){ var sa=({guia_fis_avz:'fis',guia_qui_avz:'qui',guia_len_avz:'len'})[k]; arr=sa?(avz[sa]||[]):[]; } else { var s=({guia_fis:'fis',guia_qui:'qui',guia_len:'len'})[k]; arr=s? (bank1000[s]||[]):[]; } var n=Math.min(3,arr.length); var out=[]; for(var i=0;i<n;i++) out.push('<li style="font-size:12px;color:#334155;">'+escH(String(arr[i].prompt).slice(0,110))+'… <span class="chip light">'+escH(arr[i].t)+'</span></li>'); return out.length? '<ul style="margin:6px 0 0;padding-left:18px;">'+out.join('')+'</ul><div class="hint">+ '+(arr.length-n)+' preguntas más en el banco · vista previa solo lectura (editor igual qué aula: inspeccionar/cambiar/quitar antes de iniciar)</div>' : '<div class="hint">Banco listo — '+arr.length+' preguntas.</div>'; })();
       return '<div class="planbox" style="border-left:4px solid #0e2a47;"><b>Vista previa (solo lectura)</b> — '+preview+'<div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;"><button class="btn sec mini" data-act="openadmin" style="border-color:#7b2cbf;color:#7b2cbf;">🔑 Editor (inspeccionar / cambiar / quitar)</button><span class="hint" style="align-self:center;">Corrección previa idéntica a la versión normal.</span></div></div>';
     })() : planBox(k))+
     '<label class="switch" style="margin:14px 0 10px;display:flex;align-items:center;gap:10px;cursor:pointer;background:rgba(217,130,43,0.08);padding:10px 14px;border-radius:8px;border:1px solid rgba(217,130,43,0.25)">'+
@@ -3853,7 +3914,7 @@ function viewAttempt(){
     (a.cur<a.qs.length-1? '<button class="btn" data-act="next">Siguiente p\u00e1gina</button>'
                         : '<button class="btn" data-act="summary">Terminar intento...</button>')+
     '</div>';
-  var seqToggle = (a.course==='guia_fql_dia2')
+  var seqToggle = (a.course==='guia_fql_dia2' || a.course==='guia_fql_19ago')
     ? '<label style="display:flex;align-items:center;gap:8px;margin:0 0 10px;font-size:13px;color:#334155;cursor:pointer;">'+
       '<input type="checkbox" '+(isSeq?'checked':'')+' data-act="toggleseq" style="width:16px;height:16px;cursor:pointer;accent-color:#0284c7;">'+
       (isSeq? 'Modo oficial: una pregunta a la vez. Quita la marca para saltar entre preguntas.' : 'Puedes moverte entre preguntas. Marca esto si quieres el modo oficial (una a una).')+
@@ -4527,7 +4588,7 @@ function startAttempt(k){
   S.attempt = buildAttempt(S.course);
   S.attempt.área=S.area;
   if(S.noSave) S.attempt.noSave = true;
-  if(S.attempt && S.attempt.course==='guia_fql_dia2') S.attempt.sequential = !!S.dia2Sequential;
+  if(S.attempt && (S.attempt.course==='guia_fql_dia2' || S.attempt.course==='guia_fql_19ago')) S.attempt.sequential = !!S.dia2Sequential;
   S.view = 'attempt'; S.onePage = null; S.modal = null;
   render(); startTimer();
   saveActive(); if(isPinAuthenticated()) pushCloudState();
